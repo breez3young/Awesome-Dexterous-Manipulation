@@ -46,4 +46,8 @@ node scripts/build_readme.cjs --check
 - [Literature guide and scope](LITERATURE_MAP.zh-CN.md)
 - [Main-branch protection settings](BRANCH_PROTECTION.zh-CN.md)
 
-GitHub discovery runs on its own schedule. Codex review is a separate local task and requires the computer and app to be running. Both propose changes through branches; the maintainer merges the reviewed PR and Pages publishes the merged contents.
+GitHub discovery saves candidates and successful scan records to `bot/dexterous-watch` without opening a PR. Codex review is a separate local task and requires the computer and app to be running. It reads a fixed successful commit from that branch and creates or updates one pending PR on `bot/codex-paper-review`, including the reviewed papers, decision ledger, README, and corresponding scan data. The maintainer merges that PR and Pages publishes its contents.
+
+Keep the discovery branch: it preserves the candidate backlog and needs no manual merge. Separate branches prevent the next discovery run from overwriting pending review work. After a review PR is merged, the next batch starts from the latest `main`; while it is open, new decisions join the same PR. Candidate or scan-time changes alone do not create a PR. The website therefore shows the last published scan, while Actions and the discovery branch show the latest successful scan.
+
+The discovery workflow needs only `contents: write`. It does not depend on the repository setting that allows Actions to create or approve pull requests; leave that setting unchanged if other workflows use it.

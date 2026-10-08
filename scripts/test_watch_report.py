@@ -45,6 +45,14 @@ class ReportTests(unittest.TestCase):
         self.assertIn("待审 **35** 篇", output)
         self.assertIn("完整队列", output)
 
+    def test_discovery_summary_routes_approval_to_the_codex_pr_only(self):
+        output = render(report())
+        self.assertIn("等待 Codex 审核", output)
+        self.assertIn("不创建 PR", output)
+        self.assertIn("bot/codex-paper-review", output)
+        self.assertIn("此分支无需合并", output)
+        self.assertNotIn("合并本 PR", output)
+
 
 if __name__ == "__main__":
     unittest.main()

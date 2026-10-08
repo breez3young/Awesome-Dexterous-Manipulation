@@ -1,8 +1,8 @@
 # 每天自动追踪 arXiv：GitHub Actions 设置
 
-本项目采用「每天检索 → 生成候选 PR → 人工审核 → 收录并发布」的流程。电脑关机也能运行，无须 Codex 定时任务、付费模型 API 或个人访问令牌。
+本项目采用「每天检索并保存后台候选 → Codex 自动审核 → 维护者合并一个审核 PR → 发布」的流程。GitHub Actions 抓取时不创建 PR；维护者只需要处理包含审核结果和对应扫描数据的 Codex PR。
 
-GitHub 仓库、Pages 和每日抓取已启用。现在增加本地 Codex 定时审核，并由维护者确认合并审核 PR；详见 [Codex 自动审核流程](CODEX_REVIEW.zh-CN.md)。下面保留首次设置与手动审核的说明，便于重新部署或排查问题。
+GitHub 仓库、Pages 和每日抓取已启用。抓取在云端运行，电脑关机也不受影响，使用 GitHub 自动提供的令牌。本地 Codex 审核要求电脑开机、应用运行并保有 GitHub 访问权限，无须另配付费模型 API；详见 [Codex 自动审核流程](CODEX_REVIEW.zh-CN.md)。下面保留首次设置、手动维护与排查说明。
 
 ## 1. 将整个文件夹推送到仓库
 
@@ -13,8 +13,10 @@ GitHub 仓库、Pages 和每日抓取已启用。现在增加本地 Codex 定时
 .github/workflows/dexterous-watch.yml
 scripts/dexterous_watch.py
 scripts/watch_report.py
+scripts/publish_candidates.sh
 scripts/test_dexterous_watch.py
 scripts/test_watch_report.py
+scripts/test_publish_candidates.py
 index.html
 papers.json
 candidates.json
@@ -36,14 +38,16 @@ git push -u origin main
 
 这些命令用于尚未初始化的新文件夹；已有 Git 仓库时直接提交并推送即可。
 
-## 2. 允许 Actions 创建审核 PR
+## 2. 允许 Actions 保存抓取结果
 
 进入仓库 **Settings → Actions → General**：
 
 1. 允许运行 GitHub Actions，并允许本工作流使用的官方 `actions/checkout`。
-2. 在 **Workflow permissions** 下勾选 **Allow GitHub Actions to create and approve pull requests**，然后保存。这个设置同时涵盖创建和批准的能力；我们的工作流只创建 PR，不会批准或合并。
+2. 确认组织策略与分支规则允许工作流写入 `bot/dexterous-watch`。如果设置 main 分支保护，只匹配 `main`，不要匹配 `bot/*` 或所有分支。
 
-工作流文件已经声明 `contents: write` 和 `pull-requests: write`，使用 GitHub 自动提供的 `GITHUB_TOKEN`。通常无须创建 Secret，也无须把仓库的默认令牌权限全面改成读写。如果组织策略禁止这两项能力，需要仓库/组织管理员调整对应规则。[官方权限说明](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#preventing-github-actions-from-creating-or-approving-pull-requests)
+工作流文件只声明 `contents: write`，使用 GitHub 自动提供的 `GITHUB_TOKEN` 保存候选分支，不请求 PR 写入权限。通常无须创建 Secret，也无须把仓库的默认令牌权限全面改成读写。如果组织策略禁止分支写入，需要仓库/组织管理员调整对应规则。
+
+本工作流不依赖 **Allow GitHub Actions to create and approve pull requests**。无需开启，也不要为了这次调整特意关闭已有设置，以免影响仓库中的其他流程。审核 PR 由本地 Codex 使用维护者已有的 GitHub 登录创建。[官方权限说明](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
 
 ## 3. 手动验证一次
 
@@ -53,9 +57,11 @@ git push -u origin main
 
 - Actions 的运行摘要：扫描时间、新增发现数、候选更新数，以及可点击的论文表格。
 - `bot/dexterous-watch` 分支：新的 `candidates.json`、`watch.json`。
-- **Review dexterous paper discoveries** PR：供审核的论文清单。之后每天更新同一个 PR，而不是一天创建一个。
+- 抓取阶段不会出现新的 PR。Codex 随后从成功抓取的候选分支读取数据，不要求它有对应的 PR。
 
 首次运行是否成功应以 Actions 的实际结果为准。本地预览和网页上的上次扫描时间不能证明云端任务已经启用。
+
+迁移自旧流程时，先将本次工作流修复合并到 main。确认队列已保存在 `bot/dexterous-watch` 后，可以关闭旧的 **Review dexterous paper discoveries** 候选 PR，无需合并；保留该分支，以免丢失待审积压。如果提前关闭旧 PR，务必在下次抓取前合并修复，否则 main 上的旧工作流仍会重新创建候选 PR。
 
 ## 4. 每天什么时候、怎么检索
 
@@ -72,15 +78,27 @@ on:
 
 机器人查询 arXiv API，按 **lastUpdatedDate 倒序**分页，默认回看最近 **7 天**：既发现新稿，也发现旧论文的新修订。关键词集中于 dexterous manipulation、in-hand manipulation、multi-finger 和触觉与灵巧手的组合，再用标题/摘要做初筛。主要逻辑在 `scripts/dexterous_watch.py` 中的 `SEARCH_QUERY` 和 `classify()`；调整检索范围时需同时检查这两处。
 
-arXiv API 的索引/缓存可能晚于网站公告，因此这不是实时推送。七天重叠窗口用于补抓延迟结果和短暂失败；版本号会归一化、重复论文会去重。已正式收录和已拒绝的论文不会重复进入候选队列；已收录论文的后续版本不会单独生成更新提醒。分页间隔至少 3 秒，网络错误最多尝试 3 次，扫描不完整时任务失败并保留上次成功报告。[arXiv API 文档](https://info.arxiv.org/help/api/user-manual.html)
+arXiv API 的索引/缓存可能晚于网站公告，因此这不是实时推送。七天重叠窗口用于补抓延迟结果和短暂失败；版本号会归一化、重复论文会去重。已正式收录和在人工永久名单中排除的论文不会重复进入候选队列；已收录论文的后续版本不会单独生成更新提醒。Codex 的 reject 结论保存在独立审核账本中，不等于人工永久排除。分页间隔至少 3 秒，网络错误最多尝试 3 次，扫描不完整时任务失败并保留上次成功报告。[arXiv API 文档](https://info.arxiv.org/help/api/user-manual.html)
 
 GitHub 定时任务可能延迟，高负载时甚至被丢弃；公共仓库连续 60 天没有活动也可能被自动停用。如果中断超过一周，可在 **Run workflow** 中选择 **14** 或 **30** 天补查，然后恢复日常 7 天窗口。超过 30 天可在本地使用 `--days` 参数补查，仍受分页上限保护。[GitHub 定时触发说明](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)
 
-## 5. 审核、收录和拒绝
+## 5. 一个审核 PR 完成确认与发布
 
-**合并候选 PR，只保存待审队列和检索记录，不表示论文已通过审核。** 网站正式目录读取 `papers.json`，机器人不会改这个文件。
+每天北京时间 **10:05**，本地 Codex 固定 `bot/dexterous-watch` 上一次成功抓取的提交 SHA，从同一提交读取 `candidates.json` 和 `watch.json`，核查论文原始来源，再记录 accept、defer 或 reject。抓取工作流不会改动正式目录 `papers.json`。
 
-对准备收录的论文，先读原文/官方项目页，核实是否真的使用多指手、触觉是否是策略运行时输入，再在独立的人工编辑分支中修改 `papers.json`。可以复制一条现有论文作为模板：
+有新审核结论或需要维护者决策的实质变化时，Codex 创建或更新 `bot/codex-paper-review` 的唯一待合并 PR，包含：
+
+- 通过收录的论文条目 `papers.json` 与审核账本 `reviews.json`。
+- 对应成功扫描的 `candidates.json` 和 `watch.json`。
+- 与正式目录一致的 README 统计和近期论文。
+
+审核 PR 尚未合并时，下一批结论继续追加到这个 PR；合并后，下轮从最新 main 开始。维护者只需检查并合并审核 PR，Pages 就会发布。后台抓取分支无需人工合并，也不要删除：保留两个分支可以避免 Actions 重建队列时覆盖未合并的审核结果。
+
+只有候选或扫描时间改变、没有新审核结论或需要维护者处理的变化时，不新建或更新仅含扫描结果的 PR。最新抓取状态可在 Actions 和候选分支查看；网站显示的是最近一次随审核 PR 发布的扫描记录。
+
+### 人工补充或修正论文
+
+也可以在独立的人工编辑分支补充遗漏论文或修正条目。先读原文/官方项目页，核实是否真的使用多指手、触觉是否是策略运行时输入，再修改 `papers.json`。可以复制一条现有论文作为模板：
 
 - `id` 唯一；`date` / `year` 使用首次 arXiv 投稿日期。
 - `category` 保留`catalog-core.js` 中现有六个研究方向之一；`tags` 使用 `catalog-core.js` 中的五组受控标签，参考文献导读的口径。
@@ -88,9 +106,11 @@ GitHub 定时任务可能延迟，高负载时甚至被丢弃；公共仓库连�
 - `links.paper` 和 `source_url` 使用验证过的论文地址；代码/项目地址没有确认就省略。
 - `scope` 区分核心灵巧操作 `core` 和触觉感知、手物交互等相邻研究 `adjacent`。
 
-审核并合并这次人工修改后，下一轮检索会自动从待审队列排除该论文。也可以立即手动运行工作流，再合并清理后的候选 PR。
+运行 `node scripts/build_readme.cjs` 同步 README，并通过 [维护指南](MAINTENANCE.md) 中的检查。合并人工修改后，下一轮检索会自动从后台待审队列排除已收录论文；也可以手动运行抓取工作流，无须另外合并清理队列的 PR。
 
-对明确不收录的论文，在默认分支新增或更新根目录 `rejected_ids.json`：
+### 人工永久排除与模型结论
+
+Codex 的 reject 只写入 `reviews.json`，用于记录当前版本的来源与理由，不会自动写入永久排除名单。若维护者确定某篇论文以后也不应进入候选队列，可通过人工 PR 在根目录新增或更新 `rejected_ids.json`：
 
 ```json
 {
@@ -118,17 +138,19 @@ GitHub 定时任务可能延迟，高负载时甚至被丢弃；公共仓库连�
 
 参考：[GitHub Pages 发布来源](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)、[静态网站入口与 .nojekyll](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)。
 
-发布后通常是 `https://你的用户名.github.io/仓库名/`。个人主页的项目卡片链接到这个地址即可。检索工作流和 Pages 是两件事：前者生成审核 PR，后者发布已合并的数据。尚未合并的候选 PR 不会改变线上网站。
+发布后通常是 `https://你的用户名.github.io/仓库名/`。个人主页的项目卡片链接到这个地址即可。检索工作流只更新后台候选分支，Codex 才生成审核 PR，Pages 发布已合并到 main 的数据。尚未合并的审核结果和后台候选更新不会改变线上网站。
 
 ## 常见问题
 
 | 现象 | 处理 |
 | --- | --- |
 | Actions 找不到工作流或没有 Run workflow | 确认完整的 `.github/workflows/dexterous-watch.yml` 已提交到默认分支，并启用 Actions。 |
-| 创建 PR 报权限错误 | 开启允许 Actions 创建 PR 的选项；检查组织权限或限制机器人分支推送的规则。机器人分支可能已经保存，可修正权限后重跑。 |
+| 抓取结果无法保存到分支 | 检查 `contents: write` 是否被组织策略限制，以及保护规则是否误覆盖 `bot/dexterous-watch`；修正后重跑。 |
 | arXiv 超时 / 503 / 分页不完整 | 查看失败步骤，稍后手动重跑；不用改动上次成功报告。 |
-| PR 创建了，但其他检查没启动 | 内置 GITHUB_TOKEN 发起的事件可能不触发其他工作流；需要时手动运行这些检查。 |
-| 网页上扫描时间没有更新 | 检查候选 PR 是否已合并、Pages 是否部署成功；页面只展示已发布的记录。 |
+| 抓取成功但没有 PR | 抓取阶段不创建 PR。确认本地 Codex 能运行；只有新的审核结论或需要维护者处理的变化才会创建/更新审核 PR。 |
+| Codex 无法创建或更新审核 PR | 检查本地 GitHub 登录和仓库访问权限，以及审核分支是否存在冲突；不是 Actions 创建 PR 开关的问题。 |
+| 网页上扫描时间没有更新 | 页面展示最近一次随审核 PR 合并并成功部署的扫描记录。仅有新扫描时不单独发布；查看 Actions 获取最新抓取状态。 |
+| 旧候选 PR 一直显示 | 先将工作流修复合并 main，确认队列仍在后台分支后关闭旧候选 PR，保留分支；日后只合并 Codex 审核 PR。 |
 | 每天没有新论文 | 可因无相关更新、API 延迟、重复/拒绝过滤而正常出现；先看成功运行摘要，再决定是否扩充关键词。 |
 
 本地验证命令：

@@ -104,11 +104,11 @@ The most recent first releases in the curated catalog. Dates below are publicati
 
 | Stage | When | What happens |
 |:--|:--|:--|
-| **Discover** | Daily, 09:35 Beijing time | GitHub Actions searches recent arXiv updates and collects candidates. |
-| **Review** | Daily, 10:05 Beijing time | Local Codex checks primary sources, assigns tags, and writes bilingual summaries in a review PR. |
+| **Discover** | Daily, 09:35 Beijing time | GitHub Actions searches recent arXiv updates and saves candidates to a background branch, without opening a PR. |
+| **Review** | Daily, 10:05 Beijing time | Local Codex reads the successful scan, checks primary sources, and adds decisions, tags, and bilingual summaries to one review PR. |
 | **Publish** | After maintainer approval | The maintainer merges the PR; GitHub Pages publishes the updated collection. |
 
-Codex records **accept**, **defer**, or **reject** with source links and reasons. The local review requires the computer and app to be running; GitHub discovery runs independently. Neither stage merges its own PR. [Review protocol](docs/CODEX_REVIEW.zh-CN.md) · [Setup guide](docs/GITHUB_ACTIONS_SETUP.zh-CN.md) · [Open review PRs](https://github.com/breez3young/Awesome-Dexterous-Manipulation/pulls)
+Codex records **accept**, **defer**, or **reject** with source links and reasons. The maintainer reviews only the Codex PR, which includes the corresponding candidate queue and scan record; pending review work stays in the same PR until merged. The discovery branch needs no merge. Scan-only changes do not create a PR, and publication always requires the maintainer to merge. Local review requires the computer and app to be running; GitHub discovery runs independently. [Review protocol](docs/CODEX_REVIEW.zh-CN.md) · [Setup guide](docs/GITHUB_ACTIONS_SETUP.zh-CN.md) · [Open review PRs](https://github.com/breez3young/Awesome-Dexterous-Manipulation/pulls)
 
 ## Contributing
 
