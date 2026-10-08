@@ -1,11 +1,13 @@
-<!-- Catalog update: 2026-10-08 -->
+<!-- Catalog update: 2026-10-09 -->
 # Awesome Dexterous & Tactile Manipulation
 
 A standalone research collection on dexterous and tactile manipulation, maintained by [Yang Zhang](https://breez3young.github.io/).
 
 ## 每日自动追踪 arXiv
 
-已准备 GitHub Actions 每天北京时间 **09:35** 检索、生成候选审核 PR，人工确认后加入正式目录。配置尚未在云端启用。
+GitHub Actions 每天北京时间 **09:35** 检索候选，本地 Codex 定时审核后生成包含正式论文条目的 PR，由维护者确认合并后发布。审核运行时需电脑开机、Codex 应用运行。
+
+见 [Codex 自动审核规则与操作说明](docs/CODEX_REVIEW.zh-CN.md)。审核不调用另行配置的 OpenAI API；审核记录保存在 `reviews.json`，原始抓取记录仍在 `watch.json`。
 
 先看 [中文设置与审核指南](docs/GITHUB_ACTIONS_SETUP.zh-CN.md)：包含仓库上传、权限、手动验证、7/14/30 天补查、收录/拒绝和 Pages 发布步骤。
 
@@ -50,17 +52,17 @@ Review each candidate against the original paper or official project:
 4. Which sensors, hand, tasks, and methods are supported by the paper?
 5. Is the entry a new work or an updated version of an existing arXiv record?
 
-## Daily watch: verified manually, scheduling not activated
+## Daily watch and Codex review
 
 The implementation lives in `scripts/dexterous_watch.py` and `.github/workflows/dexterous-watch.yml`. It queries the public arXiv API over a rolling seven-day window and produces **unreviewed candidates**, never edits `papers.json`, and never merges a pull request. A keyword search can miss papers and can include irrelevant ones; it is a discovery aid, not a literature review.
 
-A live API scan completed on 2026-10-08 and produced 33 unreviewed candidates. That scan did not change the curated collection; the later bibliography import expanded it to 58 papers. Recurring execution on GitHub has not been enabled.
+A live API scan completed on 2026-10-08 and produced 33 unreviewed candidates. That scan did not change the curated collection; the later bibliography import expanded it to 58 papers. GitHub Actions and Pages have been enabled; current run status is available in the repository Actions tab. Codex review runs locally and proposes a separate PR for the maintainer to merge.
 
 The configured cadence is daily at **09:35 Asia/Shanghai / 01:35 UTC**. arXiv's API indexing and cache can lag announcements, so the rolling window catches delayed results on subsequent runs. A scheduled GitHub Actions run may be delayed. The interface shows a recorded successful search; it does not present a countdown as evidence of a completed update.
 
 ### Enable after reviewing the local version
 
-1. Create the intended GitHub repository, add this folder as its source, and commit the implementation to its **default branch**. No remote repository has been created or connected yet.
+1. Create the intended GitHub repository, add this folder as its source, and commit the implementation to its **default branch**. This repository is now connected at https://github.com/breez3young/Awesome-Dexterous-Manipulation.
 2. In GitHub **Settings → Actions → General**, allow Actions to create pull requests, subject to the repository's policy. The workflow uses the built-in `GITHUB_TOKEN`; no paid model API or manually created personal access token is required.
 3. In **Actions → Dexterous paper watch**, use **Run workflow** once and inspect the readable run summary and candidate PR before relying on the schedule. The manual run accepts 7, 14, or 30 lookback days to recover from interruptions; scheduled runs use 7 days.
 4. Review the candidate records. Promote accepted papers into `papers.json` with verified categories and a human-reviewed TL;DR. The queue retains up to 500 candidates for 180 days. Record rejected arXiv IDs in `rejected_ids.json` using `{"rejected_ids": ["YYMM.NNNNN"]}`. Make curated edits on a separate source branch; the bot branch is reserved for generated queue files. Merging the candidate queue alone does not add papers to the catalog.

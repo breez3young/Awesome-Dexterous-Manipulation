@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-10-08T09:33:18Z",
+  "last_checked_at": "2026-10-08T18:15:39Z",
   "lookback_days": 7,
-  "window_start": "2026-10-01T09:33:18Z",
+  "window_start": "2026-10-01T18:15:39Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 33,
-  "recent_match_count": 33,
-  "new_candidate_count": 33,
+  "candidate_count": 32,
+  "recent_match_count": 28,
+  "new_candidate_count": 0,
   "updated_candidate_count": 0,
   "trimmed_count": 0,
   "retention_days": 180,
@@ -32,26 +32,6 @@
         {
           "source": "abstract",
           "text": "… dragging, eyes-free digit input, and representative multi-finger controls including scrolling and pinch-based map manipulation. These results show that a morphologically variable bare …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2607.28198",
-      "title": "UniCross: Unified Cross-Skill Dexterous Manipulation Synthesis",
-      "published": "2026-07-30T13:35:45Z",
-      "updated": "2026-10-07T16:15:16Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2607.28198",
-        "pdf": "https://arxiv.org/pdf/2607.28198"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "Many dexterous manipulation tasks require the object to remain securely held throughout the interaction. From the perspective of hand-object relational motion, such …"
         }
       ],
       "review_status": "pending"

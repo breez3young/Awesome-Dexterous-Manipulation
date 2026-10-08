@@ -3310,6 +3310,73 @@
       ],
       "evaluation": "Real robot",
       "notes_zh": "接触状态是仿真残差强化学习教师的特权信息及奖励依据。部署学生策略仅以当前和前一帧点云、本体感知与上一动作命令为输入，不能归为运行时触觉反馈。三种手用于仿真比较；真实实验为 KUKA iiwa14 搭配 Sharpa Wave 和 RealSense L515。"
+    },
+    {
+      "id": "arxiv-2610.10283",
+      "title": "Temporal Visuo-Tactile Learning for Dexterous Grasp Stability",
+      "authors": [
+        "Ken Nakahara",
+        "Aleksei Buvailik",
+        "Prokhor Kotov",
+        "Roberto Calandra"
+      ],
+      "year": 2026,
+      "date": "2026-10-07",
+      "category": "Tactile Dexterous Manipulation",
+      "scope": "core",
+      "tldr": "A temporal model fuses vision, proprioception, and fingertip touch to assess a grasp before lifting. On a four-fingered robot, its stability estimate gates lift-or-regrasp decisions. The work also collects 10,000 multimodal grasp trials across 200 objects and studies which tactile spatial and temporal cues aid prediction.",
+      "tldr_zh": "融合视觉、本体状态与指尖触觉序列，在抬升前预测抓取稳定性，并在四指实机上据此选择抬升或重抓。工作采集覆盖 200 件物体的 10,000 次多模态抓取试验，分析触觉空间细节和时序信息对预测的作用。",
+      "tags": [
+        "Dexterous grasping",
+        "Tactile feedback",
+        "Vision",
+        "Proprioception",
+        "Dataset / benchmark"
+      ],
+      "sensing": [
+        "Vision",
+        "Proprioception",
+        "Digit 360"
+      ],
+      "hand": [
+        "Tilburg Hand"
+      ],
+      "task": [
+        "Dexterous grasping",
+        "Grasp stability prediction",
+        "Regrasping"
+      ],
+      "method": [
+        "Supervised learning",
+        "Temporal multimodal learning",
+        "Stability-gated execution"
+      ],
+      "evaluation": "Real robot",
+      "evaluation_tags": [
+        "Real robot"
+      ],
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.10283",
+        "project": "https://lasr-lab.github.io/dexterous-grasp-stability/",
+        "code": "https://github.com/lasr-lab/dexterous-grasp-stability"
+      },
+      "source_url": "https://arxiv.org/abs/2610.10283v1",
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "sources": [
+        "https://arxiv.org/abs/2610.10283v1",
+        "https://arxiv.org/html/2610.10283v1#S4.SS2",
+        "https://lasr-lab.github.io/dexterous-grasp-stability/",
+        "https://github.com/lasr-lab/dexterous-grasp-stability",
+        "https://github.com/lasr-lab/dexterous-grasp-stability/blob/main/src/README.md"
+      ],
+      "bib_keys": [],
+      "date_kind": "First arXiv submission",
+      "metadata_source": "https://arxiv.org/abs/2610.10283",
+      "metadata_checked": "2026-10-09",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-07T15:48:19Z",
+      "notes_zh": "触觉用于执行时的抬升/重抓决策；不标记为强化学习、模仿学习或力控制。代码链接目前对应数据查看与重采样工具；完整训练/部署代码和数据下载可用性未独立确认。",
+      "arxiv_id": "2610.10283"
     }
   ],
   "import_summary": {
