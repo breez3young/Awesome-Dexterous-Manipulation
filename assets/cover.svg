@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title description">
+  <title id="title">Awesome Dexterous Manipulation</title>
+  <desc id="description">An ivory and forest-green editorial cover with a line drawing of a multi-fingered robotic hand holding an object. Motion, contact, and control.</desc>
+  <defs>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#dedacf" stroke-width="0.7" opacity="0.5"/>
+    </pattern>
+    <linearGradient id="object-fill" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#efe4d7"/>
+      <stop offset="1" stop-color="#e2d0ba"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="360" rx="12" fill="#faf8f3"/>
+  <rect x="762" y="24" width="490" height="312" rx="6" fill="url(#grid)"/>
+  <path d="M736 40V320" stroke="#dedacf"/>
+
+  <g font-family="Georgia, 'Times New Roman', serif">
+    <text x="52" y="57" fill="#64675d" font-size="15" letter-spacing="3.2">AWESOME RESEARCH COLLECTION</text>
+    <text x="48" y="133" fill="#3e5949" font-size="65" font-weight="700" letter-spacing="-1.8">Dexterous</text>
+    <text x="48" y="203" fill="#3e5949" font-size="65" font-weight="700" letter-spacing="-1.8">Manipulation</text>
+    <text x="52" y="252" fill="#98623f" font-size="23">Motion · Contact · Control</text>
+    <path d="M52 284H104" stroke="#98623f" stroke-width="2"/>
+    <text x="118" y="290" fill="#64675d" font-size="16">A living literature collection</text>
+  </g>
+
+  <!-- Original mechanical-hand illustration: object, articulated fingers, palm. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="976" cy="145" r="91" stroke="#dedacf" stroke-dasharray="3 7"/>
+    <path d="M1115 86H1140M1127.5 73.5V98.5M840 281H860M850 271V291" stroke="#dedacf" stroke-width="1.5"/>
+    <path d="M854 64H891M1062 312H1148" stroke="#dedacf"/>
+
+    <circle cx="973" cy="143" r="57" fill="url(#object-fill)" stroke="#98623f" stroke-width="1.5"/>
+    <ellipse cx="973" cy="143" rx="57" ry="20" stroke="#98623f" stroke-opacity="0.4"/>
+    <path d="M973 86C944 109 944 177 973 200M973 86C1002 109 1002 177 973 200" stroke="#98623f" stroke-opacity="0.4"/>
+
+    <!-- Thick outlined links make the five articulated digits distinct. -->
+    <g stroke="#3e5949" stroke-width="17">
+      <path d="M941 224L929 175L902 141L879 128"/>
+      <path d="M962 220L969 170L951 116L935 99"/>
+      <path d="M984 220L1010 166L998 106L980 77"/>
+      <path d="M1003 237L1042 187L1040 143L1020 113"/>
+    </g>
+    <g stroke="#faf8f3" stroke-width="10">
+      <path d="M941 224L929 175L902 141L879 128"/>
+      <path d="M962 220L969 170L951 116L935 99"/>
+      <path d="M984 220L1010 166L998 106L980 77"/>
+      <path d="M1003 237L1042 187L1040 143L1020 113"/>
+    </g>
+
+    <path d="M928 278L913 231Q906 211 927 205L973 201Q997 198 1008 219L1035 271Q1042 286 1026 291L952 312Q936 316 932 299Z" fill="#edf0e8" stroke="#3e5949" stroke-width="2"/>
+    <path d="M944 234L974 225L1003 274L960 287Z" stroke="#3e5949" stroke-opacity="0.4"/>
+    <circle cx="964" cy="251" r="6" stroke="#3e5949" stroke-width="1.5"/>
+    <path d="M949 313L955 328L1019 310L1013 295" fill="#faf8f3" stroke="#3e5949" stroke-width="2"/>
+
+    <path d="M929 264L889 236L877 191L905 169" stroke="#3e5949" stroke-width="20"/>
+    <path d="M929 264L889 236L877 191L905 169" stroke="#faf8f3" stroke-width="13"/>
+
+    <g fill="#faf8f3" stroke="#3e5949" stroke-width="2">
+      <circle cx="929" cy="175" r="7"/><circle cx="902" cy="141" r="6"/>
+      <circle cx="969" cy="170" r="7"/><circle cx="951" cy="116" r="6"/>
+      <circle cx="1010" cy="166" r="7"/><circle cx="998" cy="106" r="6"/>
+      <circle cx="1042" cy="187" r="7"/><circle cx="1040" cy="143" r="6"/>
+      <circle cx="889" cy="236" r="8"/><circle cx="877" cy="191" r="7"/>
+      <circle cx="929" cy="264" r="8"/>
+    </g>
+    <g fill="#98623f" stroke="#faf8f3" stroke-width="2">
+      <circle cx="935" cy="99" r="5"/>
+      <circle cx="980" cy="77" r="5"/>
+      <circle cx="1020" cy="113" r="5"/>
+      <circle cx="905" cy="169" r="5"/>
+    </g>
+
+    <path d="M1080 195C1100 173 1106 145 1098 122" stroke="#98623f" stroke-width="1.5"/>
+    <path d="M1093 131L1098 121L1108 127" stroke="#98623f" stroke-width="1.5"/>
+    <path d="M1062 263H1144" stroke="#dedacf"/>
+    <circle cx="1062" cy="263" r="3" fill="#98623f" stroke="none"/>
+  </g>
+</svg>

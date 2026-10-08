@@ -38,7 +38,7 @@
 2. 如果当前抓取仍在运行，稍后检查一次；如果未成功，不覆盖上次成功队列。读取已有成功候选并注明扫描时间。保留尚未合并的审核结论、条目和维护者修改。出现无法安全合并的冲突时报告，不重置或强推覆盖。
 3. 按尚未处理的候选优先，每次最多审核 20 篇；有积压时优先较早进入队列的论文。已暂缓且来源没有变化的论文不每天重复重试；至少间隔七天或出现新版本/新证据时再检查。达到批次上限时在报告中列出剩余数量。
 4. 在临时目录导出当前分类，再按实际读取的证据生成 review bundle。使用下面的校验脚本先 dry-run，再应用到审核副本。不要把全文、完整摘要、API 密钥或本机私人路径提交到公开仓库。
-5. 运行 Python 测试与目录筛选测试。检查 diff：原有正式条目应保持不变，新增条目和结论都有来源。同步候选分支的 candidates.json / watch.json 时先核实它仍是成功扫描，不能把抓取时间冒充审核时间。
+5. 运行 `node scripts/build_readme.cjs`，同步 README 的目录数量、阅读起点和近期论文；将 README 与论文数据一起提交。运行 Python 测试、目录筛选测试和 `node scripts/build_readme.cjs --check`。检查 diff：原有正式条目应保持不变，新增条目和结论都有来源。同步候选分支的 candidates.json / watch.json 时先核实它仍是成功扫描，不能把抓取时间冒充审核时间。
 6. 更新 `bot/codex-paper-review` 的 PR，保留已有未合并的工作。PR 正文用中文列出审核时间、扫描时间、通过/暂缓/排除数量、论文链接、简短理由和剩余数量；清楚说明只有合并后才发布。不得在候选机器人的分支上保存正式条目。
 7. 如本轮没有新证据、没有新结论或没有需要维护者处理的变化，保持安静；PR 更新、审核失败或需要维护者操作时通知。
 
@@ -54,8 +54,10 @@ GitHub 的 Git 传输不可用但 GitHub API 可用时，可以通过 `gh api` �
 node -e 'const c=require("./catalog-core.js"); process.stdout.write(JSON.stringify({categories:c.categories,tags:c.groups.flatMap(g=>g.tags)}))' > /tmp/dexterous-review-taxonomy.json
 python3 scripts/apply_reviews.py --catalog papers.json --ledger reviews.json --reviews /tmp/dexterous-review-bundle.json --taxonomy /tmp/dexterous-review-taxonomy.json --dry-run
 python3 scripts/apply_reviews.py --catalog papers.json --ledger reviews.json --reviews /tmp/dexterous-review-bundle.json --taxonomy /tmp/dexterous-review-taxonomy.json
+node scripts/build_readme.cjs
 python3 -m unittest discover -s scripts -p 'test_*.py' -v
 node --test scripts/test_catalog_core.cjs
+node scripts/build_readme.cjs --check
 ```
 
 审核包根字段为 `schema_version`（1）、`rules_version`（dexterous-v1）、`reviewed_at`（UTC）、`reviewer`（Codex）、`reviews`。每条包含核验后的 `source`、`decision`、`reason_zh`、`review_depth`、带 URL 和简短改述的 `evidence`；accept 还需完整 `paper`。触觉部署判断另需 `runtime_tactile` 方法证据。具体字段与失败情况见脚本及其测试。
