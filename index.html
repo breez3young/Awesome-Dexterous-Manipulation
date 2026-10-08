@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A curated reading desk for dexterous manipulation, tactile dexterity, and robot touch.">
+  <title>Awesome Dexterous Manipulation</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./landscape.css">
+  <script src="./catalog-core.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#collection">Skip to papers</a>
+  <div class="desk" id="desk">
+    <aside class="rail" aria-label="Collection navigation">
+      <header class="brand"><span class="brand-mark" aria-hidden="true">✳</span><h1>Awesome Dexterous Manipulation</h1></header>
+      <nav class="navigation" aria-label="Views">
+        <button id="papers-nav" aria-current="page">Papers</button>
+        <button id="stats-nav">Stats</button>
+        <button id="watch-nav">Daily watch</button>
+      </nav>
+      <p class="rail-description">A reading desk for multi-fingered manipulation and robot touch.</p>
+      <section class="watch-card" aria-labelledby="watch-label">
+        <p class="eyebrow" id="watch-label">arXiv paper watch</p>
+        <p class="watch-time">09:35 <span>Beijing time</span></p>
+        <p class="watch-cadence">Daily discovery · human review</p>
+        <div class="watch-last"><span class="status-dot" aria-hidden="true"></span><span id="watch-status">Loading search status…</span></div>
+        <p id="last-search">Checking the latest completed search.</p>
+        <button id="review-candidates" class="text-button">Browse candidates</button>
+      </section>
+      <div class="rail-bottom">
+        <a href="./docs/LITERATURE_MAP.zh-CN.md">Literature map · 文献导读</a>
+        <div class="rail-actions"><a href="https://breez3young.github.io/">Yang Zhang</a><button id="theme" aria-label="Switch to dark mode" title="Switch to dark mode">◐</button></div>
+        <p class="credit">Inspired by <a href="https://huskydoge.github.io/Awesome-Loop-Models/index.html" target="_blank" rel="noopener noreferrer">Awesome Loop Models</a>.</p>
+      </div>
+    </aside>
+
+    <main id="collection" tabindex="-1">
+      <section id="papers-panel" aria-labelledby="catalog-heading">
+        <header class="catalog-toolbar">
+          <div class="heading-row"><h2 id="catalog-heading">Papers</h2><div class="search-field"><span aria-hidden="true">⌕</span><label for="search" class="sr-only">Search papers</label><input id="search" type="search" placeholder="Search papers, keywords…" autocomplete="off"></div></div>
+          <div class="toolbar-row"><button id="toggle-filters" aria-expanded="false" aria-controls="filter-panel">Filters <span aria-hidden="true">☷</span><span id="filter-count"></span></button><label class="sort-label" for="sort">Sort</label><select id="sort"><option value="newest">Publication date</option><option value="curated">Curated</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select><div class="view-controls" aria-label="View mode"><button id="cards-view" aria-pressed="true">List</button><button id="table-view" aria-pressed="false">Table</button></div></div>
+          <div class="topic-heading"><span>Research areas</span><button id="reset" class="text-button">Reset</button></div>
+          <div id="categories" class="category-tags" role="group" aria-label="Research area tags"></div>
+          <div id="active-filters" class="active-filters"></div>
+          <p id="result-count" class="result-count" aria-live="polite">Loading collection…</p>
+        <section id="filter-panel" class="filter-panel" aria-label="Additional filters" hidden>
+          <div class="filter-heading"><h3>Filters</h3><button id="close-filters" aria-label="Close filters">×</button></div>
+          <p class="filter-hint">Choose a research question, then combine tags. Selected tags use AND; research areas use OR.</p>
+          <div class="date-range"><span>Publication date</span><label><span class="sr-only">Start date</span><input type="date" id="date-start"></label><span aria-hidden="true">→</span><label><span class="sr-only">End date</span><input type="date" id="date-end"></label><button id="clear-dates" class="text-button">Clear</button></div><p id="date-error" class="date-error" role="status" hidden>Start date must be on or before end date.</p>
+          <div class="filter-options"><label class="check"><input type="checkbox" id="code-only"> With code</label><button id="reset-filter-panel" class="text-button">Reset all filters</button></div>
+          <div id="filter-tags" class="filter-tags"></div>
+          <details class="advanced-filters"><summary>Platform &amp; recorded metadata</summary><div class="facet-grid"><label>Sensing<select id="sensing"><option value="">All sensing</option></select></label><label>Hand / platform<select id="hand"><option value="">All platforms</option></select></label><label>Task<select id="task"><option value="">All tasks</option></select></label><label>Learning method<select id="method"><option value="">All methods</option></select></label></div>
+          </details>
+        </section>
+        </header>
+        <div id="results" aria-busy="true"><p class="empty">Loading verified paper records…</p></div>
+        <footer><span id="updated"></span> · <a href="./papers.json">Open catalog data</a></footer>
+      </section>
+
+      <section id="stats-panel" class="stats-panel" aria-labelledby="stats-heading" hidden>
+        <header class="stats-header"><div><p class="eyebrow">Research landscape</p><h2 id="stats-heading">Dexterity, mapped.</h2><p>Learning, contact, and skill transfer across the reading collection.</p></div><div class="snapshot"><span>Catalog snapshot</span><time id="stats-snapshot"></time></div></header>
+        <div class="stats-scope"><p id="stats-scope" aria-live="polite"></p><button id="stats-reset" class="text-button">Show full collection</button></div>
+        <dl class="stats-metrics" id="stats-metrics"></dl>
+        <article class="chart-card publication-chart"><header class="chart-heading"><div><p class="eyebrow">Publication activity</p><h3>Release timeline</h3><p id="timeline-description">First public release dates, not revision dates.</p></div><div class="chart-switch" aria-label="Timeline grouping"><button id="annual-chart" aria-pressed="true">By year</button><button id="monthly-chart" aria-pressed="false">Latest year</button></div></header><div id="release-chart" class="release-chart"></div><p id="date-coverage" class="chart-note"></p></article>
+        <div class="stats-grid"><article class="chart-card"><p class="eyebrow">Scope</p><h3>Research areas</h3><p class="chart-note">One primary area per paper.</p><div id="category-chart" class="distribution-chart"></div></article><article class="chart-card"><p class="eyebrow">Learning</p><h3>Policy families</h3><p class="chart-note">A paper can use more than one method.</p><div id="policy-chart" class="distribution-chart"></div></article><article class="chart-card"><p class="eyebrow">From data to action</p><h3>Data &amp; transfer</h3><p class="chart-note">How human experience becomes robot skills.</p><div id="transfer-chart" class="distribution-chart"></div></article><article class="chart-card"><p class="eyebrow">Capabilities</p><h3>Manipulation skills</h3><p class="chart-note">Click a bar to explore the matching papers.</p><div id="capability-chart" class="distribution-chart"></div></article></div>
+        <p class="stats-footnote">These charts describe this curated collection, not the entire research field. Multi-label totals can exceed the paper count. Pending arXiv candidates are excluded.</p>
+      </section>
+
+      <section id="watch-panel" class="watch-panel" aria-labelledby="watch-heading" hidden>
+        <header><p class="eyebrow">Discovery &amp; review</p><h2 id="watch-heading">Daily arXiv watch</h2><p>New submissions and revisions, ready for a closer look.</p></header>
+        <div class="watch-flow"><div><span>01</span><strong>Discover</strong><p>Search the last 7 days of arXiv updates.</p></div><div><span>02</span><strong>Review</strong><p>Check relevance, hardware, sensing, and contributions.</p></div><div><span>03</span><strong>Curate</strong><p>Approved papers join the reading collection.</p></div></div>
+        <div class="watch-note"><p id="watch-detail">Loading the latest completed search…</p><p>Daily schedule: 09:35 Beijing time (01:35 UTC). Recurring runs start after GitHub Actions is enabled in the repository.</p><a href="./docs/GITHUB_ACTIONS_SETUP.zh-CN.md">Set up GitHub Actions ↗</a><a href="./candidates.json">Candidate data ↗</a></div>
+        <div class="queue-heading"><h3>Awaiting review</h3><span id="queue-count"></span></div>
+        <p class="queue-note">Keyword matches are discovery leads. These papers are not yet part of the curated collection.</p>
+        <ol id="candidate-list" class="candidate-list"><li>Loading candidates…</li></ol>
+      </section>
+    </main>
+
+    <dialog id="paper-detail" class="paper-detail" aria-labelledby="detail-title">
+      <div class="detail-toolbar"><span class="eyebrow">Reading notes</span><button id="close-detail" aria-label="Close paper details">×</button></div>
+      <div id="detail-content"></div>
+    </dialog>
+  </div>
+</body>
+</html>

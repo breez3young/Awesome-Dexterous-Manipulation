@@ -1,0 +1,7 @@
+/* Research collection entry */
+.collection-project { padding: 22px 0; border-bottom: 1px solid var(--line); }
+.collection-project-label { margin: 0 0 8px; color: var(--muted); font-size: 12px; letter-spacing: 0.1em; }
+.collection-project h3 { margin: 0; font: 400 25px/1.35 var(--serif); }
+.collection-project h3 a { text-decoration: none; }
+.collection-project > p:not(.collection-project-label) { max-width: 800px; color: var(--muted); margin: 12px 0; }
+.collection-project > a { font-size: 14px; }

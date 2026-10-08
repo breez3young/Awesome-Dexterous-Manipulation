@@ -1,0 +1,122 @@
+name: Dexterous paper watch
+
+on:
+  schedule:
+    # 09:35 Asia/Shanghai. API indexing can lag announcements; use a rolling window.
+    # GitHub schedules are best-effort and can run late.
+    - cron: '35 1 * * *'
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: '回看天数：平时 7 天；中断后可补查 14 或 30 天'
+        type: choice
+        required: true
+        default: '7'
+        options:
+          - '7'
+          - '14'
+          - '30'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: dexterous-paper-watch
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      BOT_BRANCH: bot/dexterous-watch
+      BASE_BRANCH: ${{ github.event.repository.default_branch }}
+      DATA_DIR: .
+    steps:
+      - name: Check out the default branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Validate watcher behavior
+        run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
+
+      - name: Preserve discoveries waiting in the review branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          previous="$(git ls-remote --heads origin "refs/heads/$BOT_BRANCH" | cut -f1)"
+          printf 'PREVIOUS_BOT_SHA=%s\n' "$previous" >> "$GITHUB_ENV"
+          if [ -n "$previous" ]; then
+            git fetch origin "refs/heads/$BOT_BRANCH:refs/remotes/origin/$BOT_BRANCH"
+            if git cat-file -e "$previous:candidates.json"; then
+              git show "$previous:candidates.json" > "$RUNNER_TEMP/previous-dexterous-candidates.json"
+            fi
+          fi
+
+      - name: Fetch recent arXiv candidates
+        env:
+          LOOKBACK_DAYS: ${{ inputs.lookback_days || '7' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "$LOOKBACK_DAYS" in 7|14|30) ;; *) printf 'Invalid lookback window.\n' >&2; exit 1 ;; esac
+          args=(--days "$LOOKBACK_DAYS")
+          if [ -f "$RUNNER_TEMP/previous-dexterous-candidates.json" ]; then
+            args+=(--previous-candidates "$RUNNER_TEMP/previous-dexterous-candidates.json")
+          fi
+          python3 scripts/dexterous_watch.py --data-dir "$DATA_DIR" "${args[@]}"
+
+      - name: Prepare the readable review report
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/watch_report.py "$DATA_DIR/watch.json" > "$RUNNER_TEMP/dexterous-watch-pr.md"
+          cat "$RUNNER_TEMP/dexterous-watch-pr.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Create or update the human-review pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          files=("$DATA_DIR/candidates.json" "$DATA_DIR/watch.json")
+          git add -- "${files[@]}"
+          if git diff --cached --quiet; then
+            printf 'No collection changes; no pull request is needed.\n'
+            exit 0
+          fi
+          if [ -n "$PREVIOUS_BOT_SHA" ] && git diff --cached --quiet "$PREVIOUS_BOT_SHA" -- "${files[@]}"; then
+            printf 'The review branch already contains this report.\n'
+          else
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git checkout -b "$BOT_BRANCH"
+            git commit -m 'chore: update dexterous paper review queue'
+            # Only the dedicated generated-data branch is replaced. The lease
+            # prevents overwriting an edit made after this run inspected it.
+            git push "--force-with-lease=refs/heads/$BOT_BRANCH:$PREVIOUS_BOT_SHA" origin "HEAD:refs/heads/$BOT_BRANCH"
+          fi
+          body="$RUNNER_TEMP/dexterous-watch-pr.md"
+          number="$(gh pr list --head "$BOT_BRANCH" --base "$BASE_BRANCH" --state open --json number --jq '.[0].number // empty')"
+          if [ -n "$number" ]; then
+            gh pr edit "$number" --title 'Review dexterous paper discoveries' --body-file "$body"
+          elif ! gh pr create --head "$BOT_BRANCH" --base "$BASE_BRANCH" --title 'Review dexterous paper discoveries' --body-file "$body"; then
+            printf '%s\n' 'PR creation failed. The generated branch was saved. Enable Settings > Actions > General > Workflow permissions > Allow GitHub Actions to create and approve pull requests (if permitted by your organization), then rerun this workflow or create the PR manually.' >&2
+            exit 1
+          fi
+
+      - name: Explain a failed run
+        if: failure()
+        shell: bash
+        run: |
+          cat >> "$GITHUB_STEP_SUMMARY" <<'NOTE'
+
+          ### 本次未完成
+          请检查上方失败步骤。arXiv 连接或分页失败时不会发布半份检索结果；可稍后手动重跑。
+          若失败步骤为创建 PR，生成的机器人分支可能已保存：请启用 Actions 创建 PR 权限，然后重跑或手动创建 PR。
+          完整设置与审核步骤见仓库的 `docs/GITHUB_ACTIONS_SETUP.zh-CN.md`。
+          NOTE
