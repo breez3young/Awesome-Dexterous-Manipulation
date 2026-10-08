@@ -2,7 +2,7 @@
 
 本项目采用「每天检索 → 生成候选 PR → 人工审核 → 收录并发布」的流程。电脑关机也能运行，无须 Codex 定时任务、付费模型 API 或个人访问令牌。
 
-目前文件已准备好，但尚未连接 GitHub 仓库，云端定时执行也尚未启用。正式目录已整理为 58 篇。原始候选记录来自此前手动检索；页面会排除后来已经正式收录的论文，原扫描时间保持不变。
+GitHub 仓库、Pages 和每日抓取已启用。现在增加本地 Codex 定时审核，并由维护者确认合并审核 PR；详见 [Codex 自动审核流程](CODEX_REVIEW.zh-CN.md)。下面保留首次设置与手动审核的说明，便于重新部署或排查问题。
 
 ## 1. 将整个文件夹推送到仓库
 
@@ -114,7 +114,7 @@ GitHub 定时任务可能延迟，高负载时甚至被丢弃；公共仓库连�
 
 点击 **Save**。根目录已包含空文件 `.nojekyll`，让 Pages 直接发布现有静态文件。网站入口为 `index.html`，从同目录读取论文与候选数据，无须 npm 构建或另配服务器。
 
-在 **Actions** 中等待 Pages 发布任务成功，再回到 **Settings → Pages** 打开 **Visit site**。以 `breez3young/awesome-dexterous-manipulation` 为例，默认网站地址是 `https://breez3young.github.io/awesome-dexterous-manipulation/`。实际地址以 Pages 显示为准；这只是发布后的预期地址，目前尚未上线。以后人工推送或合并修改到发布分支，Pages 会更新网站。
+在 **Actions** 中等待 Pages 发布任务成功，再回到 **Settings → Pages** 打开 **Visit site**。以 `breez3young/awesome-dexterous-manipulation` 为例，默认网站地址是 `https://breez3young.github.io/awesome-dexterous-manipulation/`。实际地址以 Pages 显示为准；当前已发布的实际地址为 `https://breez3young.github.io/Awesome-Dexterous-Manipulation/`。以后人工推送或合并修改到发布分支，Pages 会更新网站。
 
 参考：[GitHub Pages 发布来源](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)、[静态网站入口与 .nojekyll](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)。
 

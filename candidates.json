@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-08T09:33:18Z",
+  "updated_at": "2026-10-08T18:15:39Z",
   "rejected_ids": [],
   "items": [
     {
@@ -32,35 +32,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
-    },
-    {
-      "id": "2607.28198",
-      "title": "UniCross: Unified Cross-Skill Dexterous Manipulation Synthesis",
-      "authors": [
-        "Hui Zhang",
-        "Julian Ferchow",
-        "Jie Song",
-        "Mirko Meboldt"
-      ],
-      "published": "2026-07-30T13:35:45Z",
-      "updated": "2026-10-07T16:15:16Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2607.28198",
-        "pdf": "https://arxiv.org/pdf/2607.28198"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "Many dexterous manipulation tasks require the object to remain securely held throughout the interaction. From the perspective of hand-object relational motion, such …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.10283",
@@ -89,7 +61,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.09291",
@@ -116,7 +88,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.09224",
@@ -144,7 +116,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2606.09615",
@@ -175,7 +147,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2604.20689",
@@ -205,7 +177,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.07692",
@@ -235,7 +207,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.08870",
@@ -265,7 +237,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.07681",
@@ -296,7 +268,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.07525",
@@ -330,7 +302,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.07511",
@@ -361,7 +333,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.06331",
@@ -390,7 +362,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2607.09701",
@@ -432,7 +404,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.00781",
@@ -464,7 +436,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2609.21045",
@@ -495,7 +467,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2607.04546",
@@ -523,7 +495,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.01849",
@@ -556,7 +528,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.05180",
@@ -586,7 +558,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.05081",
@@ -617,7 +589,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.04765",
@@ -646,7 +618,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.04741",
@@ -685,7 +657,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.04391",
@@ -717,7 +689,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.04363",
@@ -749,7 +721,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2609.35318",
@@ -778,7 +750,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.03861",
@@ -809,7 +781,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.03278",
@@ -837,7 +809,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.02840",
@@ -869,7 +841,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-08T09:33:18Z"
+      "last_seen": "2026-10-08T18:15:39Z"
     },
     {
       "id": "2610.02338",

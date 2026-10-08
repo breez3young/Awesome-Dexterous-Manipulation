@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "reviews": [
+    {
+      "key": "2610.10370|v1|2026-10-07T16:37:01+00:00|dexterous-v1",
+      "digest": "f0bb05b415286d6502ac3b2aff8f68738c1e6c32c1d9dfa0030f2edcad4e5c17",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-08T18:29:36Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "title": "PalmSpace: Towards a Versatile On-Palm Interaction Space through Unified Touch Modeling",
+          "authors": [
+            "Chentao Li",
+            "Mingze Gao",
+            "Runze Sun",
+            "Zhaoguo Wang",
+            "Jianjiang Feng",
+            "Jie Zhou"
+          ],
+          "published": "2026-10-07T16:37:01Z",
+          "updated": "2026-10-07T16:37:01Z",
+          "version": 1,
+          "arxiv_id": "2610.10370",
+          "url": "https://arxiv.org/abs/2610.10370v1",
+          "primary_urls": []
+        },
+        "decision": "reject",
+        "reason_zh": "研究对象是人类掌面上的腕戴式红外交互输入，用于智能眼镜/MR 的点击、拖动与手势；没有机器人灵巧手操作或机器人触觉控制贡献，属于关键词误命中。",
+        "review_depth": "abstract",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.10370v1",
+            "paraphrase": "设备佩戴于人的手腕，以裸露手掌作为输入界面，评估对象为 17 位参与者及人机交互任务；这是人体触摸输入，不是机器人操作。",
+            "section": "Abstract; submission history"
+          }
+        ]
+      }
+    },
+    {
+      "key": "2610.10283|v1|2026-10-07T15:48:19+00:00|dexterous-v1",
+      "digest": "c5764201c6794867d423dfc64d2503cbf5d1afebbc0de405d3a1c573e8e0e5e5",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-08T18:29:36Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "title": "Temporal Visuo-Tactile Learning for Dexterous Grasp Stability",
+          "authors": [
+            "Ken Nakahara",
+            "Aleksei Buvailik",
+            "Prokhor Kotov",
+            "Roberto Calandra"
+          ],
+          "published": "2026-10-07T15:48:19Z",
+          "updated": "2026-10-07T15:48:19Z",
+          "version": 1,
+          "arxiv_id": "2610.10283",
+          "url": "https://arxiv.org/abs/2610.10283v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.10283v1#S4.SS2",
+            "https://lasr-lab.github.io/dexterous-grasp-stability/",
+            "https://github.com/lasr-lab/dexterous-grasp-stability",
+            "https://github.com/lasr-lab/dexterous-grasp-stability/blob/main/src/README.md"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "多指灵巧手的真实机器人抓取工作，正文明确确认执行时融合 Digit 360 触觉、视觉与本体状态，在线决定抬升或重抓；满足核心触觉灵巧操作口径。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.10283v1",
+            "paraphrase": "核对标题、四位作者、首次提交时间及当前唯一版本 v1。",
+            "section": "Title; authors; submission history"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.10283v1#S4.SS2",
+            "paraphrase": "Tilburg Hand 四个指尖装有 Digit 360；执行时用抬升前的多模态序列预测稳定性，并选择抬升或重抓。模型用抓取成功标签监督训练，不是强化学习或模仿策略。",
+            "section": "III Hardware Setup; IV-A; IV-B Model-Guided Grasp and Regrasp Execution"
+          },
+          {
+            "url": "https://lasr-lab.github.io/dexterous-grasp-stability/",
+            "paraphrase": "官方项目页确认四指实机和部署流程；触觉门控在已执行的抬升中达到 82.0% 成功率，相较无触觉门控提高 10.5 个百分点。该统计不等于全部尝试的完成率。",
+            "section": "Hardware Setup; Temporal Multimodal Learning; Real-Robot Grasping Evaluation"
+          },
+          {
+            "url": "https://github.com/lasr-lab/dexterous-grasp-stability",
+            "paraphrase": "官方仓库提供数据查看与重采样脚本；不能据此声称完整模型训练或机器人部署代码已公开。",
+            "section": "Repository Contents"
+          },
+          {
+            "url": "https://github.com/lasr-lab/dexterous-grasp-stability/blob/main/src/README.md",
+            "paraphrase": "子目录说明仍将数据发布标为 coming soon，与根目录的可用描述不一致。",
+            "section": "Download"
+          }
+        ],
+        "paper": {
+          "id": "arxiv-2610.10283",
+          "title": "Temporal Visuo-Tactile Learning for Dexterous Grasp Stability",
+          "authors": [
+            "Ken Nakahara",
+            "Aleksei Buvailik",
+            "Prokhor Kotov",
+            "Roberto Calandra"
+          ],
+          "year": 2026,
+          "date": "2026-10-07",
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "tldr": "A temporal model fuses vision, proprioception, and fingertip touch to assess a grasp before lifting. On a four-fingered robot, its stability estimate gates lift-or-regrasp decisions. The work also collects 10,000 multimodal grasp trials across 200 objects and studies which tactile spatial and temporal cues aid prediction.",
+          "tldr_zh": "融合视觉、本体状态与指尖触觉序列，在抬升前预测抓取稳定性，并在四指实机上据此选择抬升或重抓。工作采集覆盖 200 件物体的 10,000 次多模态抓取试验，分析触觉空间细节和时序信息对预测的作用。",
+          "tags": [
+            "Dexterous grasping",
+            "Tactile feedback",
+            "Vision",
+            "Proprioception",
+            "Dataset / benchmark"
+          ],
+          "sensing": [
+            "Vision",
+            "Proprioception",
+            "Digit 360"
+          ],
+          "hand": [
+            "Tilburg Hand"
+          ],
+          "task": [
+            "Dexterous grasping",
+            "Grasp stability prediction",
+            "Regrasping"
+          ],
+          "method": [
+            "Supervised learning",
+            "Temporal multimodal learning",
+            "Stability-gated execution"
+          ],
+          "evaluation": "Real robot",
+          "evaluation_tags": [
+            "Real robot"
+          ],
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.10283",
+            "project": "https://lasr-lab.github.io/dexterous-grasp-stability/",
+            "code": "https://github.com/lasr-lab/dexterous-grasp-stability"
+          },
+          "source_url": "https://arxiv.org/abs/2610.10283",
+          "summary_basis": "arXiv abstract, full-text hardware/method sections, and official project/repository pages",
+          "sources": [
+            "https://arxiv.org/abs/2610.10283",
+            "https://arxiv.org/html/2610.10283v1",
+            "https://lasr-lab.github.io/dexterous-grasp-stability/",
+            "https://github.com/lasr-lab/dexterous-grasp-stability",
+            "https://github.com/lasr-lab/dexterous-grasp-stability/blob/main/src/README.md"
+          ],
+          "bib_keys": [],
+          "date_kind": "First arXiv submission",
+          "metadata_source": "https://arxiv.org/abs/2610.10283",
+          "metadata_checked": "2026-10-09",
+          "arxiv_version": 1,
+          "arxiv_updated": "2026-10-07T15:48:19Z",
+          "notes_zh": "触觉用于执行时的抬升/重抓决策；不标记为强化学习、模仿学习或力控制。代码链接目前对应数据查看与重采样工具；完整训练/部署代码和数据下载可用性未独立确认。"
+        },
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2610.10283v1#S4.SS2",
+          "paraphrase": "部署阶段稳定性预测器读取四个 Digit 360 指尖触觉、外部 RGB 与本体状态序列，输出概率用于当次执行中的抬升或重抓决策。"
+        },
+        "limitations_zh": [
+          "数据 DOI 访问返回 Cache miss，未独立确认数据下载可用性。",
+          "官方仓库已核验的是数据查看和重采样脚本，未核验完整训练或机器人部署实现。"
+        ]
+      }
+    },
+    {
+      "key": "2610.09291|v1|2026-10-07T01:49:39+00:00|dexterous-v1",
+      "digest": "73e8ab42bea9fe8caf69cbe2d96c9dc5d22441e702a9a218b3f1d13d83716786",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-08T18:29:36Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "title": "Co²Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction",
+          "authors": [
+            "Jeonghwan Kim",
+            "Hyeonwoo Kim",
+            "Hanbyul Joo"
+          ],
+          "published": "2026-10-07T01:49:39Z",
+          "updated": "2026-10-07T01:49:39Z",
+          "version": 1,
+          "arxiv_id": "2610.09291",
+          "url": "https://arxiv.org/abs/2610.09291v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.09291v1#S3.SS1",
+            "https://arxiv.org/html/2610.09291v1#S6.SS0.SSS0.Px1"
+          ]
+        },
+        "decision": "defer",
+        "reason_zh": "论文有实质手指抓取与手物交互内容，但主体为 SMPL-X 仿真人体角色的全身技能组合，真实机器人迁移列为未来工作。可能适合 Hand–Object Interaction 相邻研究，自动审核暂不扩宽收录边界，留待人工确认。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.09291v1",
+            "paraphrase": "标题、作者和 v1 元数据相符；目标是把全身场景交互与物体操作技能组合。",
+            "section": "Title; authors; submission history; abstract"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.09291v1#S3.SS1",
+            "paraphrase": "控制对象为 52 关节 SMPL-X 人体角色，实验在 IsaacLab 中进行，涵盖抓取搬放以及持物时的坐下、攀爬。适配真实人形机器人明确属于未来工作；仿真接触状态不等于机器人运行时触觉传感。",
+            "section": "3.1 Formulation; 4.2 Pick-move-place; 5.1 Simulation setups; 6 Future Work"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.09291v1#S6.SS0.SSS0.Px1",
+            "paraphrase": "Future Work 将策略向真实人形机器人适配列为后续研究，不能标记为已经部署的机器人操作方法。",
+            "section": "6 Future Work"
+          }
+        ]
+      }
+    }
+  ]
+}
