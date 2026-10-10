@@ -2120,6 +2120,1519 @@
           "notes_zh": "世界模型分支仅用于训练，推理时移除；深度不进入部署策略。项目页面未能核验，因此未添加项目或代码链接。"
         }
       }
+    },
+    {
+      "key": "2610.06331|v1|2026-10-05T13:40:54+00:00|dexterous-v1",
+      "digest": "d891996cddab335b1e3b42ed6b3e00fd6a3d2460d3e1533cf3558d4a44e7708b",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.06331",
+          "version": 1,
+          "title": "DexForge: High-Fidelity Physics-Informed Dexterous Retargeting",
+          "authors": [
+            "Meizhong Wang",
+            "Kun Cao",
+            "Ruiqi Ni",
+            "Lihua Xie",
+            "Yiguang Hong"
+          ],
+          "published": "2026-10-05T13:40:54Z",
+          "updated": "2026-10-05T13:40:54Z",
+          "url": "https://arxiv.org/abs/2610.06331v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.06331v1",
+            "https://wmz1226.github.io/DexForge/",
+            "https://github.com/wmz1226/DexForge"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "通过接触约束与可微动力学把人类视频转成多指机器人轨迹，直接符合灵巧操作；真实验证是物体交互开环回放，不是触觉闭环策略。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.06331v1",
+            "paraphrase": "第3节以球形高斯重建物体，优化机器人可达接触锚点，再用可微动力学细化控制；接触力来自仿真。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.06331v1",
+            "paraphrase": "第4节在130段示教和七种手上评测；附录J用G1搭载LEAP Hand v1回放五物体、共50次，物体交互开环，躯干补偿和身体平衡仍有反馈。"
+          }
+        ],
+        "paper": {
+          "id": "2610.06331",
+          "title": "DexForge: High-Fidelity Physics-Informed Dexterous Retargeting",
+          "authors": [
+            "Meizhong Wang",
+            "Kun Cao",
+            "Ruiqi Ni",
+            "Lihua Xie",
+            "Yiguang Hong"
+          ],
+          "date": "2026-10-05",
+          "year": 2026,
+          "scope": "core",
+          "category": "Dexterous Manipulation",
+          "tldr": "DexForge turns human video into robot trajectories through contact-constrained retargeting and differentiable dynamics. Evaluation covers seven simulated hands, simulator transfer, and open-loop object interaction on a G1 with LEAP Hand v1.",
+          "tldr_zh": "以接触约束重定向和可微动力学优化，将人类视频转成机器人轨迹。评测覆盖七种仿真手、跨仿真器迁移及G1搭载LEAP Hand v1的物体交互开环回放。",
+          "tags": [
+            "Model-based planning",
+            "Human motion transfer",
+            "Retargeting",
+            "Sim-to-real",
+            "Cross-embodiment",
+            "Dexterous grasping",
+            "In-hand manipulation"
+          ],
+          "sensing": [
+            "RGB-D for offline reconstruction",
+            "Motion capture for torso compensation during replay"
+          ],
+          "hand": [
+            "LEAP Hand v1"
+          ],
+          "task": [
+            "Dexterous grasping",
+            "In-hand motion reproduction"
+          ],
+          "method": [
+            "Contact-constrained retargeting",
+            "Differentiable dynamics trajectory optimization",
+            "System identification"
+          ],
+          "evaluation": "Simulation on seven hand embodiments; sim-to-sim transfer; 50 real-robot open-loop grasp-and-hold trials",
+          "notes_zh": "手型字段列已核验的实机手。真实实验不以物体反馈更新动作，成功标准为稳定抓持5秒；无运行时触觉依据。代码链接为重定向部分。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.06331",
+            "project": "https://wmz1226.github.io/DexForge/",
+            "code": "https://github.com/wmz1226/DexForge"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.07511|v1|2026-10-05T23:24:26+00:00|dexterous-v1",
+      "digest": "d02b17d13c61796a81f0b57c28b436695d38943da8d37141d4720bde6cec912f",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.07511",
+          "version": 1,
+          "title": "MobileVISTA: Generative Data Augmentation for Pose Generalization in Mobile Manipulation",
+          "authors": [
+            "Suzannah Wistreich",
+            "Stephen Tian",
+            "Isabella Huang",
+            "Vitor Campagnolo Guizilini",
+            "Sergey Zakharov",
+            "Katherine Liu",
+            "Jiajun Wu"
+          ],
+          "published": "2026-10-05T23:24:26Z",
+          "updated": "2026-10-05T23:24:26Z",
+          "url": "https://arxiv.org/abs/2610.07511v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.07511v1",
+            "https://github.com/NVlabs/dexmimicgen/blob/main/environments.md"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "正文明确使用DexMimicGen环境定义，官方环境文档确认倒物、罐子分类、盒子及抽屉任务使用灵巧手，因此其示教增强已直接在多指仿真操作上验证，归灵巧操作。真实R1 Pro实验使用夹爪，不能表述为实机多指验证。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.07511v1",
+            "paraphrase": "第III节联合生成底座扰动下的视图与重定向末端轨迹，手指命令保持；IV-A及附录B-A说明采用DexMimicGen环境，IV-D与附录D的实机为R1 Pro夹爪。"
+          },
+          {
+            "url": "https://github.com/NVlabs/dexmimicgen/blob/main/environments.md",
+            "paraphrase": "DexMimicGen官方环境说明将TwoArmPouring、TwoArmCanSortRandom及盒子、抽屉整理标为灵巧手任务；结合论文沿用环境定义，可确认仿真评测的多指关联。"
+          }
+        ],
+        "paper": {
+          "id": "2610.07511",
+          "title": "MobileVISTA: Generative Data Augmentation for Pose Generalization in Mobile Manipulation",
+          "authors": [
+            "Suzannah Wistreich",
+            "Stephen Tian",
+            "Isabella Huang",
+            "Vitor Campagnolo Guizilini",
+            "Sergey Zakharov",
+            "Katherine Liu",
+            "Jiajun Wu"
+          ],
+          "date": "2026-10-05",
+          "year": 2026,
+          "scope": "core",
+          "category": "Dexterous Manipulation",
+          "tldr": "MobileVISTA augments demonstrations with jointly synthesized egocentric views and retargeted actions to improve base-pose robustness. Evaluation includes dexterous-hand tasks in simulation and real R1 Pro gripper manipulation; the real experiments do not establish multi-finger deployment.",
+          "tldr_zh": "联合生成第一视角图像与重定向动作示教，提高底座位姿变化下的策略鲁棒性。评测包含多指灵巧手仿真及R1 Pro夹爪实机操作，实机结果不代表多指部署。",
+          "tags": [
+            "Imitation learning",
+            "Diffusion / flow policy",
+            "Retargeting",
+            "Bimanual coordination",
+            "Vision",
+            "Proprioception"
+          ],
+          "sensing": [
+            "Egocentric and wrist RGB images",
+            "Robot proprioceptive states",
+            "RGB-D used for demonstration augmentation"
+          ],
+          "hand": [],
+          "task": [
+            "Bimanual can sorting",
+            "Pouring",
+            "Box and drawer manipulation",
+            "Book stacking and laundry sorting with real grippers"
+          ],
+          "method": [
+            "Geometry-based egocentric view synthesis",
+            "Robot re-rendering",
+            "Base-pose action retargeting",
+            "Diffusion Policy"
+          ],
+          "evaluation": "DexMimicGen dexterous-hand simulation tasks; real Galaxea R1 Pro gripper evaluation on book stacking and laundry sorting",
+          "notes_zh": "多指关联由正文采用的环境定义与DexMimicGen官方说明交叉确认；未核验具体手型号，因此hand留空。实机是夹爪。项目页无法打开，未添加项目或代码链接；DexMimicGen链接仅为环境依据。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.07511"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.07525|v1|2026-10-05T23:47:05+00:00|dexterous-v1",
+      "digest": "de96ee63fe0b0fd28a01cc46c1e65357513afcf15c9e3bd5a6644576c05f1533",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.07525",
+          "version": 1,
+          "title": "ReDex: Repairing Sim-to-Real Dexterous Policies by Finger-Level Compliant Interaction",
+          "authors": [
+            "Jinzhou Li",
+            "Hadi Tabatabaee",
+            "Kelin Yu",
+            "Yuyin Sun",
+            "Cheng-Hao Kuo",
+            "Roberto Martín-Martín",
+            "Nima Fazeli",
+            "X. Alice Wu",
+            "Xianyi Cheng"
+          ],
+          "published": "2026-10-05T23:47:05Z",
+          "updated": "2026-10-05T23:47:05Z",
+          "url": "https://arxiv.org/abs/2610.07525v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.07525v1"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "多指实机纠错与力条件策略直接符合触觉灵巧操作；方法明确最终策略执行读取指尖磁触觉阵列聚合力，区别于仅训练期使用接触信息。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.07525v1",
+            "paraphrase": "第III节冻结仿真基础策略，通过单指柔顺引导收集纠错，再重建力感知目标并训练行为克隆策略。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.07525v1",
+            "paraphrase": "III-D和IV-A明确部署以关节位置及指尖力历史预测动作块，力来自XHAND1的120-taxel磁触觉阵列；真实评测包含两种翻转物体和三种螺丝刀，各物体单独训练。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2610.07525v1",
+          "paraphrase": "III-D部署策略读取五步关节与指尖力历史；IV-A说明力来自各指尖磁触觉阵列。"
+        },
+        "paper": {
+          "id": "2610.07525",
+          "title": "ReDex: Repairing Sim-to-Real Dexterous Policies by Finger-Level Compliant Interaction",
+          "authors": [
+            "Jinzhou Li",
+            "Hadi Tabatabaee",
+            "Kelin Yu",
+            "Yuyin Sun",
+            "Cheng-Hao Kuo",
+            "Roberto Martín-Martín",
+            "Nima Fazeli",
+            "X. Alice Wu",
+            "Xianyi Cheng"
+          ],
+          "date": "2026-10-05",
+          "year": 2026,
+          "scope": "core",
+          "category": "Tactile Dexterous Manipulation",
+          "tldr": "ReDex learns from finger-level physical corrections of a simulation policy, then deploys a standalone behavior-cloning policy conditioned on joint and tactile-force histories. Real XHAND1 tests cover object flipping and screwdriver rotation, with object-specific adaptation.",
+          "tldr_zh": "在仿真策略执行时通过单指柔顺引导纠错，再训练读取关节及触觉力历史的独立行为克隆策略。XHAND1实机验证物体翻转和螺丝刀旋转，适配策略按物体分别训练。",
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Sim-to-real",
+            "Human-in-the-loop",
+            "In-hand manipulation",
+            "Tactile feedback",
+            "Proprioception",
+            "Force control"
+          ],
+          "sensing": [
+            "Joint position history",
+            "Fingertip net three-axis force from magnetic tactile arrays"
+          ],
+          "hand": [
+            "RobotEra XHAND1"
+          ],
+          "task": [
+            "Object flipping",
+            "Screwdriver in-hand rotation"
+          ],
+          "method": [
+            "Simulation PPO and RMA",
+            "Finger-level compliant correction",
+            "Force-informed target reconstruction",
+            "Action-chunking behavior cloning"
+          ],
+          "evaluation": "Autonomous real-robot evaluation on five objects, 25 trials per object–method pair",
+          "notes_zh": "翻转报告成功率；螺丝刀报告旋转进度，不将进度等同成功率。基础策略仅本体感知，触觉反馈加入最终实机策略。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.07525"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.07681|v1|2026-10-06T03:15:59+00:00|dexterous-v1",
+      "digest": "0a505e0b04d68787ed23c013a9ad3c79196efd5b2245652ed42600a5abbc2de2",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.07681",
+          "version": 1,
+          "title": "EigenDEXplore: Structured Exploration for Dexterous Manipulation with Human Priors",
+          "authors": [
+            "Harsh Gupta",
+            "Tyler Ga Wei Lum",
+            "Changhao Wang",
+            "Chuer Pan",
+            "C. Karen Liu",
+            "Jeannette Bohg",
+            "Shuran Song"
+          ],
+          "published": "2026-10-06T03:15:59Z",
+          "updated": "2026-10-06T03:15:59Z",
+          "url": "https://arxiv.org/abs/2610.07681v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.07681v1",
+            "https://eigendexplore.github.io/",
+            "https://github.com/hgupt3/eigendexplore"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "核心贡献针对灵巧手探索：从人手动作提取协调方向，保留完整关节动作空间；多手仿真与两种真实灵巧手部署均提供直接证据，归灵巧操作而非笼统通用优化。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.07681v1",
+            "paraphrase": "第3节重定向人手动作并做PCA，将相关扰动叠加独立关节噪声；PPO和轨迹优化均使用该探索分布，策略部署移除探索参数。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.07681v1",
+            "paraphrase": "第4节覆盖六种手的仿真比较；4.5在Sharpa手臂上闭环跟踪工具位姿航点，并在Allegro实机连续转方块，视觉标记估计方块位姿。"
+          }
+        ],
+        "paper": {
+          "id": "2610.07681",
+          "title": "EigenDEXplore: Structured Exploration for Dexterous Manipulation with Human Priors",
+          "authors": [
+            "Harsh Gupta",
+            "Tyler Ga Wei Lum",
+            "Changhao Wang",
+            "Chuer Pan",
+            "C. Karen Liu",
+            "Jeannette Bohg",
+            "Shuran Song"
+          ],
+          "date": "2026-10-06",
+          "year": 2026,
+          "scope": "core",
+          "category": "Dexterous Manipulation",
+          "tldr": "EigenDEXplore adds human-derived correlated noise during policy and trajectory search while retaining full joint-space actions. It is evaluated across six simulated hands and real Sharpa tool manipulation and Allegro cube reorientation.",
+          "tldr_zh": "在策略与轨迹搜索中加入由人手动作提取的相关探索噪声，同时保留完整关节动作空间。验证覆盖六种仿真手，以及Sharpa工具操作和Allegro方块重定向实机策略。",
+          "tags": [
+            "Reinforcement learning",
+            "Model-based planning",
+            "Human motion transfer",
+            "Retargeting",
+            "Sim-to-real",
+            "Dexterous grasping",
+            "In-hand manipulation",
+            "Bimanual coordination",
+            "Tool use",
+            "Vision"
+          ],
+          "sensing": [
+            "Vision-based cube pose estimation in real-world DeXtreme"
+          ],
+          "hand": [
+            "Sharpa",
+            "Wuji",
+            "Allegro",
+            "XHand",
+            "Schunk",
+            "Inspire"
+          ],
+          "task": [
+            "Tool manipulation",
+            "Cube reorientation",
+            "Bimanual object tracking",
+            "Human-motion retargeting"
+          ],
+          "method": [
+            "PCA coordination prior",
+            "Correlated exploration noise",
+            "PPO",
+            "Sampling-based trajectory optimization"
+          ],
+          "evaluation": "Six hand embodiments in simulation; real Sharpa tool-use and Allegro cube-reorientation policies",
+          "notes_zh": "六种手并非全部实机测试。人手先验作用于训练探索；没有据接触奖励添加触觉标签。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.07681",
+            "project": "https://eigendexplore.github.io/",
+            "code": "https://github.com/hgupt3/eigendexplore"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.08870|v1|2026-10-06T03:22:47+00:00|dexterous-v1",
+      "digest": "6c3f9a5f5774cd8b7edd673730db059b9b4dbd575059d40b93413e40b83f27d4",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.08870",
+          "version": 1,
+          "title": "From Wearable Interfaces to Dexterous Policies: Contact Shifts and Tactile Representations",
+          "authors": [
+            "Ruitong Tian",
+            "Fang Xu",
+            "Noah B. Wilson",
+            "Xianyao Li",
+            "Eric Jing Du"
+          ],
+          "published": "2026-10-06T03:22:47Z",
+          "updated": "2026-10-06T03:22:47Z",
+          "url": "https://arxiv.org/abs/2610.08870v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.08870v1"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "主要研究可穿戴采集几何与触觉表征对数据和策略的影响，归触觉感知与表征；正文同时证明XHand机器人执行读取真实触觉阵列，能够添加运行时触觉标签。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.08870v1",
+            "paraphrase": "III-C明确机器人XHand和外骨骼使用相同Hall触觉模块，将读数构成二值接触或空间接触加力输入，机器人rollout使用复位后的传感基线。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.08870v1",
+            "paraphrase": "IV-D用腕RGB及触觉向量训练扩散策略，不输入本体状态；在Franka搭载12自由度XHand上评测四任务，每条件20次自主rollout，并另做20人界面研究。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2610.08870v1",
+          "paraphrase": "III-C描述机器人Hall阵列及rollout触觉归零，IV-D确认腕图像与触觉向量共同作为实机扩散策略条件。"
+        },
+        "paper": {
+          "id": "2610.08870",
+          "title": "From Wearable Interfaces to Dexterous Policies: Contact Shifts and Tactile Representations",
+          "authors": [
+            "Ruitong Tian",
+            "Fang Xu",
+            "Noah B. Wilson",
+            "Xianyao Li",
+            "Eric Jing Du"
+          ],
+          "date": "2026-10-06",
+          "year": 2026,
+          "scope": "core",
+          "category": "Tactile Sensing & Representation",
+          "tldr": "This study links wearable-interface geometry and tactile representation to demonstration quality and learned dexterous policies. A 20-person study and four real XHand tasks compare interface revisions and binary versus spatial-plus-force tactile inputs.",
+          "tldr_zh": "研究可穿戴界面几何和触觉表示如何影响示教及灵巧策略。通过20人研究和四个XHand实机任务，对比界面改版及二值接触与空间加力输入。",
+          "tags": [
+            "Imitation learning",
+            "Diffusion / flow policy",
+            "Human motion transfer",
+            "Retargeting",
+            "Tactile feedback",
+            "Vision",
+            "Hardware / sensor"
+          ],
+          "sensing": [
+            "Wrist RGB image",
+            "Hall-effect tactile arrays: contact map and aggregate fingertip force"
+          ],
+          "hand": [
+            "XHand (12 DoF)"
+          ],
+          "task": [
+            "Lid twisting",
+            "Egg carton opening",
+            "USB insertion",
+            "Soldering-tool pick and place"
+          ],
+          "method": [
+            "Wearable geometry revision",
+            "Matched demonstration comparison",
+            "Tactile representation comparison",
+            "Diffusion Policy"
+          ],
+          "evaluation": "Twenty-person interface study; autonomous real-robot policies on four tasks with 20 rollouts per condition",
+          "notes_zh": "策略以腕图像和触觉为输入，无本体观测；每条件仅一份训练策略，未隔离空间与力特征各自贡献。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.08870"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.07692|v1|2026-10-06T03:27:37+00:00|dexterous-v1",
+      "digest": "d6c17a88c3ed1bbefd2eba30779b75a8e921ce939479e1d5e7f8247b9c2aee66",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.07692",
+          "version": 1,
+          "title": "ExoBridge: Learning a Bare Hand to Hand-Worn Exoskeleton Mapping through Human Limb Coupling",
+          "authors": [
+            "Ruitong Tian",
+            "Xianyao Li",
+            "Noah B. Wilson",
+            "Fang Xu",
+            "Eric Jing Du"
+          ],
+          "published": "2026-10-06T03:27:37Z",
+          "updated": "2026-10-06T03:27:37Z",
+          "url": "https://arxiv.org/abs/2610.07692v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.07692v1"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "主要贡献是从裸手视频预测配对外骨骼接触与运动状态，与手物交互表征直接相关。接受为相邻资源；核心实验是离线预测，不能视为已部署的触觉灵巧策略。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.07692v1",
+            "paraphrase": "第 III 节用对侧外骨骼的三指触觉与编码器作为监督；因果视觉模型推理仅读取当前及历史 RGB。第 IV 节按采集会话划分五折评测四项任务。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.07692v1",
+            "paraphrase": "第 V–VI 节明确：配套 XHand 自主实验来自直接外骨骼示教，所学桥接状态只做离线预测，其机器人闭环价值尚未验证。"
+          }
+        ],
+        "paper": {
+          "title": "ExoBridge: Learning a Bare Hand to Hand-Worn Exoskeleton Mapping through Human Limb Coupling",
+          "authors": [
+            "Ruitong Tian",
+            "Xianyao Li",
+            "Noah B. Wilson",
+            "Fang Xu",
+            "Eric Jing Du"
+          ],
+          "id": "2610.07692",
+          "date": "2026-10-06",
+          "year": 2026,
+          "category": "Hand–Object Interaction",
+          "scope": "adjacent",
+          "tldr": "ExoBridge learns bare-hand RGB-to-exoskeleton contact, tactile intensity and relative motion from paired bimanual demonstrations. Evaluation uses 1,215 human demonstrations across four tasks with session-separated testing; the predicted states are not evaluated in closed-loop robot control.",
+          "tldr_zh": "用双手协同示教，将裸手 RGB 映射到另一只手外骨骼的接触、触觉强度和相对编码器状态。在四项任务的 1,215 段人体示教上按采集会话分离评测；预测状态尚未进入机器人闭环。",
+          "tags": [
+            "Vision",
+            "Dataset / benchmark"
+          ],
+          "sensing": [
+            "Bare-hand RGB at inference",
+            "Contralateral exoskeleton tactile arrays and encoders as training targets"
+          ],
+          "hand": [],
+          "task": [
+            "Human hand–object state estimation"
+          ],
+          "method": [
+            "Cross-hand supervision",
+            "Causal temporal visual regression"
+          ],
+          "evaluation": "Offline prediction on human demonstrations; companion robot rollouts use direct exoskeleton demonstrations",
+          "notes_zh": "配套 XHand 实机实验直接使用外骨骼示教，不使用 ExoBridge 预测。触觉是人体外骨骼训练目标，推理仅用 RGB，不添加运行时触觉标签。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.07692"
+          }
+        }
+      }
+    },
+    {
+      "key": "2604.20689|v4|2026-10-06T04:05:47+00:00|dexterous-v1",
+      "digest": "f250fad9e072c253343ef9873411686ce9d39c027efffbd302ffe13d06c9ae21",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2604.20689",
+          "version": 4,
+          "title": "FingerEye: Learning Dexterous Manipulation with Continuous Vision-Tactile Sensing",
+          "authors": [
+            "Zhixuan Xu",
+            "Yichen Li",
+            "Xuanye Wu",
+            "Tianyu Qiu",
+            "Lin Shao"
+          ],
+          "published": "2026-04-22T15:37:34Z",
+          "updated": "2026-10-06T04:05:47Z",
+          "url": "https://arxiv.org/abs/2604.20689v4",
+          "primary_urls": [
+            "https://arxiv.org/html/2604.20689v4",
+            "https://nus-lins-lab.github.io/FingerEyeWeb/",
+            "https://github.com/ariszxxu/FingerEye"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "提出适配多指手的双目指尖感知硬件及分组融合学习接口，并分别验证仿真、实机策略和触觉阈值抓取。触觉标签严格依据易碎物控制器读取真实传感形变，不把主要 RGB 学习策略写成显式力输入策略。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2604.20689v4",
+            "paraphrase": "第 3–5 节给出柔顺环和双目指尖设计、LEAP Hand/xArm7 平台，以及三项仿真和四项实机任务。第 4.2 节明确主策略只读 RGB 与本体状态，不读显式板位姿或力旋量。"
+          },
+          {
+            "url": "https://arxiv.org/html/2604.20689v4",
+            "paraphrase": "附录 A.2.3 的实机易碎物控制按 AprilTag 追踪的法向形变阈值停止接近并抬升；A.5.4 的显式力旋量输入消融仅在仿真开展。"
+          },
+          {
+            "url": "https://nus-lins-lab.github.io/FingerEyeWeb/",
+            "paraphrase": "已打开并核对论文名称、作者或 arXiv ID，确认是该论文的项目页面。"
+          },
+          {
+            "url": "https://github.com/ariszxxu/FingerEye",
+            "paraphrase": "已打开并核对论文名称、作者或 arXiv ID，确认是该论文的官方代码仓库。"
+          }
+        ],
+        "paper": {
+          "title": "FingerEye: Learning Dexterous Manipulation with Continuous Vision-Tactile Sensing",
+          "authors": [
+            "Zhixuan Xu",
+            "Yichen Li",
+            "Xuanye Wu",
+            "Tianyu Qiu",
+            "Lin Shao"
+          ],
+          "id": "2604.20689",
+          "date": "2026-04-22",
+          "year": 2026,
+          "category": "Tactile Sensing & Representation",
+          "scope": "core",
+          "tldr": "FingerEye combines binocular fingertip cameras, a compliant contact ring and grouped policy fusion, evaluated in three simulated and four physical task settings. A separate delicate-grasp controller uses measured deformation thresholds; the main learned policies use RGB and proprioception without explicit plate-pose or wrench inputs.",
+          "tldr_zh": "FingerEye 以双目指尖相机和柔顺环支持接近观察及接触形变感知，配合分组融合学习策略，在三项仿真与四项实机设置评测。另用实测形变阈值控制易碎物抓取；主学习策略不读取显式位姿或力旋量。",
+          "tags": [
+            "Hardware / sensor",
+            "Imitation learning",
+            "Teleoperation",
+            "Dexterous grasping",
+            "Tactile feedback",
+            "Vision",
+            "Proprioception"
+          ],
+          "sensing": [
+            "Wrist and binocular fingertip RGB",
+            "Robot proprioception",
+            "Measured fingertip plate deformation in delicate-grasp control"
+          ],
+          "hand": [
+            "LEAP Hand"
+          ],
+          "task": [
+            "Delicate grasping",
+            "Coin standing",
+            "Chip picking",
+            "Letter retrieval",
+            "Syringe manipulation",
+            "Peg-in-hole"
+          ],
+          "method": [
+            "Optical compliant-ring sensing",
+            "Group-structured modality fusion",
+            "Receding-horizon action chunking"
+          ],
+          "evaluation": "Three simulated and four real task settings; separate physical delicate-grasp control",
+          "notes_zh": "主学习策略不输入显式板位姿或估计力旋量；实机触觉标签限于读取 AprilTag 测得形变的抓取停止控制。显式 FT 学习策略消融只在仿真中进行。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2604.20689",
+            "project": "https://nus-lins-lab.github.io/FingerEyeWeb/",
+            "code": "https://github.com/ariszxxu/FingerEye"
+          }
+        },
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2604.20689v4",
+          "paraphrase": "附录 A.2.3：LEAP Hand 抓取控制每 0.02 秒发关节命令，运行中监测 AprilTag 测得的接触板法向形变；超过物体专用阈值即停止接近并抬升。该依据对应实机阈值控制，非主学习策略的显式力输入。"
+        }
+      }
+    },
+    {
+      "key": "2606.09615|v3|2026-10-06T08:48:13+00:00|dexterous-v1",
+      "digest": "1fdcbb3321129d42b5264b0a100f954f9d5b34f289e16eeb7c47a8cc607b23f3",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2606.09615",
+          "version": 3,
+          "title": "DexPIE: Stable Dexterous Policy Improvement from Real-World Experience",
+          "authors": [
+            "Ruizhe Liao",
+            "Wenrui Chen",
+            "Liangji Zeng",
+            "Haoran Lin",
+            "Fan Yang",
+            "Kailun Yang",
+            "Yaonan Wang"
+          ],
+          "published": "2026-06-08T15:21:45Z",
+          "updated": "2026-10-06T08:48:13Z",
+          "url": "https://arxiv.org/abs/2606.09615v3",
+          "primary_urls": [
+            "https://arxiv.org/html/2606.09615v3",
+            "https://siiuuuuuu.github.io/DexPIE/",
+            "https://github.com/siiuuuuuu/DexPIE_learning"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "围绕真实多指灵巧策略的后训练提出干预采集、推理一致性和连续最优性条件化，并在 Inspire 手的三项实机任务评测。主要贡献是灵巧操作学习系统，归入 Dexterous Manipulation。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2606.09615v3",
+            "paraphrase": "第 IV 节将人体跟随式干预与分阶段 DAgger 结合，基于分布式价值估计构造连续最优性指标，对扩散策略后训练。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.09615v3",
+            "paraphrase": "第 V 节指定 UR5 与六自由度 Inspire 手、前视和腕部相机；三项真实任务每项 50 次评测，一次后训练使用成功、失败及干预轨迹。"
+          },
+          {
+            "url": "https://siiuuuuuu.github.io/DexPIE/",
+            "paraphrase": "已打开并核对论文名称、作者或 arXiv ID，确认是该论文的项目页面。"
+          },
+          {
+            "url": "https://github.com/siiuuuuuu/DexPIE_learning",
+            "paraphrase": "已打开并核对论文名称、作者或 arXiv ID，确认是该论文的官方代码仓库。"
+          }
+        ],
+        "paper": {
+          "title": "DexPIE: Stable Dexterous Policy Improvement from Real-World Experience",
+          "authors": [
+            "Ruizhe Liao",
+            "Wenrui Chen",
+            "Liangji Zeng",
+            "Haoran Lin",
+            "Fan Yang",
+            "Kailun Yang",
+            "Yaonan Wang"
+          ],
+          "id": "2606.09615",
+          "date": "2026-06-08",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tldr": "DexPIE combines human intervention, staged DAgger and improved training–inference consistency for reliable value estimation, then conditions a diffusion policy on continuous optimality. One post-training round is evaluated on three physical UR5–Inspire tasks with 50 trials per task.",
+          "tldr_zh": "以人工干预和分阶段 DAgger 收集真实执行经验，通过训练推理一致性改善价值估计，再用连续最优性条件化扩散策略。UR5 与 Inspire 手在三项实机任务中完成一次后训练后的独立评测。",
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Diffusion / flow policy",
+            "Human-in-the-loop",
+            "Teleoperation",
+            "Dexterous grasping",
+            "Articulated objects",
+            "Vision",
+            "Proprioception"
+          ],
+          "sensing": [
+            "Front and wrist RGB",
+            "Robot and hand state"
+          ],
+          "hand": [
+            "Inspire hand"
+          ],
+          "task": [
+            "Bottle pick-and-place",
+            "Drawer opening and tissue placement",
+            "Lid opening and candy placement"
+          ],
+          "method": [
+            "Staged DAgger",
+            "Continuous optimality conditioning",
+            "Distributional value estimation",
+            "Diffusion policy post-training"
+          ],
+          "evaluation": "Physical UR5–Inspire setup; three tasks, 50 independent trials per task after one post-training iteration",
+          "notes_zh": "采用实机执行和人工干预数据，未据接触丰富任务添加触觉标签。正式论文称代码和数据将发布，现已核验学习代码仓库与配套遥操作仓库；未核验独立数据下载。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2606.09615",
+            "project": "https://siiuuuuuu.github.io/DexPIE/",
+            "code": "https://github.com/siiuuuuuu/DexPIE_learning"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.09224|v1|2026-10-06T23:37:52+00:00|dexterous-v1",
+      "digest": "c82aa842c413626292f0e095456489987acec981dfea52cbe8d934fbd1fc4469",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.09224",
+          "version": 1,
+          "title": "Fast Planning for Multi-object Multi-target Throwing",
+          "authors": [
+            "Zhengming Zhu",
+            "Yang Liu",
+            "Xiao Gao",
+            "Aude Billard"
+          ],
+          "published": "2026-10-06T23:37:52Z",
+          "updated": "2026-10-06T23:37:52Z",
+          "url": "https://arxiv.org/abs/2610.09224v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.09224v1",
+            "https://liuyangdh.github.io/momt-video/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "明确研究多指手同时持有多个物体并按不同目标连续释放的动态操作，正文有 Allegro 实机验证，符合灵巧操作范围。人工预设抓取与标定测力不作为抓取生成或触觉反馈贡献。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.09224v1",
+            "paraphrase": "第 III 节假定抓取已知、物体瞬时释放且忽略手内滑移；利用飞行动力学后向可达集合、机械臂速度字典及多目标协调生成投掷轨迹。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.09224v1",
+            "paraphrase": "第 IV 节仿真测试二至四物体；实机为 Kuka iiwa 7 加 Allegro，以手动配置持双物体并补偿预标定释放延迟。两种规划各命中 14/20 次，协调方案缩短执行时间。"
+          },
+          {
+            "url": "https://liuyangdh.github.io/momt-video/",
+            "paraphrase": "已打开并核对论文名称、作者或 arXiv ID，确认是该论文的项目页面。"
+          }
+        ],
+        "paper": {
+          "title": "Fast Planning for Multi-object Multi-target Throwing",
+          "authors": [
+            "Zhengming Zhu",
+            "Yang Liu",
+            "Xiao Gao",
+            "Aude Billard"
+          ],
+          "id": "2610.09224",
+          "date": "2026-10-06",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tldr": "An offline release-feasibility model and velocity dictionary support fast matching and pruned greedy coordination for multi-object throwing. Simulation scales to four objects; Kuka iiwa 7 with Allegro validates two-object throws using manually preset grasps and calibrated release delay.",
+          "tldr_zh": "通过离线可达释放状态与速度字典、在线匹配和剪枝贪心协调，规划多物体向多目标连续投掷。仿真扩展至四物体，Allegro 与 Kuka iiwa 7 实机验证双物体；抓取配置人工预设，释放延迟提前标定。",
+          "tags": [
+            "Model-based planning",
+            "Proprioception"
+          ],
+          "sensing": [
+            "Joint state for trajectory tracking",
+            "OptiTrack target and flight measurements"
+          ],
+          "hand": [
+            "Allegro Hand"
+          ],
+          "task": [
+            "Multi-object multi-target throwing",
+            "Reactive throwing replanning"
+          ],
+          "method": [
+            "Backward reachable tube",
+            "Maximum velocity dictionary",
+            "Pruned greedy coordination",
+            "Joint impedance tracking"
+          ],
+          "evaluation": "Simulation with two to four objects; physical two-object throws and reactive target changes",
+          "notes_zh": "多物体抓取配置人工调整，非抓取合成。ATI nano F/T 用于预先测量释放延迟，未作为运行时触觉输入；实机两种规划方案均命中 14/20 次。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.09224",
+            "project": "https://liuyangdh.github.io/momt-video/"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.10846|v1|2026-10-07T19:51:22+00:00|dexterous-v1",
+      "digest": "0e3402faf9308095a2dfea251c9245339cb5182bc2a9734293a0bddf5f6981d6",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.10846",
+          "version": 1,
+          "title": "Cross-Embodiment Robot Foundation World Models with Latent Actions",
+          "authors": [
+            "Huang Huang",
+            "Sriram Yenamandra",
+            "Arjun Majumdar",
+            "Elie Aljalbout",
+            "Tushar Nagarajan",
+            "Tsung-Yen Yang",
+            "Akshara Rai",
+            "Michael Rabbat",
+            "Li Fei-Fei",
+            "Jiajun Wu",
+            "Tingfan Wu",
+            "Franziska Meier"
+          ],
+          "published": "2026-10-07T19:51:22Z",
+          "updated": "2026-10-07T19:51:22Z",
+          "url": "https://arxiv.org/abs/2610.10846v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.10846v1",
+            "https://lacwm.github.io/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "潜在动作世界模型在具有 16 维 Allegro 手动作的任务上进行实际动作选择与仿真执行，和多指灵巧操作直接相关。按灵巧规划系统收录；模型是预测与筛选组件，不标为 Foundation policy。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.10846v1",
+            "paraphrase": "第 3 节联合逆动力学、视觉预测和运动解码学习潜在动作，再用动作投影器适配新本体；第 4.3 节数据来自 RoboCasa，右臂动作包含 16 个 Allegro 手关节维度。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.10846v1",
+            "paraphrase": "第 6.2 节依据预测图像与示教子目标的距离筛选并执行 VLA 候选动作；报告灵巧抓放与改造 LIBERO 仿真结果。未描述真实硬件闭环评测。"
+          },
+          {
+            "url": "https://lacwm.github.io/",
+            "paraphrase": "已打开并核对论文名称、作者或 arXiv ID，确认是该论文的项目页面。"
+          }
+        ],
+        "paper": {
+          "title": "Cross-Embodiment Robot Foundation World Models with Latent Actions",
+          "authors": [
+            "Huang Huang",
+            "Sriram Yenamandra",
+            "Arjun Majumdar",
+            "Elie Aljalbout",
+            "Tushar Nagarajan",
+            "Tsung-Yen Yang",
+            "Akshara Rai",
+            "Michael Rabbat",
+            "Li Fei-Fei",
+            "Jiajun Wu",
+            "Tingfan Wu",
+            "Franziska Meier"
+          ],
+          "id": "2610.10846",
+          "date": "2026-10-07",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tldr": "LAC-WM learns shared latent actions from human and robot data, adapts through an action projector, and ranks VLA action candidates by predicted goal proximity. Evaluation covers simulated Franka–Allegro pick-and-place in RoboCasa and modified LIBERO, without reported physical closed-loop deployment.",
+          "tldr_zh": "从人类与机器人数据学习统一潜在动作，并以动作投影器适配新本体，用世界模型预测结果筛选 VLA 候选动作。在 RoboCasa 的 Franka–Allegro 抓放及改造 LIBERO 仿真中评测，未报告实机闭环部署。",
+          "tags": [
+            "Model-based planning",
+            "Cross-embodiment",
+            "Vision-language-action",
+            "Dexterous grasping",
+            "Vision"
+          ],
+          "sensing": [
+            "RGB observations",
+            "Robot state in the VLA candidate generator"
+          ],
+          "hand": [
+            "Allegro Hand (simulation)"
+          ],
+          "task": [
+            "Dexterous pick-and-place",
+            "Action-conditioned visual prediction",
+            "Candidate action selection"
+          ],
+          "method": [
+            "Latent action world model",
+            "Auxiliary motion decoding",
+            "Action projection",
+            "Goal-conditioned action ranking"
+          ],
+          "evaluation": "RoboCasa Franka–Allegro simulation and modified LIBERO simulation",
+          "notes_zh": "BFA 平台虽有双臂，实验数据和动作只用右臂，不标双手协作。世界模型负责预测和动作筛选，不能由标题推出 Foundation policy；未报告触觉输入或实机闭环。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.10846",
+            "project": "https://lacwm.github.io/"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.11945|v1|2026-10-08T13:34:31+00:00|dexterous-v1",
+      "digest": "d0549e4dab0e4202f19d5aef1301b6eaa804ee372b0b41f4f4a2281b093bfee4",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.11945",
+          "version": 1,
+          "title": "TACROSS: An Efficient and Low-Cost Scalable Human Touch System Across Heterogeneous Tactile Sensors for Dexterous Robot Learning",
+          "authors": [
+            "Bo Chen",
+            "Huanzhang Hu",
+            "Junyang Ma",
+            "Bo Yue",
+            "Fangdi Yu",
+            "Haijier Chen",
+            "Xianxin Lai",
+            "Shuyu Pan",
+            "Zhen Yang",
+            "Xiaoquan Sun",
+            "Wenze Cui",
+            "Zhongliang Jiang",
+            "Shaopeng Liu",
+            "Jiayu Chen"
+          ],
+          "published": "2026-10-08T13:34:31Z",
+          "updated": "2026-10-08T13:34:31Z",
+          "url": "https://arxiv.org/abs/2610.11945v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.11945v1",
+            "https://tacross-touch-project.github.io/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "主要贡献是低成本触觉采集与跨传感器接触表征，并在 Revo2 真实闭环任务中验证；正文确认机器人触觉进入部署策略，符合触觉感知与表征范围。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.11945v1",
+            "paraphrase": "III-C 至 III-D 以接触规范化、传感器适配和时序编码对齐触觉；机器人动作提供真值监督，人类重定向目标仅为辅助伪标签。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.11945v1",
+            "paraphrase": "III-D、IV-A 明确机器人触觉为 ACT 输入，并在四个真实任务中闭环评测；图 6 标明 Revo2。"
+          },
+          {
+            "url": "https://tacross-touch-project.github.io/",
+            "paraphrase": "已打开项目页核对论文身份；未取得已发布代码仓库链接，故只保留项目链接。"
+          }
+        ],
+        "paper": {
+          "id": "2610.11945",
+          "title": "TACROSS: An Efficient and Low-Cost Scalable Human Touch System Across Heterogeneous Tactile Sensors for Dexterous Robot Learning",
+          "authors": [
+            "Bo Chen",
+            "Huanzhang Hu",
+            "Junyang Ma",
+            "Bo Yue",
+            "Fangdi Yu",
+            "Haijier Chen",
+            "Xianxin Lai",
+            "Shuyu Pan",
+            "Zhen Yang",
+            "Xiaoquan Sun",
+            "Wenze Cui",
+            "Zhongliang Jiang",
+            "Shaopeng Liu",
+            "Jiayu Chen"
+          ],
+          "date": "2026-10-08",
+          "year": 2026,
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.11945",
+            "project": "https://tacross-touch-project.github.io/"
+          },
+          "category": "Tactile Sensing & Representation",
+          "scope": "core",
+          "tldr": "TACROSS aligns human-glove and robot touch through contact semantics, sensor adapters and a shared temporal encoder. Robot-supervised ACT uses tactile, visual and proprioceptive inputs during four real-world tasks; human demonstrations supplement representation learning and auxiliary hand targets.",
+          "tldr_zh": "将人类手套与机器人触觉映射为共享接触表征，以机器人动作为主要监督训练 ACT。真实 Revo2 在四项任务中使用触觉、视觉和本体状态闭环执行，人类数据辅助表征学习及手部目标监督。",
+          "tags": [
+            "Imitation learning",
+            "Human motion transfer",
+            "Retargeting",
+            "Cross-embodiment",
+            "Tactile feedback",
+            "Vision",
+            "Proprioception",
+            "Hardware / sensor",
+            "Dataset / benchmark"
+          ],
+          "sensing": [
+            "Revo2 capacitive tactile observations",
+            "Three RGB views",
+            "Robot proprioception"
+          ],
+          "hand": [
+            "Revo2"
+          ],
+          "task": [
+            "Fixed-point dispensing",
+            "Liquid transfer",
+            "Precision pipetting",
+            "Sequential fruit pick-and-place"
+          ],
+          "method": [
+            "Contact canonicalization",
+            "Sensor-specific residual adapters",
+            "Shared temporal and inter-finger Transformer",
+            "ACT"
+          ],
+          "evaluation": "Four closed-loop real-robot tasks with Revo2; human and robot tactile data collection.",
+          "notes_zh": "人类压阻手套用于采集；执行读取 Revo2 电容触觉。论文同时列出单自由度开合及六通道手部控制接口，不能将所有实验解读为全关节灵巧操作。项目页的代码、硬件与数据下载仍为计划发布。"
+        },
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2610.11945v1",
+          "paraphrase": "III-D：执行时 ACT 融合 RGB、本体状态与机器人触觉潜变量；机器人触觉以 30 Hz 采样并因果同步，部署仅用机器人观测。"
+        }
+      }
+    },
+    {
+      "key": "2610.12046|v1|2026-10-08T14:33:48+00:00|dexterous-v1",
+      "digest": "acd961f113e03b15f38fd17de18ae46420e9ff17c1e6c2bcff532697276f189f",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.12046",
+          "version": 1,
+          "title": "SkillWeave: Weaving Heterogeneous Demonstrations into Long-Horizon Manipulation Skills",
+          "authors": [
+            "Ryosei Tamura",
+            "Xiaoxiang Dong",
+            "Uksang Yoo",
+            "Yuemin Mao",
+            "Romina Mir",
+            "Jonathan Francis",
+            "Jeffrey Ichnowski"
+          ],
+          "published": "2026-10-08T14:33:48Z",
+          "updated": "2026-10-08T14:33:48Z",
+          "url": "https://arxiv.org/abs/2610.12046v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.12046v1",
+            "https://skillweave-authors.github.io/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "在 xArm7 与 LEAP 多指手上研究异构示教和长程技能衔接，真实自主评测包含手内旋转、旋螺母及水壶操作，直接属于灵巧操作。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.12046v1",
+            "paraphrase": "IV-A、IV-B 使用视觉与本体状态生成动作块，并在技能交接时反复采样和执行接近后继起始分布的动作。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.12046v1",
+            "paraphrase": "V-A、VI 在 xArm7 与 16 自由度 LEAP 上自主评测三项任务；端到端平均成功率 27%，不是示教回放。"
+          },
+          {
+            "url": "https://skillweave-authors.github.io/",
+            "paraphrase": "已打开项目页核对论文身份；未取得已发布代码仓库链接，故只保留项目链接。"
+          }
+        ],
+        "paper": {
+          "id": "2610.12046",
+          "title": "SkillWeave: Weaving Heterogeneous Demonstrations into Long-Horizon Manipulation Skills",
+          "authors": [
+            "Ryosei Tamura",
+            "Xiaoxiang Dong",
+            "Uksang Yoo",
+            "Yuemin Mao",
+            "Romina Mir",
+            "Jonathan Francis",
+            "Jeffrey Ichnowski"
+          ],
+          "date": "2026-10-08",
+          "year": 2026,
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.12046",
+            "project": "https://skillweave-authors.github.io/"
+          },
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tldr": "SkillWeave combines teleoperation and kinesthetic demonstrations, object-mask-conditioned diffusion policies and successor-aware handoff steering. On a LEAP hand, three real-world multi-stage tasks achieve 27% average end-to-end success using RGB and proprioception.",
+          "tldr_zh": "按子任务结合遥操作和动觉示教，以物体掩码条件扩散策略处理示教遮挡，再引导前一策略接近后一策略的起始状态。LEAP 实机三项多阶段任务平均端到端成功率为 27%，运行输入为 RGB 和本体状态。",
+          "tags": [
+            "Imitation learning",
+            "Diffusion / flow policy",
+            "Teleoperation",
+            "Retargeting",
+            "In-hand manipulation",
+            "Long-horizon tasks",
+            "Vision",
+            "Proprioception"
+          ],
+          "sensing": [
+            "External and wrist RGB",
+            "End-effector pose",
+            "Arm and hand joint angles"
+          ],
+          "hand": [
+            "LEAP Hand"
+          ],
+          "task": [
+            "Cube reorientation and in-hand rotation",
+            "Nut removal and storage",
+            "Kettle preparation"
+          ],
+          "method": [
+            "Kinesthetic teaching",
+            "Object-mask-conditioned diffusion policy",
+            "Successor-aware terminal steering"
+          ],
+          "evaluation": "Three autonomous real-world tasks on xArm7 plus 16-DoF LEAP; 20 trials per reported policy/task setting.",
+          "notes_zh": "方法 IV-A 的策略观测仅为两路 RGB 与本体状态，不标触觉反馈。SAM 3 只生成训练掩码，部署使用学习到的掩码预测器；项目页代码仍标 Coming Soon。"
+        }
+      }
+    },
+    {
+      "key": "2610.12440|v1|2026-10-08T17:57:58+00:00|dexterous-v1",
+      "digest": "d0e29b17d547b546a501a85d8d85ace9af93b6ba674a37c190ea3f85d101cc24",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.12440",
+          "version": 1,
+          "title": "Generative Neural Retargeting for Human-to-Robot Dexterous Manipulation",
+          "authors": [
+            "Dechen Gao",
+            "Yue Yang",
+            "Ben Abbatematteo",
+            "Nathan Godwin",
+            "Pengcheng Wang",
+            "Roger Boldu",
+            "Steven Man",
+            "Zhiyang Dou",
+            "Chuan Qin",
+            "Sho Nakagome",
+            "Eric Whitmire"
+          ],
+          "published": "2026-10-08T17:57:58Z",
+          "updated": "2026-10-08T17:57:58Z",
+          "url": "https://arxiv.org/abs/2610.12440v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.12440v1",
+            "https://yy-gx.github.io/GNR/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "主要贡献是人手到五指机器人动作的物理可行重定向及数据生成；方法与评测支持灵巧操作收录，接触力为仿真标注而非运行触觉。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.12440v1",
+            "paraphrase": "3.1–3.2 用条件流模型生成 IK 残差；候选在仿真回放筛选，精密长程任务另用 GNR 初始化 MPC。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.12440v1",
+            "paraphrase": "5.1–5.3 在 SuperDex 的 DG-5F 构型上评测 HOT3D、ShapeFilter 与 NIST；4.1 的接触力标签来自仿真。"
+          },
+          {
+            "url": "https://yy-gx.github.io/GNR/",
+            "paraphrase": "已打开项目页核对论文身份；未取得已发布代码仓库链接，故只保留项目链接。"
+          }
+        ],
+        "paper": {
+          "id": "2610.12440",
+          "title": "Generative Neural Retargeting for Human-to-Robot Dexterous Manipulation",
+          "authors": [
+            "Dechen Gao",
+            "Yue Yang",
+            "Ben Abbatematteo",
+            "Nathan Godwin",
+            "Pengcheng Wang",
+            "Roger Boldu",
+            "Steven Man",
+            "Zhiyang Dou",
+            "Chuan Qin",
+            "Sho Nakagome",
+            "Eric Whitmire"
+          ],
+          "date": "2026-10-08",
+          "year": 2026,
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.12440",
+            "project": "https://yy-gx.github.io/GNR/"
+          },
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tldr": "GNR learns flow-matching corrections to IK references from MPC-generated examples, then samples feasible dexterous trajectories or initializes MPC. Simulation studies cover HOT3D retargeting and precision assembly, producing 223k paired demonstrations with simulated contact-force annotations.",
+          "tldr_zh": "从 MPC 生成的样本学习流匹配残差，修正 IK 参考轨迹，并以采样或 MPC 初始化加速灵巧重定向。在仿真中评测 HOT3D 和精密装配，生成约 22.3 万组带仿真接触力标签的人机配对示教。",
+          "tags": [
+            "Human motion transfer",
+            "Retargeting",
+            "Diffusion / flow policy",
+            "Model-based planning",
+            "Long-horizon tasks",
+            "Dataset / benchmark"
+          ],
+          "sensing": [
+            "Human hand motion, object pose and mesh as retargeting inputs"
+          ],
+          "hand": [
+            "Tesollo DG-5F"
+          ],
+          "task": [
+            "Human-to-robot retargeting",
+            "Shape insertion",
+            "Threaded assembly"
+          ],
+          "method": [
+            "Conditional flow matching",
+            "IK residual trajectory generation",
+            "MPC initialization",
+            "Physics-based data generation"
+          ],
+          "evaluation": "SuperDex simulation: HOT3D, ShapeFilter and NIST retargeting; DG-5F, with Franka FR3 for assembly.",
+          "notes_zh": "所读评测是仿真轨迹生成、回放及仿真闭环 MPC，不声称实机自主部署。接触力从仿真导出，未据此添加 Tactile feedback；项目页未给出代码下载。"
+        }
+      }
+    },
+    {
+      "key": "2610.12465|v1|2026-10-08T17:59:50+00:00|dexterous-v1",
+      "digest": "74c7eb4779913b7d8512dc6bfb3f5f4b4cade7fb180713da8163f2855c679633",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.12465",
+          "version": 1,
+          "title": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+          "authors": [
+            "Octi Zhang",
+            "Mateo Guaman Castro",
+            "Patrick Yin",
+            "Ignacio Dagnino",
+            "Abhishek Gupta",
+            "Rosario Scalise",
+            "Byron Boots"
+          ],
+          "published": "2026-10-08T17:59:50Z",
+          "updated": "2026-10-08T17:59:50Z",
+          "url": "https://arxiv.org/abs/2610.12465v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.12465v1",
+            "https://sgs-rl.github.io/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "贡献是跨运动与装配任务的通用 RL 训练采样算法，以成功率自适应分配并行经验；按相邻策略优化方法收录。装配使用平行夹爪，不将其归为多指灵巧系统。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.12465v1",
+            "paraphrase": "3.2–3.3 对固定配置的近期成功率加权，改变 PPO 重置分布；同一采样原则用于运动和装配训练。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.12465v1",
+            "paraphrase": "4.2、4.5 与附录 C：装配使用平行夹爪；RGB/本体学生由仿真教师蒸馏，三项 UR5e 实机任务采用零样本部署。"
+          },
+          {
+            "url": "https://sgs-rl.github.io/",
+            "paraphrase": "已打开项目页核对论文身份；未取得已发布代码仓库链接，故只保留项目链接。"
+          }
+        ],
+        "paper": {
+          "id": "2610.12465",
+          "title": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+          "authors": [
+            "Octi Zhang",
+            "Mateo Guaman Castro",
+            "Patrick Yin",
+            "Ignacio Dagnino",
+            "Abhishek Gupta",
+            "Rosario Scalise",
+            "Byron Boots"
+          ],
+          "date": "2026-10-08",
+          "year": 2026,
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.12465",
+            "project": "https://sgs-rl.github.io/"
+          },
+          "category": "Policy Optimization",
+          "scope": "adjacent",
+          "tldr": "Success Guided Sampling reallocates PPO resets toward configurations with moderate success rates. Scaling studies span quadruped locomotion and parallel-gripper assembly; RGB students distilled from simulation teachers transfer zero-shot to three UR5e assembly tasks.",
+          "tldr_zh": "以在线成功率调整 PPO 的重置采样，使训练更多覆盖当前可学习的任务配置。扩展实验涵盖四足运动与平行夹爪装配，并将仿真教师蒸馏为 RGB 学生，在 UR5e 上零样本完成三类装配评测。",
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Sim-to-real",
+            "Vision",
+            "Proprioception"
+          ],
+          "sensing": [
+            "Side and wrist RGB for deployed student",
+            "Arm joint positions, end-effector pose and previous action"
+          ],
+          "hand": [
+            "Robotiq 2F-85 gripper",
+            "Franka parallel-jaw gripper"
+          ],
+          "task": [
+            "Multi-terrain quadruped locomotion",
+            "Nut-and-bolt assembly",
+            "Rod-in-hole insertion",
+            "Gear mesh insertion"
+          ],
+          "method": [
+            "Success Guided Sampling",
+            "PPO",
+            "Adaptive reset sampling",
+            "DAgger distillation"
+          ],
+          "evaluation": "Large-scale locomotion and gripper-assembly simulation; RGB closed-loop UR5e transfer on three real assembly tasks.",
+          "notes_zh": "作为通用训练算法相邻收录；SGS 改变训练配置采样，而非提供新的多指手控制器或 PPO 损失。真实装配平台为 UR5e 加 Robotiq 2F-85；无运行触觉依据。项目页代码尚未发布。"
+        }
+      }
+    },
+    {
+      "key": "2610.12470|v1|2026-10-08T17:59:58+00:00|dexterous-v1",
+      "digest": "0ea36ee9dc63fc4868673fd74f7eef1ea56b5939de9ad3d4b1c8e45b2d9ba4f3",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-10T02:27:46Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.12470",
+          "version": 1,
+          "title": "Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration",
+          "authors": [
+            "Jusuk Lee",
+            "Sungha Kim",
+            "Yeonsoo Park",
+            "Jonguk Cheon",
+            "Yoonkyo Jung",
+            "Yongjun You",
+            "H. Jin Kim",
+            "Jia-Bin Huang",
+            "Furong Huang",
+            "Youngseok Jang",
+            "Seungjae Lee"
+          ],
+          "published": "2026-10-08T17:59:58Z",
+          "updated": "2026-10-08T17:59:58Z",
+          "url": "https://arxiv.org/abs/2610.12470v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.12470v1",
+            "https://dex-one2many.github.io/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "由单段人类视频构建场景图以指导多指手 RL，并进行四种手型仿真及 Wuji 1 实机部署，直接符合灵巧操作范围。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.12470v1",
+            "paraphrase": "3.2–3.3 由场景图构造观测、奖励及各阶段重置，PPO 输出掌部和指尖速度，由 QP 控制器执行；实机用 RGB-D 估计物体位姿。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.12470v1",
+            "paraphrase": "4.1–4.3 在五项任务中评测仿真及 UR3/Wuji 1 零样本闭环部署，另比较四种仿真手型；评测从空手开始完成全任务。"
+          },
+          {
+            "url": "https://dex-one2many.github.io/",
+            "paraphrase": "已打开项目页核对论文身份；未取得已发布代码仓库链接，故只保留项目链接。"
+          }
+        ],
+        "paper": {
+          "id": "2610.12470",
+          "title": "Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration",
+          "authors": [
+            "Jusuk Lee",
+            "Sungha Kim",
+            "Yeonsoo Park",
+            "Jonguk Cheon",
+            "Yoonkyo Jung",
+            "Yongjun You",
+            "H. Jin Kim",
+            "Jia-Bin Huang",
+            "Furong Huang",
+            "Youngseok Jang",
+            "Seungjae Lee"
+          ],
+          "date": "2026-10-08",
+          "year": 2026,
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.12470",
+            "project": "https://dex-one2many.github.io/"
+          },
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tldr": "Dex-One2Many converts one human video into stage-wise scene graphs that define RL observations, rewards and diverse resets. Policies trained in simulation transfer zero-shot to a Wuji 1 hand for five manipulation and tool-use tasks; cross-embodiment tests remain simulated.",
+          "tldr_zh": "把单段人类视频抽象为分阶段场景图，用于构造观测、奖励和多样重置状态。策略在仿真训练后零样本部署到 Wuji 1，评测五项操作与工具任务；四手型比较在仿真中进行。",
+          "tags": [
+            "Reinforcement learning",
+            "Human motion transfer",
+            "Sim-to-real",
+            "Cross-embodiment",
+            "Dexterous grasping",
+            "Tool use",
+            "Vision",
+            "Proprioception"
+          ],
+          "sensing": [
+            "RGB-D object-pose estimates",
+            "Robot proprioception",
+            "Scene-graph geometry and relative poses"
+          ],
+          "hand": [
+            "Wuji 1",
+            "Sharpa Wave",
+            "Wuji 2",
+            "Allegro"
+          ],
+          "task": [
+            "Pick-and-place",
+            "Stamping",
+            "Hammering",
+            "Sweeping"
+          ],
+          "method": [
+            "Stage-wise scene graphs",
+            "PPO",
+            "Diverse scene-graph-constrained resets",
+            "QP low-level control"
+          ],
+          "evaluation": "Five tasks in simulation and on UR3 plus Wuji 1; four arm-hand embodiments evaluated in simulation.",
+          "notes_zh": "真实实验仅 UR3 加 20 自由度 Wuji 1，其余手型为仿真比较。视觉位姿和本体状态进入部署观测；接触力闭合用于奖励，不能标记运行触觉。项目页代码仍为 Coming soon。"
+        }
+      }
     }
   ]
 }
