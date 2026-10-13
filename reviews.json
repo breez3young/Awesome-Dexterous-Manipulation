@@ -3633,6 +3633,352 @@
           "notes_zh": "真实实验仅 UR3 加 20 自由度 Wuji 1，其余手型为仿真比较。视觉位姿和本体状态进入部署观测；接触力闭合用于奖励，不能标记运行触觉。项目页代码仍为 Coming soon。"
         }
       }
+    },
+    {
+      "key": "2610.13119|v1|2026-10-09T07:14:53+00:00|dexterous-v1",
+      "digest": "8d0f6b263f86b28b128b3e8f9919bb3cad339aac7d3600f2a5ca0938c6ae6775",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-12T05:50:53Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.13119",
+          "version": 1,
+          "title": "Human2Dex: Dexterous Robot Learning from Wrist-Centric Human Demonstrations",
+          "authors": [
+            "Jiachen Zhang",
+            "Yuanyuan Li",
+            "Shaqi Luo"
+          ],
+          "published": "2026-10-09T07:14:53Z",
+          "updated": "2026-10-09T07:14:53Z",
+          "url": "https://arxiv.org/abs/2610.13119v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2610.13119v1",
+            "https://arxiv.org/html/2610.13119v1",
+            "https://human2dex.pages.dev/",
+            "https://github.com/zgates2/Human2Dex_"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "正文明确研究多指机器人学习，并在 Linker O6 与 Wuji 的六项实机任务上评测闭环策略，属于灵巧操作核心范围。视觉和本体状态进入部署策略；无运行时触觉输入依据，不添加触觉反馈标签。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.13119v1",
+            "paraphrase": "摘要页核对标题、三位作者及唯一 v1 提交记录：2026-10-09 07:14:53 UTC；首次投稿与更新时间相同。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.13119v1",
+            "paraphrase": "III-A–III-E：融合人类腕部视觉与 PICO 手部结构，按目标手重定向动作；以统一骨架外观与抓取中心相对几何训练独立的手型—任务扩散策略。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.13119v1",
+            "paraphrase": "III-B、III-C、III-E：运行时使用腕部 RGB、测量的机器人手部状态及视觉物体跟踪；执行预测动作块后用最新观测重规划。输入定义未包含触觉。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.13119v1",
+            "paraphrase": "IV-B、IV-C：Linker O6 为六主动自由度五指手，Wuji 为二十主动自由度五指手；六项实机任务包含抓取、杯子嵌套、瓶子转正和抽屉打开，分别成功 109/120 与 97/120。"
+          },
+          {
+            "url": "https://human2dex.pages.dev/",
+            "paraphrase": "项目页标题与论文一致，展示两手六任务结果并直接链接 Human2Dex_ 代码仓库。"
+          },
+          {
+            "url": "https://github.com/zgates2/Human2Dex_",
+            "paraphrase": "已打开公开代码仓库；README 标识 human2dex 流程，目录包含重定向、扩散策略训练和真实机器人推理代码。未运行代码或验证复现。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2610.13119v1",
+          "paraphrase": "III-E 式 (12) 将策略输入限定为结构化视觉、目标手状态与视觉交互几何；机器人运行时触觉未进入该输入定义。"
+        },
+        "paper": {
+          "id": "2610.13119",
+          "title": "Human2Dex: Dexterous Robot Learning from Wrist-Centric Human Demonstrations",
+          "authors": [
+            "Jiachen Zhang",
+            "Yuanyuan Li",
+            "Shaqi Luo"
+          ],
+          "date": "2026-10-09",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Imitation learning",
+            "Diffusion / flow policy",
+            "Human motion transfer",
+            "Retargeting",
+            "Cross-embodiment",
+            "Dexterous grasping",
+            "Articulated objects",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Human2Dex converts wrist-centric human demonstrations into hand-specific training data using structural visual alignment, retargeting and grasp-relative object geometry. Separate diffusion policies achieve 109/120 and 97/120 successes on Linker O6 and Wuji across six real-world tasks with observation-based replanning.",
+          "tldr_zh": "将腕部视角人类示教经视觉结构对齐、重定向和抓取相对几何转换为各手专用数据。独立扩散策略在 Linker O6 与 Wuji 上闭环完成六项实机任务，成功数分别为 109/120 和 97/120。",
+          "sensing": [
+            "Wrist-mounted fisheye RGB",
+            "Measured robot hand state",
+            "Image-space object tracking"
+          ],
+          "hand": [
+            "Linker O6",
+            "Wuji"
+          ],
+          "task": [
+            "Compliant-object pick-and-place",
+            "Cup insertion",
+            "Bottle reorientation",
+            "Egg-carton lid opening",
+            "Drawer opening"
+          ],
+          "method": [
+            "Human demonstration conversion",
+            "Kinematic hand retargeting",
+            "Grasp-Pocket Interaction Representation",
+            "Hand- and task-specific diffusion policies"
+          ],
+          "evaluation": "Real-world closed-loop trials on two five-finger hands and six tasks; 20 trials per hand-task pair, with separate policies for each pair.",
+          "notes_zh": "正文评测为实机闭环，离线步骤用于转换人类示教；未报告仿真评测或仅动作回放的结果。跨本体指示教复用，两手的动作、归一化与策略分别训练，不能视为统一基座策略。视觉预训练与几何交互信息不构成运行时触觉。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.13119",
+            "project": "https://human2dex.pages.dev/",
+            "code": "https://github.com/zgates2/Human2Dex_"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.13212|v1|2026-10-09T08:29:46+00:00|dexterous-v1",
+      "digest": "484605f7a562f986cc01b251d4fc0306efb5a11d3938a5a5bb20f14f4d14e19a",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-12T05:50:53Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.13212",
+          "title": "Beyond Actions: Learning Future Operation Targets for Vision-Language-Action Models",
+          "authors": [
+            "Min Lin",
+            "Bokai Zhou",
+            "Jianqi Lin",
+            "Kaiyuan Yang",
+            "Yicheng Chang",
+            "Junjie Yu",
+            "Xiaofan Liu",
+            "Jianhua Han",
+            "Rui Li",
+            "Shen Zhao",
+            "Xiaodan Liang"
+          ],
+          "published": "2026-10-09T08:29:46Z",
+          "updated": "2026-10-09T08:29:46Z",
+          "version": 1,
+          "url": "https://arxiv.org/abs/2610.13212v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2610.13212v1",
+            "https://arxiv.org/html/2610.13212v1"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "正文明确使用 Panda–Allegro 多指手进行单臂与双臂仿真闭环操作，符合灵巧操作范围。主要贡献是未来效果表征驱动的 VLA 控制；不归入通用策略优化，也不标记运行时触觉或新基座策略。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.13212v1",
+            "paraphrase": "arXiv v1 核对标题、11 位作者及首次投稿时间 2026-10-09 08:29:46 UTC；无后续版本。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.13212v1",
+            "paraphrase": "§3 以示教动作、机器人响应和未来视觉变化训练 Effect tokenizer；策略从当前观测预测 Effect，再解码动作并循环重规划。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.13212v1",
+            "paraphrase": "Appendix B 明确为 Panda–Allegro：每臂动作含 16 个手指关节，覆盖六个单臂和五个双臂任务；闭环输入仅当前图像、语言和本体状态。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.13212v1",
+            "paraphrase": "§4 与 Appendix B/C：DexJoCo rand-obj 仿真中每方法 1,650 次闭环 rollout，总成功率 50.97%；110 条训练示教的重建及 GT-Effect 回放另作诊断。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2610.13212v1",
+          "paraphrase": "Appendix B 的在线输入为视觉、语言与本体状态，不含触觉；未来证据仅用于离线训练。"
+        },
+        "paper": {
+          "id": "2610.13212",
+          "title": "Beyond Actions: Learning Future Operation Targets for Vision-Language-Action Models",
+          "authors": [
+            "Min Lin",
+            "Bokai Zhou",
+            "Jianqi Lin",
+            "Kaiyuan Yang",
+            "Yicheng Chang",
+            "Junjie Yu",
+            "Xiaofan Liu",
+            "Jianhua Han",
+            "Rui Li",
+            "Shen Zhao",
+            "Xiaodan Liang"
+          ],
+          "date": "2026-10-09",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tldr": "AFCE learns executable Effect targets from demonstrated actions, robot responses and future visual changes. A flow-matching VLA predicts these targets from current observations and decodes action chunks. On 11 simulated Panda–Allegro tasks, closed-loop success reaches 50.97%, with gains concentrated in bimanual tasks; reconstruction and ground-truth-Effect replay are separate training-data diagnostics.",
+          "tldr_zh": "AFCE 将示教动作、机器人响应与未来视觉变化编码为可解码的 Effect，再由流匹配 VLA 从当前观测预测并执行。在 11 项 Panda–Allegro 仿真任务中闭环成功率为 50.97%，收益主要来自双臂任务；训练集重建与回放另作诊断。",
+          "tags": [
+            "Imitation learning",
+            "Vision-language-action",
+            "Diffusion / flow policy",
+            "Bimanual coordination",
+            "Tool use",
+            "Articulated objects",
+            "Vision",
+            "Proprioception"
+          ],
+          "sensing": [
+            "Scene and wrist images",
+            "Proprioception"
+          ],
+          "hand": [
+            "Allegro Hand"
+          ],
+          "task": [
+            "Tool use",
+            "Articulated-object manipulation",
+            "Bimanual coordination"
+          ],
+          "method": [
+            "Action–Future Coupled Effect Learning",
+            "Imitation learning",
+            "Flow matching"
+          ],
+          "evaluation": "Simulation",
+          "notes_zh": "评测限于仿真，未报告实机。单臂精细控制并非全面提升；共享单臂/双臂接口不证明跨本体不变性。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.13212"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.13643|v1|2026-10-09T14:21:41+00:00|dexterous-v1",
+      "digest": "377ecf0da12bbf346b3652661c36f08fc20ae5b09a397841cbac4e85748d267a",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-12T05:50:53Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.13643",
+          "version": 1,
+          "title": "AutoBio+: Benchmarking Dexterous Manipulation with Dynamic Experimental Phenomena in Realistic Laboratories",
+          "authors": [
+            "Xuanye Wu",
+            "Yue Shi",
+            "Yongcan Yang",
+            "Yiqun Wang",
+            "Zhaoqi Wan",
+            "Dayu Xia",
+            "Jiezhang Cao",
+            "Xiangfei Li",
+            "Yao Mu",
+            "Guangtao Zhai"
+          ],
+          "published": "2026-10-09T14:21:41Z",
+          "updated": "2026-10-09T14:21:41Z",
+          "url": "https://arxiv.org/abs/2610.13643v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.13643v1",
+            "https://autobio-plus.github.io/AutoBioPlus/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "正文确认基准包含 Shadow、Wuji、XHand 多指手及手部关节控制，覆盖移液器、镊子和仪器操作，直接属于灵巧操作范围；按主要贡献归入 Dexterous Manipulation，并叠加 Dataset / benchmark。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.13643v1",
+            "paraphrase": "IV-B、表 II/III 与附录 A：使用 Shadow、Wuji、XHand 和 Aloha；动作包含末端位姿及手/夹爪关节位置向量，双臂时拼接两套命令。具体手指自由度数未列明。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.13643v1",
+            "paraphrase": "III、V 节：14 项实验室任务中选 12 项比较四种策略；火焰、蒸汽和气泡是与物理仿真解耦的视觉粒子。实机仅验证 UR5e 搭配 XHand 转移试管，每种背景条件各 20 次试验。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.13643v1",
+            "paraphrase": "附录 A/D 的策略接口提供图像、关节位置和语言指令，未列触觉输入。V-B 的 10 条真实加 90 条仿真示教与附录 E 的 100 条真实示教表述不一致，不能据此确认实机训练组成。"
+          },
+          {
+            "url": "https://autobio-plus.github.io/AutoBioPlus/",
+            "paraphrase": "已打开 arXiv 摘要所链接的官方项目页，标题、任务和实验对应本文；代码显示 coming soon，未提供可核验代码链接。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2610.13643v1",
+          "paraphrase": "附录 A/D 明确列出的评测输入为视觉、本体状态和语言，没有运行时触觉通道，因此不标 Tactile feedback。"
+        },
+        "paper": {
+          "id": "2610.13643",
+          "title": "AutoBio+: Benchmarking Dexterous Manipulation with Dynamic Experimental Phenomena in Realistic Laboratories",
+          "authors": [
+            "Xuanye Wu",
+            "Yue Shi",
+            "Yongcan Yang",
+            "Yiqun Wang",
+            "Zhaoqi Wan",
+            "Dayu Xia",
+            "Jiezhang Cao",
+            "Xiangfei Li",
+            "Yao Mu",
+            "Guangtao Zhai"
+          ],
+          "date": "2026-10-09",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tldr": "AutoBio+ benchmarks laboratory manipulation with articulated hands using parallel scripted demonstrations, Gaussian-splatting backgrounds, and dynamic visual effects. Four policies are compared on 12 simulated tasks; a separate UR5e–XHand tube-transfer experiment tests the effect of simulated backgrounds on real-robot performance.",
+          "tldr_zh": "面向实验室灵巧操作，结合并行脚本示教、Gaussian Splatting 背景和动态视觉粒子构建基准。四种策略在 12 项仿真任务上比较，另以 UR5e–XHand 转移试管验证仿真背景对实机表现的影响。",
+          "tags": [
+            "Imitation learning",
+            "Tool use",
+            "Articulated objects",
+            "Vision",
+            "Proprioception",
+            "Dataset / benchmark"
+          ],
+          "sensing": [
+            "Vision",
+            "Proprioception"
+          ],
+          "hand": [
+            "Shadow Hand",
+            "Wuji Hand",
+            "XHand"
+          ],
+          "task": [
+            "Laboratory tool use",
+            "Tube transfer",
+            "Instrument operation"
+          ],
+          "method": [
+            "Parallel finite-state-machine demonstration generation",
+            "Hybrid Gaussian-splatting rendering",
+            "Imitation-learning policy evaluation"
+          ],
+          "evaluation": "Simulation + real robot",
+          "notes_zh": "共 14 项任务、4 种本体；仿真评测覆盖其中 12 项，实机范围限于 UR5e–XHand 试管转移。手指自由度数未确认。V-B 与附录 E 对实机训练数据组成表述不一致，暂不据此概括迁移设置。未复现实验。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.13643",
+            "project": "https://autobio-plus.github.io/AutoBioPlus/"
+          }
+        }
+      }
     }
   ]
 }

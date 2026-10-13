@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-10-10",
+  "updated": "2026-10-12",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -5508,6 +5508,203 @@
       "sources": [
         "https://arxiv.org/html/2610.12470v1",
         "https://dex-one2many.github.io/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.13119",
+      "title": "Human2Dex: Dexterous Robot Learning from Wrist-Centric Human Demonstrations",
+      "authors": [
+        "Jiachen Zhang",
+        "Yuanyuan Li",
+        "Shaqi Luo"
+      ],
+      "date": "2026-10-09",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "tags": [
+        "Imitation learning",
+        "Diffusion / flow policy",
+        "Human motion transfer",
+        "Retargeting",
+        "Cross-embodiment",
+        "Dexterous grasping",
+        "Articulated objects",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Human2Dex converts wrist-centric human demonstrations into hand-specific training data using structural visual alignment, retargeting and grasp-relative object geometry. Separate diffusion policies achieve 109/120 and 97/120 successes on Linker O6 and Wuji across six real-world tasks with observation-based replanning.",
+      "tldr_zh": "将腕部视角人类示教经视觉结构对齐、重定向和抓取相对几何转换为各手专用数据。独立扩散策略在 Linker O6 与 Wuji 上闭环完成六项实机任务，成功数分别为 109/120 和 97/120。",
+      "sensing": [
+        "Wrist-mounted fisheye RGB",
+        "Measured robot hand state",
+        "Image-space object tracking"
+      ],
+      "hand": [
+        "Linker O6",
+        "Wuji"
+      ],
+      "task": [
+        "Compliant-object pick-and-place",
+        "Cup insertion",
+        "Bottle reorientation",
+        "Egg-carton lid opening",
+        "Drawer opening"
+      ],
+      "method": [
+        "Human demonstration conversion",
+        "Kinematic hand retargeting",
+        "Grasp-Pocket Interaction Representation",
+        "Hand- and task-specific diffusion policies"
+      ],
+      "evaluation": "Real-world closed-loop trials on two five-finger hands and six tasks; 20 trials per hand-task pair, with separate policies for each pair.",
+      "notes_zh": "正文评测为实机闭环，离线步骤用于转换人类示教；未报告仿真评测或仅动作回放的结果。跨本体指示教复用，两手的动作、归一化与策略分别训练，不能视为统一基座策略。视觉预训练与几何交互信息不构成运行时触觉。",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.13119",
+        "project": "https://human2dex.pages.dev/",
+        "code": "https://github.com/zgates2/Human2Dex_"
+      },
+      "arxiv_id": "2610.13119",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-09T07:14:53Z",
+      "source_url": "https://arxiv.org/abs/2610.13119v1",
+      "sources": [
+        "https://arxiv.org/abs/2610.13119v1",
+        "https://arxiv.org/html/2610.13119v1",
+        "https://human2dex.pages.dev/",
+        "https://github.com/zgates2/Human2Dex_"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.13212",
+      "title": "Beyond Actions: Learning Future Operation Targets for Vision-Language-Action Models",
+      "authors": [
+        "Min Lin",
+        "Bokai Zhou",
+        "Jianqi Lin",
+        "Kaiyuan Yang",
+        "Yicheng Chang",
+        "Junjie Yu",
+        "Xiaofan Liu",
+        "Jianhua Han",
+        "Rui Li",
+        "Shen Zhao",
+        "Xiaodan Liang"
+      ],
+      "date": "2026-10-09",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "tldr": "AFCE learns executable Effect targets from demonstrated actions, robot responses and future visual changes. A flow-matching VLA predicts these targets from current observations and decodes action chunks. On 11 simulated Panda–Allegro tasks, closed-loop success reaches 50.97%, with gains concentrated in bimanual tasks; reconstruction and ground-truth-Effect replay are separate training-data diagnostics.",
+      "tldr_zh": "AFCE 将示教动作、机器人响应与未来视觉变化编码为可解码的 Effect，再由流匹配 VLA 从当前观测预测并执行。在 11 项 Panda–Allegro 仿真任务中闭环成功率为 50.97%，收益主要来自双臂任务；训练集重建与回放另作诊断。",
+      "tags": [
+        "Imitation learning",
+        "Vision-language-action",
+        "Diffusion / flow policy",
+        "Bimanual coordination",
+        "Tool use",
+        "Articulated objects",
+        "Vision",
+        "Proprioception"
+      ],
+      "sensing": [
+        "Scene and wrist images",
+        "Proprioception"
+      ],
+      "hand": [
+        "Allegro Hand"
+      ],
+      "task": [
+        "Tool use",
+        "Articulated-object manipulation",
+        "Bimanual coordination"
+      ],
+      "method": [
+        "Action–Future Coupled Effect Learning",
+        "Imitation learning",
+        "Flow matching"
+      ],
+      "evaluation": "Simulation",
+      "notes_zh": "评测限于仿真，未报告实机。单臂精细控制并非全面提升；共享单臂/双臂接口不证明跨本体不变性。",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.13212"
+      },
+      "arxiv_id": "2610.13212",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-09T08:29:46Z",
+      "source_url": "https://arxiv.org/abs/2610.13212v1",
+      "sources": [
+        "https://arxiv.org/abs/2610.13212v1",
+        "https://arxiv.org/html/2610.13212v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.13643",
+      "title": "AutoBio+: Benchmarking Dexterous Manipulation with Dynamic Experimental Phenomena in Realistic Laboratories",
+      "authors": [
+        "Xuanye Wu",
+        "Yue Shi",
+        "Yongcan Yang",
+        "Yiqun Wang",
+        "Zhaoqi Wan",
+        "Dayu Xia",
+        "Jiezhang Cao",
+        "Xiangfei Li",
+        "Yao Mu",
+        "Guangtao Zhai"
+      ],
+      "date": "2026-10-09",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "tldr": "AutoBio+ benchmarks laboratory manipulation with articulated hands using parallel scripted demonstrations, Gaussian-splatting backgrounds, and dynamic visual effects. Four policies are compared on 12 simulated tasks; a separate UR5e–XHand tube-transfer experiment tests the effect of simulated backgrounds on real-robot performance.",
+      "tldr_zh": "面向实验室灵巧操作，结合并行脚本示教、Gaussian Splatting 背景和动态视觉粒子构建基准。四种策略在 12 项仿真任务上比较，另以 UR5e–XHand 转移试管验证仿真背景对实机表现的影响。",
+      "tags": [
+        "Imitation learning",
+        "Tool use",
+        "Articulated objects",
+        "Vision",
+        "Proprioception",
+        "Dataset / benchmark"
+      ],
+      "sensing": [
+        "Vision",
+        "Proprioception"
+      ],
+      "hand": [
+        "Shadow Hand",
+        "Wuji Hand",
+        "XHand"
+      ],
+      "task": [
+        "Laboratory tool use",
+        "Tube transfer",
+        "Instrument operation"
+      ],
+      "method": [
+        "Parallel finite-state-machine demonstration generation",
+        "Hybrid Gaussian-splatting rendering",
+        "Imitation-learning policy evaluation"
+      ],
+      "evaluation": "Simulation + real robot",
+      "notes_zh": "共 14 项任务、4 种本体；仿真评测覆盖其中 12 项，实机范围限于 UR5e–XHand 试管转移。手指自由度数未确认。V-B 与附录 E 对实机训练数据组成表述不一致，暂不据此概括迁移设置。未复现实验。",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.13643",
+        "project": "https://autobio-plus.github.io/AutoBioPlus/"
+      },
+      "arxiv_id": "2610.13643",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-09T14:21:41Z",
+      "source_url": "https://arxiv.org/abs/2610.13643v1",
+      "sources": [
+        "https://arxiv.org/html/2610.13643v1",
+        "https://autobio-plus.github.io/AutoBioPlus/"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"
