@@ -55,14 +55,14 @@ Each paper has one primary area. Tags add five complementary views: **Policy & l
 
 ## At a glance
 
-<p align="center"><b>96 papers</b> · <b>13 tactile dexterity papers</b> · <b>31 code links</b> · 6 research areas · <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/">browse the collection</a></p>
+<p align="center"><b>111 papers</b> · <b>19 tactile dexterity papers</b> · <b>34 code links</b> · 6 research areas · <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/">browse the collection</a></p>
 
 | Research area | Papers |
 |:--|--:|
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Dexterous%20Manipulation">Dexterous Manipulation</a> | 67 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Dexterous%20Manipulation">Tactile Dexterous Manipulation</a> | 13 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Sensing%20%26%20Representation">Tactile Sensing &amp; Representation</a> | 9 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Hand%E2%80%93Object%20Interaction">Hand–Object Interaction</a> | 4 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Dexterous%20Manipulation">Dexterous Manipulation</a> | 73 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Dexterous%20Manipulation">Tactile Dexterous Manipulation</a> | 19 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Sensing%20%26%20Representation">Tactile Sensing &amp; Representation</a> | 11 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Hand%E2%80%93Object%20Interaction">Hand–Object Interaction</a> | 5 |
 | <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Grasp%20Synthesis">Grasp Synthesis</a> | 1 |
 | <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Policy%20Optimization">Policy Optimization</a> | 2 |
 
@@ -88,14 +88,14 @@ The most recent first releases in the curated catalog. Dates below are publicati
 
 | First released | Paper | Research area | Resources |
 |:--|:--|:--|:--|
-| 2026-10-09 | <b>Human2Dex: Dexterous Robot Learning from Wrist-Centric Human Demonstrations</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.13119">Paper</a> · <a href="https://human2dex.pages.dev/">Project</a> · <a href="https://github.com/zgates2/Human2Dex_">Code</a> |
-| 2026-10-09 | <b>Beyond Actions: Learning Future Operation Targets for Vision-Language-Action Models</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.13212">Paper</a> |
-| 2026-10-09 | <b>AutoBio+: Benchmarking Dexterous Manipulation with Dynamic Experimental Phenomena in Realistic Laboratories</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.13643">Paper</a> · <a href="https://autobio-plus.github.io/AutoBioPlus/">Project</a> |
-| 2026-10-08 | <b>TACROSS: An Efficient and Low-Cost Scalable Human Touch System Across Heterogeneous Tactile Sensors for Dexterous Robot Learning</b> | Tactile Sensing &amp; Representation | <a href="https://arxiv.org/abs/2610.11945">Paper</a> · <a href="https://tacross-touch-project.github.io/">Project</a> |
-| 2026-10-08 | <b>SkillWeave: Weaving Heterogeneous Demonstrations into Long-Horizon Manipulation Skills</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.12046">Paper</a> · <a href="https://skillweave-authors.github.io/">Project</a> |
-| 2026-10-08 | <b>Generative Neural Retargeting for Human-to-Robot Dexterous Manipulation</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.12440">Paper</a> · <a href="https://yy-gx.github.io/GNR/">Project</a> |
-| 2026-10-08 | <b>A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control</b> | Policy Optimization | <a href="https://arxiv.org/abs/2610.12465">Paper</a> · <a href="https://sgs-rl.github.io/">Project</a> |
-| 2026-10-08 | <b>Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.12470">Paper</a> · <a href="https://dex-one2many.github.io/">Project</a> |
+| 2026-10-13 | <b>EgoCPT: Learning Dexterous Manipulation from a Single Ego-Centric Video with Contact-Aware Optimization</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.17572">Paper</a> · <a href="https://ego-cpt.github.io/">Project</a> |
+| 2026-10-13 | <b>PACT: Posture-Aligned Co-Design Technique for Hand Configuration and Retargeting in Multi-Finger Imitation Learning</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.18443">Paper</a> · <a href="https://pact-hand-2027.github.io">Project</a> |
+| 2026-10-12 | <b>DeTac: Dual-branch Decoupling of Texture and Force Signals in Vision-Based Tactile Sensors</b> | Tactile Sensing &amp; Representation | <a href="https://arxiv.org/abs/2610.16463">Paper</a> |
+| 2026-10-12 | <b>Force-Modulated Dexterity: Unified Compliance for Contact-Rich Manipulation</b> | Tactile Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.17161">Paper</a> |
+| 2026-10-12 | <b>DexNinja: Learning Robust Dexterous Cutting Policy with a Real-to-Sim-to-Real Data Engine</b> | Tactile Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.17208">Paper</a> · <a href="https://dex-ninja.github.io/">Project</a> |
+| 2026-10-11 | <b>Hand2Robot: Object-Centric 4D Hand Reconstruction from Human Demonstrations for Robotics</b> | Hand–Object Interaction | <a href="https://arxiv.org/abs/2610.15769">Paper</a> |
+| 2026-10-10 | <b>DexCast: Learning Real-World Dexterous Control from Human Videos</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.14691">Paper</a> |
+| 2026-10-10 | <b>Edge-Native Temporal--Graph Dual-Expert Inference for Dexterous Grasp Classification</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.14926">Paper</a> |
 
 [View the full catalog](https://breez3young.github.io/Awesome-Dexterous-Manipulation/) for summaries, evaluation context, and combinations of learning, sensing, and task tags.
 <!-- END GENERATED CATALOG -->
