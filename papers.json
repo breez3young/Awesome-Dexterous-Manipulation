@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -6698,6 +6698,207 @@
         "https://arxiv.org/abs/2610.18443v1",
         "https://arxiv.org/html/2610.18443v1",
         "https://pact-hand-2027.github.io"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2602.15828",
+      "title": "Dex4D: Task-Agnostic Point Track Policy for Zero-Shot Dexterous Manipulation",
+      "authors": [
+        "Yuxuan Kuang",
+        "Sungjae Park",
+        "Katerina Fragkiadaki",
+        "Shubham Tulsiani"
+      ],
+      "date": "2026-02-17",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "tags": [
+        "Reinforcement learning",
+        "Imitation learning",
+        "Model-based planning",
+        "Sim-to-real",
+        "Dexterous grasping",
+        "In-hand manipulation",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Dex4D trains a point-track-conditioned pose controller in simulation, then combines video-generated goals with visual feedback for dexterous manipulation without real-robot finetuning. The LEAP-hand system succeeds in 45/80 trials across four real tasks; its closed loop tracks the manipulated object only.",
+      "tldr_zh": "Dex4D 在仿真训练点轨迹条件的位姿控制器，以生成视频提供目标、视觉跟踪提供反馈，无实机微调完成灵巧操作。LEAP 系统在四项实机任务中成功 45/80 次；闭环仅追踪被操作物体。",
+      "sensing": [
+        "Single-view RealSense D435 RGB-D",
+        "Arm and hand joint positions and velocities"
+      ],
+      "hand": [
+        "LEAP Hand"
+      ],
+      "task": [
+        "Object lifting and placement",
+        "Pouring",
+        "In-hand reorientation (qualitative)"
+      ],
+      "method": [
+        "PPO teacher and DAgger student",
+        "Paired point encoding",
+        "Joint action and dynamics prediction",
+        "Video-generated point-track goals"
+      ],
+      "evaluation": "Six simulated tasks, 100 trials each; four physical tasks, 20 trials each, with unseen objects and no real-robot finetuning.",
+      "notes_zh": "基础视频模型用于规划，不据此标为 Foundation policy 或 VLA。XHand 结果是训练配方迁移。硬件仓库仍标 Coming Soon；代码链接指向已开放的仿真实现，未验证复现。",
+      "links": {
+        "paper": "https://arxiv.org/abs/2602.15828",
+        "project": "https://dex4d.github.io/",
+        "code": "https://github.com/Dex4D/Dex4D-Simulation"
+      },
+      "arxiv_id": "2602.15828",
+      "arxiv_version": 2,
+      "arxiv_updated": "2026-10-13T17:57:26Z",
+      "source_url": "https://arxiv.org/abs/2602.15828v2",
+      "sources": [
+        "https://arxiv.org/abs/2602.15828v2",
+        "https://dex4d.github.io/",
+        "https://arxiv.org/html/2602.15828v2",
+        "https://github.com/Dex4D/Dex4D-Simulation",
+        "https://github.com/Dex4D/Dex4D-Vision",
+        "https://github.com/Dex4D/Dex4D-Hardware"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v2)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.18822",
+      "title": "EgoMatrix: Physically Faithful Dexterous Robot Demonstrations from Egocentric Human Videos",
+      "authors": [
+        "Ziheng Wang",
+        "Yanming Shao",
+        "Ting Mao",
+        "Kaihan Chen",
+        "Yiqun Wang",
+        "Xuanye Wu",
+        "Yao Mu"
+      ],
+      "date": "2026-10-13",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "tags": [
+        "Reinforcement learning",
+        "Human motion transfer",
+        "Retargeting",
+        "Sim-to-real",
+        "Cross-embodiment",
+        "Dexterous grasping",
+        "Bimanual coordination",
+        "Tool use",
+        "Vision"
+      ],
+      "tldr": "EgoMatrix combines contact-aware monocular reconstruction, retargeting and PPO tracking to generate bimanual robot trajectories and paired images. It transfers 34 of 62 demonstrations successfully in simulation and shows selected XHand hardware replays; downstream policy-training gains remain untested.",
+      "tldr_zh": "以接触感知单目重建、重定向和PPO跟踪生成双手机器人轨迹及配对图像；62条示教中34条在仿真转移成功，并展示部分XHand实机回放，尚未验证下游策略训练收益。",
+      "sensing": [
+        "Monocular RGB (offline reconstruction)"
+      ],
+      "hand": [
+        "XHand"
+      ],
+      "task": [
+        "Bimanual trajectory transfer",
+        "Tool manipulation",
+        "Robot demonstration synthesis"
+      ],
+      "method": [
+        "Contact-aware hand-object reconstruction",
+        "Keypoint retargeting",
+        "PPO reference tracking",
+        "Joint robot-object rendering"
+      ],
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.18822",
+        "project": "https://spikew726.github.io/EgoMatrix/"
+      },
+      "arxiv_id": "2610.18822",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-13T17:51:46Z",
+      "source_url": "https://arxiv.org/abs/2610.18822v1",
+      "sources": [
+        "https://arxiv.org/abs/2610.18822v1",
+        "https://arxiv.org/html/2610.18822v1",
+        "https://spikew726.github.io/EgoMatrix/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.18872",
+      "title": "EgoExplorer: A Vision-Motion-Touch Observatory for Human Loco-Manipulation In Situ",
+      "authors": [
+        "Yunsong Zhou",
+        "Xuekun Jiang",
+        "Haiqi Shen",
+        "Hangxu Liu",
+        "Chaojian Shi",
+        "Yujie Liu",
+        "Jingyuan Li",
+        "Haoran Yang",
+        "Jiafei Cao",
+        "Dongzhan Zhou",
+        "Dong Wang",
+        "Yao Mu",
+        "Chunhua Shen",
+        "Weinan Zhang"
+      ],
+      "date": "2026-10-13",
+      "year": 2026,
+      "category": "Hand–Object Interaction",
+      "scope": "adjacent",
+      "tags": [
+        "Human motion transfer",
+        "Retargeting",
+        "Vision",
+        "Dataset / benchmark",
+        "Hardware / sensor"
+      ],
+      "tldr": "EgoExplorer couples wearable capture with calibrated motion reconstruction to collect 100 hours of human locomotion and manipulation, including hand articulation and partial tactile coverage. Evaluation concerns annotation quality, offline multimodal modeling, and two G1 simulation clips with kinematic finger replay; real-robot manipulation is untested.",
+      "tldr_zh": "以穿戴采集和经标定的运动重建记录100小时人类移动与操作，包含手指姿态及部分触觉覆盖。验证涵盖标注质量、离线多模态建模和两段G1仿真运动跟踪，手指仅运动学回放，尚未验证实机操作。",
+      "sensing": [
+        "Egocentric RGB",
+        "Five wearable pose trackers",
+        "Glove-measured finger articulation",
+        "Human-worn tactile contact signals (partial coverage)"
+      ],
+      "hand": [
+        "Human hands",
+        "Three-finger hand in G1 simulation"
+      ],
+      "task": [
+        "Human laboratory and household manipulation capture",
+        "Hand-pose and regional-contact evaluation",
+        "Simulated humanoid motion tracking"
+      ],
+      "method": [
+        "Calibrate-Complete-Constrain reconstruction",
+        "Glove-to-SMPL-X hand fusion",
+        "Multimodal sequence modeling",
+        "Human-to-humanoid retargeting"
+      ],
+      "notes_zh": "按人手交互数据贡献归为相邻资源；不标Tactile feedback或Force control。身体误差不是独立真值精度，手姿恢复率不是机器人任务成功率。所审v1写三指手；项目页另示五指Wuji，未据此改写正文实验。100小时为采集规模，当前公开入口仅提供需申请的66分钟迷你版；代码尚未发布。",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.18872",
+        "project": "https://internrobotics.github.io/egoexplorer.github.io/",
+        "dataset": "https://huggingface.co/datasets/InternRobotics/EgoExplorer"
+      },
+      "evaluation": "Controlled human capture tests, natural-recording consistency, offline multimodal studies, and two training-clip humanoid simulations; no hardware deployment or unseen-task validation.",
+      "arxiv_id": "2610.18872",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-13T17:59:55Z",
+      "source_url": "https://arxiv.org/abs/2610.18872v1",
+      "sources": [
+        "https://arxiv.org/abs/2610.18872v1",
+        "https://arxiv.org/html/2610.18872v1",
+        "https://internrobotics.github.io/egoexplorer.github.io/",
+        "https://github.com/InternRobotics/EgoExplorer",
+        "https://huggingface.co/datasets/InternRobotics/EgoExplorer"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"

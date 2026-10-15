@@ -5786,6 +5786,381 @@
           "evaluation": "Kinematic posture evaluation plus fabricated-hand grasp/payload/deformation experiments and an illustrative real-robot ACT pick-and-place task."
         }
       }
+    },
+    {
+      "key": "2602.15828|v2|2026-10-13T17:57:26+00:00|dexterous-v1",
+      "digest": "ec348ac5d1bca0b90f81ea994c9f112067c781426e7f97ba4f383647b41b2c7b",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-15T03:20:44Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2602.15828",
+          "version": 2,
+          "title": "Dex4D: Task-Agnostic Point Track Policy for Zero-Shot Dexterous Manipulation",
+          "authors": [
+            "Yuxuan Kuang",
+            "Sungjae Park",
+            "Katerina Fragkiadaki",
+            "Shubham Tulsiani"
+          ],
+          "published": "2026-02-17T18:59:31Z",
+          "updated": "2026-10-13T17:57:26Z",
+          "url": "https://arxiv.org/abs/2602.15828v2",
+          "primary_urls": [
+            "https://arxiv.org/abs/2602.15828v2",
+            "https://arxiv.org/html/2602.15828v2",
+            "https://dex4d.github.io/",
+            "https://github.com/Dex4D/Dex4D-Simulation",
+            "https://github.com/Dex4D/Dex4D-Vision",
+            "https://github.com/Dex4D/Dex4D-Hardware"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "研究以多指手执行点轨迹条件的通用物体位姿控制，并完成零微调实机验证，属于灵巧操作核心范围。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2602.15828v2",
+            "paraphrase": "核对标题、四名作者及历史：首次投稿 2026-02-17，本次为 2026-10-13 更新的 v2。"
+          },
+          {
+            "url": "https://dex4d.github.io/",
+            "paraphrase": "项目页对应本论文：仿真训练 AP2AP，配对当前/目标点编码，经 RL 教师及学生蒸馏执行；生成视频转为物体目标轨迹，在线视觉跟踪闭环控制。"
+          },
+          {
+            "url": "https://arxiv.org/html/2602.15828v2",
+            "paraphrase": "§3.3–3.4、附录 C/H：部署学生读 RGB-D 点轨迹、关节状态和上次动作；指尖力仅为仿真教师特权输入。实机为 xArm6 与 16-DoF LEAP。"
+          },
+          {
+            "url": "https://arxiv.org/html/2602.15828v2",
+            "paraphrase": "§4.1/4.3、表 3：六项仿真任务各 100 次；四项实机任务各 20 次，Dex4D 共 45/80，NovaFlow-CL 为 24/80。§5：仅单物体闭环，未实现针对目标或障碍变化的高层重规划。"
+          },
+          {
+            "url": "https://dex4d.github.io/",
+            "paraphrase": "项目页展示手内重定向及非抓握动作；XHand 演示复用仿真训练设置，不能据此认定同一策略零样本跨手部署。"
+          },
+          {
+            "url": "https://github.com/Dex4D/Dex4D-Simulation",
+            "paraphrase": "已打开仿真仓库：README 回链本论文，提供 AP2AP 环境、教师/学生训练和检查点。只核验归属，未运行。"
+          },
+          {
+            "url": "https://github.com/Dex4D/Dex4D-Vision",
+            "paraphrase": "已打开视觉仓库：README 回链本论文并说明 RGB-D 采集、深度及点跟踪工具。"
+          },
+          {
+            "url": "https://github.com/Dex4D/Dex4D-Hardware",
+            "paraphrase": "已打开硬件仓库，回链本论文，但当前仅 README 且标注 Coming Soon，不能称完整实机代码已发布。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2602.15828v2",
+          "paraphrase": "§3.3–3.4 的部署观测没有触觉；附录 H 的指尖力属于仿真教师特权状态。"
+        },
+        "paper": {
+          "id": "2602.15828",
+          "title": "Dex4D: Task-Agnostic Point Track Policy for Zero-Shot Dexterous Manipulation",
+          "authors": [
+            "Yuxuan Kuang",
+            "Sungjae Park",
+            "Katerina Fragkiadaki",
+            "Shubham Tulsiani"
+          ],
+          "date": "2026-02-17",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Model-based planning",
+            "Sim-to-real",
+            "Dexterous grasping",
+            "In-hand manipulation",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Dex4D trains a point-track-conditioned pose controller in simulation, then combines video-generated goals with visual feedback for dexterous manipulation without real-robot finetuning. The LEAP-hand system succeeds in 45/80 trials across four real tasks; its closed loop tracks the manipulated object only.",
+          "tldr_zh": "Dex4D 在仿真训练点轨迹条件的位姿控制器，以生成视频提供目标、视觉跟踪提供反馈，无实机微调完成灵巧操作。LEAP 系统在四项实机任务中成功 45/80 次；闭环仅追踪被操作物体。",
+          "sensing": [
+            "Single-view RealSense D435 RGB-D",
+            "Arm and hand joint positions and velocities"
+          ],
+          "hand": [
+            "LEAP Hand"
+          ],
+          "task": [
+            "Object lifting and placement",
+            "Pouring",
+            "In-hand reorientation (qualitative)"
+          ],
+          "method": [
+            "PPO teacher and DAgger student",
+            "Paired point encoding",
+            "Joint action and dynamics prediction",
+            "Video-generated point-track goals"
+          ],
+          "evaluation": "Six simulated tasks, 100 trials each; four physical tasks, 20 trials each, with unseen objects and no real-robot finetuning.",
+          "notes_zh": "基础视频模型用于规划，不据此标为 Foundation policy 或 VLA。XHand 结果是训练配方迁移。硬件仓库仍标 Coming Soon；代码链接指向已开放的仿真实现，未验证复现。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2602.15828",
+            "project": "https://dex4d.github.io/",
+            "code": "https://github.com/Dex4D/Dex4D-Simulation"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.18822|v1|2026-10-13T17:51:46+00:00|dexterous-v1",
+      "digest": "25651eddcb0bdea89b25379b59946af2d7ffce7b4c30eef87ca23abdd9d24b8e",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-15T03:20:44Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.18822",
+          "version": 1,
+          "title": "EgoMatrix: Physically Faithful Dexterous Robot Demonstrations from Egocentric Human Videos",
+          "authors": [
+            "Ziheng Wang",
+            "Yanming Shao",
+            "Ting Mao",
+            "Kaihan Chen",
+            "Yiqun Wang",
+            "Xuanye Wu",
+            "Yao Mu"
+          ],
+          "published": "2026-10-13T17:51:46Z",
+          "updated": "2026-10-13T17:51:46Z",
+          "url": "https://arxiv.org/abs/2610.18822v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2610.18822v1",
+            "https://arxiv.org/html/2610.18822v1",
+            "https://spikew726.github.io/EgoMatrix/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "将人类第一视角视频转成双手灵巧机器人轨迹与配对图像，并展示 XHand 实机回放，符合核心范围。主要结果是仿真转移成功率；下游策略训练尚未验证，不标基座策略或触觉反馈。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.18822v1",
+            "paraphrase": "官方摘要页核对标题、七位作者及 v1；首次投稿与更新时间均为 2026-10-13T17:51:46Z。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.18822v1",
+            "paraphrase": "§3.1–3.3：单目RGB接触重建、关键点重定向和PPO参考跟踪生成双手轨迹，再联合渲染手与物体；接触估计及奖励不构成实机触觉输入。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.18822v1",
+            "paraphrase": "§4.1–4.2：17类任务、62条示教中34条仿真转移成功；公共集按物体位姿误差判定，自采集按抓取及任务完成判定。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.18822v1",
+            "paraphrase": "§4.6、附录E及§5：展示双UR5e/XHand与RB-Y1/XHand的代表性实机轨迹回放；未报告硬件总体成功率，下游合成数据训练收益仍待研究。"
+          },
+          {
+            "url": "https://spikew726.github.io/EgoMatrix/",
+            "paraphrase": "已核验项目页及六种实机回放说明；倒杯片段从已抓握状态开始。页面无可核验代码入口。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2610.18822v1",
+          "paraphrase": "§3与§4.6描述视觉接触重建、仿真接触奖励及硬件轨迹回放，未提供运行时触觉观测证据。"
+        },
+        "paper": {
+          "id": "2610.18822",
+          "title": "EgoMatrix: Physically Faithful Dexterous Robot Demonstrations from Egocentric Human Videos",
+          "authors": [
+            "Ziheng Wang",
+            "Yanming Shao",
+            "Ting Mao",
+            "Kaihan Chen",
+            "Yiqun Wang",
+            "Xuanye Wu",
+            "Yao Mu"
+          ],
+          "date": "2026-10-13",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Reinforcement learning",
+            "Human motion transfer",
+            "Retargeting",
+            "Sim-to-real",
+            "Cross-embodiment",
+            "Dexterous grasping",
+            "Bimanual coordination",
+            "Tool use",
+            "Vision"
+          ],
+          "tldr": "EgoMatrix combines contact-aware monocular reconstruction, retargeting and PPO tracking to generate bimanual robot trajectories and paired images. It transfers 34 of 62 demonstrations successfully in simulation and shows selected XHand hardware replays; downstream policy-training gains remain untested.",
+          "tldr_zh": "以接触感知单目重建、重定向和PPO跟踪生成双手机器人轨迹及配对图像；62条示教中34条在仿真转移成功，并展示部分XHand实机回放，尚未验证下游策略训练收益。",
+          "sensing": [
+            "Monocular RGB (offline reconstruction)"
+          ],
+          "hand": [
+            "XHand"
+          ],
+          "task": [
+            "Bimanual trajectory transfer",
+            "Tool manipulation",
+            "Robot demonstration synthesis"
+          ],
+          "method": [
+            "Contact-aware hand-object reconstruction",
+            "Keypoint retargeting",
+            "PPO reference tracking",
+            "Joint robot-object rendering"
+          ],
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.18822",
+            "project": "https://spikew726.github.io/EgoMatrix/"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.18872|v1|2026-10-13T17:59:55+00:00|dexterous-v1",
+      "digest": "05a4a80b4af09bca01b2a8224af34dc1ef72c3e907cd10be1649dde1f0553e63",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-15T03:20:44Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.18872",
+          "version": 1,
+          "title": "EgoExplorer: A Vision-Motion-Touch Observatory for Human Loco-Manipulation In Situ",
+          "authors": [
+            "Yunsong Zhou",
+            "Xuekun Jiang",
+            "Haiqi Shen",
+            "Hangxu Liu",
+            "Chaojian Shi",
+            "Yujie Liu",
+            "Jingyuan Li",
+            "Haoran Yang",
+            "Jiafei Cao",
+            "Dongzhan Zhou",
+            "Dong Wang",
+            "Yao Mu",
+            "Chunhua Shen",
+            "Weinan Zhang"
+          ],
+          "published": "2026-10-13T17:59:55Z",
+          "updated": "2026-10-13T17:59:55Z",
+          "url": "https://arxiv.org/abs/2610.18872v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2610.18872v1",
+            "https://arxiv.org/html/2610.18872v1",
+            "https://internrobotics.github.io/egoexplorer.github.io/",
+            "https://github.com/InternRobotics/EgoExplorer",
+            "https://huggingface.co/datasets/InternRobotics/EgoExplorer"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "提供细粒度手部姿态与手物接触记录，并评测手姿和接触质量，可作为相邻人手物体交互资源收录。机器人用途仅有两段训练片段的仿真跟踪，不能视为实机触觉灵巧操作。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.18872v1",
+            "paraphrase": "官方摘要页核对标题、14位作者及投稿历史：首次投稿和更新时间均为2026-10-13T17:59:55Z，所审版本v1。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.18872v1",
+            "paraphrase": "§3、附录D.1/E：五个跟踪器、头戴相机和手套采集人类活动；C³依次标定、补全和约束身体运动，再融合手部。触觉只覆盖41%的常规记录，是接触指标而非校准力/压力。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.18872v1",
+            "paraphrase": "§5.1、附录F.2–F.4：身体误差参考与方法共享拟合模型；手部100%表示运动学原型恢复，无动力学执行。接触区域IoU为0.915。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.18872v1",
+            "paraphrase": "附录F.6/F.9：多模态研究为离线生成/条件化；G1仅在两段训练片段上仿真，29身体关节由RL控制，三指手运动学回放；未评测实机或未见任务。"
+          },
+          {
+            "url": "https://internrobotics.github.io/egoexplorer.github.io/",
+            "paraphrase": "项目标题、作者与论文相符，展示十类人类操作任务。项目页部分手型和触觉覆盖描述与v1正文不同，审核范围以固定版本正文为准。"
+          },
+          {
+            "url": "https://github.com/InternRobotics/EgoExplorer",
+            "paraphrase": "官方仓库已打开；说明工具代码预计2026年11月初发布，当前不收录为可用代码链接。"
+          },
+          {
+            "url": "https://huggingface.co/datasets/InternRobotics/EgoExplorer",
+            "paraphrase": "官方数据卡标明arXiv编号；当前需申请访问的迷你版为18段、66分钟，完整采集集分阶段开放。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2610.18872v1",
+          "paraphrase": "附录D.1/F.9：触觉来自人类穿戴手套；机器人验证仅仿真运动跟踪，未报告真实机器人策略读取触觉。"
+        },
+        "paper": {
+          "id": "2610.18872",
+          "title": "EgoExplorer: A Vision-Motion-Touch Observatory for Human Loco-Manipulation In Situ",
+          "authors": [
+            "Yunsong Zhou",
+            "Xuekun Jiang",
+            "Haiqi Shen",
+            "Hangxu Liu",
+            "Chaojian Shi",
+            "Yujie Liu",
+            "Jingyuan Li",
+            "Haoran Yang",
+            "Jiafei Cao",
+            "Dongzhan Zhou",
+            "Dong Wang",
+            "Yao Mu",
+            "Chunhua Shen",
+            "Weinan Zhang"
+          ],
+          "date": "2026-10-13",
+          "year": 2026,
+          "category": "Hand–Object Interaction",
+          "scope": "adjacent",
+          "tags": [
+            "Human motion transfer",
+            "Retargeting",
+            "Vision",
+            "Dataset / benchmark",
+            "Hardware / sensor"
+          ],
+          "tldr": "EgoExplorer couples wearable capture with calibrated motion reconstruction to collect 100 hours of human locomotion and manipulation, including hand articulation and partial tactile coverage. Evaluation concerns annotation quality, offline multimodal modeling, and two G1 simulation clips with kinematic finger replay; real-robot manipulation is untested.",
+          "tldr_zh": "以穿戴采集和经标定的运动重建记录100小时人类移动与操作，包含手指姿态及部分触觉覆盖。验证涵盖标注质量、离线多模态建模和两段G1仿真运动跟踪，手指仅运动学回放，尚未验证实机操作。",
+          "sensing": [
+            "Egocentric RGB",
+            "Five wearable pose trackers",
+            "Glove-measured finger articulation",
+            "Human-worn tactile contact signals (partial coverage)"
+          ],
+          "hand": [
+            "Human hands",
+            "Three-finger hand in G1 simulation"
+          ],
+          "task": [
+            "Human laboratory and household manipulation capture",
+            "Hand-pose and regional-contact evaluation",
+            "Simulated humanoid motion tracking"
+          ],
+          "method": [
+            "Calibrate-Complete-Constrain reconstruction",
+            "Glove-to-SMPL-X hand fusion",
+            "Multimodal sequence modeling",
+            "Human-to-humanoid retargeting"
+          ],
+          "notes_zh": "按人手交互数据贡献归为相邻资源；不标Tactile feedback或Force control。身体误差不是独立真值精度，手姿恢复率不是机器人任务成功率。所审v1写三指手；项目页另示五指Wuji，未据此改写正文实验。100小时为采集规模，当前公开入口仅提供需申请的66分钟迷你版；代码尚未发布。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.18872",
+            "project": "https://internrobotics.github.io/egoexplorer.github.io/",
+            "dataset": "https://huggingface.co/datasets/InternRobotics/EgoExplorer"
+          },
+          "evaluation": "Controlled human capture tests, natural-recording consistency, offline multimodal studies, and two training-clip humanoid simulations; no hardware deployment or unseen-task validation."
+        }
+      }
     }
   ]
 }
