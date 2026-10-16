@@ -1,28 +1,49 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-10-14T06:33:56Z",
+  "last_checked_at": "2026-10-15T06:16:26Z",
   "lookback_days": 7,
-  "window_start": "2026-10-07T06:33:56Z",
+  "window_start": "2026-10-08T06:16:26Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 7,
-  "recent_match_count": 34,
-  "new_candidate_count": 3,
+  "candidate_count": 13,
+  "recent_match_count": 42,
+  "new_candidate_count": 9,
   "updated_candidate_count": 0,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
     {
-      "id": "2610.18872",
-      "title": "EgoExplorer: A Vision-Motion-Touch Observatory for Human Loco-Manipulation In Situ",
-      "published": "2026-10-13T17:59:55Z",
-      "updated": "2026-10-13T17:59:55Z",
+      "id": "2610.20320",
+      "title": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation",
+      "published": "2026-10-14T15:06:53Z",
+      "updated": "2026-10-14T15:06:53Z",
       "links": {
-        "paper": "https://arxiv.org/abs/2610.18872",
-        "pdf": "https://arxiv.org/pdf/2610.18872"
+        "paper": "https://arxiv.org/abs/2610.20320",
+        "pdf": "https://arxiv.org/pdf/2610.20320"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "title",
+          "text": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.20134",
+      "title": "Tactile-Guided Robot Learning: From Representation Learning to Foundation Models",
+      "published": "2026-10-14T12:54:05Z",
+      "updated": "2026-10-14T12:54:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.20134",
+        "pdf": "https://arxiv.org/pdf/2610.20134"
       },
       "matched_topics": [
         "dexterous",
@@ -31,19 +52,19 @@
       "evidence": [
         {
           "source": "abstract",
-          "text": "… baseline; matched evaluations also show gains in hand stability and contact estimation. Preliminary studies explore multimodal generation and conditioning alongside humanoid retargeting …"
+          "text": "… becoming central to robust, adaptive, and dexterous robotic manipulation. Beyond its traditional role in contact detection and reactive control, touch is increasingly …"
         }
       ],
       "review_status": "pending"
     },
     {
-      "id": "2602.15828",
-      "title": "Dex4D: Task-Agnostic Point Track Policy for Zero-Shot Dexterous Manipulation",
-      "published": "2026-02-17T18:59:31Z",
-      "updated": "2026-10-13T17:57:26Z",
+      "id": "2609.33551",
+      "title": "FoLD: Force-Informed Learning for Dexterous Articulated Object Manipulation",
+      "published": "2026-09-27T13:21:34Z",
+      "updated": "2026-10-14T11:14:22Z",
       "links": {
-        "paper": "https://arxiv.org/abs/2602.15828",
-        "pdf": "https://arxiv.org/pdf/2602.15828"
+        "paper": "https://arxiv.org/abs/2609.33551",
+        "pdf": "https://arxiv.org/pdf/2609.33551"
       },
       "matched_topics": [
         "dexterous"
@@ -51,19 +72,19 @@
       "evidence": [
         {
           "source": "abstract",
-          "text": "… tasks remains an open challenge in dexterous manipulation. In particular, collecting large-scale manipulation data via real-world teleoperation is expensive and difficult to …"
+          "text": "… present \\textbf{FoLD}, a framework for learning dexterous manipulation of articulated objects through explicit force guidance. FoLD compute compensatory force fields from human …"
         }
       ],
       "review_status": "pending"
     },
     {
-      "id": "2610.18822",
-      "title": "EgoMatrix: Physically Faithful Dexterous Robot Demonstrations from Egocentric Human Videos",
-      "published": "2026-10-13T17:51:46Z",
-      "updated": "2026-10-13T17:51:46Z",
+      "id": "2610.19753",
+      "title": "Coordi-pi: Coordination-Aware Dual-Hand Action Representation for Bimanual Dexterous Manipulation",
+      "published": "2026-10-14T08:08:45Z",
+      "updated": "2026-10-14T08:08:45Z",
       "links": {
-        "paper": "https://arxiv.org/abs/2610.18822",
-        "pdf": "https://arxiv.org/pdf/2610.18822"
+        "paper": "https://arxiv.org/abs/2610.19753",
+        "pdf": "https://arxiv.org/pdf/2610.19753"
       },
       "matched_topics": [
         "dexterous"
@@ -71,7 +92,109 @@
       "evidence": [
         {
           "source": "abstract",
-          "text": "… alternative to robot teleoperation for collecting dexterous manipulation data. However, two challenges limit their use as reliable training data: accurate hand-object interaction …"
+          "text": "… manipulation, but extending them to bimanual dexterous manipulation introduces a high-dimensional and structured action space. Existing bimanual VLA policies commonly concatenate right- …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.19594",
+      "title": "RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation",
+      "published": "2026-10-14T05:10:48Z",
+      "updated": "2026-10-14T05:10:48Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19594",
+        "pdf": "https://arxiv.org/pdf/2610.19594"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… Existing teleoperation platforms also lack integrated dexterous tactile sensing to support coordinated whole-body decision-making. This paper presents RoboSpan, a high-DoF whole-body teleoperation …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.19518",
+      "title": "HiFun: a Hierarchical Framework for Efficient Functional Dexterous Manipulation Learning",
+      "published": "2026-10-14T03:37:15Z",
+      "updated": "2026-10-14T03:37:15Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19518",
+        "pdf": "https://arxiv.org/pdf/2610.19518"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… hierarchical real-world RL framework for functional dexterous manipulation tasks. Our key insight is to decouple the control complexity into a functional hand …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2607.07968",
+      "title": "Soft Robotic Exogloves for Dexterous Mobility -- Towards Personalized Rehabilitation",
+      "published": "2026-07-08T22:48:29Z",
+      "updated": "2026-10-14T01:48:53Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2607.07968",
+        "pdf": "https://arxiv.org/pdf/2607.07968"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… especially for fine articulation necessary for dexterous manipulation. We present the design, fabrication, modeling, and testing of a personalized pneumatically-actuated soft robotic …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.19155",
+      "title": "FACT: A Multimodal Force-Action-Track Foundation Model for Human-to-Robot Dexterity",
+      "published": "2026-10-13T20:21:52Z",
+      "updated": "2026-10-13T20:21:52Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19155",
+        "pdf": "https://arxiv.org/pdf/2610.19155"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… to costly robot data collection for dexterous manipulation, but most human datasets lack force measurements. Dexterous manipulation requires not only visual and …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.19089",
+      "title": "DexMimic: A Generalist Dexterous Hand-Object Tracking Policy via Value-Guided Reset Allocation",
+      "published": "2026-10-13T19:29:33Z",
+      "updated": "2026-10-13T19:29:33Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19089",
+        "pdf": "https://arxiv.org/pdf/2610.19089"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Achieving human-like dexterous manipulation remains a central challenge in robotics. Learning from human hand-object interaction (HOI) datasets offers a promising pathway to …"
         }
       ],
       "review_status": "pending"

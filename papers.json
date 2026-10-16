@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -6899,6 +6899,537 @@
         "https://internrobotics.github.io/egoexplorer.github.io/",
         "https://github.com/InternRobotics/EgoExplorer",
         "https://huggingface.co/datasets/InternRobotics/EgoExplorer"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2609.33551",
+      "title": "FoLD: Force-Informed Learning for Dexterous Articulated Object Manipulation",
+      "authors": [
+        "Haowei Shen",
+        "Tingai Li",
+        "Yumeng Liu",
+        "Wenyuan Guang",
+        "Xuanze Yang",
+        "Qing Fang",
+        "Kai Xu",
+        "Ligang Liu",
+        "Ruizhen Hu"
+      ],
+      "date": "2026-09-27",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "tags": [
+        "Reinforcement learning",
+        "Human motion transfer",
+        "Retargeting",
+        "Bimanual coordination",
+        "Articulated objects",
+        "Proprioception"
+      ],
+      "tldr": "FoLD encodes virtual corrective force fields to guide residual reinforcement learning from human articulated-object demonstrations. Across 27 paired simulation cases, mean trajectory completion rises from 0.606 to 0.772; hardware demonstrations replay generated motions without online policy inference.",
+      "tldr_zh": "FoLD 将虚拟补偿力场编码为残差强化学习输入，把人类示教转为双手铰接物体操作。27 对仿真评测的平均轨迹完成比例由 0.606 提至 0.772；实机仅开环回放生成动作，无在线策略推理。",
+      "sensing": [
+        "Simulated hand and object states",
+        "Geometric contact regions for virtual force allocation"
+      ],
+      "hand": [
+        "Inspire (simulation)",
+        "Allegro (simulation)",
+        "XHand (simulation)",
+        "Schunk (simulation)",
+        "Sharpa Wave (simulation and physical replay)",
+        "Galbot Sharpa (physical replay)"
+      ],
+      "task": [
+        "Bimanual articulated-object trajectory tracking",
+        "Headphone folding and laptop closing (physical replay)",
+        "Scissor opening and closing (Galbot physical replay)"
+      ],
+      "method": [
+        "PPO residual policy with a frozen hand-motion imitator",
+        "Constrained compensatory force allocation",
+        "PointNet-style force-field encoding",
+        "Virtual object assistance curriculum"
+      ],
+      "evaluation": "Seven ARCTIC clips across four hands, with 27 paired cases after one paired exclusion; additional five-sequence CHORD comparison. Physical demonstrations are qualitative open-loop replay.",
+      "notes_zh": "SR 是连续轨迹完成比例，不能解释为任务二值成功率。不同手/任务分别训练；仿真评测关闭虚拟物体辅助，未报告独立训练种子统计。虚拟力指导不等于触觉反馈；实机不是闭环策略迁移。已核验项目页，尚未提供公开代码链接。",
+      "links": {
+        "paper": "https://arxiv.org/abs/2609.33551",
+        "project": "https://gghgghgghgg.github.io/FoLD-project-page/"
+      },
+      "arxiv_id": "2609.33551",
+      "arxiv_version": 2,
+      "arxiv_updated": "2026-10-14T11:14:22Z",
+      "source_url": "https://arxiv.org/abs/2609.33551v2",
+      "sources": [
+        "https://arxiv.org/abs/2609.33551v2",
+        "https://arxiv.org/html/2609.33551v2",
+        "https://gghgghgghgg.github.io/FoLD-project-page/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v2)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.19089",
+      "title": "DexMimic: A Generalist Dexterous Hand-Object Tracking Policy via Value-Guided Reset Allocation",
+      "authors": [
+        "Zhexi Luo",
+        "Zhixuan Xu",
+        "Rui Yang",
+        "Zeyu Xiao",
+        "Yiwen Hou",
+        "Lin Shao"
+      ],
+      "date": "2026-10-13",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "tags": [
+        "Reinforcement learning",
+        "Human motion transfer",
+        "Retargeting",
+        "Bimanual coordination",
+        "Tool use",
+        "Proprioception",
+        "Dataset / benchmark"
+      ],
+      "tldr": "DexMimic uses critic-guided reset phases and states to jointly train a reference-conditioned dexterous tracking policy. It reaches 88.40% success on 50 bimanual simulation tasks and studies adaptation and unseen-object transfer; physical execution replays successful simulation trajectories.",
+      "tldr_zh": "DexMimic 以价值估计分配重置阶段和状态，联合训练参考条件的灵巧跟踪策略。在 50 项双手仿真任务上成功率达 88.40%，并评测微调及未见物体泛化；实机执行为成功仿真轨迹的开环回放。",
+      "sensing": [
+        "Simulated hand and object states with fingertip contact forces",
+        "RealSense D435i RGB-D for initial object pose estimation only"
+      ],
+      "hand": [
+        "Wuji (simulation; 20-DoF right hand on hardware)",
+        "Inspire (simulation)",
+        "Shadow (simulation)",
+        "Allegro (simulation)"
+      ],
+      "task": [
+        "Single-hand and bimanual hand-object trajectory tracking",
+        "Pouring, scooping, tilting and shaking (physical replay)"
+      ],
+      "method": [
+        "Reference-conditioned PPO residual tracking",
+        "Value-guided reset-state allocation",
+        "Value-guided reset-phase allocation",
+        "Joint training across human interaction trajectories"
+      ],
+      "evaluation": "Benchmark contains 1,944 trajectories over 140 rigid objects from OakInk-V2 and HOT3D. Main comparison uses 50 bimanual tasks with 50 rollouts each; separate fine-tuning, zero-shot transfer and four-hand studies. Hardware demonstrations use open-loop replay.",
+      "notes_zh": "50 项主评测的训练耗时按联合训练总耗时除以轨迹数计算；跟踪误差仅在成功回合上汇总。四种手分别训练策略，不能据此称同一策略零样本跨手部署。仿真接触力不构成实机触觉反馈；项目页未提供代码链接。",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19089",
+        "project": "https://zhexiluo.github.io/DexMimic/"
+      },
+      "arxiv_id": "2610.19089",
+      "arxiv_version": 2,
+      "arxiv_updated": "2026-10-15T06:00:59Z",
+      "source_url": "https://arxiv.org/abs/2610.19089v2",
+      "sources": [
+        "https://arxiv.org/abs/2610.19089v2",
+        "https://arxiv.org/html/2610.19089v2",
+        "https://zhexiluo.github.io/DexMimic/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v2)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.19155",
+      "title": "FACT: A Multimodal Force-Action-Track Foundation Model for Human-to-Robot Dexterity",
+      "authors": [
+        "Zhi Cao",
+        "Yining Hong",
+        "Jiaolong Yang",
+        "Yejin Choi",
+        "Li Fei-Fei",
+        "Jiajun Wu",
+        "Huang Huang"
+      ],
+      "date": "2026-10-13",
+      "year": 2026,
+      "category": "Tactile Dexterous Manipulation",
+      "scope": "core",
+      "tags": [
+        "Imitation learning",
+        "Vision-language-action",
+        "Foundation policy",
+        "Diffusion / flow policy",
+        "Human motion transfer",
+        "Cross-embodiment",
+        "Bimanual coordination",
+        "Tool use",
+        "Tactile feedback",
+        "Vision",
+        "Proprioception",
+        "Dataset / benchmark"
+      ],
+      "tldr": "FACT pretrains a control policy on human and robot demonstrations, combining visual-track planning with tactile action refinement. After separate fine-tuning for each of ten real-robot tasks, it reaches 41.4% mean success on the seven binary tasks; the other three use task-specific scores.",
+      "tldr_zh": "FACT 联合人机示教预训练控制策略，以视觉轨迹规划和触觉动作精修实现灵巧操作。十项实机任务分别微调后，七项二值任务平均成功率为 41.4%，另三项使用各自评分。",
+      "sensing": [
+        "Three RGB camera views",
+        "Arm poses and hand joints",
+        "Ten fingertip six-axis force/torque wrenches"
+      ],
+      "hand": [
+        "Sharpa Wave 1"
+      ],
+      "task": [
+        "Laboratory pipetting and cap manipulation",
+        "Shoelace tying and card shuffling",
+        "Multi-object grasping",
+        "Screwdriver and musical-instrument use"
+      ],
+      "method": [
+        "Human-robot policy pretraining",
+        "Track-guided flow-matching planner",
+        "Force-action joint refinement"
+      ],
+      "evaluation": "Ten real-robot tasks, ten rollouts each, with separate task-specific fine-tuning and randomized object placement.",
+      "notes_zh": "基础策略经任务分别微调；未展示同一策略零样本完成全部任务。人类预训练的手套压力不能直接观测切向力。代码和数据尚未发布。",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19155",
+        "project": "https://fact-1-0.github.io/"
+      },
+      "arxiv_id": "2610.19155",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-13T20:21:52Z",
+      "source_url": "https://arxiv.org/abs/2610.19155v1",
+      "sources": [
+        "https://arxiv.org/abs/2610.19155v1",
+        "https://arxiv.org/html/2610.19155v1",
+        "https://fact-1-0.github.io/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.19518",
+      "title": "HiFun: a Hierarchical Framework for Efficient Functional Dexterous Manipulation Learning",
+      "authors": [
+        "Linyi Huang",
+        "Guowei Huai",
+        "Weibin Liu",
+        "Shulong Jiang",
+        "Ping Tan",
+        "Weixuan Zhang",
+        "Hui Zhang",
+        "Jie Song"
+      ],
+      "date": "2026-10-14",
+      "year": 2026,
+      "category": "Tactile Dexterous Manipulation",
+      "scope": "core",
+      "tags": [
+        "Reinforcement learning",
+        "Imitation learning",
+        "Human-in-the-loop",
+        "Teleoperation",
+        "Dexterous grasping",
+        "Tool use",
+        "Tactile feedback",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "HiFun learns tactile hand skills with residual RL, then coordinates arm motion and skill activation using DMP initialization and human corrections. It reports 295/300 successes across six real tasks on Sharpa and XHand. The one-hour budget covers online coordination training, not the full pipeline.",
+      "tldr_zh": "HiFun 以残差强化学习训练触觉手技能，再通过 DMP 初始化和人工纠正学习手臂运动及技能激活。在 Sharpa 与 XHand 的六项实机任务中成功 295/300 次；一小时预算仅覆盖在线协调训练。",
+      "sensing": [
+        "Wrist and optional side-view RGB",
+        "Arm-hand proprioception",
+        "Fingertip contact forces"
+      ],
+      "hand": [
+        "Sharpa hand",
+        "XHand"
+      ],
+      "task": [
+        "Power-drill actuation and bit removal",
+        "Constrained tool retrieval",
+        "Pipette dispensing"
+      ],
+      "method": [
+        "Kinesthetic priors with residual SAC",
+        "Frozen hand skills and arm-hand coordination",
+        "DMP-generated initialization",
+        "Multi-head critic and intervention advantage weighting"
+      ],
+      "evaluation": "Six physical tasks with 50 main trials each; 20 perturbation trials per task; primary evaluation randomizes poses inside the trained workspace.",
+      "notes_zh": "两种手展示训练框架的适用性，不代表同一策略零样本跨手迁移。基线评分含少数半分；代码仓库目前为发布占位。",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19518",
+        "project": "https://hly-123.github.io/HiFun/"
+      },
+      "arxiv_id": "2610.19518",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-14T03:37:15Z",
+      "source_url": "https://arxiv.org/abs/2610.19518v1",
+      "sources": [
+        "https://arxiv.org/abs/2610.19518v1",
+        "https://arxiv.org/html/2610.19518v1",
+        "https://hly-123.github.io/HiFun/",
+        "https://github.com/Hly-123/HiFun-code"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.19594",
+      "title": "RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation",
+      "authors": [
+        "Keqiang Ren",
+        "Xuecheng Ye",
+        "Hanyu Liu",
+        "Zhihua Wang",
+        "Tao Jian",
+        "Yunsheng Ma",
+        "Jiayi Wen",
+        "Xinran Li",
+        "Zhigong Song"
+      ],
+      "date": "2026-10-14",
+      "year": 2026,
+      "category": "Tactile Dexterous Manipulation",
+      "scope": "core",
+      "tags": [
+        "Imitation learning",
+        "Teleoperation",
+        "Bimanual coordination",
+        "Long-horizon tasks",
+        "Tactile feedback",
+        "Vision",
+        "Proprioception",
+        "Hardware / sensor"
+      ],
+      "tldr": "RoboSpan combines tactile dexterous hands with whole-body teleoperation. HMF uses stage-specific behavior cloning and cross-module attention for hand, arm and base coordination. It reports 54.7% mean success on three physical whole-body tasks; the policy description still includes operator foot-IMU intent.",
+      "tldr_zh": "RoboSpan 将触觉多指手集成到全身遥操作平台，HMF 通过分阶段行为克隆与跨模块注意力协调手、臂和底盘。三项实机全身任务平均成功率为 54.7%；策略观测仍列有操作者脚部 IMU 意图。",
+      "sensing": [
+        "Hand and top-camera images",
+        "Full-palm distributed tactile maps",
+        "Joint, base and lift states",
+        "Operator foot-IMU intent"
+      ],
+      "hand": [
+        "Linker Hand O6"
+      ],
+      "task": [
+        "Trash cleaning",
+        "Fruit transfer",
+        "Desktop organization",
+        "Contact-sensitive transfer and bell pressing"
+      ],
+      "method": [
+        "VLM task-stage decomposition",
+        "Stage-specific behavior cloning",
+        "Modular transformer with inter-module cross-attention"
+      ],
+      "evaluation": "Physical 29-DoF platform; three whole-body tasks, three tactile-ablation tasks and teleoperation comparisons. Trial counts are not specified in the inspected text.",
+      "notes_zh": "未核验到项目或代码地址。缺试验次数及清楚的无人工输入部署说明；不宣称完全自主。VLM 用于阶段分解，未据此标为 Foundation policy 或 VLA。表 IV 的完整方法标作 COMET，正文称 HMF。",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19594"
+      },
+      "arxiv_id": "2610.19594",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-14T05:10:48Z",
+      "source_url": "https://arxiv.org/abs/2610.19594v1",
+      "sources": [
+        "https://arxiv.org/abs/2610.19594v1",
+        "https://arxiv.org/html/2610.19594v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "title": "Coordi-pi: Coordination-Aware Dual-Hand Action Representation for Bimanual Dexterous Manipulation",
+      "authors": [
+        "Yiming Meng",
+        "Yanming Shao",
+        "Weijie Shen",
+        "Kunyang Lin",
+        "Jiayu Sun",
+        "Ping Luo",
+        "Yao Mu"
+      ],
+      "id": "2610.19753",
+      "date": "2026-10-14",
+      "year": 2026,
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19753"
+      },
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "tags": [
+        "Imitation learning",
+        "Vision-language-action",
+        "Diffusion / flow policy",
+        "Teleoperation",
+        "Bimanual coordination",
+        "Long-horizon tasks",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Coordi-pi interleaves left/right arm–hand action tokens and adds hand identity and factorized temporal encoding to a flow-based VLA. It improves five simulated bimanual tasks and achieves 60/80 successes on four real tasks with Revo 2 hands, versus 49/80 for pi0.5.",
+      "tldr_zh": "Coordi-pi 将左右臂手动作交错编码，并加入手身份与分离序列位置、控制时刻的编码，改进流匹配 VLA 的双手协调。五项仿真任务均有提升；Revo 2 双手四项实机任务成功 60/80 次，对照 pi0.5 为 49/80 次。",
+      "sensing": [
+        "Three RGB views",
+        "Robot proprioceptive state"
+      ],
+      "hand": [
+        "Two BrainCo Revo 2 hands"
+      ],
+      "task": [
+        "Hanoi",
+        "Photograph",
+        "Unlock iPad (simulation)",
+        "Assembly",
+        "Microwave"
+      ],
+      "method": [
+        "Interleaved arm–hand action tokens",
+        "Learnable hand-identity embeddings",
+        "Sequence–control-timestep factorized RoPE",
+        "Flow matching"
+      ],
+      "evaluation": "Five DexJoCo tasks under rand-obj and rand-full; 150 simulated episodes per method–task–setting. Four real tasks with 100 demonstrations and 20 test trials per task.",
+      "notes_zh": "实机策略用实机示教训练，不据此标为 Sim-to-real；未确认可独立复用的预训练策略发布。全文观测仅视觉、语言和本体，未给 Tactile feedback。未找到并核验本论文项目或代码页。",
+      "arxiv_id": "2610.19753",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-14T08:08:45Z",
+      "source_url": "https://arxiv.org/abs/2610.19753v1",
+      "sources": [
+        "https://arxiv.org/abs/2610.19753v1",
+        "https://arxiv.org/html/2610.19753v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "title": "Tactile-Guided Robot Learning: From Representation Learning to Foundation Models",
+      "authors": [
+        "Kiyanoush Nazari",
+        "Luchen Li",
+        "Haoshu Fang",
+        "Nima Fazeli",
+        "Zhibin Li",
+        "Fumiya Iida",
+        "Thomas George Thuruthel"
+      ],
+      "id": "2610.20134",
+      "date": "2026-10-14",
+      "year": 2026,
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.20134"
+      },
+      "category": "Tactile Sensing & Representation",
+      "scope": "adjacent",
+      "tags": [
+        "Survey"
+      ],
+      "tldr": "This survey organizes tactile robot learning by the role of touch in representations, policies, foundation and world models, predictive control, and transfer. It synthesizes published methods and their limitations across sensors and embodiments, without introducing a new deployed policy or experimental benchmark.",
+      "tldr_zh": "该综述按触觉在表征、策略、基础与世界模型、预测控制和迁移中的作用梳理机器人学习，归纳跨传感器、跨构型方法与局限。证据来自既有文献，未提出新的部署策略或实验基准。",
+      "sensing": [],
+      "hand": [],
+      "task": [],
+      "method": [
+        "Literature synthesis organized by the functional role of touch"
+      ],
+      "evaluation": "Literature review; no new robot-policy experiment.",
+      "notes_zh": "与触觉表征及接触密集操作直接相关，但覆盖范围不限于多指手。Foundation models 是综述主题，不赋予 Foundation policy；也不把引用文献的执行触觉当作本论文部署。附带资源页访问失败，未列入项目链接。",
+      "arxiv_id": "2610.20134",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-14T12:54:05Z",
+      "source_url": "https://arxiv.org/abs/2610.20134v1",
+      "sources": [
+        "https://arxiv.org/abs/2610.20134v1",
+        "https://arxiv.org/html/2610.20134v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "title": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation",
+      "authors": [
+        "Fucai Zhu",
+        "Xidong Zhang",
+        "Yichi Zhang",
+        "Yipan Wang",
+        "Fubo Wang",
+        "Zibin Wu",
+        "Kaiqi Li",
+        "Jianhao Jiao",
+        "Shihan Lu",
+        "Di Hu",
+        "Mengdi Xu",
+        "Siyu Zhu",
+        "Xiaoxiao Long",
+        "Yao Yao",
+        "Xun Cao",
+        "Zhuo Xu",
+        "Koichi Hashimoto",
+        "Qifeng Chen",
+        "Zhe Li",
+        "Jianfei Yang",
+        "Haofei Lu",
+        "Danica Kragic",
+        "Shuicheng Yan",
+        "Jianghua Duan",
+        "Michael Yu Wang",
+        "Weihao Yuan"
+      ],
+      "id": "2610.20320",
+      "date": "2026-10-14",
+      "year": 2026,
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.20320",
+        "project": "https://daimon-robotics.github.io/tacclaw-infinity-page/",
+        "code": "https://github.com/daimon-robotics/TacClaw-Infinity",
+        "dataset": "https://huggingface.co/datasets/daimonrobotics/Daimon-Infinity"
+      },
+      "category": "Tactile Sensing & Representation",
+      "scope": "adjacent",
+      "tags": [
+        "Imitation learning",
+        "Vision-language-action",
+        "Cross-embodiment",
+        "Bimanual coordination",
+        "Long-horizon tasks",
+        "Tactile feedback",
+        "Vision",
+        "Dataset / benchmark",
+        "Hardware / sensor"
+      ],
+      "tldr": "TacClaw-Infinity uses a handheld tactile gripper to collect synchronized demonstrations and contact-anchored annotations, reporting over 10,000 hours of collected data. Policies trained on these demonstrations read tactile images during transfer to three robot platforms; tests cover cup stacking, bottle sorting and vase wiping. Public data are a subset.",
+      "tldr_zh": "TacClaw-Infinity 用手持触觉夹爪采集同步示教，以接触事件组织标注，报告采集超过一万小时。示教训练的策略在三种机器人上读取触觉图像，验证叠杯、瓶子分类和擦花瓶；当前公开数据仅为子集。",
+      "sensing": [
+        "Wrist RGB and bimanual egocentric images",
+        "Fingertip tactile deformation, shear and depth",
+        "Visual-inertial pose tracking and gripper encoder during collection"
+      ],
+      "hand": [],
+      "task": [
+        "Cup stacking",
+        "Bottle sorting",
+        "Vase wiping"
+      ],
+      "method": [
+        "Robot-independent handheld demonstrations",
+        "Reachability and manipulability filtering",
+        "Contact-anchored temporal, semantic and spatial annotation",
+        "Tactile images as VLA inputs"
+      ],
+      "evaluation": "Three physical robot platforms, two VLA families, and three bimanual tasks; 1,600 training episodes and 50 evaluation trials per task. Additional human-interface, kinematic and annotation evaluations.",
+      "notes_zh": "主要是触觉数据资源与夹爪接口，未据标题推断多指手。V-D 确认机器人策略执行读取触觉；不是仅在人类采集端测触觉。论文采集总量与公开下载量不同，HF 页面称首批 1000 小时且包括 DataClaw/DataDex；未核验下载总量。仓库已提供重放/运动学检查，策略训练及任务评测代码仍待发布；项目页仍有 Coming soon。未据测试 pi0.5/StarVLA 赋予 Foundation policy。",
+      "arxiv_id": "2610.20320",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-14T15:06:53Z",
+      "source_url": "https://arxiv.org/abs/2610.20320v1",
+      "sources": [
+        "https://arxiv.org/abs/2610.20320v1",
+        "https://arxiv.org/html/2610.20320v1",
+        "https://daimon-robotics.github.io/tacclaw-infinity-page/",
+        "https://github.com/daimon-robotics/TacClaw-Infinity",
+        "https://huggingface.co/datasets/daimonrobotics/Daimon-Infinity"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"
