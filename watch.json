@@ -1,20 +1,181 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-10-15T06:16:26Z",
+  "last_checked_at": "2026-10-16T06:12:26Z",
   "lookback_days": 7,
-  "window_start": "2026-10-08T06:16:26Z",
+  "window_start": "2026-10-09T06:12:26Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 13,
-  "recent_match_count": 42,
-  "new_candidate_count": 9,
-  "updated_candidate_count": 0,
+  "candidate_count": 20,
+  "recent_match_count": 43,
+  "new_candidate_count": 7,
+  "updated_candidate_count": 1,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2610.22363",
+      "title": "Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation",
+      "published": "2026-10-15T17:59:07Z",
+      "updated": "2026-10-15T17:59:07Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.22363",
+        "pdf": "https://arxiv.org/pdf/2610.22363"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… unified world action model for egocentric dexterous manipulation that learns 3D perception, action-conditioned prediction, and goal-directed planning through three complementary modes: Perceive, …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.22342",
+      "title": "Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manipulation",
+      "published": "2026-10-15T17:56:17Z",
+      "updated": "2026-10-15T17:56:17Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.22342",
+        "pdf": "https://arxiv.org/pdf/2610.22342"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… pretraining but often struggle with contact-rich dexterous manipulation, where force, compliance, and incipient slip are hard to observe from images. We present …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.22340",
+      "title": "Dexterity from Supervised Play",
+      "published": "2026-10-15T17:55:50Z",
+      "updated": "2026-10-15T17:55:50Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.22340",
+        "pdf": "https://arxiv.org/pdf/2610.22340"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… the contact-rich experience needed to learn dexterous manipulation? We present DSP: Dexterity from supervised play, a framework in which a robot learns …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.22184",
+      "title": "Whole-Body Dexterity",
+      "published": "2026-10-15T16:40:48Z",
+      "updated": "2026-10-15T16:40:48Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.22184",
+        "pdf": "https://arxiv.org/pdf/2610.22184"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Current humanoid dexterous manipulation remains largely confined to end-effectors and simple grasps, falling short of humans' ability to engage the entire body …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2606.26428",
+      "title": "Play2Perfect: What Matters in Dexterous Play Pretraining for Precise Assembly?",
+      "published": "2026-06-24T22:39:12Z",
+      "updated": "2026-10-15T09:00:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.26428",
+        "pdf": "https://arxiv.org/pdf/2606.26428"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Multi-fingered robots promise the speed and dexterity of human hands, yet challenging problems such as precise assembly have remained out of reach. …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.19089",
+      "title": "DexMimic: A Generalist Dexterous Hand-Object Tracking Policy via Value-Guided Reset Allocation",
+      "published": "2026-10-13T19:29:33Z",
+      "updated": "2026-10-15T06:00:59Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19089",
+        "pdf": "https://arxiv.org/pdf/2610.19089"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Achieving human-like dexterous manipulation remains a central challenge in robotics. Learning from human hand-object interaction (HOI) datasets offers a promising pathway to …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.21180",
+      "title": "Evo-DexBench: Benchmarking Generalization across Related Tasks for Dexterous Manipulation",
+      "published": "2026-10-15T03:36:05Z",
+      "updated": "2026-10-15T03:36:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.21180",
+        "pdf": "https://arxiv.org/pdf/2610.21180"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "General-purpose dexterous manipulation requires policies to transfer knowledge from related tasks to new tasks with only a few target demonstrations. Existing benchmarks …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.20904",
+      "title": "EgoJEPA: Beyond Retargeting for Dexterous Manipulation from Egocentric Videos",
+      "published": "2026-10-14T20:34:18Z",
+      "updated": "2026-10-14T20:34:18Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.20904",
+        "pdf": "https://arxiv.org/pdf/2610.20904"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "title",
+          "text": "EgoJEPA: Beyond Retargeting for Dexterous Manipulation from Egocentric Videos"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2610.20320",
       "title": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation",
@@ -175,26 +336,6 @@
         {
           "source": "abstract",
           "text": "… to costly robot data collection for dexterous manipulation, but most human datasets lack force measurements. Dexterous manipulation requires not only visual and …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2610.19089",
-      "title": "DexMimic: A Generalist Dexterous Hand-Object Tracking Policy via Value-Guided Reset Allocation",
-      "published": "2026-10-13T19:29:33Z",
-      "updated": "2026-10-13T19:29:33Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.19089",
-        "pdf": "https://arxiv.org/pdf/2610.19089"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "Achieving human-like dexterous manipulation remains a central challenge in robotics. Learning from human hand-object interaction (HOI) datasets offers a promising pathway to …"
         }
       ],
       "review_status": "pending"
