@@ -7964,6 +7964,505 @@
           "notes_zh": "主要贡献是人手物体交互表示和生成，列为adjacent。附录E.5的机器人流程包含生成视频、场景/物体重建、重定向和实机轨迹执行，结论明确open-loop；不能将VLM视频评分当机器人任务成功率。机器人手型号未明确，hand留空。未给Tactile feedback或Foundation policy：视频预训练与人手动作生成不足以证明可复用预训练机器人控制策略。动作分支直接回归而非动作扩散，未给Diffusion / flow policy。项目页Code forthcoming，不列code。"
         }
       }
+    },
+    {
+      "key": "2606.18097|v3|2026-10-16T00:13:11+00:00|dexterous-v1",
+      "digest": "60ce36a1e5bb4ae93fcb886b81ebd110f7d732bca9b569945cb15ddcca9cd81f",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-20T04:40:56Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2606.18097",
+          "version": 3,
+          "title": "WireCraft: A Simulation Benchmark for Industrial DLO Manipulation",
+          "authors": [
+            "Chongyu Zhu",
+            "Ramy ElMallah",
+            "Hyegang Kim",
+            "Zachary Tang",
+            "Jiachen Rao",
+            "Artem Arutyunov",
+            "Seungyeon Ha",
+            "Chi-Guhn Lee"
+          ],
+          "published": "2026-06-16T15:59:46Z",
+          "updated": "2026-10-16T00:13:11Z",
+          "url": "https://arxiv.org/abs/2606.18097v3",
+          "primary_urls": [
+            "https://arxiv.org/abs/2606.18097v3",
+            "https://arxiv.org/html/2606.18097v3"
+          ]
+        },
+        "decision": "reject",
+        "reason_zh": "v3仍以普通机械臂夹爪的工业线缆任务和仿真基准为主要贡献，比较既有学习算法；未提出多指灵巧手控制、触觉表征、手物交互或抓取合成/策略优化新方法，不符合当前收录范围。新版本单独记账，保留v2结论。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2606.18097v3",
+            "paraphrase": "官方元数据和提交历史确认完整标题、八名作者；首次投稿2026-06-16，本次为2026-10-16更新的v3。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.18097v3",
+            "paraphrase": "§3–5：UR5、Franka、Trossen夹爪执行插入、夹扣布线和槽内铺线；数据接口为机械臂关节加夹爪，评测既有RL、IL、VLA基线。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.18097v3",
+            "paraphrase": "§6、附录H.1：实机为UR5配Robotiq 2F-85，ACT使用双RGB与本体状态，以30 Hz输出动作；没有多指手实验。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.18097v3",
+            "paraphrase": "§7、附录H.1明确安装的力/力矩传感器未被ACT读取；仿真特权接触幅值不构成实机触觉输入。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2606.18097v3",
+          "paraphrase": "实机策略只使用RGB和本体状态；安装的力/力矩传感器未读取。"
+        }
+      }
+    },
+    {
+      "key": "2608.02014|v2|2026-10-16T16:47:33+00:00|dexterous-v1",
+      "digest": "9d37ffb2204f0fe5cdb1f8833562c8ba0489beec7ebf143780fe8f94f9ebbacb",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-20T04:40:56Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2608.02014",
+          "version": 2,
+          "title": "MANGO-Grasp: Mahalanobis Fields over Geometry-Oriented 3D Gaussians for Cross-Embodiment Dexterous Grasping",
+          "authors": [
+            "Heng Zhang",
+            "Kevin Yuchen Ma",
+            "Mike Zheng Shou",
+            "Weisi Lin",
+            "Yan Wu"
+          ],
+          "published": "2026-08-03T10:12:15Z",
+          "updated": "2026-10-16T16:47:33Z",
+          "url": "https://arxiv.org/abs/2608.02014v2",
+          "primary_urls": [
+            "https://arxiv.org/abs/2608.02014v2",
+            "https://arxiv.org/html/2608.02014v2",
+            "https://connor-zh.github.io/MANGO-Grasp/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "以几何导向高斯和马氏距离交互场生成多指抓取，验证跨手型及未见手型泛化，并有实机抓取评测；主贡献属于抓取生成。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2608.02014v2",
+            "paraphrase": "官方摘要与投稿历史确认完整标题、五名作者、2026-08-03 首次投稿及 2026-10-16 更新的 v2。"
+          },
+          {
+            "url": "https://arxiv.org/html/2608.02014v2",
+            "paraphrase": "§III：物体网格转为表面对齐高斯；预训练手部形态运动学描述符，CVAE 预测马氏距离场，再优化腕姿和关节；接触先验来自离线抓取统计。"
+          },
+          {
+            "url": "https://arxiv.org/html/2608.02014v2",
+            "paraphrase": "§IV-A–C：14,011 个训练抓取、48 物体、三种已见手；CMAP 10 个未见物体及 MultiGripperGrasp 40 物体子集，每物体 100 候选、三次运行；未见 SharpaWave 仿真稳定率为 84.17%/81.47%。"
+          },
+          {
+            "url": "https://arxiv.org/html/2608.02014v2",
+            "paraphrase": "§IV-E 表II：KUKA–SharpaWave 对 10 个未见物体各试 10 次，成功 86/100；视觉估姿后筛选可规划候选，以位置控制接近并闭合，不是在线反馈策略。"
+          },
+          {
+            "url": "https://connor-zh.github.io/MANGO-Grasp/",
+            "paraphrase": "项目页标题、作者和论文回链匹配，列出逐物体实机结果；代码、数据及检查点均标注待发表后发布。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2608.02014v2",
+          "paraphrase": "§IV-E 使用 FoundationPose 视觉估姿和目标关节位置控制；§V 把触觉/关节力矩反馈与闭环重规划列为未来工作，当前方法无执行触觉输入。"
+        },
+        "paper": {
+          "id": "2608.02014",
+          "title": "MANGO-Grasp: Mahalanobis Fields over Geometry-Oriented 3D Gaussians for Cross-Embodiment Dexterous Grasping",
+          "authors": [
+            "Heng Zhang",
+            "Kevin Yuchen Ma",
+            "Mike Zheng Shou",
+            "Weisi Lin",
+            "Yan Wu"
+          ],
+          "date": "2026-08-03",
+          "year": 2026,
+          "category": "Grasp Synthesis",
+          "scope": "core",
+          "tags": [
+            "Cross-embodiment",
+            "Dexterous grasping",
+            "Vision"
+          ],
+          "tldr": "MANGO-Grasp combines geometry-oriented 3D Gaussians, morpho-kinematic hand descriptors, and learned Mahalanobis interaction fields to optimize grasps across hands. An unseen SharpaWave reaches 84.17%/81.47% simulated grasp stability on two benchmarks and 86/100 physical grasp successes using pose estimation followed by planned approach and position-controlled closure.",
+          "tldr_zh": "MANGO-Grasp 用几何导向三维高斯、形态运动学手部描述符和马氏距离交互场优化跨手型抓取。未见 SharpaWave 在两个基准的仿真稳定率为 84.17%/81.47%；视觉估姿后规划接近并位置控制闭合，实机成功 86/100。",
+          "sensing": [
+            "Intel RealSense D435 with FoundationPose object-pose estimation"
+          ],
+          "hand": [
+            "ShadowHand, Allegro and Barrett (seen hands in simulation)",
+            "22-joint SharpaWave (unseen hand in simulation and on a KUKA arm)"
+          ],
+          "task": [
+            "Cross-embodiment grasp synthesis",
+            "Unseen-object and unseen-hand grasping"
+          ],
+          "method": [
+            "Geometry-oriented 3D Gaussian object representation",
+            "Morpho-kinematic descriptor pretraining",
+            "CVAE Mahalanobis interaction-field prediction",
+            "Constrained wrist-pose and joint-configuration optimization"
+          ],
+          "evaluation": "Simulation stability under six-direction force perturbations; 100 physical grasp trials across ten unseen objects.",
+          "notes_zh": "仿真指标是在目标抓取姿态初始化后承受扰动的稳定率；实机为生成姿态后的开环接近/闭合，闭环改进仍属未来工作。不标 Sim-to-real、Tactile feedback 或 Foundation policy；预训练对象是手部描述符。代码与数据未发布。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2608.02014",
+            "project": "https://connor-zh.github.io/MANGO-Grasp/"
+          }
+        }
+      }
+    },
+    {
+      "key": "2608.15060|v2|2026-10-16T02:05:25+00:00|dexterous-v1",
+      "digest": "8540ec57f4875e3314ca9c8fe605c78f72098af80f39f1bf70b311585218d2fc",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-20T04:40:56Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2608.15060",
+          "version": 2,
+          "title": "EgoTac: In-the-wild Tactile Prediction from Egocentric Vision",
+          "authors": [
+            "Wenkang Zhang",
+            "Chengbo Yuan",
+            "Zicheng Zhang",
+            "Zhengxue Cheng",
+            "Yang Gao"
+          ],
+          "published": "2026-08-15T06:18:13Z",
+          "updated": "2026-10-16T02:05:25Z",
+          "url": "https://arxiv.org/abs/2608.15060v2",
+          "primary_urls": [
+            "https://arxiv.org/abs/2608.15060v2",
+            "https://arxiv.org/html/2608.15060v2",
+            "https://egotac.github.io/",
+            "https://github.com/Mr-Zwkid/EgoTac",
+            "https://huggingface.co/datasets/wkzhang/EgoTac-SC",
+            "https://huggingface.co/datasets/wkzhang/EgoTac-SC/tree/main/aether_v1"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "以第一视角人体视频预测双手力与接触，并提供统一触觉表示和数据资源，符合触觉感知与表征邻近方向；未验证机器人执行。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2608.15060v2",
+            "paraphrase": "核对完整标题、5名作者与提交历史：首发2026-08-15，本次为2026-10-16更新的v2。"
+          },
+          {
+            "url": "https://arxiv.org/html/2608.15060v2",
+            "paraphrase": "§3–4将人体实测力与几何接触标签映射至MANO；DINOv2、时序融合及双输出头从RGB预测力和接触。"
+          },
+          {
+            "url": "https://arxiv.org/html/2608.15060v2",
+            "paraphrase": "§5在各训练来源的留出10%上评测；EgoTac-SC活跃区域MAE为0.056 N，另评OAKINK2、FPHA接触和OpenTouch相对力动态，未评机器人控制。"
+          },
+          {
+            "url": "https://egotac.github.io/",
+            "paraphrase": "官方项目页题名和作者一致，展示无触觉传感器视频的预测，并链接代码与数据。"
+          },
+          {
+            "url": "https://github.com/Mr-Zwkid/EgoTac",
+            "paraphrase": "仓库可访问，含训练、推理和数据转换文件；其README对应本论文。"
+          },
+          {
+            "url": "https://huggingface.co/datasets/wkzhang/EgoTac-SC/tree/main/aether_v1",
+            "paraphrase": "官方EgoTac-SC数据目录可访问，列出45个ZIP分卷和manifest；未下载全量数据核验完整性。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2608.15060v2",
+          "paraphrase": "§4输入为RGB视频；手套实测力用于人体采集和监督，附录H将机器人策略应用列为后续方向。"
+        },
+        "paper": {
+          "id": "2608.15060",
+          "title": "EgoTac: In-the-wild Tactile Prediction from Egocentric Vision",
+          "authors": [
+            "Wenkang Zhang",
+            "Chengbo Yuan",
+            "Zicheng Zhang",
+            "Zhengxue Cheng",
+            "Yang Gao"
+          ],
+          "year": 2026,
+          "date": "2026-08-15",
+          "category": "Tactile Sensing & Representation",
+          "scope": "adjacent",
+          "tags": [
+            "Vision",
+            "Dataset / benchmark"
+          ],
+          "tldr": "EgoTac learns force and contact prediction from egocentric RGB using a shared MANO representation and mixed supervision. Active-region force error is 0.056 N on the held-out EgoTac-SC test set; external tests cover contact and relative force dynamics. Robot control is not evaluated.",
+          "tldr_zh": "EgoTac以统一MANO表示和混合监督，从第一视角RGB预测双手力与接触。EgoTac-SC留出测试集活跃区域力误差为0.056 N；外域评测涵盖接触和相对力动态，未评测机器人控制。",
+          "sensing": [
+            "Egocentric RGB video at inference",
+            "Human glove force and hand-pose measurements for supervision"
+          ],
+          "hand": [],
+          "task": [
+            "Dense human-hand force prediction",
+            "Hand-object contact estimation"
+          ],
+          "method": [
+            "MANO-aligned mixed force/contact supervision",
+            "DINOv2 encoding with temporal fusion",
+            "AdaLN decoder with force and contact heads"
+          ],
+          "evaluation": "Held-out 10% of each training-source dataset; OOD contact tests on OAKINK2 and FPHA; normalized relative force-dynamics tests on OpenTouch. Additional unlabeled-video predictions are qualitative.",
+          "links": {
+            "paper": "https://arxiv.org/abs/2608.15060",
+            "project": "https://egotac.github.io/",
+            "code": "https://github.com/Mr-Zwkid/EgoTac",
+            "dataset": "https://huggingface.co/datasets/wkzhang/EgoTac-SC"
+          },
+          "notes_zh": "采集触觉和视觉预测均不等于机器人执行反馈，故不标Tactile feedback。OpenTouch缺少跨传感器牛顿标定，不能把0.056 N外推为外域绝对力误差。数据链接为自采EgoTac-SC，不代表混合语料全部已发布；未复现实验。"
+        }
+      }
+    },
+    {
+      "key": "2608.19182|v2|2026-10-16T07:12:42+00:00|dexterous-v1",
+      "digest": "bd4c08e546575f6c3fe1dfd81c4484151a50630a30e5873d4c3adeb2137589aa",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-20T04:40:56Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2608.19182",
+          "version": 2,
+          "title": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
+          "authors": [
+            "Jayjun Lee",
+            "Jessica Yin",
+            "Asif Rana",
+            "Nicholas Blauch",
+            "Octi Zhang",
+            "Sam Mady",
+            "Mohak Bhardwaj",
+            "Nima Fazeli",
+            "Nathan Ratliff",
+            "Karl Van Wyk",
+            "Ankur Handa"
+          ],
+          "published": "2026-08-19T17:55:06Z",
+          "updated": "2026-10-16T07:12:42Z",
+          "url": "https://arxiv.org/abs/2608.19182v2",
+          "primary_urls": [
+            "https://arxiv.org/abs/2608.19182v2",
+            "https://arxiv.org/html/2608.19182v2",
+            "https://adept-dexterity.github.io"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "复用重定位控制预训练并后训练多指操作策略，在线部署于两种实机；Sharpa 学生策略明确读取真实五指触觉，具备触觉灵巧操作证据。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2608.19182v2",
+            "paraphrase": "官方摘要与投稿历史确认完整标题、十一名作者、2026-08-19 首次投稿及 2026-10-16 更新的 v2。"
+          },
+          {
+            "url": "https://arxiv.org/html/2608.19182v2",
+            "paraphrase": "§3.2–3.5：用 16 个几何原型预训练重定位策略，经行为克隆、价值网络预热和低学习率 PPO 后训练，再蒸馏感知学生；关节空间 Geometric Fabric 连接在线策略与机器人。"
+          },
+          {
+            "url": "https://arxiv.org/html/2608.19182v2",
+            "paraphrase": "§4.2：同一 Kuka–Allegro 预训练检查点分别适配星形插入、方圆插入和放盘；每任务独立后训练，支持可复用控制预训练，但不是跨手型共享策略。"
+          },
+          {
+            "url": "https://arxiv.org/html/2608.19182v2",
+            "paraphrase": "§3.4、4.2、附录H：Flexiv–Sharpa 将五指真实视触觉传感器变形转为 TacMap 深度/接触图，与双路 RGB、本体状态融合输入学生策略；Kuka–Allegro 学生无触觉分支。"
+          },
+          {
+            "url": "https://arxiv.org/html/2608.19182v2",
+            "paraphrase": "§4.2 表4：每条件 10 次实机试验，Sharpa 方圆插入视触觉 8/10、仅视觉 3/10；Allegro 星形 5/10、方圆 3/10、放盘 6/10。仿真 1,024 回合结果与训练瞬时成功率分开报告。"
+          },
+          {
+            "url": "https://adept-dexterity.github.io",
+            "paraphrase": "官方项目页匹配完整标题和作者，展示实机策略及触觉输入；代码按钮禁用并标注 Coming soon，未提供可用仓库。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2608.19182v2",
+          "paraphrase": "§4.2 明确 Sharpa 各指视触觉传感器的真实变形以 TacMap 深度图提供给执行策略；§3.4/附录H 将其及阈值接触图编码后融合视觉、本体状态。仅 Flexiv–Sharpa 使用触觉。"
+        },
+        "paper": {
+          "id": "2608.19182",
+          "title": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
+          "authors": [
+            "Jayjun Lee",
+            "Jessica Yin",
+            "Asif Rana",
+            "Nicholas Blauch",
+            "Octi Zhang",
+            "Sam Mady",
+            "Mohak Bhardwaj",
+            "Nima Fazeli",
+            "Nathan Ratliff",
+            "Karl Van Wyk",
+            "Ankur Handa"
+          ],
+          "date": "2026-08-19",
+          "year": 2026,
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Foundation policy",
+            "Sim-to-real",
+            "Dexterous grasping",
+            "In-hand manipulation",
+            "Long-horizon tasks",
+            "Tactile feedback",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "ADEPT pretrains reusable object-reposing control, post-trains task specialists with stable PPO, and distills visual or visuo-tactile policies for physical deployment. Flexiv-Sharpa achieves 8/10 square/round insertions with touch versus 3/10 with vision alone; vision-only Kuka-Allegro achieves 5/10 star insertions, 3/10 square/round insertions, and 6/10 dish placements.",
+          "tldr_zh": "ADEPT 预训练可复用的物体重定位控制，以稳定 PPO 后训练任务专家，再蒸馏视觉或视触觉策略部署实机。Flexiv–Sharpa 方圆插入视触觉成功 8/10、仅视觉 3/10；仅视觉 Kuka–Allegro 的星形插入、方圆插入、放盘分别为 5/10、3/10、6/10。",
+          "sensing": [
+            "Two calibrated RealSense RGB cameras on both embodiments",
+            "Robot proprioception and geometric-fabric state",
+            "Five real fingertip TacMap depth/contact maps on Flexiv-Sharpa only"
+          ],
+          "hand": [
+            "23-DoF Kuka iiwa7–Allegro system (7 arm + 16 hand DoF)",
+            "29-DoF Flexiv Rizon–Sharpa system (7 arm + 22 hand DoF)"
+          ],
+          "task": [
+            "Object reposing",
+            "Grasp-reorient-insert with FMB pegs",
+            "Dish-rack placement with flip-and-regrasp"
+          ],
+          "method": [
+            "PPO reposing pretraining with automatic domain randomization and population-based training",
+            "Behavior-cloning actor transfer, critic warm-up and conservative PPO post-training",
+            "Two-stage teacher-student distillation",
+            "Joint-space geometric fabric",
+            "TacMap and spatially conditioned tactile-feature fusion"
+          ],
+          "evaluation": "Simulation evaluations over 1,024 episodes at final ADR; zero-shot physical policy deployment with ten trials per task/modality condition.",
+          "notes_zh": "Foundation policy 标签依据同一 Kuka 预训练控制检查点复用于三个下游任务；两种本体分别预训练，每任务分别训练教师和学生，不标 Cross-embodiment。Flexiv 仅训练方圆插入且使用实测触觉。表4为累积阶段成功数，最终实机比例不可替换为仿真成绩；代码未发布。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2608.19182",
+            "project": "https://adept-dexterity.github.io"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.23438|v1|2026-10-16T13:22:03+00:00|dexterous-v1",
+      "digest": "4da7c1e62b48ab47b29ffda1a2fa1bcb895586143417f98eda9839b07408571b",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-20T04:40:56Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.23438",
+          "version": 1,
+          "title": "No Eyes, No Problem: What Does Touch Contribute to Blind Baoding Ball Manipulation?",
+          "authors": [
+            "Ayush Deshmukh",
+            "Nalin Agarwal",
+            "Elle Miller",
+            "Sethu Vijayakumar"
+          ],
+          "published": "2026-10-16T13:22:03Z",
+          "updated": "2026-10-16T13:22:03Z",
+          "url": "https://arxiv.org/abs/2610.23438v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2610.23438v1",
+            "https://arxiv.org/html/2610.23438v1"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "在Shadow Dexterous Hand Lite实机上以本体和真实二值触觉闭环控制双保定球，包含触觉消融及多次硬件评测，直接符合触觉灵巧操作范围。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.23438v1",
+            "paraphrase": "核对完整标题、4名作者和v1提交历史，首次投稿与更新时间均为2026-10-16 13:22:03 UTC。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.23438v1",
+            "paraphrase": "§III用PPO、硬件耦合对齐、动作限速和STAT触觉扰动训练；部署读取12个FSR与4个BioTac二值信号及本体状态，以60 Hz控制13个执行器。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.23438v1",
+            "paraphrase": "§IV–V每配置10次实机试验，手工放球后不再干预；C3为34.75±26.06整圈（2–74），同检查点关闭触觉后为5.0±4.1整圈。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.23438v1",
+            "paraphrase": "表II速度取前10秒或掉落前窗口；§V-C的310秒、112.5整圈是10次统计之外的额外单次演示。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2610.23438v1",
+          "paraphrase": "§III-B/C和图4明确实机观测含16路真实触觉，经标定二值化后与本体历史共同送入60 Hz闭环策略。"
+        },
+        "paper": {
+          "id": "2610.23438",
+          "title": "No Eyes, No Problem: What Does Touch Contribute to Blind Baoding Ball Manipulation?",
+          "authors": [
+            "Ayush Deshmukh",
+            "Nalin Agarwal",
+            "Elle Miller",
+            "Sethu Vijayakumar"
+          ],
+          "year": 2026,
+          "date": "2026-10-16",
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Reinforcement learning",
+            "Sim-to-real",
+            "In-hand manipulation",
+            "Tactile feedback",
+            "Proprioception"
+          ],
+          "tldr": "PPO with hardware-aligned coupling, action-rate randomization and tactile-channel corruption transfers blind Baoding rotation to a Shadow Hand Lite. Real tactile feedback and proprioception support closed-loop execution: 10 hardware trials average 34.75±26.06 full rotations, versus 5.0±4.1 with touch disabled in the same checkpoint.",
+          "tldr_zh": "通过硬件耦合对齐、动作速率随机化和触觉通道扰动训练PPO，实现Shadow Hand Lite无视觉保定球闭环旋转。真实触觉与本体反馈下10次实机试验平均34.75±26.06整圈；同检查点关闭触觉为5.0±4.1整圈。",
+          "sensing": [
+            "Joint position, velocity, position error and previous action",
+            "Twelve FSR and four BioTac channels converted to binary contact"
+          ],
+          "hand": [
+            "Shadow Dexterous Hand Lite"
+          ],
+          "task": [
+            "Blind two-ball in-hand rotation"
+          ],
+          "method": [
+            "PPO in Isaac Lab",
+            "Hardware-aligned tendon coupling and sensor sites",
+            "Slew-rate domain randomization",
+            "Stuck-AT Taxels episodic corruption",
+            "Hysteresis tactile calibration"
+          ],
+          "evaluation": "Ten trials per hardware configuration until a ball drops; C3 range 2–74 full rotations. Speed 0.36±0.061 rot/s uses the first 10 seconds or survival window. Simulation: 768 episodes per configuration across three seeds, limited to 10 seconds.",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.23438"
+          },
+          "notes_zh": "额外单次演示225次半圈交换＝112.5整圈/310秒，未纳入10次统计。零样本指无实机策略训练或微调；仍需人工放球、触觉标定与部署增益/限速设定。试验使用同一对球和固定手姿，未证明跨物体泛化。"
+        }
+      }
     }
   ]
 }

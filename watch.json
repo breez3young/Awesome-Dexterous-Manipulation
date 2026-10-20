@@ -1,20 +1,123 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-10-16T06:12:26Z",
+  "last_checked_at": "2026-10-19T06:37:32Z",
   "lookback_days": 7,
-  "window_start": "2026-10-09T06:12:26Z",
+  "window_start": "2026-10-12T06:37:32Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 20,
-  "recent_match_count": 43,
-  "new_candidate_count": 7,
+  "candidate_count": 24,
+  "recent_match_count": 41,
+  "new_candidate_count": 4,
   "updated_candidate_count": 1,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2608.02014",
+      "title": "MANGO-Grasp: Mahalanobis Fields over Geometry-Oriented 3D Gaussians for Cross-Embodiment Dexterous Grasping",
+      "published": "2026-08-03T10:12:15Z",
+      "updated": "2026-10-16T16:47:33Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.02014",
+        "pdf": "https://arxiv.org/pdf/2608.02014"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… to synthesize stable grasps across heterogeneous multi-fingered hands with little or no embodiment-specific tuning. Existing interaction-centric methods achieve promising results, but their …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.23438",
+      "title": "No Eyes, No Problem: What Does Touch Contribute to Blind Baoding Ball Manipulation?",
+      "published": "2026-10-16T13:22:03Z",
+      "updated": "2026-10-16T13:22:03Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.23438",
+        "pdf": "https://arxiv.org/pdf/2610.23438"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… a new benchmark for sustained tactile-driven dexterous manipulation on physical hardware."
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2608.19182",
+      "title": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
+      "published": "2026-08-19T17:55:06Z",
+      "updated": "2026-10-16T07:12:42Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.19182",
+        "pdf": "https://arxiv.org/pdf/2608.19182"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… difficult to discover from scratch on multi-fingered robots and avoids learning the same set of skills over again for every new downstream …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2608.15060",
+      "title": "EgoTac: In-the-wild Tactile Prediction from Egocentric Vision",
+      "published": "2026-08-15T06:18:13Z",
+      "updated": "2026-10-16T02:05:25Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.15060",
+        "pdf": "https://arxiv.org/pdf/2608.15060"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Touch is fundamental to dexterous manipulation, yet most egocentric human data increasingly used for robot learning lacks tactile information. Directly collecting large-scale …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2606.18097",
+      "title": "WireCraft: A Simulation Benchmark for Industrial DLO Manipulation",
+      "published": "2026-06-16T15:59:46Z",
+      "updated": "2026-10-16T00:13:11Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.18097",
+        "pdf": "https://arxiv.org/pdf/2606.18097"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… them a demanding benchmark for general dexterous manipulation. Despite their importance, policy development and comparison remain difficult: existing benchmarks are often tied …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2610.22363",
       "title": "Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation",
@@ -336,26 +439,6 @@
         {
           "source": "abstract",
           "text": "… to costly robot data collection for dexterous manipulation, but most human datasets lack force measurements. Dexterous manipulation requires not only visual and …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2606.18097",
-      "title": "WireCraft: A Simulation Benchmark for Industrial DLO Manipulation",
-      "published": "2026-06-16T15:59:46Z",
-      "updated": "2026-10-13T04:13:33Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2606.18097",
-        "pdf": "https://arxiv.org/pdf/2606.18097"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… them a demanding benchmark for general dexterous manipulation. Despite their importance, policy development and comparison remain difficult: existing benchmarks are often tied …"
         }
       ],
       "review_status": "pending"

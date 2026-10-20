@@ -1,8 +1,164 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-16T06:12:26Z",
+  "updated_at": "2026-10-19T06:37:32Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2608.02014",
+      "title": "MANGO-Grasp: Mahalanobis Fields over Geometry-Oriented 3D Gaussians for Cross-Embodiment Dexterous Grasping",
+      "authors": [
+        "Heng Zhang",
+        "Kevin Yuchen Ma",
+        "Mike Zheng Shou",
+        "Weisi Lin",
+        "Yan Wu"
+      ],
+      "published": "2026-08-03T10:12:15Z",
+      "updated": "2026-10-16T16:47:33Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.02014",
+        "pdf": "https://arxiv.org/pdf/2608.02014"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… to synthesize stable grasps across heterogeneous multi-fingered hands with little or no embodiment-specific tuning. Existing interaction-centric methods achieve promising results, but their …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-19T06:37:32Z",
+      "last_seen": "2026-10-19T06:37:32Z"
+    },
+    {
+      "id": "2610.23438",
+      "title": "No Eyes, No Problem: What Does Touch Contribute to Blind Baoding Ball Manipulation?",
+      "authors": [
+        "Ayush Deshmukh",
+        "Nalin Agarwal",
+        "Elle Miller",
+        "Sethu Vijayakumar"
+      ],
+      "published": "2026-10-16T13:22:03Z",
+      "updated": "2026-10-16T13:22:03Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.23438",
+        "pdf": "https://arxiv.org/pdf/2610.23438"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… a new benchmark for sustained tactile-driven dexterous manipulation on physical hardware."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-19T06:37:32Z",
+      "last_seen": "2026-10-19T06:37:32Z"
+    },
+    {
+      "id": "2608.19182",
+      "title": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
+      "authors": [
+        "Jayjun Lee",
+        "Jessica Yin",
+        "Asif Rana",
+        "Nicholas Blauch",
+        "Octi Zhang",
+        "Sam Mady",
+        "Mohak Bhardwaj",
+        "Nima Fazeli",
+        "Nathan Ratliff",
+        "Karl Van Wyk",
+        "Ankur Handa"
+      ],
+      "published": "2026-08-19T17:55:06Z",
+      "updated": "2026-10-16T07:12:42Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.19182",
+        "pdf": "https://arxiv.org/pdf/2608.19182"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… difficult to discover from scratch on multi-fingered robots and avoids learning the same set of skills over again for every new downstream …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-19T06:37:32Z",
+      "last_seen": "2026-10-19T06:37:32Z"
+    },
+    {
+      "id": "2608.15060",
+      "title": "EgoTac: In-the-wild Tactile Prediction from Egocentric Vision",
+      "authors": [
+        "Wenkang Zhang",
+        "Chengbo Yuan",
+        "Zicheng Zhang",
+        "Zhengxue Cheng",
+        "Yang Gao"
+      ],
+      "published": "2026-08-15T06:18:13Z",
+      "updated": "2026-10-16T02:05:25Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.15060",
+        "pdf": "https://arxiv.org/pdf/2608.15060"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Touch is fundamental to dexterous manipulation, yet most egocentric human data increasingly used for robot learning lacks tactile information. Directly collecting large-scale …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-19T06:37:32Z",
+      "last_seen": "2026-10-19T06:37:32Z"
+    },
+    {
+      "id": "2606.18097",
+      "title": "WireCraft: A Simulation Benchmark for Industrial DLO Manipulation",
+      "authors": [
+        "Chongyu Zhu",
+        "Ramy ElMallah",
+        "Hyegang Kim",
+        "Zachary Tang",
+        "Jiachen Rao",
+        "Artem Arutyunov",
+        "Seungyeon Ha",
+        "Chi-Guhn Lee"
+      ],
+      "published": "2026-06-16T15:59:46Z",
+      "updated": "2026-10-16T00:13:11Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.18097",
+        "pdf": "https://arxiv.org/pdf/2606.18097"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… them a demanding benchmark for general dexterous manipulation. Despite their importance, policy development and comparison remain difficult: existing benchmarks are often tied …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-14T04:46:07Z",
+      "last_seen": "2026-10-19T06:37:32Z"
+    },
     {
       "id": "2610.22363",
       "title": "Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation",
@@ -39,7 +195,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2610.22342",
@@ -86,7 +242,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2610.22340",
@@ -116,7 +272,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2610.22184",
@@ -148,7 +304,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2606.26428",
@@ -176,7 +332,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2610.19089",
@@ -206,7 +362,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2610.21180",
@@ -243,7 +399,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2610.20904",
@@ -282,7 +438,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2610.20320",
@@ -333,7 +489,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2610.20134",
@@ -365,7 +521,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2609.33551",
@@ -398,7 +554,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2610.19753",
@@ -429,7 +585,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2610.19594",
@@ -463,7 +619,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2610.19518",
@@ -495,7 +651,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2607.07968",
@@ -522,7 +678,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2610.19155",
@@ -554,39 +710,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-16T06:12:26Z"
-    },
-    {
-      "id": "2606.18097",
-      "title": "WireCraft: A Simulation Benchmark for Industrial DLO Manipulation",
-      "authors": [
-        "Chongyu Zhu",
-        "Ramy ElMallah",
-        "Hyegang Kim",
-        "Zachary Tang",
-        "Jiachen Rao",
-        "Artem Arutyunov",
-        "Seungyeon Ha",
-        "Chi-Guhn Lee"
-      ],
-      "published": "2026-06-16T15:59:46Z",
-      "updated": "2026-10-13T04:13:33Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2606.18097",
-        "pdf": "https://arxiv.org/pdf/2606.18097"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… them a demanding benchmark for general dexterous manipulation. Despite their importance, policy development and comparison remain difficult: existing benchmarks are often tied …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-14T04:46:07Z",
-      "last_seen": "2026-10-16T06:12:26Z"
+      "last_seen": "2026-10-19T06:37:32Z"
     },
     {
       "id": "2610.10370",
