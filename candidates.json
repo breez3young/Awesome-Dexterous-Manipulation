@@ -1,8 +1,263 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T06:37:32Z",
+  "updated_at": "2026-10-20T06:23:48Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2610.26854",
+      "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation",
+      "authors": [
+        "Jiaming Liu",
+        "Xinghao Zhu",
+        "Yiming Zhang",
+        "Shanghang Zhang",
+        "Yinxi Wang",
+        "Yichu Yang",
+        "Zhuoyang Liu",
+        "Dantong Niu",
+        "Soha Pouya",
+        "Juekun Li",
+        "Yan Chang"
+      ],
+      "published": "2026-10-19T17:59:54Z",
+      "updated": "2026-10-19T17:59:54Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.26854",
+        "pdf": "https://arxiv.org/pdf/2610.26854"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… real-world tasks using bimanual grippers and dexterous hands. Further evaluations demonstrate that our structured latent reasoning framework generalizes to unseen scenarios and …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-20T06:23:48Z"
+    },
+    {
+      "id": "2610.26765",
+      "title": "HandsOn: A Large-Scale Simulation Benchmark for Generalizable Dexterous Manipulation",
+      "authors": [
+        "Tianwei Luo",
+        "Yiming He",
+        "Hongjin Wu",
+        "Ting Pan",
+        "Debin Ren",
+        "Haorui Guo",
+        "Junlin Yang",
+        "Yuxin Zuo",
+        "Zhehao Kou",
+        "Kaisen Yang",
+        "Zhuoqun Lai",
+        "Yi Ding",
+        "Jiale Yu",
+        "Yuchen Zhang",
+        "Zijie Qiu",
+        "Haozhan Li",
+        "Ning Ding"
+      ],
+      "published": "2026-10-19T17:22:48Z",
+      "updated": "2026-10-19T17:22:48Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.26765",
+        "pdf": "https://arxiv.org/pdf/2610.26765"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… simulation platform and benchmark for cross-embodiment dexterous manipulation. It supports five robotic arms, six dexterous hands, and approximately 200 rigid, articulated, and …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-20T06:23:48Z"
+    },
+    {
+      "id": "2610.26759",
+      "title": "Tactile In-Hand Object Rotation: A Comparative Study of Hand Morphology in Simulation and Hardware",
+      "authors": [
+        "Wenhao He",
+        "Max Yang",
+        "Chenghua Lu",
+        "Yijiong Lin",
+        "David A. W. Barton",
+        "Nathan F. Lepora"
+      ],
+      "published": "2026-10-19T17:18:25Z",
+      "updated": "2026-10-19T17:18:25Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.26759",
+        "pdf": "https://arxiv.org/pdf/2610.26759"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Continuous in-hand rotation requires coordinated contact maintenance and renewal, linking manipulation performance to both hand geometry and tactile feedback. We investigate these …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-20T06:23:48Z"
+    },
+    {
+      "id": "2610.26174",
+      "title": "PhantomTac: Hijacking Robotic Tactile Systems with Deploy-and-forget Tags",
+      "authors": [
+        "Binbin Zhang",
+        "Yifeng Zhang",
+        "Xiaomeng Chen",
+        "Dongyao Chen"
+      ],
+      "published": "2026-10-19T11:03:56Z",
+      "updated": "2026-10-19T11:03:56Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.26174",
+        "pdf": "https://arxiv.org/pdf/2610.26174"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… manipulation, providing an important foundation for dexterous, closed-loop force control. Among various tactile sensing techniques, magnetic tactile sensors stand out thanks to …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-20T06:23:48Z"
+    },
+    {
+      "id": "2610.25961",
+      "title": "PaceVLA: Adaptive Temporal Action Quantization in Vision-Language-Action Models",
+      "authors": [
+        "Hojin Jeon",
+        "Jimin Lee",
+        "Taekwan Kim",
+        "Nayoung Oh",
+        "Taeyoung Kim",
+        "Myungkyu Koo",
+        "Jinmo Koo",
+        "Joonwoo Ahn",
+        "Jinwoo Shin"
+      ],
+      "published": "2026-10-19T07:54:13Z",
+      "updated": "2026-10-19T07:54:13Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.25961",
+        "pdf": "https://arxiv.org/pdf/2610.25961"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… across multiple embodiments, including long-horizon and dexterous manipulation."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-20T06:23:48Z"
+    },
+    {
+      "id": "2610.25459",
+      "title": "BiDex-100: A Comprehensive Benchmark for Bimanual Dexterous Manipulation Across 100+ Simulation Tasks",
+      "authors": [
+        "Yong Wang",
+        "Kecheng Zheng",
+        "Xing Zhu",
+        "Chao Xu",
+        "Yujun Shen",
+        "Shengze Cai"
+      ],
+      "published": "2026-10-18T18:44:05Z",
+      "updated": "2026-10-18T18:44:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.25459",
+        "pdf": "https://arxiv.org/pdf/2610.25459"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… have developed benchmarks specifically tailored for dexterous manipulation, leaving the dexterous manipulation capabilities of existing models insufficiently characterized. In this paper, we …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-20T06:23:48Z"
+    },
+    {
+      "id": "2610.24392",
+      "title": "Gen2Dex: Learning Dexterous Manipulation from Simulation-Initialized Generated Video Demonstrations",
+      "authors": [
+        "Xiaowen Qiu",
+        "Yian Wang",
+        "Haoxiang You",
+        "Chuang Gan"
+      ],
+      "published": "2026-10-17T02:50:59Z",
+      "updated": "2026-10-17T02:50:59Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.24392",
+        "pdf": "https://arxiv.org/pdf/2610.24392"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… demonstrations provide rich manipulation strategies for dexterous manipulation learning. We study a setting in which a fully specified simulated scene is used …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-20T06:23:48Z"
+    },
+    {
+      "id": "2610.09291",
+      "title": "Co${}^{2}$Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction",
+      "authors": [
+        "Jeonghwan Kim",
+        "Hyeonwoo Kim",
+        "Hanbyul Joo"
+      ],
+      "published": "2026-10-07T01:49:39Z",
+      "updated": "2026-10-17T01:41:21Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.09291",
+        "pdf": "https://arxiv.org/pdf/2610.09291"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… Co${}^{2}$Skill that integrates scene interaction and dexterous manipulation through a unified policy formulation. Built on a pretrained motion prior, the policy uses …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-08T09:33:18Z",
+      "last_seen": "2026-10-20T06:23:48Z"
+    },
     {
       "id": "2608.02014",
       "title": "MANGO-Grasp: Mahalanobis Fields over Geometry-Oriented 3D Gaussians for Cross-Embodiment Dexterous Grasping",
@@ -30,7 +285,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.23438",
@@ -59,7 +314,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2608.19182",
@@ -95,7 +350,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2608.15060",
@@ -125,7 +380,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2606.18097",
@@ -157,7 +412,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-14T04:46:07Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.22363",
@@ -195,7 +450,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.22342",
@@ -242,7 +497,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.22340",
@@ -272,7 +527,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.22184",
@@ -304,7 +559,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2606.26428",
@@ -332,7 +587,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.19089",
@@ -362,7 +617,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.21180",
@@ -399,7 +654,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.20904",
@@ -438,7 +693,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.20320",
@@ -489,7 +744,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.20134",
@@ -521,7 +776,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2609.33551",
@@ -554,7 +809,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.19753",
@@ -585,7 +840,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.19594",
@@ -619,7 +874,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.19518",
@@ -651,7 +906,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2607.07968",
@@ -678,7 +933,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.19155",
@@ -710,7 +965,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-19T06:37:32Z"
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.10370",
@@ -742,33 +997,6 @@
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
       "last_seen": "2026-10-14T06:33:56Z"
-    },
-    {
-      "id": "2610.09291",
-      "title": "Co${}^{2}$Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction",
-      "authors": [
-        "Jeonghwan Kim",
-        "Hyeonwoo Kim",
-        "Hanbyul Joo"
-      ],
-      "published": "2026-10-07T01:49:39Z",
-      "updated": "2026-10-07T01:49:39Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.09291",
-        "pdf": "https://arxiv.org/pdf/2610.09291"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… Co${}^{2}$Skill that integrates scene interaction and dexterous manipulation through a unified policy formulation. Built on a pretrained motion prior, the policy uses …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-12T05:41:04Z"
     },
     {
       "id": "2610.04741",

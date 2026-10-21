@@ -1,20 +1,183 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-10-19T06:37:32Z",
+  "last_checked_at": "2026-10-20T06:23:48Z",
   "lookback_days": 7,
-  "window_start": "2026-10-12T06:37:32Z",
+  "window_start": "2026-10-13T06:23:48Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 24,
-  "recent_match_count": 41,
-  "new_candidate_count": 4,
+  "candidate_count": 31,
+  "recent_match_count": 39,
+  "new_candidate_count": 7,
   "updated_candidate_count": 1,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2610.26854",
+      "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation",
+      "published": "2026-10-19T17:59:54Z",
+      "updated": "2026-10-19T17:59:54Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.26854",
+        "pdf": "https://arxiv.org/pdf/2610.26854"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… real-world tasks using bimanual grippers and dexterous hands. Further evaluations demonstrate that our structured latent reasoning framework generalizes to unseen scenarios and …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.26765",
+      "title": "HandsOn: A Large-Scale Simulation Benchmark for Generalizable Dexterous Manipulation",
+      "published": "2026-10-19T17:22:48Z",
+      "updated": "2026-10-19T17:22:48Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.26765",
+        "pdf": "https://arxiv.org/pdf/2610.26765"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… simulation platform and benchmark for cross-embodiment dexterous manipulation. It supports five robotic arms, six dexterous hands, and approximately 200 rigid, articulated, and …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.26759",
+      "title": "Tactile In-Hand Object Rotation: A Comparative Study of Hand Morphology in Simulation and Hardware",
+      "published": "2026-10-19T17:18:25Z",
+      "updated": "2026-10-19T17:18:25Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.26759",
+        "pdf": "https://arxiv.org/pdf/2610.26759"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Continuous in-hand rotation requires coordinated contact maintenance and renewal, linking manipulation performance to both hand geometry and tactile feedback. We investigate these …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.26174",
+      "title": "PhantomTac: Hijacking Robotic Tactile Systems with Deploy-and-forget Tags",
+      "published": "2026-10-19T11:03:56Z",
+      "updated": "2026-10-19T11:03:56Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.26174",
+        "pdf": "https://arxiv.org/pdf/2610.26174"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… manipulation, providing an important foundation for dexterous, closed-loop force control. Among various tactile sensing techniques, magnetic tactile sensors stand out thanks to …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.25961",
+      "title": "PaceVLA: Adaptive Temporal Action Quantization in Vision-Language-Action Models",
+      "published": "2026-10-19T07:54:13Z",
+      "updated": "2026-10-19T07:54:13Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.25961",
+        "pdf": "https://arxiv.org/pdf/2610.25961"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… across multiple embodiments, including long-horizon and dexterous manipulation."
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.25459",
+      "title": "BiDex-100: A Comprehensive Benchmark for Bimanual Dexterous Manipulation Across 100+ Simulation Tasks",
+      "published": "2026-10-18T18:44:05Z",
+      "updated": "2026-10-18T18:44:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.25459",
+        "pdf": "https://arxiv.org/pdf/2610.25459"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… have developed benchmarks specifically tailored for dexterous manipulation, leaving the dexterous manipulation capabilities of existing models insufficiently characterized. In this paper, we …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.24392",
+      "title": "Gen2Dex: Learning Dexterous Manipulation from Simulation-Initialized Generated Video Demonstrations",
+      "published": "2026-10-17T02:50:59Z",
+      "updated": "2026-10-17T02:50:59Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.24392",
+        "pdf": "https://arxiv.org/pdf/2610.24392"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… demonstrations provide rich manipulation strategies for dexterous manipulation learning. We study a setting in which a fully specified simulated scene is used …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.09291",
+      "title": "Co${}^{2}$Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction",
+      "published": "2026-10-07T01:49:39Z",
+      "updated": "2026-10-17T01:41:21Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.09291",
+        "pdf": "https://arxiv.org/pdf/2610.09291"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… Co${}^{2}$Skill that integrates scene interaction and dexterous manipulation through a unified policy formulation. Built on a pretrained motion prior, the policy uses …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2608.02014",
       "title": "MANGO-Grasp: Mahalanobis Fields over Geometry-Oriented 3D Gaussians for Cross-Embodiment Dexterous Grasping",
@@ -460,26 +623,6 @@
         {
           "source": "abstract",
           "text": "… dragging, eyes-free digit input, and representative multi-finger controls including scrolling and pinch-based map manipulation. These results show that a morphologically variable bare …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2610.09291",
-      "title": "Co${}^{2}$Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction",
-      "published": "2026-10-07T01:49:39Z",
-      "updated": "2026-10-07T01:49:39Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.09291",
-        "pdf": "https://arxiv.org/pdf/2610.09291"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… Co${}^{2}$Skill that integrates scene interaction and dexterous manipulation through a unified policy formulation. Built on a pretrained motion prior, the policy uses …"
         }
       ],
       "review_status": "pending"

@@ -8463,6 +8463,861 @@
           "notes_zh": "额外单次演示225次半圈交换＝112.5整圈/310秒，未纳入10次统计。零样本指无实机策略训练或微调；仍需人工放球、触觉标定与部署增益/限速设定。试验使用同一对球和固定手姿，未证明跨物体泛化。"
         }
       }
+    },
+    {
+      "key": "2610.09291|v2|2026-10-17T01:41:21+00:00|dexterous-v1",
+      "digest": "f2b9e2180ec8bb7cb3a0b2cd9253ffeb74265c09827bb746a3f8b4be63247b67",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-21T03:00:20Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.09291",
+          "version": 2,
+          "title": "Co${}^{2}$Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction",
+          "authors": [
+            "Jeonghwan Kim",
+            "Hyeonwoo Kim",
+            "Hanbyul Joo"
+          ],
+          "published": "2026-10-07T01:49:39Z",
+          "updated": "2026-10-17T01:41:21Z",
+          "url": "https://arxiv.org/abs/2610.09291v2",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.09291v2"
+          ]
+        },
+        "decision": "defer",
+        "review_depth": "fulltext",
+        "reason_zh": "v2已重新核验，仍为SMPL-X仿真人体角色的全身技能组合与手物交互，真实人形机器人适配仍列为未来工作。新增版本没有消除此前待确认的收录范围问题，维持暂缓；不因缺少实机而永久排除，也不自动扩大相邻研究边界。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.09291v2",
+            "paraphrase": "官方元数据保留三名作者和2026-10-07首次投稿，最新v2更新于2026-10-17；标题及完整摘要已核对。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.09291v2",
+            "section": "3.1; 4; 5.1",
+            "paraphrase": "52关节SMPL-X角色在IsaacLab中由冻结动作先验和任务条件残差策略控制；任务/阶段掩码与课程组合持物和场景交互。没有机器人传感器部署。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.09291v2",
+            "section": "5.2–5.4, Table 2",
+            "paraphrase": "拾取—搬运—放置的累计完成率在测试集为64.80%、未见物体为25.19%；均是人体角色仿真，跨场景技能组合主要为定性展示。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.09291v2",
+            "section": "6 Future Work",
+            "paraphrase": "作者明确将向真实人形机器人适配列为未来方向；仿真接触状态与阈值不能作为实机触觉证据。"
+          }
+        ]
+      }
+    },
+    {
+      "key": "2610.24392|v1|2026-10-17T02:50:59+00:00|dexterous-v1",
+      "digest": "8116a5ee2ffdd7fc16b4efff6511973a704556fee9a8b8e78b1d17cd048e93d2",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-21T03:00:20Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.24392",
+          "version": 1,
+          "title": "Gen2Dex: Learning Dexterous Manipulation from Simulation-Initialized Generated Video Demonstrations",
+          "authors": [
+            "Xiaowen Qiu",
+            "Yian Wang",
+            "Haoxiang You",
+            "Chuang Gan"
+          ],
+          "published": "2026-10-17T02:50:59Z",
+          "updated": "2026-10-17T02:50:59Z",
+          "url": "https://arxiv.org/abs/2610.24392v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2610.24392v1",
+            "https://arxiv.org/html/2610.24392v1"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "把已知仿真场景生成的视频转成多指机器人操作轨迹，包含手物对齐、动作重定向和残差强化学习，直接属于灵巧操作；实机证据限于开环轨迹回放。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.24392v1",
+            "paraphrase": "官方摘要页核对完整标题、全部作者及 v1 首次投稿时间；摘要与正文一致。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.24392v1",
+            "paraphrase": "§III：利用已知网格、关节和相机参数，以 DINOv3 对应点跟踪物体并用单目深度对齐人手；腕部残差和独立手指增量经 PPO、反向课程及有效复位状态缓存优化。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.24392v1",
+            "paraphrase": "§IV-A–C、表II–III：Genesis 中主实验用 Shadow，ARCTIC 比较用 Sharpa；六个刚体任务全部解决，七任务 ARCTIC 的平均 ADD-AUC 为 65.75；生成视频参考为 76.18，均非实机成功率。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.24392v1",
+            "paraphrase": "§IV-D–E、表IV：十任务消融解决 9/10；xArm–Wuji 展示四种实机任务的开环回放，人工按渲染轮廓摆放物体以匹配仿真初态，未给重复试验成功率。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2610.24392v1",
+          "paraphrase": "§IV-D 实机执行预先优化的轨迹，不运行在线触觉策略；接触优化和仿真有效复位状态并非真实触觉反馈。"
+        },
+        "paper": {
+          "id": "2610.24392",
+          "title": "Gen2Dex: Learning Dexterous Manipulation from Simulation-Initialized Generated Video Demonstrations",
+          "authors": [
+            "Xiaowen Qiu",
+            "Yian Wang",
+            "Haoxiang You",
+            "Chuang Gan"
+          ],
+          "date": "2026-10-17",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Reinforcement learning",
+            "Human motion transfer",
+            "Retargeting",
+            "Sim-to-real",
+            "Dexterous grasping",
+            "Bimanual coordination",
+            "Articulated objects",
+            "Vision"
+          ],
+          "tldr": "Gen2Dex recovers and retargets human motion from videos generated from known simulated scenes, then repairs imperfect references with residual PPO and backward-curriculum resets. It solves 9/10 simulated tasks and demonstrates open-loop xArm–Wuji trajectory replay on four physical tasks after manual initial-state alignment.",
+          "tldr_zh": "Gen2Dex 从已知仿真场景生成的视频恢复并重定向人手动作，再用残差 PPO、反向课程和有效复位状态修正参考轨迹。仿真解决 9/10 个任务；人工对齐初态后，在 xArm–Wuji 上展示四类任务的开环轨迹回放。",
+          "sensing": [
+            "Generated RGB videos and monocular depth used for offline hand–object reconstruction",
+            "Known simulated object geometry and calibrated camera parameters"
+          ],
+          "hand": [
+            "Shadow Hand (main simulation)",
+            "Sharpa Hand (ARCTIC comparison)",
+            "Wuji Hand on xArm (simulation optimization and physical replay)"
+          ],
+          "task": [
+            "Rigid-object manipulation",
+            "Articulated-object manipulation",
+            "Bimanual handover",
+            "Physical grasping and placement trajectory replay"
+          ],
+          "method": [
+            "Known-geometry DINOv3 object tracking and depth-mediated hand–object alignment",
+            "Human-to-robot motion retargeting",
+            "Residual PPO with backward curriculum and physically valid reset-state cache"
+          ],
+          "evaluation": "Genesis trajectory tracking and task completion; qualitative open-loop physical replay on four tasks, without a reported repeated-trial success rate.",
+          "notes_zh": "需要已知场景几何和相机参数；9/10 是解决的仿真任务数。实机人工摆放物体、开环回放优化轨迹，不能解释为闭环策略迁移或随机初态成功率。未核实独立项目/代码链接；视觉基座特征不等于基座控制策略。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.24392"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.25459|v1|2026-10-18T18:44:05+00:00|dexterous-v1",
+      "digest": "e40714d00499b470e133eb67a7c5ccd2f9c0697f599ab0da1c57e86641ef6273",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-21T03:00:20Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.25459",
+          "version": 1,
+          "title": "BiDex-100: A Comprehensive Benchmark for Bimanual Dexterous Manipulation Across 100+ Simulation Tasks",
+          "authors": [
+            "Yong Wang",
+            "Kecheng Zheng",
+            "Xing Zhu",
+            "Chao Xu",
+            "Yujun Shen",
+            "Shengze Cai"
+          ],
+          "published": "2026-10-18T18:44:05Z",
+          "updated": "2026-10-18T18:44:05Z",
+          "url": "https://arxiv.org/abs/2610.25459v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2610.25459v1",
+            "https://arxiv.org/html/2610.25459v1",
+            "https://BiDex-100.github.io/BiDex-100/",
+            "https://github.com/robbyant-research/BiDex-100"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "提供双多指手仿真任务、遥操作示教和受控域外评测，明确评估双手灵巧操作；主贡献是领域基准，而非新控制策略。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.25459v1",
+            "paraphrase": "官方摘要页核对完整标题、全部作者及 v1 首次投稿时间；摘要与正文一致。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.25459v1",
+            "paraphrase": "§III-B：两平台均采用 22-DoF 多指手、58 维总动作；正文规定 96 个双 Franka 任务和 10 个 Astribot 任务，不是同任务跨平台迁移实验。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.25459v1",
+            "paraphrase": "§III–IV：106 个任务分五种能力轴，每个有受控域外变体；8,080 条成功验证的仿真遥操作示教、625 万帧，以严格成功和加权子任务进展分别计分。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.25459v1",
+            "paraphrase": "§V、表III–IV：七个 VLA 每个完成 10,600 次仿真评测；域内最高严格成功率 52.21%，域外最高 5.45%，来自不同模型。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.25459v1",
+            "paraphrase": "§III-B、附录XIV：模型读取 RGB-D 与本体状态，位置控制；实机迁移尚待验证，基准限于刚体桌面场景及有限脚本域移。"
+          },
+          {
+            "url": "https://BiDex-100.github.io/BiDex-100/",
+            "paraphrase": "官方项目页的题名、106 任务、8,080 示教和仓库链接匹配，但手型名称及平台任务分配与 v1 正文有差异。"
+          },
+          {
+            "url": "https://github.com/robbyant-research/BiDex-100",
+            "paraphrase": "已打开作者代码仓库，包含 bidex、scripts、tests 及任务/评测说明；数据页访问失败，不把该数据地址作为已核验链接。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2610.25459v1",
+          "paraphrase": "§III-B 的策略观测是 RGB-D 和本体状态，没有执行触觉；§XIV 明确实机迁移仍待验证。"
+        },
+        "paper": {
+          "id": "2610.25459",
+          "title": "BiDex-100: A Comprehensive Benchmark for Bimanual Dexterous Manipulation Across 100+ Simulation Tasks",
+          "authors": [
+            "Yong Wang",
+            "Kecheng Zheng",
+            "Xing Zhu",
+            "Chao Xu",
+            "Yujun Shen",
+            "Shengze Cai"
+          ],
+          "date": "2026-10-18",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Imitation learning",
+            "Vision-language-action",
+            "Teleoperation",
+            "Dexterous grasping",
+            "Bimanual coordination",
+            "Tool use",
+            "Long-horizon tasks",
+            "Articulated objects",
+            "Vision",
+            "Proprioception",
+            "Dataset / benchmark"
+          ],
+          "tldr": "BiDex-100 combines 106 bimanual simulation tasks, 8,080 teleoperated demonstrations, and matched in-domain/out-of-domain tests. Seven VLA baselines use 58-dimensional joint control; the best strict success is 52.21% in-domain and 5.45% out-of-domain, attained by different models.",
+          "tldr_zh": "BiDex-100 提供 106 个双手仿真任务、8,080 条遥操作示教及匹配的域内/域外测试。七个 VLA 基线采用 58 维关节控制；域内与域外最高严格成功率分别为 52.21% 和 5.45%，来自不同模型。",
+          "sensing": [
+            "Simulated head and bilateral wrist RGB-D cameras at 25 Hz",
+            "Arm/hand joint positions and velocities, and end-effector poses"
+          ],
+          "hand": [
+            "Two 22-DoF dexterous hands on dual Franka Research 3 arms and Astribot S1 (simulation; vendor identity unresolved)"
+          ],
+          "task": [
+            "Bimanual manipulation across 106 tasks",
+            "Generalization and instruction following",
+            "Limited-demonstration, long-horizon and memory evaluation"
+          ],
+          "method": [
+            "MuJoCo task specifications with predicate-based success and progress scoring",
+            "Matched scripted ID/OOD transformations",
+            "Glove/headset teleoperation and seven VLA baseline finetuning"
+          ],
+          "evaluation": "50 ID plus 50 OOD rollouts per task, 10,600 simulated rollouts per model; strict success is separate from partial progress.",
+          "notes_zh": "纯仿真，未验证实机迁移；两平台共用 22-DoF 手，不能声称跨手型迁移。v1 正文为96/10平台分配且引用Sharpa，项目页称Shadow-style并写106+10；手型品牌不填，分配以正文为准，差异待作者澄清。域内52.21%属LingBot-VLA-v2，域外5.45%属GR00T-N1.7。数据页未能访问，未核验数据文件。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.25459",
+            "project": "https://BiDex-100.github.io/BiDex-100/",
+            "code": "https://github.com/robbyant-research/BiDex-100"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.25961|v1|2026-10-19T07:54:13+00:00|dexterous-v1",
+      "digest": "092971da214517b4be519c1af8d3313dd39523cc8d0752a9e96155802f984c7b",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-21T03:00:20Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.25961",
+          "version": 1,
+          "title": "PaceVLA: Adaptive Temporal Action Quantization in Vision-Language-Action Models",
+          "authors": [
+            "Hojin Jeon",
+            "Jimin Lee",
+            "Taekwan Kim",
+            "Nayoung Oh",
+            "Taeyoung Kim",
+            "Myungkyu Koo",
+            "Jinmo Koo",
+            "Joonwoo Ahn",
+            "Jinwoo Shin"
+          ],
+          "published": "2026-10-19T07:54:13Z",
+          "updated": "2026-10-19T07:54:13Z",
+          "url": "https://arxiv.org/abs/2610.25961v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.25961v1",
+            "https://pacevla.github.io/"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "提出VLA动作时间粒度与预测时域的自适应优化，实机评测覆盖双手Inspire和ALLEX灵巧手。主要贡献是通用策略执行优化，归入Policy Optimization；未发现运行时触觉输入。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.25961v1",
+            "paraphrase": "官方摘要、九名作者与投稿历史匹配；首次投稿及v1更新时间均为2026-10-19。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.25961v1",
+            "section": "3.1–3.5",
+            "paraphrase": "共享flow-matching动作专家配多粒度解码头，量化判断器和路由器选择动作粒度/时域；输入为图像、语言、本体状态，另调整底层跟踪增益。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.25961v1",
+            "section": "4.1–4.2; C.1–C.4, Tables 2, 4",
+            "paraphrase": "三项仿真基准、六项实机任务；Franka/OpenArm每任务32次，其中三项允许半分，时间仅统计完整成功试次。ALLEX为5轮共50包，94%包处理成功、6.3包/分钟，对照86%、3.6包/分钟。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.25961v1",
+            "section": "Table 2; C.2; D.3",
+            "paraphrase": "OpenArm双手为6自由度Inspire RH56F1，ALLEX每手15自由度；桌面清扫得分59.4%低于基线62.5%，不能称所有任务成功率均提高。附录把触觉作为未来感知改进。"
+          },
+          {
+            "url": "https://pacevla.github.io/",
+            "paraphrase": "项目页标题作者及方法、三种实机展示匹配；未提供可核验的论文代码或数据仓库链接。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2610.25961v1",
+          "paraphrase": "方法与硬件节使用RGB、语言、关节状态，ALLEX另列关节力矩估计；没有实际触觉传感器输入，D.3将触觉列为潜在改进。"
+        },
+        "paper": {
+          "id": "2610.25961",
+          "title": "PaceVLA: Adaptive Temporal Action Quantization in Vision-Language-Action Models",
+          "authors": [
+            "Hojin Jeon",
+            "Jimin Lee",
+            "Taekwan Kim",
+            "Nayoung Oh",
+            "Taeyoung Kim",
+            "Myungkyu Koo",
+            "Jinmo Koo",
+            "Joonwoo Ahn",
+            "Jinwoo Shin"
+          ],
+          "date": "2026-10-19",
+          "year": 2026,
+          "category": "Policy Optimization",
+          "scope": "core",
+          "tags": [
+            "Imitation learning",
+            "Vision-language-action",
+            "Diffusion / flow policy",
+            "Bimanual coordination",
+            "Tool use",
+            "Long-horizon tasks",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "PaceVLA routes a shared flow-matching policy among action decoders with different temporal granularities and horizons. Across three simulation benchmarks and six physical tasks, adaptive execution speeds up manipulation; ALLEX handles 50 packages with 94% success at 6.3 packages/min versus 86% at 3.6 for the base VLA.",
+          "tldr_zh": "PaceVLA用量化判断器和路由器，在共享flow-matching策略的不同时间粒度、时域解码头之间选择。验证覆盖三项仿真基准与六项实机任务；ALLEX共处理50包，成功率94%、吞吐6.3包/分钟，基线为86%、3.6包/分钟。",
+          "sensing": [
+            "RGB cameras and language instructions",
+            "Joint proprioception; joint torque estimates additionally reported for ALLEX"
+          ],
+          "hand": [
+            "Inspire RH56F1, 6 DoF per hand on bimanual OpenArm",
+            "ALLEX five-finger hands, 15 DoF per hand",
+            "Robotiq 2F-85 gripper on Franka Research 3"
+          ],
+          "task": [
+            "Bimanual tool manipulation",
+            "Conveyor package handling",
+            "Pick-and-place, cup stacking and air-fryer operation"
+          ],
+          "method": [
+            "Temporal action quantization with mode-specific decoders",
+            "Quantizability supervision and context-conditioned routing",
+            "Fine-tuning pretrained flow-matching VLAs"
+          ],
+          "evaluation": "RoboCasa-Kitchen, LIBERO and DexJoCo simulation; five Franka/OpenArm tasks with 32 trials each and ALLEX conveyor evaluation over five runs of ten packages.",
+          "notes_zh": "Stack Cup和两项OpenArm任务的百分比包含半分，耗时仅统计完整成功试次。清扫得分59.4%低于基线62.5%，不能概括为所有成功率提高；ALLEX统计单位是包。各平台分别微调并配置控制器，不标跨本体共享策略、基础策略或触觉反馈；未复现实验。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.25961",
+            "project": "https://pacevla.github.io/"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.26174|v1|2026-10-19T11:03:56+00:00|dexterous-v1",
+      "digest": "4036dcf43491247842105ff4d7ebe473638874f6d1833bcc63ac70a9f4aaa434",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-21T03:00:20Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.26174",
+          "version": 1,
+          "title": "PhantomTac: Hijacking Robotic Tactile Systems with Deploy-and-forget Tags",
+          "authors": [
+            "Binbin Zhang",
+            "Yifeng Zhang",
+            "Xiaomeng Chen",
+            "Dongyao Chen"
+          ],
+          "published": "2026-10-19T11:03:56Z",
+          "updated": "2026-10-19T11:03:56Z",
+          "url": "https://arxiv.org/abs/2610.26174v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2610.26174v1",
+            "https://arxiv.org/html/2610.26174v1",
+            "https://phantomtac.org/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "研究磁触觉传感可靠性及真实闭环系统的安全失效，符合触觉感知邻近方向；不是多指灵巧策略。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.26174v1",
+            "paraphrase": "核对题名、4名作者及v1首发时间：2026-10-19 11:03:56 UTC。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.26174v1",
+            "paraphrase": "§6实机评测包括Dofbot夹爪搬运和G1固定轨迹碰撞检测；§7讨论多模态一致性防御，未给出防御量化评测。"
+          },
+          {
+            "url": "https://phantomtac.org/",
+            "paraphrase": "项目页题名、作者、arXiv编号和CCS 2026信息相符。"
+          }
+        ],
+        "paper": {
+          "title": "PhantomTac: Hijacking Robotic Tactile Systems with Deploy-and-forget Tags",
+          "authors": [
+            "Binbin Zhang",
+            "Yifeng Zhang",
+            "Xiaomeng Chen",
+            "Dongyao Chen"
+          ],
+          "id": "2610.26174",
+          "year": 2026,
+          "date": "2026-10-19",
+          "category": "Tactile Sensing & Representation",
+          "scope": "adjacent",
+          "tags": [
+            "Tactile feedback",
+            "Force control",
+            "Hardware / sensor"
+          ],
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.26174",
+            "project": "https://phantomtac.org/"
+          },
+          "tldr": "PhantomTac studies the reliability of magnetic touch sensing under physical interference. Hardware tests expose failures in tactile grasp control and collision detection; the paper discusses cross-modal consistency as a defense, without quantitatively evaluating that defense.",
+          "tldr_zh": "PhantomTac研究磁触觉的物理干扰风险，在实机抓取力控与碰撞检测中展示闭环失效，并讨论多模态一致性防御；未量化验证防御效果。",
+          "sensing": [
+            "Magnetic tactile force measurements"
+          ],
+          "hand": [
+            "Dofbot-Pi4B gripper"
+          ],
+          "task": [
+            "Tactile sensor robustness",
+            "Grasp-force control",
+            "Collision detection"
+          ],
+          "method": [
+            "Physical-layer sensor reliability evaluation",
+            "Cross-modal consistency defense discussion"
+          ],
+          "evaluation": "Real Dofbot-Pi4B and Unitree G1 systems; sensor-level checks on multiple magnetic sensor models.",
+          "notes_zh": "G1实验是固定轨迹触碰，并非多指操作。结论限磁传感组件，不能外推至纯光学、电容或电阻触觉；未复现实验。"
+        },
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2610.26174v1",
+          "paraphrase": "§6.2–6.3的实机夹爪调节与碰撞停止判断直接读取磁触觉力反馈。"
+        }
+      }
+    },
+    {
+      "key": "2610.26759|v1|2026-10-19T17:18:25+00:00|dexterous-v1",
+      "digest": "574bfd466012138e8e2983f3033cc835b826f15687ec9afcf0e19118ccb5dd1f",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-21T03:00:20Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.26759",
+          "version": 1,
+          "title": "Tactile In-Hand Object Rotation: A Comparative Study of Hand Morphology in Simulation and Hardware",
+          "authors": [
+            "Wenhao He",
+            "Max Yang",
+            "Chenghua Lu",
+            "Yijiong Lin",
+            "David A.W. Barton",
+            "Nathan F. Lepora"
+          ],
+          "published": "2026-10-19T17:18:25Z",
+          "updated": "2026-10-19T17:18:25Z",
+          "url": "https://arxiv.org/abs/2610.26759v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2610.26759v1",
+            "https://arxiv.org/html/2610.26759v1"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "两种LEAP手在实机执行时读取TacTip反馈完成手内旋转，直接符合触觉灵巧操作范围。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.26759v1",
+            "paraphrase": "核对题名、6名作者及v1首发时间：2026-10-19 17:18:25 UTC。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.26759v1",
+            "paraphrase": "§III–IV采用PPO教师、历史编码学生蒸馏和系统辨识；仿真比较12个未见物体，实机比较10个物体。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.26759v1",
+            "paraphrase": "§IV-B/VI-C实机每物体每姿态5次、上限30秒；对称布局的姿态组等权平均圈数高32.0%，额外力记录平均总负载低19.9%。"
+          }
+        ],
+        "paper": {
+          "title": "Tactile In-Hand Object Rotation: A Comparative Study of Hand Morphology in Simulation and Hardware",
+          "authors": [
+            "Wenhao He",
+            "Max Yang",
+            "Chenghua Lu",
+            "Yijiong Lin",
+            "David A.W. Barton",
+            "Nathan F. Lepora"
+          ],
+          "id": "2610.26759",
+          "year": 2026,
+          "date": "2026-10-19",
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Reinforcement learning",
+            "Sim-to-real",
+            "In-hand manipulation",
+            "Tactile feedback",
+            "Proprioception",
+            "Hardware / sensor"
+          ],
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.26759"
+          },
+          "tldr": "Two LEAP–TacTip layouts are compared using a common teacher–student RL protocol. On ten physical objects, the symmetric layout improves orientation-group-averaged rotation count by 32.0%; additional force recordings show 19.9% lower mean total fingertip loading. Tactile observation ablations are simulation-only.",
+          "tldr_zh": "以统一教师—学生强化学习流程比较两种LEAP–TacTip布局。10个实物上，对称布局按姿态组等权平均的旋转圈数高32.0%；额外力记录中平均总指尖负载低19.9%。触觉输入消融仅在仿真进行。",
+          "sensing": [
+            "Four TacTip contact, contact-pose and force estimates",
+            "Joint proprioception"
+          ],
+          "hand": [
+            "Anthropomorphic LEAP–TacTip hand",
+            "Symmetric LEAP–TacTip hand"
+          ],
+          "task": [
+            "Continuous in-hand object rotation"
+          ],
+          "method": [
+            "PPO teacher and history-based student distillation",
+            "Domain randomization and system identification"
+          ],
+          "evaluation": "Simulation: 12 unseen objects, arbitrary axes, three observation conditions. Hardware: ten objects, full tactile policies, palm-axis rotation, five trials per object and orientation, 30-second limit.",
+          "notes_zh": "各手分别训练，不是同一策略跨手迁移。仿真归一化旋转除以3.14，不能当整圈；实机圈数由视觉估计。两手姿态组不同，32%不代表任意手形、任务或共同姿态的普遍优势。"
+        },
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2610.26759v1",
+          "paraphrase": "§III-C/D中四个TacTip实时图像经离线训练的感知模型生成接触、接触姿态和力特征，与本体状态共同输入20 Hz学生策略。"
+        }
+      }
+    },
+    {
+      "key": "2610.26765|v1|2026-10-19T17:22:48+00:00|dexterous-v1",
+      "digest": "682947a3d8ad4d72ad15ddf761b3f0b60ed726401372eab8fd68c33f690fc36f",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-21T03:00:20Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.26765",
+          "version": 1,
+          "title": "HandsOn: A Large-Scale Simulation Benchmark for Generalizable Dexterous Manipulation",
+          "authors": [
+            "Tianwei Luo",
+            "Yiming He",
+            "Hongjin Wu",
+            "Ting Pan",
+            "Debin Ren",
+            "Haorui Guo",
+            "Junlin Yang",
+            "Yuxin Zuo",
+            "Zhehao Kou",
+            "Kaisen Yang",
+            "Zhuoqun Lai",
+            "Yi Ding",
+            "Jiale Yu",
+            "Yuchen Zhang",
+            "Zijie Qiu",
+            "Haozhan Li",
+            "Ning Ding"
+          ],
+          "published": "2026-10-19T17:22:48Z",
+          "updated": "2026-10-19T17:22:48Z",
+          "url": "https://arxiv.org/abs/2610.26765v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2610.26765v1",
+            "https://arxiv.org/html/2610.26765v1",
+            "https://github.com/TsinghuaC3I/HandsOn",
+            "https://llltttwww.github.io/HandsOn-website/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "提供多指操作仿真平台、人工核验任务及大规模遥操作示教，并比较学习策略及提示式控制，属于灵巧操作基准；实机仅有定性迁移视频。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.26765v1",
+            "paraphrase": "官方摘要页核对完整标题、全部作者及 v1 首次投稿时间；摘要与正文一致。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.26765v1",
+            "paraphrase": "§3–4：18,000 条全部仿真示教分为 15,178 训练及 2,822 验证；Core-50 有训练示教，Transfer-16 无目标任务训练示教，包含关系迁移、技能组合和形变任务。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.26765v1",
+            "paraphrase": "§4.5–4.6：全部报告实验只用 ROKAE AR5-08、第一代 Wuji 每手 20 个主动关节和 PhysX；其他手臂/手型/后端的代码支持不构成跨本体评测。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.26765v1",
+            "paraphrase": "§5、表5：八个多任务检查点中 OpenWAM 的 Core-50 任务宏平均成功率最高为 29.1%；学习策略一般每任务 100 次。提示式 GPT-6 为每任务 10 次、不同状态输入和调用预算，不能当作等预算架构比较。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.26765v1",
+            "paraphrase": "§7、附录F：策略用视觉/本体状态，触觉为未来工作；真实 ROKAE–Wuji 视频只展示少量单手与双手操作，没有匹配实机试验、重复预算或成功率。"
+          },
+          {
+            "url": "https://github.com/TsinghuaC3I/HandsOn",
+            "paraphrase": "作者仓库有环境、任务与评测代码；README 声明 PhysX 数据发布、Newton 数据待发布，模型检查点不随仓库提供。数据页本轮不可访问，未核验文件。"
+          },
+          {
+            "url": "https://llltttwww.github.io/HandsOn-website/",
+            "paraphrase": "项目页标题、作者、论文回链和18,000条示教描述一致，并链接同一代码仓库。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2610.26765v1",
+          "paraphrase": "§7 明确策略使用视觉和本体状态而无触觉反馈；增加仿真实机对应触觉传感器被列为未来工作。"
+        },
+        "paper": {
+          "id": "2610.26765",
+          "title": "HandsOn: A Large-Scale Simulation Benchmark for Generalizable Dexterous Manipulation",
+          "authors": [
+            "Tianwei Luo",
+            "Yiming He",
+            "Hongjin Wu",
+            "Ting Pan",
+            "Debin Ren",
+            "Haorui Guo",
+            "Junlin Yang",
+            "Yuxin Zuo",
+            "Zhehao Kou",
+            "Kaisen Yang",
+            "Zhuoqun Lai",
+            "Yi Ding",
+            "Jiale Yu",
+            "Yuchen Zhang",
+            "Zijie Qiu",
+            "Haozhan Li",
+            "Ning Ding"
+          ],
+          "date": "2026-10-19",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Imitation learning",
+            "Vision-language-action",
+            "Diffusion / flow policy",
+            "Teleoperation",
+            "Sim-to-real",
+            "Bimanual coordination",
+            "Tool use",
+            "Long-horizon tasks",
+            "Articulated objects",
+            "Vision",
+            "Proprioception",
+            "Dataset / benchmark"
+          ],
+          "tldr": "HandsOn pairs 18,000 simulated demonstrations with Core-50 training/evaluation tasks and Transfer-16 tests without target-task training demonstrations. The best multitask checkpoint reaches 29.1% Core-50 success; all quantitative results use ROKAE–Wuji with PhysX, while physical transfer is shown only in qualitative videos.",
+          "tldr_zh": "HandsOn 将 18,000 条仿真示教与 Core-50 训练/评测任务、无目标任务训练示教的 Transfer-16 测试配套。最佳多任务检查点的 Core-50 成功率为 29.1%；全部量化结果限于 ROKAE–Wuji/PhysX，实机迁移仅以定性视频展示。",
+          "sensing": [
+            "Three-view RGB observations and robot proprioception",
+            "MANUS finger tracking and HTC VIVE wrist tracking for simulation demonstration collection"
+          ],
+          "hand": [
+            "First-generation Wuji Hands, 20 active joints per hand, on ROKAE AR5-08 arms"
+          ],
+          "task": [
+            "Core-50 dexterous task learning and evaluation",
+            "Transfer-16 asset/relation, skill-composition and deformable manipulation tests",
+            "Tool use, precision fitting and bimanual coordination"
+          ],
+          "method": [
+            "Isaac Sim/PhysX teleoperation and human-verified task predicates",
+            "Curated demonstrations with visual re-rendering and language variation",
+            "Diffusion, VLA and world-action policy baselines",
+            "Budgeted GPT-6 palm-and-finger control reference"
+          ],
+          "evaluation": "Over 40,000 Core-50 episodes for eight multitask checkpoints; qualitative physical transfer only. Prompted GPT-6 uses a separately specified 660-trial protocol.",
+          "notes_zh": "不把支持多手型误写为跨本体实测；Sim-to-real 仅指附录F定性策略迁移，无实机成功率。GPT-6 的26/500与3/160使用不同输入和调用预算，模型预训练与计算量也不同。代码已核验；仓库声明PhysX数据发布、Newton待发布，但本轮数据页不可达，不列数据链接。实验检查点不随仓库提供。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.26765",
+            "code": "https://github.com/TsinghuaC3I/HandsOn",
+            "project": "https://llltttwww.github.io/HandsOn-website/"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.26854|v2|2026-10-20T17:53:12+00:00|dexterous-v1",
+      "digest": "3a7febe4e9913a7fbde9454aca9754bc997ac1b95f59a0c26aee735e5c69e951",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-21T03:00:20Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.26854",
+          "version": 2,
+          "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation",
+          "authors": [
+            "Jiaming Liu",
+            "Xinghao Zhu",
+            "Yiming Zhang",
+            "Shanghang Zhang",
+            "Yinxi Wang",
+            "Yichu Yang",
+            "Zhuoyang Liu",
+            "Dantong Niu",
+            "Soha Pouya",
+            "Juekun Li",
+            "Yan Chang"
+          ],
+          "published": "2026-10-19T17:59:54Z",
+          "updated": "2026-10-20T17:53:12Z",
+          "url": "https://arxiv.org/abs/2610.26854v2",
+          "primary_urls": [
+            "https://arxiv.org/abs/2610.26854v2",
+            "https://arxiv.org/html/2610.26854v2",
+            "https://nvidia-isaac.github.io/video_to_data/physicalword/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "有 Sharpa 双手实机与在线触觉输入证据，属于触觉灵巧操作。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.26854v2",
+            "paraphrase": "官方元数据核对 11 位作者、10 月 19 日首次投稿及 10 月 20 日更新的 v2；候选快照仍为 v1。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.26854v2",
+            "paraphrase": "§3.2–3.5：动作词锚定未来视触觉潜变量，flow matching 生成动作；预训练包含动作监督，再对任务示教微调。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.26854v2",
+            "paraphrase": "§4.3、B.1、表2：Sharpa 抓纸/羽毛球插入和 i7 夹爪包装/拧螺丝均以在线触觉控制；实机每任务 3×30 次，四任务平均 71.7%。"
+          },
+          {
+            "url": "https://nvidia-isaac.github.io/video_to_data/physicalword/",
+            "paraphrase": "官方页标题及作者匹配；区分真实触觉与预测 latent 替代触觉的消融，代码标注 coming soon。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2610.26854v2",
+          "paraphrase": "§B.1、3.2：Sharpa 五指和 i7 夹爪的实测视触觉经 T3 编码后输入执行策略。§C.4 是另行移除在线触觉的消融。"
+        },
+        "paper": {
+          "id": "2610.26854",
+          "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation",
+          "authors": [
+            "Jiaming Liu",
+            "Xinghao Zhu",
+            "Yiming Zhang",
+            "Shanghang Zhang",
+            "Yinxi Wang",
+            "Yichu Yang",
+            "Zhuoyang Liu",
+            "Dantong Niu",
+            "Soha Pouya",
+            "Juekun Li",
+            "Yan Chang"
+          ],
+          "date": "2026-10-19",
+          "year": 2026,
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Imitation learning",
+            "Vision-language-action",
+            "Foundation policy",
+            "Diffusion / flow policy",
+            "Bimanual coordination",
+            "Tool use",
+            "Long-horizon tasks",
+            "Tactile feedback",
+            "Vision"
+          ],
+          "tldr": "PhysWord anchors future visual and tactile latents to action verbs before flow-based control. Its tactile-enabled physical systems achieve 93.3% paper picking and 60.0% shuttlecock insertion with Sharpa hands; mean success across four physical tasks is 71.7%.",
+          "tldr_zh": "PhysWord 用动作词组织未来视触觉潜变量，再生成控制动作。实测触觉辅助 Sharpa 双手抓纸成功率 93.3%、羽毛球插入 60.0%；四项实机任务平均 71.7%。",
+          "sensing": [
+            "Three RGB camera views",
+            "Fingertip visuotactile observations"
+          ],
+          "hand": [
+            "Two 22-DoF Sharpa Wave hands on Tianji Marvin arms",
+            "i7 Pro parallel grippers with Xense sensors"
+          ],
+          "task": [
+            "Paper picking",
+            "Shuttlecock insertion",
+            "Express packing",
+            "Powered screw driving"
+          ],
+          "method": [
+            "Semantic supervision of future sensory latents",
+            "Action-supervised pretraining and downstream fine-tuning",
+            "Flow-matching action generation"
+          ],
+          "evaluation": "100 demonstrations and three runs of 30 physical trials per task; separate simulation benchmarks.",
+          "notes_zh": "预训练含控制目标，支持 Foundation policy；下游须微调，未证明一个最终检查点跨平台部署。99.6% 是 LIBERO-Long 仿真结果。官网所称 predictive tactile feedback 消融以预测 latent 替代在线实测触觉。代码尚未发布。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.26854",
+            "project": "https://nvidia-isaac.github.io/video_to_data/physicalword/"
+          }
+        }
+      }
     }
   ]
 }
