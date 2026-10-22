@@ -1,8 +1,40 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-20T06:23:48Z",
+  "updated_at": "2026-10-21T06:24:14Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2610.28628",
+      "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
+      "authors": [
+        "Yuxuan Kuang",
+        "Jiashun Wang",
+        "Yixuan Sun",
+        "Yufei Ye",
+        "Sungjae Park",
+        "Umar Iqbal",
+        "Katerina Fragkiadaki",
+        "Shubham Tulsiani"
+      ],
+      "published": "2026-10-20T17:59:32Z",
+      "updated": "2026-10-20T17:59:32Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.28628",
+        "pdf": "https://arxiv.org/pdf/2610.28628"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous multi-finger hands hold promise to unlock diverse skills like functional grasps, in-hand reorientation, and dynamic handover that the human-designed world assumes, …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-21T06:24:14Z",
+      "last_seen": "2026-10-21T06:24:14Z"
+    },
     {
       "id": "2610.26854",
       "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation",
@@ -20,7 +52,7 @@
         "Yan Chang"
       ],
       "published": "2026-10-19T17:59:54Z",
-      "updated": "2026-10-19T17:59:54Z",
+      "updated": "2026-10-20T17:53:12Z",
       "links": {
         "paper": "https://arxiv.org/abs/2610.26854",
         "pdf": "https://arxiv.org/pdf/2610.26854"
@@ -37,7 +69,156 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
+    },
+    {
+      "id": "2610.28519",
+      "title": "Touch-JEPA: Tactile Representation Learning from Hand-Object Video with Limited Tactile Supervision",
+      "authors": [
+        "Minseong Kweon",
+        "Qiao Feng",
+        "Yiming Huang",
+        "Lingjie Liu"
+      ],
+      "published": "2026-10-20T16:56:11Z",
+      "updated": "2026-10-20T16:56:11Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.28519",
+        "pdf": "https://arxiv.org/pdf/2610.28519"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Understanding contact and tactile magnitude in hand-object interaction is a key step toward physically intelligent systems, yet learning such representations is limited …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-21T06:24:14Z",
+      "last_seen": "2026-10-21T06:24:14Z"
+    },
+    {
+      "id": "2610.27995",
+      "title": "Learning Tactile-Aware Hand Representations from Human Hand-Object Interaction Data",
+      "authors": [
+        "Yeonguk Yu",
+        "Jaehong Kim",
+        "Byungok Han"
+      ],
+      "published": "2026-10-20T10:31:45Z",
+      "updated": "2026-10-20T10:31:45Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.27995",
+        "pdf": "https://arxiv.org/pdf/2610.27995"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Tactile representation learning for dexterous manipulation often requires substantial robot-side data collection, limiting its scalability across different hands and sensors. We explore …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-21T06:24:14Z",
+      "last_seen": "2026-10-21T06:24:14Z"
+    },
+    {
+      "id": "2610.27907",
+      "title": "What Novice Operators See Changes What the Policy Learns: A User Study of Keypoint Hand Visual Representation for Teleoperated Demonstration",
+      "authors": [
+        "Amane Yamaguchi",
+        "Shohei Kamiguchi",
+        "Masashi Hamaya",
+        "Shigeo Yoshida",
+        "Takuji Narumi",
+        "Mai Nishimura"
+      ],
+      "published": "2026-10-20T09:22:21Z",
+      "updated": "2026-10-20T09:22:21Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.27907",
+        "pdf": "https://arxiv.org/pdf/2610.27907"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… a teleoperation interface that renders a multi-fingered robot hand as sparse keypoints at its fingertips and joints, the same keypoints a policy …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-21T06:24:14Z",
+      "last_seen": "2026-10-21T06:24:14Z"
+    },
+    {
+      "id": "2606.19340",
+      "title": "ZeroDex: Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning",
+      "authors": [
+        "Jisoo Kim",
+        "Sangwon Baik",
+        "Taeksoo Kim",
+        "Sungjoo Kim",
+        "Junyoung Lee",
+        "Mingi Choi",
+        "Kisang Park",
+        "Sungjoon Choi",
+        "Hanbyul Joo"
+      ],
+      "published": "2026-06-17T17:59:56Z",
+      "updated": "2026-10-20T08:53:43Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.19340",
+        "pdf": "https://arxiv.org/pdf/2606.19340"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… ZeroDex, a zero-shot framework for long-horizon dexterous manipulation that grounds language instructions into executable 3D task plans from calibrated multi-view RGB images. …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-21T06:24:14Z",
+      "last_seen": "2026-10-21T06:24:14Z"
+    },
+    {
+      "id": "2610.27242",
+      "title": "EmbodyHOI: Embodiment-Aware Generation of Hand-Object Interactions for Humanoid Dexterous Manipulation",
+      "authors": [
+        "Chaitanya Chawla",
+        "Kartik Sharma",
+        "Ananya Bal",
+        "Laszlo A. Jeni",
+        "Guanya Shi"
+      ],
+      "published": "2026-10-19T20:08:32Z",
+      "updated": "2026-10-19T20:08:32Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.27242",
+        "pdf": "https://arxiv.org/pdf/2610.27242"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Humanoid dexterous manipulation needs reference motions that are both semantically rich and kinematically feasible for the target robot. Text-conditioned hand-object interaction (HOI) …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-21T06:24:14Z",
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.26765",
@@ -78,7 +259,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.26759",
@@ -109,7 +290,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.26174",
@@ -138,7 +319,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.25961",
@@ -171,7 +352,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.25459",
@@ -201,7 +382,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.24392",
@@ -229,7 +410,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.09291",
@@ -256,7 +437,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2608.02014",
@@ -285,7 +466,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.23438",
@@ -314,7 +495,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2608.19182",
@@ -350,7 +531,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2608.15060",
@@ -380,7 +561,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2606.18097",
@@ -412,7 +593,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-14T04:46:07Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.22363",
@@ -450,7 +631,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.22342",
@@ -497,7 +678,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.22340",
@@ -527,7 +708,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.22184",
@@ -559,7 +740,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2606.26428",
@@ -587,7 +768,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.19089",
@@ -617,7 +798,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.21180",
@@ -654,7 +835,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.20904",
@@ -693,7 +874,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.20320",
@@ -744,7 +925,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.20134",
@@ -776,7 +957,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2609.33551",
@@ -809,7 +990,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.19753",
@@ -840,7 +1021,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-20T06:23:48Z"
+      "last_seen": "2026-10-21T06:24:14Z"
     },
     {
       "id": "2610.19594",

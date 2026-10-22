@@ -1,25 +1,45 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-10-20T06:23:48Z",
+  "last_checked_at": "2026-10-21T06:24:14Z",
   "lookback_days": 7,
-  "window_start": "2026-10-13T06:23:48Z",
+  "window_start": "2026-10-14T06:24:14Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 31,
-  "recent_match_count": 39,
-  "new_candidate_count": 7,
+  "candidate_count": 37,
+  "recent_match_count": 34,
+  "new_candidate_count": 6,
   "updated_candidate_count": 1,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
     {
+      "id": "2610.28628",
+      "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
+      "published": "2026-10-20T17:59:32Z",
+      "updated": "2026-10-20T17:59:32Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.28628",
+        "pdf": "https://arxiv.org/pdf/2610.28628"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous multi-finger hands hold promise to unlock diverse skills like functional grasps, in-hand reorientation, and dynamic handover that the human-designed world assumes, …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "2610.26854",
       "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation",
       "published": "2026-10-19T17:59:54Z",
-      "updated": "2026-10-19T17:59:54Z",
+      "updated": "2026-10-20T17:53:12Z",
       "links": {
         "paper": "https://arxiv.org/abs/2610.26854",
         "pdf": "https://arxiv.org/pdf/2610.26854"
@@ -32,6 +52,108 @@
         {
           "source": "abstract",
           "text": "… real-world tasks using bimanual grippers and dexterous hands. Further evaluations demonstrate that our structured latent reasoning framework generalizes to unseen scenarios and …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.28519",
+      "title": "Touch-JEPA: Tactile Representation Learning from Hand-Object Video with Limited Tactile Supervision",
+      "published": "2026-10-20T16:56:11Z",
+      "updated": "2026-10-20T16:56:11Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.28519",
+        "pdf": "https://arxiv.org/pdf/2610.28519"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Understanding contact and tactile magnitude in hand-object interaction is a key step toward physically intelligent systems, yet learning such representations is limited …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.27995",
+      "title": "Learning Tactile-Aware Hand Representations from Human Hand-Object Interaction Data",
+      "published": "2026-10-20T10:31:45Z",
+      "updated": "2026-10-20T10:31:45Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.27995",
+        "pdf": "https://arxiv.org/pdf/2610.27995"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Tactile representation learning for dexterous manipulation often requires substantial robot-side data collection, limiting its scalability across different hands and sensors. We explore …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.27907",
+      "title": "What Novice Operators See Changes What the Policy Learns: A User Study of Keypoint Hand Visual Representation for Teleoperated Demonstration",
+      "published": "2026-10-20T09:22:21Z",
+      "updated": "2026-10-20T09:22:21Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.27907",
+        "pdf": "https://arxiv.org/pdf/2610.27907"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… a teleoperation interface that renders a multi-fingered robot hand as sparse keypoints at its fingertips and joints, the same keypoints a policy …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2606.19340",
+      "title": "ZeroDex: Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning",
+      "published": "2026-06-17T17:59:56Z",
+      "updated": "2026-10-20T08:53:43Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.19340",
+        "pdf": "https://arxiv.org/pdf/2606.19340"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… ZeroDex, a zero-shot framework for long-horizon dexterous manipulation that grounds language instructions into executable 3D task plans from calibrated multi-view RGB images. …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.27242",
+      "title": "EmbodyHOI: Embodiment-Aware Generation of Hand-Object Interactions for Humanoid Dexterous Manipulation",
+      "published": "2026-10-19T20:08:32Z",
+      "updated": "2026-10-19T20:08:32Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.27242",
+        "pdf": "https://arxiv.org/pdf/2610.27242"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Humanoid dexterous manipulation needs reference motions that are both semantically rich and kinematically feasible for the target robot. Text-conditioned hand-object interaction (HOI) …"
         }
       ],
       "review_status": "pending"

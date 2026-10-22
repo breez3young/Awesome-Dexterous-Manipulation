@@ -9318,6 +9318,628 @@
           }
         }
       }
+    },
+    {
+      "key": "2606.19340|v3|2026-10-20T08:53:43+00:00|dexterous-v1",
+      "digest": "d63df92df190a44f8222555329f53fb35439adc54127eb86c2a23a2161aad4ce",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-22T04:53:37Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2606.19340",
+          "version": 3,
+          "title": "ZeroDex: Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning",
+          "authors": [
+            "Jisoo Kim",
+            "Sangwon Baik",
+            "Taeksoo Kim",
+            "Sungjoo Kim",
+            "Junyoung Lee",
+            "Mingi Choi",
+            "Kisang Park",
+            "Sungjoon Choi",
+            "Hanbyul Joo"
+          ],
+          "published": "2026-06-17T17:59:56Z",
+          "updated": "2026-10-20T08:53:43Z",
+          "url": "https://arxiv.org/abs/2606.19340v3",
+          "primary_urls": [
+            "https://arxiv.org/html/2606.19340v3"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2606.19340v3",
+            "paraphrase": "官方摘要、九名作者及投稿历史已核对：首次投稿2026-06-17，审核v3更新于2026-10-20，不能以修订日期替代首发日期。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.19340v3",
+            "section": "III-A–III-D; IV-A",
+            "paraphrase": "四路标定RGB图像经VLM语义定位与多视角三角化，结合物体姿态、可供性抓取、碰撞检查和逆运动学生成轨迹；在Franka与xArm搭配Inspire手上评测。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.19340v3",
+            "section": "III-C; III-E; V",
+            "paraphrase": "工具动作库离线由录制示教与VLMPose轨迹构建；执行后在子任务边界验证、重试或重规划。无任务特定微调不等于完全无示教，尚不支持手内旋转等操作。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.19340v3",
+            "section": "IV-B, Tables I, V",
+            "paraphrase": "同一Franka执行栈20次实机测试成功17次，对照为8次和11次；整理与烹饪各10次，允许每子任务一次重试时端到端成功8次和9次，不允许重试时均6次。"
+          }
+        ],
+        "reason_zh": "以多视角三维定位、可供性抓取和运动规划，把视觉语言推理落到Inspire多指手实机操作，并在子任务边界验证与重规划；属于灵巧操作系统。没有机器人运行时触觉输入，也不是学习得到的通用基座控制策略。",
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2606.19340v3",
+          "paraphrase": "方法使用RGB、视觉深度/物体姿态与规划器，视觉验证在子任务边界进行；模拟抓取稳定性检查不是机器人读取触觉，文中未报告运行时触觉输入。"
+        },
+        "paper": {
+          "id": "2606.19340",
+          "title": "ZeroDex: Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning",
+          "authors": [
+            "Jisoo Kim",
+            "Sangwon Baik",
+            "Taeksoo Kim",
+            "Sungjoo Kim",
+            "Junyoung Lee",
+            "Mingi Choi",
+            "Kisang Park",
+            "Sungjoon Choi",
+            "Hanbyul Joo"
+          ],
+          "date": "2026-06-17",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Model-based planning",
+            "Dexterous grasping",
+            "Tool use",
+            "Long-horizon tasks",
+            "Vision"
+          ],
+          "tldr": "ZeroDex connects multi-view VLM grounding to affordance-aware grasps and feasible arm–hand trajectories, with visual verification between subtasks. It succeeds in 17/20 physical single-task trials; with one retry per subtask, organizing and cooking succeed in 8/10 and 9/10 trials. Tool motions reuse an offline primitive library.",
+          "tldr_zh": "ZeroDex将多视角VLM定位接入可供性抓取与可执行的臂手轨迹，在子任务之间视觉验证和重规划。实机单任务成功17/20；允许每子任务一次重试时，整理与烹饪分别成功8/10、9/10。工具动作复用离线原语库。",
+          "sensing": [
+            "Four calibrated RGB cameras; stereo depth and vision-based object poses"
+          ],
+          "hand": [
+            "Inspire dexterous hand on Franka and xArm platforms"
+          ],
+          "task": [
+            "Dexterous pick-and-place",
+            "Tool use: pouring and sweeping",
+            "Long-horizon object organization and cooking"
+          ],
+          "method": [
+            "Multi-view VLM grounding and consensus triangulation",
+            "Affordance-conditioned grasp and collision-aware motion planning",
+            "Object-centric atomic-action alignment and subtask verification"
+          ],
+          "evaluation": "Real-robot single-task, tool-use and long-horizon evaluations on Franka/xArm with Inspire hands; organizing and cooking each use ten trials.",
+          "notes_zh": "首发2026-06-17，本轮阅读v3。原语库含录制示教，零样本指无需目标任务微调；不是完全无示教或学习式VLA控制器。当前不支持手内旋转，依赖相机标定、物体几何和规划器；重试统计与无重试区分。未复现实验。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2606.19340"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.27242|v1|2026-10-19T20:08:32+00:00|dexterous-v1",
+      "digest": "64a206e5f8f1ccc73e9c760a7e440500b10b491fff4e1dbf9f2e88d7894cb551",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-22T04:53:37Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.27242",
+          "version": 1,
+          "title": "EmbodyHOI: Embodiment-Aware Generation of Hand-Object Interactions for Humanoid Dexterous Manipulation",
+          "authors": [
+            "Chaitanya Chawla",
+            "Kartik Sharma",
+            "Ananya Bal",
+            "Laszlo A. Jeni",
+            "Guanya Shi"
+          ],
+          "published": "2026-10-19T20:08:32Z",
+          "updated": "2026-10-19T20:08:32Z",
+          "url": "https://arxiv.org/abs/2610.27242v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.27242v1",
+            "https://embodyhoi.github.io/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "方法明确生成可供多指人形机器人执行的双手交互参考，并以独立 PPO 控制腕臂和手指在物理仿真中验证，属于核心灵巧操作；收录时限定仿真与固定下肢。",
+        "review_depth": "fulltext",
+        "paper": {
+          "id": "2610.27242",
+          "title": "EmbodyHOI: Embodiment-Aware Generation of Hand-Object Interactions for Humanoid Dexterous Manipulation",
+          "authors": [
+            "Chaitanya Chawla",
+            "Kartik Sharma",
+            "Ananya Bal",
+            "Laszlo A. Jeni",
+            "Guanya Shi"
+          ],
+          "date": "2026-10-19",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.27242",
+            "project": "https://embodyhoi.github.io/"
+          },
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Human motion transfer",
+            "Retargeting",
+            "Cross-embodiment",
+            "Bimanual coordination",
+            "Articulated objects",
+            "Proprioception"
+          ],
+          "tldr": "EmbodyHOI guides a frozen human hand–object trajectory generator with differentiable robot IK and base placement, then learns reference-specific PPO controllers. In simulation, guided references raise success from 68% to 79% across 50 G1 tasks; H1-2 gains are measured on four tasks. The lower body remains fixed.",
+          "tldr_zh": "EmbodyHOI 用可微机器人逆运动学与站位优化引导冻结的人手—物体轨迹生成器，再按参考训练 PPO 控制器。仿真中，50项 G1 任务平均成功率由68%升至79%；H1-2 在4项任务上验证。下肢固定。",
+          "sensing": [
+            "Simulated joint positions, velocities and action history",
+            "Simulator object-part poses and articulation state",
+            "Generated future joint and object references"
+          ],
+          "hand": [
+            "Two 12-DoF XHands on Unitree G1",
+            "Unitree H1-2 humanoid in simulation"
+          ],
+          "task": [
+            "Bimanual articulated-object opening and closing",
+            "Object lifting and placement with humanoid arms and fingers"
+          ],
+          "method": [
+            "Frozen text-conditioned HOI generation with differentiable IK guidance",
+            "Joint arm and base-placement optimization",
+            "Finger and contact retargeting",
+            "Reference-specific PPO with separate arm and hand imitation rewards"
+          ],
+          "evaluation": "Genesis simulation only: 50 random G1 tasks across 11 ARCTIC objects plus four-task G1/H1-2 suites; five training seeds. Success requires object position, orientation and articulation errors within 2 cm, 40 degrees and 10 degrees throughout the episode.",
+          "notes_zh": "复用的是生成器和 IK 引导，并非同一控制策略跨机器人部署；每条参考仍需 PPO 训练。优化后站位在执行中固定，无行走或实机验证。控制输入为仿真状态与未来参考，接触仅作奖励，不标触觉反馈、视觉或基座策略。成功率按任务/seed汇总，不等于50次实机试验；代码尚未发布。"
+        },
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.27242v1",
+            "paraphrase": "官方摘要页核对完整标题、五位作者及 v1 首次提交时间；版本与候选元数据一致。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.27242v1",
+            "paraphrase": "§III-C、附录A-D：G1控制15个上身关节和24个手指关节，读取本体、物体状态与未来参考；接触用于奖励。§V明确全部评测仅仿真、下肢固定。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.27242v1",
+            "paraphrase": "§IV：50项G1随机任务成功率68%→79%；H1-2四任务62.3%→75.7%。协议为5个训练seed、每任务每seed 10批B个并行episode，要求整段物体误差满足阈值，不能把任务数当rollout数。"
+          },
+          {
+            "url": "https://embodyhoi.github.io/",
+            "paraphrase": "作者项目页对应本论文，注明simulation only与Code (soon)；仅保留项目链接。"
+          }
+        ]
+      }
+    },
+    {
+      "key": "2610.27907|v1|2026-10-20T09:22:21+00:00|dexterous-v1",
+      "digest": "454af92d8b76cdbe2391cc166119b35e3b67c99ec85b3830942143c247f4ae35",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-22T04:53:37Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.27907",
+          "version": 1,
+          "title": "What Novice Operators See Changes What the Policy Learns: A User Study of Keypoint Hand Visual Representation for Teleoperated Demonstration",
+          "authors": [
+            "Amane Yamaguchi",
+            "Shohei Kamiguchi",
+            "Masashi Hamaya",
+            "Shigeo Yoshida",
+            "Takuji Narumi",
+            "Mai Nishimura"
+          ],
+          "published": "2026-10-20T09:22:21Z",
+          "updated": "2026-10-20T09:22:21Z",
+          "url": "https://arxiv.org/abs/2610.27907v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.27907v1",
+            "https://omron-sinicx.github.io/point-hand/"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.27907v1",
+            "paraphrase": "官方摘要、六名作者及投稿记录匹配，首次投稿与v1更新时间均为2026-10-20。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.27907v1",
+            "section": "III; IV-A–IV-B",
+            "paraphrase": "PointHand以11个手部关键点呈现Inspire手，比较真实外形、全部强调与拇指食指强调；18名新手与4名专家在仿真中完成2200次杯子入盒试次，突出两指的新手成功441/600，对照320/600。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.27907v1",
+            "section": "IV-C–IV-D; V",
+            "paraphrase": "同组示教在400步内由DP3的46.3%变为DP-KP的57.3%，均为仿真结果；五个种子改变示教采样、网络初始化固定。实机以全部成功仿真示教预训练并用5个真实示教微调，仅报告DP3各组10次测试，突出两指组7/10。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.27907v1",
+            "section": "III-C; IV-A; V",
+            "paraphrase": "距离小于0.08米时关键点变亮，DP-KP只接收坐标；仿真物体关键点使用真实网格姿态给出的框，编码器和输入同时变化，不能据此声称触觉反馈或纯编码器优越。"
+          },
+          {
+            "url": "https://omron-sinicx.github.io/point-hand/",
+            "paraphrase": "项目页标题、六名作者、PointHand界面与两项研究匹配，链接同一arXiv论文；未提供可核验代码仓库。"
+          }
+        ],
+        "reason_zh": "研究多指手遥操作示教界面与模仿策略观测的联合设计，含Inspire手仿真用户实验、扩散策略与初步实机迁移，和灵巧操作直接相关。接触提示由几何距离控制亮度，不是触觉传感。",
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2610.27907v1",
+          "paraphrase": "策略输入为场景点云与本体状态，或由运动学/深度得到的手物关键点；操作员的亮度接触提示来自几何距离，未读取力或触觉传感器。"
+        },
+        "paper": {
+          "id": "2610.27907",
+          "title": "What Novice Operators See Changes What the Policy Learns: A User Study of Keypoint Hand Visual Representation for Teleoperated Demonstration",
+          "authors": [
+            "Amane Yamaguchi",
+            "Shohei Kamiguchi",
+            "Masashi Hamaya",
+            "Shigeo Yoshida",
+            "Takuji Narumi",
+            "Mai Nishimura"
+          ],
+          "date": "2026-10-20",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Imitation learning",
+            "Diffusion / flow policy",
+            "Teleoperation",
+            "Sim-to-real",
+            "Dexterous grasping",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "PointHand jointly studies the hand rendering shown to novice demonstrators and the representation used by diffusion policies. In a simulated mug-in-box task, emphasizing thumb/index keypoints yields 441/600 successful demonstrations versus 320/600 with realistic rendering. On those demonstrations, keypoint-policy success at 400 steps is 57.3%, versus 46.3% for DP3.",
+          "tldr_zh": "PointHand联合研究新手示教时的手部显示和扩散策略观测。在仿真杯子入盒任务中，突出拇指与食指关键点得到441/600个成功示教，真实外形对照为320/600；同组数据训练的关键点策略在400步内成功率57.3%，DP3为46.3%。",
+          "sensing": [
+            "Depth-derived scene point clouds or hand/object keypoint coordinates",
+            "Joint proprioception and forward kinematics",
+            "Leap Motion 2 for operator hand tracking"
+          ],
+          "hand": [
+            "Inspire five-finger underactuated hand, six actuated joints, on UR5e"
+          ],
+          "task": [
+            "Teleoperated mug-in-box demonstrations",
+            "Diffusion-policy mug grasping and placement"
+          ],
+          "method": [
+            "Salient thumb/index keypoint rendering for demonstrators",
+            "DP3 point-cloud policy and DP-KP keypoint policy",
+            "Simulation pretraining with five physical demonstrations for adaptation"
+          ],
+          "evaluation": "ManiSkill/SAPIEN user study with 18 novices and four experts (2,200 trials); simulation policy evaluation over five demonstration-sampling seeds. Preliminary physical DP3 tests use ten trials per condition.",
+          "notes_zh": "界面干预与主要结果均在单任务仿真中；种子改变示教采样而非网络初始化。物体关键点使用理想检测框，策略输入和编码器同时改变。实机加入5个真实示教后，突出两指组DP3成功7/10，正文未给DP-KP实机成功数。亮度提示不是触觉；未复现实验。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.27907",
+            "project": "https://omron-sinicx.github.io/point-hand/"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.27995|v1|2026-10-20T10:31:45+00:00|dexterous-v1",
+      "digest": "7e9ca6fdec8ab71209880f08fd6e9f94a2a8ab49bb4e7782633168f2eee341a0",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-22T04:53:37Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.27995",
+          "version": 1,
+          "title": "Learning Tactile-Aware Hand Representations from Human Hand-Object Interaction Data",
+          "authors": [
+            "Yeonguk Yu",
+            "Jaehong Kim",
+            "Byungok Han"
+          ],
+          "published": "2026-10-20T10:31:45Z",
+          "updated": "2026-10-20T10:31:45Z",
+          "url": "https://arxiv.org/abs/2610.27995v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2610.27995v1",
+            "https://arxiv.org/html/2610.27995v1"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "主要贡献是触觉表征，并有多指实机策略验证，符合收录范围。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.27995v1",
+            "paraphrase": "核对v1题名、3名作者及首次投稿时间。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.27995v1",
+            "paraphrase": "§III区分人手几何伪接触与机器人四通道触觉；§IV-C将触觉特征输入ACT和DP，Table II报告两项实机操作。"
+          }
+        ],
+        "paper": {
+          "id": "2610.27995",
+          "title": "Learning Tactile-Aware Hand Representations from Human Hand-Object Interaction Data",
+          "authors": [
+            "Yeonguk Yu",
+            "Jaehong Kim",
+            "Byungok Han"
+          ],
+          "year": 2026,
+          "date": "2026-10-20",
+          "category": "Tactile Sensing & Representation",
+          "scope": "core",
+          "tags": [
+            "Imitation learning",
+            "Diffusion / flow policy",
+            "Tactile feedback",
+            "Vision",
+            "Proprioception"
+          ],
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.27995"
+          },
+          "tldr": "HuTact pretrains separate fingertip-coordinate and contact tokens on human interaction geometry, then adapts them to Revo2 tactile signals. The representation improves perception data efficiency and conditions ACT and diffusion policies on real cup destacking and card sliding.",
+          "tldr_zh": "HuTact用人手交互几何预训练分离的指尖坐标与接触表征，再适配Revo2真实触觉，提升感知数据效率，并用于实机拆杯、滑卡策略。",
+          "sensing": [
+            "Revo2 capacitive fingertip signals",
+            "Forward-kinematic fingertip coordinates",
+            "RGB policy observations"
+          ],
+          "hand": [
+            "BrainCo Revo2"
+          ],
+          "task": [
+            "Grasp prediction",
+            "Slip detection",
+            "Object classification",
+            "Cup destacking",
+            "Single-card sliding"
+          ],
+          "method": [
+            "Human HOI pretraining with geometric pseudo-contact",
+            "Temporal self-distillation",
+            "Robot-play adaptation",
+            "ACT and diffusion-policy conditioning"
+          ],
+          "evaluation": "Unitree G1/Revo2 hardware; two manipulation tasks, 40 trials per task and policy configuration. Both pretrained policy variants average 50% success.",
+          "notes_zh": "几何伪接触仅用于预训练；实机策略读取真实传感。25%标注达到全量从零训练水平指抓取预测，不是操作成功率。只验证Revo2，未证明跨手型部署；未复现实验。"
+        },
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2610.27995v1",
+          "paraphrase": "§III-A/IV-C：Revo2指尖触觉与运动学坐标经编码器形成ACT输入token或DP全局条件，实机执行时使用。"
+        }
+      }
+    },
+    {
+      "key": "2610.28519|v1|2026-10-20T16:56:11+00:00|dexterous-v1",
+      "digest": "ac2643f993e1730a1cf3df0e5d500e7b71d50decd97d7f77c6d65ffd3d7ff584",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-22T04:53:37Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.28519",
+          "version": 1,
+          "title": "Touch-JEPA: Tactile Representation Learning from Hand-Object Video with Limited Tactile Supervision",
+          "authors": [
+            "Minseong Kweon",
+            "Qiao Feng",
+            "Yiming Huang",
+            "Lingjie Liu"
+          ],
+          "published": "2026-10-20T16:56:11Z",
+          "updated": "2026-10-20T16:56:11Z",
+          "url": "https://arxiv.org/abs/2610.28519v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2610.28519v1",
+            "https://arxiv.org/html/2610.28519v1",
+            "https://touch-jepa.github.io/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "研究视觉获得的触觉表征，符合邻近方向；不属于实机触觉反馈操作。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.28519v1",
+            "paraphrase": "核对v1题名、4名作者及首次投稿时间。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.28519v1",
+            "paraphrase": "§2/3.5及附录H明确模型不输入触觉；HRDexDB实机数据用于离线评估，控制实验仅仿真。"
+          },
+          {
+            "url": "https://touch-jepa.github.io/",
+            "paraphrase": "项目题名、作者对应论文；Code仅为未启用入口。"
+          }
+        ],
+        "paper": {
+          "id": "2610.28519",
+          "title": "Touch-JEPA: Tactile Representation Learning from Hand-Object Video with Limited Tactile Supervision",
+          "authors": [
+            "Minseong Kweon",
+            "Qiao Feng",
+            "Yiming Huang",
+            "Lingjie Liu"
+          ],
+          "year": 2026,
+          "date": "2026-10-20",
+          "category": "Tactile Sensing & Representation",
+          "scope": "adjacent",
+          "tags": [
+            "Model-based planning",
+            "Cross-embodiment",
+            "Vision",
+            "Proprioception"
+          ],
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.28519",
+            "project": "https://touch-jepa.github.io/"
+          },
+          "tldr": "Touch-JEPA learns geometry-aligned visual features through masked video prediction and limited tactile supervision. Human-trained readouts transfer to recorded robot-hand video; an action-conditioned extension supports simulated manipulation. Tactile readings are supervision or evaluation targets, never model inputs.",
+          "tldr_zh": "Touch-JEPA结合几何对齐的视频掩码预测与少量触觉监督，支持人手触觉估计、机器人视频迁移和仿真规划；不读取触觉作为模型输入。",
+          "sensing": [
+            "RGB video",
+            "Estimated human-hand geometry",
+            "Robot joint angles for geometry and planning"
+          ],
+          "hand": [
+            "Allegro",
+            "Inspire"
+          ],
+          "task": [
+            "Contact and tactile-magnitude estimation",
+            "Simulated grasp-lift and placement"
+          ],
+          "method": [
+            "Geometry-guided masked visual prediction",
+            "Joint learning with limited tactile labels",
+            "Frozen human-trained readouts",
+            "Action-conditioned CEM planning"
+          ],
+          "evaluation": "Three human-hand benchmarks; recorded Allegro/Inspire transfer; Isaac Gym KUKA–Allegro planning succeeds in 43/50 grasp-lift and 42/50 placement scenes.",
+          "notes_zh": "实机部分是离线预测，操作仅仿真且含脚本动作与参考子目标。幅值不是跨传感器标定力；项目页部分指标与SSL/joint描述不同，取固定v1正文。代码入口未启用，未复现实验。"
+        }
+      }
+    },
+    {
+      "key": "2610.28628|v1|2026-10-20T17:59:32+00:00|dexterous-v1",
+      "digest": "6125211d94affd5575388ebad450cd75989bdbb4cf655f9a36917a3e218bc41a",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-22T04:53:37Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.28628",
+          "version": 1,
+          "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
+          "authors": [
+            "Yuxuan Kuang",
+            "Jiashun Wang",
+            "Yixuan Sun",
+            "Yufei Ye",
+            "Sungjae Park",
+            "Umar Iqbal",
+            "Katerina Fragkiadaki",
+            "Shubham Tulsiani"
+          ],
+          "published": "2026-10-20T17:59:32Z",
+          "updated": "2026-10-20T17:59:32Z",
+          "url": "https://arxiv.org/abs/2610.28628v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.28628v1",
+            "https://yuxuank.com/AdaDex/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "以单段人手物体动作训练多指控制，并验证手内重定向、功能抓握及实机视觉闭环，直接符合核心灵巧操作范围；同时明确逐物体训练、仿真指标与定性实机演示的边界。",
+        "review_depth": "fulltext",
+        "paper": {
+          "id": "2610.28628",
+          "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
+          "authors": [
+            "Yuxuan Kuang",
+            "Jiashun Wang",
+            "Yixuan Sun",
+            "Yufei Ye",
+            "Sungjae Park",
+            "Umar Iqbal",
+            "Katerina Fragkiadaki",
+            "Shubham Tulsiani"
+          ],
+          "date": "2026-10-20",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.28628",
+            "project": "https://yuxuank.com/AdaDex/"
+          },
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Human motion transfer",
+            "Retargeting",
+            "Sim-to-real",
+            "Dexterous grasping",
+            "In-hand manipulation",
+            "Tool use",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "AdaDex trains each object/reference-specific goal-conditioned policy jointly on human-motion tracking and perturbed-goal environments. On 24 unseen GRAB motions it reaches 80.02% tracking progress, not task success. Physical xArm6–XHand demonstrations include open-loop replay and 30 Hz visual/proprioceptive closed-loop control, without quantitative hardware success rates.",
+          "tldr_zh": "AdaDex 为每个物体与参考动作训练目标条件策略，混合人类动作跟踪和扰动目标环境。24段未见GRAB动作的跟踪进度为80.02%，并非任务成功率。xArm6–XHand实机展示含开环回放及30 Hz视觉/本体闭环，未报告实机成功率。",
+          "sensing": [
+            "Joint proprioception and wrist state",
+            "Object pose and BPS object geometry",
+            "RGB and Fast-FoundationStereo depth with FoundationPose for closed-loop hardware control"
+          ],
+          "hand": [
+            "22-DoF floating Arti-MANO with 6-DoF wrist control",
+            "XHand on xArm6 for physical demonstrations",
+            "Sharpa Hand and Wuji Hand v1 in additional simulation demonstrations"
+          ],
+          "task": [
+            "Functional grasping and tool use",
+            "In-hand reorientation and finger gaiting",
+            "Dynamic throwing and catching in simulation",
+            "Goal-conditioned object repositioning"
+          ],
+          "method": [
+            "Per-reference PPO with tracking-only initialization followed by mixed tracking and generalization environments",
+            "Asymmetric critic with privileged simulator contact forces",
+            "MANO interaction-mesh retargeting and RGB-D HOI reconstruction",
+            "Domain randomization, system identification and sim-to-sim transfer"
+          ],
+          "evaluation": "Simulation: 12 GRAB objects, one training motion and two unseen motions each, 128 rollouts per motion; nine reconstructed RGB-D references. All-ten-goal random-goal success is 27.08%, below SimToolReal 31.71%. Physical demonstrations are qualitative; no trial counts or success denominator are reported.",
+          "notes_zh": "每物体/参考各训一策略，尚非多物体统一基座；多手型复用训练流程不证明同一策略跨手迁移。网页明确标注Cup、Hammer闭环，其余演示不统一称闭环。训练critic的接触力和接触奖励不进入执行actor，不标触觉反馈。需已知物体网格与在线视觉位姿估计；代码尚未发布。"
+        },
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.28628v1",
+            "paraphrase": "官方摘要页核对完整标题、八位作者与2026-10-20 17:59:32 UTC的v1提交时间。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.28628v1",
+            "paraphrase": "§3、附录C/H：actor用本体、物体位姿/BPS和目标；接触力是critic特权信息。每物体每参考各训策略，先TrackEnv、后各半TrackEnv/GenEnv，并非通用预训练控制器。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.28628v1",
+            "paraphrase": "§4.1–4.2：12对象×2未见动作、每动作128rollout，80.02%是首次物体误差越界前的平均跟踪进度。随机目标任务要求连续完成10个，成功率27.08%，不能宣称所有指标优于基线。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.28628v1",
+            "paraphrase": "§3.3/4.4及附录C.1：实机xArm6+XHand既有30 Hz开环回放也有视觉/本体闭环；闭环需网格、FoundationPose和深度，未提供实机次数及量化成功率。"
+          },
+          {
+            "url": "https://yuxuank.com/AdaDex/",
+            "paraphrase": "项目页核验同题作者与视频分组，明确Cup、Hammer的closed-loop演示；代码标为coming soon，不列代码链接。"
+          }
+        ]
+      }
     }
   ]
 }
