@@ -9940,6 +9940,465 @@
           }
         ]
       }
+    },
+    {
+      "key": "2610.04741|v2|2026-10-20T19:20:24+00:00|dexterous-v1",
+      "digest": "1e7b7b0eed09e3b276e53f94346491879e266fbb98665e384b2b0e09b9e44f73",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-23T02:30:23Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.04741",
+          "version": 2,
+          "title": "Robot Learning with Visual Predicted Force",
+          "authors": [
+            "Haonan Chen",
+            "Feiyang Wu",
+            "Yuxiang Ma",
+            "Mustafa Mete",
+            "Pengfei Ye",
+            "Junxuan Shen",
+            "Cheng Zhu",
+            "Aurora Ruggeri",
+            "Kelvin Cheung",
+            "Jiayuan Mao",
+            "Edward Adelson",
+            "Jiajun Wu",
+            "Robert D. Howe",
+            "Yilun Du"
+          ],
+          "published": "2026-10-03T20:11:33Z",
+          "updated": "2026-10-20T19:20:24Z",
+          "url": "https://arxiv.org/abs/2610.04741v2",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.04741v2",
+            "https://visual-force.github.io/"
+          ]
+        },
+        "decision": "defer",
+        "review_depth": "fulltext",
+        "reason_zh": "v2已重新核验，进一步明确视觉估力仅用于示教标注，部署以策略联合生成的动作—力样本进行筛选，没有在线视觉力反馈或真实触觉输入。实机仍为ARX臂加Fin Ray夹爪，金属板重定向依赖桌面支撑；新版没有消除此前关于通用策略优化与多指灵巧操作收录边界的待确认问题，维持暂缓，不自动扩大范围。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.04741v2",
+            "paraphrase": "官方标题、14位作者和投稿历史匹配：首次投稿2026-10-03，v2更新2026-10-20；因此按新版本复查，保留v1审核历史。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.04741v2",
+            "section": "III-B–III-D; IV-A; VI",
+            "paraphrase": "标定阶段用参考力传感器训练图像形变估力器，给示教标注后训练动作—力联合策略；执行时从32个样本中按示教目标力筛选。作者明确估力器不在测试时评价候选，也无在线视觉力反馈。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.04741v2",
+            "section": "IV-C; V-B",
+            "paraphrase": "四项任务仍使用ARX臂与Fin Ray夹爪，每任务40条示教、每方法15次实机测试；重定向是金属板保持桌面接触的pivot。没有新增多指机器人部署或手内脱离环境支撑的证据。"
+          },
+          {
+            "url": "https://visual-force.github.io/",
+            "paraphrase": "项目页题名、作者与四项Fin Ray实验匹配，重定向演示说明仍要求接触桌面；没有补充多指系统验证。"
+          }
+        ]
+      }
+    },
+    {
+      "key": "2502.15037|v6|2026-10-21T13:35:59+00:00|dexterous-v1",
+      "digest": "ae0c0a7236387fd28d0d15ccb587f0ef0944167ec7ddb3ed01a22563f1a9ffda",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-23T02:30:23Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2502.15037",
+          "version": 6,
+          "title": "DEFT: Differentiable Branched Discrete Elastic Rods for Modeling Furcated DLOs in Real-Time",
+          "authors": [
+            "Yizhou Chen",
+            "Felicia Sang",
+            "Shicheng Peng",
+            "Xiaoyue Wu",
+            "Yeheng Zong",
+            "Yuzhen Chen",
+            "Anran Li",
+            "Bohao Zhang",
+            "Ram Vasudevan"
+          ],
+          "published": "2025-02-20T20:46:09Z",
+          "updated": "2026-10-21T13:35:59Z",
+          "url": "https://arxiv.org/abs/2502.15037v6",
+          "primary_urls": [
+            "https://arxiv.org/html/2502.15037v6"
+          ]
+        },
+        "decision": "reject",
+        "reason_zh": "已核对v6摘要、方法与实机评测：主要贡献是分叉线缆的可微弹性杆动力学、连接点约束及残差GNN；通过现有IPOPT单次射击轨迹优化控制Franka/Kinova机械臂的夹持点，实现线缆形状匹配和穿孔。全文未研究多指关节控制、手内操作、触觉感知或手物交互；参数学习针对每根线缆的物理模型与残差，而非新的通用策略优化方法。因此其“dexterous BDLO manipulation”不构成本目录的直接范围关联，本版本排除，不写入永久人工排除名单。",
+        "review_depth": "fulltext",
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2502.15037v6",
+          "paraphrase": "第4.3节使用动捕获得线缆初始状态和目标孔位姿，再基于模型生成控制序列；第5.1节为两台机械臂夹持线缆，第6.2节把夹爪朝向及接触力/摩擦建模列为未来工作。未报告触觉传感器进入执行控制。"
+        },
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2502.15037v6",
+            "paraphrase": "官方元数据核对为九名作者，首次投稿2025-02-20，v6更新时间2026-10-21；摘要描述分叉线缆模型、每个BDLO分别拟合参数，以及形状匹配和父/子分支穿孔评测。"
+          },
+          {
+            "url": "https://arxiv.org/html/2502.15037v6",
+            "section": "1, 3, 6.1",
+            "paraphrase": "贡献是分叉弹性杆的连接约束、可微动力学、并行计算及残差GNN；六种BDLO共享建模形式，但物理和学习参数分别拟合，不是跨形态直接复用的灵巧控制策略。"
+          },
+          {
+            "url": "https://arxiv.org/html/2502.15037v6",
+            "section": "4.1–4.3; 5.1 and Figure 9; 5.6",
+            "paraphrase": "机器人为Franka与Kinova Gen3，图9显示两侧夹持器夹住线缆；控制变量对应被夹持顶点/末端输入，IPOPT求解单次射击轨迹优化。实机目标为线缆形状匹配、父分支和子分支穿孔，无手指动作学习或手内重抓。"
+          },
+          {
+            "url": "https://arxiv.org/html/2502.15037v6",
+            "section": "4.3; 6.2",
+            "paraphrase": "线缆初始状态与孔位姿依赖动捕，后续采用模型预测；夹爪朝向与接触力、摩擦尚列为扩展方向，没有机器人运行时触觉反馈证据。"
+          }
+        ]
+      }
+    },
+    {
+      "key": "2503.06669|v5|2026-10-20T18:19:58+00:00|dexterous-v1",
+      "digest": "0d17734b81d18f3ad3528a6b68c371974c853c19fdf9c644b4b080a10983f209",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-23T02:30:23Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2503.06669",
+          "version": 5,
+          "title": "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
+          "authors": [
+            "AgiBot World Contributors",
+            "Qingwen Bu",
+            "Jisong Cai",
+            "Li Chen",
+            "Xiuqi Cui",
+            "Yan Ding",
+            "Siyuan Feng",
+            "Shenyuan Gao",
+            "Xindong He",
+            "Xuan Hu",
+            "Xu Huang",
+            "Shu Jiang",
+            "Yuxin Jiang",
+            "Cheng Jing",
+            "Hongyang Li",
+            "Jialu Li",
+            "Chiming Liu",
+            "Yi Liu",
+            "Yuxiang Lu",
+            "Jianlan Luo",
+            "Ping Luo",
+            "Yao Mu",
+            "Yuehan Niu",
+            "Yixuan Pan",
+            "Jiangmiao Pang",
+            "Yu Qiao",
+            "Guanghui Ren",
+            "Cheng Ruan",
+            "Jiaqi Shan",
+            "Yongjian Shen",
+            "Chengshi Shi",
+            "Mingkang Shi",
+            "Modi Shi",
+            "Chonghao Sima",
+            "Jianheng Song",
+            "Huijie Wang",
+            "Wenhao Wang",
+            "Dafeng Wei",
+            "Chengen Xie",
+            "Guo Xu",
+            "Junchi Yan",
+            "Cunbiao Yang",
+            "Lei Yang",
+            "Shukai Yang",
+            "Maoqing Yao",
+            "Jia Zeng",
+            "Chi Zhang",
+            "Qinglin Zhang",
+            "Bin Zhao",
+            "Chengyue Zhao",
+            "Jiaqi Zhao",
+            "Jianchao Zhu"
+          ],
+          "published": "2025-03-09T15:40:29Z",
+          "updated": "2026-10-20T18:19:58Z",
+          "url": "https://arxiv.org/abs/2503.06669v5",
+          "primary_urls": [
+            "https://arxiv.org/html/2503.06669v5",
+            "https://agibot-world.com/",
+            "https://github.com/OpenDriveLab/AgiBot-World",
+            "https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta",
+            "https://huggingface.co/agibot-world/GO-1",
+            "https://huggingface.co/agibot-world/GO-1/raw/main/config.json"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "按GO-1通用策略学习贡献归入Policy Optimization、adjacent，并叠加Dataset属性。Table I与§III-A明确灵巧手任务、6自由度手及单指动捕映射，数据卡另有12维双手关节字段，关联不只来自dexterous称号；不将通用评测等同多指或触觉策略验证。",
+        "review_depth": "fulltext",
+        "paper": {
+          "id": "2503.06669",
+          "title": "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
+          "authors": [
+            "AgiBot World Contributors",
+            "Qingwen Bu",
+            "Jisong Cai",
+            "Li Chen",
+            "Xiuqi Cui",
+            "Yan Ding",
+            "Siyuan Feng",
+            "Shenyuan Gao",
+            "Xindong He",
+            "Xuan Hu",
+            "Xu Huang",
+            "Shu Jiang",
+            "Yuxin Jiang",
+            "Cheng Jing",
+            "Hongyang Li",
+            "Jialu Li",
+            "Chiming Liu",
+            "Yi Liu",
+            "Yuxiang Lu",
+            "Jianlan Luo",
+            "Ping Luo",
+            "Yao Mu",
+            "Yuehan Niu",
+            "Yixuan Pan",
+            "Jiangmiao Pang",
+            "Yu Qiao",
+            "Guanghui Ren",
+            "Cheng Ruan",
+            "Jiaqi Shan",
+            "Yongjian Shen",
+            "Chengshi Shi",
+            "Mingkang Shi",
+            "Modi Shi",
+            "Chonghao Sima",
+            "Jianheng Song",
+            "Huijie Wang",
+            "Wenhao Wang",
+            "Dafeng Wei",
+            "Chengen Xie",
+            "Guo Xu",
+            "Junchi Yan",
+            "Cunbiao Yang",
+            "Lei Yang",
+            "Shukai Yang",
+            "Maoqing Yao",
+            "Jia Zeng",
+            "Chi Zhang",
+            "Qinglin Zhang",
+            "Bin Zhao",
+            "Chengyue Zhao",
+            "Jiaqi Zhao",
+            "Jianchao Zhu"
+          ],
+          "date": "2025-03-09",
+          "year": 2025,
+          "category": "Policy Optimization",
+          "scope": "adjacent",
+          "tags": [
+            "Imitation learning",
+            "Vision-language-action",
+            "Foundation policy",
+            "Diffusion / flow policy",
+            "Teleoperation",
+            "Human-in-the-loop",
+            "Bimanual coordination",
+            "Tool use",
+            "Long-horizon tasks",
+            "Vision",
+            "Proprioception",
+            "Dataset / benchmark"
+          ],
+          "tldr": "AgiBot World combines a large mixed-effector dataset with GO-1, a latent-action planner and diffusion action expert. Its platform includes six-DoF dexterous hands, but reported GO-1 completion scores do not isolate a multi-finger subset. Task-specific fine-tuning is normally used; tactile policy input is not established.",
+          "tldr_zh": "AgiBot World将混合末端执行器数据与GO-1潜动作规划、扩散控制结合。平台包含6自由度灵巧手，但GO-1完成度评分未单独验证多指子集；通常需任务微调，未证明触觉进入策略。",
+          "sensing": [
+            "Multiview RGB observations",
+            "Robot proprioceptive state"
+          ],
+          "hand": [
+            "Modular parallel grippers on AgiBot G1",
+            "Six-DoF dexterous hands in the data-collection platform"
+          ],
+          "task": [
+            "Bimanual household and retail manipulation",
+            "Tool use and multi-step object handling"
+          ],
+          "method": [
+            "Human-verified teleoperation data collection",
+            "Video latent-action pretraining",
+            "VLM-conditioned latent planner and diffusion action expert",
+            "Action-supervised robot pretraining followed by task-specific fine-tuning"
+          ],
+          "evaluation": "Real AgiBot G1 tasks; GO-1 comparison uses five tasks with 30 trials each: ten seen and twenty varied-scene trials. Scores award partial credit and are not binary success rates or a dedicated multi-finger benchmark.",
+          "notes_zh": "论文声明含灵巧手任务，数据卡记录左右各6关节；未报告多指子集规模或独立成绩。公开GO-1配置为16维状态/动作，不能当作多指控制已验证。触觉夹爪硬件存在不等于GO-1使用触觉。Beta下载需同意数据条款，本轮仅核验公开说明。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2503.06669",
+            "project": "https://agibot-world.com/",
+            "code": "https://github.com/OpenDriveLab/AgiBot-World",
+            "dataset": "https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta"
+          }
+        },
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2503.06669v5",
+            "paraphrase": "核对v5完整题名、52项作者元数据、首次2025-03-09提交及2026-10-20修订，首次日期不改为修订日期。"
+          },
+          {
+            "url": "https://arxiv.org/html/2503.06669v5",
+            "paraphrase": "Table I称含灵巧手任务；§III-A描述可换夹爪/6自由度手、单指动捕映射。§IV-C执行输入是图像、语言、本体；§V五任务各30次，采用部分完成度评分并通常微调，未分列多指或触觉成绩。"
+          },
+          {
+            "url": "https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta",
+            "paraphrase": "官方Beta卡区分夹爪的2维与dexhand的12维双手关节状态/动作；公开卡可读，数据下载需账号和条款确认。未下载全量或核验子集规模。"
+          },
+          {
+            "url": "https://huggingface.co/agibot-world/GO-1/raw/main/config.json",
+            "paraphrase": "公开GO-1配置的action_dim与state_dim均16；不据此声称已发布检查点支持全部多指关节。"
+          },
+          {
+            "url": "https://github.com/OpenDriveLab/AgiBot-World",
+            "paraphrase": "官方仓库已有GO-1模型代码、微调/部署示例及Alpha/Beta和检查点链接。"
+          },
+          {
+            "url": "https://huggingface.co/agibot-world/GO-1",
+            "paraphrase": "官方模型卡确认GO-1是AgiBot数据预训练的VLA模型，并指导进一步任务微调。"
+          }
+        ]
+      }
+    },
+    {
+      "key": "2610.28814|v1|2026-10-20T18:36:13+00:00|dexterous-v1",
+      "digest": "801c47f3b97b25f644aba350888e6cdaf52f2dd481446f6416cc688b64b171be",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-23T02:30:23Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.28814",
+          "version": 1,
+          "title": "T-WLA: Bridging Slow Vision and Fast Touch",
+          "authors": [
+            "Kaichen Zhou",
+            "Yuzhen Chen",
+            "Hannah Yao",
+            "Chonghe Jiang",
+            "Rao Fu",
+            "Xihang Yu",
+            "Wei Dai",
+            "Bashar Kabbarah",
+            "Haoyu Chen",
+            "Ishita Goluguri",
+            "Zhiyang Dou",
+            "Haonan Chen",
+            "Fangneng Zhan",
+            "Mengyu Wang",
+            "Wojciech Matusik",
+            "Antonio Torralba",
+            "Paul Pu Liang"
+          ],
+          "published": "2026-10-20T18:36:13Z",
+          "updated": "2026-10-20T18:36:13Z",
+          "url": "https://arxiv.org/abs/2610.28814v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2610.28814v1",
+            "https://arxiv.org/html/2610.28814v1",
+            "https://anonymous-submission-20.github.io/T-WLA.github.io/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "多指Linker L6实机闭环读取指尖触觉修正动作，直接符合触觉灵巧操作范围。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.28814v1",
+            "paraphrase": "核对v1标题、17名作者及首次投稿时间。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.28814v1",
+            "paraphrase": "§3.3/4.3与附录F支持真实多指触觉闭环；Table 2平均50%，同架构去触觉47.25%。"
+          },
+          {
+            "url": "https://anonymous-submission-20.github.io/T-WLA.github.io/",
+            "paraphrase": "官方链接对应论文和四项机器人演示；未发现可用代码入口。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2610.28814v1",
+          "paraphrase": "§3.3以当前触觉历史调制残差，只修正未执行动作；§4.3/附录F在带指尖触觉的Linker L6实机验证。"
+        },
+        "paper": {
+          "id": "2610.28814",
+          "title": "T-WLA: Bridging Slow Vision and Fast Touch",
+          "authors": [
+            "Kaichen Zhou",
+            "Yuzhen Chen",
+            "Hannah Yao",
+            "Chonghe Jiang",
+            "Rao Fu",
+            "Xihang Yu",
+            "Wei Dai",
+            "Bashar Kabbarah",
+            "Haoyu Chen",
+            "Ishita Goluguri",
+            "Zhiyang Dou",
+            "Haonan Chen",
+            "Fangneng Zhan",
+            "Mengyu Wang",
+            "Wojciech Matusik",
+            "Antonio Torralba",
+            "Paul Pu Liang"
+          ],
+          "year": 2026,
+          "date": "2026-10-20",
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Imitation learning",
+            "Vision-language-action",
+            "Diffusion / flow policy",
+            "Human motion transfer",
+            "Teleoperation",
+            "Tactile feedback",
+            "Vision"
+          ],
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.28814",
+            "project": "https://anonymous-submission-20.github.io/T-WLA.github.io/"
+          },
+          "tldr": "T-WLA caches visual memory and action chunks, then uses incoming touch to edit unexecuted actions. After human-data training and robot adaptation, four Linker L6 tasks average 50% success versus 47.25% without touch. Future-image and pressure predictors are training-only.",
+          "tldr_zh": "T-WLA缓存视觉记忆与动作块，以新触觉修正尚未执行动作。人类数据预训练并适配机器人后，四项Linker L6任务平均成功率50%，去触觉为47.25%；未来图像和压力预测仅辅助训练。",
+          "sensing": [
+            "Fingertip tactile observations",
+            "Egocentric RGB",
+            "Pose/state history"
+          ],
+          "hand": [
+            "Linker Hand L6 on dual-arm Linker A7black"
+          ],
+          "task": [
+            "Egg transfer",
+            "Single-sheet pickup",
+            "Paper-cup nesting",
+            "Paper-bag dragging"
+          ],
+          "method": [
+            "History-aware visual memory",
+            "Flow-matching action chunks",
+            "Asynchronous tactile residual editing",
+            "Human-data pretraining and robot demonstration adaptation"
+          ],
+          "evaluation": "EgoTouch/Tachin offline motion prediction; four physical robot tasks with 30 adaptation demonstrations each. Robot test counts and confidence intervals are unspecified.",
+          "notes_zh": "30条是示教预算，非测试次数；触觉增益为2.75个百分点，不能将17%→50%全归触觉。报告的39.7/119.1 Hz不等于已核实硬件命令频率。网页未见代码链接；未复现实验。"
+        }
+      }
     }
   ]
 }

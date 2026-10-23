@@ -1,8 +1,268 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-21T06:24:14Z",
+  "updated_at": "2026-10-22T06:27:05Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2610.26854",
+      "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation",
+      "authors": [
+        "Jiaming Liu",
+        "Xinghao Zhu",
+        "Yiming Zhang",
+        "Shanghang Zhang",
+        "Yinxi Wang",
+        "Yichu Yang",
+        "Zhuoyang Liu",
+        "Dantong Niu",
+        "Soha Pouya",
+        "Juekun Li",
+        "Yan Chang"
+      ],
+      "published": "2026-10-19T17:59:54Z",
+      "updated": "2026-10-21T14:35:08Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.26854",
+        "pdf": "https://arxiv.org/pdf/2610.26854"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… real-world tasks using bimanual grippers and dexterous hands. Further evaluations demonstrate that our structured latent reasoning framework generalizes to unseen scenarios and …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-22T06:27:05Z"
+    },
+    {
+      "id": "2502.15037",
+      "title": "DEFT: Differentiable Branched Discrete Elastic Rods for Modeling Furcated DLOs in Real-Time",
+      "authors": [
+        "Yizhou Chen",
+        "Felicia Sang",
+        "Shicheng Peng",
+        "Xiaoyue Wu",
+        "Yeheng Zong",
+        "Yuzhen Chen",
+        "Anran Li",
+        "Bohao Zhang",
+        "Ram Vasudevan"
+      ],
+      "published": "2025-02-20T20:46:09Z",
+      "updated": "2026-10-21T13:35:59Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2502.15037",
+        "pdf": "https://arxiv.org/pdf/2502.15037"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… accurate BDLO dynamics, real-time inference, and dexterous manipulation planning. DEFT introduces momentum-conserving junction constraints to capture cross-branch coupling, supports mid-structure grasping, uses …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-22T06:27:05Z",
+      "last_seen": "2026-10-22T06:27:05Z"
+    },
+    {
+      "id": "2610.25961",
+      "title": "PaceVLA: Adaptive Temporal Action Quantization in Vision-Language-Action Models",
+      "authors": [
+        "Hojin Jeon",
+        "Jimin Lee",
+        "Taekwan Kim",
+        "Nayoung Oh",
+        "Taeyoung Kim",
+        "Myungkyu Koo",
+        "Jinmo Koo",
+        "Joonwoo Ahn",
+        "Jinwoo Shin"
+      ],
+      "published": "2026-10-19T07:54:13Z",
+      "updated": "2026-10-21T05:55:50Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.25961",
+        "pdf": "https://arxiv.org/pdf/2610.25961"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… across multiple embodiments, including long-horizon and dexterous manipulation."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-22T06:27:05Z"
+    },
+    {
+      "id": "2610.04741",
+      "title": "Robot Learning with Visual Predicted Force",
+      "authors": [
+        "Haonan Chen",
+        "Feiyang Wu",
+        "Yuxiang Ma",
+        "Mustafa Mete",
+        "Pengfei Ye",
+        "Junxuan Shen",
+        "Cheng Zhu",
+        "Aurora Ruggeri",
+        "Kelvin Cheung",
+        "Jiayuan Mao",
+        "Edward Adelson",
+        "Jiajun Wu",
+        "Robert D. Howe",
+        "Yilun Du"
+      ],
+      "published": "2026-10-03T20:11:33Z",
+      "updated": "2026-10-20T19:20:24Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.04741",
+        "pdf": "https://arxiv.org/pdf/2610.04741"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… approach on berry picking, empty-can grasping, in-hand reorientation, and plug insertion. Our results show that visual force prediction can guide inference-time action …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-08T09:33:18Z",
+      "last_seen": "2026-10-22T06:27:05Z"
+    },
+    {
+      "id": "2610.28814",
+      "title": "T-WLA: Bridging Slow Vision and Fast Touch",
+      "authors": [
+        "Kaichen Zhou",
+        "Yuzhen Chen",
+        "Hannah Yao",
+        "Chonghe Jiang",
+        "Rao Fu",
+        "Xihang Yu",
+        "Wei Dai",
+        "Bashar Kabbarah",
+        "Haoyu Chen",
+        "Ishita Goluguri",
+        "Zhiyang Dou",
+        "Haonan Chen",
+        "Fangneng Zhan",
+        "Mengyu Wang",
+        "Wojciech Matusik",
+        "Antonio Torralba",
+        "Paul Pu Liang"
+      ],
+      "published": "2026-10-20T18:36:13Z",
+      "updated": "2026-10-20T18:36:13Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.28814",
+        "pdf": "https://arxiv.org/pdf/2610.28814"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… and Tachin, and on four real-world dexterous manipulation tasks. T-WLA reduces finger-joint MPJPE by 30% relative to the strongest reported baseline and …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-22T06:27:05Z",
+      "last_seen": "2026-10-22T06:27:05Z"
+    },
+    {
+      "id": "2503.06669",
+      "title": "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
+      "authors": [
+        "AgiBot World Contributors",
+        "Qingwen Bu",
+        "Jisong Cai",
+        "Li Chen",
+        "Xiuqi Cui",
+        "Yan Ding",
+        "Siyuan Feng",
+        "Shenyuan Gao",
+        "Xindong He",
+        "Xuan Hu",
+        "Xu Huang",
+        "Shu Jiang",
+        "Yuxin Jiang",
+        "Cheng Jing",
+        "Hongyang Li",
+        "Jialu Li",
+        "Chiming Liu",
+        "Yi Liu",
+        "Yuxiang Lu",
+        "Jianlan Luo",
+        "Ping Luo",
+        "Yao Mu",
+        "Yuehan Niu",
+        "Yixuan Pan",
+        "Jiangmiao Pang",
+        "Yu Qiao",
+        "Guanghui Ren",
+        "Cheng Ruan",
+        "Jiaqi Shan",
+        "Yongjian Shen",
+        "Chengshi Shi",
+        "Mingkang Shi",
+        "Modi Shi",
+        "Chonghao Sima",
+        "Jianheng Song",
+        "Huijie Wang",
+        "Wenhao Wang",
+        "Dafeng Wei",
+        "Chengen Xie",
+        "Guo Xu",
+        "Junchi Yan",
+        "Cunbiao Yang",
+        "Lei Yang",
+        "Shukai Yang",
+        "Maoqing Yao",
+        "Jia Zeng",
+        "Chi Zhang",
+        "Qinglin Zhang",
+        "Bin Zhao",
+        "Chengyue Zhao",
+        "Jiaqi Zhao",
+        "Jianchao Zhu"
+      ],
+      "published": "2025-03-09T15:40:29Z",
+      "updated": "2026-10-20T18:19:58Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2503.06669",
+        "pdf": "https://arxiv.org/pdf/2503.06669"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… It is extensible from grippers to dexterous hands and visuo-tactile sensors for fine-grained skill acquisition. Building on top of data, we introduce …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-22T06:27:05Z",
+      "last_seen": "2026-10-22T06:27:05Z"
+    },
     {
       "id": "2610.28628",
       "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
@@ -33,43 +293,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-21T06:24:14Z",
-      "last_seen": "2026-10-21T06:24:14Z"
-    },
-    {
-      "id": "2610.26854",
-      "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation",
-      "authors": [
-        "Jiaming Liu",
-        "Xinghao Zhu",
-        "Yiming Zhang",
-        "Shanghang Zhang",
-        "Yinxi Wang",
-        "Yichu Yang",
-        "Zhuoyang Liu",
-        "Dantong Niu",
-        "Soha Pouya",
-        "Juekun Li",
-        "Yan Chang"
-      ],
-      "published": "2026-10-19T17:59:54Z",
-      "updated": "2026-10-20T17:53:12Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.26854",
-        "pdf": "https://arxiv.org/pdf/2610.26854"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… real-world tasks using bimanual grippers and dexterous hands. Further evaluations demonstrate that our structured latent reasoning framework generalizes to unseen scenarios and …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.28519",
@@ -98,7 +322,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-21T06:24:14Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.27995",
@@ -126,7 +350,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-21T06:24:14Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.27907",
@@ -156,7 +380,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-21T06:24:14Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2606.19340",
@@ -189,7 +413,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-21T06:24:14Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.27242",
@@ -218,7 +442,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-21T06:24:14Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.26765",
@@ -259,7 +483,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.26759",
@@ -290,7 +514,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.26174",
@@ -319,40 +543,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-21T06:24:14Z"
-    },
-    {
-      "id": "2610.25961",
-      "title": "PaceVLA: Adaptive Temporal Action Quantization in Vision-Language-Action Models",
-      "authors": [
-        "Hojin Jeon",
-        "Jimin Lee",
-        "Taekwan Kim",
-        "Nayoung Oh",
-        "Taeyoung Kim",
-        "Myungkyu Koo",
-        "Jinmo Koo",
-        "Joonwoo Ahn",
-        "Jinwoo Shin"
-      ],
-      "published": "2026-10-19T07:54:13Z",
-      "updated": "2026-10-19T07:54:13Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.25961",
-        "pdf": "https://arxiv.org/pdf/2610.25961"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… across multiple embodiments, including long-horizon and dexterous manipulation."
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.25459",
@@ -382,7 +573,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.24392",
@@ -410,7 +601,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.09291",
@@ -437,7 +628,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2608.02014",
@@ -466,7 +657,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.23438",
@@ -495,7 +686,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2608.19182",
@@ -531,7 +722,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2608.15060",
@@ -561,7 +752,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2606.18097",
@@ -593,7 +784,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-14T04:46:07Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.22363",
@@ -631,7 +822,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.22342",
@@ -678,7 +869,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.22340",
@@ -708,7 +899,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.22184",
@@ -740,7 +931,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2606.26428",
@@ -768,7 +959,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-21T06:24:14Z"
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2610.19089",
@@ -1178,45 +1369,6 @@
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
       "last_seen": "2026-10-14T06:33:56Z"
-    },
-    {
-      "id": "2610.04741",
-      "title": "Robot Learning with Visual Predicted Force",
-      "authors": [
-        "Haonan Chen",
-        "Feiyang Wu",
-        "Yuxiang Ma",
-        "Mustafa Mete",
-        "Pengfei Ye",
-        "Junxuan Shen",
-        "Cheng Zhu",
-        "Aurora Ruggeri",
-        "Kelvin Cheung",
-        "Jiayuan Mao",
-        "Edward Adelson",
-        "Jiajun Wu",
-        "Robert D. Howe",
-        "Yilun Du"
-      ],
-      "published": "2026-10-03T20:11:33Z",
-      "updated": "2026-10-03T20:11:33Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.04741",
-        "pdf": "https://arxiv.org/pdf/2610.04741"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… approach on berry picking, empty-can grasping, in-hand reorientation, and plug insertion. Our results show that visual force prediction can guide inference-time action …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-09T07:49:45Z"
     }
   ]
 }

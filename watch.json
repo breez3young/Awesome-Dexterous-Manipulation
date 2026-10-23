@@ -1,20 +1,144 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-10-21T06:24:14Z",
+  "last_checked_at": "2026-10-22T06:27:05Z",
   "lookback_days": 7,
-  "window_start": "2026-10-14T06:24:14Z",
+  "window_start": "2026-10-15T06:27:05Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 37,
-  "recent_match_count": 34,
-  "new_candidate_count": 6,
-  "updated_candidate_count": 1,
+  "candidate_count": 40,
+  "recent_match_count": 29,
+  "new_candidate_count": 3,
+  "updated_candidate_count": 3,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2610.26854",
+      "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation",
+      "published": "2026-10-19T17:59:54Z",
+      "updated": "2026-10-21T14:35:08Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.26854",
+        "pdf": "https://arxiv.org/pdf/2610.26854"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… real-world tasks using bimanual grippers and dexterous hands. Further evaluations demonstrate that our structured latent reasoning framework generalizes to unseen scenarios and …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2502.15037",
+      "title": "DEFT: Differentiable Branched Discrete Elastic Rods for Modeling Furcated DLOs in Real-Time",
+      "published": "2025-02-20T20:46:09Z",
+      "updated": "2026-10-21T13:35:59Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2502.15037",
+        "pdf": "https://arxiv.org/pdf/2502.15037"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… accurate BDLO dynamics, real-time inference, and dexterous manipulation planning. DEFT introduces momentum-conserving junction constraints to capture cross-branch coupling, supports mid-structure grasping, uses …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.25961",
+      "title": "PaceVLA: Adaptive Temporal Action Quantization in Vision-Language-Action Models",
+      "published": "2026-10-19T07:54:13Z",
+      "updated": "2026-10-21T05:55:50Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.25961",
+        "pdf": "https://arxiv.org/pdf/2610.25961"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… across multiple embodiments, including long-horizon and dexterous manipulation."
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.04741",
+      "title": "Robot Learning with Visual Predicted Force",
+      "published": "2026-10-03T20:11:33Z",
+      "updated": "2026-10-20T19:20:24Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.04741",
+        "pdf": "https://arxiv.org/pdf/2610.04741"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… approach on berry picking, empty-can grasping, in-hand reorientation, and plug insertion. Our results show that visual force prediction can guide inference-time action …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.28814",
+      "title": "T-WLA: Bridging Slow Vision and Fast Touch",
+      "published": "2026-10-20T18:36:13Z",
+      "updated": "2026-10-20T18:36:13Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.28814",
+        "pdf": "https://arxiv.org/pdf/2610.28814"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… and Tachin, and on four real-world dexterous manipulation tasks. T-WLA reduces finger-joint MPJPE by 30% relative to the strongest reported baseline and …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2503.06669",
+      "title": "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
+      "published": "2025-03-09T15:40:29Z",
+      "updated": "2026-10-20T18:19:58Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2503.06669",
+        "pdf": "https://arxiv.org/pdf/2503.06669"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… It is extensible from grippers to dexterous hands and visuo-tactile sensors for fine-grained skill acquisition. Building on top of data, we introduce …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2610.28628",
       "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
@@ -31,27 +155,6 @@
         {
           "source": "abstract",
           "text": "Dexterous multi-finger hands hold promise to unlock diverse skills like functional grasps, in-hand reorientation, and dynamic handover that the human-designed world assumes, …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2610.26854",
-      "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation",
-      "published": "2026-10-19T17:59:54Z",
-      "updated": "2026-10-20T17:53:12Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.26854",
-        "pdf": "https://arxiv.org/pdf/2610.26854"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… real-world tasks using bimanual grippers and dexterous hands. Further evaluations demonstrate that our structured latent reasoning framework generalizes to unseen scenarios and …"
         }
       ],
       "review_status": "pending"
@@ -216,26 +319,6 @@
         {
           "source": "abstract",
           "text": "… manipulation, providing an important foundation for dexterous, closed-loop force control. Among various tactile sensing techniques, magnetic tactile sensors stand out thanks to …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2610.25961",
-      "title": "PaceVLA: Adaptive Temporal Action Quantization in Vision-Language-Action Models",
-      "published": "2026-10-19T07:54:13Z",
-      "updated": "2026-10-19T07:54:13Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.25961",
-        "pdf": "https://arxiv.org/pdf/2610.25961"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… across multiple embodiments, including long-horizon and dexterous manipulation."
         }
       ],
       "review_status": "pending"
@@ -745,27 +828,6 @@
         {
           "source": "abstract",
           "text": "… dragging, eyes-free digit input, and representative multi-finger controls including scrolling and pinch-based map manipulation. These results show that a morphologically variable bare …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2610.04741",
-      "title": "Robot Learning with Visual Predicted Force",
-      "published": "2026-10-03T20:11:33Z",
-      "updated": "2026-10-03T20:11:33Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.04741",
-        "pdf": "https://arxiv.org/pdf/2610.04741"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… approach on berry picking, empty-can grasping, in-hand reorientation, and plug insertion. Our results show that visual force prediction can guide inference-time action …"
         }
       ],
       "review_status": "pending"
