@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -9123,6 +9123,224 @@
         "https://arxiv.org/abs/2610.28814v1",
         "https://arxiv.org/html/2610.28814v1",
         "https://anonymous-submission-20.github.io/T-WLA.github.io/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2608.10383",
+      "title": "Learning Cooperative Bimanual Dexterous Grasp of Large Objects with Tactile Sensing",
+      "authors": [
+        "Ziming Li",
+        "Mingxuan Wu",
+        "Jiaqi Zhang",
+        "Hongfei Li",
+        "Yan Gan",
+        "Deqiang Ouyang",
+        "Ning Wang"
+      ],
+      "year": 2026,
+      "date": "2026-08-11",
+      "category": "Tactile Dexterous Manipulation",
+      "scope": "core",
+      "tags": [
+        "Imitation learning",
+        "Diffusion / flow policy",
+        "Teleoperation",
+        "Dexterous grasping",
+        "Bimanual coordination",
+        "Tactile feedback",
+        "Vision",
+        "Dataset / benchmark"
+      ],
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.10383",
+        "code": "https://github.com/zhangdana483/real_bi_dex_grasp/"
+      },
+      "tldr": "A point-cloud DDPM learns static bimanual grasp poses from real demonstrations. Waypoint execution and tactile/torque contact refinement enable large-object lifting, reaching 61.90% success across 105 real-robot trials on seven unseen objects.",
+      "tldr_zh": "从真实示教学习点云条件静态双手抓姿，结合路径点执行和触觉/力矩接触修正抓举大物体；七个未见物体共105次实机测试报告61.90%成功率。",
+      "sensing": [
+        "Single-view RGB-D",
+        "Distributed finger and palm tactile sensing",
+        "Joint angles and torques"
+      ],
+      "hand": [
+        "Two Inspire RH56DFTP five-finger hands (6 DoF each) on Unitree H1-2"
+      ],
+      "task": [
+        "Cooperative bimanual large-object grasping and lifting"
+      ],
+      "method": [
+        "PointNet++-conditioned DDPM grasp-pose generation",
+        "Real teleoperated demonstrations",
+        "Handcrafted waypoints and contact-guided refinement"
+      ],
+      "evaluation": "Seven unseen objects, five poses and three attempts per pose; success requires a 5 cm lift and 2 s stable hold within 30 s.",
+      "notes_zh": "触觉用于执行修正，未输入DDPM；模型生成静态姿态而非完整轨迹。移除手指修正降至34.29%，该消融同时去除触觉/力矩修正，不能视作纯触觉增益。基线训练数据及执行策略不同，场景为统一光照背景桌面；未复现实验。",
+      "arxiv_id": "2608.10383",
+      "arxiv_version": 3,
+      "arxiv_updated": "2026-10-22T03:43:00Z",
+      "source_url": "https://arxiv.org/abs/2608.10383v3",
+      "sources": [
+        "https://arxiv.org/abs/2608.10383v3",
+        "https://arxiv.org/html/2608.10383v3",
+        "https://github.com/zhangdana483/real_bi_dex_grasp/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v3)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.30438",
+      "title": "Tactile-Based Robotic Manipulation: From Mechanics-Driven to Data-Driven Perspectives",
+      "authors": [
+        "Jingyi Xiang",
+        "Yixuan Wang",
+        "Wenzhen Yuan"
+      ],
+      "date": "2026-10-21",
+      "year": 2026,
+      "category": "Tactile Sensing & Representation",
+      "scope": "adjacent",
+      "tags": [
+        "Survey"
+      ],
+      "tldr": "This survey connects mechanics-based tactile state estimation and control with learned imitation, reinforcement, VLA and predictive-model approaches. It distinguishes touch used for feedback, planning and auxiliary training, and identifies sensor transfer, latency, evaluation and active exploration as open problems. It synthesizes prior work rather than introducing a new robot-policy experiment.",
+      "tldr_zh": "综述将基于接触力学的触觉状态估计与控制，同模仿学习、强化学习、VLA和预测模型联系起来，区分反馈控制、预测规划及仅训练的触觉监督。讨论跨传感器迁移、延迟、评测与主动探索；不提出新的机器人策略实验。",
+      "sensing": [],
+      "hand": [],
+      "task": [
+        "Literature review of tactile perception and contact-rich manipulation"
+      ],
+      "method": [
+        "Mechanics-driven perception-to-action taxonomy",
+        "Review of tactile integration in learned control and predictive models"
+      ],
+      "evaluation": "Narrative literature review of representative tactile-manipulation methods; no new policy experiment or unified benchmark.",
+      "notes_zh": "覆盖通用夹爪及多指手，按相邻综述收录。正文中硬件、成功率与触觉部署均属被综述工作，不标为本文的实测触觉反馈或基座策略。作者接受稿信息不替代2026-10-21的arXiv首发日期；未复现实验。",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.30438"
+      },
+      "arxiv_id": "2610.30438",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-21T20:49:25Z",
+      "source_url": "https://arxiv.org/abs/2610.30438v1",
+      "sources": [
+        "https://arxiv.org/abs/2610.30438v1",
+        "https://arxiv.org/html/2610.30438v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.30781",
+      "title": "DeXplicit: Making Physical State Explicit in Dexterous Manipulation World Models",
+      "authors": [
+        "Adam Lee",
+        "Mutian Xu",
+        "Yukang Cao",
+        "Shulin Tian",
+        "Ziwei Liu"
+      ],
+      "date": "2026-10-22",
+      "year": 2026,
+      "category": "Hand–Object Interaction",
+      "scope": "adjacent",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.30781",
+        "project": "https://dexplicit.github.io/",
+        "code": "https://github.com/Abecid/DeXplicit"
+      },
+      "tags": [
+        "Vision",
+        "Articulated objects"
+      ],
+      "tldr": "Predicts object motion in metric 3D from an initial scene and supplied hand trajectories, then renders video; evaluated on human-interaction datasets rather than robot control.",
+      "tldr_zh": "从初始场景与给定手轨迹预测物体三维运动，再生成视频；验证范围是交互数据集上的离线预测。",
+      "sensing": [
+        "Initial RGB image",
+        "Metric 3D scene",
+        "Supplied hand trajectories and calibrated cameras"
+      ],
+      "hand": [
+        "Human hand joint trajectories"
+      ],
+      "task": [
+        "Hand-conditioned object dynamics prediction",
+        "Interaction video synthesis"
+      ],
+      "method": [
+        "Structured object-centric 3D dynamics",
+        "Confidence-gated appearance transport"
+      ],
+      "evaluation": "HOT3D / OakInk2 / PhysTwin: long-horizon moved-point L2 54.34 / 59.95 / 44.04 mm versus PointWorld 90.47 / 83.21 / 60.41 mm.",
+      "notes_zh": "未验证闭环控制、实机部署或触觉输入；不加规划、基座策略或扩散策略标签。生成速度是视频推理延迟。",
+      "arxiv_id": "2610.30781",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-22T06:02:09Z",
+      "source_url": "https://arxiv.org/abs/2610.30781v1",
+      "sources": [
+        "https://arxiv.org/html/2610.30781v1",
+        "https://dexplicit.github.io/",
+        "https://raw.githubusercontent.com/Abecid/DeXplicit/main/dexplicit/infer.py"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.31299",
+      "title": "PiHand: Latent Hand-Object Interaction Priors for Physics-Based Policy Learning",
+      "authors": [
+        "Niklas Berndt",
+        "Xianghui Xie",
+        "Enes Duran",
+        "Yixiao Wang",
+        "Gerard Pons-Moll"
+      ],
+      "date": "2026-10-22",
+      "year": 2026,
+      "category": "Hand–Object Interaction",
+      "scope": "adjacent",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.31299",
+        "project": "https://virtualhumans.mpi-inf.mpg.de/PiHand/"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Imitation learning",
+        "Human motion transfer",
+        "Dexterous grasping",
+        "Bimanual coordination",
+        "Proprioception"
+      ],
+      "tldr": "Distills simulated hand-object tracking experts into a reusable latent interaction prior, then trains bounded residual policies for tabletop manipulation, catching and handovers with MANO-based hands.",
+      "tldr_zh": "将仿真人手物体跟踪专家蒸馏为潜空间先验，再训练残差策略完成桌面操作、接物和双手交接。",
+      "sensing": [
+        "Simulator hand/object state",
+        "Simulator contact indicators",
+        "Target object trajectory"
+      ],
+      "hand": [
+        "Two MANO-based simulated hands (51 DoF each)"
+      ],
+      "task": [
+        "Tabletop object manipulation",
+        "Object catching",
+        "Bimanual handover"
+      ],
+      "method": [
+        "PPO tracking experts",
+        "Goal-conditioned VAE distillation",
+        "Bounded latent residual reinforcement learning"
+      ],
+      "evaluation": "IsaacGym tabletop success: 74.0% (GRAB), 77.7% (DexYCB), using a 10 cm object-translation termination threshold; 100 simulated rollouts per sequence.",
+      "notes_zh": "仅仿真，实机迁移尚未验证；模拟接触不算触觉传感。跨任务需训练下游残差策略，并非零样本任务迁移；不标机器人基座策略。",
+      "arxiv_id": "2610.31299",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-22T13:59:19Z",
+      "source_url": "https://arxiv.org/abs/2610.31299v1",
+      "sources": [
+        "https://arxiv.org/html/2610.31299v1",
+        "https://virtualhumans.mpi-inf.mpg.de/PiHand/"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"

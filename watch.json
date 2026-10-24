@@ -1,20 +1,142 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-10-22T06:27:05Z",
+  "last_checked_at": "2026-10-23T06:22:00Z",
   "lookback_days": 7,
-  "window_start": "2026-10-15T06:27:05Z",
+  "window_start": "2026-10-16T06:22:00Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 40,
-  "recent_match_count": 29,
-  "new_candidate_count": 3,
-  "updated_candidate_count": 3,
+  "candidate_count": 44,
+  "recent_match_count": 28,
+  "new_candidate_count": 4,
+  "updated_candidate_count": 2,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2610.31299",
+      "title": "PiHand: Latent Hand-Object Interaction Priors for Physics-Based Policy Learning",
+      "published": "2026-10-22T13:59:19Z",
+      "updated": "2026-10-22T13:59:19Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.31299",
+        "pdf": "https://arxiv.org/pdf/2610.31299"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… goal-conditioned VAE, and finally solve diverse dexterous manipulation tasks through bounded residual exploration in its latent space. With only a single reward …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.30781",
+      "title": "DeXplicit: Making Physical State Explicit in Dexterous Manipulation World Models",
+      "published": "2026-10-22T06:02:09Z",
+      "updated": "2026-10-22T06:02:09Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.30781",
+        "pdf": "https://arxiv.org/pdf/2610.30781"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… object structure. We introduce DeXplicit, a dexterous manipulation world model that instead predicts how the world evolves explicitly in metric 3D before …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.22363",
+      "title": "Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation",
+      "published": "2026-10-15T17:59:07Z",
+      "updated": "2026-10-22T04:41:10Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.22363",
+        "pdf": "https://arxiv.org/pdf/2610.22363"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… unified world action model for egocentric dexterous manipulation that learns 3D perception, action-conditioned prediction, and goal-directed planning through three complementary modes: Perceive, …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2608.10383",
+      "title": "Learning Cooperative Bimanual Dexterous Grasp of Large Objects with Tactile Sensing",
+      "published": "2026-08-11T02:24:27Z",
+      "updated": "2026-10-22T03:43:00Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.10383",
+        "pdf": "https://arxiv.org/pdf/2608.10383"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Bimanual dexterous grasping of large objects is a critical challenge in robotic manipulation. However, most existing studies focus on sequential manipulation rather …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.30438",
+      "title": "Tactile-Based Robotic Manipulation: From Mechanics-Driven to Data-Driven Perspectives",
+      "published": "2026-10-21T20:49:25Z",
+      "updated": "2026-10-21T20:49:25Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.30438",
+        "pdf": "https://arxiv.org/pdf/2610.30438"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… a critical modality for robust and dexterous manipulation. Over the past several decades, tactile-based manipulation research has evolved from mechanics-driven approaches, which …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2607.07968",
+      "title": "Soft Robotic Exogloves for Dexterous Mobility -- Towards Personalized Rehabilitation",
+      "published": "2026-07-08T22:48:29Z",
+      "updated": "2026-10-21T19:42:25Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2607.07968",
+        "pdf": "https://arxiv.org/pdf/2607.07968"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… especially for fine articulation necessary for dexterous manipulation. We present the design, fabrication, modeling, and testing of a personalized pneumatically-actuated soft robotic …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2610.26854",
       "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation",
@@ -487,26 +609,6 @@
       "review_status": "pending"
     },
     {
-      "id": "2610.22363",
-      "title": "Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation",
-      "published": "2026-10-15T17:59:07Z",
-      "updated": "2026-10-15T17:59:07Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.22363",
-        "pdf": "https://arxiv.org/pdf/2610.22363"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… unified world action model for egocentric dexterous manipulation that learns 3D perception, action-conditioned prediction, and goal-directed planning through three complementary modes: Perceive, …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
       "id": "2610.22342",
       "title": "Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manipulation",
       "published": "2026-10-15T17:56:17Z",
@@ -766,26 +868,6 @@
         {
           "source": "abstract",
           "text": "… hierarchical real-world RL framework for functional dexterous manipulation tasks. Our key insight is to decouple the control complexity into a functional hand …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2607.07968",
-      "title": "Soft Robotic Exogloves for Dexterous Mobility -- Towards Personalized Rehabilitation",
-      "published": "2026-07-08T22:48:29Z",
-      "updated": "2026-10-14T01:48:53Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2607.07968",
-        "pdf": "https://arxiv.org/pdf/2607.07968"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… especially for fine articulation necessary for dexterous manipulation. We present the design, fabrication, modeling, and testing of a personalized pneumatically-actuated soft robotic …"
         }
       ],
       "review_status": "pending"
