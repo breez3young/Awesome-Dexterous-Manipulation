@@ -1,8 +1,429 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-23T06:22:00Z",
+  "updated_at": "2026-10-27T06:39:39Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2602.13444",
+      "title": "FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation",
+      "authors": [
+        "Huajian Zeng",
+        "Lingyun Chen",
+        "Jiaqi Yang",
+        "Yuantai Zhang",
+        "Fan Shi",
+        "Peidong Liu",
+        "Xingxing Zuo"
+      ],
+      "published": "2026-02-13T20:46:08Z",
+      "updated": "2026-10-26T14:08:55Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2602.13444",
+        "pdf": "https://arxiv.org/pdf/2602.13444"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… further demonstrate real-robot execution on four dexterous manipulation tasks, illustrating the feasibility of retargeting generated HOI representations to real-robot execution pipelines."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.35462",
+      "title": "DEX-PHD: A Dexterous Portable Handheld Device for Multimodal Data Collection",
+      "authors": [
+        "Jooyoung Hong",
+        "Noboru Myers",
+        "Obin Kwon",
+        "Yixian Yang",
+        "Joohyung Kim"
+      ],
+      "published": "2026-10-26T13:57:01Z",
+      "updated": "2026-10-26T13:57:01Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.35462",
+        "pdf": "https://arxiv.org/pdf/2610.35462"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… device that combines these advantages for dexterous manipulation by integrating a dexterous robot hand, continuous per-finger control, and multimodal logging. The system …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.35103",
+      "title": "The Language of Deformation: Semantic Failure Analysis as a Prerequisite for Dexterous Manipulation of Deformable Objects",
+      "authors": [
+        "Ignacio Cuiral-Zueco",
+        "David Hardman",
+        "Michele Pierallini",
+        "Erfan Shahriari"
+      ],
+      "published": "2026-10-26T09:43:41Z",
+      "updated": "2026-10-26T09:43:41Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.35103",
+        "pdf": "https://arxiv.org/pdf/2610.35103"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation of rigid objects has reached a level of maturity where grasp stability, control, and planning strategies are successfully applied in …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.22340",
+      "title": "PlayPolicy: Dexterity from Supervised Play",
+      "authors": [
+        "Botao He",
+        "Yiming Dou",
+        "Yiannis Aloimonos",
+        "Jitendra Malik",
+        "Akash Sharma",
+        "Ruoshi Liu"
+      ],
+      "published": "2026-10-15T17:55:50Z",
+      "updated": "2026-10-26T07:47:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.22340",
+        "pdf": "https://arxiv.org/pdf/2610.22340"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… the contact-rich experience needed to learn dexterous manipulation? We present PlayPolicy: Dexterity from supervised play (DSP), a framework in which a robot …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-16T06:12:26Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.23438",
+      "title": "No Eyes, No Problem: What Does Touch Contribute to Blind Baoding Ball Manipulation?",
+      "authors": [
+        "Ayush Deshmukh",
+        "Nalin Agarwal",
+        "Elle Miller",
+        "Sethu Vijayakumar"
+      ],
+      "published": "2026-10-16T13:22:03Z",
+      "updated": "2026-10-26T01:56:15Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.23438",
+        "pdf": "https://arxiv.org/pdf/2610.23438"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… a new benchmark for sustained tactile-driven dexterous manipulation on physical hardware."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-19T06:37:32Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.34453",
+      "title": "Scaling Dexterous Manipulation via Action Representation Pretraining",
+      "authors": [
+        "Yanjinghao Xu",
+        "Jiexin Zhang",
+        "Huan Zhao",
+        "Jianjia Mo",
+        "Zhenghao Yin",
+        "Dingkang Liang",
+        "Xiang Bai",
+        "Han Ding"
+      ],
+      "published": "2026-10-25T17:19:28Z",
+      "updated": "2026-10-25T17:19:28Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.34453",
+        "pdf": "https://arxiv.org/pdf/2610.34453"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… models, but action generation for complex dexterous manipulation remains constrained by the scarcity of robot demonstrations. Limited robot demonstrations must be used …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2605.01434",
+      "title": "High-Speed, Scalable Sensor Readout for Dexterous Robotic Hands via Shift-Register Multiplexing",
+      "authors": [
+        "Jaehoon Kim",
+        "Boshi An",
+        "Lazaros Christoforidis",
+        "Michail Papadakis",
+        "Victor Kartsch",
+        "Robert K. Katzschmann"
+      ],
+      "published": "2026-05-02T13:14:28Z",
+      "updated": "2026-10-25T15:41:13Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2605.01434",
+        "pdf": "https://arxiv.org/pdf/2605.01434"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… path toward sensorized robotic hands for dexterous manipulation."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.33852",
+      "title": "AdaDexTrack: Dynamic Modulation for Adaptive and Generalizable Dexterous Manipulation Tracking",
+      "authors": [
+        "Jianibieke Adalibieke",
+        "Qianwei Han",
+        "Xueyi Liu",
+        "Yuzhe Qin",
+        "Li Yi"
+      ],
+      "published": "2026-10-24T18:46:10Z",
+      "updated": "2026-10-24T18:46:10Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33852",
+        "pdf": "https://arxiv.org/pdf/2610.33852"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… a tracker-only variant. AdaDexTrack reframes language-conditioned dexterous manipulation as modulated tracking, replacing the open-loop, fixed-reference tracking with in-loop modulation that adjusts the …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.33494",
+      "title": "RBGA: Residual-Budget Guide Arbitration for Offline-to-Online Safe Reinforcement Learning in Dexterous Manipulation",
+      "authors": [
+        "Zongyou Yu",
+        "Ao Zhou",
+        "Xiongbo Shi",
+        "Jiayi Guan",
+        "Shihang Du",
+        "Xudong Zhang",
+        "Shangding Gu",
+        "Junqiao Zhao",
+        "Hanli Wang",
+        "Guang Chen"
+      ],
+      "published": "2026-10-24T06:52:11Z",
+      "updated": "2026-10-24T06:52:11Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33494",
+        "pdf": "https://arxiv.org/pdf/2610.33494"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation requires robots to leverage existing datasets for rapid skill acquisition while maintaining safety during real-world deployment to prevent damage to …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.33486",
+      "title": "Learning Dexterous Manipulation: Hands, Simulators, Training, and Evaluation",
+      "authors": [
+        "Luai Abuelsamen"
+      ],
+      "published": "2026-10-24T06:26:18Z",
+      "updated": "2026-10-24T06:26:18Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33486",
+        "pdf": "https://arxiv.org/pdf/2610.33486"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "A dexterous hand can change an object's pose without setting it down. This survey covers 113 learning-based methods that attempt it, the …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.33480",
+      "title": "MDPO: Multi-constraint Dexterous Policy Optimization with Reinforcement Learning",
+      "authors": [
+        "Ao Zhou",
+        "Zongyou Yu",
+        "Ke Wu",
+        "Tao Xu",
+        "Junqiao Zhao",
+        "Wenchao Ding",
+        "Alois Knoll",
+        "Guang Chen"
+      ],
+      "published": "2026-10-24T06:09:14Z",
+      "updated": "2026-10-24T06:09:14Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33480",
+        "pdf": "https://arxiv.org/pdf/2610.33480"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation requires high-dimensional control policies to accomplish complex contact-rich tasks while simultaneously satisfying multiple safety requirements, such as joint limits, unsafe …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.33241",
+      "title": "ORBIT: A Modular Multi-finger Robotic Hand Platform with Rotational Finger Reconfiguration",
+      "authors": [
+        "Benito Ribadeneira",
+        "Siqi Shang",
+        "Lillian Chin"
+      ],
+      "published": "2026-10-23T19:45:12Z",
+      "updated": "2026-10-23T19:45:12Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33241",
+        "pdf": "https://arxiv.org/pdf/2610.33241"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… popularity of multi-fingered robotic hands for dexterous manipulation, there is no systematic platform to compare different hand morphologies against one another. We …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.32969",
+      "title": "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection",
+      "authors": [
+        "Amber Xie",
+        "Jiawei Fu",
+        "Xiaofeng Guo",
+        "Carmelo Sferrazza",
+        "Guanya Shi",
+        "Haozhi Qi"
+      ],
+      "published": "2026-10-23T17:56:28Z",
+      "updated": "2026-10-23T17:56:28Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.32969",
+        "pdf": "https://arxiv.org/pdf/2610.32969"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… remains a central bottleneck for learning dexterous manipulation. Teleoperation records executable robot actions, but it requires a complete robot setup and places …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-26T06:46:42Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.31845",
+      "title": "EgoForesight: Effectively Scaling Policy Learning with Noisy Egocentric Actions",
+      "authors": [
+        "Chubin Zhang",
+        "Changyuan Wang",
+        "Yirui Wang",
+        "Ao Li",
+        "Shilin Ma",
+        "Yue Su",
+        "Cai Zhou",
+        "Xiuwei Xu",
+        "Tianle Zhang",
+        "Yansong Tang"
+      ],
+      "published": "2026-10-22T19:28:43Z",
+      "updated": "2026-10-22T19:28:43Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.31845",
+        "pdf": "https://arxiv.org/pdf/2610.31845"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… performance in both simulated and real-world dexterous manipulation."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-26T06:46:42Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
     {
       "id": "2610.31299",
       "title": "PiHand: Latent Hand-Object Interaction Priors for Physics-Based Policy Learning",
@@ -30,7 +451,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-23T06:22:00Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2610.30781",
@@ -59,7 +480,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-23T06:22:00Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2610.22363",
@@ -97,7 +518,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2608.10383",
@@ -129,7 +550,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-23T06:22:00Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2610.30438",
@@ -157,7 +578,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-23T06:22:00Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2607.07968",
@@ -184,7 +605,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2610.26854",
@@ -220,7 +641,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2502.15037",
@@ -253,7 +674,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-22T06:27:05Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2610.25961",
@@ -286,7 +707,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2610.04741",
@@ -325,7 +746,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2610.28814",
@@ -367,7 +788,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-22T06:27:05Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2503.06669",
@@ -444,7 +865,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-22T06:27:05Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2610.28628",
@@ -476,7 +897,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-21T06:24:14Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2610.28519",
@@ -505,7 +926,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-21T06:24:14Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2610.27995",
@@ -533,7 +954,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-21T06:24:14Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2610.27907",
@@ -563,7 +984,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-21T06:24:14Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2606.19340",
@@ -596,7 +1017,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-21T06:24:14Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
       "id": "2610.27242",
@@ -625,7 +1046,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-21T06:24:14Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-26T06:46:42Z"
     },
     {
       "id": "2610.26765",
@@ -666,7 +1087,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-26T06:46:42Z"
     },
     {
       "id": "2610.26759",
@@ -697,7 +1118,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-26T06:46:42Z"
     },
     {
       "id": "2610.26174",
@@ -726,7 +1147,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-26T06:46:42Z"
     },
     {
       "id": "2610.25459",
@@ -756,7 +1177,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-23T06:22:00Z"
+      "last_seen": "2026-10-25T06:36:16Z"
     },
     {
       "id": "2610.24392",
@@ -836,35 +1257,6 @@
         {
           "source": "abstract",
           "text": "… to synthesize stable grasps across heterogeneous multi-fingered hands with little or no embodiment-specific tuning. Existing interaction-centric methods achieve promising results, but their …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-23T06:22:00Z"
-    },
-    {
-      "id": "2610.23438",
-      "title": "No Eyes, No Problem: What Does Touch Contribute to Blind Baoding Ball Manipulation?",
-      "authors": [
-        "Ayush Deshmukh",
-        "Nalin Agarwal",
-        "Elle Miller",
-        "Sethu Vijayakumar"
-      ],
-      "published": "2026-10-16T13:22:03Z",
-      "updated": "2026-10-16T13:22:03Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.23438",
-        "pdf": "https://arxiv.org/pdf/2610.23438"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… a new benchmark for sustained tactile-driven dexterous manipulation on physical hardware."
         }
       ],
       "review_status": "pending",
@@ -1010,36 +1402,6 @@
         {
           "source": "abstract",
           "text": "… pretraining but often struggle with contact-rich dexterous manipulation, where force, compliance, and incipient slip are hard to observe from images. We present …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-22T06:27:05Z"
-    },
-    {
-      "id": "2610.22340",
-      "title": "Dexterity from Supervised Play",
-      "authors": [
-        "Botao He",
-        "Yiming Dou",
-        "Yiannis Aloimonos",
-        "Jitendra Malik",
-        "Akash Sharma",
-        "Ruoshi Liu"
-      ],
-      "published": "2026-10-15T17:55:50Z",
-      "updated": "2026-10-15T17:55:50Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.22340",
-        "pdf": "https://arxiv.org/pdf/2610.22340"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… the contact-rich experience needed to learn dexterous manipulation? We present DSP: Dexterity from supervised play, a framework in which a robot learns …"
         }
       ],
       "review_status": "pending",

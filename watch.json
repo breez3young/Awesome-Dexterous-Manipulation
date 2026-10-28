@@ -1,20 +1,302 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-10-23T06:22:00Z",
+  "last_checked_at": "2026-10-27T06:39:39Z",
   "lookback_days": 7,
-  "window_start": "2026-10-16T06:22:00Z",
+  "window_start": "2026-10-20T06:39:39Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 44,
-  "recent_match_count": 28,
-  "new_candidate_count": 4,
+  "candidate_count": 56,
+  "recent_match_count": 31,
+  "new_candidate_count": 10,
   "updated_candidate_count": 2,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2602.13444",
+      "title": "FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation",
+      "published": "2026-02-13T20:46:08Z",
+      "updated": "2026-10-26T14:08:55Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2602.13444",
+        "pdf": "https://arxiv.org/pdf/2602.13444"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… further demonstrate real-robot execution on four dexterous manipulation tasks, illustrating the feasibility of retargeting generated HOI representations to real-robot execution pipelines."
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.35462",
+      "title": "DEX-PHD: A Dexterous Portable Handheld Device for Multimodal Data Collection",
+      "published": "2026-10-26T13:57:01Z",
+      "updated": "2026-10-26T13:57:01Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.35462",
+        "pdf": "https://arxiv.org/pdf/2610.35462"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… device that combines these advantages for dexterous manipulation by integrating a dexterous robot hand, continuous per-finger control, and multimodal logging. The system …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.35103",
+      "title": "The Language of Deformation: Semantic Failure Analysis as a Prerequisite for Dexterous Manipulation of Deformable Objects",
+      "published": "2026-10-26T09:43:41Z",
+      "updated": "2026-10-26T09:43:41Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.35103",
+        "pdf": "https://arxiv.org/pdf/2610.35103"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation of rigid objects has reached a level of maturity where grasp stability, control, and planning strategies are successfully applied in …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.22340",
+      "title": "PlayPolicy: Dexterity from Supervised Play",
+      "published": "2026-10-15T17:55:50Z",
+      "updated": "2026-10-26T07:47:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.22340",
+        "pdf": "https://arxiv.org/pdf/2610.22340"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… the contact-rich experience needed to learn dexterous manipulation? We present PlayPolicy: Dexterity from supervised play (DSP), a framework in which a robot …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.23438",
+      "title": "No Eyes, No Problem: What Does Touch Contribute to Blind Baoding Ball Manipulation?",
+      "published": "2026-10-16T13:22:03Z",
+      "updated": "2026-10-26T01:56:15Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.23438",
+        "pdf": "https://arxiv.org/pdf/2610.23438"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… a new benchmark for sustained tactile-driven dexterous manipulation on physical hardware."
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.34453",
+      "title": "Scaling Dexterous Manipulation via Action Representation Pretraining",
+      "published": "2026-10-25T17:19:28Z",
+      "updated": "2026-10-25T17:19:28Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.34453",
+        "pdf": "https://arxiv.org/pdf/2610.34453"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… models, but action generation for complex dexterous manipulation remains constrained by the scarcity of robot demonstrations. Limited robot demonstrations must be used …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2605.01434",
+      "title": "High-Speed, Scalable Sensor Readout for Dexterous Robotic Hands via Shift-Register Multiplexing",
+      "published": "2026-05-02T13:14:28Z",
+      "updated": "2026-10-25T15:41:13Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2605.01434",
+        "pdf": "https://arxiv.org/pdf/2605.01434"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… path toward sensorized robotic hands for dexterous manipulation."
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.33852",
+      "title": "AdaDexTrack: Dynamic Modulation for Adaptive and Generalizable Dexterous Manipulation Tracking",
+      "published": "2026-10-24T18:46:10Z",
+      "updated": "2026-10-24T18:46:10Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33852",
+        "pdf": "https://arxiv.org/pdf/2610.33852"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… a tracker-only variant. AdaDexTrack reframes language-conditioned dexterous manipulation as modulated tracking, replacing the open-loop, fixed-reference tracking with in-loop modulation that adjusts the …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.33494",
+      "title": "RBGA: Residual-Budget Guide Arbitration for Offline-to-Online Safe Reinforcement Learning in Dexterous Manipulation",
+      "published": "2026-10-24T06:52:11Z",
+      "updated": "2026-10-24T06:52:11Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33494",
+        "pdf": "https://arxiv.org/pdf/2610.33494"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation requires robots to leverage existing datasets for rapid skill acquisition while maintaining safety during real-world deployment to prevent damage to …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.33486",
+      "title": "Learning Dexterous Manipulation: Hands, Simulators, Training, and Evaluation",
+      "published": "2026-10-24T06:26:18Z",
+      "updated": "2026-10-24T06:26:18Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33486",
+        "pdf": "https://arxiv.org/pdf/2610.33486"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "A dexterous hand can change an object's pose without setting it down. This survey covers 113 learning-based methods that attempt it, the …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.33480",
+      "title": "MDPO: Multi-constraint Dexterous Policy Optimization with Reinforcement Learning",
+      "published": "2026-10-24T06:09:14Z",
+      "updated": "2026-10-24T06:09:14Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33480",
+        "pdf": "https://arxiv.org/pdf/2610.33480"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation requires high-dimensional control policies to accomplish complex contact-rich tasks while simultaneously satisfying multiple safety requirements, such as joint limits, unsafe …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.33241",
+      "title": "ORBIT: A Modular Multi-finger Robotic Hand Platform with Rotational Finger Reconfiguration",
+      "published": "2026-10-23T19:45:12Z",
+      "updated": "2026-10-23T19:45:12Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33241",
+        "pdf": "https://arxiv.org/pdf/2610.33241"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… popularity of multi-fingered robotic hands for dexterous manipulation, there is no systematic platform to compare different hand morphologies against one another. We …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.32969",
+      "title": "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection",
+      "published": "2026-10-23T17:56:28Z",
+      "updated": "2026-10-23T17:56:28Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.32969",
+        "pdf": "https://arxiv.org/pdf/2610.32969"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… remains a central bottleneck for learning dexterous manipulation. Teleoperation records executable robot actions, but it requires a complete robot setup and places …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.31845",
+      "title": "EgoForesight: Effectively Scaling Policy Learning with Noisy Egocentric Actions",
+      "published": "2026-10-22T19:28:43Z",
+      "updated": "2026-10-22T19:28:43Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.31845",
+        "pdf": "https://arxiv.org/pdf/2610.31845"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… performance in both simulated and real-world dexterous manipulation."
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2610.31299",
       "title": "PiHand: Latent Hand-Object Interaction Priors for Physics-Based Policy Learning",
@@ -526,27 +808,6 @@
       "review_status": "pending"
     },
     {
-      "id": "2610.23438",
-      "title": "No Eyes, No Problem: What Does Touch Contribute to Blind Baoding Ball Manipulation?",
-      "published": "2026-10-16T13:22:03Z",
-      "updated": "2026-10-16T13:22:03Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.23438",
-        "pdf": "https://arxiv.org/pdf/2610.23438"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… a new benchmark for sustained tactile-driven dexterous manipulation on physical hardware."
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
       "id": "2608.19182",
       "title": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
       "published": "2026-08-19T17:55:06Z",
@@ -625,26 +886,6 @@
         {
           "source": "abstract",
           "text": "… pretraining but often struggle with contact-rich dexterous manipulation, where force, compliance, and incipient slip are hard to observe from images. We present …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2610.22340",
-      "title": "Dexterity from Supervised Play",
-      "published": "2026-10-15T17:55:50Z",
-      "updated": "2026-10-15T17:55:50Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.22340",
-        "pdf": "https://arxiv.org/pdf/2610.22340"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… the contact-rich experience needed to learn dexterous manipulation? We present DSP: Dexterity from supervised play, a framework in which a robot learns …"
         }
       ],
       "review_status": "pending"
