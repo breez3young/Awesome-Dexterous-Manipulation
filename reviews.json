@@ -11934,6 +11934,401 @@
           "notes_zh": "FSR仅记录与分析，未用于在线触觉控制；未训练操作策略。接触值为去基线相对量。钻孔回放仅分析空中持工具/触发动作，未完成整段紧固。"
         }
       }
+    },
+    {
+      "key": "2606.30749|v2|2026-10-26T21:08:17+00:00|dexterous-v1",
+      "digest": "7daa59ad31e84a1e6cb95ae4d6c34d466585d47123f8e16af3f7353f02416463",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-29T06:08:08Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2606.30749",
+          "version": 2,
+          "title": "From Grasps to Dexterity: Large-Scale Grasp Pretraining for Dexterous Manipulation",
+          "authors": [
+            "Ying Yuan",
+            "Xinyu Liu",
+            "Sriram Krishna",
+            "David Held"
+          ],
+          "published": "2026-06-29T18:00:22Z",
+          "updated": "2026-10-26T21:08:17Z",
+          "url": "https://arxiv.org/abs/2606.30749v2",
+          "primary_urls": [
+            "https://arxiv.org/html/2606.30749v2",
+            "https://yingyuan0414.github.io/grasp2dexterity/",
+            "https://github.com/YingYuan0414/DexCraft"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "抓取数据预训练直接支持多指工具操作，具有仿真及实机验证。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2606.30749v2",
+            "paraphrase": "§5、附录B.4：将静态抓姿扩成355k轨迹，预训练低层控制器；手工关节映射后以LEAP示教微调。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.30749v2",
+            "paraphrase": "§6.1/6.4表4：Franka配LEAP、双深度相机及本体输入；三任务各50示教、18次评测，完整成功均值40.7%。"
+          },
+          {
+            "url": "https://github.com/YingYuan0414/DexCraft",
+            "paraphrase": "官方仓库提供六项仿真任务与数据生成工具；未见完整策略训练/部署实现，不把代码入口视作完整复现包。"
+          }
+        ],
+        "paper": {
+          "id": "2606.30749",
+          "title": "From Grasps to Dexterity: Large-Scale Grasp Pretraining for Dexterous Manipulation",
+          "authors": [
+            "Ying Yuan",
+            "Xinyu Liu",
+            "Sriram Krishna",
+            "David Held"
+          ],
+          "date": "2026-06-29",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2606.30749",
+            "project": "https://yingyuan0414.github.io/grasp2dexterity/",
+            "code": "https://github.com/YingYuan0414/DexCraft"
+          },
+          "tags": [
+            "Imitation learning",
+            "Diffusion / flow policy",
+            "Cross-embodiment",
+            "Dexterous grasping",
+            "Tool use",
+            "Articulated objects",
+            "Vision",
+            "Proprioception",
+            "Dataset / benchmark"
+          ],
+          "tldr": "Pretrains a goal-conditioned controller on synthetic grasp trajectories, then fine-tunes it under a learned hand-subgoal hierarchy for articulated tool use.",
+          "tldr_zh": "用合成抓取轨迹预训练控制器，再以手部子目标分层策略和任务示教微调，实现关节式工具操作。",
+          "sensing": [
+            "RGB-D point clouds",
+            "Proprioception"
+          ],
+          "hand": [
+            "Shadow hand (pretraining)",
+            "LEAP Hand (downstream)"
+          ],
+          "task": [
+            "Articulated tool use"
+          ],
+          "method": [
+            "Grasp-trajectory pretraining",
+            "Hierarchical imitation learning"
+          ],
+          "evaluation": "Six simulated tasks; three real tasks, 18 trials each: 40.7% full-task success versus DP3 7.4%.",
+          "notes_zh": "子目标需人工标注，仿真每任务仅一个物体实例；依赖下游示教，非零样本迁移。未用触觉反馈；公开代码主要为基准和数据工具。"
+        }
+      }
+    },
+    {
+      "key": "2610.36539|v1|2026-10-27T02:51:20+00:00|dexterous-v1",
+      "digest": "915a7340f52bb26f65193b0959e5e28dc82292755b950285b57089f1a59927c2",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-29T06:08:08Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.36539",
+          "version": 1,
+          "title": "CARD: Contact-Anchored Retargeting for Dexterous Manipulation",
+          "authors": [
+            "Cunxi Dai",
+            "Botao He",
+            "Francois R Hogan",
+            "Wei Pan",
+            "Rao Fu",
+            "Wen-Han Hsieh",
+            "Ruoshi Liu",
+            "Jitendra Malik",
+            "Guanya Shi",
+            "Akash Sharma"
+          ],
+          "published": "2026-10-27T02:51:20Z",
+          "updated": "2026-10-27T02:51:20Z",
+          "url": "https://arxiv.org/abs/2610.36539v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.36539v1",
+            "https://card-retargeting.github.io/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "接触重定向及SHARPA实机触觉力跟踪有明确方法和消融证据，按触觉灵巧操作收录。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.36539v1",
+            "paraphrase": "§3.1–3.4：统一视频、手套和动捕示教的接触位置、方向及力，优化机器人轨迹，再以实测指尖力跟踪目标。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.36539v1",
+            "paraphrase": "§4.2及附录F：SHARPA上100Hz力环，三任务各10次，成功25/30，对照为4/30；Wuji/Dex3演示无触觉。"
+          },
+          {
+            "url": "https://card-retargeting.github.io/",
+            "paraphrase": "官方项目页对应论文及硬件展示；Code按钮为禁用占位链接，未填代码地址。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2610.36539v1",
+          "paraphrase": "§3.4、附录F：SHARPA实时法向力误差经导纳积分产生手指闭合偏移，结合前馈扭矩进入关节阻抗控制。"
+        },
+        "paper": {
+          "id": "2610.36539",
+          "title": "CARD: Contact-Anchored Retargeting for Dexterous Manipulation",
+          "authors": [
+            "Cunxi Dai",
+            "Botao He",
+            "Francois R Hogan",
+            "Wei Pan",
+            "Rao Fu",
+            "Wen-Han Hsieh",
+            "Ruoshi Liu",
+            "Jitendra Malik",
+            "Guanya Shi",
+            "Akash Sharma"
+          ],
+          "date": "2026-10-27",
+          "year": 2026,
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.36539",
+            "project": "https://card-retargeting.github.io/"
+          },
+          "tags": [
+            "Human motion transfer",
+            "Retargeting",
+            "Cross-embodiment",
+            "Dexterous grasping",
+            "In-hand manipulation",
+            "Articulated objects",
+            "Tactile feedback",
+            "Force control",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Retargets human hand-contact anchors into robot trajectories and force targets; a fingertip-force controller improves SHARPA replay while other hand embodiments use kinematic execution.",
+          "tldr_zh": "将人类手部接触锚点转为机器人轨迹与力目标，在SHARPA回放中以实测指尖力修正动作，并展示向其他手型的迁移。",
+          "sensing": [
+            "Fingertip normal force (SHARPA execution)",
+            "Robot joint state",
+            "Video / glove / motion capture (demonstrations)"
+          ],
+          "hand": [
+            "SHARPA Wave",
+            "Wuji Hand 2 (without tactile sensing)",
+            "Unitree Dex3-1 (without tactile sensing)"
+          ],
+          "task": [
+            "Hammer and cup lifting",
+            "Mustard dispensing",
+            "Card handling",
+            "Rubik’s cube turning"
+          ],
+          "method": [
+            "Contact-anchor trajectory optimization",
+            "Vid-HACO video contact estimation",
+            "Tactile admittance with impedance control"
+          ],
+          "evaluation": "SHARPA: 25/30 successes across three tasks versus 4/30 for position-only replay; separate simulation and contact-fidelity evaluations.",
+          "notes_zh": "回放有触觉力环，但无在线物体反馈或学习策略，不能恢复大幅物体位移。Wuji/Dex3无触觉；接触帧比例不等于任务成功率。代码链接待提供。"
+        }
+      }
+    },
+    {
+      "key": "2610.36789|v1|2026-10-27T07:53:51+00:00|dexterous-v1",
+      "digest": "aed73ef7629c35d39d1fd0e162d4e9e87fca43d1c1bb876c4599d3a220c49ce1",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-29T06:08:08Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.36789",
+          "version": 1,
+          "title": "A fully articulated humanoid dexterous hand with human-level joint structure enabled by linkage-based actuation",
+          "authors": [
+            "Jihao Li",
+            "Jianguo Wang",
+            "Haotian Guo",
+            "Yanzhe Wang",
+            "Guodong Lu",
+            "Huixu Dong"
+          ],
+          "published": "2026-10-27T07:53:51Z",
+          "updated": "2026-10-27T07:53:51Z",
+          "url": "https://arxiv.org/abs/2610.36789v1",
+          "primary_urls": [
+            "https://arxiv.org/pdf/2610.36789v1"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "提出多指仿人手机构，并有真实抓取和工具操作演示，属于灵巧操作核心硬件研究。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/pdf/2610.36789v1",
+            "paraphrase": "方法pp.23–24：数据手套记录关节角，经指尖轨迹重定向与IK生成20Hz手部指令；UR5回放预录位姿。"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.36789v1",
+            "paraphrase": "结果pp.14–18及方法：33种抓姿和9项任务展示；测力传感器用于台架表征，视觉/触觉反馈仍为未来工作。"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2610.36789v1",
+            "paraphrase": "表S1：21关节DOF、NOA为16；与正文独立驱动描述存在口径差异，不将21DOF等同21台独立电机。"
+          }
+        ],
+        "paper": {
+          "id": "2610.36789",
+          "title": "A fully articulated humanoid dexterous hand with human-level joint structure enabled by linkage-based actuation",
+          "authors": [
+            "Jihao Li",
+            "Jianguo Wang",
+            "Haotian Guo",
+            "Yanzhe Wang",
+            "Guodong Lu",
+            "Huixu Dong"
+          ],
+          "date": "2026-10-27",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.36789"
+          },
+          "tags": [
+            "Hardware / sensor",
+            "Teleoperation",
+            "Retargeting",
+            "Dexterous grasping",
+            "Tool use"
+          ],
+          "tldr": "Presents a screw-linkage anthropomorphic hand with 21 joint degrees of freedom; evaluates grasp diversity, mechanical performance and UR5 task demonstrations using retargeted glove motions and prerecorded arm poses.",
+          "tldr_zh": "以丝杠—连杆构建21关节自由度仿人手，测试抓姿覆盖与机械性能，并通过手套动作重定向和机械臂位姿回放展示操作任务。",
+          "sensing": [
+            "Data-glove joint angles (demonstration only)"
+          ],
+          "hand": [
+            "Torch-Hand"
+          ],
+          "task": [
+            "Grasp posture reproduction",
+            "Needle threading",
+            "Pipetting",
+            "Tool manipulation"
+          ],
+          "method": [
+            "Screw-linkage transmission",
+            "Human joint-motion retargeting",
+            "Inverse kinematics and trajectory replay"
+          ],
+          "evaluation": "Bench measurements, 33 grasp types and nine UR5 task demonstrations; no statistical task-success benchmark.",
+          "notes_zh": "物体/工具先人工放置，任务以预录轨迹执行；未证明触觉闭环或自主策略。表S1列16执行器，与正文独立驱动表述有差异；仅记录21关节自由度。"
+        }
+      }
+    },
+    {
+      "key": "2610.37652|v1|2026-10-27T17:58:20+00:00|dexterous-v1",
+      "digest": "e39eddbd50b63a55538d78063233cd759ec60de88011038af0ecc9039aff2614",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-10-29T06:08:08Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.37652",
+          "version": 1,
+          "title": "Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well",
+          "authors": [
+            "Ian Chuang",
+            "Hiya Shah",
+            "Vamsi Chilamkur",
+            "Iman Soltani",
+            "Claire Tomlin"
+          ],
+          "published": "2026-10-27T17:58:20Z",
+          "updated": "2026-10-27T17:58:20Z",
+          "url": "https://arxiv.org/abs/2610.37652v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.37652v1",
+            "https://ian-chuang.github.io/dexsafe/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "直接研究多指手内位姿控制与防掉落滤波，具有充分实机评测依据。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2610.37652v1",
+            "paraphrase": "§IV–V：逐物体仿真RL、教师蒸馏及残差滤波；实机输入为动捕或腕部深度，加本体状态，接触仅属训练特权信息。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.37652v1",
+            "paraphrase": "表II、附录J：状态策略每条件1,200目标；95.2%降至91.5%，掉落16降至4。4,800为所有条件合计，掉落后人工复位。"
+          },
+          {
+            "url": "https://ian-chuang.github.io/dexsafe/",
+            "paraphrase": "项目页对应论文，展示实机和交互演示；代码入口仍标coming soon。"
+          }
+        ],
+        "paper": {
+          "id": "2610.37652",
+          "title": "Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well",
+          "authors": [
+            "Ian Chuang",
+            "Hiya Shah",
+            "Vamsi Chilamkur",
+            "Iman Soltani",
+            "Claire Tomlin"
+          ],
+          "date": "2026-10-27",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.37652",
+            "project": "https://ian-chuang.github.io/dexsafe/"
+          },
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Sim-to-real",
+            "In-hand manipulation",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Trains object-specific pose-reaching policies in simulation, distills deployable students and adds a tunable residual filter to reduce drops on a real LEAP hand.",
+          "tldr_zh": "仿真训练逐物体位姿到达策略，蒸馏为可部署学生，再用可调残差滤波减少真实LEAP手的掉落。",
+          "sensing": [
+            "OptiTrack object pose (state policy)",
+            "Wrist stereo depth (depth policy)",
+            "Joint positions and gravity direction"
+          ],
+          "hand": [
+            "16-DoF LEAP Hand"
+          ],
+          "task": [
+            "In-hand pose reaching",
+            "Object spinning"
+          ],
+          "method": [
+            "PPO with friction curriculum",
+            "Teacher–student DAgger",
+            "Residual safety filtering"
+          ],
+          "evaluation": "4,800 real goal windows overall. State policy (1,200 goals per condition): 95.2% to 91.5% coarse success; drops 16 to 4 with filtering.",
+          "notes_zh": "成功为10秒内任一步达2cm/0.4rad，无保持要求。逐物体训练且需系统辨识；未提供形式安全保证或触觉反馈。下游腕臂动作脚本化，滤波反而降低其成功率；代码待发布。"
+        }
+      }
     }
   ]
 }

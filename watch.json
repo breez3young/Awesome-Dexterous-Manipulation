@@ -1,20 +1,121 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-10-27T06:39:39Z",
+  "last_checked_at": "2026-10-28T07:12:27Z",
   "lookback_days": 7,
-  "window_start": "2026-10-20T06:39:39Z",
+  "window_start": "2026-10-21T07:12:27Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 56,
-  "recent_match_count": 31,
-  "new_candidate_count": 10,
-  "updated_candidate_count": 2,
+  "candidate_count": 60,
+  "recent_match_count": 27,
+  "new_candidate_count": 4,
+  "updated_candidate_count": 1,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2610.37652",
+      "title": "Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well",
+      "published": "2026-10-27T17:58:20Z",
+      "updated": "2026-10-27T17:58:20Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.37652",
+        "pdf": "https://arxiv.org/pdf/2610.37652"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation with multi-fingered hands is the next frontier of robotics, yet learned hand skills remain limited to simple grasps or basic …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.25459",
+      "title": "BiDex-100: A Comprehensive Benchmark for Bimanual Dexterous Manipulation Across 100+ Simulation Tasks",
+      "published": "2026-10-18T18:44:05Z",
+      "updated": "2026-10-27T12:34:31Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.25459",
+        "pdf": "https://arxiv.org/pdf/2610.25459"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… have developed benchmarks specifically tailored for dexterous manipulation, leaving the dexterous manipulation capabilities of existing models insufficiently characterized. In this paper, we …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.36789",
+      "title": "A fully articulated humanoid dexterous hand with human-level joint structure enabled by linkage-based actuation",
+      "published": "2026-10-27T07:53:51Z",
+      "updated": "2026-10-27T07:53:51Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.36789",
+        "pdf": "https://arxiv.org/pdf/2610.36789"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… load capacity and control simplicity, limiting dexterous manipulation in unstructured environments. Here we present Torch-Hand, a fully articulated humanoid dexterous hand that …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.36539",
+      "title": "CARD: Contact-Anchored Retargeting for Dexterous Manipulation",
+      "published": "2026-10-27T02:51:20Z",
+      "updated": "2026-10-27T02:51:20Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.36539",
+        "pdf": "https://arxiv.org/pdf/2610.36539"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… We present CARD: Contact-Anchored Retargeting for Dexterous Manipulation, a simulator and object-free framework that retargets human demonstrations to robot actions by explicitly …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2606.30749",
+      "title": "From Grasps to Dexterity: Large-Scale Grasp Pretraining for Dexterous Manipulation",
+      "published": "2026-06-29T18:00:22Z",
+      "updated": "2026-10-26T21:08:17Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.30749",
+        "pdf": "https://arxiv.org/pdf/2606.30749"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… as scalable pretraining data for contact-rich dexterous manipulation. Videos are shown on https://yingyuan0414.github.io/grasp2dexterity/ ."
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2602.13444",
       "title": "FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation",
@@ -723,26 +824,6 @@
         {
           "source": "abstract",
           "text": "… manipulation, providing an important foundation for dexterous, closed-loop force control. Among various tactile sensing techniques, magnetic tactile sensors stand out thanks to …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2610.25459",
-      "title": "BiDex-100: A Comprehensive Benchmark for Bimanual Dexterous Manipulation Across 100+ Simulation Tasks",
-      "published": "2026-10-18T18:44:05Z",
-      "updated": "2026-10-18T18:44:05Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.25459",
-        "pdf": "https://arxiv.org/pdf/2610.25459"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… have developed benchmarks specifically tailored for dexterous manipulation, leaving the dexterous manipulation capabilities of existing models insufficiently characterized. In this paper, we …"
         }
       ],
       "review_status": "pending"

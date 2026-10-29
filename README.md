@@ -55,12 +55,12 @@ Each paper has one primary area. Tags add five complementary views: **Policy & l
 
 ## At a glance
 
-<p align="center"><b>163 papers</b> · <b>29 tactile dexterity papers</b> · <b>48 code links</b> · 6 research areas · <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/">browse the collection</a></p>
+<p align="center"><b>167 papers</b> · <b>30 tactile dexterity papers</b> · <b>49 code links</b> · 6 research areas · <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/">browse the collection</a></p>
 
 | Research area | Papers |
 |:--|--:|
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Dexterous%20Manipulation">Dexterous Manipulation</a> | 96 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Dexterous%20Manipulation">Tactile Dexterous Manipulation</a> | 29 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Dexterous%20Manipulation">Dexterous Manipulation</a> | 99 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Dexterous%20Manipulation">Tactile Dexterous Manipulation</a> | 30 |
 | <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Sensing%20%26%20Representation">Tactile Sensing &amp; Representation</a> | 20 |
 | <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Hand%E2%80%93Object%20Interaction">Hand–Object Interaction</a> | 10 |
 | <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Grasp%20Synthesis">Grasp Synthesis</a> | 2 |
@@ -88,14 +88,14 @@ The most recent first releases in the curated catalog. Dates below are publicati
 
 | First released | Paper | Research area | Resources |
 |:--|:--|:--|:--|
+| 2026-10-27 | <b>CARD: Contact-Anchored Retargeting for Dexterous Manipulation</b> | Tactile Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.36539">Paper</a> · <a href="https://card-retargeting.github.io/">Project</a> |
+| 2026-10-27 | <b>A fully articulated humanoid dexterous hand with human-level joint structure enabled by linkage-based actuation</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.36789">Paper</a> |
+| 2026-10-27 | <b>Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.37652">Paper</a> · <a href="https://ian-chuang.github.io/dexsafe/">Project</a> |
 | 2026-10-26 | <b>The Language of Deformation: Semantic Failure Analysis as a Prerequisite for Dexterous Manipulation of Deformable Objects</b> | Tactile Sensing &amp; Representation | <a href="https://arxiv.org/abs/2610.35103">Paper</a> |
 | 2026-10-26 | <b>DEX-PHD: A Dexterous Portable Handheld Device for Multimodal Data Collection</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.35462">Paper</a> |
 | 2026-10-25 | <b>Scaling Dexterous Manipulation via Action Representation Pretraining</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.34453">Paper</a> · <a href="https://arpg-project.github.io/">Project</a> |
 | 2026-10-24 | <b>MDPO: Multi-constraint Dexterous Policy Optimization with Reinforcement Learning</b> | Policy Optimization | <a href="https://arxiv.org/abs/2610.33480">Paper</a> |
 | 2026-10-24 | <b>Learning Dexterous Manipulation: Hands, Simulators, Training, and Evaluation</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.33486">Paper</a> |
-| 2026-10-24 | <b>RBGA: Residual-Budget Guide Arbitration for Offline-to-Online Safe Reinforcement Learning in Dexterous Manipulation</b> | Policy Optimization | <a href="https://arxiv.org/abs/2610.33494">Paper</a> |
-| 2026-10-24 | <b>AdaDexTrack: Dynamic Modulation for Adaptive and Generalizable Dexterous Manipulation Tracking</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.33852">Paper</a> · <a href="https://janebek.github.io/AdaDexTrack/">Project</a> · <a href="https://github.com/Janebek/AdaDexTrack">Code</a> |
-| 2026-10-23 | <b>DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.32969">Paper</a> · <a href="https://amberxie88.github.io/dexport/">Project</a> |
 
 [View the full catalog](https://breez3young.github.io/Awesome-Dexterous-Manipulation/) for summaries, evaluation context, and combinations of learning, sensing, and task tags.
 <!-- END GENERATED CATALOG -->

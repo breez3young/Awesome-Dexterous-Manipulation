@@ -1,8 +1,160 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-27T06:39:39Z",
+  "updated_at": "2026-10-28T07:12:27Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2610.37652",
+      "title": "Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well",
+      "authors": [
+        "Ian Chuang",
+        "Hiya Shah",
+        "Vamsi Chilamkur",
+        "Iman Soltani",
+        "Claire Tomlin"
+      ],
+      "published": "2026-10-27T17:58:20Z",
+      "updated": "2026-10-27T17:58:20Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.37652",
+        "pdf": "https://arxiv.org/pdf/2610.37652"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation with multi-fingered hands is the next frontier of robotics, yet learned hand skills remain limited to simple grasps or basic …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-28T07:12:27Z",
+      "last_seen": "2026-10-28T07:12:27Z"
+    },
+    {
+      "id": "2610.25459",
+      "title": "BiDex-100: A Comprehensive Benchmark for Bimanual Dexterous Manipulation Across 100+ Simulation Tasks",
+      "authors": [
+        "Yong Wang",
+        "Kecheng Zheng",
+        "Xing Zhu",
+        "Chao Xu",
+        "Yujun Shen",
+        "Shengze Cai"
+      ],
+      "published": "2026-10-18T18:44:05Z",
+      "updated": "2026-10-27T12:34:31Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.25459",
+        "pdf": "https://arxiv.org/pdf/2610.25459"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… have developed benchmarks specifically tailored for dexterous manipulation, leaving the dexterous manipulation capabilities of existing models insufficiently characterized. In this paper, we …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-28T07:12:27Z"
+    },
+    {
+      "id": "2610.36789",
+      "title": "A fully articulated humanoid dexterous hand with human-level joint structure enabled by linkage-based actuation",
+      "authors": [
+        "Jihao Li",
+        "Jianguo Wang",
+        "Haotian Guo",
+        "Yanzhe Wang",
+        "Guodong Lu",
+        "Huixu Dong"
+      ],
+      "published": "2026-10-27T07:53:51Z",
+      "updated": "2026-10-27T07:53:51Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.36789",
+        "pdf": "https://arxiv.org/pdf/2610.36789"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… load capacity and control simplicity, limiting dexterous manipulation in unstructured environments. Here we present Torch-Hand, a fully articulated humanoid dexterous hand that …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-28T07:12:27Z",
+      "last_seen": "2026-10-28T07:12:27Z"
+    },
+    {
+      "id": "2610.36539",
+      "title": "CARD: Contact-Anchored Retargeting for Dexterous Manipulation",
+      "authors": [
+        "Cunxi Dai",
+        "Botao He",
+        "Francois R Hogan",
+        "Wei Pan",
+        "Rao Fu",
+        "Wen-Han Hsieh",
+        "Ruoshi Liu",
+        "Jitendra Malik",
+        "Guanya Shi",
+        "Akash Sharma"
+      ],
+      "published": "2026-10-27T02:51:20Z",
+      "updated": "2026-10-27T02:51:20Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.36539",
+        "pdf": "https://arxiv.org/pdf/2610.36539"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… We present CARD: Contact-Anchored Retargeting for Dexterous Manipulation, a simulator and object-free framework that retargets human demonstrations to robot actions by explicitly …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-28T07:12:27Z",
+      "last_seen": "2026-10-28T07:12:27Z"
+    },
+    {
+      "id": "2606.30749",
+      "title": "From Grasps to Dexterity: Large-Scale Grasp Pretraining for Dexterous Manipulation",
+      "authors": [
+        "Ying Yuan",
+        "Xinyu Liu",
+        "Sriram Krishna",
+        "David Held"
+      ],
+      "published": "2026-06-29T18:00:22Z",
+      "updated": "2026-10-26T21:08:17Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.30749",
+        "pdf": "https://arxiv.org/pdf/2606.30749"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… as scalable pretraining data for contact-rich dexterous manipulation. Videos are shown on https://yingyuan0414.github.io/grasp2dexterity/ ."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-28T07:12:27Z",
+      "last_seen": "2026-10-28T07:12:27Z"
+    },
     {
       "id": "2602.13444",
       "title": "FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation",
@@ -32,7 +184,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.35462",
@@ -61,7 +213,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.35103",
@@ -89,7 +241,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.22340",
@@ -119,7 +271,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.23438",
@@ -148,7 +300,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.34453",
@@ -180,7 +332,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2605.01434",
@@ -211,7 +363,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.33852",
@@ -240,7 +392,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.33494",
@@ -274,7 +426,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.33486",
@@ -299,7 +451,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.33480",
@@ -331,7 +483,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.33241",
@@ -358,7 +510,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.32969",
@@ -388,7 +540,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-26T06:46:42Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.31845",
@@ -422,7 +574,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-26T06:46:42Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.31299",
@@ -451,7 +603,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-23T06:22:00Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.30781",
@@ -480,7 +632,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-23T06:22:00Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.22363",
@@ -518,7 +670,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2608.10383",
@@ -550,7 +702,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-23T06:22:00Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.30438",
@@ -578,7 +730,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-23T06:22:00Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2607.07968",
@@ -605,7 +757,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.26854",
@@ -641,7 +793,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2502.15037",
@@ -674,7 +826,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-22T06:27:05Z",
-      "last_seen": "2026-10-27T06:39:39Z"
+      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.25961",
@@ -1148,36 +1300,6 @@
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
       "last_seen": "2026-10-26T06:46:42Z"
-    },
-    {
-      "id": "2610.25459",
-      "title": "BiDex-100: A Comprehensive Benchmark for Bimanual Dexterous Manipulation Across 100+ Simulation Tasks",
-      "authors": [
-        "Yong Wang",
-        "Kecheng Zheng",
-        "Xing Zhu",
-        "Chao Xu",
-        "Yujun Shen",
-        "Shengze Cai"
-      ],
-      "published": "2026-10-18T18:44:05Z",
-      "updated": "2026-10-18T18:44:05Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.25459",
-        "pdf": "https://arxiv.org/pdf/2610.25459"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… have developed benchmarks specifically tailored for dexterous manipulation, leaving the dexterous manipulation capabilities of existing models insufficiently characterized. In this paper, we …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-25T06:36:16Z"
     },
     {
       "id": "2610.24392",
