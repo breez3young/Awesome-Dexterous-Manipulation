@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-10-29",
+  "updated": "2026-10-31",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -10267,6 +10267,522 @@
       "sources": [
         "https://arxiv.org/html/2610.37652v1",
         "https://ian-chuang.github.io/dexsafe/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.37799",
+      "title": "DexSuite: An All-in-One Framework for Dexterous Manipulation Across Arms, Hands, and Tasks",
+      "authors": [
+        "Anas Houssaini",
+        "Hugo He",
+        "Junming Shi",
+        "Amin Abyaneh",
+        "Ricardo Chahine",
+        "Shuo Wen",
+        "Mohamad H. Danesh",
+        "Charles-Étienne Fréchette",
+        "Mariana Sosa Guzman",
+        "Mathias Desrochers",
+        "Rayan Houssaini",
+        "Adam Landa",
+        "Theophile Soulie",
+        "Charlotte Morissette",
+        "Annie Tims",
+        "Martino Russi",
+        "Jonathan Lussier",
+        "Gregory Dudek",
+        "Doina Precup",
+        "Julen Urain",
+        "Hsiu-Chin Lin",
+        "David Meger"
+      ],
+      "date": "2026-10-27",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.37799",
+        "project": "https://dexsuiteorg.github.io/"
+      },
+      "tags": [
+        "Imitation learning",
+        "Diffusion / flow policy",
+        "Teleoperation",
+        "Dexterous grasping",
+        "Tool use",
+        "Long-horizon tasks",
+        "Articulated objects",
+        "Vision",
+        "Proprioception",
+        "Dataset / benchmark"
+      ],
+      "tldr": "Combines modular arm–hand simulation, teleoperation and shared task definitions; a 16-pair benchmark and mixed-source dataset expose difficult sequential and finger-level manipulation.",
+      "tldr_zh": "整合模块化臂手仿真、遥操作与统一任务定义，以16种任务—具身组合及混合来源数据评测连续接触和手指操作。",
+      "sensing": [
+        "Simulated RGB cameras",
+        "Simulated proprioception / object state",
+        "Simulated tactile arrays (dataset configurations)"
+      ],
+      "hand": [
+        "Allegro Hand",
+        "SHARPA Wave",
+        "Robotiq / UMI grippers (comparison)"
+      ],
+      "task": [
+        "Grasp and place",
+        "Sequential object manipulation",
+        "Tool alignment",
+        "Articulated-object interaction"
+      ],
+      "method": [
+        "Genesis environment abstraction",
+        "Teleoperation / scripted / learned demonstration collection",
+        "Imitation-learning benchmark"
+      ],
+      "evaluation": "Simulation: 16 task–embodiment pairs; selected checkpoints evaluated on 3 new seeds × 50 episodes.",
+      "notes_zh": "4,700条轨迹含700条人工、1,200条脚本、2,800条策略生成。跨具身比较不等于同一策略迁移；无实机或真实触觉部署。代码仍待发布。",
+      "arxiv_id": "2610.37799",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-27T18:21:34Z",
+      "source_url": "https://arxiv.org/abs/2610.37799v1",
+      "sources": [
+        "https://arxiv.org/html/2610.37799v1",
+        "https://dexsuiteorg.github.io/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.37865",
+      "title": "Echo: Scaling Visual Reinforcement Learning with Off-policy Experience",
+      "authors": [
+        "Gagan Khandate"
+      ],
+      "date": "2026-10-27",
+      "year": 2026,
+      "category": "Policy Optimization",
+      "scope": "adjacent",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.37865"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "In-hand manipulation",
+        "Vision"
+      ],
+      "tldr": "A state-based imitator collects unrendered experience for a shared critic, accelerating visual RL; evaluated on simulated Allegro and Shadow cube reorientation.",
+      "tldr_zh": "用状态模仿器收集无需渲染的经验，经共享价值网络改进视觉策略；在Allegro与Shadow手的方块重定向仿真中验证。",
+      "sensing": [
+        "84×84 RGB (simulation)"
+      ],
+      "hand": [
+        "Allegro Hand (simulation)",
+        "Shadow Hand (simulation)"
+      ],
+      "task": [
+        "In-hand cube reorientation"
+      ],
+      "method": [
+        "FastTD3",
+        "Inverse distillation",
+        "Shared privileged critic"
+      ],
+      "evaluation": "Genesis: three seeds, 64 evaluation episodes; mean time-to-reference reduction across two hand tasks 56%, peak mean-return gain 12% versus SDPG.",
+      "notes_zh": "初步仿真研究；回报增益不是成功率。比较包含架构与训练设置差异，未隔离辅助经验贡献；计时排除评测且每GPU并行三次训练。触觉与VLA扩展仅为未来工作。",
+      "arxiv_id": "2610.37865",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-27T19:11:05Z",
+      "source_url": "https://arxiv.org/abs/2610.37865v1",
+      "sources": [
+        "https://arxiv.org/html/2610.37865v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.39076",
+      "title": "Tactus: Tactile & Pose Sensing Glove for Natural Dexterity Data Collection",
+      "authors": [
+        "Li Guan",
+        "Rachael Granberry",
+        "Sahar Aseeri",
+        "Sahar Rostami",
+        "Taylor Niehues",
+        "Sai Dhanooshi Marri",
+        "Mia Huang",
+        "Dingtian Zhang",
+        "Ziyi Kou",
+        "Jason Pursel",
+        "Eric Whitmire",
+        "Vatsal Mehta",
+        "Ashish Deshpande",
+        "Tristan Trutna",
+        "Reed Belcher",
+        "Emelia Black",
+        "Julian Blake",
+        "Roger Boldu",
+        "Sean Bonaventure",
+        "Einar Boyovich",
+        "Jordan Brennan",
+        "Elizabeth Casillas",
+        "David Christensen",
+        "Tyler Christensen",
+        "Nicholas Colonnese",
+        "Stuart Dealey",
+        "Gaige DeHaven",
+        "Katie Doran",
+        "Chris Doughty",
+        "Robert Drury",
+        "Silvia Espino",
+        "Gabriel Geyne",
+        "Beth Goodrich",
+        "Kyra Gould",
+        "Joe Grisso",
+        "Susana Guerrero",
+        "Andrew Gwozdziowski",
+        "Monica Ha",
+        "Ehsan Hajiesmaili",
+        "Kate Healy",
+        "Rose Hope",
+        "Michael Hurst",
+        "Claire Ikemiya",
+        "Daisy Isibor",
+        "Rick James",
+        "Yashasvi Joginapally",
+        "Samuel Johnson",
+        "Tyler Jorgensen",
+        "Kristy Jost",
+        "Ben Kamath",
+        "Slava Karulin",
+        "Alexander Keener",
+        "Woo Kim",
+        "Alison Krauskopf",
+        "Ankit Kumar",
+        "Joshua Lang",
+        "Lizzy Li",
+        "Cameron Lynch",
+        "Daniel Ma",
+        "Hector Martinon",
+        "Christina Matos",
+        "Keagan McCurdy",
+        "Lee Mincey",
+        "Stuart Nezlek",
+        "Tiffany Nguyen",
+        "James O'Hara",
+        "Jason Osborne",
+        "Jacky Pai",
+        "Roham Pardakhtim",
+        "David Perek",
+        "Alexandre Poulin",
+        "Nick Raines",
+        "Salwa Rasheed",
+        "Leah Resneck",
+        "Kevin Rhodes",
+        "Ergys Ristani",
+        "Douglas Roberts",
+        "Anik Sarker",
+        "Harrison Scarborough",
+        "Jonas Schmidtler",
+        "Brian Shieh",
+        "Benjamin Shuman",
+        "Garrett Simard",
+        "Forrest Smith",
+        "Udara Somarathna",
+        "Eliot Sosin",
+        "Jonathan Stewart",
+        "Kristine Strom",
+        "Adam Swett",
+        "Hal Talbot-Mantooth",
+        "Julia Tanner",
+        "Sai Sharan Thirunagari",
+        "Curtis Torrey",
+        "Simge Uzun",
+        "Eileen Wachs",
+        "Rylan Wasson",
+        "Henry Wei",
+        "Jesse White",
+        "Beau Woodbyrne",
+        "Antonio Woods",
+        "Noah Young",
+        "Chandler Yount",
+        "Joseph Zhang",
+        "Sean Keller"
+      ],
+      "date": "2026-10-29",
+      "year": 2026,
+      "category": "Tactile Sensing & Representation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.39076"
+      },
+      "tags": [
+        "Hardware / sensor",
+        "Dataset / benchmark",
+        "Vision"
+      ],
+      "tldr": "A calibrated textile glove combines contact sensing and visual-inertial hand tracking for natural manipulation capture, evaluated through human studies and sensing benchmarks.",
+      "tldr_zh": "将标定触觉与视觉惯性手部跟踪集成到织物手套，通过人体实验和感知基准验证示教采集能力。",
+      "sensing": [
+        "Capacitive normal-pressure sensing",
+        "16 IMUs",
+        "Egocentric vision"
+      ],
+      "hand": [
+        "Human hand (Tactus glove)"
+      ],
+      "task": [
+        "Manipulation data capture",
+        "Surface classification",
+        "Slip detection"
+      ],
+      "method": [
+        "Session-specific force calibration",
+        "Visual-inertial fusion"
+      ],
+      "evaluation": "Force benchmark: 0.59 N minimum detectable force at 95% confidence; offline wrist-aligned fingertip error: 11.0 mm.",
+      "notes_zh": "为人手采集与离线感知验证；无机器人触觉闭环。11mm不代表实时绝对定位误差；滑移结果仅单次划分，法向压力并非直接剪切力测量。",
+      "arxiv_id": "2610.39076",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-29T00:10:55Z",
+      "source_url": "https://arxiv.org/abs/2610.39076v1",
+      "sources": [
+        "https://arxiv.org/html/2610.39076v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.39582",
+      "title": "Kinematic-Tactile Aligned Dexterous Retargeting with Contact Wrench Space Alignment",
+      "authors": [
+        "Xinyuan He",
+        "Ziheng Xu",
+        "Yueyuan Chen",
+        "Yufan Ye",
+        "Yuanshuo Tan",
+        "Huiming Pan",
+        "Jianjun Meng",
+        "Shuo Jiang",
+        "Peter B. Shull"
+      ],
+      "date": "2026-10-29",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.39582"
+      },
+      "tags": [
+        "Human motion transfer",
+        "Retargeting",
+        "Cross-embodiment",
+        "Dexterous grasping"
+      ],
+      "tldr": "Transfers human contact-wrench support into position offsets for dexterous trajectory replay; Sharpa Wave pouring succeeds in 58 of 60 trials across three payloads.",
+      "tldr_zh": "把人类接触力旋量支撑转为关节位置修正，Sharpa Wave在三种载荷的倾倒回放中成功58/60次。",
+      "sensing": [
+        "Motion capture and tactile glove (demonstrations)",
+        "Robot fingertip force (evaluation only)"
+      ],
+      "hand": [
+        "Sharpa Wave"
+      ],
+      "task": [
+        "Paper-cup pouring"
+      ],
+      "method": [
+        "Contact alignment in MuJoCo",
+        "Wrench-support optimization",
+        "Offline joint-trajectory replay"
+      ],
+      "evaluation": "Real robot: 58/60 successes versus 48/60 for DexPilot with preload; three payloads, 20 trials each.",
+      "notes_zh": "UR7e机械臂另行示教；场景位置固定，回放降至0.2倍速且无在线策略修正。仅一类倾倒任务；不把力目标或评测触觉当成反馈控制。",
+      "arxiv_id": "2610.39582",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-29T08:23:58Z",
+      "source_url": "https://arxiv.org/abs/2610.39582v1",
+      "sources": [
+        "https://arxiv.org/html/2610.39582v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.40109",
+      "title": "Coupled Guidance for Flow Matching",
+      "authors": [
+        "Mateo Clémente",
+        "Léo Maxime Brunswic",
+        "Rui Heng Yang",
+        "Amir Rasouli"
+      ],
+      "date": "2026-10-29",
+      "year": 2026,
+      "category": "Policy Optimization",
+      "scope": "adjacent",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40109"
+      },
+      "tags": [
+        "Imitation learning",
+        "Diffusion / flow policy",
+        "In-hand manipulation",
+        "Tool use",
+        "Articulated objects"
+      ],
+      "tldr": "Controls both latent and target endpoints during flow-matching guidance; sparse trajectory completion is evaluated on four simulated Adroit tasks.",
+      "tldr_zh": "同时调整流匹配的潜变量与目标端点，在四项Adroit仿真任务上提高稀疏轨迹引导的稳定性。",
+      "sensing": [
+        "Environment state and planner waypoints (simulation)"
+      ],
+      "hand": [
+        "Adroit hand (simulation)"
+      ],
+      "task": [
+        "Door opening",
+        "Pen reorientation",
+        "Hammering",
+        "Object relocation"
+      ],
+      "method": [
+        "Coupled flow-matching guidance",
+        "Hierarchical trajectory inpainting"
+      ],
+      "evaluation": "Adroit: 300 environment seeds per run; near fully guided performance at roughly 5% guided dimensions. Separate ManiSkill obstacle test: 81% versus naive guidance 36% over 256 seeds.",
+      "notes_zh": "机器人验证均为仿真；避障数值来自机械臂任务，不能视为灵巧手成功率。理论采用平滑性等假设，不提供任意接触系统安全保证。未核验到本论文项目或代码地址。",
+      "arxiv_id": "2610.40109",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-29T14:12:07Z",
+      "source_url": "https://arxiv.org/abs/2610.40109v1",
+      "sources": [
+        "https://arxiv.org/html/2610.40109v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.40210",
+      "title": "AcrossDEX 1.0: From Human Motion Pretraining to Bimanual Dexterous Manipulation across Hand Embodiments",
+      "authors": [
+        "Xiaoyu Yang",
+        "Nan Wu"
+      ],
+      "date": "2026-10-29",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40210"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Imitation learning",
+        "Diffusion / flow policy",
+        "Human motion transfer",
+        "Retargeting",
+        "Cross-embodiment",
+        "Bimanual coordination",
+        "Articulated objects",
+        "Vision"
+      ],
+      "tldr": "Transfers human motion prediction to separately trained Inspire and Allegro policies using shared wrist fields and robot-specific fingers; tests visual replanning on two simulated bimanual operations.",
+      "tldr_zh": "以共享腕部与独立手指字段连接人类运动预训练和各手型策略，在两类双手仿真操作中评测视觉重规划。",
+      "sensing": [
+        "Frontal RGB (simulation)",
+        "Issued-command history",
+        "Privileged simulator state / contacts (expert only)"
+      ],
+      "hand": [
+        "Inspire Hand (floating wrists, simulation)",
+        "Allegro Hand (floating wrists, simulation)"
+      ],
+      "task": [
+        "Bimanual lid opening and return",
+        "Closed-lid object reorientation"
+      ],
+      "method": [
+        "HOT3D motion pretraining",
+        "PPO expert demonstration collection",
+        "Embodiment-specific policy adaptation",
+        "Action-chunk continuity guidance"
+      ],
+      "evaluation": "Simulation, best selected runs: BC 40.6% opening/return; 100% Inspire and 93.3% Allegro reorientation.",
+      "notes_zh": "评测仅同一盒子与参考动作附近的小扰动，结果非多seed均值。各任务/手型独立微调；无实机、真实触觉或通用基座验证。指令历史不等于实测本体反馈，推理暂停不验证实时延迟。",
+      "arxiv_id": "2610.40210",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-29T14:56:30Z",
+      "source_url": "https://arxiv.org/abs/2610.40210v1",
+      "sources": [
+        "https://arxiv.org/html/2610.40210v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2610.40349",
+      "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
+      "authors": [
+        "Haozhe Zhang",
+        "Gu Zhang",
+        "Zirui Zou",
+        "Yuzheng Chen",
+        "Jinlong Wu",
+        "Zixuan Hu",
+        "Jianke Zhang",
+        "Yucheng Hu",
+        "Zhecheng Yuan",
+        "Huazhe Xu"
+      ],
+      "date": "2026-10-29",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40349",
+        "project": "https://touchbridge2026.github.io/"
+      },
+      "tags": [
+        "Imitation learning",
+        "Vision-language-action",
+        "Human motion transfer",
+        "Retargeting",
+        "Cross-embodiment",
+        "Bimanual coordination",
+        "Dexterous grasping",
+        "Articulated objects",
+        "Vision"
+      ],
+      "tldr": "Converts human demonstrations through tactile-informed retargeting and robot-view synthesis, then fine-tunes GR00T; four real tasks reach 72.5% mean success without tactile policy inputs.",
+      "tldr_zh": "通过人类触觉重定向与机器人视角合成转换示教，微调GR00T后在四项实机任务达到72.5%平均成功率；策略不输入触觉。",
+      "sensing": [
+        "Multi-view RGB (policy)",
+        "Human fingertip tactile and hand motion (retargeting only)"
+      ],
+      "hand": [
+        "Wuji Hands on Moz1 bimanual robot"
+      ],
+      "task": [
+        "Bulb screwing",
+        "Sauce application",
+        "Fragile-object grasping",
+        "Page flipping"
+      ],
+      "method": [
+        "Contact-patch and graph retargeting",
+        "Robot-view synthesis",
+        "GR00T N1.7 fine-tuning"
+      ],
+      "evaluation": "Real robot: four tasks, 20 trials per task; 72.5% mean success versus 77.5% with equal-count robot demonstrations.",
+      "notes_zh": "触觉用于离线示教转换，非运行时触觉反馈；每任务微调60条数据，未证明统一跨任务基座。代码尚未发布。",
+      "arxiv_id": "2610.40349",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-10-29T16:06:36Z",
+      "source_url": "https://arxiv.org/abs/2610.40349v1",
+      "sources": [
+        "https://arxiv.org/html/2610.40349v1",
+        "https://touchbridge2026.github.io/"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"

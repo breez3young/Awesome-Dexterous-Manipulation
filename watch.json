@@ -1,20 +1,184 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-10-28T07:12:27Z",
+  "last_checked_at": "2026-10-31T07:23:31Z",
   "lookback_days": 7,
-  "window_start": "2026-10-21T07:12:27Z",
+  "window_start": "2026-10-24T07:23:31Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 60,
-  "recent_match_count": 27,
-  "new_candidate_count": 4,
-  "updated_candidate_count": 1,
+  "candidate_count": 68,
+  "recent_match_count": 21,
+  "new_candidate_count": 0,
+  "updated_candidate_count": 0,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2610.40349",
+      "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
+      "published": "2026-10-29T16:06:36Z",
+      "updated": "2026-10-29T16:06:36Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40349",
+        "pdf": "https://arxiv.org/pdf/2610.40349"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… and scalable source of data for dexterous robot manipulation, but differences in sensing and hand morphology complicate the transfer of contact-rich interactions. …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.40210",
+      "title": "AcrossDEX 1.0: From Human Motion Pretraining to Bimanual Dexterous Manipulation across Hand Embodiments",
+      "published": "2026-10-29T14:56:30Z",
+      "updated": "2026-10-29T14:56:30Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40210",
+        "pdf": "https://arxiv.org/pdf/2610.40210"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Bimanual dexterous manipulation requires continuous coordination of wrist motion, finger contact, and object motion. Human videos provide rich manipulation experience. Using this …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.40109",
+      "title": "Coupled Guidance for Flow Matching",
+      "published": "2026-10-29T14:12:07Z",
+      "updated": "2026-10-29T14:12:07Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40109",
+        "pdf": "https://arxiv.org/pdf/2610.40109"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… avoidance task using ManiSkill3, four robotic dexterous manipulation tasks from the Adroit benchmark, and three image generation tasks, namely inpainting, super-resolution, and …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.39975",
+      "title": "Mastering Multi-State Dynamics: Continuum Damage and Viscoplastic MPM for RL-Based Dexterous Manipulation",
+      "published": "2026-10-29T13:05:28Z",
+      "updated": "2026-10-29T13:05:28Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.39975",
+        "pdf": "https://arxiv.org/pdf/2610.39975"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "title",
+          "text": "… Damage and Viscoplastic MPM for RL-Based Dexterous Manipulation"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.39582",
+      "title": "Kinematic-Tactile Aligned Dexterous Retargeting with Contact Wrench Space Alignment",
+      "published": "2026-10-29T08:23:58Z",
+      "updated": "2026-10-29T08:23:58Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.39582",
+        "pdf": "https://arxiv.org/pdf/2610.39582"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… scalable source of data for learning dexterous manipulation policies. However, existing retargeting methods primarily transfer human kinematics, while the tactile information underlying …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.39076",
+      "title": "Tactus: Tactile & Pose Sensing Glove for Natural Dexterity Data Collection",
+      "published": "2026-10-29T00:10:55Z",
+      "updated": "2026-10-29T00:10:55Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.39076",
+        "pdf": "https://arxiv.org/pdf/2610.39076"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… hand pose is essential for robot dexterous manipulation policy and foundational world model learning - yet no existing wearable platform provides both …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.37865",
+      "title": "Echo: Scaling Visual Reinforcement Learning with Off-policy Experience",
+      "published": "2026-10-27T19:11:05Z",
+      "updated": "2026-10-27T19:11:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.37865",
+        "pdf": "https://arxiv.org/pdf/2610.37865"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… three visual control tasks and two dexterous manipulation tasks in Genesis. Relative to \\sdpgmethod{} under the evaluated configurations, Echo reduces time to …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.37799",
+      "title": "DexSuite: An All-in-One Framework for Dexterous Manipulation Across Arms, Hands, and Tasks",
+      "published": "2026-10-27T18:21:34Z",
+      "updated": "2026-10-27T18:21:34Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.37799",
+        "pdf": "https://arxiv.org/pdf/2610.37799"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… frameworks cover the full workflow of dexterous manipulation, from setting up a robot to collecting dexterous demonstrations and evaluating policies. We present …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2610.37652",
       "title": "Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well",

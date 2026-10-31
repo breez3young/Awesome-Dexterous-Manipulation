@@ -1,8 +1,358 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-28T07:12:27Z",
+  "updated_at": "2026-10-31T07:23:31Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2610.40349",
+      "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
+      "authors": [
+        "Haozhe Zhang",
+        "Gu Zhang",
+        "Zirui Zou",
+        "Yuzheng Chen",
+        "Jinlong Wu",
+        "Zixuan Hu",
+        "Jianke Zhang",
+        "Yucheng Hu",
+        "Zhecheng Yuan",
+        "Huazhe Xu"
+      ],
+      "published": "2026-10-29T16:06:36Z",
+      "updated": "2026-10-29T16:06:36Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40349",
+        "pdf": "https://arxiv.org/pdf/2610.40349"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… and scalable source of data for dexterous robot manipulation, but differences in sensing and hand morphology complicate the transfer of contact-rich interactions. …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.40210",
+      "title": "AcrossDEX 1.0: From Human Motion Pretraining to Bimanual Dexterous Manipulation across Hand Embodiments",
+      "authors": [
+        "Xiaoyu Yang",
+        "Nan Wu"
+      ],
+      "published": "2026-10-29T14:56:30Z",
+      "updated": "2026-10-29T14:56:30Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40210",
+        "pdf": "https://arxiv.org/pdf/2610.40210"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Bimanual dexterous manipulation requires continuous coordination of wrist motion, finger contact, and object motion. Human videos provide rich manipulation experience. Using this …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.40109",
+      "title": "Coupled Guidance for Flow Matching",
+      "authors": [
+        "Mateo Clémente",
+        "Léo Maxime Brunswic",
+        "Rui Heng Yang",
+        "Amir Rasouli"
+      ],
+      "published": "2026-10-29T14:12:07Z",
+      "updated": "2026-10-29T14:12:07Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40109",
+        "pdf": "https://arxiv.org/pdf/2610.40109"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… avoidance task using ManiSkill3, four robotic dexterous manipulation tasks from the Adroit benchmark, and three image generation tasks, namely inpainting, super-resolution, and …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.39975",
+      "title": "Mastering Multi-State Dynamics: Continuum Damage and Viscoplastic MPM for RL-Based Dexterous Manipulation",
+      "authors": [
+        "Yusen Feng",
+        "Shangbo Luan"
+      ],
+      "published": "2026-10-29T13:05:28Z",
+      "updated": "2026-10-29T13:05:28Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.39975",
+        "pdf": "https://arxiv.org/pdf/2610.39975"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "title",
+          "text": "… Damage and Viscoplastic MPM for RL-Based Dexterous Manipulation"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.39582",
+      "title": "Kinematic-Tactile Aligned Dexterous Retargeting with Contact Wrench Space Alignment",
+      "authors": [
+        "Xinyuan He",
+        "Ziheng Xu",
+        "Yueyuan Chen",
+        "Yufan Ye",
+        "Yuanshuo Tan",
+        "Huiming Pan",
+        "Jianjun Meng",
+        "Shuo Jiang",
+        "Peter B. Shull"
+      ],
+      "published": "2026-10-29T08:23:58Z",
+      "updated": "2026-10-29T08:23:58Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.39582",
+        "pdf": "https://arxiv.org/pdf/2610.39582"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… scalable source of data for learning dexterous manipulation policies. However, existing retargeting methods primarily transfer human kinematics, while the tactile information underlying …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.39076",
+      "title": "Tactus: Tactile & Pose Sensing Glove for Natural Dexterity Data Collection",
+      "authors": [
+        "Li Guan",
+        "Rachael Granberry",
+        "Sahar Aseeri",
+        "Sahar Rostami",
+        "Taylor Niehues",
+        "Sai Dhanooshi Marri",
+        "Mia Huang",
+        "Dingtian Zhang",
+        "Ziyi Kou",
+        "Jason Pursel",
+        "Eric Whitmire",
+        "Vatsal Mehta",
+        "Ashish Deshpande",
+        "Tristan Trutna",
+        "Reed Belcher",
+        "Emelia Black",
+        "Julian Blake",
+        "Roger Boldu",
+        "Sean Bonaventure",
+        "Einar Boyovich",
+        "Jordan Brennan",
+        "Elizabeth Casillas",
+        "David Christensen",
+        "Tyler Christensen",
+        "Nicholas Colonnese",
+        "Stuart Dealey",
+        "Gaige DeHaven",
+        "Katie Doran",
+        "Chris Doughty",
+        "Robert Drury",
+        "Silvia Espino",
+        "Gabriel Geyne",
+        "Beth Goodrich",
+        "Kyra Gould",
+        "Joe Grisso",
+        "Susana Guerrero",
+        "Andrew Gwozdziowski",
+        "Monica Ha",
+        "Ehsan Hajiesmaili",
+        "Kate Healy",
+        "Rose Hope",
+        "Michael Hurst",
+        "Claire Ikemiya",
+        "Daisy Isibor",
+        "Rick James",
+        "Yashasvi Joginapally",
+        "Samuel Johnson",
+        "Tyler Jorgensen",
+        "Kristy Jost",
+        "Ben Kamath",
+        "Slava Karulin",
+        "Alexander Keener",
+        "Woo Kim",
+        "Alison Krauskopf",
+        "Ankit Kumar",
+        "Joshua Lang",
+        "Lizzy Li",
+        "Cameron Lynch",
+        "Daniel Ma",
+        "Hector Martinon",
+        "Christina Matos",
+        "Keagan McCurdy",
+        "Lee Mincey",
+        "Stuart Nezlek",
+        "Tiffany Nguyen",
+        "James O'Hara",
+        "Jason Osborne",
+        "Jacky Pai",
+        "Roham Pardakhtim",
+        "David Perek",
+        "Alexandre Poulin",
+        "Nick Raines",
+        "Salwa Rasheed",
+        "Leah Resneck",
+        "Kevin Rhodes",
+        "Ergys Ristani",
+        "Douglas Roberts",
+        "Anik Sarker",
+        "Harrison Scarborough",
+        "Jonas Schmidtler",
+        "Brian Shieh",
+        "Benjamin Shuman",
+        "Garrett Simard",
+        "Forrest Smith",
+        "Udara Somarathna",
+        "Eliot Sosin",
+        "Jonathan Stewart",
+        "Kristine Strom",
+        "Adam Swett",
+        "Hal Talbot-Mantooth",
+        "Julia Tanner",
+        "Sai Sharan Thirunagari",
+        "Curtis Torrey",
+        "Simge Uzun",
+        "Eileen Wachs",
+        "Rylan Wasson",
+        "Henry Wei",
+        "Jesse White",
+        "Beau Woodbyrne",
+        "Antonio Woods",
+        "Noah Young",
+        "Chandler Yount",
+        "Joseph Zhang",
+        "Sean Keller"
+      ],
+      "published": "2026-10-29T00:10:55Z",
+      "updated": "2026-10-29T00:10:55Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.39076",
+        "pdf": "https://arxiv.org/pdf/2610.39076"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… hand pose is essential for robot dexterous manipulation policy and foundational world model learning - yet no existing wearable platform provides both …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.37865",
+      "title": "Echo: Scaling Visual Reinforcement Learning with Off-policy Experience",
+      "authors": [
+        "Gagan Khandate"
+      ],
+      "published": "2026-10-27T19:11:05Z",
+      "updated": "2026-10-27T19:11:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.37865",
+        "pdf": "https://arxiv.org/pdf/2610.37865"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… three visual control tasks and two dexterous manipulation tasks in Genesis. Relative to \\sdpgmethod{} under the evaluated configurations, Echo reduces time to …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.37799",
+      "title": "DexSuite: An All-in-One Framework for Dexterous Manipulation Across Arms, Hands, and Tasks",
+      "authors": [
+        "Anas Houssaini",
+        "Hugo He",
+        "Junming Shi",
+        "Amin Abyaneh",
+        "Ricardo Chahine",
+        "Shuo Wen",
+        "Mohamad H. Danesh",
+        "Charles-Étienne Fréchette",
+        "Mariana Sosa Guzman",
+        "Mathias Desrochers",
+        "Rayan Houssaini",
+        "Adam Landa",
+        "Theophile Soulie",
+        "Charlotte Morissette",
+        "Annie Tims",
+        "Martino Russi",
+        "Jonathan Lussier",
+        "Gregory Dudek",
+        "Doina Precup",
+        "Julen Urain",
+        "Hsiu-Chin Lin",
+        "David Meger"
+      ],
+      "published": "2026-10-27T18:21:34Z",
+      "updated": "2026-10-27T18:21:34Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.37799",
+        "pdf": "https://arxiv.org/pdf/2610.37799"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… frameworks cover the full workflow of dexterous manipulation, from setting up a robot to collecting dexterous demonstrations and evaluating policies. We present …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
     {
       "id": "2610.37652",
       "title": "Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well",
@@ -30,7 +380,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-28T07:12:27Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-31T07:23:31Z"
     },
     {
       "id": "2610.25459",
@@ -60,7 +410,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-31T07:23:31Z"
     },
     {
       "id": "2610.36789",
@@ -90,7 +440,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-28T07:12:27Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-31T07:23:31Z"
     },
     {
       "id": "2610.36539",
@@ -125,7 +475,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-28T07:12:27Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-31T07:23:31Z"
     },
     {
       "id": "2606.30749",
@@ -153,7 +503,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-28T07:12:27Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-31T07:23:31Z"
     },
     {
       "id": "2602.13444",
@@ -184,7 +534,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-31T07:23:31Z"
     },
     {
       "id": "2610.35462",
@@ -213,7 +563,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-31T07:23:31Z"
     },
     {
       "id": "2610.35103",
@@ -241,7 +591,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-31T07:23:31Z"
     },
     {
       "id": "2610.22340",
@@ -271,7 +621,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-31T07:23:31Z"
     },
     {
       "id": "2610.23438",
@@ -300,7 +650,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-31T07:23:31Z"
     },
     {
       "id": "2610.34453",
@@ -332,7 +682,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-31T07:23:31Z"
     },
     {
       "id": "2605.01434",
@@ -363,7 +713,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-31T07:23:31Z"
     },
     {
       "id": "2610.33852",
@@ -392,7 +742,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-31T07:23:31Z"
     },
     {
       "id": "2610.33494",
@@ -426,7 +776,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-30T07:36:53Z"
     },
     {
       "id": "2610.33486",
@@ -451,7 +801,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-30T07:36:53Z"
     },
     {
       "id": "2610.33480",
@@ -483,7 +833,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-30T07:36:53Z"
     },
     {
       "id": "2610.33241",
@@ -510,7 +860,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-30T07:36:53Z"
     },
     {
       "id": "2610.32969",
@@ -540,7 +890,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-26T06:46:42Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-30T07:36:53Z"
     },
     {
       "id": "2610.31845",
@@ -574,7 +924,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-26T06:46:42Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-29T07:33:06Z"
     },
     {
       "id": "2610.31299",
@@ -603,7 +953,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-23T06:22:00Z",
-      "last_seen": "2026-10-28T07:12:27Z"
+      "last_seen": "2026-10-29T07:33:06Z"
     },
     {
       "id": "2610.30781",
