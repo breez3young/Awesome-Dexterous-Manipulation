@@ -1,32 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-14T06:33:56Z",
+  "updated_at": "2026-10-31T07:23:31Z",
   "rejected_ids": [],
   "items": [
     {
-      "id": "2610.18872",
-      "title": "EgoExplorer: A Vision-Motion-Touch Observatory for Human Loco-Manipulation In Situ",
+      "id": "2610.40349",
+      "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
       "authors": [
-        "Yunsong Zhou",
-        "Xuekun Jiang",
-        "Haiqi Shen",
-        "Hangxu Liu",
-        "Chaojian Shi",
-        "Yujie Liu",
-        "Jingyuan Li",
-        "Haoran Yang",
-        "Jiafei Cao",
-        "Dongzhan Zhou",
-        "Dong Wang",
-        "Yao Mu",
-        "Chunhua Shen",
-        "Weinan Zhang"
+        "Haozhe Zhang",
+        "Gu Zhang",
+        "Zirui Zou",
+        "Yuzheng Chen",
+        "Jinlong Wu",
+        "Zixuan Hu",
+        "Jianke Zhang",
+        "Yucheng Hu",
+        "Zhecheng Yuan",
+        "Huazhe Xu"
       ],
-      "published": "2026-10-13T17:59:55Z",
-      "updated": "2026-10-13T17:59:55Z",
+      "published": "2026-10-29T16:06:36Z",
+      "updated": "2026-10-29T16:06:36Z",
       "links": {
-        "paper": "https://arxiv.org/abs/2610.18872",
-        "pdf": "https://arxiv.org/pdf/2610.18872"
+        "paper": "https://arxiv.org/abs/2610.40349",
+        "pdf": "https://arxiv.org/pdf/2610.40349"
       },
       "matched_topics": [
         "dexterous",
@@ -35,27 +31,1362 @@
       "evidence": [
         {
           "source": "abstract",
-          "text": "… baseline; matched evaluations also show gains in hand stability and contact estimation. Preliminary studies explore multimodal generation and conditioning alongside humanoid retargeting …"
+          "text": "… and scalable source of data for dexterous robot manipulation, but differences in sensing and hand morphology complicate the transfer of contact-rich interactions. …"
         }
       ],
       "review_status": "pending",
-      "first_seen": "2026-10-14T06:33:56Z",
-      "last_seen": "2026-10-14T06:33:56Z"
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
     },
     {
-      "id": "2602.15828",
-      "title": "Dex4D: Task-Agnostic Point Track Policy for Zero-Shot Dexterous Manipulation",
+      "id": "2610.40210",
+      "title": "AcrossDEX 1.0: From Human Motion Pretraining to Bimanual Dexterous Manipulation across Hand Embodiments",
+      "authors": [
+        "Xiaoyu Yang",
+        "Nan Wu"
+      ],
+      "published": "2026-10-29T14:56:30Z",
+      "updated": "2026-10-29T14:56:30Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40210",
+        "pdf": "https://arxiv.org/pdf/2610.40210"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Bimanual dexterous manipulation requires continuous coordination of wrist motion, finger contact, and object motion. Human videos provide rich manipulation experience. Using this …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.40109",
+      "title": "Coupled Guidance for Flow Matching",
+      "authors": [
+        "Mateo Clémente",
+        "Léo Maxime Brunswic",
+        "Rui Heng Yang",
+        "Amir Rasouli"
+      ],
+      "published": "2026-10-29T14:12:07Z",
+      "updated": "2026-10-29T14:12:07Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40109",
+        "pdf": "https://arxiv.org/pdf/2610.40109"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… avoidance task using ManiSkill3, four robotic dexterous manipulation tasks from the Adroit benchmark, and three image generation tasks, namely inpainting, super-resolution, and …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.39975",
+      "title": "Mastering Multi-State Dynamics: Continuum Damage and Viscoplastic MPM for RL-Based Dexterous Manipulation",
+      "authors": [
+        "Yusen Feng",
+        "Shangbo Luan"
+      ],
+      "published": "2026-10-29T13:05:28Z",
+      "updated": "2026-10-29T13:05:28Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.39975",
+        "pdf": "https://arxiv.org/pdf/2610.39975"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "title",
+          "text": "… Damage and Viscoplastic MPM for RL-Based Dexterous Manipulation"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.39582",
+      "title": "Kinematic-Tactile Aligned Dexterous Retargeting with Contact Wrench Space Alignment",
+      "authors": [
+        "Xinyuan He",
+        "Ziheng Xu",
+        "Yueyuan Chen",
+        "Yufan Ye",
+        "Yuanshuo Tan",
+        "Huiming Pan",
+        "Jianjun Meng",
+        "Shuo Jiang",
+        "Peter B. Shull"
+      ],
+      "published": "2026-10-29T08:23:58Z",
+      "updated": "2026-10-29T08:23:58Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.39582",
+        "pdf": "https://arxiv.org/pdf/2610.39582"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… scalable source of data for learning dexterous manipulation policies. However, existing retargeting methods primarily transfer human kinematics, while the tactile information underlying …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.39076",
+      "title": "Tactus: Tactile & Pose Sensing Glove for Natural Dexterity Data Collection",
+      "authors": [
+        "Li Guan",
+        "Rachael Granberry",
+        "Sahar Aseeri",
+        "Sahar Rostami",
+        "Taylor Niehues",
+        "Sai Dhanooshi Marri",
+        "Mia Huang",
+        "Dingtian Zhang",
+        "Ziyi Kou",
+        "Jason Pursel",
+        "Eric Whitmire",
+        "Vatsal Mehta",
+        "Ashish Deshpande",
+        "Tristan Trutna",
+        "Reed Belcher",
+        "Emelia Black",
+        "Julian Blake",
+        "Roger Boldu",
+        "Sean Bonaventure",
+        "Einar Boyovich",
+        "Jordan Brennan",
+        "Elizabeth Casillas",
+        "David Christensen",
+        "Tyler Christensen",
+        "Nicholas Colonnese",
+        "Stuart Dealey",
+        "Gaige DeHaven",
+        "Katie Doran",
+        "Chris Doughty",
+        "Robert Drury",
+        "Silvia Espino",
+        "Gabriel Geyne",
+        "Beth Goodrich",
+        "Kyra Gould",
+        "Joe Grisso",
+        "Susana Guerrero",
+        "Andrew Gwozdziowski",
+        "Monica Ha",
+        "Ehsan Hajiesmaili",
+        "Kate Healy",
+        "Rose Hope",
+        "Michael Hurst",
+        "Claire Ikemiya",
+        "Daisy Isibor",
+        "Rick James",
+        "Yashasvi Joginapally",
+        "Samuel Johnson",
+        "Tyler Jorgensen",
+        "Kristy Jost",
+        "Ben Kamath",
+        "Slava Karulin",
+        "Alexander Keener",
+        "Woo Kim",
+        "Alison Krauskopf",
+        "Ankit Kumar",
+        "Joshua Lang",
+        "Lizzy Li",
+        "Cameron Lynch",
+        "Daniel Ma",
+        "Hector Martinon",
+        "Christina Matos",
+        "Keagan McCurdy",
+        "Lee Mincey",
+        "Stuart Nezlek",
+        "Tiffany Nguyen",
+        "James O'Hara",
+        "Jason Osborne",
+        "Jacky Pai",
+        "Roham Pardakhtim",
+        "David Perek",
+        "Alexandre Poulin",
+        "Nick Raines",
+        "Salwa Rasheed",
+        "Leah Resneck",
+        "Kevin Rhodes",
+        "Ergys Ristani",
+        "Douglas Roberts",
+        "Anik Sarker",
+        "Harrison Scarborough",
+        "Jonas Schmidtler",
+        "Brian Shieh",
+        "Benjamin Shuman",
+        "Garrett Simard",
+        "Forrest Smith",
+        "Udara Somarathna",
+        "Eliot Sosin",
+        "Jonathan Stewart",
+        "Kristine Strom",
+        "Adam Swett",
+        "Hal Talbot-Mantooth",
+        "Julia Tanner",
+        "Sai Sharan Thirunagari",
+        "Curtis Torrey",
+        "Simge Uzun",
+        "Eileen Wachs",
+        "Rylan Wasson",
+        "Henry Wei",
+        "Jesse White",
+        "Beau Woodbyrne",
+        "Antonio Woods",
+        "Noah Young",
+        "Chandler Yount",
+        "Joseph Zhang",
+        "Sean Keller"
+      ],
+      "published": "2026-10-29T00:10:55Z",
+      "updated": "2026-10-29T00:10:55Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.39076",
+        "pdf": "https://arxiv.org/pdf/2610.39076"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… hand pose is essential for robot dexterous manipulation policy and foundational world model learning - yet no existing wearable platform provides both …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.37865",
+      "title": "Echo: Scaling Visual Reinforcement Learning with Off-policy Experience",
+      "authors": [
+        "Gagan Khandate"
+      ],
+      "published": "2026-10-27T19:11:05Z",
+      "updated": "2026-10-27T19:11:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.37865",
+        "pdf": "https://arxiv.org/pdf/2610.37865"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… three visual control tasks and two dexterous manipulation tasks in Genesis. Relative to \\sdpgmethod{} under the evaluated configurations, Echo reduces time to …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.37799",
+      "title": "DexSuite: An All-in-One Framework for Dexterous Manipulation Across Arms, Hands, and Tasks",
+      "authors": [
+        "Anas Houssaini",
+        "Hugo He",
+        "Junming Shi",
+        "Amin Abyaneh",
+        "Ricardo Chahine",
+        "Shuo Wen",
+        "Mohamad H. Danesh",
+        "Charles-Étienne Fréchette",
+        "Mariana Sosa Guzman",
+        "Mathias Desrochers",
+        "Rayan Houssaini",
+        "Adam Landa",
+        "Theophile Soulie",
+        "Charlotte Morissette",
+        "Annie Tims",
+        "Martino Russi",
+        "Jonathan Lussier",
+        "Gregory Dudek",
+        "Doina Precup",
+        "Julen Urain",
+        "Hsiu-Chin Lin",
+        "David Meger"
+      ],
+      "published": "2026-10-27T18:21:34Z",
+      "updated": "2026-10-27T18:21:34Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.37799",
+        "pdf": "https://arxiv.org/pdf/2610.37799"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… frameworks cover the full workflow of dexterous manipulation, from setting up a robot to collecting dexterous demonstrations and evaluating policies. We present …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.37652",
+      "title": "Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well",
+      "authors": [
+        "Ian Chuang",
+        "Hiya Shah",
+        "Vamsi Chilamkur",
+        "Iman Soltani",
+        "Claire Tomlin"
+      ],
+      "published": "2026-10-27T17:58:20Z",
+      "updated": "2026-10-27T17:58:20Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.37652",
+        "pdf": "https://arxiv.org/pdf/2610.37652"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation with multi-fingered hands is the next frontier of robotics, yet learned hand skills remain limited to simple grasps or basic …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-28T07:12:27Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.25459",
+      "title": "BiDex-100: A Comprehensive Benchmark for Bimanual Dexterous Manipulation Across 100+ Simulation Tasks",
+      "authors": [
+        "Yong Wang",
+        "Kecheng Zheng",
+        "Xing Zhu",
+        "Chao Xu",
+        "Yujun Shen",
+        "Shengze Cai"
+      ],
+      "published": "2026-10-18T18:44:05Z",
+      "updated": "2026-10-27T12:34:31Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.25459",
+        "pdf": "https://arxiv.org/pdf/2610.25459"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… have developed benchmarks specifically tailored for dexterous manipulation, leaving the dexterous manipulation capabilities of existing models insufficiently characterized. In this paper, we …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.36789",
+      "title": "A fully articulated humanoid dexterous hand with human-level joint structure enabled by linkage-based actuation",
+      "authors": [
+        "Jihao Li",
+        "Jianguo Wang",
+        "Haotian Guo",
+        "Yanzhe Wang",
+        "Guodong Lu",
+        "Huixu Dong"
+      ],
+      "published": "2026-10-27T07:53:51Z",
+      "updated": "2026-10-27T07:53:51Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.36789",
+        "pdf": "https://arxiv.org/pdf/2610.36789"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… load capacity and control simplicity, limiting dexterous manipulation in unstructured environments. Here we present Torch-Hand, a fully articulated humanoid dexterous hand that …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-28T07:12:27Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.36539",
+      "title": "CARD: Contact-Anchored Retargeting for Dexterous Manipulation",
+      "authors": [
+        "Cunxi Dai",
+        "Botao He",
+        "Francois R Hogan",
+        "Wei Pan",
+        "Rao Fu",
+        "Wen-Han Hsieh",
+        "Ruoshi Liu",
+        "Jitendra Malik",
+        "Guanya Shi",
+        "Akash Sharma"
+      ],
+      "published": "2026-10-27T02:51:20Z",
+      "updated": "2026-10-27T02:51:20Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.36539",
+        "pdf": "https://arxiv.org/pdf/2610.36539"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… We present CARD: Contact-Anchored Retargeting for Dexterous Manipulation, a simulator and object-free framework that retargets human demonstrations to robot actions by explicitly …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-28T07:12:27Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2606.30749",
+      "title": "From Grasps to Dexterity: Large-Scale Grasp Pretraining for Dexterous Manipulation",
+      "authors": [
+        "Ying Yuan",
+        "Xinyu Liu",
+        "Sriram Krishna",
+        "David Held"
+      ],
+      "published": "2026-06-29T18:00:22Z",
+      "updated": "2026-10-26T21:08:17Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.30749",
+        "pdf": "https://arxiv.org/pdf/2606.30749"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… as scalable pretraining data for contact-rich dexterous manipulation. Videos are shown on https://yingyuan0414.github.io/grasp2dexterity/ ."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-28T07:12:27Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2602.13444",
+      "title": "FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation",
+      "authors": [
+        "Huajian Zeng",
+        "Lingyun Chen",
+        "Jiaqi Yang",
+        "Yuantai Zhang",
+        "Fan Shi",
+        "Peidong Liu",
+        "Xingxing Zuo"
+      ],
+      "published": "2026-02-13T20:46:08Z",
+      "updated": "2026-10-26T14:08:55Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2602.13444",
+        "pdf": "https://arxiv.org/pdf/2602.13444"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… further demonstrate real-robot execution on four dexterous manipulation tasks, illustrating the feasibility of retargeting generated HOI representations to real-robot execution pipelines."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.35462",
+      "title": "DEX-PHD: A Dexterous Portable Handheld Device for Multimodal Data Collection",
+      "authors": [
+        "Jooyoung Hong",
+        "Noboru Myers",
+        "Obin Kwon",
+        "Yixian Yang",
+        "Joohyung Kim"
+      ],
+      "published": "2026-10-26T13:57:01Z",
+      "updated": "2026-10-26T13:57:01Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.35462",
+        "pdf": "https://arxiv.org/pdf/2610.35462"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… device that combines these advantages for dexterous manipulation by integrating a dexterous robot hand, continuous per-finger control, and multimodal logging. The system …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.35103",
+      "title": "The Language of Deformation: Semantic Failure Analysis as a Prerequisite for Dexterous Manipulation of Deformable Objects",
+      "authors": [
+        "Ignacio Cuiral-Zueco",
+        "David Hardman",
+        "Michele Pierallini",
+        "Erfan Shahriari"
+      ],
+      "published": "2026-10-26T09:43:41Z",
+      "updated": "2026-10-26T09:43:41Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.35103",
+        "pdf": "https://arxiv.org/pdf/2610.35103"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation of rigid objects has reached a level of maturity where grasp stability, control, and planning strategies are successfully applied in …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.22340",
+      "title": "PlayPolicy: Dexterity from Supervised Play",
+      "authors": [
+        "Botao He",
+        "Yiming Dou",
+        "Yiannis Aloimonos",
+        "Jitendra Malik",
+        "Akash Sharma",
+        "Ruoshi Liu"
+      ],
+      "published": "2026-10-15T17:55:50Z",
+      "updated": "2026-10-26T07:47:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.22340",
+        "pdf": "https://arxiv.org/pdf/2610.22340"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… the contact-rich experience needed to learn dexterous manipulation? We present PlayPolicy: Dexterity from supervised play (DSP), a framework in which a robot …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-16T06:12:26Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.23438",
+      "title": "No Eyes, No Problem: What Does Touch Contribute to Blind Baoding Ball Manipulation?",
+      "authors": [
+        "Ayush Deshmukh",
+        "Nalin Agarwal",
+        "Elle Miller",
+        "Sethu Vijayakumar"
+      ],
+      "published": "2026-10-16T13:22:03Z",
+      "updated": "2026-10-26T01:56:15Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.23438",
+        "pdf": "https://arxiv.org/pdf/2610.23438"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… a new benchmark for sustained tactile-driven dexterous manipulation on physical hardware."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-19T06:37:32Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.34453",
+      "title": "Scaling Dexterous Manipulation via Action Representation Pretraining",
+      "authors": [
+        "Yanjinghao Xu",
+        "Jiexin Zhang",
+        "Huan Zhao",
+        "Jianjia Mo",
+        "Zhenghao Yin",
+        "Dingkang Liang",
+        "Xiang Bai",
+        "Han Ding"
+      ],
+      "published": "2026-10-25T17:19:28Z",
+      "updated": "2026-10-25T17:19:28Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.34453",
+        "pdf": "https://arxiv.org/pdf/2610.34453"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… models, but action generation for complex dexterous manipulation remains constrained by the scarcity of robot demonstrations. Limited robot demonstrations must be used …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2605.01434",
+      "title": "High-Speed, Scalable Sensor Readout for Dexterous Robotic Hands via Shift-Register Multiplexing",
+      "authors": [
+        "Jaehoon Kim",
+        "Boshi An",
+        "Lazaros Christoforidis",
+        "Michail Papadakis",
+        "Victor Kartsch",
+        "Robert K. Katzschmann"
+      ],
+      "published": "2026-05-02T13:14:28Z",
+      "updated": "2026-10-25T15:41:13Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2605.01434",
+        "pdf": "https://arxiv.org/pdf/2605.01434"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… path toward sensorized robotic hands for dexterous manipulation."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.33852",
+      "title": "AdaDexTrack: Dynamic Modulation for Adaptive and Generalizable Dexterous Manipulation Tracking",
+      "authors": [
+        "Jianibieke Adalibieke",
+        "Qianwei Han",
+        "Xueyi Liu",
+        "Yuzhe Qin",
+        "Li Yi"
+      ],
+      "published": "2026-10-24T18:46:10Z",
+      "updated": "2026-10-24T18:46:10Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33852",
+        "pdf": "https://arxiv.org/pdf/2610.33852"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… a tracker-only variant. AdaDexTrack reframes language-conditioned dexterous manipulation as modulated tracking, replacing the open-loop, fixed-reference tracking with in-loop modulation that adjusts the …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-31T07:23:31Z"
+    },
+    {
+      "id": "2610.33494",
+      "title": "RBGA: Residual-Budget Guide Arbitration for Offline-to-Online Safe Reinforcement Learning in Dexterous Manipulation",
+      "authors": [
+        "Zongyou Yu",
+        "Ao Zhou",
+        "Xiongbo Shi",
+        "Jiayi Guan",
+        "Shihang Du",
+        "Xudong Zhang",
+        "Shangding Gu",
+        "Junqiao Zhao",
+        "Hanli Wang",
+        "Guang Chen"
+      ],
+      "published": "2026-10-24T06:52:11Z",
+      "updated": "2026-10-24T06:52:11Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33494",
+        "pdf": "https://arxiv.org/pdf/2610.33494"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation requires robots to leverage existing datasets for rapid skill acquisition while maintaining safety during real-world deployment to prevent damage to …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-30T07:36:53Z"
+    },
+    {
+      "id": "2610.33486",
+      "title": "Learning Dexterous Manipulation: Hands, Simulators, Training, and Evaluation",
+      "authors": [
+        "Luai Abuelsamen"
+      ],
+      "published": "2026-10-24T06:26:18Z",
+      "updated": "2026-10-24T06:26:18Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33486",
+        "pdf": "https://arxiv.org/pdf/2610.33486"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "A dexterous hand can change an object's pose without setting it down. This survey covers 113 learning-based methods that attempt it, the …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-30T07:36:53Z"
+    },
+    {
+      "id": "2610.33480",
+      "title": "MDPO: Multi-constraint Dexterous Policy Optimization with Reinforcement Learning",
+      "authors": [
+        "Ao Zhou",
+        "Zongyou Yu",
+        "Ke Wu",
+        "Tao Xu",
+        "Junqiao Zhao",
+        "Wenchao Ding",
+        "Alois Knoll",
+        "Guang Chen"
+      ],
+      "published": "2026-10-24T06:09:14Z",
+      "updated": "2026-10-24T06:09:14Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33480",
+        "pdf": "https://arxiv.org/pdf/2610.33480"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation requires high-dimensional control policies to accomplish complex contact-rich tasks while simultaneously satisfying multiple safety requirements, such as joint limits, unsafe …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-30T07:36:53Z"
+    },
+    {
+      "id": "2610.33241",
+      "title": "ORBIT: A Modular Multi-finger Robotic Hand Platform with Rotational Finger Reconfiguration",
+      "authors": [
+        "Benito Ribadeneira",
+        "Siqi Shang",
+        "Lillian Chin"
+      ],
+      "published": "2026-10-23T19:45:12Z",
+      "updated": "2026-10-23T19:45:12Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.33241",
+        "pdf": "https://arxiv.org/pdf/2610.33241"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… popularity of multi-fingered robotic hands for dexterous manipulation, there is no systematic platform to compare different hand morphologies against one another. We …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-27T06:39:39Z",
+      "last_seen": "2026-10-30T07:36:53Z"
+    },
+    {
+      "id": "2610.32969",
+      "title": "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection",
+      "authors": [
+        "Amber Xie",
+        "Jiawei Fu",
+        "Xiaofeng Guo",
+        "Carmelo Sferrazza",
+        "Guanya Shi",
+        "Haozhi Qi"
+      ],
+      "published": "2026-10-23T17:56:28Z",
+      "updated": "2026-10-23T17:56:28Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.32969",
+        "pdf": "https://arxiv.org/pdf/2610.32969"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… remains a central bottleneck for learning dexterous manipulation. Teleoperation records executable robot actions, but it requires a complete robot setup and places …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-26T06:46:42Z",
+      "last_seen": "2026-10-30T07:36:53Z"
+    },
+    {
+      "id": "2610.31845",
+      "title": "EgoForesight: Effectively Scaling Policy Learning with Noisy Egocentric Actions",
+      "authors": [
+        "Chubin Zhang",
+        "Changyuan Wang",
+        "Yirui Wang",
+        "Ao Li",
+        "Shilin Ma",
+        "Yue Su",
+        "Cai Zhou",
+        "Xiuwei Xu",
+        "Tianle Zhang",
+        "Yansong Tang"
+      ],
+      "published": "2026-10-22T19:28:43Z",
+      "updated": "2026-10-22T19:28:43Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.31845",
+        "pdf": "https://arxiv.org/pdf/2610.31845"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… performance in both simulated and real-world dexterous manipulation."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-26T06:46:42Z",
+      "last_seen": "2026-10-29T07:33:06Z"
+    },
+    {
+      "id": "2610.31299",
+      "title": "PiHand: Latent Hand-Object Interaction Priors for Physics-Based Policy Learning",
+      "authors": [
+        "Niklas Berndt",
+        "Xianghui Xie",
+        "Enes Duran",
+        "Yixiao Wang",
+        "Gerard Pons-Moll"
+      ],
+      "published": "2026-10-22T13:59:19Z",
+      "updated": "2026-10-22T13:59:19Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.31299",
+        "pdf": "https://arxiv.org/pdf/2610.31299"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… goal-conditioned VAE, and finally solve diverse dexterous manipulation tasks through bounded residual exploration in its latent space. With only a single reward …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-23T06:22:00Z",
+      "last_seen": "2026-10-29T07:33:06Z"
+    },
+    {
+      "id": "2610.30781",
+      "title": "DeXplicit: Making Physical State Explicit in Dexterous Manipulation World Models",
+      "authors": [
+        "Adam Lee",
+        "Mutian Xu",
+        "Yukang Cao",
+        "Shulin Tian",
+        "Ziwei Liu"
+      ],
+      "published": "2026-10-22T06:02:09Z",
+      "updated": "2026-10-22T06:02:09Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.30781",
+        "pdf": "https://arxiv.org/pdf/2610.30781"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… object structure. We introduce DeXplicit, a dexterous manipulation world model that instead predicts how the world evolves explicitly in metric 3D before …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-23T06:22:00Z",
+      "last_seen": "2026-10-28T07:12:27Z"
+    },
+    {
+      "id": "2610.22363",
+      "title": "Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation",
+      "authors": [
+        "Zirui Wu",
+        "Chen Guo",
+        "Tianjian Jiang",
+        "Zeren Jiang",
+        "Zeming Li",
+        "Lingchen Yang",
+        "Longteng Duan",
+        "Ying Xue",
+        "Handi Yin",
+        "Shenyuan Gao",
+        "Martin R. Oswald",
+        "Jun Zhang",
+        "Ping Tan",
+        "Jie Song"
+      ],
+      "published": "2026-10-15T17:59:07Z",
+      "updated": "2026-10-22T04:41:10Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.22363",
+        "pdf": "https://arxiv.org/pdf/2610.22363"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… unified world action model for egocentric dexterous manipulation that learns 3D perception, action-conditioned prediction, and goal-directed planning through three complementary modes: Perceive, …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-16T06:12:26Z",
+      "last_seen": "2026-10-28T07:12:27Z"
+    },
+    {
+      "id": "2608.10383",
+      "title": "Learning Cooperative Bimanual Dexterous Grasp of Large Objects with Tactile Sensing",
+      "authors": [
+        "Ziming Li",
+        "Mingxuan Wu",
+        "Jiaqi Zhang",
+        "Hongfei Li",
+        "Yan Gan",
+        "Deqiang Ouyang",
+        "Ning Wang"
+      ],
+      "published": "2026-08-11T02:24:27Z",
+      "updated": "2026-10-22T03:43:00Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.10383",
+        "pdf": "https://arxiv.org/pdf/2608.10383"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Bimanual dexterous grasping of large objects is a critical challenge in robotic manipulation. However, most existing studies focus on sequential manipulation rather …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-23T06:22:00Z",
+      "last_seen": "2026-10-28T07:12:27Z"
+    },
+    {
+      "id": "2610.30438",
+      "title": "Tactile-Based Robotic Manipulation: From Mechanics-Driven to Data-Driven Perspectives",
+      "authors": [
+        "Jingyi Xiang",
+        "Yixuan Wang",
+        "Wenzhen Yuan"
+      ],
+      "published": "2026-10-21T20:49:25Z",
+      "updated": "2026-10-21T20:49:25Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.30438",
+        "pdf": "https://arxiv.org/pdf/2610.30438"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… a critical modality for robust and dexterous manipulation. Over the past several decades, tactile-based manipulation research has evolved from mechanics-driven approaches, which …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-23T06:22:00Z",
+      "last_seen": "2026-10-28T07:12:27Z"
+    },
+    {
+      "id": "2607.07968",
+      "title": "Soft Robotic Exogloves for Dexterous Mobility -- Towards Personalized Rehabilitation",
+      "authors": [
+        "Paul Dela Cruz",
+        "Mostafa Mo. Massoud",
+        "Jacqueline Libby"
+      ],
+      "published": "2026-07-08T22:48:29Z",
+      "updated": "2026-10-21T19:42:25Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2607.07968",
+        "pdf": "https://arxiv.org/pdf/2607.07968"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… especially for fine articulation necessary for dexterous manipulation. We present the design, fabrication, modeling, and testing of a personalized pneumatically-actuated soft robotic …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-15T06:16:26Z",
+      "last_seen": "2026-10-28T07:12:27Z"
+    },
+    {
+      "id": "2610.26854",
+      "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation",
+      "authors": [
+        "Jiaming Liu",
+        "Xinghao Zhu",
+        "Yiming Zhang",
+        "Shanghang Zhang",
+        "Yinxi Wang",
+        "Yichu Yang",
+        "Zhuoyang Liu",
+        "Dantong Niu",
+        "Soha Pouya",
+        "Juekun Li",
+        "Yan Chang"
+      ],
+      "published": "2026-10-19T17:59:54Z",
+      "updated": "2026-10-21T14:35:08Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.26854",
+        "pdf": "https://arxiv.org/pdf/2610.26854"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… real-world tasks using bimanual grippers and dexterous hands. Further evaluations demonstrate that our structured latent reasoning framework generalizes to unseen scenarios and …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-28T07:12:27Z"
+    },
+    {
+      "id": "2502.15037",
+      "title": "DEFT: Differentiable Branched Discrete Elastic Rods for Modeling Furcated DLOs in Real-Time",
+      "authors": [
+        "Yizhou Chen",
+        "Felicia Sang",
+        "Shicheng Peng",
+        "Xiaoyue Wu",
+        "Yeheng Zong",
+        "Yuzhen Chen",
+        "Anran Li",
+        "Bohao Zhang",
+        "Ram Vasudevan"
+      ],
+      "published": "2025-02-20T20:46:09Z",
+      "updated": "2026-10-21T13:35:59Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2502.15037",
+        "pdf": "https://arxiv.org/pdf/2502.15037"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… accurate BDLO dynamics, real-time inference, and dexterous manipulation planning. DEFT introduces momentum-conserving junction constraints to capture cross-branch coupling, supports mid-structure grasping, uses …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-22T06:27:05Z",
+      "last_seen": "2026-10-28T07:12:27Z"
+    },
+    {
+      "id": "2610.25961",
+      "title": "PaceVLA: Adaptive Temporal Action Quantization in Vision-Language-Action Models",
+      "authors": [
+        "Hojin Jeon",
+        "Jimin Lee",
+        "Taekwan Kim",
+        "Nayoung Oh",
+        "Taeyoung Kim",
+        "Myungkyu Koo",
+        "Jinmo Koo",
+        "Joonwoo Ahn",
+        "Jinwoo Shin"
+      ],
+      "published": "2026-10-19T07:54:13Z",
+      "updated": "2026-10-21T05:55:50Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.25961",
+        "pdf": "https://arxiv.org/pdf/2610.25961"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… across multiple embodiments, including long-horizon and dexterous manipulation."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.04741",
+      "title": "Robot Learning with Visual Predicted Force",
+      "authors": [
+        "Haonan Chen",
+        "Feiyang Wu",
+        "Yuxiang Ma",
+        "Mustafa Mete",
+        "Pengfei Ye",
+        "Junxuan Shen",
+        "Cheng Zhu",
+        "Aurora Ruggeri",
+        "Kelvin Cheung",
+        "Jiayuan Mao",
+        "Edward Adelson",
+        "Jiajun Wu",
+        "Robert D. Howe",
+        "Yilun Du"
+      ],
+      "published": "2026-10-03T20:11:33Z",
+      "updated": "2026-10-20T19:20:24Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.04741",
+        "pdf": "https://arxiv.org/pdf/2610.04741"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… approach on berry picking, empty-can grasping, in-hand reorientation, and plug insertion. Our results show that visual force prediction can guide inference-time action …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-08T09:33:18Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.28814",
+      "title": "T-WLA: Bridging Slow Vision and Fast Touch",
+      "authors": [
+        "Kaichen Zhou",
+        "Yuzhen Chen",
+        "Hannah Yao",
+        "Chonghe Jiang",
+        "Rao Fu",
+        "Xihang Yu",
+        "Wei Dai",
+        "Bashar Kabbarah",
+        "Haoyu Chen",
+        "Ishita Goluguri",
+        "Zhiyang Dou",
+        "Haonan Chen",
+        "Fangneng Zhan",
+        "Mengyu Wang",
+        "Wojciech Matusik",
+        "Antonio Torralba",
+        "Paul Pu Liang"
+      ],
+      "published": "2026-10-20T18:36:13Z",
+      "updated": "2026-10-20T18:36:13Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.28814",
+        "pdf": "https://arxiv.org/pdf/2610.28814"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… and Tachin, and on four real-world dexterous manipulation tasks. T-WLA reduces finger-joint MPJPE by 30% relative to the strongest reported baseline and …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-22T06:27:05Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2503.06669",
+      "title": "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
+      "authors": [
+        "AgiBot World Contributors",
+        "Qingwen Bu",
+        "Jisong Cai",
+        "Li Chen",
+        "Xiuqi Cui",
+        "Yan Ding",
+        "Siyuan Feng",
+        "Shenyuan Gao",
+        "Xindong He",
+        "Xuan Hu",
+        "Xu Huang",
+        "Shu Jiang",
+        "Yuxin Jiang",
+        "Cheng Jing",
+        "Hongyang Li",
+        "Jialu Li",
+        "Chiming Liu",
+        "Yi Liu",
+        "Yuxiang Lu",
+        "Jianlan Luo",
+        "Ping Luo",
+        "Yao Mu",
+        "Yuehan Niu",
+        "Yixuan Pan",
+        "Jiangmiao Pang",
+        "Yu Qiao",
+        "Guanghui Ren",
+        "Cheng Ruan",
+        "Jiaqi Shan",
+        "Yongjian Shen",
+        "Chengshi Shi",
+        "Mingkang Shi",
+        "Modi Shi",
+        "Chonghao Sima",
+        "Jianheng Song",
+        "Huijie Wang",
+        "Wenhao Wang",
+        "Dafeng Wei",
+        "Chengen Xie",
+        "Guo Xu",
+        "Junchi Yan",
+        "Cunbiao Yang",
+        "Lei Yang",
+        "Shukai Yang",
+        "Maoqing Yao",
+        "Jia Zeng",
+        "Chi Zhang",
+        "Qinglin Zhang",
+        "Bin Zhao",
+        "Chengyue Zhao",
+        "Jiaqi Zhao",
+        "Jianchao Zhu"
+      ],
+      "published": "2025-03-09T15:40:29Z",
+      "updated": "2026-10-20T18:19:58Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2503.06669",
+        "pdf": "https://arxiv.org/pdf/2503.06669"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… It is extensible from grippers to dexterous hands and visuo-tactile sensors for fine-grained skill acquisition. Building on top of data, we introduce …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-22T06:27:05Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.28628",
+      "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
       "authors": [
         "Yuxuan Kuang",
+        "Jiashun Wang",
+        "Yixuan Sun",
+        "Yufei Ye",
         "Sungjae Park",
+        "Umar Iqbal",
         "Katerina Fragkiadaki",
         "Shubham Tulsiani"
       ],
-      "published": "2026-02-17T18:59:31Z",
-      "updated": "2026-10-13T17:57:26Z",
+      "published": "2026-10-20T17:59:32Z",
+      "updated": "2026-10-20T17:59:32Z",
       "links": {
-        "paper": "https://arxiv.org/abs/2602.15828",
-        "pdf": "https://arxiv.org/pdf/2602.15828"
+        "paper": "https://arxiv.org/abs/2610.28628",
+        "pdf": "https://arxiv.org/pdf/2610.28628"
       },
       "matched_topics": [
         "dexterous"
@@ -63,30 +1394,86 @@
       "evidence": [
         {
           "source": "abstract",
-          "text": "… tasks remains an open challenge in dexterous manipulation. In particular, collecting large-scale manipulation data via real-world teleoperation is expensive and difficult to …"
+          "text": "Dexterous multi-finger hands hold promise to unlock diverse skills like functional grasps, in-hand reorientation, and dynamic handover that the human-designed world assumes, …"
         }
       ],
       "review_status": "pending",
-      "first_seen": "2026-10-14T06:33:56Z",
-      "last_seen": "2026-10-14T06:33:56Z"
+      "first_seen": "2026-10-21T06:24:14Z",
+      "last_seen": "2026-10-27T06:39:39Z"
     },
     {
-      "id": "2610.18822",
-      "title": "EgoMatrix: Physically Faithful Dexterous Robot Demonstrations from Egocentric Human Videos",
+      "id": "2610.28519",
+      "title": "Touch-JEPA: Tactile Representation Learning from Hand-Object Video with Limited Tactile Supervision",
       "authors": [
-        "Ziheng Wang",
-        "Yanming Shao",
-        "Ting Mao",
-        "Kaihan Chen",
-        "Yiqun Wang",
-        "Xuanye Wu",
-        "Yao Mu"
+        "Minseong Kweon",
+        "Qiao Feng",
+        "Yiming Huang",
+        "Lingjie Liu"
       ],
-      "published": "2026-10-13T17:51:46Z",
-      "updated": "2026-10-13T17:51:46Z",
+      "published": "2026-10-20T16:56:11Z",
+      "updated": "2026-10-20T16:56:11Z",
       "links": {
-        "paper": "https://arxiv.org/abs/2610.18822",
-        "pdf": "https://arxiv.org/pdf/2610.18822"
+        "paper": "https://arxiv.org/abs/2610.28519",
+        "pdf": "https://arxiv.org/pdf/2610.28519"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Understanding contact and tactile magnitude in hand-object interaction is a key step toward physically intelligent systems, yet learning such representations is limited …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-21T06:24:14Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.27995",
+      "title": "Learning Tactile-Aware Hand Representations from Human Hand-Object Interaction Data",
+      "authors": [
+        "Yeonguk Yu",
+        "Jaehong Kim",
+        "Byungok Han"
+      ],
+      "published": "2026-10-20T10:31:45Z",
+      "updated": "2026-10-20T10:31:45Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.27995",
+        "pdf": "https://arxiv.org/pdf/2610.27995"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Tactile representation learning for dexterous manipulation often requires substantial robot-side data collection, limiting its scalability across different hands and sensors. We explore …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-21T06:24:14Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.27907",
+      "title": "What Novice Operators See Changes What the Policy Learns: A User Study of Keypoint Hand Visual Representation for Teleoperated Demonstration",
+      "authors": [
+        "Amane Yamaguchi",
+        "Shohei Kamiguchi",
+        "Masashi Hamaya",
+        "Shigeo Yoshida",
+        "Takuji Narumi",
+        "Mai Nishimura"
+      ],
+      "published": "2026-10-20T09:22:21Z",
+      "updated": "2026-10-20T09:22:21Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.27907",
+        "pdf": "https://arxiv.org/pdf/2610.27907"
       },
       "matched_topics": [
         "dexterous"
@@ -94,12 +1481,325 @@
       "evidence": [
         {
           "source": "abstract",
-          "text": "… alternative to robot teleoperation for collecting dexterous manipulation data. However, two challenges limit their use as reliable training data: accurate hand-object interaction …"
+          "text": "… a teleoperation interface that renders a multi-fingered robot hand as sparse keypoints at its fingertips and joints, the same keypoints a policy …"
         }
       ],
       "review_status": "pending",
-      "first_seen": "2026-10-14T06:33:56Z",
-      "last_seen": "2026-10-14T06:33:56Z"
+      "first_seen": "2026-10-21T06:24:14Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2606.19340",
+      "title": "ZeroDex: Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning",
+      "authors": [
+        "Jisoo Kim",
+        "Sangwon Baik",
+        "Taeksoo Kim",
+        "Sungjoo Kim",
+        "Junyoung Lee",
+        "Mingi Choi",
+        "Kisang Park",
+        "Sungjoon Choi",
+        "Hanbyul Joo"
+      ],
+      "published": "2026-06-17T17:59:56Z",
+      "updated": "2026-10-20T08:53:43Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.19340",
+        "pdf": "https://arxiv.org/pdf/2606.19340"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… ZeroDex, a zero-shot framework for long-horizon dexterous manipulation that grounds language instructions into executable 3D task plans from calibrated multi-view RGB images. …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-21T06:24:14Z",
+      "last_seen": "2026-10-27T06:39:39Z"
+    },
+    {
+      "id": "2610.27242",
+      "title": "EmbodyHOI: Embodiment-Aware Generation of Hand-Object Interactions for Humanoid Dexterous Manipulation",
+      "authors": [
+        "Chaitanya Chawla",
+        "Kartik Sharma",
+        "Ananya Bal",
+        "Laszlo A. Jeni",
+        "Guanya Shi"
+      ],
+      "published": "2026-10-19T20:08:32Z",
+      "updated": "2026-10-19T20:08:32Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.27242",
+        "pdf": "https://arxiv.org/pdf/2610.27242"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Humanoid dexterous manipulation needs reference motions that are both semantically rich and kinematically feasible for the target robot. Text-conditioned hand-object interaction (HOI) …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-21T06:24:14Z",
+      "last_seen": "2026-10-26T06:46:42Z"
+    },
+    {
+      "id": "2610.26765",
+      "title": "HandsOn: A Large-Scale Simulation Benchmark for Generalizable Dexterous Manipulation",
+      "authors": [
+        "Tianwei Luo",
+        "Yiming He",
+        "Hongjin Wu",
+        "Ting Pan",
+        "Debin Ren",
+        "Haorui Guo",
+        "Junlin Yang",
+        "Yuxin Zuo",
+        "Zhehao Kou",
+        "Kaisen Yang",
+        "Zhuoqun Lai",
+        "Yi Ding",
+        "Jiale Yu",
+        "Yuchen Zhang",
+        "Zijie Qiu",
+        "Haozhan Li",
+        "Ning Ding"
+      ],
+      "published": "2026-10-19T17:22:48Z",
+      "updated": "2026-10-19T17:22:48Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.26765",
+        "pdf": "https://arxiv.org/pdf/2610.26765"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… simulation platform and benchmark for cross-embodiment dexterous manipulation. It supports five robotic arms, six dexterous hands, and approximately 200 rigid, articulated, and …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-26T06:46:42Z"
+    },
+    {
+      "id": "2610.26759",
+      "title": "Tactile In-Hand Object Rotation: A Comparative Study of Hand Morphology in Simulation and Hardware",
+      "authors": [
+        "Wenhao He",
+        "Max Yang",
+        "Chenghua Lu",
+        "Yijiong Lin",
+        "David A. W. Barton",
+        "Nathan F. Lepora"
+      ],
+      "published": "2026-10-19T17:18:25Z",
+      "updated": "2026-10-19T17:18:25Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.26759",
+        "pdf": "https://arxiv.org/pdf/2610.26759"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Continuous in-hand rotation requires coordinated contact maintenance and renewal, linking manipulation performance to both hand geometry and tactile feedback. We investigate these …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-26T06:46:42Z"
+    },
+    {
+      "id": "2610.26174",
+      "title": "PhantomTac: Hijacking Robotic Tactile Systems with Deploy-and-forget Tags",
+      "authors": [
+        "Binbin Zhang",
+        "Yifeng Zhang",
+        "Xiaomeng Chen",
+        "Dongyao Chen"
+      ],
+      "published": "2026-10-19T11:03:56Z",
+      "updated": "2026-10-19T11:03:56Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.26174",
+        "pdf": "https://arxiv.org/pdf/2610.26174"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… manipulation, providing an important foundation for dexterous, closed-loop force control. Among various tactile sensing techniques, magnetic tactile sensors stand out thanks to …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-26T06:46:42Z"
+    },
+    {
+      "id": "2610.24392",
+      "title": "Gen2Dex: Learning Dexterous Manipulation from Simulation-Initialized Generated Video Demonstrations",
+      "authors": [
+        "Xiaowen Qiu",
+        "Yian Wang",
+        "Haoxiang You",
+        "Chuang Gan"
+      ],
+      "published": "2026-10-17T02:50:59Z",
+      "updated": "2026-10-17T02:50:59Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.24392",
+        "pdf": "https://arxiv.org/pdf/2610.24392"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… demonstrations provide rich manipulation strategies for dexterous manipulation learning. We study a setting in which a fully specified simulated scene is used …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-20T06:23:48Z",
+      "last_seen": "2026-10-23T06:22:00Z"
+    },
+    {
+      "id": "2610.09291",
+      "title": "Co${}^{2}$Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction",
+      "authors": [
+        "Jeonghwan Kim",
+        "Hyeonwoo Kim",
+        "Hanbyul Joo"
+      ],
+      "published": "2026-10-07T01:49:39Z",
+      "updated": "2026-10-17T01:41:21Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.09291",
+        "pdf": "https://arxiv.org/pdf/2610.09291"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… Co${}^{2}$Skill that integrates scene interaction and dexterous manipulation through a unified policy formulation. Built on a pretrained motion prior, the policy uses …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-08T09:33:18Z",
+      "last_seen": "2026-10-23T06:22:00Z"
+    },
+    {
+      "id": "2608.02014",
+      "title": "MANGO-Grasp: Mahalanobis Fields over Geometry-Oriented 3D Gaussians for Cross-Embodiment Dexterous Grasping",
+      "authors": [
+        "Heng Zhang",
+        "Kevin Yuchen Ma",
+        "Mike Zheng Shou",
+        "Weisi Lin",
+        "Yan Wu"
+      ],
+      "published": "2026-08-03T10:12:15Z",
+      "updated": "2026-10-16T16:47:33Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.02014",
+        "pdf": "https://arxiv.org/pdf/2608.02014"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… to synthesize stable grasps across heterogeneous multi-fingered hands with little or no embodiment-specific tuning. Existing interaction-centric methods achieve promising results, but their …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-19T06:37:32Z",
+      "last_seen": "2026-10-23T06:22:00Z"
+    },
+    {
+      "id": "2608.19182",
+      "title": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
+      "authors": [
+        "Jayjun Lee",
+        "Jessica Yin",
+        "Asif Rana",
+        "Nicholas Blauch",
+        "Octi Zhang",
+        "Sam Mady",
+        "Mohak Bhardwaj",
+        "Nima Fazeli",
+        "Nathan Ratliff",
+        "Karl Van Wyk",
+        "Ankur Handa"
+      ],
+      "published": "2026-08-19T17:55:06Z",
+      "updated": "2026-10-16T07:12:42Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.19182",
+        "pdf": "https://arxiv.org/pdf/2608.19182"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… difficult to discover from scratch on multi-fingered robots and avoids learning the same set of skills over again for every new downstream …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-19T06:37:32Z",
+      "last_seen": "2026-10-23T06:22:00Z"
+    },
+    {
+      "id": "2608.15060",
+      "title": "EgoTac: In-the-wild Tactile Prediction from Egocentric Vision",
+      "authors": [
+        "Wenkang Zhang",
+        "Chengbo Yuan",
+        "Zicheng Zhang",
+        "Zhengxue Cheng",
+        "Yang Gao"
+      ],
+      "published": "2026-08-15T06:18:13Z",
+      "updated": "2026-10-16T02:05:25Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.15060",
+        "pdf": "https://arxiv.org/pdf/2608.15060"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Touch is fundamental to dexterous manipulation, yet most egocentric human data increasingly used for robot learning lacks tactile information. Directly collecting large-scale …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-19T06:37:32Z",
+      "last_seen": "2026-10-22T06:27:05Z"
     },
     {
       "id": "2606.18097",
@@ -115,7 +1815,7 @@
         "Chi-Guhn Lee"
       ],
       "published": "2026-06-16T15:59:46Z",
-      "updated": "2026-10-13T04:13:33Z",
+      "updated": "2026-10-16T00:13:11Z",
       "links": {
         "paper": "https://arxiv.org/abs/2606.18097",
         "pdf": "https://arxiv.org/pdf/2606.18097"
@@ -131,7 +1831,465 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-14T04:46:07Z",
-      "last_seen": "2026-10-14T06:33:56Z"
+      "last_seen": "2026-10-22T06:27:05Z"
+    },
+    {
+      "id": "2610.22342",
+      "title": "Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manipulation",
+      "authors": [
+        "Tianxing Chen",
+        "Wenwei Lin",
+        "Chuqiao Lyu",
+        "Peicheng Xiang",
+        "Junyuan Tang",
+        "Tian Nian",
+        "Zijian Cai",
+        "Kehe Ye",
+        "Chenze Yu",
+        "Wenxuan Zhu",
+        "Eric J. Chen",
+        "Yan Qin",
+        "Yue Chen",
+        "Tongyu Wu",
+        "Junhao Gong",
+        "Kai-Chong Lei",
+        "Jiahao Zhang",
+        "Kailun Su",
+        "Qiwei Liang",
+        "Renjing Xu",
+        "Ping Luo",
+        "Wenbo Ding"
+      ],
+      "published": "2026-10-15T17:56:17Z",
+      "updated": "2026-10-15T17:56:17Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.22342",
+        "pdf": "https://arxiv.org/pdf/2610.22342"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… pretraining but often struggle with contact-rich dexterous manipulation, where force, compliance, and incipient slip are hard to observe from images. We present …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-16T06:12:26Z",
+      "last_seen": "2026-10-22T06:27:05Z"
+    },
+    {
+      "id": "2610.22184",
+      "title": "Whole-Body Dexterity",
+      "authors": [
+        "Conor Mc Gartoll",
+        "An Dang",
+        "Pranay Thangeda",
+        "Arjun Gupta",
+        "Carolina Higuera",
+        "Nima Fazeli",
+        "Mustafa Mukadam",
+        "Manikantan Nambi"
+      ],
+      "published": "2026-10-15T16:40:48Z",
+      "updated": "2026-10-15T16:40:48Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.22184",
+        "pdf": "https://arxiv.org/pdf/2610.22184"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Current humanoid dexterous manipulation remains largely confined to end-effectors and simple grasps, falling short of humans' ability to engage the entire body …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-16T06:12:26Z",
+      "last_seen": "2026-10-22T06:27:05Z"
+    },
+    {
+      "id": "2606.26428",
+      "title": "Play2Perfect: What Matters in Dexterous Play Pretraining for Precise Assembly?",
+      "authors": [
+        "Tyler Ga Wei Lum",
+        "Kushal Kedia",
+        "C. Karen Liu",
+        "Jeannette Bohg"
+      ],
+      "published": "2026-06-24T22:39:12Z",
+      "updated": "2026-10-15T09:00:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.26428",
+        "pdf": "https://arxiv.org/pdf/2606.26428"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Multi-fingered robots promise the speed and dexterity of human hands, yet challenging problems such as precise assembly have remained out of reach. …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-16T06:12:26Z",
+      "last_seen": "2026-10-22T06:27:05Z"
+    },
+    {
+      "id": "2610.19089",
+      "title": "DexMimic: A Generalist Dexterous Hand-Object Tracking Policy via Value-Guided Reset Allocation",
+      "authors": [
+        "Zhexi Luo",
+        "Zhixuan Xu",
+        "Rui Yang",
+        "Zeyu Xiao",
+        "Yiwen Hou",
+        "Lin Shao"
+      ],
+      "published": "2026-10-13T19:29:33Z",
+      "updated": "2026-10-15T06:00:59Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19089",
+        "pdf": "https://arxiv.org/pdf/2610.19089"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Achieving human-like dexterous manipulation remains a central challenge in robotics. Learning from human hand-object interaction (HOI) datasets offers a promising pathway to …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-15T06:16:26Z",
+      "last_seen": "2026-10-21T06:24:14Z"
+    },
+    {
+      "id": "2610.21180",
+      "title": "Evo-DexBench: Benchmarking Generalization across Related Tasks for Dexterous Manipulation",
+      "authors": [
+        "Bing Cheng",
+        "Yiran Mao",
+        "Zewei Ye",
+        "Yifan Jin",
+        "Xinyi Chen",
+        "Ruifeng Tu",
+        "Shuhuai Wang",
+        "Tao Lin",
+        "Zhimu Zhou",
+        "Yuxin Du",
+        "Fangwei Zhong",
+        "Junchi Yan",
+        "Bo Zhao"
+      ],
+      "published": "2026-10-15T03:36:05Z",
+      "updated": "2026-10-15T03:36:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.21180",
+        "pdf": "https://arxiv.org/pdf/2610.21180"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "General-purpose dexterous manipulation requires policies to transfer knowledge from related tasks to new tasks with only a few target demonstrations. Existing benchmarks …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-16T06:12:26Z",
+      "last_seen": "2026-10-21T06:24:14Z"
+    },
+    {
+      "id": "2610.20904",
+      "title": "EgoJEPA: Beyond Retargeting for Dexterous Manipulation from Egocentric Videos",
+      "authors": [
+        "Meng Cao",
+        "Can Zhao",
+        "Jinjie Wei",
+        "Haonan Zhao",
+        "Yulong Zhang",
+        "Duo Han",
+        "Xiaofan Li",
+        "Ziwu Song",
+        "Rongtao Xu",
+        "Ruyi Gan",
+        "Hao Wang",
+        "Qian Wang",
+        "Daolin Ma",
+        "Ian Reid",
+        "Xiaodan Liang"
+      ],
+      "published": "2026-10-14T20:34:18Z",
+      "updated": "2026-10-14T20:34:18Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.20904",
+        "pdf": "https://arxiv.org/pdf/2610.20904"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "title",
+          "text": "EgoJEPA: Beyond Retargeting for Dexterous Manipulation from Egocentric Videos"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-16T06:12:26Z",
+      "last_seen": "2026-10-21T06:24:14Z"
+    },
+    {
+      "id": "2610.20320",
+      "title": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation",
+      "authors": [
+        "Fucai Zhu",
+        "Xidong Zhang",
+        "Yichi Zhang",
+        "Yipan Wang",
+        "Fubo Wang",
+        "Zibin Wu",
+        "Kaiqi Li",
+        "Jianhao Jiao",
+        "Shihan Lu",
+        "Di Hu",
+        "Mengdi Xu",
+        "Siyu Zhu",
+        "Xiaoxiao Long",
+        "Yao Yao",
+        "Xun Cao",
+        "Zhuo Xu",
+        "Koichi Hashimoto",
+        "Qifeng Chen",
+        "Zhe Li",
+        "Jianfei Yang",
+        "Haofei Lu",
+        "Danica Kragic",
+        "Shuicheng Yan",
+        "Jianghua Duan",
+        "Michael Yu Wang",
+        "Weihao Yuan"
+      ],
+      "published": "2026-10-14T15:06:53Z",
+      "updated": "2026-10-14T15:06:53Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.20320",
+        "pdf": "https://arxiv.org/pdf/2610.20320"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "title",
+          "text": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-15T06:16:26Z",
+      "last_seen": "2026-10-21T06:24:14Z"
+    },
+    {
+      "id": "2610.20134",
+      "title": "Tactile-Guided Robot Learning: From Representation Learning to Foundation Models",
+      "authors": [
+        "Kiyanoush Nazari",
+        "Luchen Li",
+        "Haoshu Fang",
+        "Nima Fazeli",
+        "Zhibin Li",
+        "Fumiya Iida",
+        "Thomas George Thuruthel"
+      ],
+      "published": "2026-10-14T12:54:05Z",
+      "updated": "2026-10-14T12:54:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.20134",
+        "pdf": "https://arxiv.org/pdf/2610.20134"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… becoming central to robust, adaptive, and dexterous robotic manipulation. Beyond its traditional role in contact detection and reactive control, touch is increasingly …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-15T06:16:26Z",
+      "last_seen": "2026-10-21T06:24:14Z"
+    },
+    {
+      "id": "2609.33551",
+      "title": "FoLD: Force-Informed Learning for Dexterous Articulated Object Manipulation",
+      "authors": [
+        "Haowei Shen",
+        "Tingai Li",
+        "Yumeng Liu",
+        "Wenyuan Guang",
+        "Xuanze Yang",
+        "Qing Fang",
+        "Kai Xu",
+        "Ligang Liu",
+        "Ruizhen Hu"
+      ],
+      "published": "2026-09-27T13:21:34Z",
+      "updated": "2026-10-14T11:14:22Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2609.33551",
+        "pdf": "https://arxiv.org/pdf/2609.33551"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… present \\textbf{FoLD}, a framework for learning dexterous manipulation of articulated objects through explicit force guidance. FoLD compute compensatory force fields from human …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-15T06:16:26Z",
+      "last_seen": "2026-10-21T06:24:14Z"
+    },
+    {
+      "id": "2610.19753",
+      "title": "Coordi-pi: Coordination-Aware Dual-Hand Action Representation for Bimanual Dexterous Manipulation",
+      "authors": [
+        "Yiming Meng",
+        "Yanming Shao",
+        "Weijie Shen",
+        "Kunyang Lin",
+        "Jiayu Sun",
+        "Ping Luo",
+        "Yao Mu"
+      ],
+      "published": "2026-10-14T08:08:45Z",
+      "updated": "2026-10-14T08:08:45Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19753",
+        "pdf": "https://arxiv.org/pdf/2610.19753"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… manipulation, but extending them to bimanual dexterous manipulation introduces a high-dimensional and structured action space. Existing bimanual VLA policies commonly concatenate right- …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-15T06:16:26Z",
+      "last_seen": "2026-10-21T06:24:14Z"
+    },
+    {
+      "id": "2610.19594",
+      "title": "RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation",
+      "authors": [
+        "Keqiang Ren",
+        "Xuecheng Ye",
+        "Hanyu Liu",
+        "Zhihua Wang",
+        "Tao Jian",
+        "Yunsheng Ma",
+        "Jiayi Wen",
+        "Xinran Li",
+        "Zhigong Song"
+      ],
+      "published": "2026-10-14T05:10:48Z",
+      "updated": "2026-10-14T05:10:48Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19594",
+        "pdf": "https://arxiv.org/pdf/2610.19594"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… Existing teleoperation platforms also lack integrated dexterous tactile sensing to support coordinated whole-body decision-making. This paper presents RoboSpan, a high-DoF whole-body teleoperation …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-15T06:16:26Z",
+      "last_seen": "2026-10-20T06:23:48Z"
+    },
+    {
+      "id": "2610.19518",
+      "title": "HiFun: a Hierarchical Framework for Efficient Functional Dexterous Manipulation Learning",
+      "authors": [
+        "Linyi Huang",
+        "Guowei Huai",
+        "Weibin Liu",
+        "Shulong Jiang",
+        "Ping Tan",
+        "Weixuan Zhang",
+        "Hui Zhang",
+        "Jie Song"
+      ],
+      "published": "2026-10-14T03:37:15Z",
+      "updated": "2026-10-14T03:37:15Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19518",
+        "pdf": "https://arxiv.org/pdf/2610.19518"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… hierarchical real-world RL framework for functional dexterous manipulation tasks. Our key insight is to decouple the control complexity into a functional hand …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-15T06:16:26Z",
+      "last_seen": "2026-10-20T06:23:48Z"
+    },
+    {
+      "id": "2610.19155",
+      "title": "FACT: A Multimodal Force-Action-Track Foundation Model for Human-to-Robot Dexterity",
+      "authors": [
+        "Zhi Cao",
+        "Yining Hong",
+        "Jiaolong Yang",
+        "Yejin Choi",
+        "Li Fei-Fei",
+        "Jiajun Wu",
+        "Huang Huang"
+      ],
+      "published": "2026-10-13T20:21:52Z",
+      "updated": "2026-10-13T20:21:52Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.19155",
+        "pdf": "https://arxiv.org/pdf/2610.19155"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… to costly robot data collection for dexterous manipulation, but most human datasets lack force measurements. Dexterous manipulation requires not only visual and …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-15T06:16:26Z",
+      "last_seen": "2026-10-20T06:23:48Z"
     },
     {
       "id": "2610.10370",
@@ -163,72 +2321,6 @@
       "review_status": "pending",
       "first_seen": "2026-10-08T09:33:18Z",
       "last_seen": "2026-10-14T06:33:56Z"
-    },
-    {
-      "id": "2610.09291",
-      "title": "Co${}^{2}$Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction",
-      "authors": [
-        "Jeonghwan Kim",
-        "Hyeonwoo Kim",
-        "Hanbyul Joo"
-      ],
-      "published": "2026-10-07T01:49:39Z",
-      "updated": "2026-10-07T01:49:39Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.09291",
-        "pdf": "https://arxiv.org/pdf/2610.09291"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… Co${}^{2}$Skill that integrates scene interaction and dexterous manipulation through a unified policy formulation. Built on a pretrained motion prior, the policy uses …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-12T05:41:04Z"
-    },
-    {
-      "id": "2610.04741",
-      "title": "Robot Learning with Visual Predicted Force",
-      "authors": [
-        "Haonan Chen",
-        "Feiyang Wu",
-        "Yuxiang Ma",
-        "Mustafa Mete",
-        "Pengfei Ye",
-        "Junxuan Shen",
-        "Cheng Zhu",
-        "Aurora Ruggeri",
-        "Kelvin Cheung",
-        "Jiayuan Mao",
-        "Edward Adelson",
-        "Jiajun Wu",
-        "Robert D. Howe",
-        "Yilun Du"
-      ],
-      "published": "2026-10-03T20:11:33Z",
-      "updated": "2026-10-03T20:11:33Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.04741",
-        "pdf": "https://arxiv.org/pdf/2610.04741"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… approach on berry picking, empty-can grasping, in-hand reorientation, and plug insertion. Our results show that visual force prediction can guide inference-time action …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-08T09:33:18Z",
-      "last_seen": "2026-10-09T07:49:45Z"
     }
   ]
 }
