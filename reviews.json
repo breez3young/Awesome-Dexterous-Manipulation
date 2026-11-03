@@ -13217,6 +13217,453 @@
           "notes_zh": "触觉用于离线示教转换，非运行时触觉反馈；每任务微调60条数据，未证明统一跨任务基座。代码尚未发布。"
         }
       }
+    },
+    {
+      "key": "2506.06361|v3|2026-10-30T21:40:28+00:00|dexterous-v1",
+      "digest": "2057cce0d59c5563afd2309f9e9ed9f99ecdb7872a08744ebfe8a18ae722827c",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-03T02:47:01Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2506.06361",
+          "version": 3,
+          "title": "Tactile MNIST: Benchmarking Active Tactile Perception",
+          "authors": [
+            "Tim Schneider",
+            "Guillaume Duret",
+            "Cristiana de Farias",
+            "Roberto Calandra",
+            "Liming Chen",
+            "Jan Peters"
+          ],
+          "published": "2025-06-03T14:42:16Z",
+          "updated": "2026-10-30T21:40:28Z",
+          "url": "https://arxiv.org/abs/2506.06361v3",
+          "primary_urls": [
+            "https://arxiv.org/pdf/2506.06361v3",
+            "https://timschneider42.github.io/tactile-mnist/",
+            "https://github.com/TimSchneider42/tactile-mnist"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "主动触觉感知基准与真实触觉数据属于触觉感知与表征的相关资源；策略评测为仿真，未将数据采集或模拟触觉等同于实机触觉反馈灵巧操作。",
+        "review_depth": "fulltext",
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/pdf/2506.06361v3",
+          "paraphrase": "§3.3、§4–5：基线在模拟GelSight任务中执行；真实部分是静态采集数据，在线实机主动感知及多指操作评测尚属后续工作。"
+        },
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2506.06361v3",
+            "paraphrase": "显式v3摘要页与API一致：首次投稿2025-06-03，v3更新2026-10-30；通用摘要页仍返回v2，本次按v3 PDF核验。"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2506.06361v3",
+            "paraphrase": "§3.3–3.5：八个模拟主动触觉任务，三种触觉渲染方式；FR3携GelSight Mini采集600个打印数字的153600次接触，用于数据集和CycleGAN。"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2506.06361v3",
+            "paraphrase": "§4–5：比较APPLE的SAC、CrossQ、PPO与HAM及随机基线；多个任务仍未解决，明确缺少静态数据之外的在线实机评测。"
+          },
+          {
+            "url": "https://github.com/TimSchneider42/tactile-mnist",
+            "paraphrase": "作者代码仓库对应主动触觉基准，提供环境及数据入口；当前代码扩展任务与固定v3论文范围分别描述。"
+          },
+          {
+            "url": "https://timschneider42.github.io/tactile-mnist/",
+            "paraphrase": "作者与论文回链一致，项目展示模拟任务、真实触觉数据与官方代码；未执行网页或代码命令。"
+          }
+        ],
+        "paper": {
+          "id": "2506.06361",
+          "title": "Tactile MNIST: Benchmarking Active Tactile Perception",
+          "authors": [
+            "Tim Schneider",
+            "Guillaume Duret",
+            "Cristiana de Farias",
+            "Roberto Calandra",
+            "Liming Chen",
+            "Jan Peters"
+          ],
+          "date": "2025-06-03",
+          "year": 2025,
+          "category": "Tactile Sensing & Representation",
+          "scope": "adjacent",
+          "tags": [
+            "Reinforcement learning",
+            "Dataset / benchmark"
+          ],
+          "tldr": "Introduces eight simulated active tactile perception tasks with Gymnasium interfaces, tactile rendering, and a real dataset of 153,600 contacts on 600 printed digits. RL baselines expose persistent exploration challenges. Real data support rendering and representation learning; online real-robot exploration and multi-finger manipulation are future work.",
+          "tldr_zh": "提供八个模拟主动触觉感知任务、Gymnasium接口及触觉渲染，并采集600个打印数字的153600次真实接触。强化学习基线揭示仍未解决的探索问题；真实数据用于渲染与表征学习，在线实机探索和多指操作尚待验证。",
+          "sensing": [
+            "Simulated GelSight Mini tactile images",
+            "Real GelSight Mini dataset"
+          ],
+          "hand": [],
+          "task": [
+            "Active tactile perception",
+            "Classification and counting",
+            "Pose and volume estimation"
+          ],
+          "method": [
+            "Reinforcement learning baselines",
+            "CycleGAN tactile rendering"
+          ],
+          "links": {
+            "paper": "https://arxiv.org/abs/2506.06361",
+            "project": "https://timschneider42.github.io/tactile-mnist/",
+            "code": "https://github.com/TimSchneider42/tactile-mnist"
+          }
+        }
+      }
+    },
+    {
+      "key": "2610.40828|v1|2026-10-29T18:07:37+00:00|dexterous-v1",
+      "digest": "cf08ee677b4210e29eed2713e4abe4606332a5e51187018e3a518674e7446635",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-03T02:47:01Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.40828",
+          "version": 1,
+          "title": "From Teleoperation to Long-Horizon Dexterity: Evaluating Visuomotor Skills and Offline Proxies for Dexterous Manipulation",
+          "authors": [
+            "Ammar N. Abbas",
+            "Aayush Jain",
+            "Prashanth Viswanath",
+            "Nivesh Gadipudi",
+            "Giulia Vilone",
+            "Jim Gibbons"
+          ],
+          "published": "2026-10-29T18:07:37Z",
+          "updated": "2026-10-29T18:07:37Z",
+          "url": "https://arxiv.org/abs/2610.40828v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.40828v1"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "对多指机械手的实机学习配置与评测指标进行系统消融，属于灵巧操作；四关节手控制及预设阶段限制需保留。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.40828v1",
+            "paraphrase": "官方v1、六位作者与候选一致，首次投稿及更新时间为2026-10-29T18:07:37Z；标注CoRL 2026 Workshop接收。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.40828v1",
+            "paraphrase": "§2及附录A：Franka与Tesollo五指手，动作包含四个手关节；RGB-D/机器人状态驱动策略，经典运动连接抓取插入，抓握effort阈值控制提起。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.40828v1",
+            "paraphrase": "§3–4及附录C：约1,700次试验覆盖281策略；67项离线指标中仅五项在21个iDP3插入checkpoint内稳定相关，不能跨策略族替代实机评测。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2610.40828v1",
+          "paraphrase": "已说明的学习输入为视觉与机器人状态；执行包含抓握effort阈值，但未给出触觉传感器输入学习策略的依据，不加Tactile feedback。"
+        },
+        "paper": {
+          "id": "2610.40828",
+          "title": "From Teleoperation to Long-Horizon Dexterity: Evaluating Visuomotor Skills and Offline Proxies for Dexterous Manipulation",
+          "authors": [
+            "Ammar N. Abbas",
+            "Aayush Jain",
+            "Prashanth Viswanath",
+            "Nivesh Gadipudi",
+            "Giulia Vilone",
+            "Jim Gibbons"
+          ],
+          "date": "2026-10-29",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.40828"
+          },
+          "tags": [
+            "Imitation learning",
+            "Diffusion / flow policy",
+            "Vision-language-action",
+            "Teleoperation",
+            "Dexterous grasping",
+            "Long-horizon tasks",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Evaluates imitation-learning designs for RJ45 grasping and insertion with a five-finger hand controlled through four joint commands and scripted transit stages. Tests 281 policies in about 1,700 real trials; representation choices matter, while offline smoothness predicts success only within one policy family.",
+          "tldr_zh": "在五指手仅控制四个手关节、转运依赖预设运动的RJ45抓取插入流程中，评测281个策略与约1,700次实机试验。观测和动作表征影响显著，离线平滑度指标仅在单一策略族内有效。",
+          "sensing": [
+            "Wrist RGB-D camera",
+            "Static RGB camera (two-view variants)",
+            "Robot state / grip-effort threshold"
+          ],
+          "hand": [
+            "Tesollo DG5F / DG5F-M (four commanded hand joints)",
+            "Franka Research 3 arm"
+          ],
+          "task": [
+            "RJ45 connector grasping",
+            "Connector extraction and insertion",
+            "Staged grasp–transport–insert"
+          ],
+          "method": [
+            "Teleoperated imitation learning",
+            "Diffusion / flow / ACT / VLA comparison",
+            "Controlled representation ablations",
+            "Offline motion-metric analysis"
+          ],
+          "evaluation": "Real robot: 281 policies, approximately 1,700 trials; two grasp-jig start conditions. Trial counts vary by checkpoint.",
+          "venue": "CoRL 2026 Workshop",
+          "notes_zh": "含经典运动、FoundationPose定位及抓握effort阈值。离线相关性只在21个iDP3插入checkpoint内稳定；技能拆分与多视角的收益并非均经独立消融。未核验到作者代码/项目链接。"
+        }
+      }
+    },
+    {
+      "key": "2610.41028|v1|2026-10-29T22:14:31+00:00|dexterous-v1",
+      "digest": "f88c6e1351bce4d9647b558d99775eed9e03bdfc5d94038b201d104277542bcf",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-03T02:47:01Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.41028",
+          "title": "Contact Imitation Interface: Transferring Dexterous Skills by Showing How Contact Unfolds",
+          "authors": [
+            "Zhixuan Xu",
+            "Yichen Li",
+            "Bingchen Wu",
+            "Rui Wang",
+            "Yiwen Hou",
+            "Zixuan Liu",
+            "Tianyu Qiu",
+            "Lin Shao"
+          ],
+          "published": "2026-10-29T22:14:31Z",
+          "updated": "2026-10-29T22:14:31Z",
+          "version": 1,
+          "url": "https://arxiv.org/abs/2610.41028v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.41028v1",
+            "https://nus-lins-lab.github.io/CIMIWeb/",
+            "https://github.com/ariszxxu/CIMI"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "共享指尖界面把人类示教迁移至LEAP与Wuji实机，直接属于多指灵巧操作；接触相机是RGB视觉，正文将触觉反馈列为未来工作。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.41028v1",
+            "paraphrase": "官方标题、八名作者及仅有的v1投稿记录与候选一致，首次公开为2026-10-29T22:14:31Z。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.41028v1",
+            "section": "III-A D1/D4; III-B; Supplement II-D",
+            "paraphrase": "指根RGB相机斜视接触区；策略输入视觉与本体信息。共享界面、接触优先重定向和分层流匹配实现迁移，触觉是未来扩展。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.41028v1",
+            "section": "IV-A; Table II",
+            "paraphrase": "六个手型—任务组合各20次实机试验；平均最终成功率80.8%，相同视觉输入的直接腕关节预测为30.8%。"
+          },
+          {
+            "url": "https://nus-lins-lab.github.io/CIMIWeb/",
+            "paraphrase": "官方页匹配标题与作者，展示LEAP/Wuji演示和RGB加关节状态执行流程，并链接作者代码仓库。"
+          },
+          {
+            "url": "https://github.com/ariszxxu/CIMI",
+            "paraphrase": "仓库README和src等目录显示预处理、策略训练与部署实现；About仍写coming soon，与当前文件状态不同。未安装或运行代码。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2610.41028v1",
+          "paraphrase": "Supplement II-D明确没有力传感，并将接触后的触觉反馈列为未来工作；III-A D1的contact camera为普通RGB局部视觉。"
+        },
+        "paper": {
+          "id": "2610.41028",
+          "title": "Contact Imitation Interface: Transferring Dexterous Skills by Showing How Contact Unfolds",
+          "authors": [
+            "Zhixuan Xu",
+            "Yichen Li",
+            "Bingchen Wu",
+            "Rui Wang",
+            "Yiwen Hou",
+            "Zixuan Liu",
+            "Tianyu Qiu",
+            "Lin Shao"
+          ],
+          "date": "2026-10-29",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.41028",
+            "project": "https://nus-lins-lab.github.io/CIMIWeb/",
+            "code": "https://github.com/ariszxxu/CIMI"
+          },
+          "tags": [
+            "Imitation learning",
+            "Diffusion / flow policy",
+            "Human motion transfer",
+            "Retargeting",
+            "Cross-embodiment",
+            "Dexterous grasping",
+            "Vision",
+            "Proprioception",
+            "Hardware / sensor"
+          ],
+          "tldr": "Transfers human skills through shared fingertip cameras, contact-first retargeting and a hierarchical flow policy. Six LEAP/Wuji task pairs achieve 80.8% mean success using vision and proprioception, without tactile feedback.",
+          "tldr_zh": "共享指尖相机结合接触优先重定向与分层流策略迁移人类技能；六个LEAP/Wuji实机任务组合平均成功率80.8%，无触觉输入。",
+          "sensing": [
+            "Fingertip RGB cameras",
+            "Wrist/web-space RGB",
+            "Joint proprioception"
+          ],
+          "hand": [
+            "LEAP Hand",
+            "Wuji Hand"
+          ],
+          "task": [
+            "Cube picking",
+            "Coin picking",
+            "Letter retrieval",
+            "Bulb installation"
+          ],
+          "method": [
+            "Contact-alignment-first retargeting",
+            "Context-view reprojection",
+            "Flow-matching contact-surface planning",
+            "Learned wrist-finger controller"
+          ],
+          "evaluation": "Real robot: six hand-task pairs, 20 rollouts each per method; 80.8% mean final-stage success versus 30.8% for direct wrist-joint prediction with the same visual inputs.",
+          "notes_zh": "contact camera是局部RGB视觉而非触觉传感器；不同手型或受控手指集分别训练控制器，未验证统一跨手部署。代码链接已核验，未复现实验。"
+        }
+      }
+    },
+    {
+      "key": "2610.41336|v1|2026-10-30T06:51:27+00:00|dexterous-v1",
+      "digest": "8866bc86bf46dd2f23dcdb95ad794c77863922c89f6c48f30d9b6a087aea2e74",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-03T02:47:01Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2610.41336",
+          "version": 1,
+          "title": "HandMimicX: Learning Human-Like Dexterous Manipulation via an Object-Centric Policy from Egocentric Videos",
+          "authors": [
+            "Zihan Gao",
+            "Yufei Liu",
+            "Yuhong Zhang",
+            "Zhen Yu",
+            "Xinhao Huang",
+            "Zhinan You",
+            "Kai W. Ho",
+            "Zipeng Ye",
+            "Peng Jiao",
+            "Haoqian Wang"
+          ],
+          "published": "2026-10-30T06:51:27Z",
+          "updated": "2026-10-30T06:51:27Z",
+          "url": "https://arxiv.org/abs/2610.41336v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2610.41336v1",
+            "https://anonymous.4open.science/w/handmimicx/index.html"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "从人类视频学习20自由度多指操作，并给出仿真与实机验证，直接属于灵巧操作；视觉接触先验不等于部署触觉。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2610.41336v1",
+            "paraphrase": "官方v1、十位作者与候选一致，首次投稿及更新时间为2026-10-30T06:51:27Z。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.41336v1",
+            "paraphrase": "§III-C及IV-C：UR5与20自由度Wuji手；DAgger学生移除接触和指物距离，使用视觉物体点云、本体与预设目标。"
+          },
+          {
+            "url": "https://arxiv.org/html/2610.41336v1",
+            "paraphrase": "表I、III及§IV：八项仿真任务平均85.4%；实机各10次共57/80成功，目标轨迹由示教轨迹仿射变换生成。"
+          },
+          {
+            "url": "https://anonymous.4open.science/w/handmimicx/index.html",
+            "paraphrase": "论文正文链接的项目页题目与摘要对应，包含示教、仿真及实机演示资源；未见代码仓库入口。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2610.41336v1",
+          "paraphrase": "§III-C2明确学生排除接触信息与指物距离；§IV-C部署输入为视觉物体点云、目标与本体状态。"
+        },
+        "paper": {
+          "id": "2610.41336",
+          "title": "HandMimicX: Learning Human-Like Dexterous Manipulation via an Object-Centric Policy from Egocentric Videos",
+          "authors": [
+            "Zihan Gao",
+            "Yufei Liu",
+            "Yuhong Zhang",
+            "Zhen Yu",
+            "Xinhao Huang",
+            "Zhinan You",
+            "Kai W. Ho",
+            "Zipeng Ye",
+            "Peng Jiao",
+            "Haoqian Wang"
+          ],
+          "date": "2026-10-30",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2610.41336",
+            "project": "https://anonymous.4open.science/w/handmimicx/index.html"
+          },
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Human motion transfer",
+            "Retargeting",
+            "Sim-to-real",
+            "Dexterous grasping",
+            "Tool use",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Reconstructs object geometry and interaction priors from one egocentric RGB-D demonstration, then trains an object-goal policy and distills it for a UR5–Wuji hand. Eight tasks yield 85.4% in simulation and 57/80 real successes; the deployed student excludes contact inputs.",
+          "tldr_zh": "从单段第一视角RGB-D示教重建物体与交互先验，以物体目标训练策略，再蒸馏到UR5与Wuji手。八任务仿真平均85.4%，实机57/80次成功；部署学生不使用接触输入。",
+          "sensing": [
+            "RGB-D object-pose tracking",
+            "Robot joint positions and velocities",
+            "Predefined goal object point cloud"
+          ],
+          "hand": [
+            "Wuji Hand (20 DoF)",
+            "UR5 arm (6 DoF)"
+          ],
+          "task": [
+            "Tool use",
+            "Object lifting and relocation",
+            "Placement and stacking",
+            "Object-pose trajectory tracking"
+          ],
+          "method": [
+            "Depth-refined hand–object reconstruction",
+            "Object-centric PPO / SAPG",
+            "Interaction-prior reward regularization",
+            "DAgger teacher–student distillation"
+          ],
+          "evaluation": "Simulation: eight tasks, five-waypoint tracking across 4,096 environments. Real robot: eight tasks × 10 trials, 57/80 successes.",
+          "notes_zh": "实机轨迹由示教轨迹仿射变化得到；依赖重建物体模型与FoundationPose。接触先验用于奖励，学生删除接触与指物距离，不属于实测触觉反馈。作者项目页可访问，未见代码仓库链接。"
+        }
+      }
     }
   ]
 }

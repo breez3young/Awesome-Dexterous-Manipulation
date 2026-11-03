@@ -1,20 +1,122 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-10-31T07:23:31Z",
+  "last_checked_at": "2026-11-03T02:38:13Z",
   "lookback_days": 7,
-  "window_start": "2026-10-24T07:23:31Z",
+  "window_start": "2026-10-27T02:38:13Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 68,
-  "recent_match_count": 21,
-  "new_candidate_count": 0,
-  "updated_candidate_count": 0,
+  "candidate_count": 72,
+  "recent_match_count": 18,
+  "new_candidate_count": 4,
+  "updated_candidate_count": 1,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2506.06361",
+      "title": "Tactile MNIST: Benchmarking Active Tactile Perception",
+      "published": "2025-06-03T14:42:16Z",
+      "updated": "2026-10-30T21:40:28Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2506.06361",
+        "pdf": "https://arxiv.org/pdf/2506.06361"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… has the potential to significantly enhance dexterous robotic manipulation by providing rich local information that can complement or substitute for other sensory …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.20320",
+      "title": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation",
+      "published": "2026-10-14T15:06:53Z",
+      "updated": "2026-10-30T07:15:22Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.20320",
+        "pdf": "https://arxiv.org/pdf/2610.20320"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "title",
+          "text": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.41336",
+      "title": "HandMimicX: Learning Human-Like Dexterous Manipulation via an Object-Centric Policy from Egocentric Videos",
+      "published": "2026-10-30T06:51:27Z",
+      "updated": "2026-10-30T06:51:27Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.41336",
+        "pdf": "https://arxiv.org/pdf/2610.41336"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Learning dexterous manipulation from human videos remains an open challenge, particularly in the context of transferring a single demonstration into a spatially …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.41028",
+      "title": "Contact Imitation Interface: Transferring Dexterous Skills by Showing How Contact Unfolds",
+      "published": "2026-10-29T22:14:31Z",
+      "updated": "2026-10-29T22:14:31Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.41028",
+        "pdf": "https://arxiv.org/pdf/2610.41028"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… offer a promising route to scaling dexterous manipulation data. The key challenge is to preserve the demonstrator's natural dexterity while producing contact-grounded …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.40828",
+      "title": "From Teleoperation to Long-Horizon Dexterity: Evaluating Visuomotor Skills and Offline Proxies for Dexterous Manipulation",
+      "published": "2026-10-29T18:07:37Z",
+      "updated": "2026-10-29T18:07:37Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40828",
+        "pdf": "https://arxiv.org/pdf/2610.40828"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "title",
+          "text": "… Visuomotor Skills and Offline Proxies for Dexterous Manipulation"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2610.40349",
       "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
@@ -1231,27 +1333,6 @@
         {
           "source": "title",
           "text": "EgoJEPA: Beyond Retargeting for Dexterous Manipulation from Egocentric Videos"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2610.20320",
-      "title": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation",
-      "published": "2026-10-14T15:06:53Z",
-      "updated": "2026-10-14T15:06:53Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.20320",
-        "pdf": "https://arxiv.org/pdf/2610.20320"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "title",
-          "text": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation"
         }
       ],
       "review_status": "pending"

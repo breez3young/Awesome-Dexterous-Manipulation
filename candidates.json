@@ -1,8 +1,186 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31T07:23:31Z",
+  "updated_at": "2026-11-03T02:38:13Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2506.06361",
+      "title": "Tactile MNIST: Benchmarking Active Tactile Perception",
+      "authors": [
+        "Tim Schneider",
+        "Guillaume Duret",
+        "Cristiana de Farias",
+        "Roberto Calandra",
+        "Liming Chen",
+        "Jan Peters"
+      ],
+      "published": "2025-06-03T14:42:16Z",
+      "updated": "2026-10-30T21:40:28Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2506.06361",
+        "pdf": "https://arxiv.org/pdf/2506.06361"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… has the potential to significantly enhance dexterous robotic manipulation by providing rich local information that can complement or substitute for other sensory …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-03T02:38:13Z",
+      "last_seen": "2026-11-03T02:38:13Z"
+    },
+    {
+      "id": "2610.20320",
+      "title": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation",
+      "authors": [
+        "Fucai Zhu",
+        "Xidong Zhang",
+        "Yichi Zhang",
+        "Yipan Wang",
+        "Fubo Wang",
+        "Zibin Wu",
+        "Kaiqi Li",
+        "Jianhao Jiao",
+        "Shihan Lu",
+        "Di Hu",
+        "Mengdi Xu",
+        "Siyu Zhu",
+        "Xiaoxiao Long",
+        "Yao Yao",
+        "Xun Cao",
+        "Zhuo Xu",
+        "Koichi Hashimoto",
+        "Qifeng Chen",
+        "Zhe Li",
+        "Jianfei Yang",
+        "Haofei Lu",
+        "Danica Kragic",
+        "Shuicheng Yan",
+        "Jianghua Duan",
+        "Michael Yu Wang",
+        "Weihao Yuan"
+      ],
+      "published": "2026-10-14T15:06:53Z",
+      "updated": "2026-10-30T07:15:22Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.20320",
+        "pdf": "https://arxiv.org/pdf/2610.20320"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "title",
+          "text": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-15T06:16:26Z",
+      "last_seen": "2026-11-03T02:38:13Z"
+    },
+    {
+      "id": "2610.41336",
+      "title": "HandMimicX: Learning Human-Like Dexterous Manipulation via an Object-Centric Policy from Egocentric Videos",
+      "authors": [
+        "Zihan Gao",
+        "Yufei Liu",
+        "Yuhong Zhang",
+        "Zhen Yu",
+        "Xinhao Huang",
+        "Zhinan You",
+        "Kai W. Ho",
+        "Zipeng Ye",
+        "Peng Jiao",
+        "Haoqian Wang"
+      ],
+      "published": "2026-10-30T06:51:27Z",
+      "updated": "2026-10-30T06:51:27Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.41336",
+        "pdf": "https://arxiv.org/pdf/2610.41336"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Learning dexterous manipulation from human videos remains an open challenge, particularly in the context of transferring a single demonstration into a spatially …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-03T02:38:13Z",
+      "last_seen": "2026-11-03T02:38:13Z"
+    },
+    {
+      "id": "2610.41028",
+      "title": "Contact Imitation Interface: Transferring Dexterous Skills by Showing How Contact Unfolds",
+      "authors": [
+        "Zhixuan Xu",
+        "Yichen Li",
+        "Bingchen Wu",
+        "Rui Wang",
+        "Yiwen Hou",
+        "Zixuan Liu",
+        "Tianyu Qiu",
+        "Lin Shao"
+      ],
+      "published": "2026-10-29T22:14:31Z",
+      "updated": "2026-10-29T22:14:31Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.41028",
+        "pdf": "https://arxiv.org/pdf/2610.41028"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… offer a promising route to scaling dexterous manipulation data. The key challenge is to preserve the demonstrator's natural dexterity while producing contact-grounded …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-03T02:38:13Z",
+      "last_seen": "2026-11-03T02:38:13Z"
+    },
+    {
+      "id": "2610.40828",
+      "title": "From Teleoperation to Long-Horizon Dexterity: Evaluating Visuomotor Skills and Offline Proxies for Dexterous Manipulation",
+      "authors": [
+        "Ammar N. Abbas",
+        "Aayush Jain",
+        "Prashanth Viswanath",
+        "Nivesh Gadipudi",
+        "Giulia Vilone",
+        "Jim Gibbons"
+      ],
+      "published": "2026-10-29T18:07:37Z",
+      "updated": "2026-10-29T18:07:37Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40828",
+        "pdf": "https://arxiv.org/pdf/2610.40828"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "title",
+          "text": "… Visuomotor Skills and Offline Proxies for Dexterous Manipulation"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-03T02:38:13Z",
+      "last_seen": "2026-11-03T02:38:13Z"
+    },
     {
       "id": "2610.40349",
       "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
@@ -36,7 +214,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-30T07:36:53Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-03T02:38:13Z"
     },
     {
       "id": "2610.40210",
@@ -62,7 +240,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-30T07:36:53Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-03T02:38:13Z"
     },
     {
       "id": "2610.40109",
@@ -90,7 +268,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-30T07:36:53Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-03T02:38:13Z"
     },
     {
       "id": "2610.39975",
@@ -116,7 +294,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-30T07:36:53Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-03T02:38:13Z"
     },
     {
       "id": "2610.39582",
@@ -150,7 +328,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-30T07:36:53Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-03T02:38:13Z"
     },
     {
       "id": "2610.39076",
@@ -279,7 +457,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-30T07:36:53Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-03T02:38:13Z"
     },
     {
       "id": "2610.37865",
@@ -304,7 +482,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-30T07:36:53Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-03T02:38:13Z"
     },
     {
       "id": "2610.37799",
@@ -351,7 +529,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-30T07:36:53Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-03T02:38:13Z"
     },
     {
       "id": "2610.37652",
@@ -380,7 +558,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-28T07:12:27Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-03T02:38:13Z"
     },
     {
       "id": "2610.25459",
@@ -410,7 +588,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-20T06:23:48Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-03T02:38:13Z"
     },
     {
       "id": "2610.36789",
@@ -440,7 +618,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-28T07:12:27Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-03T02:38:13Z"
     },
     {
       "id": "2610.36539",
@@ -475,7 +653,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-28T07:12:27Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-03T02:38:13Z"
     },
     {
       "id": "2606.30749",
@@ -503,7 +681,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-28T07:12:27Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-01T07:56:08Z"
     },
     {
       "id": "2602.13444",
@@ -534,7 +712,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-01T07:56:08Z"
     },
     {
       "id": "2610.35462",
@@ -563,7 +741,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-01T07:56:08Z"
     },
     {
       "id": "2610.35103",
@@ -591,7 +769,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-01T07:56:08Z"
     },
     {
       "id": "2610.22340",
@@ -621,7 +799,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-01T07:56:08Z"
     },
     {
       "id": "2610.23438",
@@ -650,7 +828,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-01T07:56:08Z"
     },
     {
       "id": "2610.34453",
@@ -682,7 +860,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-01T07:56:08Z"
     },
     {
       "id": "2605.01434",
@@ -713,7 +891,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-27T06:39:39Z",
-      "last_seen": "2026-10-31T07:23:31Z"
+      "last_seen": "2026-11-01T07:56:08Z"
     },
     {
       "id": "2610.33852",
@@ -2044,57 +2222,6 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-10-21T06:24:14Z"
-    },
-    {
-      "id": "2610.20320",
-      "title": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation",
-      "authors": [
-        "Fucai Zhu",
-        "Xidong Zhang",
-        "Yichi Zhang",
-        "Yipan Wang",
-        "Fubo Wang",
-        "Zibin Wu",
-        "Kaiqi Li",
-        "Jianhao Jiao",
-        "Shihan Lu",
-        "Di Hu",
-        "Mengdi Xu",
-        "Siyu Zhu",
-        "Xiaoxiao Long",
-        "Yao Yao",
-        "Xun Cao",
-        "Zhuo Xu",
-        "Koichi Hashimoto",
-        "Qifeng Chen",
-        "Zhe Li",
-        "Jianfei Yang",
-        "Haofei Lu",
-        "Danica Kragic",
-        "Shuicheng Yan",
-        "Jianghua Duan",
-        "Michael Yu Wang",
-        "Weihao Yuan"
-      ],
-      "published": "2026-10-14T15:06:53Z",
-      "updated": "2026-10-14T15:06:53Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.20320",
-        "pdf": "https://arxiv.org/pdf/2610.20320"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "title",
-          "text": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-15T06:16:26Z",
       "last_seen": "2026-10-21T06:24:14Z"
     },
     {
