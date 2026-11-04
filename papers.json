@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -11042,6 +11042,202 @@
         "https://arxiv.org/abs/2610.41336v1",
         "https://arxiv.org/html/2610.41336v1",
         "https://anonymous.4open.science/w/handmimicx/index.html"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.01483",
+      "title": "$TF^2$-Steering: Action Refinement with Tactile Forecasts and Feedback via Velocity-Field Steering",
+      "authors": [
+        "Yiming Chen",
+        "Xiaofei Wei",
+        "Chun Gu",
+        "Wei Xiao",
+        "Peidong Liu",
+        "Li Zhang"
+      ],
+      "date": "2026-11-01",
+      "year": 2026,
+      "category": "Tactile Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.01483",
+        "project": "https://yiming-cc.github.io/tf2-steering/"
+      },
+      "tags": [
+        "Imitation learning",
+        "Foundation policy",
+        "Diffusion / flow policy",
+        "Teleoperation",
+        "Bimanual coordination",
+        "Tactile feedback",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Combines cached tactile forecasts with live touch to steer a flow policy on dual UR5e–Sharpa hands. Six simulated tasks average 68.3% success; six real tasks average 71.5% progress, which includes partial completion.",
+      "tldr_zh": "双UR5e–Sharpa手结合缓存触觉预测与执行时触觉，修正流策略。六项仿真平均成功率68.3%；六项实机平均进度得分71.5%，包含部分完成分数。",
+      "sensing": [
+        "Real-time tactile images",
+        "Multi-view RGB",
+        "Robot proprioceptive state"
+      ],
+      "hand": [
+        "Two Sharpa dexterous hands (22 DoF each)"
+      ],
+      "task": [
+        "Fruit placement",
+        "Zipper closing",
+        "Whiteboard wiping",
+        "Bottle-cap twisting",
+        "Cup separation",
+        "Dropper transfer"
+      ],
+      "method": [
+        "Tactile world-model forecasting",
+        "Flow-matching velocity-field steering",
+        "Asynchronous forecast–feedback refinement"
+      ],
+      "notes_zh": "实机指标为20次试验的分阶段进度均值，不是完整任务成功比例；作者代码尚未开放。",
+      "arxiv_id": "2611.01483",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-01T03:15:09Z",
+      "source_url": "https://arxiv.org/abs/2611.01483v1",
+      "sources": [
+        "https://arxiv.org/abs/2611.01483v1",
+        "https://arxiv.org/html/2611.01483v1",
+        "https://yiming-cc.github.io/tf2-steering/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.02171",
+      "title": "GoalDex: Learning Image-Goal-Conditioned Policies for Dexterous In-Hand Manipulation",
+      "authors": [
+        "Arjun Bhardwaj",
+        "Mayank Mittal",
+        "Maximum Wilder-Smith",
+        "Vaishakh Patil",
+        "Marco Hutter"
+      ],
+      "date": "2026-11-01",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.02171",
+        "project": "https://rffr.leggedrobotics.com/works/goaldex/"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Imitation learning",
+        "Sim-to-real",
+        "In-hand manipulation",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Distills a privileged PPO teacher into an image-goal-conditioned recurrent RGB-and-proprioception policy with state reconstruction and contrastive alignment. Palm-up Allegro experiments succeed in 80/100 trials across five objects, while goal rendering and deployment require object geometry and segmentation masks.",
+      "tldr_zh": "将特权 PPO 教师蒸馏为图像目标条件的循环视觉与本体状态策略，结合状态重建和对比对齐实现手内重定向。掌心向上的真实 Allegro 在五个物体中成功 80/100 次；目标渲染和部署仍依赖物体网格与分割掩码。",
+      "sensing": [
+        "RGB vision",
+        "Joint proprioception"
+      ],
+      "hand": [
+        "Allegro Hand"
+      ],
+      "task": [
+        "Image-goal-conditioned in-hand reorientation"
+      ],
+      "method": [
+        "Privileged PPO teacher",
+        "DAgger distillation",
+        "Recurrent visual policy",
+        "Contrastive goal alignment"
+      ],
+      "arxiv_id": "2611.02171",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-01T20:19:51Z",
+      "source_url": "https://arxiv.org/abs/2611.02171v1",
+      "sources": [
+        "https://arxiv.org/html/2611.02171v1",
+        "https://rffr.leggedrobotics.com/works/goaldex/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.02629",
+      "title": "DexArena: A Unified Benchmark for Long-Horizon Dexterous Manipulation",
+      "authors": [
+        "Haonan Ping",
+        "Jianshu Hu",
+        "Yimin Wang",
+        "Yi Zhu",
+        "Pai Liang",
+        "Qiyan Jin",
+        "Qirui Bao",
+        "Ying Qian",
+        "Xinyang Ding",
+        "Hongfei Qiao",
+        "Tianle Xue",
+        "Yucheng Bai",
+        "Soo Wei Jie",
+        "Shuguang Li",
+        "Yutong Ban"
+      ],
+      "date": "2026-11-02",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.02629",
+        "project": "https://sipair-elastic.github.io/DexArena-website/",
+        "data": "https://huggingface.co/datasets/SIPAIR/DexArena"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Imitation learning",
+        "Vision-language-action",
+        "Diffusion / flow policy",
+        "Teleoperation",
+        "Bimanual coordination",
+        "Long-horizon tasks",
+        "Articulated objects",
+        "Vision",
+        "Proprioception",
+        "Dataset / benchmark"
+      ],
+      "tldr": "Introduces a SAPIEN benchmark with ten long-horizon tasks, thirty stages and 3,000 replay-verified teleoperation demonstrations. Six visual-proprioceptive baselines probe skill composition and scene generalization in simulation, with success-conditioned stage transitions and unequal training budgets.",
+      "tldr_zh": "提供包含 10 个长时程任务、30 个阶段和 3,000 条回放验证遥操作示范的 SAPIEN 基准。六种视觉与本体状态基线用于分析技能组合和场景泛化；评测仅在仿真进行，阶段按成功判据切换，方法训练预算未对齐。",
+      "sensing": [
+        "Simulated RGB vision",
+        "Joint proprioception"
+      ],
+      "hand": [
+        "Sharpa Hand",
+        "Wuji Hand",
+        "XHand"
+      ],
+      "task": [
+        "Long-horizon dexterous manipulation",
+        "Bimanual manipulation",
+        "Articulated-object manipulation"
+      ],
+      "method": [
+        "Simulation benchmark",
+        "Teleoperated demonstrations",
+        "Stage-wise skill composition",
+        "Visual-proprioceptive policy evaluation"
+      ],
+      "arxiv_id": "2611.02629",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-02T06:54:36Z",
+      "source_url": "https://arxiv.org/abs/2611.02629v1",
+      "sources": [
+        "https://arxiv.org/html/2611.02629v1",
+        "https://sipair-elastic.github.io/DexArena-website/",
+        "https://huggingface.co/datasets/SIPAIR/DexArena"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"

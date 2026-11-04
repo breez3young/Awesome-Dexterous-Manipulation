@@ -1,20 +1,122 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-11-03T02:38:13Z",
+  "last_checked_at": "2026-11-03T08:23:52Z",
   "lookback_days": 7,
-  "window_start": "2026-10-27T02:38:13Z",
+  "window_start": "2026-10-27T08:23:52Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 72,
-  "recent_match_count": 18,
+  "candidate_count": 76,
+  "recent_match_count": 20,
   "new_candidate_count": 4,
   "updated_candidate_count": 1,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2611.02629",
+      "title": "DexArena: A Unified Benchmark for Long-Horizon Dexterous Manipulation",
+      "published": "2026-11-02T06:54:36Z",
+      "updated": "2026-11-02T06:54:36Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.02629",
+        "pdf": "https://arxiv.org/pdf/2611.02629"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Long-horizon dexterous manipulation remains a fundamental challenge for robot learning, requiring the composition of multiple skills, precise bimanual coordination, generalizable visual understanding, …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.02171",
+      "title": "GoalDex: Learning Image-Goal-Conditioned Policies for Dexterous In-Hand Manipulation",
+      "published": "2026-11-01T20:19:51Z",
+      "updated": "2026-11-01T20:19:51Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.02171",
+        "pdf": "https://arxiv.org/pdf/2611.02171"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous in-hand manipulation is commonly formulated around explicit object pose estimation, yet reliable pose tracking is challenging under severe hand-object occlusions and …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.01483",
+      "title": "$TF^2$-Steering: Action Refinement with Tactile Forecasts and Feedback via Velocity-Field Steering",
+      "published": "2026-11-01T03:15:09Z",
+      "updated": "2026-11-01T03:15:09Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.01483",
+        "pdf": "https://arxiv.org/pdf/2611.01483"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… equally important for robots, particularly in dexterous manipulation tasks. Yet many contemporary robot policies remain vision-dominant. This visual bias, compounded by limited …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2605.30569",
+      "title": "Any-ttach: Quick End-effector Swapping Enables Manipulation Dexterity with Simplicity",
+      "published": "2026-05-28T21:00:52Z",
+      "updated": "2026-11-01T02:36:35Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2605.30569",
+        "pdf": "https://arxiv.org/pdf/2605.30569"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… pursued by building increasingly complex high-DoF multifingered hands. While many robotic hands are designed to replicate the morphology of human hands, the …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.39076",
+      "title": "Tactus: Tactile & Pose Sensing Glove for Natural Dexterity Data Collection",
+      "published": "2026-10-29T00:10:55Z",
+      "updated": "2026-10-31T22:05:02Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.39076",
+        "pdf": "https://arxiv.org/pdf/2610.39076"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… hand pose is essential for robot dexterous manipulation policy and foundational world model learning - yet no existing wearable platform provides both …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2506.06361",
       "title": "Tactile MNIST: Benchmarking Active Tactile Perception",
@@ -215,27 +317,6 @@
         {
           "source": "abstract",
           "text": "… scalable source of data for learning dexterous manipulation policies. However, existing retargeting methods primarily transfer human kinematics, while the tactile information underlying …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2610.39076",
-      "title": "Tactus: Tactile & Pose Sensing Glove for Natural Dexterity Data Collection",
-      "published": "2026-10-29T00:10:55Z",
-      "updated": "2026-10-29T00:10:55Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.39076",
-        "pdf": "https://arxiv.org/pdf/2610.39076"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… hand pose is essential for robot dexterous manipulation policy and foundational world model learning - yet no existing wearable platform provides both …"
         }
       ],
       "review_status": "pending"
