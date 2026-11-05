@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -11238,6 +11238,266 @@
         "https://arxiv.org/html/2611.02629v1",
         "https://sipair-elastic.github.io/DexArena-website/",
         "https://huggingface.co/datasets/SIPAIR/DexArena"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2510.15786",
+      "title": "DexCanvas: Bridging Human Demonstrations and Robot Learning for Dexterous Manipulation",
+      "authors": [
+        "Xinyue Xu",
+        "Jieqiang Sun",
+        "Jing (Daisy)Dai",
+        "Siyuan Chen",
+        "Lanjie Ma",
+        "Ke Sun",
+        "Bin Zhao",
+        "Jianbo Yuan",
+        "Sheng Yi",
+        "Haohua Zhu",
+        "Irvine Lu"
+      ],
+      "date": "2025-10-17",
+      "year": 2025,
+      "category": "Hand–Object Interaction",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2510.15786",
+        "data": "https://huggingface.co/datasets/Dex-GEM/DexCanvas"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Imitation learning",
+        "Diffusion / flow policy",
+        "Human motion transfer",
+        "Retargeting",
+        "Cross-embodiment",
+        "Dexterous grasping",
+        "In-hand manipulation",
+        "Vision",
+        "Proprioception",
+        "Dataset / benchmark"
+      ],
+      "tldr": "Reconstructs contact forces by tracking human demonstrations with a residual RL-controlled MANO hand in simulation, then synthesizes trajectories and retargets contacts to robot hands. The paper reports 7,000 generated hours; the first release contains 111,857 trajectories, about 77 hours. Policy and robot-hand evaluations are simulated, and force labels are not physical sensor measurements.",
+      "tldr_zh": "用残差强化学习控制仿真 MANO 手跟踪人类示范，重建接触力、扩增轨迹并将接触关系重定向到机器人手。论文报告生成数据共 7,000 小时，首发公开 111,857 条轨迹约 77 小时。策略和机器人手验证均在仿真中进行，力标签并非真实传感器测量。",
+      "sensing": [
+        "Optical motion capture",
+        "RGB-D capture",
+        "Simulated joint state",
+        "Simulated contact forces"
+      ],
+      "hand": [
+        "MANO hand model",
+        "DexHand021 (simulation)",
+        "DexHand021Pro (simulation)"
+      ],
+      "task": [
+        "Human hand–object interaction reconstruction",
+        "Contact-annotated trajectory synthesis",
+        "Cross-embodiment retargeting"
+      ],
+      "method": [
+        "Residual PPO tracking",
+        "Physics-based force reconstruction",
+        "Contact-driven retargeting",
+        "Contact-conditioned Diffusion Policy"
+      ],
+      "arxiv_id": "2510.15786",
+      "arxiv_version": 3,
+      "arxiv_updated": "2026-11-03T05:24:20Z",
+      "source_url": "https://arxiv.org/abs/2510.15786v3",
+      "sources": [
+        "https://arxiv.org/pdf/2510.15786v3",
+        "https://huggingface.co/datasets/Dex-GEM/DexCanvas"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v3)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2606.02194",
+      "title": "Coherent Off-Policy Improvement of Large Behavior Models with Learned Rewards",
+      "authors": [
+        "Christian Scherer",
+        "Joe Watson",
+        "Theo Gruner",
+        "Daniel Palenicek",
+        "Ingmar Posner",
+        "Jan Peters"
+      ],
+      "date": "2026-06-01",
+      "year": 2026,
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.02194"
+      },
+      "category": "Policy Optimization",
+      "scope": "adjacent",
+      "tags": [
+        "Reinforcement learning",
+        "Imitation learning",
+        "Vision-language-action",
+        "Foundation policy",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "CSIL++ learns coherent dense rewards from demonstrations and averages a small optimized policy with frozen pi-0.5 actions to reduce early unlearning. Six gripper simulations include a Threading gain from 14% to 92%; real FR3 cylinder pushing reaches near-optimal performance after about 28 minutes of interaction. Multifinger and tactile deployment are untested.",
+      "tldr_zh": "CSIL++ 从示教学得一致密集奖励，将优化后的小策略与冻结 π0.5 的动作取平均，缓解早期能力退化。六项夹爪仿真中 Threading 从14%升至92%，实机 FR3 圆柱推块约28分钟交互后达到接近满分；尚未验证多指手或触觉部署。",
+      "sensing": [
+        "RGB vision",
+        "Proprioception"
+      ],
+      "hand": [],
+      "task": [
+        "Manipulation policy finetuning",
+        "Simulated gripper manipulation",
+        "Real-robot cube pushing"
+      ],
+      "method": [
+        "Coherent inverse reinforcement learning",
+        "Learned dense rewards",
+        "Off-policy actor-critic",
+        "Action averaging with frozen pi-0.5"
+      ],
+      "arxiv_id": "2606.02194",
+      "arxiv_version": 2,
+      "arxiv_updated": "2026-11-03T15:07:29Z",
+      "source_url": "https://arxiv.org/abs/2606.02194v2",
+      "sources": [
+        "https://arxiv.org/html/2606.02194v2"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v2)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2609.24093",
+      "title": "Dexterous Robot Manipulation from Human Demonstrations via Contact-Anchored Retargeting and Residual Policy Learning",
+      "authors": [
+        "Zihao Yang",
+        "Chengyuan Liu",
+        "Yu Zhou",
+        "Runze Lv",
+        "Tianyu Cui",
+        "Sheng Yi",
+        "Haohua Zhu",
+        "Irvine Lu",
+        "JieQ Sun"
+      ],
+      "date": "2026-09-21",
+      "year": 2026,
+      "links": {
+        "paper": "https://arxiv.org/abs/2609.24093",
+        "project": "https://github.com/DexGEM-Lab/real2sim2real"
+      },
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "tags": [
+        "Reinforcement learning",
+        "Imitation learning",
+        "Human motion transfer",
+        "Retargeting",
+        "Cross-embodiment",
+        "Sim-to-real",
+        "Dexterous grasping",
+        "In-hand manipulation",
+        "Bimanual coordination",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Repairs human motion-capture trajectories with residual RL, transfers contact anchors across hand morphologies, and learns robot-side corrections in simulation. Four-hand simulated success rises from 17.1% to 79.5%; real dual-DexHand 021 completes 21/40 trials across four tasks without real-robot training data, using reference trajectories, joint states and visual object poses rather than tactile feedback.",
+      "tldr_zh": "以残差强化学习修复人类动捕轨迹，通过接触锚点跨手型重定向，并在仿真学习机器人修正。四手型仿真成功率从17.1%升至79.5%；真实双 DexHand 021 在四项任务共成功21/40次，无需实机训练数据，但依赖参考轨迹、关节状态与视觉物体位姿，不使用实机触觉反馈。",
+      "sensing": [
+        "Joint proprioception",
+        "Visual object-pose estimation"
+      ],
+      "hand": [
+        "DexHand 021",
+        "DexHand 021Pro",
+        "Shadow Hand",
+        "Allegro Hand"
+      ],
+      "task": [
+        "Cross-embodiment grasp and lift",
+        "Bimanual cup stacking",
+        "Bottle handover and placement",
+        "Water pouring",
+        "In-hand bottle reorientation"
+      ],
+      "method": [
+        "MANO physics refinement",
+        "Contact-anchored retargeting",
+        "Residual PPO",
+        "Domain randomization"
+      ],
+      "arxiv_id": "2609.24093",
+      "arxiv_version": 2,
+      "arxiv_updated": "2026-11-03T03:44:26Z",
+      "source_url": "https://arxiv.org/abs/2609.24093v2",
+      "sources": [
+        "https://arxiv.org/html/2609.24093v2",
+        "https://github.com/DexGEM-Lab/real2sim2real"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v2)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.05119",
+      "title": "DexHOT: Learning Hand-Object Configuration Transfer for Dexterous Manipulation",
+      "authors": [
+        "Zhewei Gui",
+        "Anthony Bolton",
+        "Jiyao Zhang",
+        "Zeyuan Chen",
+        "Qiyang Yan",
+        "Tianyu Wang",
+        "Hao Dong"
+      ],
+      "date": "2026-11-03",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.05119",
+        "project": "https://dex-hot.github.io/"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Model-based planning",
+        "Human motion transfer",
+        "Retargeting",
+        "Sim-to-real",
+        "In-hand manipulation",
+        "Long-horizon tasks",
+        "Vision",
+        "Proprioception",
+        "Dataset / benchmark"
+      ],
+      "tldr": "Learns a shared hand–object configuration-transfer policy from synthetic feasible local goals using population-based RL, then chains planner- or demonstration-derived subgoals. A Sharpa Wave hand succeeds in 61.5% of 200 physical transfers and 27/30 demonstration-guided task trials. Execution relies on visual pose tracking, known object geometry and joint encoders; task trials use fixed initial layouts.",
+      "tldr_zh": "从合成可行局部目标出发，以群体强化学习训练共享手—物配置迁移策略，再串联规划或示范产生的子目标。真实 Sharpa Wave 在 200 次配置迁移中成功率为 61.5%，示范引导任务成功 27/30 次。执行依赖视觉位姿跟踪、物体几何与关节编码器，任务试验采用固定初始布局。",
+      "sensing": [
+        "RGB-D object-pose tracking",
+        "Joint encoders"
+      ],
+      "hand": [
+        "Sharpa Wave"
+      ],
+      "task": [
+        "Palm-down in-hand configuration transfer",
+        "Demonstration-guided long-horizon manipulation"
+      ],
+      "method": [
+        "Evolutionary Policy Optimization",
+        "Local feasible-goal sampling",
+        "Recurrent configuration-transfer policy",
+        "Hierarchical subgoal chaining"
+      ],
+      "arxiv_id": "2611.05119",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-03T16:08:03Z",
+      "source_url": "https://arxiv.org/abs/2611.05119v1",
+      "sources": [
+        "https://arxiv.org/html/2611.05119v1",
+        "https://dex-hot.github.io/",
+        "https://github.com/dex-hot/DexHOT-Code"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"

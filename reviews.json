@@ -14061,6 +14061,442 @@
           ]
         }
       }
+    },
+    {
+      "key": "2510.15786|v3|2026-11-03T05:24:20+00:00|dexterous-v1",
+      "digest": "97db604fffc706495804ae7356b82fd731c0a641f351926c8d50db48dca5afd5",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-05T03:00:52Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2510.15786",
+          "version": 3,
+          "title": "DexCanvas: Bridging Human Demonstrations and Robot Learning for Dexterous Manipulation",
+          "authors": [
+            "Xinyue Xu",
+            "Jieqiang Sun",
+            "Jing (Daisy)Dai",
+            "Siyuan Chen",
+            "Lanjie Ma",
+            "Ke Sun",
+            "Bin Zhao",
+            "Jianbo Yuan",
+            "Sheng Yi",
+            "Haohua Zhu",
+            "Irvine Lu"
+          ],
+          "published": "2025-10-17T16:08:14Z",
+          "updated": "2026-11-03T05:24:20Z",
+          "url": "https://arxiv.org/abs/2510.15786v3",
+          "primary_urls": [
+            "https://arxiv.org/pdf/2510.15786v3",
+            "https://huggingface.co/datasets/Dex-GEM/DexCanvas"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "主要贡献为直接支持多指机器人学习的人手物体交互数据与力重建，符合收录范围。全文区分真实动捕与仿真接触力；不将仿真接触输入标为真实机器人触觉反馈。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/pdf/2510.15786v3",
+            "section": "p.1；§3.4、§4、§5.4–5.5",
+            "paraphrase": "作者页确认 Jing (Daisy) Dai 为一个作者。残差 PPO 重现动捕轨迹并由模拟器记录力；MANO 扩散策略及 DexHand021/Pro 重定向评测均为仿真。7,000 小时为生成数据总量，公开首批约 77 小时。"
+          },
+          {
+            "url": "https://huggingface.co/datasets/Dex-GEM/DexCanvas",
+            "paraphrase": "官方数据卡链接该 arXiv，公开规模为 111,857 条右手轨迹、55,442,683 帧；含相机记录和回放资源，未声称轨迹帧与图像逐帧对应。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/pdf/2510.15786v3",
+          "paraphrase": "§4.1/5.4 的执行接触特征来自物理模拟器；本文未给出真实机器人读取触觉传感器的部署实验。"
+        },
+        "paper": {
+          "id": "2510.15786",
+          "title": "DexCanvas: Bridging Human Demonstrations and Robot Learning for Dexterous Manipulation",
+          "authors": [
+            "Xinyue Xu",
+            "Jieqiang Sun",
+            "Jing (Daisy)Dai",
+            "Siyuan Chen",
+            "Lanjie Ma",
+            "Ke Sun",
+            "Bin Zhao",
+            "Jianbo Yuan",
+            "Sheng Yi",
+            "Haohua Zhu",
+            "Irvine Lu"
+          ],
+          "date": "2025-10-17",
+          "year": 2025,
+          "category": "Hand–Object Interaction",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2510.15786",
+            "data": "https://huggingface.co/datasets/Dex-GEM/DexCanvas"
+          },
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Diffusion / flow policy",
+            "Human motion transfer",
+            "Retargeting",
+            "Cross-embodiment",
+            "Dexterous grasping",
+            "In-hand manipulation",
+            "Vision",
+            "Proprioception",
+            "Dataset / benchmark"
+          ],
+          "tldr": "Reconstructs contact forces by tracking human demonstrations with a residual RL-controlled MANO hand in simulation, then synthesizes trajectories and retargets contacts to robot hands. The paper reports 7,000 generated hours; the first release contains 111,857 trajectories, about 77 hours. Policy and robot-hand evaluations are simulated, and force labels are not physical sensor measurements.",
+          "tldr_zh": "用残差强化学习控制仿真 MANO 手跟踪人类示范，重建接触力、扩增轨迹并将接触关系重定向到机器人手。论文报告生成数据共 7,000 小时，首发公开 111,857 条轨迹约 77 小时。策略和机器人手验证均在仿真中进行，力标签并非真实传感器测量。",
+          "sensing": [
+            "Optical motion capture",
+            "RGB-D capture",
+            "Simulated joint state",
+            "Simulated contact forces"
+          ],
+          "hand": [
+            "MANO hand model",
+            "DexHand021 (simulation)",
+            "DexHand021Pro (simulation)"
+          ],
+          "task": [
+            "Human hand–object interaction reconstruction",
+            "Contact-annotated trajectory synthesis",
+            "Cross-embodiment retargeting"
+          ],
+          "method": [
+            "Residual PPO tracking",
+            "Physics-based force reconstruction",
+            "Contact-driven retargeting",
+            "Contact-conditioned Diffusion Policy"
+          ]
+        }
+      }
+    },
+    {
+      "key": "2606.02194|v2|2026-11-03T15:07:29+00:00|dexterous-v1",
+      "digest": "3aa2594ab17d8785f52bf0508b30f41613426c6770f5fdce6a054954d5f1662c",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-05T03:00:52Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2606.02194",
+          "version": 2,
+          "title": "Coherent Off-Policy Improvement of Large Behavior Models with Learned Rewards",
+          "authors": [
+            "Christian Scherer",
+            "Joe Watson",
+            "Theo Gruner",
+            "Daniel Palenicek",
+            "Ingmar Posner",
+            "Jan Peters"
+          ],
+          "published": "2026-06-01T12:49:14Z",
+          "updated": "2026-11-03T15:07:29Z",
+          "url": "https://arxiv.org/abs/2606.02194v2",
+          "primary_urls": [
+            "https://arxiv.org/html/2606.02194v2"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "主要贡献是利用示教推导一致奖励并稳定改进预训练策略，作为通用策略优化邻近方法收录；全文实验为平行夹爪仿真和圆柱末端推块，不能当成多指手或触觉部署验证。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2606.02194v2",
+            "section": "§3–4，算法1",
+            "paraphrase": "CSIL++ 改进分类 critic 与归一化，以示教学习的密集奖励优化小策略；最终动作取该策略与冻结 π0.5 的平均，并非直接更新 VLA 权重。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.02194v2",
+            "section": "§5–6，图6–7",
+            "paraphrase": "六项夹爪仿真中 Threading 从14%升至92%；实机 FR3 圆柱推块约28分钟交互达到接近满分。Nut Assembly 未明显提升，未验证多指手。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2606.02194v2",
+          "paraphrase": "§5 的观测与平台为图像、本体状态、夹爪或圆柱末端；没有机器人执行时读取触觉的证据。"
+        },
+        "paper": {
+          "id": "2606.02194",
+          "title": "Coherent Off-Policy Improvement of Large Behavior Models with Learned Rewards",
+          "authors": [
+            "Christian Scherer",
+            "Joe Watson",
+            "Theo Gruner",
+            "Daniel Palenicek",
+            "Ingmar Posner",
+            "Jan Peters"
+          ],
+          "date": "2026-06-01",
+          "year": 2026,
+          "links": {
+            "paper": "https://arxiv.org/abs/2606.02194"
+          },
+          "category": "Policy Optimization",
+          "scope": "adjacent",
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Vision-language-action",
+            "Foundation policy",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "CSIL++ learns coherent dense rewards from demonstrations and averages a small optimized policy with frozen pi-0.5 actions to reduce early unlearning. Six gripper simulations include a Threading gain from 14% to 92%; real FR3 cylinder pushing reaches near-optimal performance after about 28 minutes of interaction. Multifinger and tactile deployment are untested.",
+          "tldr_zh": "CSIL++ 从示教学得一致密集奖励，将优化后的小策略与冻结 π0.5 的动作取平均，缓解早期能力退化。六项夹爪仿真中 Threading 从14%升至92%，实机 FR3 圆柱推块约28分钟交互后达到接近满分；尚未验证多指手或触觉部署。",
+          "sensing": [
+            "RGB vision",
+            "Proprioception"
+          ],
+          "hand": [],
+          "task": [
+            "Manipulation policy finetuning",
+            "Simulated gripper manipulation",
+            "Real-robot cube pushing"
+          ],
+          "method": [
+            "Coherent inverse reinforcement learning",
+            "Learned dense rewards",
+            "Off-policy actor-critic",
+            "Action averaging with frozen pi-0.5"
+          ]
+        }
+      }
+    },
+    {
+      "key": "2609.24093|v2|2026-11-03T03:44:26+00:00|dexterous-v1",
+      "digest": "3f0708655e4bf87bbe4365adaa16646cf25df9bfad483757322f1a0d6c068392",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-05T03:00:52Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2609.24093",
+          "version": 2,
+          "title": "Dexterous Robot Manipulation from Human Demonstrations via Contact-Anchored Retargeting and Residual Policy Learning",
+          "authors": [
+            "Zihao Yang",
+            "Chengyuan Liu",
+            "Yu Zhou",
+            "Runze Lv",
+            "Tianyu Cui",
+            "Sheng Yi",
+            "Haohua Zhu",
+            "Irvine Lu",
+            "JieQ Sun"
+          ],
+          "published": "2026-09-21T04:26:26Z",
+          "updated": "2026-11-03T03:44:26Z",
+          "url": "https://arxiv.org/abs/2609.24093v2",
+          "primary_urls": [
+            "https://arxiv.org/html/2609.24093v2",
+            "https://github.com/DexGEM-Lab/real2sim2real"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "从人类动捕接触结构学习可部署多指机器人策略，跨四种手型仿真并验证真实双 DexHand 021，属于核心灵巧操作；仿真恢复的力监督不视为实机触觉。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2609.24093v2",
+            "section": "§3.2–3.5",
+            "paraphrase": "共享残差 PPO 修复 MANO 轨迹，接触锚点重定向后再训练机器人残差；实机读取关节位置和视觉物体位姿，按已知参考轨迹执行。"
+          },
+          {
+            "url": "https://arxiv.org/html/2609.24093v2",
+            "section": "§4.2–4.3，表3，图5",
+            "paraphrase": "四手型仿真平均成功率从17.1%至79.5%；双 DexHand 021 的四项实机任务分别7/10、5/10、6/10、3/10。需参考运动与物体几何，换手型须重训机器人残差。"
+          },
+          {
+            "url": "https://github.com/DexGEM-Lab/real2sim2real",
+            "paraphrase": "官方仓库展示该管线与部署视频，明确标注代码待发布；仅保留项目链接。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2609.24093v2",
+          "paraphrase": "§3.5 与 §4.3 的实机输入是关节位置和视觉估计物体位姿；仿真接触力重建及力条件策略消融不是实机触觉传感。"
+        },
+        "paper": {
+          "id": "2609.24093",
+          "title": "Dexterous Robot Manipulation from Human Demonstrations via Contact-Anchored Retargeting and Residual Policy Learning",
+          "authors": [
+            "Zihao Yang",
+            "Chengyuan Liu",
+            "Yu Zhou",
+            "Runze Lv",
+            "Tianyu Cui",
+            "Sheng Yi",
+            "Haohua Zhu",
+            "Irvine Lu",
+            "JieQ Sun"
+          ],
+          "date": "2026-09-21",
+          "year": 2026,
+          "links": {
+            "paper": "https://arxiv.org/abs/2609.24093",
+            "project": "https://github.com/DexGEM-Lab/real2sim2real"
+          },
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Human motion transfer",
+            "Retargeting",
+            "Cross-embodiment",
+            "Sim-to-real",
+            "Dexterous grasping",
+            "In-hand manipulation",
+            "Bimanual coordination",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Repairs human motion-capture trajectories with residual RL, transfers contact anchors across hand morphologies, and learns robot-side corrections in simulation. Four-hand simulated success rises from 17.1% to 79.5%; real dual-DexHand 021 completes 21/40 trials across four tasks without real-robot training data, using reference trajectories, joint states and visual object poses rather than tactile feedback.",
+          "tldr_zh": "以残差强化学习修复人类动捕轨迹，通过接触锚点跨手型重定向，并在仿真学习机器人修正。四手型仿真成功率从17.1%升至79.5%；真实双 DexHand 021 在四项任务共成功21/40次，无需实机训练数据，但依赖参考轨迹、关节状态与视觉物体位姿，不使用实机触觉反馈。",
+          "sensing": [
+            "Joint proprioception",
+            "Visual object-pose estimation"
+          ],
+          "hand": [
+            "DexHand 021",
+            "DexHand 021Pro",
+            "Shadow Hand",
+            "Allegro Hand"
+          ],
+          "task": [
+            "Cross-embodiment grasp and lift",
+            "Bimanual cup stacking",
+            "Bottle handover and placement",
+            "Water pouring",
+            "In-hand bottle reorientation"
+          ],
+          "method": [
+            "MANO physics refinement",
+            "Contact-anchored retargeting",
+            "Residual PPO",
+            "Domain randomization"
+          ]
+        }
+      }
+    },
+    {
+      "key": "2611.05119|v1|2026-11-03T16:08:03+00:00|dexterous-v1",
+      "digest": "141889e7e5faf398559b92016b63e7f4706ef0793d6605a4094517139bc2e792",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-05T03:00:52Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.05119",
+          "version": 1,
+          "title": "DexHOT: Learning Hand-Object Configuration Transfer for Dexterous Manipulation",
+          "authors": [
+            "Zhewei Gui",
+            "Anthony Bolton",
+            "Jiyao Zhang",
+            "Zeyuan Chen",
+            "Qiyang Yan",
+            "Tianyu Wang",
+            "Hao Dong"
+          ],
+          "published": "2026-11-03T16:08:03Z",
+          "updated": "2026-11-03T16:08:03Z",
+          "url": "https://arxiv.org/abs/2611.05119v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.05119v1",
+            "https://dex-hot.github.io/",
+            "https://github.com/dex-hot/DexHOT-Code"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "直接研究多指手内配置迁移与长时程组合，包含仿真和真实 Sharpa Wave 验证，属于核心灵巧操作。执行使用视觉位姿及关节状态；不添加触觉反馈标签。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.05119v1",
+            "section": "§IV-B/C；§V-A/D/E",
+            "paraphrase": "合成局部配置对训练共享 EPO 策略，部署用 FoundationPose 与编码器闭环反馈。真实迁移 200 次成功率 61.5%；六任务固定初始布局共 30 次成功 27 次，机械臂单独跟踪示范腕轨迹。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.05119v1",
+            "section": "§IV-D、§V-A",
+            "paraphrase": "120 物体基准含 80 个留出物体，但仍为各物体预先生成配置池供目标与规划使用；不能理解为无需物体几何或配置准备的任意物体泛化。"
+          },
+          {
+            "url": "https://dex-hot.github.io/",
+            "paraphrase": "官方项目页标题、七位作者及 arXiv 链接一致。"
+          },
+          {
+            "url": "https://github.com/dex-hot/DexHOT-Code",
+            "paraphrase": "官方代码仓库仅有说明页，标注即将发布，故不登记可用代码链接。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.05119v1",
+          "paraphrase": "§IV-B 的接触信息仅供特权评论家；§V-A 的真实执行观测为相机位姿和关节编码器，§V-D 将触觉列为后续改善方向。"
+        },
+        "paper": {
+          "id": "2611.05119",
+          "title": "DexHOT: Learning Hand-Object Configuration Transfer for Dexterous Manipulation",
+          "authors": [
+            "Zhewei Gui",
+            "Anthony Bolton",
+            "Jiyao Zhang",
+            "Zeyuan Chen",
+            "Qiyang Yan",
+            "Tianyu Wang",
+            "Hao Dong"
+          ],
+          "date": "2026-11-03",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.05119",
+            "project": "https://dex-hot.github.io/"
+          },
+          "tags": [
+            "Reinforcement learning",
+            "Model-based planning",
+            "Human motion transfer",
+            "Retargeting",
+            "Sim-to-real",
+            "In-hand manipulation",
+            "Long-horizon tasks",
+            "Vision",
+            "Proprioception",
+            "Dataset / benchmark"
+          ],
+          "tldr": "Learns a shared hand–object configuration-transfer policy from synthetic feasible local goals using population-based RL, then chains planner- or demonstration-derived subgoals. A Sharpa Wave hand succeeds in 61.5% of 200 physical transfers and 27/30 demonstration-guided task trials. Execution relies on visual pose tracking, known object geometry and joint encoders; task trials use fixed initial layouts.",
+          "tldr_zh": "从合成可行局部目标出发，以群体强化学习训练共享手—物配置迁移策略，再串联规划或示范产生的子目标。真实 Sharpa Wave 在 200 次配置迁移中成功率为 61.5%，示范引导任务成功 27/30 次。执行依赖视觉位姿跟踪、物体几何与关节编码器，任务试验采用固定初始布局。",
+          "sensing": [
+            "RGB-D object-pose tracking",
+            "Joint encoders"
+          ],
+          "hand": [
+            "Sharpa Wave"
+          ],
+          "task": [
+            "Palm-down in-hand configuration transfer",
+            "Demonstration-guided long-horizon manipulation"
+          ],
+          "method": [
+            "Evolutionary Policy Optimization",
+            "Local feasible-goal sampling",
+            "Recurrent configuration-transfer policy",
+            "Hierarchical subgoal chaining"
+          ]
+        }
+      }
     }
   ]
 }
