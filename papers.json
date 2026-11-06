@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -11498,6 +11498,285 @@
         "https://arxiv.org/html/2611.05119v1",
         "https://dex-hot.github.io/",
         "https://github.com/dex-hot/DexHOT-Code"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2606.12109",
+      "title": "Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning",
+      "authors": [
+        "Chuanke Pang",
+        "Junyi Huang",
+        "Jianye Fang",
+        "Zhijun Zhao",
+        "Yaobing Wang",
+        "Kun Xu",
+        "Xilun Ding"
+      ],
+      "date": "2026-06-10",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.12109"
+      },
+      "tags": [
+        "Imitation learning",
+        "Vision-language-action",
+        "Foundation policy",
+        "Diffusion / flow policy",
+        "Retargeting",
+        "Teleoperation",
+        "Dexterous grasping",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "InDex adapts pretrained VLAs by predicting synchronized end-effector motion and aperture intent, then conditioning a hand diffusion decoder on them. With pi0.5, it reports 85.8% success across four simulated tasks and 83/100 trials across two physical tasks. Hardware policies use separate real demonstrations and task-specific calibration; unseen-hand transfer and tactile feedback are not demonstrated.",
+      "tldr_zh": "InDex 先预测同步的末端动作与开口意图，再条件生成灵巧手扩散动作，以适配预训练 VLA。基于 π0.5 时，四项仿真任务平均成功率为 85.8%，两项实机任务共成功 83/100 次。实机策略另用真实示范训练并按任务标定；未验证跨未知手型迁移或触觉反馈。",
+      "sensing": [
+        "Global RGB camera",
+        "Wrist RGB camera",
+        "Joint proprioception"
+      ],
+      "hand": [
+        "Fourier FDH-6 (simulation)",
+        "Inspire-Robots hand"
+      ],
+      "task": [
+        "Dexterous grasping",
+        "Pick and place",
+        "Block fitting",
+        "Stacking and nut assembly (simulation)"
+      ],
+      "method": [
+        "Grasp-intent-conditioned VLA adaptation",
+        "Sequential fine-tuning with upstream co-adaptation",
+        "Conditional hand diffusion decoder"
+      ],
+      "arxiv_id": "2606.12109",
+      "arxiv_version": 3,
+      "arxiv_updated": "2026-11-04T07:20:53Z",
+      "source_url": "https://arxiv.org/abs/2606.12109v3",
+      "sources": [
+        "https://arxiv.org/html/2606.12109v3"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v3)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2608.20817",
+      "title": "GhostTac: Manipulating Tactile Sensors without Physical Contact",
+      "authors": [
+        "Kun Wang",
+        "Xuancun Lu",
+        "Ruochen Zhou",
+        "Kai Wang",
+        "Tongjun Ye",
+        "Yihao Shao",
+        "Chen Yan",
+        "Xiaoyu Ji",
+        "Wenyuan Xu"
+      ],
+      "date": "2026-08-21",
+      "year": 2026,
+      "category": "Tactile Sensing & Representation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.20817",
+        "project": "https://ghosttac.github.io/GhostTacCCS.io/"
+      },
+      "tags": [
+        "Tactile feedback",
+        "Force control",
+        "Dexterous grasping",
+        "Hardware / sensor"
+      ],
+      "tldr": "Studies electromagnetic interference as a failure mode of tactile sensing, testing 15 sensors across ten modules and two dexterous hands. Physical Panda–Inspire experiments demonstrate effects on feedback-controlled grasping, slip detection and material classification. Results mainly cover resistive and capacitive sensors; optical tactile sensors and highly dynamic operation remain unverified.",
+      "tldr_zh": "研究电磁干扰造成的触觉测量失真，在十个模块、两只灵巧手涉及的15个传感器上测试，并用真实 Panda–Inspire 系统评估对触觉闭环抓取、滑移检测和材质分类的影响。证据主要覆盖电阻式与电容式传感器，不能外推至光学触觉和高度动态操作。",
+      "sensing": [
+        "Piezoresistive tactile arrays",
+        "Capacitive tactile arrays"
+      ],
+      "hand": [
+        "Inspire RH56DFTP"
+      ],
+      "task": [
+        "Feedback-controlled grasping",
+        "Slip detection",
+        "Material classification"
+      ],
+      "method": [
+        "Tactile sensor robustness evaluation",
+        "Physical-layer failure analysis",
+        "Closed-loop grasp evaluation"
+      ],
+      "arxiv_id": "2608.20817",
+      "arxiv_version": 4,
+      "arxiv_updated": "2026-11-04T07:02:04Z",
+      "source_url": "https://arxiv.org/abs/2608.20817v4",
+      "sources": [
+        "https://arxiv.org/html/2608.20817v4",
+        "https://ghosttac.github.io/GhostTacCCS.io/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v4)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.05754",
+      "title": "GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting",
+      "authors": [
+        "Yang Liu",
+        "Tong Wang",
+        "Yiming Bao",
+        "Heng Yang"
+      ],
+      "date": "2026-11-03",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.05754",
+        "project": "https://computationalrobotics.seas.harvard.edu/GRASP",
+        "code": "https://github.com/ComputationalRobotics/GRASP_code"
+      },
+      "tags": [
+        "Model-based planning",
+        "Reinforcement learning",
+        "Human motion transfer",
+        "Retargeting",
+        "Cross-embodiment",
+        "Sim-to-real",
+        "Bimanual coordination",
+        "In-hand manipulation"
+      ],
+      "tldr": "Fits local quadratic models to archived simulator rollouts to guide sampling, then uses receding windows for physics-based retargeting without simulator derivatives. With 1,024 particles, simulated Sharpa tracking succeeds on 92.8% of 1,352 OakInk2 clips under mean 10 cm/0.5 rad error thresholds. Real dexterous-hand demonstrations use open-loop playback; they do not establish closed-loop robustness.",
+      "tldr_zh": "利用已有仿真轨迹拟合局部二次模型引导采样，通过滚动窗口完成无需仿真器梯度的物理重定向。1024粒子设置下，Sharpa在1352条OakInk2片段中以平均误差10厘米/0.5弧度阈值达到92.8%仿真跟踪成功率；真实手仅演示开环回放，未验证闭环鲁棒性。",
+      "sensing": [],
+      "hand": [
+        "Sharpa Hand",
+        "Wuji Hand",
+        "XHand"
+      ],
+      "task": [
+        "Bimanual motion retargeting",
+        "Cross-embodiment contact-rich manipulation",
+        "Pen-spinning reference refinement"
+      ],
+      "method": [
+        "Tempered sequential Monte Carlo",
+        "Local quadratic surrogate gradients",
+        "Metropolis-Hastings correction",
+        "Receding-horizon trajectory optimization"
+      ],
+      "evaluation": "Simulation tracking and downstream PPO comparisons; qualitative open-loop dexterous-hand hardware demonstrations.",
+      "notes_zh": "成功率是对象轨迹误差判据，不是人工逐任务功能完成率；官网使用2000粒子结果，摘要固定v1表1的1024粒子设置。对物体几何和动力学误差的鲁棒性留待后续验证；数据链接访问超时，未列入。",
+      "arxiv_id": "2611.05754",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-03T23:53:22Z",
+      "source_url": "https://arxiv.org/abs/2611.05754v1",
+      "sources": [
+        "https://arxiv.org/html/2611.05754v1",
+        "https://computationalrobotics.seas.harvard.edu/GRASP",
+        "https://github.com/ComputationalRobotics/GRASP_code"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.05979",
+      "title": "Learning Object-Centric Motion Priors from Human for Robotic Dexterous Manipulation",
+      "authors": [
+        "Zhengdong Hong",
+        "Guofeng Zhang"
+      ],
+      "date": "2026-11-04",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.05979"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Human motion transfer",
+        "Retargeting",
+        "Sim-to-real",
+        "Cross-embodiment",
+        "Dexterous grasping",
+        "Bimanual coordination",
+        "Articulated objects",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Predicts hand–object trajectories from human interaction data and uses retargeted motion and object-state rewards to guide PPO. Simulation and physical tests cover grasping, articulated objects and obstacle-aware grasping. Deployment uses known meshes and visual pose tracking; changing hands requires retargeting, system identification and renewed RL training, with additional success and collision rewards still used.",
+      "tldr_zh": "从人手交互数据预测手—物轨迹，以重定向动作和物体状态奖励引导 PPO，验证抓取、关节物体操作和避障抓取的仿真及实机执行。部署依赖已知网格与视觉位姿跟踪；更换手型需重新重定向、系统辨识和强化学习训练，仍使用成功与碰撞等奖励。",
+      "sensing": [
+        "RGB-D object-pose tracking",
+        "Joint proprioception"
+      ],
+      "hand": [
+        "PSYONIC Ability Hand",
+        "ROBOTERA XHand1",
+        "Inspire robot hand"
+      ],
+      "task": [
+        "Object grasping",
+        "Articulated-object manipulation",
+        "Grasping around obstacles"
+      ],
+      "method": [
+        "Autoregressive hand–object motion prediction",
+        "Optimization-based retargeting",
+        "Trajectory-guided PPO",
+        "System identification and domain randomization"
+      ],
+      "arxiv_id": "2611.05979",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-04T05:13:03Z",
+      "source_url": "https://arxiv.org/abs/2611.05979v1",
+      "sources": [
+        "https://arxiv.org/html/2611.05979v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.06724",
+      "title": "Dexterous Robotic Hands in the Foundation-Model Era: A Full-Stack Survey of Hardware, Data, Cross-Embodiment Transfer, Learning, and Evaluation",
+      "authors": [
+        "Ji Pei"
+      ],
+      "date": "2026-11-04",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.06724"
+      },
+      "tags": [
+        "Survey"
+      ],
+      "tldr": "Organizes dexterous-hand literature into hardware, data, cross-embodiment transfer, learning and evaluation, with human-data and touch perspectives. It synthesizes work mainly from January 2024 through 4 November 2026 and proposes reporting interfaces and open problems. This narrative review is neither exhaustive nor a pooled performance ranking; its deployment designs are not new validated robot experiments.",
+      "tldr_zh": "从硬件、数据、跨构型迁移、学习和评测五层梳理灵巧手研究，并贯穿人手数据与触觉两条线索。主要综合2024年1月至2026年11月4日文献，提出接口报告建议与开放问题；属于非穷尽的叙事综述，不提供统一性能排名，部署设计也未经新的机器人实验验证。",
+      "sensing": [],
+      "hand": [],
+      "task": [
+        "Literature synthesis of dexterous robotic hands"
+      ],
+      "method": [
+        "Five-layer taxonomy",
+        "Evidence-aware narrative review",
+        "Cross-layer case analysis"
+      ],
+      "evaluation": "Structured narrative literature synthesis; no new deployed robot policy or unified experimental benchmark.",
+      "notes_zh": "公司披露、供应商参数和媒体数据与论文证据来源不同；仅用Survey标签，不将引用方法的触觉反馈或Foundation policy计为本文实测能力。",
+      "arxiv_id": "2611.06724",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-04T16:13:29Z",
+      "source_url": "https://arxiv.org/abs/2611.06724v1",
+      "sources": [
+        "https://arxiv.org/html/2611.06724v1"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"

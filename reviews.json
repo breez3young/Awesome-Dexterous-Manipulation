@@ -14497,6 +14497,522 @@
           ]
         }
       }
+    },
+    {
+      "key": "2606.12109|v3|2026-11-04T07:20:53+00:00|dexterous-v1",
+      "digest": "6fefc3f60b22c475775b7e652be6c78b3fbef612a1f32857696fd4fc9a71eb74",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-06T03:33:27Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2606.12109",
+          "version": 3,
+          "title": "Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning",
+          "authors": [
+            "Chuanke Pang",
+            "Junyi Huang",
+            "Jianye Fang",
+            "Zhijun Zhao",
+            "Yaobing Wang",
+            "Kun Xu",
+            "Xilun Ding"
+          ],
+          "published": "2026-06-10T14:03:52Z",
+          "updated": "2026-11-04T07:20:53Z",
+          "url": "https://arxiv.org/abs/2606.12109v3",
+          "primary_urls": [
+            "https://arxiv.org/html/2606.12109v3"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "直接针对预训练 VLA 的多指手臂手协同适配，有明确仿真及实机方法证据，属于核心灵巧操作；真实策略单独训练，不标注 Sim-to-real 或触觉反馈。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2606.12109v3",
+            "section": "§III-A–D、§IV-D",
+            "paraphrase": "意图由按任务和手型标定的几何开口量得到；VLA 末端—意图预测条件化手部扩散生成。真实策略读取双视角 RGB 与本体状态，每任务使用 50 条真实示范训练。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.12109v3",
+            "section": "§V-C 表 V、§V-D、§VI",
+            "paraphrase": "π0.5+InDex 在实机抓放成功 46/50、嵌合成功 37/50；不是零样本仿真到真实迁移，未知手型与未知任务迁移仍未验证。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2606.12109v3",
+          "paraphrase": "§III-A/IV-D 观测为 RGB 和本体状态；开口意图不是接触测量，§V-D/VI 将触觉列为后续工作。"
+        },
+        "paper": {
+          "id": "2606.12109",
+          "title": "Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning",
+          "authors": [
+            "Chuanke Pang",
+            "Junyi Huang",
+            "Jianye Fang",
+            "Zhijun Zhao",
+            "Yaobing Wang",
+            "Kun Xu",
+            "Xilun Ding"
+          ],
+          "date": "2026-06-10",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2606.12109"
+          },
+          "tags": [
+            "Imitation learning",
+            "Vision-language-action",
+            "Foundation policy",
+            "Diffusion / flow policy",
+            "Retargeting",
+            "Teleoperation",
+            "Dexterous grasping",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "InDex adapts pretrained VLAs by predicting synchronized end-effector motion and aperture intent, then conditioning a hand diffusion decoder on them. With pi0.5, it reports 85.8% success across four simulated tasks and 83/100 trials across two physical tasks. Hardware policies use separate real demonstrations and task-specific calibration; unseen-hand transfer and tactile feedback are not demonstrated.",
+          "tldr_zh": "InDex 先预测同步的末端动作与开口意图，再条件生成灵巧手扩散动作，以适配预训练 VLA。基于 π0.5 时，四项仿真任务平均成功率为 85.8%，两项实机任务共成功 83/100 次。实机策略另用真实示范训练并按任务标定；未验证跨未知手型迁移或触觉反馈。",
+          "sensing": [
+            "Global RGB camera",
+            "Wrist RGB camera",
+            "Joint proprioception"
+          ],
+          "hand": [
+            "Fourier FDH-6 (simulation)",
+            "Inspire-Robots hand"
+          ],
+          "task": [
+            "Dexterous grasping",
+            "Pick and place",
+            "Block fitting",
+            "Stacking and nut assembly (simulation)"
+          ],
+          "method": [
+            "Grasp-intent-conditioned VLA adaptation",
+            "Sequential fine-tuning with upstream co-adaptation",
+            "Conditional hand diffusion decoder"
+          ]
+        }
+      }
+    },
+    {
+      "key": "2608.20817|v4|2026-11-04T07:02:04+00:00|dexterous-v1",
+      "digest": "b12690bab3edf561fb80d0b4e21a25c11688828ca502294855a8faa51bb79e8a",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-06T03:33:27Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2608.20817",
+          "version": 4,
+          "title": "GhostTac: Manipulating Tactile Sensors without Physical Contact",
+          "authors": [
+            "Kun Wang",
+            "Xuancun Lu",
+            "Ruochen Zhou",
+            "Kai Wang",
+            "Tongjun Ye",
+            "Yihao Shao",
+            "Chen Yan",
+            "Xiaoyu Ji",
+            "Wenyuan Xu"
+          ],
+          "published": "2026-08-21T07:39:19Z",
+          "updated": "2026-11-04T07:02:04Z",
+          "url": "https://arxiv.org/abs/2608.20817v4",
+          "primary_urls": [
+            "https://arxiv.org/html/2608.20817v4",
+            "https://ghosttac.github.io/GhostTacCCS.io/"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "主要贡献为机器人触觉传感的可靠性与安全性评估，直接涉及灵巧手真实触觉输入，归入触觉感知研究。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2608.20817v4",
+            "section": "§6.1–6.4",
+            "paraphrase": "评测覆盖15个触觉传感器；实机Panda与Inspire手以测得的接触力调节抓力，并评估滑移与材质识别。"
+          },
+          {
+            "url": "https://arxiv.org/html/2608.20817v4",
+            "section": "§7.1–7.3",
+            "paraphrase": "讨论硬件抗干扰与感知一致性防护；主要实验是电阻/电容传感器，光学触觉和剧烈运动适用性仍未验证。"
+          },
+          {
+            "url": "https://ghosttac.github.io/GhostTacCCS.io/",
+            "paraphrase": "项目页题目、九位作者和三类任务与论文对应，提供实验演示；没有可用代码链接。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2608.20817v4",
+          "paraphrase": "§6.4.1实机控制器在抓取期间持续读取测量力并调整抓力，§7.3.2确认跨连续控制周期的真实触觉闭环。"
+        },
+        "paper": {
+          "id": "2608.20817",
+          "title": "GhostTac: Manipulating Tactile Sensors without Physical Contact",
+          "authors": [
+            "Kun Wang",
+            "Xuancun Lu",
+            "Ruochen Zhou",
+            "Kai Wang",
+            "Tongjun Ye",
+            "Yihao Shao",
+            "Chen Yan",
+            "Xiaoyu Ji",
+            "Wenyuan Xu"
+          ],
+          "date": "2026-08-21",
+          "year": 2026,
+          "category": "Tactile Sensing & Representation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2608.20817",
+            "project": "https://ghosttac.github.io/GhostTacCCS.io/"
+          },
+          "tags": [
+            "Tactile feedback",
+            "Force control",
+            "Dexterous grasping",
+            "Hardware / sensor"
+          ],
+          "tldr": "Studies electromagnetic interference as a failure mode of tactile sensing, testing 15 sensors across ten modules and two dexterous hands. Physical Panda–Inspire experiments demonstrate effects on feedback-controlled grasping, slip detection and material classification. Results mainly cover resistive and capacitive sensors; optical tactile sensors and highly dynamic operation remain unverified.",
+          "tldr_zh": "研究电磁干扰造成的触觉测量失真，在十个模块、两只灵巧手涉及的15个传感器上测试，并用真实 Panda–Inspire 系统评估对触觉闭环抓取、滑移检测和材质分类的影响。证据主要覆盖电阻式与电容式传感器，不能外推至光学触觉和高度动态操作。",
+          "sensing": [
+            "Piezoresistive tactile arrays",
+            "Capacitive tactile arrays"
+          ],
+          "hand": [
+            "Inspire RH56DFTP"
+          ],
+          "task": [
+            "Feedback-controlled grasping",
+            "Slip detection",
+            "Material classification"
+          ],
+          "method": [
+            "Tactile sensor robustness evaluation",
+            "Physical-layer failure analysis",
+            "Closed-loop grasp evaluation"
+          ]
+        }
+      }
+    },
+    {
+      "key": "2611.05754|v1|2026-11-03T23:53:22+00:00|dexterous-v1",
+      "digest": "769796269150038382b0ac912aaa1d48a9b078f7a024c0311537a2fe6aeb5e7b",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-06T03:33:27Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.05754",
+          "version": 1,
+          "title": "GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting",
+          "authors": [
+            "Yang Liu",
+            "Tong Wang",
+            "Yiming Bao",
+            "Heng Yang"
+          ],
+          "published": "2026-11-03T23:53:22Z",
+          "updated": "2026-11-03T23:53:22Z",
+          "url": "https://arxiv.org/abs/2611.05754v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.05754v1",
+            "https://computationalrobotics.seas.harvard.edu/GRASP",
+            "https://github.com/ComputationalRobotics/GRASP_code"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "以物理仿真将人类参考运动转为多指手可执行控制，包含双手、跨手型、下游PPO和实机演示，符合核心灵巧操作；真实手演示为开环回放，不能标注实机闭环触觉控制。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.05754v1",
+            "section": "§3–5",
+            "paraphrase": "利用已有仿真轨迹拟合局部二次代价模型，以恢复梯度引导温度序贯蒙特卡洛，并用真实代价做Metropolis校正；滚动窗口复用计划，无需可微仿真器。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.05754v1",
+            "section": "§6.1–6.5，表1–2，附录11",
+            "paraphrase": "1024粒子在1352条OakInk2双手演示中达92.8%仿真跟踪成功，阈值为平均位置误差10cm、旋转误差0.5rad。真实手仅展示开环提容器及倒液体，无重复试验成功率。"
+          },
+          {
+            "url": "https://computationalrobotics.seas.harvard.edu/GRASP",
+            "paraphrase": "官方项目页对应标题与作者；页面94.2%对应论文2000粒子设置，本文摘要使用v1表1的1024粒子结果。"
+          },
+          {
+            "url": "https://github.com/ComputationalRobotics/GRASP_code",
+            "paraphrase": "官方仓库已含优化器、MPC与仿真管线源码；仅核验公开资源，未运行或复现。"
+          }
+        ],
+        "paper": {
+          "id": "2611.05754",
+          "title": "GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting",
+          "authors": [
+            "Yang Liu",
+            "Tong Wang",
+            "Yiming Bao",
+            "Heng Yang"
+          ],
+          "date": "2026-11-03",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.05754",
+            "project": "https://computationalrobotics.seas.harvard.edu/GRASP",
+            "code": "https://github.com/ComputationalRobotics/GRASP_code"
+          },
+          "tags": [
+            "Model-based planning",
+            "Reinforcement learning",
+            "Human motion transfer",
+            "Retargeting",
+            "Cross-embodiment",
+            "Sim-to-real",
+            "Bimanual coordination",
+            "In-hand manipulation"
+          ],
+          "tldr": "Fits local quadratic models to archived simulator rollouts to guide sampling, then uses receding windows for physics-based retargeting without simulator derivatives. With 1,024 particles, simulated Sharpa tracking succeeds on 92.8% of 1,352 OakInk2 clips under mean 10 cm/0.5 rad error thresholds. Real dexterous-hand demonstrations use open-loop playback; they do not establish closed-loop robustness.",
+          "tldr_zh": "利用已有仿真轨迹拟合局部二次模型引导采样，通过滚动窗口完成无需仿真器梯度的物理重定向。1024粒子设置下，Sharpa在1352条OakInk2片段中以平均误差10厘米/0.5弧度阈值达到92.8%仿真跟踪成功率；真实手仅演示开环回放，未验证闭环鲁棒性。",
+          "sensing": [],
+          "hand": [
+            "Sharpa Hand",
+            "Wuji Hand",
+            "XHand"
+          ],
+          "task": [
+            "Bimanual motion retargeting",
+            "Cross-embodiment contact-rich manipulation",
+            "Pen-spinning reference refinement"
+          ],
+          "method": [
+            "Tempered sequential Monte Carlo",
+            "Local quadratic surrogate gradients",
+            "Metropolis-Hastings correction",
+            "Receding-horizon trajectory optimization"
+          ],
+          "evaluation": "Simulation tracking and downstream PPO comparisons; qualitative open-loop dexterous-hand hardware demonstrations.",
+          "notes_zh": "成功率是对象轨迹误差判据，不是人工逐任务功能完成率；官网使用2000粒子结果，摘要固定v1表1的1024粒子设置。对物体几何和动力学误差的鲁棒性留待后续验证；数据链接访问超时，未列入。"
+        },
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.05754v1",
+          "paraphrase": "§6.5明确真实手执行采用开环轨迹回放；§3–5的闭环是仿真重定向内部状态反馈，不是部署触觉。"
+        }
+      }
+    },
+    {
+      "key": "2611.05979|v1|2026-11-04T05:13:03+00:00|dexterous-v1",
+      "digest": "e94641a82f448a09c57fb60d61a877a965ae1197834931957e2cdc169b37057e",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-06T03:33:27Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.05979",
+          "version": 1,
+          "title": "Learning Object-Centric Motion Priors from Human for Robotic Dexterous Manipulation",
+          "authors": [
+            "Zhengdong Hong",
+            "Guofeng Zhang"
+          ],
+          "published": "2026-11-04T05:13:03Z",
+          "updated": "2026-11-04T05:13:03Z",
+          "url": "https://arxiv.org/abs/2611.05979v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.05979v1"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "人类交互先验用于真实多指机器人技能学习，具备方法和跨平台实机证据，符合核心灵巧操作；接触仅用于仿真奖励，不能标为执行时触觉。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.05979v1",
+            "section": "Methods：Hand-Object Poses Prediction、Trajectory-Guided Reinforcement Learning",
+            "paraphrase": "Dex-YCB/ARCTIC 训练自回归手—物预测器，重定向轨迹与预测物体状态引导 PPO；状态输入为关节与物体位姿，奖励仍含成功、接触和避障项。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.05979v1",
+            "section": "Sim-to-Real Transfer、Real-World Robot Setup、Cross-Embodiment Test",
+            "paraphrase": "实机以 RGB-D/FoundationPose 和已知网格估计物体位姿；三种手复用预测器，但各自进行重定向、系统辨识及 RL 训练。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.05979v1",
+          "paraphrase": "接触奖励来自 SAPIEN 碰撞检查；真实策略读取关节和视觉估计位姿，xArm 碰撞检测用于失败判定而非触觉策略输入。"
+        },
+        "paper": {
+          "id": "2611.05979",
+          "title": "Learning Object-Centric Motion Priors from Human for Robotic Dexterous Manipulation",
+          "authors": [
+            "Zhengdong Hong",
+            "Guofeng Zhang"
+          ],
+          "date": "2026-11-04",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.05979"
+          },
+          "tags": [
+            "Reinforcement learning",
+            "Human motion transfer",
+            "Retargeting",
+            "Sim-to-real",
+            "Cross-embodiment",
+            "Dexterous grasping",
+            "Bimanual coordination",
+            "Articulated objects",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Predicts hand–object trajectories from human interaction data and uses retargeted motion and object-state rewards to guide PPO. Simulation and physical tests cover grasping, articulated objects and obstacle-aware grasping. Deployment uses known meshes and visual pose tracking; changing hands requires retargeting, system identification and renewed RL training, with additional success and collision rewards still used.",
+          "tldr_zh": "从人手交互数据预测手—物轨迹，以重定向动作和物体状态奖励引导 PPO，验证抓取、关节物体操作和避障抓取的仿真及实机执行。部署依赖已知网格与视觉位姿跟踪；更换手型需重新重定向、系统辨识和强化学习训练，仍使用成功与碰撞等奖励。",
+          "sensing": [
+            "RGB-D object-pose tracking",
+            "Joint proprioception"
+          ],
+          "hand": [
+            "PSYONIC Ability Hand",
+            "ROBOTERA XHand1",
+            "Inspire robot hand"
+          ],
+          "task": [
+            "Object grasping",
+            "Articulated-object manipulation",
+            "Grasping around obstacles"
+          ],
+          "method": [
+            "Autoregressive hand–object motion prediction",
+            "Optimization-based retargeting",
+            "Trajectory-guided PPO",
+            "System identification and domain randomization"
+          ]
+        }
+      }
+    },
+    {
+      "key": "2611.06359|v1|2026-11-04T11:21:23+00:00|dexterous-v1",
+      "digest": "52590863ceb9d65b2a05ed9d3d0ab0fc06a225c2c404013a2f1847c7c75a7d86",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-06T03:33:27Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.06359",
+          "version": 1,
+          "title": "Vortex-Induced Torque in Grasping Soft Objects: Influence of Geometry and Pneumatic Parameters",
+          "authors": [
+            "Roman Mykhailyshyn",
+            "Tomohiro Motoda",
+            "Ivan Virgala",
+            "Ann Majewicz Fey",
+            "Yukiyasu Domae"
+          ],
+          "published": "2026-11-04T11:21:23Z",
+          "updated": "2026-11-04T11:21:23Z",
+          "url": "https://arxiv.org/abs/2611.06359v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.06359v1"
+          ]
+        },
+        "decision": "reject",
+        "review_depth": "fulltext",
+        "reason_zh": "本文贡献为单个涡流夹爪与柔软表面间的反力矩测量及回归预测；并未提出多指操作、触觉感知表征、抓取姿态生成或策略优化方法。多指手示例引用既有工作，利用涡流力矩进行灵巧旋转仍列为未来研究，因此按当前目录范围排除，不写入永久人工排除名单。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.06359v1",
+            "section": "§II-A、II-D",
+            "paraphrase": "七自由度机械臂搭单涡流夹爪和ATI测力计，垂直移动采样492种条件；学习目标是由气动与几何参数预测峰值反力矩。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.06359v1",
+            "section": "图1、§III-D、§IV",
+            "paraphrase": "多指手插图属于引用工作；本文只验证条件域内的力矩回归，使用涡流力矩完成灵巧操作明确留待后续。"
+          }
+        ]
+      }
+    },
+    {
+      "key": "2611.06724|v1|2026-11-04T16:13:29+00:00|dexterous-v1",
+      "digest": "a3fc5ac688c0a91afc6c31c4ebc23a9515f4686979ddf8ed492ba74bd840bc0a",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-06T03:33:27Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.06724",
+          "version": 1,
+          "title": "Dexterous Robotic Hands in the Foundation-Model Era: A Full-Stack Survey of Hardware, Data, Cross-Embodiment Transfer, Learning, and Evaluation",
+          "authors": [
+            "Ji Pei"
+          ],
+          "published": "2026-11-04T16:13:29Z",
+          "updated": "2026-11-04T16:13:29Z",
+          "url": "https://arxiv.org/abs/2611.06724v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.06724v1"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "综述聚焦多指手的硬件、数据、跨构型迁移、学习及评测，直接覆盖核心灵巧操作。它是文献综合，不把被引用工作中的触觉、基座策略或硬件当作本论文的新部署成果。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.06724v1",
+            "section": "§1 Review design and coverage；§2",
+            "paraphrase": "以2024年1月至2026年11月4日文献为主，构建硬件、数据、迁移、学习和评测五层框架；明确为结构化叙事综述，缺少完整检索、筛选计数与独立双人审核记录。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.06724v1",
+            "section": "§7，§9–11",
+            "paraphrase": "串联触觉与人手数据议题，区分论文、公司与媒体证据，提出跨手迁移和物理正确性等开放问题；跨文献统计不能作统一排名，厨房设计是作者综合而非独立验证部署。"
+          }
+        ],
+        "paper": {
+          "id": "2611.06724",
+          "title": "Dexterous Robotic Hands in the Foundation-Model Era: A Full-Stack Survey of Hardware, Data, Cross-Embodiment Transfer, Learning, and Evaluation",
+          "authors": [
+            "Ji Pei"
+          ],
+          "date": "2026-11-04",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.06724"
+          },
+          "tags": [
+            "Survey"
+          ],
+          "tldr": "Organizes dexterous-hand literature into hardware, data, cross-embodiment transfer, learning and evaluation, with human-data and touch perspectives. It synthesizes work mainly from January 2024 through 4 November 2026 and proposes reporting interfaces and open problems. This narrative review is neither exhaustive nor a pooled performance ranking; its deployment designs are not new validated robot experiments.",
+          "tldr_zh": "从硬件、数据、跨构型迁移、学习和评测五层梳理灵巧手研究，并贯穿人手数据与触觉两条线索。主要综合2024年1月至2026年11月4日文献，提出接口报告建议与开放问题；属于非穷尽的叙事综述，不提供统一性能排名，部署设计也未经新的机器人实验验证。",
+          "sensing": [],
+          "hand": [],
+          "task": [
+            "Literature synthesis of dexterous robotic hands"
+          ],
+          "method": [
+            "Five-layer taxonomy",
+            "Evidence-aware narrative review",
+            "Cross-layer case analysis"
+          ],
+          "evaluation": "Structured narrative literature synthesis; no new deployed robot policy or unified experimental benchmark.",
+          "notes_zh": "公司披露、供应商参数和媒体数据与论文证据来源不同；仅用Survey标签，不将引用方法的触觉反馈或Foundation policy计为本文实测能力。"
+        }
+      }
     }
   ]
 }
