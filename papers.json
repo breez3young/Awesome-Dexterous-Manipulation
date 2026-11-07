@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -11777,6 +11777,126 @@
       "source_url": "https://arxiv.org/abs/2611.06724v1",
       "sources": [
         "https://arxiv.org/html/2611.06724v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.07881",
+      "title": "TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation",
+      "authors": [
+        "Yijiong Lin",
+        "Wenhao He",
+        "Toby Jack",
+        "Max Yang",
+        "Haoran Li",
+        "Nathan F. Lepora"
+      ],
+      "date": "2026-11-05",
+      "year": 2026,
+      "category": "Tactile Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.07881",
+        "project": "https://yijionglin.github.io/tactilelab/"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Sim-to-real",
+        "In-hand manipulation",
+        "Tactile feedback",
+        "Proprioception"
+      ],
+      "tldr": "Combines rigid-body tactile flow, contact depth and PETS-Net history encoding, translating real fingertip images into the simulated observation space. On a symmetric LEAP Hand, depth plus flow averages 1.95 rotations in 30-second trials, versus 1.70 with depth alone. Transfer assumes sticking contact; reliable slip handling remains unresolved.",
+      "tldr_zh": "将刚体触觉流、接触深度与PETS-Net历史编码结合，把真实指尖图像转换为仿真观测。对称LEAP手在30秒评测中平均旋转1.95圈，纯深度为1.70圈；迁移依赖粘着接触假设，滑移处理仍待解决。",
+      "sensing": [
+        "Vision-based fingertip tactile images",
+        "Joint-position and action history"
+      ],
+      "hand": [
+        "LEAP Hand",
+        "Allegro Hand"
+      ],
+      "task": [
+        "In-hand object rotation",
+        "Dual-arm object following"
+      ],
+      "method": [
+        "Rigid-body tactile-flow simulation",
+        "Teacher-student reinforcement learning",
+        "PETS-Net temporal-spatial adaptation",
+        "Real-to-sim tactile translation"
+      ],
+      "evaluation": "Simulation: Allegro and LEAP; hardware: symmetric LEAP in-hand rotation and dual-arm object following.",
+      "notes_zh": "仿真中两种手型分别训练；实机手内实验仅LEAP。触觉流近似切向运动，并非真实剪切力仿真。官网种子数描述与v1正文不同，总结以正文为准；未复现。",
+      "arxiv_id": "2611.07881",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-05T12:01:12Z",
+      "source_url": "https://arxiv.org/abs/2611.07881v1",
+      "sources": [
+        "https://arxiv.org/html/2611.07881v1",
+        "https://yijionglin.github.io/tactilelab/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.08458",
+      "title": "Latent RL Priors for Data-Efficient Dexterous Manipulation",
+      "authors": [
+        "Yixiao Wang",
+        "Peiyi Chen",
+        "Mustafa Mukadam",
+        "Shreekant Gayaka",
+        "Masayoshi Tomizuka",
+        "Son Tran"
+      ],
+      "date": "2026-11-05",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.08458",
+        "project": "https://yixiaowang7.github.io/latent-rl-prior-page/"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Imitation learning",
+        "Diffusion / flow policy",
+        "Dexterous grasping",
+        "In-hand manipulation",
+        "Bimanual coordination",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Distills simulated RL experience into a frozen flow-matching controller and learns visual conditioning from action demonstrations. One prior supports three SHARPA-hand simulation tasks, including bimanual assembly, with improved downstream demonstration efficiency. The gains rely on substantial pretraining; real-robot and cross-morphology transfer remain untested. Contact-force probes analyze representations rather than provide tactile feedback.",
+      "tldr_zh": "将仿真RL经验蒸馏为冻结的流匹配控制器，仅用动作示范学习视觉条件。一个先验支持含双手装配在内的三项SHARPA手仿真任务，降低下游示范需求；仍依赖大量预训练，未验证实机或跨形态迁移。接触力探针是表征分析，不构成触觉反馈。",
+      "sensing": [
+        "RGB images",
+        "Proprioceptive history"
+      ],
+      "hand": [
+        "SHARPA Hand"
+      ],
+      "task": [
+        "Object pose alignment",
+        "Door lifting",
+        "Bimanual assembly"
+      ],
+      "method": [
+        "Privileged RL distillation",
+        "Frozen flow-matching action decoder",
+        "Visual latent conditioning",
+        "Shared single-arm action prior"
+      ],
+      "arxiv_id": "2611.08458",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-05T18:50:06Z",
+      "source_url": "https://arxiv.org/abs/2611.08458v1",
+      "sources": [
+        "https://arxiv.org/abs/2611.08458v1",
+        "https://arxiv.org/html/2611.08458v1",
+        "https://yixiaowang7.github.io/latent-rl-prior-page/"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"

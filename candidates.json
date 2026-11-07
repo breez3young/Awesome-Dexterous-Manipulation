@@ -1,8 +1,106 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-05T08:18:37Z",
+  "updated_at": "2026-11-06T08:21:29Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2611.08458",
+      "title": "Latent RL Priors for Data-Efficient Dexterous Manipulation",
+      "authors": [
+        "Yixiao Wang",
+        "Peiyi Chen",
+        "Mustafa Mukadam",
+        "Shreekant Gayaka",
+        "Masayoshi Tomizuka",
+        "Son Tran"
+      ],
+      "published": "2026-11-05T18:50:06Z",
+      "updated": "2026-11-05T18:50:06Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.08458",
+        "pdf": "https://arxiv.org/pdf/2611.08458"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Learning dexterous manipulation from limited visual demonstrations is challenging because policies must acquire both perceptual grounding and precise control, while reinforcement learning …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-06T08:21:29Z",
+      "last_seen": "2026-11-06T08:21:29Z"
+    },
+    {
+      "id": "2611.07881",
+      "title": "TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation",
+      "authors": [
+        "Yijiong Lin",
+        "Wenhao He",
+        "Toby Jack",
+        "Max Yang",
+        "Haoran Li",
+        "Nathan F. Lepora"
+      ],
+      "published": "2026-11-05T12:01:12Z",
+      "updated": "2026-11-05T12:01:12Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.07881",
+        "pdf": "https://arxiv.org/pdf/2611.07881"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… on tasks encompassing dual-arm and dexterous in-hand manipulation. Overall, TactileLab provides an end-to-end sim-to-real framework for scalable tactile policy learning, enabling diverse …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-06T08:21:29Z",
+      "last_seen": "2026-11-06T08:21:29Z"
+    },
+    {
+      "id": "2610.21180",
+      "title": "Evo-DexBench: Benchmarking Generalization across Related Tasks for Dexterous Manipulation",
+      "authors": [
+        "Bing Cheng",
+        "Yiran Mao",
+        "Zewei Ye",
+        "Yifan Jin",
+        "Xinyi Chen",
+        "Ruifeng Tu",
+        "Shuhuai Wang",
+        "Tao Lin",
+        "Zhimu Zhou",
+        "Yuxin Du",
+        "Fangwei Zhong",
+        "Junchi Yan",
+        "Bo Zhao"
+      ],
+      "published": "2026-10-15T03:36:05Z",
+      "updated": "2026-11-05T08:57:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.21180",
+        "pdf": "https://arxiv.org/pdf/2610.21180"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "General-purpose dexterous manipulation requires policies to transfer knowledge from related tasks to new tasks with only a few target demonstrations. Existing benchmarks …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-16T06:12:26Z",
+      "last_seen": "2026-11-06T08:21:29Z"
+    },
     {
       "id": "2611.06724",
       "title": "Dexterous Robotic Hands in the Foundation-Model Era: A Full-Stack Survey of Hardware, Data, Cross-Embodiment Transfer, Learning, and Evaluation",
@@ -27,7 +125,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-05T08:18:37Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2611.06359",
@@ -56,7 +154,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-05T08:18:37Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2606.12109",
@@ -87,7 +185,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-05T08:18:37Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2608.20817",
@@ -121,7 +219,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-05T08:18:37Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2611.05979",
@@ -147,7 +245,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-05T08:18:37Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2610.39076",
@@ -276,7 +374,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-30T07:36:53Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2611.05754",
@@ -304,7 +402,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-05T08:18:37Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2610.37652",
@@ -333,7 +431,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-28T07:12:27Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2611.05119",
@@ -364,7 +462,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-04T07:52:43Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2606.02194",
@@ -394,7 +492,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-04T07:52:43Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2611.02629",
@@ -433,7 +531,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-03T08:23:52Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2510.15786",
@@ -469,7 +567,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-04T07:52:43Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2609.24093",
@@ -503,7 +601,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-04T07:52:43Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2611.02171",
@@ -532,7 +630,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-03T08:23:52Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2611.01483",
@@ -563,7 +661,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-03T08:23:52Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2605.30569",
@@ -595,7 +693,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-03T08:23:52Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2506.06361",
@@ -626,7 +724,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-03T02:38:13Z",
-      "last_seen": "2026-11-05T08:18:37Z"
+      "last_seen": "2026-11-06T08:21:29Z"
     },
     {
       "id": "2610.20320",
@@ -2582,43 +2680,6 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-10-21T06:24:14Z"
-    },
-    {
-      "id": "2610.21180",
-      "title": "Evo-DexBench: Benchmarking Generalization across Related Tasks for Dexterous Manipulation",
-      "authors": [
-        "Bing Cheng",
-        "Yiran Mao",
-        "Zewei Ye",
-        "Yifan Jin",
-        "Xinyi Chen",
-        "Ruifeng Tu",
-        "Shuhuai Wang",
-        "Tao Lin",
-        "Zhimu Zhou",
-        "Yuxin Du",
-        "Fangwei Zhong",
-        "Junchi Yan",
-        "Bo Zhao"
-      ],
-      "published": "2026-10-15T03:36:05Z",
-      "updated": "2026-10-15T03:36:05Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.21180",
-        "pdf": "https://arxiv.org/pdf/2610.21180"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "General-purpose dexterous manipulation requires policies to transfer knowledge from related tasks to new tasks with only a few target demonstrations. Existing benchmarks …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-16T06:12:26Z",
       "last_seen": "2026-10-21T06:24:14Z"
     },
     {
