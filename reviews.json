@@ -15227,6 +15227,338 @@
           ]
         }
       }
+    },
+    {
+      "key": "2606.23431|v2|2026-11-05T17:16:07+00:00|dexterous-v1",
+      "digest": "179cbe1ee2198c4a2c4086574cbecb4f8d869023786dd1a576a5e54df814cc5c",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-10T02:36:24Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2606.23431",
+          "version": 2,
+          "title": "DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation with Ego-Centric Perception towards Shared Autonomy",
+          "authors": [
+            "Haichao Liu",
+            "Yuyao Jiang",
+            "Hyunsun Park",
+            "Yuanjiang Xue",
+            "Mingze Sun",
+            "Ziwei Liu",
+            "Ziwei Wang"
+          ],
+          "published": "2026-06-22T14:48:58Z",
+          "updated": "2026-11-05T17:16:07Z",
+          "url": "https://arxiv.org/abs/2606.23431v2",
+          "primary_urls": [
+            "https://arxiv.org/html/2606.23431v2",
+            "https://henryhcliu.github.io/dexteleop-0/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "多指双手遥操作通过机器人侧真实指尖反馈修正接触，符合触觉灵巧操作；触觉证据限Sharpa实现，Wuji为电流估力。",
+        "review_depth": "fulltext",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2606.23431v2",
+            "paraphrase": "v2标题、七位作者及投稿历史核实，首次公开2026-06-22，修订2026-11-05。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.23431v2",
+            "section": "2.1; 2.3.1–2.3.4",
+            "paraphrase": "Sharpa触觉位置与力向量参与执行中的残差QP；Wuji使用电流估力。两手独立修正手指，手臂保持名义命令，不向人反射力。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.23431v2",
+            "section": "3.1.3; 3.3.1–3.3.2; Tables 3–4",
+            "paraphrase": "实机固定输入回放覆盖两种手型，另评估七位操作者。收益非一致：新手插孔阶段52%，低于纯力跟踪64%。"
+          },
+          {
+            "url": "https://henryhcliu.github.io/dexteleop-0/",
+            "paraphrase": "项目题名、作者及论文链接匹配；说明依赖手型适配，Code仍coming soon。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2606.23431v2",
+          "paraphrase": "2.3.1的Sharpa触觉图像接触位置和力通道进入机器人侧控制环；3.3.1报告该配置实机回放。Wuji分支不具直接指尖力传感。"
+        },
+        "paper": {
+          "id": "2606.23431",
+          "title": "DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation with Ego-Centric Perception towards Shared Autonomy",
+          "authors": [
+            "Haichao Liu",
+            "Yuyao Jiang",
+            "Hyunsun Park",
+            "Yuanjiang Xue",
+            "Mingze Sun",
+            "Ziwei Liu",
+            "Ziwei Wang"
+          ],
+          "date": "2026-06-22",
+          "year": 2026,
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2606.23431",
+            "project": "https://henryhcliu.github.io/dexteleop-0/"
+          },
+          "tags": [
+            "Teleoperation",
+            "Retargeting",
+            "Human-in-the-loop",
+            "Bimanual coordination",
+            "Tactile feedback",
+            "Vision",
+            "Proprioception",
+            "Force control"
+          ],
+          "tldr": "Adds bounded hand-joint corrections to teleoperation using a local stiffness–Jacobian model and contact-force objectives. Sharpa uses fingertip tactile feedback; Wuji estimates forces from motor currents. Hardware replay and a seven-operator study show task-dependent assistance. Human intent still drives the arms, and each hand is optimized separately; this is not autonomous task execution.",
+          "tldr_zh": "以局部刚度—雅可比模型和接触力目标，为遥操作增加有界手指关节修正。Sharpa读取真实指尖触觉，Wuji使用电流估力；实机回放与七人实验显示依任务而变的辅助效果。人类仍控制整体动作，两手分别优化，并非自主完成任务。",
+          "sensing": [
+            "Fingertip tactile images and force vectors (Sharpa)",
+            "Joint feedback and current-based force estimates (Wuji)",
+            "Egocentric wrist and hand tracking"
+          ],
+          "hand": [
+            "Sharpa Wave",
+            "Wuji Hand 2"
+          ],
+          "task": [
+            "Bimanual teleoperation",
+            "Object placement and pouring",
+            "Gear meshing and peg insertion"
+          ],
+          "method": [
+            "Vector retargeting",
+            "Stiffness-Jacobian contact model",
+            "Bounded residual quadratic programming",
+            "Per-contact force and moment regularization"
+          ],
+          "evaluation": "Simulation replay, fixed-input hardware replay on two hand configurations, seven-operator user study and descriptive manual-disturbance traces.",
+          "notes_zh": "手型各有传感及运动学适配，不证明无适配跨手迁移。局部模型依赖接触与刚度估计；阶段成功率不等于整任务成功率。未复现。"
+        }
+      }
+    },
+    {
+      "key": "2606.24450|v2|2026-11-06T11:27:21+00:00|dexterous-v1",
+      "digest": "6e694b4f0d44d0ddb7e7b91d9ade68533edb6e268f17e740d8923dcda66c1ba2",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-10T02:36:24Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2606.24450",
+          "version": 2,
+          "title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
+          "authors": [
+            "Soham Patil",
+            "Avirup Das",
+            "Sourabh Bhosale",
+            "Spandan Roy"
+          ],
+          "published": "2026-06-23T11:36:46Z",
+          "updated": "2026-11-06T11:27:21Z",
+          "url": "https://arxiv.org/abs/2606.24450v2",
+          "primary_urls": [
+            "https://arxiv.org/html/2606.24450v2",
+            "https://soham2560.github.io/no-contact-no-worries/"
+          ]
+        },
+        "decision": "accept",
+        "reason_zh": "研究视觉与本体信息预测接触，并用于LEAP多指手的实机掌内旋转，符合核心灵巧操作。执行不读取物理触觉，故不归为触觉灵巧操作，也不标注Tactile feedback。",
+        "review_depth": "fulltext",
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2606.24450v2",
+          "section": "§IV, Fig. 3",
+          "paraphrase": "FSR提供接触评估真值；部署时移除传感器，策略仅接收视觉和本体信息预测的四点二值接触。"
+        },
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2606.24450v2",
+            "paraphrase": "官方记录核对为v2，四位作者匹配；首投2026-06-23，修订2026-11-06。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.24450v2",
+            "section": "§III–IV",
+            "paraphrase": "当前与指令关节位置查询RGB-D视觉特征，经因果时序模块预测四指尖接触，替换PPO/GRU控制器的仿真接触输入。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.24450v2",
+            "section": "§IV, Fig. 3",
+            "paraphrase": "真实FSR用于评估标注，部署时移除，不向提出的策略输入测量触觉。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.24450v2",
+            "section": "§V-C, Table III",
+            "paraphrase": "仿真与实机验证含两种未见物体；每种评估10次、每次30秒。实机旋转角由单人视频标注，不是仿真奖励。"
+          },
+          {
+            "url": "https://arxiv.org/html/2606.24450v2",
+            "section": "§VI",
+            "paraphrase": "范围限于掌内旋转与四点二值接触，未估计力、剪切或扭矩；遮挡和非凸物体仍有性能下降。"
+          },
+          {
+            "url": "https://soham2560.github.io/no-contact-no-worries/",
+            "paraphrase": "项目页标题及作者匹配，提供论文和演示；代码仍标为Coming Soon，不列代码链接。"
+          }
+        ],
+        "paper": {
+          "id": "2606.24450",
+          "title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
+          "authors": [
+            "Soham Patil",
+            "Avirup Das",
+            "Sourabh Bhosale",
+            "Spandan Roy"
+          ],
+          "date": "2026-06-23",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2606.24450",
+            "project": "https://soham2560.github.io/no-contact-no-worries/"
+          },
+          "tags": [
+            "Reinforcement learning",
+            "Sim-to-real",
+            "In-hand manipulation",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Predicts four binary fingertip contacts from RGB-D and current/commanded joint positions using cross-attention and temporal modeling. Predicted contacts drive a simulation-trained LEAP controller in real in-hand rotation, including unseen objects. Deployment uses no physical tactile input; the method is task-specific and does not estimate forces, shear, or torque.",
+          "tldr_zh": "通过交叉注意力和时序建模，从RGB-D及当前/指令关节位置预测四指尖二值接触，驱动仿真训练的LEAP控制器完成实机掌内旋转，包含未见物体。部署不读取物理触觉；方法针对该任务，不估计力、剪切或扭矩。",
+          "sensing": [
+            "Wrist RGB-D",
+            "Current and commanded joint positions"
+          ],
+          "hand": [
+            "LEAP Hand"
+          ],
+          "task": [
+            "In-hand object rotation",
+            "Binary fingertip contact estimation"
+          ],
+          "method": [
+            "Pose-conditioned cross-attention",
+            "Causal temporal transformer",
+            "Simulation-supervised contact prediction",
+            "PPO / GRU controller"
+          ]
+        }
+      }
+    },
+    {
+      "key": "2611.08939|v1|2026-11-06T03:31:43+00:00|dexterous-v1",
+      "digest": "52bbed4eb3a3af371d31375b39726b11a55e691476e34f98d243fd44f0934215",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-10T02:36:24Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.08939",
+          "version": 1,
+          "title": "RevoSim: Scalable Multimodal Tactile Simulation for Dexterous Manipulation",
+          "authors": [
+            "Ke Zhang",
+            "Lixin Xu",
+            "Ziyi Wang",
+            "Xiyue Dong",
+            "Jie Tan",
+            "Lianghu Shao",
+            "Xianpeng Wang",
+            "Chuanyu Li",
+            "Renjing Xu"
+          ],
+          "published": "2026-11-06T03:31:43Z",
+          "updated": "2026-11-06T03:31:43Z",
+          "url": "https://arxiv.org/abs/2611.08939v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.08939v1",
+            "https://braincotech.github.io/RevoSim-web/",
+            "https://github.com/BrainCoTech/RevoSim"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "直接研究多指手多模态触觉仿真，方法、资源及仿真评测足以支持收录；策略尚未在实机部署，归入触觉感知与表征，不标注运行时真实触觉。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.08939v1",
+            "section": "II-A–D",
+            "paraphrase": "联合建模Revo3的285个压阻触觉单元与五个视触觉指尖，以几何相关压力、局部自适应采样和时序形变生成压力、深度、RGB与标记位移。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.08939v1",
+            "section": "III-B–D",
+            "paraphrase": "不含RGB的深度条件标记配置在RTX 5090容纳4096环境；全模态为1024。这是显存容量测试。真实传感器仅作定性对照，旋转与抓取策略均在仿真中评测。"
+          },
+          {
+            "url": "https://braincotech.github.io/RevoSim-web/",
+            "paraphrase": "摘要页链接的官方项目，标题、九名作者及论文链接对应；展示触觉仿真与仿真任务，并链接公开RevoSim代码。"
+          },
+          {
+            "url": "https://github.com/BrainCoTech/RevoSim",
+            "paraphrase": "已打开公开仓库并确认RevoSim实现、文档和示例。当前README的MT/MX采样布局与论文配置不同，未将代码新配置当作论文结果。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.08939v1",
+          "paraphrase": "III-C为物理传感器响应对照；III-D两项策略示例完全使用仿真观测，明确将策略实机迁移留待后续验证。"
+        },
+        "paper": {
+          "id": "2611.08939",
+          "title": "RevoSim: Scalable Multimodal Tactile Simulation for Dexterous Manipulation",
+          "authors": [
+            "Ke Zhang",
+            "Lixin Xu",
+            "Ziyi Wang",
+            "Xiyue Dong",
+            "Jie Tan",
+            "Lianghu Shao",
+            "Xianpeng Wang",
+            "Chuanyu Li",
+            "Renjing Xu"
+          ],
+          "date": "2026-11-06",
+          "year": 2026,
+          "category": "Tactile Sensing & Representation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.08939",
+            "project": "https://braincotech.github.io/RevoSim-web/",
+            "code": "https://github.com/BrainCoTech/RevoSim"
+          },
+          "tags": [
+            "Dexterous grasping",
+            "In-hand manipulation"
+          ],
+          "tldr": "Simulates Revo3 pressure arrays and optical fingertips using geometry-aware pressure, adaptive contact sampling and temporal marker deformation. On an RTX 5090, depth-conditioned markers fit 4,096 environments without RGB; all modalities fit 1,024. These measure memory capacity, not speed. Sensor comparisons are qualitative, and grasping and rotation policies remain in simulation.",
+          "tldr_zh": "以几何相关压力、自适应接触采样和时序标记形变联合仿真Revo3压阻阵列与视触觉指尖。RTX 5090可容纳4096个不含RGB的深度条件标记环境，全模态为1024；指标是显存容量而非速度。传感器对照为定性验证，抓取与旋转策略仍仅在仿真中测试。",
+          "sensing": [
+            "Simulated whole-hand pressure",
+            "Simulated fingertip depth, RGB and marker displacement"
+          ],
+          "hand": [
+            "BrainCo Revo3"
+          ],
+          "task": [
+            "Simulated in-hand ball rotation",
+            "Simulated dexterous grasping"
+          ],
+          "method": [
+            "Geometry-aware pressure simulation",
+            "Adaptive contact sampling",
+            "Temporal marker-deformation simulation"
+          ],
+          "evaluation": "RTX 5090 memory-capacity comparisons; qualitative physical sensor comparisons; simulated ball rotation and grasping policies.",
+          "notes_zh": "论文未验证真实机器人策略闭环或sim-to-real效果；4096环境配置不包含RGB。代码后续采样布局不等于论文的285个触觉单元硬件配置；未复现。"
+        }
+      }
     }
   ]
 }

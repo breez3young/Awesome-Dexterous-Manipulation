@@ -55,13 +55,13 @@ Each paper has one primary area. Tags add five complementary views: **Policy & l
 
 ## At a glance
 
-<p align="center"><b>192 papers</b> · <b>32 tactile dexterity papers</b> · <b>52 code links</b> · 6 research areas · <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/">browse the collection</a></p>
+<p align="center"><b>195 papers</b> · <b>33 tactile dexterity papers</b> · <b>53 code links</b> · 6 research areas · <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/">browse the collection</a></p>
 
 | Research area | Papers |
 |:--|--:|
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Dexterous%20Manipulation">Dexterous Manipulation</a> | 115 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Dexterous%20Manipulation">Tactile Dexterous Manipulation</a> | 32 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Sensing%20%26%20Representation">Tactile Sensing &amp; Representation</a> | 23 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Dexterous%20Manipulation">Dexterous Manipulation</a> | 116 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Dexterous%20Manipulation">Tactile Dexterous Manipulation</a> | 33 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Sensing%20%26%20Representation">Tactile Sensing &amp; Representation</a> | 24 |
 | <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Hand%E2%80%93Object%20Interaction">Hand–Object Interaction</a> | 11 |
 | <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Grasp%20Synthesis">Grasp Synthesis</a> | 2 |
 | <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Policy%20Optimization">Policy Optimization</a> | 9 |
@@ -88,6 +88,7 @@ The most recent first releases in the curated catalog. Dates below are publicati
 
 | First released | Paper | Research area | Resources |
 |:--|:--|:--|:--|
+| 2026-11-06 | <b>RevoSim: Scalable Multimodal Tactile Simulation for Dexterous Manipulation</b> | Tactile Sensing &amp; Representation | <a href="https://arxiv.org/abs/2611.08939">Paper</a> · <a href="https://braincotech.github.io/RevoSim-web/">Project</a> · <a href="https://github.com/BrainCoTech/RevoSim">Code</a> |
 | 2026-11-05 | <b>TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation</b> | Tactile Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.07881">Paper</a> · <a href="https://yijionglin.github.io/tactilelab/">Project</a> |
 | 2026-11-05 | <b>Latent RL Priors for Data-Efficient Dexterous Manipulation</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.08458">Paper</a> · <a href="https://yixiaowang7.github.io/latent-rl-prior-page/">Project</a> |
 | 2026-11-04 | <b>Learning Object-Centric Motion Priors from Human for Robotic Dexterous Manipulation</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.05979">Paper</a> |
@@ -95,7 +96,6 @@ The most recent first releases in the curated catalog. Dates below are publicati
 | 2026-11-03 | <b>DexHOT: Learning Hand-Object Configuration Transfer for Dexterous Manipulation</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.05119">Paper</a> · <a href="https://dex-hot.github.io/">Project</a> |
 | 2026-11-03 | <b>GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.05754">Paper</a> · <a href="https://computationalrobotics.seas.harvard.edu/GRASP">Project</a> · <a href="https://github.com/ComputationalRobotics/GRASP_code">Code</a> |
 | 2026-11-02 | <b>DexArena: A Unified Benchmark for Long-Horizon Dexterous Manipulation</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.02629">Paper</a> · <a href="https://sipair-elastic.github.io/DexArena-website/">Project</a> |
-| 2026-11-01 | <b>$TF^2$-Steering: Action Refinement with Tactile Forecasts and Feedback via Velocity-Field Steering</b> | Tactile Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.01483">Paper</a> · <a href="https://yiming-cc.github.io/tf2-steering/">Project</a> |
 
 [View the full catalog](https://breez3young.github.io/Awesome-Dexterous-Manipulation/) for summaries, evaluation context, and combinations of learning, sensing, and task tags.
 <!-- END GENERATED CATALOG -->

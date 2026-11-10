@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-11-07",
+  "updated": "2026-11-10",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -11897,6 +11897,186 @@
         "https://arxiv.org/abs/2611.08458v1",
         "https://arxiv.org/html/2611.08458v1",
         "https://yixiaowang7.github.io/latent-rl-prior-page/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2606.23431",
+      "title": "DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation with Ego-Centric Perception towards Shared Autonomy",
+      "authors": [
+        "Haichao Liu",
+        "Yuyao Jiang",
+        "Hyunsun Park",
+        "Yuanjiang Xue",
+        "Mingze Sun",
+        "Ziwei Liu",
+        "Ziwei Wang"
+      ],
+      "date": "2026-06-22",
+      "year": 2026,
+      "category": "Tactile Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.23431",
+        "project": "https://henryhcliu.github.io/dexteleop-0/"
+      },
+      "tags": [
+        "Teleoperation",
+        "Retargeting",
+        "Human-in-the-loop",
+        "Bimanual coordination",
+        "Tactile feedback",
+        "Vision",
+        "Proprioception",
+        "Force control"
+      ],
+      "tldr": "Adds bounded hand-joint corrections to teleoperation using a local stiffness–Jacobian model and contact-force objectives. Sharpa uses fingertip tactile feedback; Wuji estimates forces from motor currents. Hardware replay and a seven-operator study show task-dependent assistance. Human intent still drives the arms, and each hand is optimized separately; this is not autonomous task execution.",
+      "tldr_zh": "以局部刚度—雅可比模型和接触力目标，为遥操作增加有界手指关节修正。Sharpa读取真实指尖触觉，Wuji使用电流估力；实机回放与七人实验显示依任务而变的辅助效果。人类仍控制整体动作，两手分别优化，并非自主完成任务。",
+      "sensing": [
+        "Fingertip tactile images and force vectors (Sharpa)",
+        "Joint feedback and current-based force estimates (Wuji)",
+        "Egocentric wrist and hand tracking"
+      ],
+      "hand": [
+        "Sharpa Wave",
+        "Wuji Hand 2"
+      ],
+      "task": [
+        "Bimanual teleoperation",
+        "Object placement and pouring",
+        "Gear meshing and peg insertion"
+      ],
+      "method": [
+        "Vector retargeting",
+        "Stiffness-Jacobian contact model",
+        "Bounded residual quadratic programming",
+        "Per-contact force and moment regularization"
+      ],
+      "evaluation": "Simulation replay, fixed-input hardware replay on two hand configurations, seven-operator user study and descriptive manual-disturbance traces.",
+      "notes_zh": "手型各有传感及运动学适配，不证明无适配跨手迁移。局部模型依赖接触与刚度估计；阶段成功率不等于整任务成功率。未复现。",
+      "arxiv_id": "2606.23431",
+      "arxiv_version": 2,
+      "arxiv_updated": "2026-11-05T17:16:07Z",
+      "source_url": "https://arxiv.org/abs/2606.23431v2",
+      "sources": [
+        "https://arxiv.org/abs/2606.23431v2",
+        "https://arxiv.org/html/2606.23431v2",
+        "https://henryhcliu.github.io/dexteleop-0/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v2)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2606.24450",
+      "title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
+      "authors": [
+        "Soham Patil",
+        "Avirup Das",
+        "Sourabh Bhosale",
+        "Spandan Roy"
+      ],
+      "date": "2026-06-23",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.24450",
+        "project": "https://soham2560.github.io/no-contact-no-worries/"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Sim-to-real",
+        "In-hand manipulation",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Predicts four binary fingertip contacts from RGB-D and current/commanded joint positions using cross-attention and temporal modeling. Predicted contacts drive a simulation-trained LEAP controller in real in-hand rotation, including unseen objects. Deployment uses no physical tactile input; the method is task-specific and does not estimate forces, shear, or torque.",
+      "tldr_zh": "通过交叉注意力和时序建模，从RGB-D及当前/指令关节位置预测四指尖二值接触，驱动仿真训练的LEAP控制器完成实机掌内旋转，包含未见物体。部署不读取物理触觉；方法针对该任务，不估计力、剪切或扭矩。",
+      "sensing": [
+        "Wrist RGB-D",
+        "Current and commanded joint positions"
+      ],
+      "hand": [
+        "LEAP Hand"
+      ],
+      "task": [
+        "In-hand object rotation",
+        "Binary fingertip contact estimation"
+      ],
+      "method": [
+        "Pose-conditioned cross-attention",
+        "Causal temporal transformer",
+        "Simulation-supervised contact prediction",
+        "PPO / GRU controller"
+      ],
+      "arxiv_id": "2606.24450",
+      "arxiv_version": 2,
+      "arxiv_updated": "2026-11-06T11:27:21Z",
+      "source_url": "https://arxiv.org/abs/2606.24450v2",
+      "sources": [
+        "https://arxiv.org/abs/2606.24450v2",
+        "https://arxiv.org/html/2606.24450v2",
+        "https://soham2560.github.io/no-contact-no-worries/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v2)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.08939",
+      "title": "RevoSim: Scalable Multimodal Tactile Simulation for Dexterous Manipulation",
+      "authors": [
+        "Ke Zhang",
+        "Lixin Xu",
+        "Ziyi Wang",
+        "Xiyue Dong",
+        "Jie Tan",
+        "Lianghu Shao",
+        "Xianpeng Wang",
+        "Chuanyu Li",
+        "Renjing Xu"
+      ],
+      "date": "2026-11-06",
+      "year": 2026,
+      "category": "Tactile Sensing & Representation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.08939",
+        "project": "https://braincotech.github.io/RevoSim-web/",
+        "code": "https://github.com/BrainCoTech/RevoSim"
+      },
+      "tags": [
+        "Dexterous grasping",
+        "In-hand manipulation"
+      ],
+      "tldr": "Simulates Revo3 pressure arrays and optical fingertips using geometry-aware pressure, adaptive contact sampling and temporal marker deformation. On an RTX 5090, depth-conditioned markers fit 4,096 environments without RGB; all modalities fit 1,024. These measure memory capacity, not speed. Sensor comparisons are qualitative, and grasping and rotation policies remain in simulation.",
+      "tldr_zh": "以几何相关压力、自适应接触采样和时序标记形变联合仿真Revo3压阻阵列与视触觉指尖。RTX 5090可容纳4096个不含RGB的深度条件标记环境，全模态为1024；指标是显存容量而非速度。传感器对照为定性验证，抓取与旋转策略仍仅在仿真中测试。",
+      "sensing": [
+        "Simulated whole-hand pressure",
+        "Simulated fingertip depth, RGB and marker displacement"
+      ],
+      "hand": [
+        "BrainCo Revo3"
+      ],
+      "task": [
+        "Simulated in-hand ball rotation",
+        "Simulated dexterous grasping"
+      ],
+      "method": [
+        "Geometry-aware pressure simulation",
+        "Adaptive contact sampling",
+        "Temporal marker-deformation simulation"
+      ],
+      "evaluation": "RTX 5090 memory-capacity comparisons; qualitative physical sensor comparisons; simulated ball rotation and grasping policies.",
+      "notes_zh": "论文未验证真实机器人策略闭环或sim-to-real效果；4096环境配置不包含RGB。代码后续采样布局不等于论文的285个触觉单元硬件配置；未复现。",
+      "arxiv_id": "2611.08939",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-06T03:31:43Z",
+      "source_url": "https://arxiv.org/abs/2611.08939v1",
+      "sources": [
+        "https://arxiv.org/html/2611.08939v1",
+        "https://braincotech.github.io/RevoSim-web/",
+        "https://github.com/BrainCoTech/RevoSim"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"
