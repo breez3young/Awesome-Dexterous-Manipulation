@@ -1,20 +1,285 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-11-09T08:31:22Z",
+  "last_checked_at": "2026-11-10T08:43:42Z",
   "lookback_days": 7,
-  "window_start": "2026-11-02T08:31:22Z",
+  "window_start": "2026-11-03T08:43:42Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 91,
-  "recent_match_count": 19,
-  "new_candidate_count": 3,
-  "updated_candidate_count": 1,
+  "candidate_count": 102,
+  "recent_match_count": 29,
+  "new_candidate_count": 11,
+  "updated_candidate_count": 2,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2611.12806",
+      "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
+      "published": "2026-11-09T18:12:00Z",
+      "updated": "2026-11-09T18:12:00Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.12806",
+        "pdf": "https://arxiv.org/pdf/2611.12806"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… is an indispensable modality for contact-rich dexterous manipulation, a capability that hints at the ultimate frontiers of embodied intelligence. However, commercially available …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.12383",
+      "title": "PCTac: Mechanochromic Photonic-Crystal Tactile Sensor for Dexterous Manipulation",
+      "published": "2026-11-09T13:20:49Z",
+      "updated": "2026-11-09T13:20:49Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.12383",
+        "pdf": "https://arxiv.org/pdf/2611.12383"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "title",
+          "text": "PCTac: Mechanochromic Photonic-Crystal Tactile Sensor for Dexterous Manipulation"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.12177",
+      "title": "Embodied First Exam",
+      "published": "2026-11-09T10:29:19Z",
+      "updated": "2026-11-09T10:29:19Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.12177",
+        "pdf": "https://arxiv.org/pdf/2611.12177"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… go beyond pick-and-place to spatial puzzles, dexterous manipulation, multi-robot interaction, dynamic whole-body control, and sim-to-sim engineering. Each task can be run in …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.12111",
+      "title": "GAP: Generalized Adaptation Prior for Dexterous Piano Playing",
+      "published": "2026-11-09T09:24:46Z",
+      "updated": "2026-11-09T09:24:46Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.12111",
+        "pdf": "https://arxiv.org/pdf/2611.12111"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… playing, which requires precise and coordinated multifinger motion, offers a representative testbed. We propose GAP (Generalized Adaptation Prior for Dexterous Piano Playing), …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.41336",
+      "title": "HandMimicX: Learning Human-Like Dexterous Manipulation via an Object-Centric Policy from Egocentric Videos",
+      "published": "2026-10-30T06:51:27Z",
+      "updated": "2026-11-09T08:27:46Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.41336",
+        "pdf": "https://arxiv.org/pdf/2610.41336"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Learning dexterous manipulation from human videos remains an open challenge, particularly in the context of transferring a single demonstration into a spatially …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.11854",
+      "title": "Decoupled Asynchronous System for Humanoids (DASH): Latency-Agnostic Scaling of Vision-Language-Action Models for Humanoid Manipulation",
+      "published": "2026-11-09T04:23:14Z",
+      "updated": "2026-11-09T04:23:14Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.11854",
+        "pdf": "https://arxiv.org/pdf/2611.11854"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… directly blocks reactivity, especially in humanoid dexterous manipulation. We present DASH, a Decoupled Asynchronous System for Humanoids that removes this coupling. DASH …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2506.06361",
+      "title": "Tactile MNIST: Benchmarking Active Tactile Perception",
+      "published": "2025-06-03T14:42:16Z",
+      "updated": "2026-11-08T14:36:40Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2506.06361",
+        "pdf": "https://arxiv.org/pdf/2506.06361"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… has the potential to significantly enhance dexterous robotic manipulation by providing rich local information that can complement or substitute for other sensory …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.11166",
+      "title": "DexForesight: Grounding Dexterous Policies with Implicit Spatial Foresight",
+      "published": "2026-11-08T06:14:36Z",
+      "updated": "2026-11-08T06:14:36Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.11166",
+        "pdf": "https://arxiv.org/pdf/2611.11166"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation requires rich spatial foresight over both the surrounding scene and the robot hand. Existing world-action models often acquire such predictive …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2609.25619",
+      "title": "Relative Contact Velocity-Controlled Hand-Object Mechanism for Dexterous Tool Manipulation",
+      "published": "2026-09-22T03:25:32Z",
+      "updated": "2026-11-08T01:08:48Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2609.25619",
+        "pdf": "https://arxiv.org/pdf/2609.25619"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… work investigates how to enable general multi-finger robotic hands to perform the complete tool manipulation process, which entails picking up a tool, …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.10967",
+      "title": "BAT-WAM: Bridging Action and Touch in World-Action Models for Dexterous Hands",
+      "published": "2026-11-07T21:09:55Z",
+      "updated": "2026-11-07T21:09:55Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.10967",
+        "pdf": "https://arxiv.org/pdf/2611.10967"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation with world action models (WAMs) relies on hand configuration and contact information, yet joint-state and whole-hand tactile observations may be …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.10647",
+      "title": "Which Taxels, Not How Many: Tactile Sensor Placement for Dexterous Policies",
+      "published": "2026-11-07T10:37:42Z",
+      "updated": "2026-11-07T10:37:42Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.10647",
+        "pdf": "https://arxiv.org/pdf/2611.10647"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Policies for dexterous manipulation depend on design choices made before training: which sensors enter the observation, where they are placed, and how …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.10410",
+      "title": "SimDuoReal: Object-Centric Bimanual Policy for Emergent Dexterity",
+      "published": "2026-11-07T02:44:58Z",
+      "updated": "2026-11-07T02:44:58Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.10410",
+        "pdf": "https://arxiv.org/pdf/2611.10410"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Bimanual dexterous manipulation requires coordinated arm and hand control, yet specifying such coordination manually is challenging and often task-specific. In this work, …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.10343",
+      "title": "GUARD: Anomaly-Informed Q-Steering for Generative Robot Policies in Dexterous Manipulation",
+      "published": "2026-11-07T00:26:10Z",
+      "updated": "2026-11-07T00:26:10Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.10343",
+        "pdf": "https://arxiv.org/pdf/2611.10343"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… the pretrained policy. Across four Adroit dexterous manipulation tasks, GUARD achieves average success rates of $96.0\\%$ and $80.0\\%$ under nominal and perturbed …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2606.24450",
       "title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
@@ -465,27 +730,6 @@
       "review_status": "pending"
     },
     {
-      "id": "2506.06361",
-      "title": "Tactile MNIST: Benchmarking Active Tactile Perception",
-      "published": "2025-06-03T14:42:16Z",
-      "updated": "2026-10-30T21:40:28Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2506.06361",
-        "pdf": "https://arxiv.org/pdf/2506.06361"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… has the potential to significantly enhance dexterous robotic manipulation by providing rich local information that can complement or substitute for other sensory …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
       "id": "2610.20320",
       "title": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation",
       "published": "2026-10-14T15:06:53Z",
@@ -502,26 +746,6 @@
         {
           "source": "title",
           "text": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2610.41336",
-      "title": "HandMimicX: Learning Human-Like Dexterous Manipulation via an Object-Centric Policy from Egocentric Videos",
-      "published": "2026-10-30T06:51:27Z",
-      "updated": "2026-10-30T06:51:27Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.41336",
-        "pdf": "https://arxiv.org/pdf/2610.41336"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "Learning dexterous manipulation from human videos remains an open challenge, particularly in the context of transferring a single demonstration into a spatially …"
         }
       ],
       "review_status": "pending"

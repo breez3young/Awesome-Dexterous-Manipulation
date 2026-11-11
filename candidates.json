@@ -1,8 +1,450 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-09T08:31:22Z",
+  "updated_at": "2026-11-10T08:43:42Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2611.12806",
+      "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
+      "authors": [
+        "Bing Han",
+        "Yichuan Peng",
+        "Haoyu Dong",
+        "Yuanmeng Hu",
+        "Yongyi Jia",
+        "Fangjing Wang",
+        "Kecheng Zheng",
+        "Yiming Zhang",
+        "Yanhong Zeng",
+        "Xiaoqing Zhang",
+        "Chen Song",
+        "Rundong Zou",
+        "Anqi Dong",
+        "Yuan Guan",
+        "Ka Leong Cheng",
+        "Xing Zhu",
+        "Yujun Shen",
+        "Nan Xue",
+        "Wei Ning"
+      ],
+      "published": "2026-11-09T18:12:00Z",
+      "updated": "2026-11-09T18:12:00Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.12806",
+        "pdf": "https://arxiv.org/pdf/2611.12806"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… is an indispensable modality for contact-rich dexterous manipulation, a capability that hints at the ultimate frontiers of embodied intelligence. However, commercially available …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-10T08:43:42Z",
+      "last_seen": "2026-11-10T08:43:42Z"
+    },
+    {
+      "id": "2611.12383",
+      "title": "PCTac: Mechanochromic Photonic-Crystal Tactile Sensor for Dexterous Manipulation",
+      "authors": [
+        "Ruilin Zhang",
+        "Xuanshuo Liu",
+        "Junzhe Dai",
+        "Kefei Wu",
+        "Xuhao Qin",
+        "Ziyuan Jiao",
+        "Wanlin Li",
+        "Yurui Qu",
+        "Chenxi Xiao"
+      ],
+      "published": "2026-11-09T13:20:49Z",
+      "updated": "2026-11-09T13:20:49Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.12383",
+        "pdf": "https://arxiv.org/pdf/2611.12383"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "title",
+          "text": "PCTac: Mechanochromic Photonic-Crystal Tactile Sensor for Dexterous Manipulation"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-10T08:43:42Z",
+      "last_seen": "2026-11-10T08:43:42Z"
+    },
+    {
+      "id": "2611.12177",
+      "title": "Embodied First Exam",
+      "authors": [
+        "Kangrui Wang",
+        "Qineng Wang",
+        "Changhe Chen",
+        "Pingyue Zhang",
+        "Chi Gui",
+        "Feishi Wang",
+        "Canyu Chen",
+        "Wenli Xiao",
+        "Xiaoyu Huang",
+        "Tonghe Zhang",
+        "Linjie Li",
+        "Zihan Wang",
+        "Minyeong Kim",
+        "Yiyou Sun",
+        "Mingkai Deng",
+        "Jinyu Hou",
+        "Qi Zhu",
+        "Han Liu",
+        "Eric P. Xing",
+        "Huaxiu Yao",
+        "Zhiwen Fan",
+        "Yuejiang Liu",
+        "Dawn Song",
+        "Pieter Abbeel",
+        "Li Fei-Fei",
+        "Jiajun Wu",
+        "Yuke Zhu",
+        "Guanya Shi",
+        "Ruohan Zhang",
+        "Manling Li"
+      ],
+      "published": "2026-11-09T10:29:19Z",
+      "updated": "2026-11-09T10:29:19Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.12177",
+        "pdf": "https://arxiv.org/pdf/2611.12177"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… go beyond pick-and-place to spatial puzzles, dexterous manipulation, multi-robot interaction, dynamic whole-body control, and sim-to-sim engineering. Each task can be run in …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-10T08:43:42Z",
+      "last_seen": "2026-11-10T08:43:42Z"
+    },
+    {
+      "id": "2611.12111",
+      "title": "GAP: Generalized Adaptation Prior for Dexterous Piano Playing",
+      "authors": [
+        "Jinyi Chen",
+        "Hongyi Li",
+        "Lei Jiang",
+        "Xianwei Liu",
+        "Yanhong Liang",
+        "Yulin Chen",
+        "Yucheng Tao",
+        "Yongbin Jin",
+        "Hongtao Wang"
+      ],
+      "published": "2026-11-09T09:24:46Z",
+      "updated": "2026-11-09T09:24:46Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.12111",
+        "pdf": "https://arxiv.org/pdf/2611.12111"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… playing, which requires precise and coordinated multifinger motion, offers a representative testbed. We propose GAP (Generalized Adaptation Prior for Dexterous Piano Playing), …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-10T08:43:42Z",
+      "last_seen": "2026-11-10T08:43:42Z"
+    },
+    {
+      "id": "2610.41336",
+      "title": "HandMimicX: Learning Human-Like Dexterous Manipulation via an Object-Centric Policy from Egocentric Videos",
+      "authors": [
+        "Zihan Gao",
+        "Yufei Liu",
+        "Yuhong Zhang",
+        "Zhen Yu",
+        "Xinhao Huang",
+        "Zhinan You",
+        "Kai W. Ho",
+        "Zipeng Ye",
+        "Peng Jiao",
+        "Haoqian Wang"
+      ],
+      "published": "2026-10-30T06:51:27Z",
+      "updated": "2026-11-09T08:27:46Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.41336",
+        "pdf": "https://arxiv.org/pdf/2610.41336"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Learning dexterous manipulation from human videos remains an open challenge, particularly in the context of transferring a single demonstration into a spatially …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-03T02:38:13Z",
+      "last_seen": "2026-11-10T08:43:42Z"
+    },
+    {
+      "id": "2611.11854",
+      "title": "Decoupled Asynchronous System for Humanoids (DASH): Latency-Agnostic Scaling of Vision-Language-Action Models for Humanoid Manipulation",
+      "authors": [
+        "Bingzhang Wang",
+        "Nathan Zhao",
+        "Jialeng Ni",
+        "Jiajin Zheng",
+        "Yin Zhang",
+        "Kehua Chen",
+        "Jian Yao"
+      ],
+      "published": "2026-11-09T04:23:14Z",
+      "updated": "2026-11-09T04:23:14Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.11854",
+        "pdf": "https://arxiv.org/pdf/2611.11854"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… directly blocks reactivity, especially in humanoid dexterous manipulation. We present DASH, a Decoupled Asynchronous System for Humanoids that removes this coupling. DASH …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-10T08:43:42Z",
+      "last_seen": "2026-11-10T08:43:42Z"
+    },
+    {
+      "id": "2506.06361",
+      "title": "Tactile MNIST: Benchmarking Active Tactile Perception",
+      "authors": [
+        "Tim Schneider",
+        "Guillaume Duret",
+        "Cristiana de Farias",
+        "Roberto Calandra",
+        "Liming Chen",
+        "Jan Peters"
+      ],
+      "published": "2025-06-03T14:42:16Z",
+      "updated": "2026-11-08T14:36:40Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2506.06361",
+        "pdf": "https://arxiv.org/pdf/2506.06361"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… has the potential to significantly enhance dexterous robotic manipulation by providing rich local information that can complement or substitute for other sensory …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-03T02:38:13Z",
+      "last_seen": "2026-11-10T08:43:42Z"
+    },
+    {
+      "id": "2611.11166",
+      "title": "DexForesight: Grounding Dexterous Policies with Implicit Spatial Foresight",
+      "authors": [
+        "Zhongxi Chen",
+        "Yi Yang",
+        "Xinyi Chen",
+        "Mingzhe Ye",
+        "Yaping Li",
+        "Zhihong Liu",
+        "Congsheng Xu",
+        "Haonan Wang",
+        "Zhijie Deng"
+      ],
+      "published": "2026-11-08T06:14:36Z",
+      "updated": "2026-11-08T06:14:36Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.11166",
+        "pdf": "https://arxiv.org/pdf/2611.11166"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation requires rich spatial foresight over both the surrounding scene and the robot hand. Existing world-action models often acquire such predictive …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-10T08:43:42Z",
+      "last_seen": "2026-11-10T08:43:42Z"
+    },
+    {
+      "id": "2609.25619",
+      "title": "Relative Contact Velocity-Controlled Hand-Object Mechanism for Dexterous Tool Manipulation",
+      "authors": [
+        "Sunyu Wang",
+        "Jean Oh",
+        "Nancy S. Pollard"
+      ],
+      "published": "2026-09-22T03:25:32Z",
+      "updated": "2026-11-08T01:08:48Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2609.25619",
+        "pdf": "https://arxiv.org/pdf/2609.25619"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… work investigates how to enable general multi-finger robotic hands to perform the complete tool manipulation process, which entails picking up a tool, …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-10T08:43:42Z",
+      "last_seen": "2026-11-10T08:43:42Z"
+    },
+    {
+      "id": "2611.10967",
+      "title": "BAT-WAM: Bridging Action and Touch in World-Action Models for Dexterous Hands",
+      "authors": [
+        "Dong Fang",
+        "Feixuan Huang",
+        "Yuanxin Zhong",
+        "Yuxiang Gao",
+        "Qi Song",
+        "Yunlong Wang",
+        "Xiaosong Jia",
+        "Yu-Gang Jiang"
+      ],
+      "published": "2026-11-07T21:09:55Z",
+      "updated": "2026-11-07T21:09:55Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.10967",
+        "pdf": "https://arxiv.org/pdf/2611.10967"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation with world action models (WAMs) relies on hand configuration and contact information, yet joint-state and whole-hand tactile observations may be …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-10T08:43:42Z",
+      "last_seen": "2026-11-10T08:43:42Z"
+    },
+    {
+      "id": "2611.10647",
+      "title": "Which Taxels, Not How Many: Tactile Sensor Placement for Dexterous Policies",
+      "authors": [
+        "Taeyun Kim",
+        "Jinsoo Shin",
+        "Taehwa Kim",
+        "Taeyoon Kim",
+        "Jinyoung Choi"
+      ],
+      "published": "2026-11-07T10:37:42Z",
+      "updated": "2026-11-07T10:37:42Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.10647",
+        "pdf": "https://arxiv.org/pdf/2611.10647"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Policies for dexterous manipulation depend on design choices made before training: which sensors enter the observation, where they are placed, and how …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-10T08:43:42Z",
+      "last_seen": "2026-11-10T08:43:42Z"
+    },
+    {
+      "id": "2611.10410",
+      "title": "SimDuoReal: Object-Centric Bimanual Policy for Emergent Dexterity",
+      "authors": [
+        "Qiyang Yan",
+        "Yulin Liu",
+        "Akash Sharma",
+        "Haozhi Qi",
+        "Guanya Shi",
+        "C. Karen Liu"
+      ],
+      "published": "2026-11-07T02:44:58Z",
+      "updated": "2026-11-07T02:44:58Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.10410",
+        "pdf": "https://arxiv.org/pdf/2611.10410"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Bimanual dexterous manipulation requires coordinated arm and hand control, yet specifying such coordination manually is challenging and often task-specific. In this work, …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-10T08:43:42Z",
+      "last_seen": "2026-11-10T08:43:42Z"
+    },
+    {
+      "id": "2611.10343",
+      "title": "GUARD: Anomaly-Informed Q-Steering for Generative Robot Policies in Dexterous Manipulation",
+      "authors": [
+        "Aryaman Gupta",
+        "Xiaoyue Wu",
+        "Rana Soltani Zarrin",
+        "Mark Van der Merwe"
+      ],
+      "published": "2026-11-07T00:26:10Z",
+      "updated": "2026-11-07T00:26:10Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.10343",
+        "pdf": "https://arxiv.org/pdf/2611.10343"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… the pretrained policy. Across four Adroit dexterous manipulation tasks, GUARD achieves average success rates of $96.0\\%$ and $80.0\\%$ under nominal and perturbed …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-10T08:43:42Z",
+      "last_seen": "2026-11-10T08:43:42Z"
+    },
     {
       "id": "2606.24450",
       "title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
@@ -30,7 +472,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-09T08:31:22Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2611.08939",
@@ -64,7 +506,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-09T08:31:22Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2611.05119",
@@ -95,7 +537,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-04T07:52:43Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2611.08458",
@@ -125,7 +567,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-06T08:21:29Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2606.23431",
@@ -157,7 +599,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-09T08:31:22Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2611.07881",
@@ -188,7 +630,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-06T08:21:29Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2610.21180",
@@ -225,7 +667,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2611.06724",
@@ -251,7 +693,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-05T08:18:37Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2611.06359",
@@ -280,7 +722,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-05T08:18:37Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2606.12109",
@@ -311,7 +753,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-05T08:18:37Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2608.20817",
@@ -345,7 +787,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-05T08:18:37Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2611.05979",
@@ -371,7 +813,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-05T08:18:37Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2610.39076",
@@ -500,7 +942,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-30T07:36:53Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2611.05754",
@@ -528,7 +970,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-05T08:18:37Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2610.37652",
@@ -557,7 +999,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-28T07:12:27Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2606.02194",
@@ -587,7 +1029,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-04T07:52:43Z",
-      "last_seen": "2026-11-09T08:31:22Z"
+      "last_seen": "2026-11-10T08:43:42Z"
     },
     {
       "id": "2611.02629",
@@ -791,37 +1233,6 @@
       "last_seen": "2026-11-07T07:38:29Z"
     },
     {
-      "id": "2506.06361",
-      "title": "Tactile MNIST: Benchmarking Active Tactile Perception",
-      "authors": [
-        "Tim Schneider",
-        "Guillaume Duret",
-        "Cristiana de Farias",
-        "Roberto Calandra",
-        "Liming Chen",
-        "Jan Peters"
-      ],
-      "published": "2025-06-03T14:42:16Z",
-      "updated": "2026-10-30T21:40:28Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2506.06361",
-        "pdf": "https://arxiv.org/pdf/2506.06361"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… has the potential to significantly enhance dexterous robotic manipulation by providing rich local information that can complement or substitute for other sensory …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-11-03T02:38:13Z",
-      "last_seen": "2026-11-06T08:21:29Z"
-    },
-    {
       "id": "2610.20320",
       "title": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation",
       "authors": [
@@ -870,40 +1281,6 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-15T06:16:26Z",
-      "last_seen": "2026-11-05T08:18:37Z"
-    },
-    {
-      "id": "2610.41336",
-      "title": "HandMimicX: Learning Human-Like Dexterous Manipulation via an Object-Centric Policy from Egocentric Videos",
-      "authors": [
-        "Zihan Gao",
-        "Yufei Liu",
-        "Yuhong Zhang",
-        "Zhen Yu",
-        "Xinhao Huang",
-        "Zhinan You",
-        "Kai W. Ho",
-        "Zipeng Ye",
-        "Peng Jiao",
-        "Haoqian Wang"
-      ],
-      "published": "2026-10-30T06:51:27Z",
-      "updated": "2026-10-30T06:51:27Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.41336",
-        "pdf": "https://arxiv.org/pdf/2610.41336"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "Learning dexterous manipulation from human videos remains an open challenge, particularly in the context of transferring a single demonstration into a spatially …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-11-03T02:38:13Z",
       "last_seen": "2026-11-05T08:18:37Z"
     },
     {
