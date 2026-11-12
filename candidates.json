@@ -1,8 +1,82 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-10T08:43:42Z",
+  "updated_at": "2026-11-11T08:08:24Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2611.14048",
+      "title": "LaST0.5: A Generalist World Action Model with Interaction-Centric Latent Reasoning",
+      "authors": [
+        "Xuheng Zhang",
+        "Yiming Zhang",
+        "Jialin Gao",
+        "Hao Chen",
+        "Jiaming Liu",
+        "Ji Li",
+        "Runzhong Huang",
+        "Yinxi Wang",
+        "Chenyang Gu",
+        "Zihan Yang",
+        "Yaowei Liu",
+        "Zhonghao Yan",
+        "Ziyu Guo",
+        "Renrui Zhang",
+        "Peng Jia",
+        "Pheng-Ann Heng",
+        "Shanghang Zhang"
+      ],
+      "published": "2026-11-10T13:15:11Z",
+      "updated": "2026-11-10T13:15:11Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.14048",
+        "pdf": "https://arxiv.org/pdf/2611.14048"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… demonstrates robust long-horizon execution and precise dexterous manipulation in real-world experiments."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-11T08:08:24Z",
+      "last_seen": "2026-11-11T08:08:24Z"
+    },
+    {
+      "id": "2611.11166",
+      "title": "DexForesight: Grounding Dexterous Policies with Implicit Spatial Foresight",
+      "authors": [
+        "Zhongxi Chen",
+        "Yi Yang",
+        "Xinyi Chen",
+        "Mingzhe Ye",
+        "Yaping Li",
+        "Zhihong Liu",
+        "Congsheng Xu",
+        "Haonan Wang",
+        "Zhijie Deng"
+      ],
+      "published": "2026-11-08T06:14:36Z",
+      "updated": "2026-11-10T07:28:24Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.11166",
+        "pdf": "https://arxiv.org/pdf/2611.11166"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation requires rich spatial foresight over both the surrounding scene and the robot hand. Existing world-action models often acquire such predictive …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-10T08:43:42Z",
+      "last_seen": "2026-11-11T08:08:24Z"
+    },
     {
       "id": "2611.12806",
       "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
@@ -45,7 +119,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2611.12383",
@@ -79,7 +153,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2611.12177",
@@ -133,7 +207,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2611.12111",
@@ -166,7 +240,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2610.41336",
@@ -200,7 +274,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-03T02:38:13Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2611.11854",
@@ -231,7 +305,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2506.06361",
@@ -262,40 +336,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-03T02:38:13Z",
-      "last_seen": "2026-11-10T08:43:42Z"
-    },
-    {
-      "id": "2611.11166",
-      "title": "DexForesight: Grounding Dexterous Policies with Implicit Spatial Foresight",
-      "authors": [
-        "Zhongxi Chen",
-        "Yi Yang",
-        "Xinyi Chen",
-        "Mingzhe Ye",
-        "Yaping Li",
-        "Zhihong Liu",
-        "Congsheng Xu",
-        "Haonan Wang",
-        "Zhijie Deng"
-      ],
-      "published": "2026-11-08T06:14:36Z",
-      "updated": "2026-11-08T06:14:36Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2611.11166",
-        "pdf": "https://arxiv.org/pdf/2611.11166"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "Dexterous manipulation requires rich spatial foresight over both the surrounding scene and the robot hand. Existing world-action models often acquire such predictive …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2609.25619",
@@ -322,7 +363,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2611.10967",
@@ -355,7 +396,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2611.10647",
@@ -385,7 +426,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2611.10410",
@@ -415,7 +456,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2611.10343",
@@ -443,7 +484,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2606.24450",
@@ -472,7 +513,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-09T08:31:22Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2611.08939",
@@ -506,7 +547,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-09T08:31:22Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2611.05119",
@@ -537,7 +578,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-04T07:52:43Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2611.08458",
@@ -567,7 +608,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-06T08:21:29Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2606.23431",
@@ -599,7 +640,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-09T08:31:22Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2611.07881",
@@ -630,7 +671,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-06T08:21:29Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2610.21180",
@@ -667,7 +708,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2611.06724",
@@ -693,7 +734,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-05T08:18:37Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2611.06359",
@@ -722,7 +763,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-05T08:18:37Z",
-      "last_seen": "2026-11-10T08:43:42Z"
+      "last_seen": "2026-11-11T08:08:24Z"
     },
     {
       "id": "2606.12109",

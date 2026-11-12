@@ -1,20 +1,60 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-11-10T08:43:42Z",
+  "last_checked_at": "2026-11-11T08:08:24Z",
   "lookback_days": 7,
-  "window_start": "2026-11-03T08:43:42Z",
+  "window_start": "2026-11-04T08:08:24Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 102,
-  "recent_match_count": 29,
-  "new_candidate_count": 11,
-  "updated_candidate_count": 2,
+  "candidate_count": 103,
+  "recent_match_count": 24,
+  "new_candidate_count": 1,
+  "updated_candidate_count": 1,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2611.14048",
+      "title": "LaST0.5: A Generalist World Action Model with Interaction-Centric Latent Reasoning",
+      "published": "2026-11-10T13:15:11Z",
+      "updated": "2026-11-10T13:15:11Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.14048",
+        "pdf": "https://arxiv.org/pdf/2611.14048"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… demonstrates robust long-horizon execution and precise dexterous manipulation in real-world experiments."
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.11166",
+      "title": "DexForesight: Grounding Dexterous Policies with Implicit Spatial Foresight",
+      "published": "2026-11-08T06:14:36Z",
+      "updated": "2026-11-10T07:28:24Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.11166",
+        "pdf": "https://arxiv.org/pdf/2611.11166"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous manipulation requires rich spatial foresight over both the surrounding scene and the robot hand. Existing world-action models often acquire such predictive …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2611.12806",
       "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
@@ -154,26 +194,6 @@
         {
           "source": "abstract",
           "text": "… has the potential to significantly enhance dexterous robotic manipulation by providing rich local information that can complement or substitute for other sensory …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2611.11166",
-      "title": "DexForesight: Grounding Dexterous Policies with Implicit Spatial Foresight",
-      "published": "2026-11-08T06:14:36Z",
-      "updated": "2026-11-08T06:14:36Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2611.11166",
-        "pdf": "https://arxiv.org/pdf/2611.11166"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "Dexterous manipulation requires rich spatial foresight over both the surrounding scene and the robot hand. Existing world-action models often acquire such predictive …"
         }
       ],
       "review_status": "pending"

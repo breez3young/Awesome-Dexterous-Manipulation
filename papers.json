@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -12712,6 +12712,75 @@
         "https://arxiv.org/pdf/2611.12806v1",
         "https://technology.robbyant.com/lingbot-touch",
         "https://github.com/robbyant/lingbot-touch"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.14048",
+      "title": "LaST0.5: A Generalist World Action Model with Interaction-Centric Latent Reasoning",
+      "authors": [
+        "Xuheng Zhang",
+        "Yiming Zhang",
+        "Jialin Gao",
+        "Hao Chen",
+        "Jiaming Liu",
+        "Ji Li",
+        "Runzhong Huang",
+        "Yinxi Wang",
+        "Chenyang Gu",
+        "Zihan Yang",
+        "Yaowei Liu",
+        "Zhonghao Yan",
+        "Ziyu Guo",
+        "Renrui Zhang",
+        "Peng Jia",
+        "Pheng-Ann Heng",
+        "Shanghang Zhang"
+      ],
+      "date": "2026-11-10",
+      "year": 2026,
+      "category": "Policy Optimization",
+      "scope": "adjacent",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.14048"
+      },
+      "tags": [
+        "Imitation learning",
+        "Vision-language-action",
+        "Foundation policy",
+        "Diffusion / flow policy",
+        "Cross-embodiment",
+        "Bimanual coordination",
+        "Long-horizon tasks",
+        "Vision"
+      ],
+      "tldr": "Bridges video prediction and flow-based actions with interaction-supervised latent tokens; predicted progress controls execution length. Training incorporates EgoDex with wrist-relative fingertip actions. Evaluations cover LIBERO/RLBench and a Tianji Marvin parallel-gripper system, reaching a 63.8% full-task mean over four real tasks. Multifinger transfer and tactile control are not demonstrated.",
+      "tldr_zh": "以交互监督的潜变量连接视频预测与流匹配动作，按预测进度调整执行长度。训练纳入EgoDex及腕相对指尖动作；评测为LIBERO、RLBench与Tianji Marvin平行夹爪，四项实机任务整任务均值63.8%。未验证多指迁移或触觉控制。",
+      "sensing": [
+        "Multi-view RGB"
+      ],
+      "hand": [
+        "Tianji Marvin parallel grippers (real-world evaluation)"
+      ],
+      "task": [
+        "Bag and zipper manipulation",
+        "Bimanual object organization",
+        "Tool use and insertion",
+        "Parcel-box packing"
+      ],
+      "method": [
+        "Interaction-centric latent supervision",
+        "Mixture-of-Transformers",
+        "Progress-adaptive action execution"
+      ],
+      "notes_zh": "手部表示用于混合训练，不能视为多指实机能力。LIBERO为训练期最佳值；未核验到项目或代码地址。未复现。",
+      "arxiv_id": "2611.14048",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-10T13:15:11Z",
+      "source_url": "https://arxiv.org/abs/2611.14048v1",
+      "sources": [
+        "https://arxiv.org/html/2611.14048v1"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"

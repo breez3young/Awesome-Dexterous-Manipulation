@@ -55,7 +55,7 @@ Each paper has one primary area. Tags add five complementary views: **Policy & l
 
 ## At a glance
 
-<p align="center"><b>205 papers</b> · <b>33 tactile dexterity papers</b> · <b>55 code links</b> · 6 research areas · <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/">browse the collection</a></p>
+<p align="center"><b>206 papers</b> · <b>33 tactile dexterity papers</b> · <b>55 code links</b> · 6 research areas · <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/">browse the collection</a></p>
 
 | Research area | Papers |
 |:--|--:|
@@ -64,7 +64,7 @@ Each paper has one primary area. Tags add five complementary views: **Policy & l
 | <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Sensing%20%26%20Representation">Tactile Sensing &amp; Representation</a> | 27 |
 | <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Hand%E2%80%93Object%20Interaction">Hand–Object Interaction</a> | 11 |
 | <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Grasp%20Synthesis">Grasp Synthesis</a> | 2 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Policy%20Optimization">Policy Optimization</a> | 11 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Policy%20Optimization">Policy Optimization</a> | 12 |
 
 Counts describe this curated collection. Code links may cover data tools, simulation, or hardware rather than a complete policy implementation. Explore release trends and tag distributions in [Stats](https://breez3young.github.io/Awesome-Dexterous-Manipulation/#stats).
 
@@ -88,6 +88,7 @@ The most recent first releases in the curated catalog. Dates below are publicati
 
 | First released | Paper | Research area | Resources |
 |:--|:--|:--|:--|
+| 2026-11-10 | <b>LaST0.5: A Generalist World Action Model with Interaction-Centric Latent Reasoning</b> | Policy Optimization | <a href="https://arxiv.org/abs/2611.14048">Paper</a> |
 | 2026-11-09 | <b>Decoupled Asynchronous System for Humanoids (DASH): Latency-Agnostic Scaling of Vision-Language-Action Models for Humanoid Manipulation</b> | Policy Optimization | <a href="https://arxiv.org/abs/2611.11854">Paper</a> |
 | 2026-11-09 | <b>GAP: Generalized Adaptation Prior for Dexterous Piano Playing</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.12111">Paper</a> |
 | 2026-11-09 | <b>Embodied First Exam</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.12177">Paper</a> · <a href="https://www.embodied-first-exam.ai/">Project</a> · <a href="https://github.com/mll-lab-nu/embodied-first-exam">Code</a> |
@@ -95,7 +96,6 @@ The most recent first releases in the curated catalog. Dates below are publicati
 | 2026-11-09 | <b>Learning Heterogeneous Tactile Representation for General Dexterous Manipulation</b> | Tactile Sensing &amp; Representation | <a href="https://arxiv.org/abs/2611.12806">Paper</a> · <a href="https://technology.robbyant.com/lingbot-touch">Project</a> · <a href="https://github.com/robbyant/lingbot-touch">Code</a> |
 | 2026-11-08 | <b>DexForesight: Grounding Dexterous Policies with Implicit Spatial Foresight</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.11166">Paper</a> · <a href="https://dexforesight.github.io/">Project</a> |
 | 2026-11-07 | <b>GUARD: Anomaly-Informed Q-Steering for Generative Robot Policies in Dexterous Manipulation</b> | Policy Optimization | <a href="https://arxiv.org/abs/2611.10343">Paper</a> |
-| 2026-11-07 | <b>SimDuoReal: Object-Centric Bimanual Policy for Emergent Dexterity</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.10410">Paper</a> · <a href="https://simduoreal.github.io/">Project</a> |
 
 [View the full catalog](https://breez3young.github.io/Awesome-Dexterous-Manipulation/) for summaries, evaluation context, and combinations of learning, sensing, and task tags.
 <!-- END GENERATED CATALOG -->
