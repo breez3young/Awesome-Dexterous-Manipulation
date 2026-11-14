@@ -1,8 +1,127 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-11T08:08:24Z",
+  "updated_at": "2026-11-13T08:35:45Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2505.04978",
+      "title": "A Tactile-Informed Bi-Level Framework with Complementary Motion-Contact Planning and Tracking for Robust Model-Based In-Hand Manipulation",
+      "authors": [
+        "Yongpeng Jiang",
+        "Mingrui Yu",
+        "Yi Ren",
+        "Xiang Li"
+      ],
+      "published": "2025-05-08T06:31:19Z",
+      "updated": "2026-11-12T09:55:00Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2505.04978",
+        "pdf": "https://arxiv.org/pdf/2505.04978"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "In dexterous in-hand manipulation, learning-based methods achieve strong task performance with increasing generalization to unseen objects. A complementary advantage of model-based methods, …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-13T08:35:45Z",
+      "last_seen": "2026-11-13T08:35:45Z"
+    },
+    {
+      "id": "2611.11854",
+      "title": "Decoupled Asynchronous System for Humanoids (DASH): Latency-Agnostic Scaling of Vision-Language-Action Models for Humanoid Manipulation",
+      "authors": [
+        "Bingzhang Wang",
+        "Nathan Zhao",
+        "Jialeng Ni",
+        "Jiayin Zheng",
+        "Yin Zhang",
+        "Kehua Chen",
+        "Jian Yao"
+      ],
+      "published": "2026-11-09T04:23:14Z",
+      "updated": "2026-11-12T07:42:29Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.11854",
+        "pdf": "https://arxiv.org/pdf/2611.11854"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… directly blocks reactivity, especially in humanoid dexterous manipulation. We present DASH, a Decoupled Asynchronous System for Humanoids that removes this coupling. DASH …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-10T08:43:42Z",
+      "last_seen": "2026-11-13T08:35:45Z"
+    },
+    {
+      "id": "2611.16423",
+      "title": "VOKE: Visual Object Kinematics Estimator for Dexterous In-Hand Manipulation",
+      "authors": [
+        "Shengjia Zhu",
+        "Wenqiang Xu",
+        "Lin Shao"
+      ],
+      "published": "2026-11-12T07:33:05Z",
+      "updated": "2026-11-12T07:33:05Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.16423",
+        "pdf": "https://arxiv.org/pdf/2611.16423"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Vision-based dexterous in-hand manipulation requires knowing not only where an object is, but also how it moves. However, most robotic manipulation systems …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-13T08:35:45Z",
+      "last_seen": "2026-11-13T08:35:45Z"
+    },
+    {
+      "id": "2611.15981",
+      "title": "DexRemo: A Force-Sensing Hand Platform and Task Suite for Contact-Rich Removal Manipulation",
+      "authors": [
+        "Liman Wang",
+        "Hanyang Zhong",
+        "Sun Zhaole",
+        "Wenting Cao",
+        "Babar Jamil",
+        "Andy Tyrrell",
+        "Shan Luo",
+        "Jihong Zhu"
+      ],
+      "published": "2026-11-11T20:33:31Z",
+      "updated": "2026-11-11T20:33:31Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.15981",
+        "pdf": "https://arxiv.org/pdf/2611.15981"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… self-cleaning, and occluded retrieval. To make multi-finger force observations easier to fuse, we express fingertip forces in a shared wrist-centered frame, giving …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-13T08:35:45Z",
+      "last_seen": "2026-11-13T08:35:45Z"
+    },
     {
       "id": "2611.14048",
       "title": "LaST0.5: A Generalist World Action Model with Interaction-Centric Latent Reasoning",
@@ -42,7 +161,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-11T08:08:24Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-13T08:35:45Z"
     },
     {
       "id": "2611.11166",
@@ -75,7 +194,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-13T08:35:45Z"
     },
     {
       "id": "2611.12806",
@@ -119,7 +238,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-13T08:35:45Z"
     },
     {
       "id": "2611.12383",
@@ -153,7 +272,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-13T08:35:45Z"
     },
     {
       "id": "2611.12177",
@@ -207,7 +326,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-13T08:35:45Z"
     },
     {
       "id": "2611.12111",
@@ -240,7 +359,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-13T08:35:45Z"
     },
     {
       "id": "2610.41336",
@@ -274,38 +393,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-03T02:38:13Z",
-      "last_seen": "2026-11-11T08:08:24Z"
-    },
-    {
-      "id": "2611.11854",
-      "title": "Decoupled Asynchronous System for Humanoids (DASH): Latency-Agnostic Scaling of Vision-Language-Action Models for Humanoid Manipulation",
-      "authors": [
-        "Bingzhang Wang",
-        "Nathan Zhao",
-        "Jialeng Ni",
-        "Jiajin Zheng",
-        "Yin Zhang",
-        "Kehua Chen",
-        "Jian Yao"
-      ],
-      "published": "2026-11-09T04:23:14Z",
-      "updated": "2026-11-09T04:23:14Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2611.11854",
-        "pdf": "https://arxiv.org/pdf/2611.11854"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… directly blocks reactivity, especially in humanoid dexterous manipulation. We present DASH, a Decoupled Asynchronous System for Humanoids that removes this coupling. DASH …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-13T08:35:45Z"
     },
     {
       "id": "2506.06361",
@@ -336,7 +424,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-03T02:38:13Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-13T08:35:45Z"
     },
     {
       "id": "2609.25619",
@@ -363,7 +451,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-13T08:35:45Z"
     },
     {
       "id": "2611.10967",
@@ -396,7 +484,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-13T08:35:45Z"
     },
     {
       "id": "2611.10647",
@@ -426,7 +514,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-13T08:35:45Z"
     },
     {
       "id": "2611.10410",
@@ -456,7 +544,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-13T08:35:45Z"
     },
     {
       "id": "2611.10343",
@@ -484,7 +572,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-13T08:35:45Z"
     },
     {
       "id": "2606.24450",
@@ -513,7 +601,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-09T08:31:22Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-13T08:35:45Z"
     },
     {
       "id": "2611.08939",
@@ -547,7 +635,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-09T08:31:22Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-12T08:43:07Z"
     },
     {
       "id": "2611.05119",
@@ -578,7 +666,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-04T07:52:43Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-12T08:43:07Z"
     },
     {
       "id": "2611.08458",
@@ -608,7 +696,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-06T08:21:29Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-12T08:43:07Z"
     },
     {
       "id": "2606.23431",
@@ -640,7 +728,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-09T08:31:22Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-12T08:43:07Z"
     },
     {
       "id": "2611.07881",
@@ -671,7 +759,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-06T08:21:29Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-12T08:43:07Z"
     },
     {
       "id": "2610.21180",
@@ -708,7 +796,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-11-11T08:08:24Z"
+      "last_seen": "2026-11-12T08:43:07Z"
     },
     {
       "id": "2611.06724",

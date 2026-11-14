@@ -16852,6 +16852,321 @@
           "notes_zh": "手部表示用于混合训练，不能视为多指实机能力。LIBERO为训练期最佳值；未核验到项目或代码地址。未复现。"
         }
       }
+    },
+    {
+      "key": "2505.04978|v2|2026-11-12T09:55:00+00:00|dexterous-v1",
+      "digest": "d73c8ba0e0dc7254afaa98373d55ebb79fd3ebb212d0b7ac84936a67c50f9383",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-14T04:02:25Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2505.04978",
+          "version": 2,
+          "title": "A Tactile-Informed Bi-Level Framework with Complementary Motion-Contact Planning and Tracking for Robust Model-Based In-Hand Manipulation",
+          "authors": [
+            "Yongpeng Jiang",
+            "Mingrui Yu",
+            "Yi Ren",
+            "Xiang Li"
+          ],
+          "published": "2025-05-08T06:31:19Z",
+          "updated": "2026-11-12T09:55:00Z",
+          "url": "https://arxiv.org/abs/2505.04978v2",
+          "primary_urls": [
+            "https://arxiv.org/html/2505.04978v2",
+            "https://director-of-g.github.io/in_hand_manipulation_2/",
+            "https://github.com/Director-of-G/in_hand_manipulation_2"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "多指实机闭环直接读取Tac3D接触力，联合规划与跟踪验证手内操作，符合核心触觉灵巧操作范围。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2505.04978v2",
+            "section": "5.4; 6.3–6.5; 8.1",
+            "paraphrase": "接触隐式规划配合力运动跟踪；LEAP的Tac3D实测力进入低层MPC，AprilTag位姿进入高层。"
+          },
+          {
+            "url": "https://arxiv.org/html/2505.04978v2",
+            "section": "8.2.5; 8.3; 9.1",
+            "paraphrase": "展示抓持内位姿跟踪与换指旋转；开盒仅20–50%，依赖粗模型、标记位姿与准动态假设。"
+          },
+          {
+            "url": "https://director-of-g.github.io/in_hand_manipulation_2/",
+            "paraphrase": "项目仍用旧题名和作者列表，回链对应同一arXiv ID；本条身份采用官方v2。"
+          },
+          {
+            "url": "https://github.com/Director-of-G/in_hand_manipulation_2",
+            "paraphrase": "仓库提供高低层控制及MuJoCo仿真，明确不含硬件实现；不保证覆盖v2全部新增实验。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2505.04978v2",
+          "paraphrase": "8.1明确四个Tac3D以30Hz测力，经低通滤波输入实机低层MPC；8.3验证其控制。"
+        },
+        "paper": {
+          "id": "2505.04978",
+          "title": "A Tactile-Informed Bi-Level Framework with Complementary Motion-Contact Planning and Tracking for Robust Model-Based In-Hand Manipulation",
+          "authors": [
+            "Yongpeng Jiang",
+            "Mingrui Yu",
+            "Yi Ren",
+            "Xiang Li"
+          ],
+          "date": "2025-05-08",
+          "year": 2025,
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2505.04978",
+            "project": "https://director-of-g.github.io/in_hand_manipulation_2/",
+            "code": "https://github.com/Director-of-G/in_hand_manipulation_2"
+          },
+          "tags": [
+            "Model-based planning",
+            "In-hand manipulation",
+            "Tactile feedback",
+            "Force control",
+            "Vision",
+            "Proprioception",
+            "Articulated objects"
+          ],
+          "tldr": "Couples contact-implicit planning with tactile force–motion tracking on a LEAP Hand. Tac3D forces close the local control loop, while AprilTags provide object pose. Real tasks include prehensile finger gaiting; box opening succeeds only 20–50% across boxes. Requires coarse models and marker-based sensing and is limited to quasi-dynamic manipulation.",
+          "tldr_zh": "以接触隐式规划结合触觉力运动跟踪，Tac3D实测力闭合LEAP局部控制环，AprilTag供给物体位姿。实机含抓持内换指旋转，但开盒成功率仅20–50%；依赖粗模型、标记感知与准动态假设。",
+          "sensing": [
+            "Tac3D fingertip contact points and forces",
+            "AprilTag object pose with RealSense D405",
+            "LEAP joint state"
+          ],
+          "hand": [
+            "LEAP Hand with four Tac3D fingertips"
+          ],
+          "task": [
+            "Prehensile finger gaiting",
+            "In-grasp pose tracking",
+            "Articulated handle and box manipulation"
+          ],
+          "method": [
+            "Contact-implicit MPC",
+            "Coupled force–motion MPC",
+            "Adaptive force–motion weighting"
+          ],
+          "notes_zh": "首投2025-05-08，审核2026修订v2；项目及代码仍沿用旧版题名，不含硬件实现。未复现。"
+        }
+      }
+    },
+    {
+      "key": "2611.15981|v1|2026-11-11T20:33:31+00:00|dexterous-v1",
+      "digest": "2a8d725fbdfc6932fee9604f94eba031557aa41f86afb2ad3ac1c8262679e6cd",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-14T04:02:25Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.15981",
+          "version": 1,
+          "title": "DexRemo: A Force-Sensing Hand Platform and Task Suite for Contact-Rich Removal Manipulation",
+          "authors": [
+            "Liman Wang",
+            "Hanyang Zhong",
+            "Sun Zhaole",
+            "Wenting Cao",
+            "Babar Jamil",
+            "Andy Tyrrell",
+            "Shan Luo",
+            "Jihong Zhu"
+          ],
+          "published": "2026-11-11T20:33:31Z",
+          "updated": "2026-11-11T20:33:31Z",
+          "url": "https://arxiv.org/abs/2611.15981v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.15981v1",
+            "https://dexremo.github.io/",
+            "https://dexremo.github.io/software.html",
+            "https://dexremo.github.io/assets/js/config.js?v=202611130946"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "三指实机在策略执行时读取指尖三轴力，并结合视觉与本体状态学习接触丰富的移除动作，符合触觉灵巧操作核心范围。全文区分六项核心对照与三项扩展演示；不是仅记录人类遥操作力信号的硬件平台。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.15981v1",
+            "section": "III-B, III-D–E; IV-A–C",
+            "paraphrase": "三指力经正向运动学旋转到腕坐标，与RGB、关节状态、指尖位姿共同输入ACT。预测100步关节位移，每执行50步后以新观测再次推理；无显式力指令或手写力控制器。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.15981v1",
+            "section": "V-A–C; VI-A",
+            "paraphrase": "每任务20条成功遥操作示教；六项核心任务每配置三训练种子、每种子30次实机试验。位姿加腕系力的汇总成功率83%，位姿加局部系力55%；是任务独立策略。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.15981v1",
+            "section": "V-C; VI-A",
+            "paraphrase": "三项扩展仅用完整策略各10次，成功8、9、7次，不纳入六任务均值。手预先置于局部工作区，尚未验证全臂、大工作空间部署；示教端为力可视化而非触觉回馈。"
+          },
+          {
+            "url": "https://dexremo.github.io/assets/js/config.js?v=202611130946",
+            "section": "links; releases",
+            "paraphrase": "官方站点列有同名论文和相同作者；学习代码标为计划发布，github/code/checkpoints链接均为空，未添加代码地址。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2611.15981v1",
+          "paraphrase": "IV-A–C明确部署观测含三指实测9维力，ACT以新力、视觉和本体输入更新关节动作块。15Hz为动作执行速率，每50步约3.3秒重读观测并推理，不是15Hz触觉重规划。"
+        },
+        "paper": {
+          "id": "2611.15981",
+          "title": "DexRemo: A Force-Sensing Hand Platform and Task Suite for Contact-Rich Removal Manipulation",
+          "authors": [
+            "Liman Wang",
+            "Hanyang Zhong",
+            "Sun Zhaole",
+            "Wenting Cao",
+            "Babar Jamil",
+            "Andy Tyrrell",
+            "Shan Luo",
+            "Jihong Zhu"
+          ],
+          "date": "2026-11-11",
+          "year": 2026,
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.15981",
+            "project": "https://dexremo.github.io/"
+          },
+          "tags": [
+            "Imitation learning",
+            "Teleoperation",
+            "Tactile feedback",
+            "Vision",
+            "Proprioception",
+            "Dataset / benchmark",
+            "Hardware / sensor"
+          ],
+          "tldr": "Combines a 12-DoF three-finger force-sensing hand with ACT removal policies that fuse vision, proprioception and wrist-frame fingertip forces between action chunks. Across six core real-robot tasks, fingertip pose plus wrist-frame force reaches 83% aggregate success versus 55% with local-frame force. Policies are trained per task; three additional scenarios have only ten trials each.",
+          "tldr_zh": "为12自由度三指手集成指尖三轴力，将力旋转至腕坐标，ACT在动作块之间结合新力、视觉和本体观测生成移除动作。六项核心实机任务中，位姿加腕系力成功率83%，位姿加局部系力55%。策略按任务训练，另三项扩展各仅10次试验。",
+          "sensing": [
+            "Three-axis fingertip force",
+            "Multi-view RGB",
+            "Joint positions and velocities",
+            "Forward-kinematic fingertip poses"
+          ],
+          "hand": [
+            "DexRemo three-finger hand (12 DoF)"
+          ],
+          "task": [
+            "Adhesive detachment",
+            "Surface and fingertip cleaning",
+            "Occluded target retrieval"
+          ],
+          "method": [
+            "ACT behavior cloning",
+            "Wrist-frame force alignment",
+            "Receding-horizon joint-displacement chunks"
+          ],
+          "notes_zh": "每任务20条示教，三种子核心对照；三项扩展成功8/10、9/10、7/10。手预先定位，尚无全臂或跨任务策略验证。15Hz执行、每50步重新读取观测；输出关节位移，不是显式力控制。已核验官网，代码仍待发布。未复现。"
+        }
+      }
+    },
+    {
+      "key": "2611.16423|v1|2026-11-12T07:33:05+00:00|dexterous-v1",
+      "digest": "c989f861d38caf2e3612b3923dc8a28e795e7d8301128da24935e623c123d069",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-14T04:02:25Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.16423",
+          "version": 1,
+          "title": "VOKE: Visual Object Kinematics Estimator for Dexterous In-Hand Manipulation",
+          "authors": [
+            "Shengjia Zhu",
+            "Wenqiang Xu",
+            "Lin Shao"
+          ],
+          "published": "2026-11-12T07:33:05Z",
+          "updated": "2026-11-12T07:33:05Z",
+          "url": "https://arxiv.org/abs/2611.16423v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.16423v1",
+            "https://voke-project.pages.dev/"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "主要贡献为视觉手物运动状态估计，归入手物交互；有多指手内控制应用，定量控制结果仅为仿真，实机为定性闭环演示。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.16423v1",
+            "section": "III-A–C; IV-A",
+            "paraphrase": "时序视觉头回归线/角速度与加速度，二阶运动先验修正姿态；人体数据集运动参考量由标注轨迹平滑求导，非传感器直接测量。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.16423v1",
+            "section": "IV-E; Table VI",
+            "paraphrase": "五种子共1000次配对仿真中，预测状态成功率78.9%，姿态历史为68.2%；物理手用Azure Kinect RGB及本体状态运行冻结策略，仅作定性验证。"
+          },
+          {
+            "url": "https://voke-project.pages.dev/",
+            "paraphrase": "官方arXiv指向此匿名项目页，题名、方法和可视化对应；没有可核验的代码链接。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.16423v1",
+          "paraphrase": "III-C与IV-E描述视觉估计物体状态、目标及本体输入，没有执行时触觉读取。"
+        },
+        "paper": {
+          "id": "2611.16423",
+          "title": "VOKE: Visual Object Kinematics Estimator for Dexterous In-Hand Manipulation",
+          "authors": [
+            "Shengjia Zhu",
+            "Wenqiang Xu",
+            "Lin Shao"
+          ],
+          "date": "2026-11-12",
+          "year": 2026,
+          "category": "Hand–Object Interaction",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.16423",
+            "project": "https://voke-project.pages.dev/"
+          },
+          "tags": [
+            "Vision",
+            "Proprioception",
+            "Reinforcement learning",
+            "Sim-to-real",
+            "In-hand manipulation"
+          ],
+          "tldr": "Adds explicit velocity and acceleration prediction to visual hand-object pose estimators, then refines pose with a second-order motion prior. Evaluations cover DexYCB/OakInk and Shadow Hand cube reorientation: estimated-state simulation success reaches 78.9%, versus 68.2% with pose history. Physical deployment is qualitative; severe occlusion and angular-acceleration error remain limitations.",
+          "tldr_zh": "在视觉手物姿态估计器上增加速度、加速度预测，并以二阶运动先验修正姿态。评测覆盖DexYCB/OakInk及Shadow手方块重定向；预测状态下仿真成功率78.9%，姿态历史为68.2%。实机仅定性演示，严重遮挡和角加速度误差仍有限制。",
+          "sensing": [
+            "Temporal visual features",
+            "Azure Kinect RGB during physical deployment",
+            "Robot proprioception"
+          ],
+          "hand": [
+            "Shadow Dexterous Hand"
+          ],
+          "task": [
+            "Hand-object pose and motion estimation",
+            "In-hand cube reorientation"
+          ],
+          "method": [
+            "Pluggable Kinematics Module",
+            "Kinematics-guided pose refinement",
+            "Kinematics-augmented PPO"
+          ],
+          "notes_zh": "不把仿真成功率写作实机成绩；人手数据集的速度/加速度参考量来自平滑标注轨迹。未核验到代码，未复现。"
+        }
+      }
     }
   ]
 }
