@@ -55,16 +55,16 @@ Each paper has one primary area. Tags add five complementary views: **Policy & l
 
 ## At a glance
 
-<p align="center"><b>114 papers</b> · <b>19 tactile dexterity papers</b> · <b>35 code links</b> · 6 research areas · <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/">browse the collection</a></p>
+<p align="center"><b>209 papers</b> · <b>35 tactile dexterity papers</b> · <b>56 code links</b> · 6 research areas · <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/">browse the collection</a></p>
 
 | Research area | Papers |
 |:--|--:|
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Dexterous%20Manipulation">Dexterous Manipulation</a> | 75 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Dexterous%20Manipulation">Tactile Dexterous Manipulation</a> | 19 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Sensing%20%26%20Representation">Tactile Sensing &amp; Representation</a> | 11 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Hand%E2%80%93Object%20Interaction">Hand–Object Interaction</a> | 6 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Grasp%20Synthesis">Grasp Synthesis</a> | 1 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Policy%20Optimization">Policy Optimization</a> | 2 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Dexterous%20Manipulation">Dexterous Manipulation</a> | 121 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Dexterous%20Manipulation">Tactile Dexterous Manipulation</a> | 35 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Sensing%20%26%20Representation">Tactile Sensing &amp; Representation</a> | 27 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Hand%E2%80%93Object%20Interaction">Hand–Object Interaction</a> | 12 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Grasp%20Synthesis">Grasp Synthesis</a> | 2 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Policy%20Optimization">Policy Optimization</a> | 12 |
 
 Counts describe this curated collection. Code links may cover data tools, simulation, or hardware rather than a complete policy implementation. Explore release trends and tag distributions in [Stats](https://breez3young.github.io/Awesome-Dexterous-Manipulation/#stats).
 
@@ -88,14 +88,14 @@ The most recent first releases in the curated catalog. Dates below are publicati
 
 | First released | Paper | Research area | Resources |
 |:--|:--|:--|:--|
-| 2026-10-13 | <b>EgoCPT: Learning Dexterous Manipulation from a Single Ego-Centric Video with Contact-Aware Optimization</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.17572">Paper</a> · <a href="https://ego-cpt.github.io/">Project</a> |
-| 2026-10-13 | <b>PACT: Posture-Aligned Co-Design Technique for Hand Configuration and Retargeting in Multi-Finger Imitation Learning</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.18443">Paper</a> · <a href="https://pact-hand-2027.github.io">Project</a> |
-| 2026-10-13 | <b>EgoMatrix: Physically Faithful Dexterous Robot Demonstrations from Egocentric Human Videos</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.18822">Paper</a> · <a href="https://spikew726.github.io/EgoMatrix/">Project</a> |
-| 2026-10-13 | <b>EgoExplorer: A Vision-Motion-Touch Observatory for Human Loco-Manipulation In Situ</b> | Hand–Object Interaction | <a href="https://arxiv.org/abs/2610.18872">Paper</a> · <a href="https://internrobotics.github.io/egoexplorer.github.io/">Project</a> |
-| 2026-10-12 | <b>DeTac: Dual-branch Decoupling of Texture and Force Signals in Vision-Based Tactile Sensors</b> | Tactile Sensing &amp; Representation | <a href="https://arxiv.org/abs/2610.16463">Paper</a> |
-| 2026-10-12 | <b>Force-Modulated Dexterity: Unified Compliance for Contact-Rich Manipulation</b> | Tactile Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.17161">Paper</a> |
-| 2026-10-12 | <b>DexNinja: Learning Robust Dexterous Cutting Policy with a Real-to-Sim-to-Real Data Engine</b> | Tactile Dexterous Manipulation | <a href="https://arxiv.org/abs/2610.17208">Paper</a> · <a href="https://dex-ninja.github.io/">Project</a> |
-| 2026-10-11 | <b>Hand2Robot: Object-Centric 4D Hand Reconstruction from Human Demonstrations for Robotics</b> | Hand–Object Interaction | <a href="https://arxiv.org/abs/2610.15769">Paper</a> |
+| 2026-11-12 | <b>VOKE: Visual Object Kinematics Estimator for Dexterous In-Hand Manipulation</b> | Hand–Object Interaction | <a href="https://arxiv.org/abs/2611.16423">Paper</a> · <a href="https://voke-project.pages.dev/">Project</a> |
+| 2026-11-11 | <b>DexRemo: A Force-Sensing Hand Platform and Task Suite for Contact-Rich Removal Manipulation</b> | Tactile Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.15981">Paper</a> · <a href="https://dexremo.github.io/">Project</a> |
+| 2026-11-10 | <b>LaST0.5: A Generalist World Action Model with Interaction-Centric Latent Reasoning</b> | Policy Optimization | <a href="https://arxiv.org/abs/2611.14048">Paper</a> |
+| 2026-11-09 | <b>Decoupled Asynchronous System for Humanoids (DASH): Latency-Agnostic Scaling of Vision-Language-Action Models for Humanoid Manipulation</b> | Policy Optimization | <a href="https://arxiv.org/abs/2611.11854">Paper</a> |
+| 2026-11-09 | <b>GAP: Generalized Adaptation Prior for Dexterous Piano Playing</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.12111">Paper</a> |
+| 2026-11-09 | <b>Embodied First Exam</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.12177">Paper</a> · <a href="https://www.embodied-first-exam.ai/">Project</a> · <a href="https://github.com/mll-lab-nu/embodied-first-exam">Code</a> |
+| 2026-11-09 | <b>PCTac: Mechanochromic Photonic-Crystal Tactile Sensor for Dexterous Manipulation</b> | Tactile Sensing &amp; Representation | <a href="https://arxiv.org/abs/2611.12383">Paper</a> · <a href="https://bey0ndt1me.github.io/PCTac-page/">Project</a> |
+| 2026-11-09 | <b>Learning Heterogeneous Tactile Representation for General Dexterous Manipulation</b> | Tactile Sensing &amp; Representation | <a href="https://arxiv.org/abs/2611.12806">Paper</a> · <a href="https://technology.robbyant.com/lingbot-touch">Project</a> · <a href="https://github.com/robbyant/lingbot-touch">Code</a> |
 
 [View the full catalog](https://breez3young.github.io/Awesome-Dexterous-Manipulation/) for summaries, evaluation context, and combinations of learning, sensing, and task tags.
 <!-- END GENERATED CATALOG -->
