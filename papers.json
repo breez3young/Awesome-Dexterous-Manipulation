@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-11-14",
+  "updated": "2026-11-17",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -12958,6 +12958,171 @@
       "sources": [
         "https://arxiv.org/html/2611.16423v1",
         "https://voke-project.pages.dev/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2608.19372",
+      "title": "The Missing Touch: Sensing and Displaying Localized Contact Geometry Brings Teleoperation Closer to Human Dexterity",
+      "authors": [
+        "Rohan Kota",
+        "Gregory Reardon",
+        "J. Edward Colgate"
+      ],
+      "date": "2026-08-19",
+      "year": 2026,
+      "category": "Tactile Sensing & Representation",
+      "scope": "adjacent",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.19372",
+        "project": "https://gregoryreardon.com/publication/024_Kota_Missing"
+      },
+      "tags": [
+        "Teleoperation",
+        "Human-in-the-loop",
+        "Imitation learning",
+        "Tactile feedback",
+        "Vision",
+        "Proprioception",
+        "Hardware / sensor"
+      ],
+      "tldr": "Maps fingertip contact geometry to a 32-pixel tactile display to improve demonstrations on a 2-DoF single-finger telemanipulator. Both downstream π0.5 policies use tactile images during execution; demonstrations with localized feedback yield 12/13 peg-rolling successes versus 12/19 without display feedback. Timing and trajectory comparisons use successful trials only; multifinger transfer is untested.",
+      "tldr_zh": "把指端接触几何映射至32像素触觉显示，改善2自由度单指端机构的遥操作示教。下游两组π0.5执行均读取触觉图像；局部反馈示教对应滚杆成功12/13，无皮肤显示反馈示教为12/19。耗时和轨迹只比较成功试验，多指迁移未验证。",
+      "sensing": [
+        "GelSight Mini tactile images",
+        "External RGB camera",
+        "Follower joint angles"
+      ],
+      "hand": [
+        "Single GelSight Mini end effector on a 2-DoF mechanism"
+      ],
+      "task": [
+        "Button discrimination",
+        "Planar peg rolling"
+      ],
+      "method": [
+        "Spatial contact-to-pixel mapping",
+        "Bilateral teleoperation",
+        "π0.5 fine-tuning"
+      ],
+      "notes_zh": "按钮与滚杆研究分别12人和10人；自主策略各用91条训练、5条验证，仅前向滚杆。所有遥操作条件均有力觉反馈。首投2026-08-19，审核v2；作者页仍为旧题名。未复现。",
+      "arxiv_id": "2608.19372",
+      "arxiv_version": 2,
+      "arxiv_updated": "2026-11-13T01:25:12Z",
+      "source_url": "https://arxiv.org/abs/2608.19372v2",
+      "sources": [
+        "https://arxiv.org/html/2608.19372v2",
+        "https://gregoryreardon.com/publication/024_Kota_Missing"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v2)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.17619",
+      "title": "TouchTwin: Scaling Human Touch Data via Real-to-Sim-to-Real",
+      "authors": [
+        "Huiwen Han",
+        "Nuo Chen",
+        "Ziyao Zeng",
+        "Dayou Li",
+        "Hao Wang",
+        "Amir Hossein Rahmati",
+        "Xiaoning Qian",
+        "Bangya Liu",
+        "Zhiwen Fan"
+      ],
+      "date": "2026-11-13",
+      "year": 2026,
+      "category": "Tactile Sensing & Representation",
+      "scope": "adjacent",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.17619",
+        "project": "https://touchtwin.github.io/"
+      },
+      "tags": [
+        "Imitation learning",
+        "Vision",
+        "Dataset / benchmark"
+      ],
+      "tldr": "Rebuilds human hand-object recordings in MuJoCo using measured glove contact and force, then generates perturbed, labeled replays and realistic videos. Mug-policy success is 20/20 on held-out replays and 35/36 on simulated perturbations; all policy tests are open-loop simulation. Real-recording contact prediction improves, but robot-hand transfer and real-robot control remain untested.",
+      "tldr_zh": "以人类手套实测接触与力约束MuJoCo手物再现，生成扰动标注和逼真视频。杯子策略在留出再现与扰动中分别成功20/20、35/36，均为仿真开环测试；真实记录接触预测改善，但尚无机器人手迁移或实机控制验证。",
+      "sensing": [
+        "Head and wrist RGB-D during human recording",
+        "880-taxel human tactile glove during recording",
+        "Simulated contact and force labels"
+      ],
+      "hand": [
+        "Subject-specific simulated human hand"
+      ],
+      "task": [
+        "Mug grasp, carry and set-down",
+        "Human hand contact prediction",
+        "Hand-object replay and data generation"
+      ],
+      "method": [
+        "Touch-grounded MuJoCo replay",
+        "Physics-based demonstration perturbation",
+        "Simulation-conditioned video generation",
+        "Hand-policy imitation"
+      ],
+      "notes_zh": "策略与接触预测主要评测仅杯子任务、小规模留出集且从已有接触起步；双手再现仍有12–23毫米滑移。Sim2Real包含生成视频及真实记录预测，不代表机器人实机部署。已核验项目页，无可核验代码链接；未复现。",
+      "arxiv_id": "2611.17619",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-13T00:42:29Z",
+      "source_url": "https://arxiv.org/abs/2611.17619v1",
+      "sources": [
+        "https://arxiv.org/html/2611.17619v1",
+        "https://touchtwin.github.io/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.17755",
+      "title": "VACO: Vertex-Aligned Decoding for Dense Hand Contact Estimation from a Single Image",
+      "authors": [
+        "Binhong Ye",
+        "Jin-Chuan Shi",
+        "Tao Liu",
+        "Xin Wang",
+        "Hao Chen",
+        "Chunhua Shen"
+      ],
+      "date": "2026-11-13",
+      "year": 2026,
+      "category": "Hand–Object Interaction",
+      "scope": "adjacent",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.17755"
+      },
+      "tags": [
+        "Vision"
+      ],
+      "tldr": "Predicts human-hand contact from one RGB image by sampling features at projected MANO vertices with a jointly trained reconstruction backbone. One checkpoint covers three in-domain and two held-out benchmarks; a contact prior also improves AGILE reconstruction on four HO3D-v3 sequences. Evidence is offline, with mostly proximity-derived supervision and single-run metrics; overlapping projections and occlusion remain limitations.",
+      "tldr_zh": "在MANO顶点投影处采样视觉特征，以联合训练的重建骨干预测人手接触。单模型评测三项域内、两项未见数据集，并改善四段HO3D-v3手物重建。结果限于离线数据，多数监督来自几何距离、指标为单次运行；投影重叠和遮挡仍有歧义。",
+      "sensing": [
+        "Single RGB image"
+      ],
+      "hand": [
+        "Human hand (MANO)"
+      ],
+      "task": [
+        "Dense hand contact estimation",
+        "Hand-object reconstruction"
+      ],
+      "method": [
+        "Vertex-aligned visual decoding",
+        "Joint reconstruction and contact training",
+        "Contact priors for geometric reconstruction"
+      ],
+      "notes_zh": "无机器人控制或真实触觉反馈评测。三项域内为DexYCB、Hi4D、RICH，两项未见为HOT3D、HOCap。下游四段序列仅AP14物体未见；多手独立推理。未核验到项目或代码地址，未复现。",
+      "arxiv_id": "2611.17755",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-13T05:11:14Z",
+      "source_url": "https://arxiv.org/abs/2611.17755v1",
+      "sources": [
+        "https://arxiv.org/html/2611.17755v1"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"
