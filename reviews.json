@@ -17473,6 +17473,528 @@
           "notes_zh": "无机器人控制或真实触觉反馈评测。三项域内为DexYCB、Hi4D、RICH，两项未见为HOT3D、HOCap。下游四段序列仅AP14物体未见；多手独立推理。未核验到项目或代码地址，未复现。"
         }
       }
+    },
+    {
+      "key": "2512.00324|v6|2026-11-16T16:31:21+00:00|dexterous-v1",
+      "digest": "7c2028f67ed32c3bd945b088a5213ee2943d1d1e18c7f140bb63e82e1f4ede3f",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-18T02:16:03Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2512.00324",
+          "version": 6,
+          "title": "MILE: A Mechanically Isomorphic Hand Exoskeleton and Visuotactile Robotic Hand for Data Collection in Dexterous Manipulation",
+          "authors": [
+            "Jinda Du",
+            "Jieji Ren",
+            "Qiaojun Yu",
+            "Ningbin Zhang",
+            "Yu Deng",
+            "Xingyu Wei",
+            "Yufei Liu",
+            "Guoying Gu",
+            "Xiangyang Zhu"
+          ],
+          "published": "2025-11-29T05:34:39Z",
+          "updated": "2026-11-16T16:31:21Z",
+          "url": "https://arxiv.org/abs/2512.00324v6",
+          "primary_urls": [
+            "https://arxiv.org/html/2512.00324v6",
+            "https://jindadu00.github.io/MILE/",
+            "https://github.com/jindadu00/MILE-Tactile-Sensor"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "四指17自由度遥操作采集系统，并以实机ACT/DP验证执行时触觉输入，属于核心触觉灵巧操作。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2512.00324v6",
+            "section": "III-A–C; V-C; Supplement VII-D",
+            "paraphrase": "同构外骨骼直接映射关节命令；ACT-Tac及DP-Tac部署读取四指视触觉图、视觉和手部关节状态。"
+          },
+          {
+            "url": "https://arxiv.org/html/2512.00324v6",
+            "section": "IV-B; Table II; Supplement VII-D",
+            "paraphrase": "遥操作四任务平均76%，不等于自主成功率；自主评测每任务/骨干仅一个训练模型，触觉组12项配对均数值更高。"
+          },
+          {
+            "url": "https://jindadu00.github.io/MILE/",
+            "paraphrase": "项目页核对同一作者与论文，展示遥操作、自主手内及臂手演示。"
+          },
+          {
+            "url": "https://github.com/jindadu00/MILE-Tactile-Sensor",
+            "paraphrase": "已发布指端传感器CAD、BOM、组装文档和LED固件；不能等同于完整学习策略开源。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2512.00324v6",
+          "paraphrase": "V-C式9–10及补充VII-D明确部署用四路实时触觉图融合视觉与本体信息，输出机器人关节目标。"
+        },
+        "paper": {
+          "id": "2512.00324",
+          "title": "MILE: A Mechanically Isomorphic Hand Exoskeleton and Visuotactile Robotic Hand for Data Collection in Dexterous Manipulation",
+          "authors": [
+            "Jinda Du",
+            "Jieji Ren",
+            "Qiaojun Yu",
+            "Ningbin Zhang",
+            "Yu Deng",
+            "Xingyu Wei",
+            "Yufei Liu",
+            "Guoying Gu",
+            "Xiangyang Zhu"
+          ],
+          "date": "2025-11-29",
+          "year": 2025,
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2512.00324",
+            "project": "https://jindadu00.github.io/MILE/",
+            "code": "https://github.com/jindadu00/MILE-Tactile-Sensor"
+          },
+          "tags": [
+            "Teleoperation",
+            "Imitation learning",
+            "Diffusion / flow policy",
+            "In-hand manipulation",
+            "Tactile feedback",
+            "Vision",
+            "Proprioception",
+            "Hardware / sensor"
+          ],
+          "tldr": "Pairs a 17-DoF exoskeleton with a four-finger visuotactile hand for direct joint-space demonstration capture. ACT and diffusion policies consume robot fingertip images during execution; tactile variants improve all 12 task–backbone comparisons by 14.7 percentage points on average. Tests use one trained model per variant; operators receive visualized touch, without active haptic feedback.",
+          "tldr_zh": "17自由度外骨骼与四指视触觉手建立直接关节对应，采集多模态示教。ACT和扩散策略执行读取指端图像，12项任务—骨干配对的触觉组平均提升14.7个百分点。每变体仅一个训练模型；操作者看触觉显示而非接受主动触觉反馈。",
+          "sensing": [
+            "Four fingertip visuotactile image streams",
+            "Task-specific RGB/RGB-D cameras",
+            "Robot-hand joint positions"
+          ],
+          "hand": [
+            "MILE-Tac four-finger 17-DoF hand"
+          ],
+          "task": [
+            "In-hand cap unscrewing",
+            "Ball/toy/cube rotation",
+            "Fixed-bottle cap unscrewing",
+            "Potato-chip pick-and-place"
+          ],
+          "method": [
+            "Mechanically corresponding exoskeleton teleoperation",
+            "Direct joint-space mapping",
+            "ACT-Tac",
+            "DP-Tac"
+          ],
+          "notes_zh": "首投2025-11-29，审核v6。五项自主任务每变体30次，薯片按单片90次计。开源链接仅覆盖触觉传感器硬件/固件；未复现。"
+        }
+      }
+    },
+    {
+      "key": "2611.18976|v1|2026-11-13T22:13:04+00:00|dexterous-v1",
+      "digest": "ffeee6ee7b178e7a37e0b66a5de6d18011696180350146e47e68b32a7b66074c",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-18T02:16:03Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.18976",
+          "version": 1,
+          "title": "TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation",
+          "authors": [
+            "Yiting Chen",
+            "Kelin Yu",
+            "Sarthak Kaingade",
+            "Bryan Trinh",
+            "Kaiyu Hang",
+            "Roberto Martin-martin",
+            "Nima Fazeli",
+            "X. Alice Wu"
+          ],
+          "published": "2026-11-13T22:13:04Z",
+          "updated": "2026-11-13T22:13:04Z",
+          "url": "https://arxiv.org/abs/2611.18976v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.18976v1",
+            "https://humanoid-tma.github.io/"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "真实Revo2多指手以指端三维接触力历史调节开门动作，具有明确触觉闭环与仿真到实机评测，按核心触觉灵巧操作收录。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.18976v1",
+            "section": "IV-A, IV-C–D",
+            "paraphrase": "四指电容触觉力编码成16维锥坐标；部署自适应编码器读取约2秒观测历史，控制右臂和右手，左侧固定。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.18976v1",
+            "section": "Fig. 4; V-C; VI",
+            "paraphrase": "四款门把手每法各10次，使用AprilTag估位与贴胶带增摩、人工摆放初始位；只验证该开门任务。"
+          },
+          {
+            "url": "https://humanoid-tma.github.io/",
+            "paraphrase": "官方项目同名同作者，结果表给出TMA开门27/40、反应式触觉6/40、RMA 0/40；未见代码发布链接。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2611.18976v1",
+          "paraphrase": "IV-A/C/D明确实机电容触觉提供四指三维力，作为策略输入和在线潜变量估计历史；部署移除特权编码器。"
+        },
+        "paper": {
+          "id": "2611.18976",
+          "title": "TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation",
+          "authors": [
+            "Yiting Chen",
+            "Kelin Yu",
+            "Sarthak Kaingade",
+            "Bryan Trinh",
+            "Kaiyu Hang",
+            "Roberto Martin-martin",
+            "Nima Fazeli",
+            "X. Alice Wu"
+          ],
+          "date": "2026-11-13",
+          "year": 2026,
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.18976",
+            "project": "https://humanoid-tma.github.io/"
+          },
+          "tags": [
+            "Reinforcement learning",
+            "Sim-to-real",
+            "Dexterous grasping",
+            "Articulated objects",
+            "Tactile feedback",
+            "Vision",
+            "Proprioception",
+            "Force control"
+          ],
+          "tldr": "Encodes fingertip force in cone coordinates and infers interaction latents from tactile history to control a G1/Revo2 hand with frozen locomotion support. Simulation-trained TMA opens four real knob types in 27/40 trials, versus 6/40 for reactive touch and 0/40 for RMA. Evaluation uses AprilTag pose estimation, taped knob rims and manual initialization; broader task transfer is untested.",
+          "tldr_zh": "将指端力编码为锥坐标，并从触觉历史估计交互潜变量，结合冻结行走控制器驱动G1/Revo2。纯仿真训练后四款实物旋钮开门27/40，反应式触觉6/40、RMA为0/40。评测依赖AprilTag估位、把手贴胶带增摩和人工初始化，未验证跨任务迁移。",
+          "sensing": [
+            "Four fingertip capacitive 3D force sensors",
+            "Whole-body proprioception",
+            "AprilTag-based knob pose estimate"
+          ],
+          "hand": [
+            "BrainCo Revo2 right hand on Unitree G1 Edu"
+          ],
+          "task": [
+            "Round-doorknob grasping and rotation",
+            "Latched-door pushing"
+          ],
+          "method": [
+            "PPO with privileged interaction encoder",
+            "Cone-coordinate force representation",
+            "Tactile-history latent regression",
+            "Frozen locomotion controller"
+          ],
+          "notes_zh": "实机控制右臂7关节和右手6驱动关节，左臂手保持固定，故不标双手协作；开门阈值为保持抓握且门转角超过15度。首投2026-11-13，审核v1，未复现。"
+        }
+      }
+    },
+    {
+      "key": "2611.19384|v1|2026-11-14T12:47:44+00:00|dexterous-v1",
+      "digest": "983e27ce161cbc9663e1a937f5359be8ac1868e51bcf994ea39fe8ed9bdbdb22",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-18T02:16:03Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.19384",
+          "version": 1,
+          "title": "Porosification of the dielectric layer in alternating-current electroluminescence devices enables high-resolution tactile imaging",
+          "authors": [
+            "Mingwei Gu",
+            "Licheng Li",
+            "Zeyuan Zhou",
+            "Ying Yang",
+            "Zixiang Nie",
+            "Xingyu Ma",
+            "Junshuai Chen",
+            "Lin Zheng",
+            "Jinhui Gu",
+            "Jia-Sen Xie",
+            "Ziling Wei",
+            "Mengxing Huang",
+            "Jin Ge"
+          ],
+          "published": "2026-11-14T12:47:44Z",
+          "updated": "2026-11-14T12:47:44Z",
+          "url": "https://arxiv.org/abs/2611.19384v1",
+          "primary_urls": [
+            "https://arxiv.org/pdf/2611.19384v1"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "多孔介电层将接触压力转成光学图样，直接关联紧凑机器人触觉感知，按相邻硬件研究收录；验证是台架成像而非灵巧手控制。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/pdf/2611.19384v1",
+            "section": "2.2–2.5; 4",
+            "paraphrase": "ACEL材料受压发光并由CMOS读取；压头台架展示100微米条纹成像，1.70 MPa下强度变异系数由0.08降至0.009。"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2611.19384v1",
+            "section": "Abstract; 3 Conclusion",
+            "paraphrase": "小于5毫米厚的整体集成是预期；完整ACEL-CMOS集成性能仍待系统评估，没有机器人部署。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/pdf/2611.19384v1",
+          "paraphrase": "评测未涉及机器人控制策略执行时读取触觉信号。"
+        },
+        "paper": {
+          "id": "2611.19384",
+          "title": "Porosification of the dielectric layer in alternating-current electroluminescence devices enables high-resolution tactile imaging",
+          "authors": [
+            "Mingwei Gu",
+            "Licheng Li",
+            "Zeyuan Zhou",
+            "Ying Yang",
+            "Zixiang Nie",
+            "Xingyu Ma",
+            "Junshuai Chen",
+            "Lin Zheng",
+            "Jinhui Gu",
+            "Jia-Sen Xie",
+            "Ziling Wei",
+            "Mengxing Huang",
+            "Jin Ge"
+          ],
+          "date": "2026-11-14",
+          "year": 2026,
+          "category": "Tactile Sensing & Representation",
+          "scope": "adjacent",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.19384"
+          },
+          "tags": [
+            "Hardware / sensor"
+          ],
+          "tldr": "Converts pressure into light patterns through a porous dielectric in an electroluminescent tactile interface. Bench tests resolve 100 μm stripes and show more uniform emission with smaller pores. A sub-5-mm integrated sensor remains prospective; full integration has not been systematically evaluated, and no robot-hand deployment is reported.",
+          "tldr_zh": "通过多孔介电层把压力转为电致发光图样，台架测试分辨100微米条纹，小孔结构改善发光均匀性。小于5毫米的集成传感器仍属预期，完整集成性能尚待系统评估，未报告机器人手部署。",
+          "sensing": [
+            "Pressure-modulated electroluminescence with CMOS readout"
+          ],
+          "hand": [],
+          "task": [
+            "Contact-pattern imaging"
+          ],
+          "method": [
+            "Porous-dielectric pressure-to-light transduction"
+          ],
+          "notes_zh": "台架触觉硬件，不标Tactile feedback。未核验到项目或代码链接，未复现。"
+        }
+      }
+    },
+    {
+      "key": "2611.20202|v1|2026-11-15T18:58:02+00:00|dexterous-v1",
+      "digest": "2c4d0dd33648bbe265aabb28adad6c530ef855c3c2253acb91aec778891cc0b0",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-18T02:16:03Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.20202",
+          "version": 1,
+          "title": "DAPPT: Domain-Aware Policies from Procedural Trajectories for Sim-to-Real Dexterous Tool Use",
+          "authors": [
+            "Beining Han",
+            "Jia Deng"
+          ],
+          "published": "2026-11-15T18:58:02Z",
+          "updated": "2026-11-15T18:58:02Z",
+          "url": "https://arxiv.org/abs/2611.20202v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.20202v1",
+            "https://beininghan.github.io/DAPPT-web/",
+            "https://github.com/princeton-vl/DAPPT"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "程序化轨迹训练在多指实机工具操作中得到验证，属于灵巧操作核心工作；执行依赖视觉与本体状态，接触奖励不构成触觉反馈。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.20202v1",
+            "section": "III-C–D; V-A",
+            "paraphrase": "PPO教师经DAgger蒸馏；XHand1与Franka R3执行输入为1024点深度点云及本体状态，未读取触觉。"
+          },
+          {
+            "url": "https://beininghan.github.io/DAPPT-web/",
+            "section": "Real-world Zero-shot sim-to-real transfer",
+            "paraphrase": "六任务各20次，任务成功为14、11、19、19、14、10次；泵和喷头不出水，连续指标只统计任务成功试验。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.20202v1",
+            "section": "IV-A–B; Appendix A-C",
+            "paraphrase": "刚体训练后在含粒子的Genesis选择域参数；已知物体、窄位姿分布及人工定义轨迹限制泛化。"
+          },
+          {
+            "url": "https://github.com/princeton-vl/DAPPT",
+            "paraphrase": "论文官方仓库目前仅README，注明代码尚未发布；因此不计为可用代码资源。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.20202v1",
+          "paraphrase": "III-D定义执行输入为点云、本体状态和域参数；III-B的接触信息用于训练奖励。"
+        },
+        "paper": {
+          "id": "2611.20202",
+          "title": "DAPPT: Domain-Aware Policies from Procedural Trajectories for Sim-to-Real Dexterous Tool Use",
+          "authors": [
+            "Beining Han",
+            "Jia Deng"
+          ],
+          "date": "2026-11-15",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.20202",
+            "project": "https://beininghan.github.io/DAPPT-web/"
+          },
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Sim-to-real",
+            "Tool use",
+            "Articulated objects",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Learns domain-conditioned tool trajectories with rigid-body RL, then distills a point-cloud policy and selects parameters in Genesis. XHand1–Franka executes six real tasks using vision and proprioception. Reported task success ranges from 10/20 to 19/20; dispenser and spray tests exclude water emission. Generalization remains limited to known objects and narrow pose ranges.",
+          "tldr_zh": "以刚体强化学习跟踪可调轨迹，蒸馏点云策略并在Genesis选取域参数。XHand1–Franka在六项实机任务中仅用视觉与本体输入，任务成功10/20至19/20；泵和喷头未出水。泛化限于已知物体及窄位姿范围。",
+          "sensing": [
+            "RealSense D435 depth point cloud",
+            "Hand joint positions and end-effector state"
+          ],
+          "hand": [
+            "RobotEra XHand1 (12 DoF) with Franka Research 3 (7 DoF)"
+          ],
+          "task": [
+            "Sand scooping",
+            "Dough rolling",
+            "Sand scraping",
+            "Mouse-wheel scrolling",
+            "Dispenser pressing",
+            "Spray-trigger pressing"
+          ],
+          "method": [
+            "Domain-conditioned procedural trajectories",
+            "PPO with initial behavior cloning",
+            "DAgger distillation",
+            "Domain randomization and parameter search"
+          ],
+          "notes_zh": "训练使用10–20条仿真示教及控制器标定；1.5–3.8倍为仿真最佳域参数相对随机域均值，并非实机提升。官方仓库待发布代码。审核v1，未复现。"
+        }
+      }
+    },
+    {
+      "key": "2611.21060|v1|2026-11-16T13:11:40+00:00|dexterous-v1",
+      "digest": "69935fd5f681f248d6a9bd22ffad9975fddae01585f6d098c19980d4c51d819d",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-18T02:16:03Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.21060",
+          "version": 1,
+          "title": "MetricHand: Geometry-Aware Flow Matching for 4D Hand Reconstruction in Metric World Space",
+          "authors": [
+            "Yibo Bai",
+            "Likui Zhang",
+            "Jinglei Zhang",
+            "Zhengbin Pang",
+            "Xingshen Song",
+            "Xiaoqing Yin",
+            "Jinsheng Deng"
+          ],
+          "published": "2026-11-16T13:11:40Z",
+          "updated": "2026-11-16T13:11:40Z",
+          "url": "https://arxiv.org/abs/2611.21060v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.21060v1",
+            "https://bieber1205.github.io/MetricHand/"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "重建手物交互中的人手公制轨迹，作为相邻感知方法收录；没有机器人迁移或控制评测，流匹配用于重建而非策略。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.21060v1",
+            "section": "3.1–3.4",
+            "paraphrase": "单目视频、估计深度和相机轨迹构成输入；21关节锚点附近几何与时序记忆逐步约束双手MANO流匹配。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.21060v1",
+            "section": "4; Table 1; 5 Limitations",
+            "paraphrase": "HOT3D与ARCTIC离线评测；ARCTIC绝对世界关节误差仍为120.86毫米，受深度与相机轨迹误差影响。未见机器人评测。"
+          },
+          {
+            "url": "https://bieber1205.github.io/MetricHand/",
+            "paraphrase": "官方项目列出同题名、作者、两组数据集结果，明确未托管研究代码。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.21060v1",
+          "paraphrase": "评测未涉及机器人控制策略执行时读取触觉信号。"
+        },
+        "paper": {
+          "id": "2611.21060",
+          "title": "MetricHand: Geometry-Aware Flow Matching for 4D Hand Reconstruction in Metric World Space",
+          "authors": [
+            "Yibo Bai",
+            "Likui Zhang",
+            "Jinglei Zhang",
+            "Zhengbin Pang",
+            "Xingshen Song",
+            "Xiaoqing Yin",
+            "Jinsheng Deng"
+          ],
+          "date": "2026-11-16",
+          "year": 2026,
+          "category": "Hand–Object Interaction",
+          "scope": "adjacent",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.21060",
+            "project": "https://bieber1205.github.io/MetricHand/"
+          },
+          "tags": [
+            "Vision"
+          ],
+          "tldr": "Reconstructs metric human-hand motion from monocular video using joint-local depth geometry and temporal memory to condition flow matching. Offline HOT3D and ARCTIC evaluations show improved localization, while ARCTIC absolute world joint error remains 120.86 mm. Accuracy depends on estimated depth and camera motion; robot transfer is untested.",
+          "tldr_zh": "利用关节局部深度几何与时序记忆约束流匹配，从单目视频重建人手公制轨迹。离线HOT3D和ARCTIC定位改善，但ARCTIC绝对世界关节误差仍达120.86毫米；依赖估计深度与相机运动，未验证机器人迁移。",
+          "sensing": [
+            "Monocular RGB video",
+            "Estimated depth and camera trajectory"
+          ],
+          "hand": [
+            "Human hands (MANO)"
+          ],
+          "task": [
+            "Metric 4D hand reconstruction"
+          ],
+          "method": [
+            "Geometry-conditioned flow matching",
+            "Temporal memory"
+          ],
+          "notes_zh": "按正文实际评测总结；不据引言扩大到其他数据集，不标VLA、策略流匹配、触觉或已验证动作迁移。项目无研究代码，未复现。"
+        }
+      }
     }
   ]
 }

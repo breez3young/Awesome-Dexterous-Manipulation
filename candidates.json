@@ -1,8 +1,199 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-16T08:24:54Z",
+  "updated_at": "2026-11-17T09:38:02Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2512.00324",
+      "title": "MILE: A Mechanically Isomorphic Hand Exoskeleton and Visuotactile Robotic Hand for Data Collection in Dexterous Manipulation",
+      "authors": [
+        "Jinda Du",
+        "Jieji Ren",
+        "Qiaojun Yu",
+        "Ningbin Zhang",
+        "Yu Deng",
+        "Xingyu Wei",
+        "Yufei Liu",
+        "Guoying Gu",
+        "Xiangyang Zhu"
+      ],
+      "published": "2025-11-29T05:34:39Z",
+      "updated": "2026-11-16T16:31:21Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2512.00324",
+        "pdf": "https://arxiv.org/pdf/2512.00324"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Dexterous robotic hands perform complex, contact-rich manipulation. Imitation learning provides a route to such skills, but collecting human demonstrations with accurate hand …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-17T09:38:02Z",
+      "last_seen": "2026-11-17T09:38:02Z"
+    },
+    {
+      "id": "2611.21060",
+      "title": "MetricHand: Geometry-Aware Flow Matching for 4D Hand Reconstruction in Metric World Space",
+      "authors": [
+        "Yibo Bai",
+        "Likui Zhang",
+        "Jinglei Zhang",
+        "Zhengbin Pang",
+        "Xingshen Song",
+        "Xiaoqing Yin",
+        "Jinsheng Deng"
+      ],
+      "published": "2026-11-16T13:11:40Z",
+      "updated": "2026-11-16T13:11:40Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.21060",
+        "pdf": "https://arxiv.org/pdf/2611.21060"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… motion provides physical motion supervision for dexterous manipulation and vision-language-action pretraining. Reliable use of this supervision requires accurate and temporally coherent 4D …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-17T09:38:02Z",
+      "last_seen": "2026-11-17T09:38:02Z"
+    },
+    {
+      "id": "2611.20202",
+      "title": "DAPPT: Domain-Aware Policies from Procedural Trajectories for Sim-to-Real Dexterous Tool Use",
+      "authors": [
+        "Beining Han",
+        "Jia Deng"
+      ],
+      "published": "2026-11-15T18:58:02Z",
+      "updated": "2026-11-15T18:58:02Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.20202",
+        "pdf": "https://arxiv.org/pdf/2611.20202"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… RL has achieved impressive results in dexterous manipulation but remains limited to tasks with accurate rigid-body simulation. However, these methods cannot be …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-17T09:38:02Z",
+      "last_seen": "2026-11-17T09:38:02Z"
+    },
+    {
+      "id": "2611.19384",
+      "title": "Porosification of the dielectric layer in alternating-current electroluminescence devices enables high-resolution tactile imaging",
+      "authors": [
+        "Mingwei Gu",
+        "Licheng Li",
+        "Zeyuan Zhou",
+        "Ying Yang",
+        "Zixiang Nie",
+        "Xingyu Ma",
+        "Junshuai Chen",
+        "Lin Zheng",
+        "Jinhui Gu",
+        "Jia-Sen Xie",
+        "Ziling Wei",
+        "Mengxing Huang",
+        "Jin Ge"
+      ],
+      "published": "2026-11-14T12:47:44Z",
+      "updated": "2026-11-14T12:47:44Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.19384",
+        "pdf": "https://arxiv.org/pdf/2611.19384"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… and constrain the functional design of dexterous robotic hands. Here we introduce a self-emissive tactile imaging strategy based on alternating-current electroluminescence (ACEL) …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-17T09:38:02Z",
+      "last_seen": "2026-11-17T09:38:02Z"
+    },
+    {
+      "id": "2611.18976",
+      "title": "TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation",
+      "authors": [
+        "Yiting Chen",
+        "Kelin Yu",
+        "Sarthak Kaingade",
+        "Bryan Trinh",
+        "Kaiyu Hang",
+        "Roberto Martin-martin",
+        "Nima Fazeli",
+        "X. Alice Wu"
+      ],
+      "published": "2026-11-13T22:13:04Z",
+      "updated": "2026-11-13T22:13:04Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.18976",
+        "pdf": "https://arxiv.org/pdf/2611.18976"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… and motion execution. In contrast, forceful multi-finger manipulation requires the robot to adapt to real-world uncertainties in contact and interaction dynamics. We …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-17T09:38:02Z",
+      "last_seen": "2026-11-17T09:38:02Z"
+    },
+    {
+      "id": "2610.30781",
+      "title": "DeXplicit: Making Physical State Explicit in Dexterous Manipulation World Models",
+      "authors": [
+        "Adam Lee",
+        "Mutian Xu",
+        "Yukang Cao",
+        "Shulin Tian",
+        "Ziwei Liu"
+      ],
+      "published": "2026-10-22T06:02:09Z",
+      "updated": "2026-11-13T20:41:30Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.30781",
+        "pdf": "https://arxiv.org/pdf/2610.30781"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… object structure. We introduce DeXplicit, a dexterous manipulation world model that predicts how the world evolves explicitly in metric 3D before rendering …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-23T06:22:00Z",
+      "last_seen": "2026-11-17T09:38:02Z"
+    },
     {
       "id": "2611.16423",
       "title": "VOKE: Visual Object Kinematics Estimator for Dexterous In-Hand Manipulation",
@@ -28,7 +219,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-13T08:35:45Z",
-      "last_seen": "2026-11-16T08:24:54Z"
+      "last_seen": "2026-11-17T09:38:02Z"
     },
     {
       "id": "2611.17755",
@@ -58,7 +249,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-16T08:24:54Z",
-      "last_seen": "2026-11-16T08:24:54Z"
+      "last_seen": "2026-11-17T09:38:02Z"
     },
     {
       "id": "2608.19372",
@@ -86,7 +277,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-16T08:24:54Z",
-      "last_seen": "2026-11-16T08:24:54Z"
+      "last_seen": "2026-11-17T09:38:02Z"
     },
     {
       "id": "2611.17619",
@@ -120,7 +311,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-16T08:24:54Z",
-      "last_seen": "2026-11-16T08:24:54Z"
+      "last_seen": "2026-11-17T09:38:02Z"
     },
     {
       "id": "2505.04978",
@@ -149,7 +340,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-13T08:35:45Z",
-      "last_seen": "2026-11-16T08:24:54Z"
+      "last_seen": "2026-11-17T09:38:02Z"
     },
     {
       "id": "2611.11854",
@@ -180,7 +371,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-16T08:24:54Z"
+      "last_seen": "2026-11-17T09:38:02Z"
     },
     {
       "id": "2611.15981",
@@ -212,7 +403,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-13T08:35:45Z",
-      "last_seen": "2026-11-16T08:24:54Z"
+      "last_seen": "2026-11-17T09:38:02Z"
     },
     {
       "id": "2611.14048",
@@ -253,7 +444,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-11T08:08:24Z",
-      "last_seen": "2026-11-16T08:24:54Z"
+      "last_seen": "2026-11-17T09:38:02Z"
     },
     {
       "id": "2611.11166",
@@ -2359,35 +2550,6 @@
       "review_status": "pending",
       "first_seen": "2026-10-23T06:22:00Z",
       "last_seen": "2026-10-29T07:33:06Z"
-    },
-    {
-      "id": "2610.30781",
-      "title": "DeXplicit: Making Physical State Explicit in Dexterous Manipulation World Models",
-      "authors": [
-        "Adam Lee",
-        "Mutian Xu",
-        "Yukang Cao",
-        "Shulin Tian",
-        "Ziwei Liu"
-      ],
-      "published": "2026-10-22T06:02:09Z",
-      "updated": "2026-10-22T06:02:09Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.30781",
-        "pdf": "https://arxiv.org/pdf/2610.30781"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… object structure. We introduce DeXplicit, a dexterous manipulation world model that instead predicts how the world evolves explicitly in metric 3D before …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-23T06:22:00Z",
-      "last_seen": "2026-10-28T07:12:27Z"
     },
     {
       "id": "2610.22363",

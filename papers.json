@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -13123,6 +13123,299 @@
       "source_url": "https://arxiv.org/abs/2611.17755v1",
       "sources": [
         "https://arxiv.org/html/2611.17755v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2512.00324",
+      "title": "MILE: A Mechanically Isomorphic Hand Exoskeleton and Visuotactile Robotic Hand for Data Collection in Dexterous Manipulation",
+      "authors": [
+        "Jinda Du",
+        "Jieji Ren",
+        "Qiaojun Yu",
+        "Ningbin Zhang",
+        "Yu Deng",
+        "Xingyu Wei",
+        "Yufei Liu",
+        "Guoying Gu",
+        "Xiangyang Zhu"
+      ],
+      "date": "2025-11-29",
+      "year": 2025,
+      "category": "Tactile Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2512.00324",
+        "project": "https://jindadu00.github.io/MILE/",
+        "code": "https://github.com/jindadu00/MILE-Tactile-Sensor"
+      },
+      "tags": [
+        "Teleoperation",
+        "Imitation learning",
+        "Diffusion / flow policy",
+        "In-hand manipulation",
+        "Tactile feedback",
+        "Vision",
+        "Proprioception",
+        "Hardware / sensor"
+      ],
+      "tldr": "Pairs a 17-DoF exoskeleton with a four-finger visuotactile hand for direct joint-space demonstration capture. ACT and diffusion policies consume robot fingertip images during execution; tactile variants improve all 12 task–backbone comparisons by 14.7 percentage points on average. Tests use one trained model per variant; operators receive visualized touch, without active haptic feedback.",
+      "tldr_zh": "17自由度外骨骼与四指视触觉手建立直接关节对应，采集多模态示教。ACT和扩散策略执行读取指端图像，12项任务—骨干配对的触觉组平均提升14.7个百分点。每变体仅一个训练模型；操作者看触觉显示而非接受主动触觉反馈。",
+      "sensing": [
+        "Four fingertip visuotactile image streams",
+        "Task-specific RGB/RGB-D cameras",
+        "Robot-hand joint positions"
+      ],
+      "hand": [
+        "MILE-Tac four-finger 17-DoF hand"
+      ],
+      "task": [
+        "In-hand cap unscrewing",
+        "Ball/toy/cube rotation",
+        "Fixed-bottle cap unscrewing",
+        "Potato-chip pick-and-place"
+      ],
+      "method": [
+        "Mechanically corresponding exoskeleton teleoperation",
+        "Direct joint-space mapping",
+        "ACT-Tac",
+        "DP-Tac"
+      ],
+      "notes_zh": "首投2025-11-29，审核v6。五项自主任务每变体30次，薯片按单片90次计。开源链接仅覆盖触觉传感器硬件/固件；未复现。",
+      "arxiv_id": "2512.00324",
+      "arxiv_version": 6,
+      "arxiv_updated": "2026-11-16T16:31:21Z",
+      "source_url": "https://arxiv.org/abs/2512.00324v6",
+      "sources": [
+        "https://arxiv.org/html/2512.00324v6",
+        "https://jindadu00.github.io/MILE/",
+        "https://github.com/jindadu00/MILE-Tactile-Sensor"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v6)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.18976",
+      "title": "TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation",
+      "authors": [
+        "Yiting Chen",
+        "Kelin Yu",
+        "Sarthak Kaingade",
+        "Bryan Trinh",
+        "Kaiyu Hang",
+        "Roberto Martin-martin",
+        "Nima Fazeli",
+        "X. Alice Wu"
+      ],
+      "date": "2026-11-13",
+      "year": 2026,
+      "category": "Tactile Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.18976",
+        "project": "https://humanoid-tma.github.io/"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Sim-to-real",
+        "Dexterous grasping",
+        "Articulated objects",
+        "Tactile feedback",
+        "Vision",
+        "Proprioception",
+        "Force control"
+      ],
+      "tldr": "Encodes fingertip force in cone coordinates and infers interaction latents from tactile history to control a G1/Revo2 hand with frozen locomotion support. Simulation-trained TMA opens four real knob types in 27/40 trials, versus 6/40 for reactive touch and 0/40 for RMA. Evaluation uses AprilTag pose estimation, taped knob rims and manual initialization; broader task transfer is untested.",
+      "tldr_zh": "将指端力编码为锥坐标，并从触觉历史估计交互潜变量，结合冻结行走控制器驱动G1/Revo2。纯仿真训练后四款实物旋钮开门27/40，反应式触觉6/40、RMA为0/40。评测依赖AprilTag估位、把手贴胶带增摩和人工初始化，未验证跨任务迁移。",
+      "sensing": [
+        "Four fingertip capacitive 3D force sensors",
+        "Whole-body proprioception",
+        "AprilTag-based knob pose estimate"
+      ],
+      "hand": [
+        "BrainCo Revo2 right hand on Unitree G1 Edu"
+      ],
+      "task": [
+        "Round-doorknob grasping and rotation",
+        "Latched-door pushing"
+      ],
+      "method": [
+        "PPO with privileged interaction encoder",
+        "Cone-coordinate force representation",
+        "Tactile-history latent regression",
+        "Frozen locomotion controller"
+      ],
+      "notes_zh": "实机控制右臂7关节和右手6驱动关节，左臂手保持固定，故不标双手协作；开门阈值为保持抓握且门转角超过15度。首投2026-11-13，审核v1，未复现。",
+      "arxiv_id": "2611.18976",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-13T22:13:04Z",
+      "source_url": "https://arxiv.org/abs/2611.18976v1",
+      "sources": [
+        "https://arxiv.org/html/2611.18976v1",
+        "https://humanoid-tma.github.io/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.19384",
+      "title": "Porosification of the dielectric layer in alternating-current electroluminescence devices enables high-resolution tactile imaging",
+      "authors": [
+        "Mingwei Gu",
+        "Licheng Li",
+        "Zeyuan Zhou",
+        "Ying Yang",
+        "Zixiang Nie",
+        "Xingyu Ma",
+        "Junshuai Chen",
+        "Lin Zheng",
+        "Jinhui Gu",
+        "Jia-Sen Xie",
+        "Ziling Wei",
+        "Mengxing Huang",
+        "Jin Ge"
+      ],
+      "date": "2026-11-14",
+      "year": 2026,
+      "category": "Tactile Sensing & Representation",
+      "scope": "adjacent",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.19384"
+      },
+      "tags": [
+        "Hardware / sensor"
+      ],
+      "tldr": "Converts pressure into light patterns through a porous dielectric in an electroluminescent tactile interface. Bench tests resolve 100 μm stripes and show more uniform emission with smaller pores. A sub-5-mm integrated sensor remains prospective; full integration has not been systematically evaluated, and no robot-hand deployment is reported.",
+      "tldr_zh": "通过多孔介电层把压力转为电致发光图样，台架测试分辨100微米条纹，小孔结构改善发光均匀性。小于5毫米的集成传感器仍属预期，完整集成性能尚待系统评估，未报告机器人手部署。",
+      "sensing": [
+        "Pressure-modulated electroluminescence with CMOS readout"
+      ],
+      "hand": [],
+      "task": [
+        "Contact-pattern imaging"
+      ],
+      "method": [
+        "Porous-dielectric pressure-to-light transduction"
+      ],
+      "notes_zh": "台架触觉硬件，不标Tactile feedback。未核验到项目或代码链接，未复现。",
+      "arxiv_id": "2611.19384",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-14T12:47:44Z",
+      "source_url": "https://arxiv.org/abs/2611.19384v1",
+      "sources": [
+        "https://arxiv.org/pdf/2611.19384v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.20202",
+      "title": "DAPPT: Domain-Aware Policies from Procedural Trajectories for Sim-to-Real Dexterous Tool Use",
+      "authors": [
+        "Beining Han",
+        "Jia Deng"
+      ],
+      "date": "2026-11-15",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.20202",
+        "project": "https://beininghan.github.io/DAPPT-web/"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Imitation learning",
+        "Sim-to-real",
+        "Tool use",
+        "Articulated objects",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Learns domain-conditioned tool trajectories with rigid-body RL, then distills a point-cloud policy and selects parameters in Genesis. XHand1–Franka executes six real tasks using vision and proprioception. Reported task success ranges from 10/20 to 19/20; dispenser and spray tests exclude water emission. Generalization remains limited to known objects and narrow pose ranges.",
+      "tldr_zh": "以刚体强化学习跟踪可调轨迹，蒸馏点云策略并在Genesis选取域参数。XHand1–Franka在六项实机任务中仅用视觉与本体输入，任务成功10/20至19/20；泵和喷头未出水。泛化限于已知物体及窄位姿范围。",
+      "sensing": [
+        "RealSense D435 depth point cloud",
+        "Hand joint positions and end-effector state"
+      ],
+      "hand": [
+        "RobotEra XHand1 (12 DoF) with Franka Research 3 (7 DoF)"
+      ],
+      "task": [
+        "Sand scooping",
+        "Dough rolling",
+        "Sand scraping",
+        "Mouse-wheel scrolling",
+        "Dispenser pressing",
+        "Spray-trigger pressing"
+      ],
+      "method": [
+        "Domain-conditioned procedural trajectories",
+        "PPO with initial behavior cloning",
+        "DAgger distillation",
+        "Domain randomization and parameter search"
+      ],
+      "notes_zh": "训练使用10–20条仿真示教及控制器标定；1.5–3.8倍为仿真最佳域参数相对随机域均值，并非实机提升。官方仓库待发布代码。审核v1，未复现。",
+      "arxiv_id": "2611.20202",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-15T18:58:02Z",
+      "source_url": "https://arxiv.org/abs/2611.20202v1",
+      "sources": [
+        "https://arxiv.org/html/2611.20202v1",
+        "https://beininghan.github.io/DAPPT-web/",
+        "https://github.com/princeton-vl/DAPPT"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.21060",
+      "title": "MetricHand: Geometry-Aware Flow Matching for 4D Hand Reconstruction in Metric World Space",
+      "authors": [
+        "Yibo Bai",
+        "Likui Zhang",
+        "Jinglei Zhang",
+        "Zhengbin Pang",
+        "Xingshen Song",
+        "Xiaoqing Yin",
+        "Jinsheng Deng"
+      ],
+      "date": "2026-11-16",
+      "year": 2026,
+      "category": "Hand–Object Interaction",
+      "scope": "adjacent",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.21060",
+        "project": "https://bieber1205.github.io/MetricHand/"
+      },
+      "tags": [
+        "Vision"
+      ],
+      "tldr": "Reconstructs metric human-hand motion from monocular video using joint-local depth geometry and temporal memory to condition flow matching. Offline HOT3D and ARCTIC evaluations show improved localization, while ARCTIC absolute world joint error remains 120.86 mm. Accuracy depends on estimated depth and camera motion; robot transfer is untested.",
+      "tldr_zh": "利用关节局部深度几何与时序记忆约束流匹配，从单目视频重建人手公制轨迹。离线HOT3D和ARCTIC定位改善，但ARCTIC绝对世界关节误差仍达120.86毫米；依赖估计深度与相机运动，未验证机器人迁移。",
+      "sensing": [
+        "Monocular RGB video",
+        "Estimated depth and camera trajectory"
+      ],
+      "hand": [
+        "Human hands (MANO)"
+      ],
+      "task": [
+        "Metric 4D hand reconstruction"
+      ],
+      "method": [
+        "Geometry-conditioned flow matching",
+        "Temporal memory"
+      ],
+      "notes_zh": "按正文实际评测总结；不据引言扩大到其他数据集，不标VLA、策略流匹配、触觉或已验证动作迁移。项目无研究代码，未复现。",
+      "arxiv_id": "2611.21060",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-16T13:11:40Z",
+      "source_url": "https://arxiv.org/abs/2611.21060v1",
+      "sources": [
+        "https://arxiv.org/html/2611.21060v1",
+        "https://bieber1205.github.io/MetricHand/"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"
