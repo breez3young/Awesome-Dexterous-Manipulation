@@ -1,20 +1,102 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-11-17T09:38:02Z",
+  "last_checked_at": "2026-11-18T08:57:30Z",
   "lookback_days": 7,
-  "window_start": "2026-11-10T09:38:02Z",
+  "window_start": "2026-11-11T08:57:30Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 114,
-  "recent_match_count": 15,
-  "new_candidate_count": 5,
+  "candidate_count": 117,
+  "recent_match_count": 17,
+  "new_candidate_count": 3,
   "updated_candidate_count": 1,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2610.40349",
+      "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
+      "published": "2026-10-29T16:06:36Z",
+      "updated": "2026-11-17T15:29:11Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40349",
+        "pdf": "https://arxiv.org/pdf/2610.40349"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… and scalable source of data for dexterous robot manipulation, but differences in sensing and hand morphology complicate the transfer of contact-rich interactions. …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2607.24744",
+      "title": "Data Pyramid for Embodied Manipulation: A Survey",
+      "published": "2026-07-27T17:59:58Z",
+      "updated": "2026-11-17T12:56:20Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2607.24744",
+        "pdf": "https://arxiv.org/pdf/2607.24744"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… across embodiments, leveraging egocentric data for dexterous manipulation, and designing principled data recipes for robot learning. We hope this work lays the …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2512.19583",
+      "title": "Learning Generalizable Hand-Object Tracking from Synthetic Demonstrations",
+      "published": "2025-12-22T17:08:54Z",
+      "updated": "2026-11-17T09:17:06Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2512.19583",
+        "pdf": "https://arxiv.org/pdf/2512.19583"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… that has long constrained progress in dexterous manipulation."
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.21908",
+      "title": "From Human Videos to Bimanual Dexterous Manipulation Data: Confidence-Guided RL Refinement of Video Priors",
+      "published": "2026-11-16T21:23:58Z",
+      "updated": "2026-11-16T21:23:58Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.21908",
+        "pdf": "https://arxiv.org/pdf/2611.21908"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Collecting demonstrations for bimanual dexterous manipulation is costly, motivating the use of human videos as a source of robot training data. However, …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2512.00324",
       "title": "MILE: A Mechanically Isomorphic Hand Exoskeleton and Visuotactile Robotic Hand for Data Collection in Dexterous Manipulation",
@@ -1052,27 +1134,6 @@
         {
           "source": "title",
           "text": "… Visuomotor Skills and Offline Proxies for Dexterous Manipulation"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2610.40349",
-      "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
-      "published": "2026-10-29T16:06:36Z",
-      "updated": "2026-10-29T16:06:36Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.40349",
-        "pdf": "https://arxiv.org/pdf/2610.40349"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… and scalable source of data for dexterous robot manipulation, but differences in sensing and hand morphology complicate the transfer of contact-rich interactions. …"
         }
       ],
       "review_status": "pending"

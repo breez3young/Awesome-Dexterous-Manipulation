@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -13416,6 +13416,142 @@
       "sources": [
         "https://arxiv.org/html/2611.21060v1",
         "https://bieber1205.github.io/MetricHand/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2607.24744",
+      "title": "Data Pyramid for Embodied Manipulation: A Survey",
+      "authors": [
+        "Yifan Ye",
+        "Yankai Fu",
+        "Yaoxu Lv",
+        "Bohan Hou",
+        "Jun Cen",
+        "Lingdong Kong",
+        "Duo Zheng",
+        "Tianxing Chen",
+        "Jiaming Liu",
+        "Ziang Cao",
+        "Yunfan Lou",
+        "Wei Chow",
+        "Xian Sun",
+        "Yingshuo Wang",
+        "Kuangzhi Ge",
+        "Xiaowei Chi",
+        "Xidong Zhang",
+        "Zhibo Pang",
+        "Yiwu Zhong",
+        "Sirui Han",
+        "Zhihe Lu",
+        "Weihao Yuan",
+        "Qifeng Chen",
+        "Michael Yu Wang",
+        "Yao Mu",
+        "Ziwei Liu",
+        "Jianfei Yang",
+        "Ping Luo",
+        "Shanghang Zhang"
+      ],
+      "date": "2026-07-27",
+      "year": 2026,
+      "category": "Policy Optimization",
+      "scope": "adjacent",
+      "links": {
+        "paper": "https://arxiv.org/abs/2607.24744",
+        "project": "https://jasper-aaa.github.io/embodied-data-pyramid/",
+        "code": "https://github.com/worldbench/awesome-embodied-data-pyramid"
+      },
+      "tags": [
+        "Survey",
+        "Dataset / benchmark"
+      ],
+      "tldr": "Surveys five sources of embodied manipulation data and their tradeoffs in scale and robot alignment. A LeRobot conversion and quality pipeline consolidates existing datasets, including simulation; reported mask-retained duration is 10,072.46 hours. The work discusses tactile and egocentric data gaps without demonstrating downstream policy gains from filtering.",
+      "tldr_zh": "综述五类具身操作数据及规模与机器人适配性的权衡，提供既有数据的LeRobot转换和质检流程；统计含仿真，按掩码保留10072.46小时。讨论触觉与第一视角数据缺口，未验证过滤带来的下游策略提升。",
+      "sensing": [],
+      "hand": [],
+      "task": [
+        "Robot-learning data curation"
+      ],
+      "method": [
+        "Data-source taxonomy",
+        "LeRobot format conversion",
+        "Frame-level quality annotation"
+      ],
+      "notes_zh": "首投2026-07-27，审核v3。资源属于综述与转换工具；未下载验证全部数据或运行代码，不把统计规模等同于可下载规模或新增实机示教。",
+      "arxiv_id": "2607.24744",
+      "arxiv_version": 3,
+      "arxiv_updated": "2026-11-17T12:56:20Z",
+      "source_url": "https://arxiv.org/abs/2607.24744v3",
+      "sources": [
+        "https://arxiv.org/html/2607.24744v3",
+        "https://github.com/worldbench/awesome-embodied-data-pyramid",
+        "https://jasper-aaa.github.io/embodied-data-pyramid/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v3)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.21908",
+      "title": "From Human Videos to Bimanual Dexterous Manipulation Data: Confidence-Guided RL Refinement of Video Priors",
+      "authors": [
+        "Yanghong Liu",
+        "Yang Chen",
+        "Kailang Xu",
+        "Bang Du",
+        "Feiyang Yang",
+        "Jiawei Xia",
+        "Zhengtao Yao",
+        "Yubiao Zhang",
+        "Masayoshi Tomizuka",
+        "Ruihai Wu",
+        "Wei Zhan"
+      ],
+      "date": "2026-11-16",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.21908"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Imitation learning",
+        "Diffusion / flow policy",
+        "Human motion transfer",
+        "Sim-to-real",
+        "Bimanual coordination",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "PriDex uses confidence-guided RL to turn human-video interaction priors into bimanual robot demonstrations, then trains a visual diffusion policy. Simulation pretraining plus 20 real demonstrations per task raises real-robot mean success from 30% to 63.3% over three tasks. Tests use fixed objects and initial placements; transfer requires real-data fine-tuning.",
+      "tldr_zh": "PriDex以置信度引导强化学习，将人类视频先验转为双手示教并训练视觉扩散策略。仿真预训练加每任务20条实机示教微调，使三任务实机平均成功率由30%升至63.3%；对象与初始位固定，非零样本迁移。",
+      "sensing": [
+        "Head-mounted and two wrist RGB cameras",
+        "Joint positions and wrist poses"
+      ],
+      "hand": [
+        "Two 22-DoF Sharpa hands on Dexmate bimanual robot"
+      ],
+      "task": [
+        "Pouring",
+        "Sweeping into a dustpan",
+        "Bottle-cap unscrewing (simulation)",
+        "Plate cleaning"
+      ],
+      "method": [
+        "Affordance-guided grasp initialization",
+        "Confidence-conditioned PPO residual refinement",
+        "Diffusion-policy distillation and real-data fine-tuning"
+      ],
+      "notes_zh": "四项仿真任务各三个人类视频；实机三任务各10次。未核验到项目或代码链接，未复现。",
+      "arxiv_id": "2611.21908",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-16T21:23:58Z",
+      "source_url": "https://arxiv.org/abs/2611.21908v1",
+      "sources": [
+        "https://arxiv.org/html/2611.21908v1"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"

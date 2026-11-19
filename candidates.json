@@ -1,8 +1,169 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-17T09:38:02Z",
+  "updated_at": "2026-11-18T08:57:30Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2610.40349",
+      "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
+      "authors": [
+        "Haozhe Zhang",
+        "Gu Zhang",
+        "Zirui Zou",
+        "Yuzheng Chen",
+        "Jinlong Wu",
+        "Zixuan Hu",
+        "Jianke Zhang",
+        "Yucheng Hu",
+        "Zhecheng Yuan",
+        "Huazhe Xu"
+      ],
+      "published": "2026-10-29T16:06:36Z",
+      "updated": "2026-11-17T15:29:11Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.40349",
+        "pdf": "https://arxiv.org/pdf/2610.40349"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… and scalable source of data for dexterous robot manipulation, but differences in sensing and hand morphology complicate the transfer of contact-rich interactions. …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-30T07:36:53Z",
+      "last_seen": "2026-11-18T08:57:30Z"
+    },
+    {
+      "id": "2607.24744",
+      "title": "Data Pyramid for Embodied Manipulation: A Survey",
+      "authors": [
+        "Yifan Ye",
+        "Yankai Fu",
+        "Yaoxu Lv",
+        "Bohan Hou",
+        "Jun Cen",
+        "Lingdong Kong",
+        "Duo Zheng",
+        "Tianxing Chen",
+        "Jiaming Liu",
+        "Ziang Cao",
+        "Yunfan Lou",
+        "Wei Chow",
+        "Xian Sun",
+        "Yingshuo Wang",
+        "Kuangzhi Ge",
+        "Xiaowei Chi",
+        "Xidong Zhang",
+        "Zhibo Pang",
+        "Yiwu Zhong",
+        "Sirui Han",
+        "Zhihe Lu",
+        "Weihao Yuan",
+        "Qifeng Chen",
+        "Michael Yu Wang",
+        "Yao Mu",
+        "Ziwei Liu",
+        "Jianfei Yang",
+        "Ping Luo",
+        "Shanghang Zhang"
+      ],
+      "published": "2026-07-27T17:59:58Z",
+      "updated": "2026-11-17T12:56:20Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2607.24744",
+        "pdf": "https://arxiv.org/pdf/2607.24744"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… across embodiments, leveraging egocentric data for dexterous manipulation, and designing principled data recipes for robot learning. We hope this work lays the …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-18T08:57:30Z",
+      "last_seen": "2026-11-18T08:57:30Z"
+    },
+    {
+      "id": "2512.19583",
+      "title": "Learning Generalizable Hand-Object Tracking from Synthetic Demonstrations",
+      "authors": [
+        "Runyi Yu",
+        "Xiaoyi Lin",
+        "Hok Wai Tsui",
+        "Yinhuai Wang",
+        "Zhijie Peng",
+        "Hui Zhang",
+        "Qihan Zhao",
+        "Ke Fan",
+        "Miao Li",
+        "Jie Song",
+        "Jingbo Wang",
+        "Qifeng Chen",
+        "Ping Tan"
+      ],
+      "published": "2025-12-22T17:08:54Z",
+      "updated": "2026-11-17T09:17:06Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2512.19583",
+        "pdf": "https://arxiv.org/pdf/2512.19583"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… that has long constrained progress in dexterous manipulation."
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-18T08:57:30Z",
+      "last_seen": "2026-11-18T08:57:30Z"
+    },
+    {
+      "id": "2611.21908",
+      "title": "From Human Videos to Bimanual Dexterous Manipulation Data: Confidence-Guided RL Refinement of Video Priors",
+      "authors": [
+        "Yanghong Liu",
+        "Yang Chen",
+        "Kailang Xu",
+        "Bang Du",
+        "Feiyang Yang",
+        "Jiawei Xia",
+        "Zhengtao Yao",
+        "Yubiao Zhang",
+        "Masayoshi Tomizuka",
+        "Ruihai Wu",
+        "Wei Zhan"
+      ],
+      "published": "2026-11-16T21:23:58Z",
+      "updated": "2026-11-16T21:23:58Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.21908",
+        "pdf": "https://arxiv.org/pdf/2611.21908"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Collecting demonstrations for bimanual dexterous manipulation is costly, motivating the use of human videos as a source of robot training data. However, …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-18T08:57:30Z",
+      "last_seen": "2026-11-18T08:57:30Z"
+    },
     {
       "id": "2512.00324",
       "title": "MILE: A Mechanically Isomorphic Hand Exoskeleton and Visuotactile Robotic Hand for Data Collection in Dexterous Manipulation",
@@ -35,7 +196,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-17T09:38:02Z",
-      "last_seen": "2026-11-17T09:38:02Z"
+      "last_seen": "2026-11-18T08:57:30Z"
     },
     {
       "id": "2611.21060",
@@ -66,7 +227,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-17T09:38:02Z",
-      "last_seen": "2026-11-17T09:38:02Z"
+      "last_seen": "2026-11-18T08:57:30Z"
     },
     {
       "id": "2611.20202",
@@ -92,7 +253,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-17T09:38:02Z",
-      "last_seen": "2026-11-17T09:38:02Z"
+      "last_seen": "2026-11-18T08:57:30Z"
     },
     {
       "id": "2611.19384",
@@ -130,7 +291,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-17T09:38:02Z",
-      "last_seen": "2026-11-17T09:38:02Z"
+      "last_seen": "2026-11-18T08:57:30Z"
     },
     {
       "id": "2611.18976",
@@ -163,7 +324,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-17T09:38:02Z",
-      "last_seen": "2026-11-17T09:38:02Z"
+      "last_seen": "2026-11-18T08:57:30Z"
     },
     {
       "id": "2610.30781",
@@ -192,7 +353,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-23T06:22:00Z",
-      "last_seen": "2026-11-17T09:38:02Z"
+      "last_seen": "2026-11-18T08:57:30Z"
     },
     {
       "id": "2611.16423",
@@ -219,7 +380,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-13T08:35:45Z",
-      "last_seen": "2026-11-17T09:38:02Z"
+      "last_seen": "2026-11-18T08:57:30Z"
     },
     {
       "id": "2611.17755",
@@ -249,7 +410,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-16T08:24:54Z",
-      "last_seen": "2026-11-17T09:38:02Z"
+      "last_seen": "2026-11-18T08:57:30Z"
     },
     {
       "id": "2608.19372",
@@ -277,7 +438,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-16T08:24:54Z",
-      "last_seen": "2026-11-17T09:38:02Z"
+      "last_seen": "2026-11-18T08:57:30Z"
     },
     {
       "id": "2611.17619",
@@ -311,7 +472,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-16T08:24:54Z",
-      "last_seen": "2026-11-17T09:38:02Z"
+      "last_seen": "2026-11-18T08:57:30Z"
     },
     {
       "id": "2505.04978",
@@ -340,7 +501,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-13T08:35:45Z",
-      "last_seen": "2026-11-17T09:38:02Z"
+      "last_seen": "2026-11-18T08:57:30Z"
     },
     {
       "id": "2611.11854",
@@ -371,7 +532,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-10T08:43:42Z",
-      "last_seen": "2026-11-17T09:38:02Z"
+      "last_seen": "2026-11-18T08:57:30Z"
     },
     {
       "id": "2611.15981",
@@ -403,7 +564,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-13T08:35:45Z",
-      "last_seen": "2026-11-17T09:38:02Z"
+      "last_seen": "2026-11-18T08:57:30Z"
     },
     {
       "id": "2611.14048",
@@ -1755,41 +1916,6 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-03T02:38:13Z",
-      "last_seen": "2026-11-05T08:18:37Z"
-    },
-    {
-      "id": "2610.40349",
-      "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
-      "authors": [
-        "Haozhe Zhang",
-        "Gu Zhang",
-        "Zirui Zou",
-        "Yuzheng Chen",
-        "Jinlong Wu",
-        "Zixuan Hu",
-        "Jianke Zhang",
-        "Yucheng Hu",
-        "Zhecheng Yuan",
-        "Huazhe Xu"
-      ],
-      "published": "2026-10-29T16:06:36Z",
-      "updated": "2026-10-29T16:06:36Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.40349",
-        "pdf": "https://arxiv.org/pdf/2610.40349"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… and scalable source of data for dexterous robot manipulation, but differences in sensing and hand morphology complicate the transfer of contact-rich interactions. …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-30T07:36:53Z",
       "last_seen": "2026-11-05T08:18:37Z"
     },
     {
