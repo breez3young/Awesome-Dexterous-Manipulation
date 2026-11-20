@@ -1,20 +1,163 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-11-18T08:57:30Z",
+  "last_checked_at": "2026-11-19T09:14:19Z",
   "lookback_days": 7,
-  "window_start": "2026-11-11T08:57:30Z",
+  "window_start": "2026-11-12T09:14:19Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 117,
-  "recent_match_count": 17,
-  "new_candidate_count": 3,
-  "updated_candidate_count": 1,
+  "candidate_count": 122,
+  "recent_match_count": 22,
+  "new_candidate_count": 5,
+  "updated_candidate_count": 2,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2611.24938",
+      "title": "Phoenix: Learning Scene Structure Representations for Generalizable World-Action Models",
+      "published": "2026-11-18T18:59:04Z",
+      "updated": "2026-11-18T18:59:04Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.24938",
+        "pdf": "https://arxiv.org/pdf/2611.24938"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… real-robot benchmarks spanning single-arm, bimanual, and dexterous manipulation. It demonstrates strong robustness to perturbations, achieving success rates of 94.8% on LIBERO-Plus and …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.24585",
+      "title": "SHAPE: Discrete Supervision and Parallel Continuous Streams for Learning Dexterous Manipulation from Egocentric Human Data",
+      "published": "2026-11-18T15:14:26Z",
+      "updated": "2026-11-18T15:14:26Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.24585",
+        "pdf": "https://arxiv.org/pdf/2611.24585"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… human recordings are far cheaper than dexterous robot demonstrations, promising stronger pretraining and direct skill learning without task-specific robot data. Yet humans …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.24207",
+      "title": "TapTacTouch: Shape Completion from Sparse Tactile Contacts with Geometric Priors",
+      "published": "2026-11-18T10:42:58Z",
+      "updated": "2026-11-18T10:42:58Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.24207",
+        "pdf": "https://arxiv.org/pdf/2611.24207"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… robotic arm equipped with a 20-DoF multi-finger robotic hand collects tactile observations using 3x3 pressure sensor arrays mounted on the finger pads. …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2608.02014",
+      "title": "MANGO-Grasp: Mahalanobis Fields over Geometry-Oriented 3D Gaussians for Cross-Embodiment Dexterous Grasping",
+      "published": "2026-08-03T10:12:15Z",
+      "updated": "2026-11-18T09:12:14Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.02014",
+        "pdf": "https://arxiv.org/pdf/2608.02014"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… to synthesize stable grasps across heterogeneous multi-fingered hands with little or no embodiment-specific tuning. Existing interaction-centric methods achieve promising results, but their …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.23961",
+      "title": "3DTouch: A Tactile-aware VLA Model with 3D Geometric Relations for Dexterous Manipulation",
+      "published": "2026-11-18T06:51:53Z",
+      "updated": "2026-11-18T06:51:53Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.23961",
+        "pdf": "https://arxiv.org/pdf/2611.23961"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "In contact-rich dexterous manipulation, occlusion by the fingers and interacting objects obscures local geometry, preventing visual observations from fully capturing contact locations. …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.23676",
+      "title": "Finetuning VLAs for Dexterous Manipulation: The Right Checkpoint Is All You Need",
+      "published": "2026-11-18T01:04:46Z",
+      "updated": "2026-11-18T01:04:46Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.23676",
+        "pdf": "https://arxiv.org/pdf/2611.23676"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… parallel-jaw gripper systems, making transfer to multi-finger hands challenging, particularly as teleoperation datasets are harder to collect with multi-fingered robots. In this …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.28814",
+      "title": "T-WLA: Bridging Slow Vision and Fast Touch with a World-Language-Action Model",
+      "published": "2026-10-20T18:36:13Z",
+      "updated": "2026-11-17T23:34:59Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.28814",
+        "pdf": "https://arxiv.org/pdf/2610.28814"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… and Tachin, and on four real-world dexterous manipulation tasks. On EgoTouch, T-WLA reduces finger-joint MPJPE by 30% relative to the strongest evaluated …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2610.40349",
       "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
@@ -1808,27 +1951,6 @@
       "review_status": "pending"
     },
     {
-      "id": "2610.28814",
-      "title": "T-WLA: Bridging Slow Vision and Fast Touch",
-      "published": "2026-10-20T18:36:13Z",
-      "updated": "2026-10-20T18:36:13Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.28814",
-        "pdf": "https://arxiv.org/pdf/2610.28814"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… and Tachin, and on four real-world dexterous manipulation tasks. T-WLA reduces finger-joint MPJPE by 30% relative to the strongest reported baseline and …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
       "id": "2503.06669",
       "title": "AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems",
       "published": "2025-03-09T15:40:29Z",
@@ -2069,26 +2191,6 @@
         {
           "source": "abstract",
           "text": "… Co${}^{2}$Skill that integrates scene interaction and dexterous manipulation through a unified policy formulation. Built on a pretrained motion prior, the policy uses …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2608.02014",
-      "title": "MANGO-Grasp: Mahalanobis Fields over Geometry-Oriented 3D Gaussians for Cross-Embodiment Dexterous Grasping",
-      "published": "2026-08-03T10:12:15Z",
-      "updated": "2026-10-16T16:47:33Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2608.02014",
-        "pdf": "https://arxiv.org/pdf/2608.02014"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… to synthesize stable grasps across heterogeneous multi-fingered hands with little or no embodiment-specific tuning. Existing interaction-centric methods achieve promising results, but their …"
         }
       ],
       "review_status": "pending"

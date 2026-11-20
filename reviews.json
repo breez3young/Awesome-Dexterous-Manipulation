@@ -18323,6 +18323,565 @@
           "notes_zh": "四项仿真任务各三个人类视频；实机三任务各10次。未核验到项目或代码链接，未复现。"
         }
       }
+    },
+    {
+      "key": "2611.23676|v1|2026-11-18T01:04:46+00:00|dexterous-v1",
+      "digest": "37c9f315395ec25b99788a50e9d93e25e326809b198f596a2952286227e5d3e6",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-20T05:18:24Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.23676",
+          "version": 1,
+          "title": "Finetuning VLAs for Dexterous Manipulation: The Right Checkpoint Is All You Need",
+          "authors": [
+            "Artur Kuramshin",
+            "Charlotte Cloutier",
+            "Michael Przystupa",
+            "Kirsty Ellis",
+            "Mohammad S. Akhter",
+            "Glen Berseth"
+          ],
+          "published": "2026-11-18T01:04:46Z",
+          "updated": "2026-11-18T01:04:46Z",
+          "url": "https://arxiv.org/abs/2611.23676v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.23676v1"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "paper": {
+          "id": "2611.23676",
+          "title": "Finetuning VLAs for Dexterous Manipulation: The Right Checkpoint Is All You Need",
+          "authors": [
+            "Artur Kuramshin",
+            "Charlotte Cloutier",
+            "Michael Przystupa",
+            "Kirsty Ellis",
+            "Mohammad S. Akhter",
+            "Glen Berseth"
+          ],
+          "date": "2026-11-18",
+          "year": 2026,
+          "category": "Policy Optimization",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.23676"
+          },
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Vision-language-action",
+            "Diffusion / flow policy",
+            "Teleoperation",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Compares five π0.5 fine-tuning recipes followed by diffusion-steering RL on two simulated LEAP-hand tasks. Freezing the VLM and training the action expert produces the most reliable steering; SFT rollout success poorly predicts downstream performance. Results are simulation-only, with one SFT seed and some early-checkpoint behaviors that exploit simulation.",
+          "tldr_zh": "在LEAP手两项仿真任务比较五种π0.5微调配方及后续噪声引导强化学习。冻结VLM、全量训练动作专家最稳定；SFT成功率难预测后续表现。仅单个SFT种子，部分早期策略利用仿真漏洞。",
+          "sensing": [
+            "Camera images (simulation)",
+            "Proprioceptive state (simulation)"
+          ],
+          "hand": [
+            "16-DoF LEAP hand (simulation)"
+          ],
+          "task": [
+            "Coffee-machine button pressing (simulation)",
+            "Lightbulb screwing (simulation)"
+          ],
+          "method": [
+            "Supervised fine-tuning recipe comparison",
+            "SAC-based diffusion steering"
+          ],
+          "notes_zh": "每检查点三个RL种子；外推仅单轴位置变化。无实机验证，未核验到项目或代码链接，未复现。"
+        },
+        "reason_zh": "主要贡献是比较灵巧手VLA的微调与后续强化学习配方；两项多指仿真任务证据充分，归入策略优化，不标实机或触觉。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.23676v1",
+            "section": "3.2–3.3; Appendix C",
+            "paraphrase": "比较五种微调配方，再固定VLA，用SAC学习动作块噪声；actor读取相机与本体状态。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.23676v1",
+            "section": "4–5; Appendix D–F",
+            "paraphrase": "LEAP两任务分别56/33条仿真示教；每任务两处训练位与两处外推位。仅动作专家微调最稳定，但只有一个SFT种子，早期拧灯泡出现掌部推转的仿真取巧。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.23676v1",
+          "paraphrase": "Appendix A/C仅列视觉、语言和本体状态；全部评测为仿真，没有真实机器人触觉输入。"
+        }
+      }
+    },
+    {
+      "key": "2611.23961|v1|2026-11-18T06:51:53+00:00|dexterous-v1",
+      "digest": "bbdec51517c92faecf400580c0c01523944e992ee38f149d501216e3956e4c04",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-20T05:18:24Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.23961",
+          "version": 1,
+          "title": "3DTouch: A Tactile-aware VLA Model with 3D Geometric Relations for Dexterous Manipulation",
+          "authors": [
+            "Xin Zhang",
+            "Shiqi Zhang",
+            "Siyuan Cao",
+            "Juncheng Cai",
+            "Yedong Shen",
+            "Yuxuan Gao",
+            "Dianlong Wen",
+            "Kaixue Long",
+            "Lu Zhang",
+            "Yao Li",
+            "Jiajun Deng",
+            "Yanyong Zhang"
+          ],
+          "published": "2026-11-18T06:51:53Z",
+          "updated": "2026-11-18T06:51:53Z",
+          "url": "https://arxiv.org/abs/2611.23961v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.23961v1"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "实机XHand策略在推理时读取五指触觉，融合场景和交互几何，属于核心触觉灵巧操作。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.23961v1",
+            "section": "3.2–3.4; 4.1",
+            "paraphrase": "600个taxel的三维位置和力向量形成触觉token，推理时接入π0动作专家，输出臂手关节动作。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.23961v1",
+            "section": "3.3; 4.1–4.2; Table 1; 5",
+            "paraphrase": "五任务每法各20次实机测试，平均成功率65%；依赖离线参考物体网格及在线位姿估计。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2611.23961v1",
+          "paraphrase": "3.4明确每次观测计算含触觉的3D表征用于动作推理；4.1确认真实XHand五指传感器。"
+        },
+        "paper": {
+          "id": "2611.23961",
+          "title": "3DTouch: A Tactile-aware VLA Model with 3D Geometric Relations for Dexterous Manipulation",
+          "authors": [
+            "Xin Zhang",
+            "Shiqi Zhang",
+            "Siyuan Cao",
+            "Juncheng Cai",
+            "Yedong Shen",
+            "Yuxuan Gao",
+            "Dianlong Wen",
+            "Kaixue Long",
+            "Lu Zhang",
+            "Yao Li",
+            "Jiajun Deng",
+            "Yanyong Zhang"
+          ],
+          "date": "2026-11-18",
+          "year": 2026,
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.23961"
+          },
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Imitation learning",
+            "Vision-language-action",
+            "Diffusion / flow policy",
+            "Tool use",
+            "Tactile feedback",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Conditions a pretrained π0 policy on spatially grounded fingertip forces, RGB-D geometry and explicit hand–object/object–object relations. On UR7e/XHand, five contact-rich tasks average 65% success over 20 trials each. The method requires reference object meshes and task-specific demonstrations.",
+          "tldr_zh": "将指端力、RGB-D几何及手物/物物关系接入π0策略。UR7e/XHand五项接触任务各20次，平均成功率65%；需要参考物体网格和任务示教。",
+          "sensing": [
+            "RGB-D",
+            "Five-finger 3D force taxels",
+            "Joint states"
+          ],
+          "hand": [
+            "XHand five-finger hand"
+          ],
+          "task": [
+            "Funnel insertion",
+            "Plug assembly",
+            "Button press",
+            "Sponge wiping",
+            "Pipette press"
+          ],
+          "method": [
+            "3D tactile grounding",
+            "Geometric relation modeling",
+            "Flow matching"
+          ],
+          "notes_zh": "审核v1；未复现。"
+        }
+      }
+    },
+    {
+      "key": "2611.24207|v1|2026-11-18T10:42:58+00:00|dexterous-v1",
+      "digest": "92a9430245ac3a2f421f9c2b887d6681735199b7d114747b173dc85fa0cd69d6",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-20T05:18:24Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.24207",
+          "version": 1,
+          "title": "TapTacTouch: Shape Completion from Sparse Tactile Contacts with Geometric Priors",
+          "authors": [
+            "Yoobin Shin",
+            "Jaeyoung Lee",
+            "Jieun Kang",
+            "Hyun Song",
+            "Woojin Kim",
+            "Andrew Jaeyong Choi"
+          ],
+          "published": "2026-11-18T10:42:58Z",
+          "updated": "2026-11-18T10:42:58Z",
+          "url": "https://arxiv.org/abs/2611.24207v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.24207v1"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "多指真实触觉用于形状重建，按相关触觉感知收录；未验证灵巧操作策略。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.24207v1",
+            "section": "III-B; IV-A",
+            "paraphrase": "四指压力阵列与关节状态采集接触；规则扫描用触点估边界和侧扫中心，随后重建。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.24207v1",
+            "section": "III-C–F",
+            "paraphrase": "多尺度GPIS结合伪触点和接触导出的截面先验，无需训练或视觉。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.24207v1",
+            "section": "IV-B–C; Tables I–III",
+            "paraphrase": "六个固定3D打印物体；定量输入先投影GT表面再加0.5mm噪声。平均扫描约30分钟，49.99秒重建不含另行填充和指标计算。"
+          }
+        ],
+        "paper": {
+          "id": "2611.24207",
+          "title": "TapTacTouch: Shape Completion from Sparse Tactile Contacts with Geometric Priors",
+          "authors": [
+            "Yoobin Shin",
+            "Jaeyoung Lee",
+            "Jieun Kang",
+            "Hyun Song",
+            "Woojin Kim",
+            "Andrew Jaeyong Choi"
+          ],
+          "date": "2026-11-18",
+          "year": 2026,
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.24207"
+          },
+          "category": "Tactile Sensing & Representation",
+          "scope": "adjacent",
+          "tags": [
+            "Proprioception"
+          ],
+          "tldr": "Combines multi-scale GPIS, pseudo-contacts and a contact-derived cross-section prior for training-free tactile shape completion. A multifinger hand scans six fixed objects; quantitative tests use GT-projected, noise-perturbed contacts. Exploration averages 30 minutes, followed by 49.99 seconds of reconstruction excluding separate filling and metric evaluation; manipulation control is not evaluated.",
+          "tldr_zh": "以多尺度GPIS、伪触点和截面先验完成无训练触觉重建。多指手扫描六个固定物体；定量输入经过GT投影和加噪。扫描约30分钟，重建49.99秒（不含另行填充与指标计算），未评测操作控制。",
+          "sensing": [
+            "3×3 finger-pad pressure arrays",
+            "Arm–hand joint states"
+          ],
+          "hand": [
+            "ROBOTIS HX5-D20-MRT 20-DoF hand"
+          ],
+          "task": [
+            "Tactile shape completion"
+          ],
+          "method": [
+            "Rule-based contact scanning",
+            "Multi-scale GPIS",
+            "Pseudo-contact interpolation",
+            "Cross-section prior"
+          ],
+          "notes_zh": "触觉用于规则式在线探索采样及几何估计，不据此标注操作策略的Tactile feedback。49.99秒不含另行填充和指标计算。审核v1；未复现。"
+        }
+      }
+    },
+    {
+      "key": "2611.24585|v1|2026-11-18T15:14:26+00:00|dexterous-v1",
+      "digest": "0463fa223dc8d88324b40b12c386c7d98a10f54297e15d831bc8291a75564476",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-20T05:18:24Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.24585",
+          "version": 1,
+          "title": "SHAPE: Discrete Supervision and Parallel Continuous Streams for Learning Dexterous Manipulation from Egocentric Human Data",
+          "authors": [
+            "Yaping Li",
+            "Zhihong Liu",
+            "Jiacheng Li",
+            "Yi Yang",
+            "Wenchao Yue",
+            "Mingzhe Ye",
+            "Xiangcheng Liu",
+            "Yiyang Chen",
+            "Haotian He",
+            "Qi Zhang",
+            "Haonan Wang",
+            "Dahua Lin",
+            "Zhijie Deng"
+          ],
+          "published": "2026-11-18T15:14:26Z",
+          "updated": "2026-11-18T15:14:26Z",
+          "url": "https://arxiv.org/abs/2611.24585v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.24585v1",
+            "https://li-yaping.github.io/SHAPE/"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "paper": {
+          "id": "2611.24585",
+          "title": "SHAPE: Discrete Supervision and Parallel Continuous Streams for Learning Dexterous Manipulation from Egocentric Human Data",
+          "authors": [
+            "Yaping Li",
+            "Zhihong Liu",
+            "Jiacheng Li",
+            "Yi Yang",
+            "Wenchao Yue",
+            "Mingzhe Ye",
+            "Xiangcheng Liu",
+            "Yiyang Chen",
+            "Haotian He",
+            "Qi Zhang",
+            "Haonan Wang",
+            "Dahua Lin",
+            "Zhijie Deng"
+          ],
+          "date": "2026-11-18",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.24585",
+            "project": "https://li-yaping.github.io/SHAPE/"
+          },
+          "tags": [
+            "Imitation learning",
+            "Vision-language-action",
+            "Foundation policy",
+            "Diffusion / flow policy",
+            "Human motion transfer",
+            "Retargeting",
+            "Teleoperation",
+            "Cross-embodiment",
+            "In-hand manipulation",
+            "Bimanual coordination",
+            "Articulated objects",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "SHAPE combines discrete action supervision with parallel EEF and joint flow-policy streams to learn from human and robot data. On real bimanual hands, joint control scores 0.80 across six tasks, but strict full-task success is 63.3%. EEF control succeeds in 21/60 trials after human-only target-task fine-tuning; pretraining still includes robot demonstrations.",
+          "tldr_zh": "SHAPE用离散动作辅助监督及EEF/关节双flow动作流联合学习人类和机器人数据。真实双手六任务得分0.80，完整完成率63.3%；仅人类目标任务示教微调后EEF成功21/60，预训练仍含机器人数据。",
+          "sensing": [
+            "Head and wrist RGB cameras",
+            "EEF and joint state"
+          ],
+          "hand": [
+            "Two 22-DoF dexterous hands (real robot)",
+            "Two 6-DoF Fourier hands on GR-1 (simulation)"
+          ],
+          "task": [
+            "Bimanual connector handling",
+            "Battery insertion",
+            "Bowl wiping",
+            "Cabinet opening",
+            "Bottle-cap twisting",
+            "Object picking and cup stacking"
+          ],
+          "method": [
+            "Discrete FAST action supervision",
+            "Parallel EEF and joint flow-matching streams",
+            "Human/robot co-pretraining and task fine-tuning"
+          ],
+          "notes_zh": "H2R仅用头相机，腕相机屏蔽。真实基线采用相同示教但原生预训练、动作块和微调计划各异；四个内部模型为配对消融。项目已核验，未核验到代码，未复现。"
+        },
+        "reason_zh": "离散动作辅助监督配合双连续动作流，在真实双臂多指手验证人类数据迁移，属于核心灵巧操作；明确不使用触觉反馈。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.24585v1",
+            "section": "3–4",
+            "paraphrase": "FAST监督骨干，共享flow专家分别输出EEF和关节动作；真实双手各22自由度，观测为头/腕图像及本体状态。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.24585v1",
+            "section": "5.1; Appendix 9",
+            "paraphrase": "六任务各20次；0.80为含阶段分的平均得分，完整完成率63.3%对π0.5的50.8%；两连接器最终插入均2/20。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.24585v1",
+            "section": "5.2; Appendix 8.5, 11–12.1",
+            "paraphrase": "预训练含2811小时人类与228小时机器人数据；目标任务仅人类示教微调后EEF成功21/60。离线评测分别列训练、新episode及留出任务，不能都视作零样本泛化。"
+          },
+          {
+            "url": "https://li-yaping.github.io/SHAPE/",
+            "section": "Overview; Method; Results",
+            "paraphrase": "官方项目页对应同一论文和双流方法；可访问论文链接与演示，未发现代码链接。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.24585v1",
+          "paraphrase": "第3–4节给出图像与本体观测，附录9明确连接器实验没有触觉反馈。"
+        }
+      }
+    },
+    {
+      "key": "2611.24938|v1|2026-11-18T18:59:04+00:00|dexterous-v1",
+      "digest": "9d663b200c7f863a8097de34fb17c9ee449dd6d4d8bf648300c50657b3949e9b",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-20T05:18:24Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.24938",
+          "version": 1,
+          "title": "Phoenix: Learning Scene Structure Representations for Generalizable World-Action Models",
+          "authors": [
+            "Yupeng Zheng",
+            "Chaoyue Li",
+            "Linbo Wang",
+            "Xiang Li",
+            "Yuhang Zheng",
+            "Xiaotong Su",
+            "Songen Gu",
+            "Yichen Zhang",
+            "Zebin Xing",
+            "Shuai Tian",
+            "Jingxiang Guo",
+            "Jing Li",
+            "Zhiyong Zhao",
+            "Zhongpu Xia",
+            "Qichao Zhang",
+            "Haoran Li",
+            "Shuicheng Yan",
+            "Dongbin Zhao"
+          ],
+          "published": "2026-11-18T18:59:04Z",
+          "updated": "2026-11-18T18:59:04Z",
+          "url": "https://arxiv.org/abs/2611.24938v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.24938v1",
+            "https://openphoenix-team.github.io/Phoenix-pages/",
+            "https://github.com/Anyverse-Dynamics/Phoenix-MWA"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "以场景结构表征改进通用世界动作模型，并包含Bench2Dex多指任务评测；按策略优化相邻工作收录。区分逐基准微调后的仿真灵巧操作和RoboDojo实机测试，不借用同项目其他论文的触觉结果。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.24938v1",
+            "section": "3.1–3.4; E.2–E.3",
+            "paraphrase": "双教师蒸馏与CS-VAE连接场景/外观潜变量及动作流匹配；各基准分别后训练。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.24938v1",
+            "section": "4.2 Tables 2–3; A.1; Table S4",
+            "paraphrase": "Bench2Dex覆盖12种臂手组合、26项配置，汇总成功率45.6%；另在RoboDojo三种实机配置测试，平均30.0%。"
+          },
+          {
+            "url": "https://openphoenix-team.github.io/Phoenix-pages/",
+            "section": "I; V.5–V.6",
+            "paraphrase": "项目同时介绍MWA、ILA和PhysCanvas；后两者的触觉技能不能归入本篇MWA。"
+          },
+          {
+            "url": "https://github.com/Anyverse-Dynamics/Phoenix-MWA",
+            "section": "Overview; Branch Guide; Citation",
+            "paraphrase": "仓库标题、引用ID一致；提供预训练实现并链接各后训练分支。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.24938v1",
+          "paraphrase": "§3、D.3、E.3及F.3的推理输入为图像、语言和机器人构型状态，未列触觉测量。"
+        },
+        "paper": {
+          "id": "2611.24938",
+          "title": "Phoenix: Learning Scene Structure Representations for Generalizable World-Action Models",
+          "authors": [
+            "Yupeng Zheng",
+            "Chaoyue Li",
+            "Linbo Wang",
+            "Xiang Li",
+            "Yuhang Zheng",
+            "Xiaotong Su",
+            "Songen Gu",
+            "Yichen Zhang",
+            "Zebin Xing",
+            "Shuai Tian",
+            "Jingxiang Guo",
+            "Jing Li",
+            "Zhiyong Zhao",
+            "Zhongpu Xia",
+            "Qichao Zhang",
+            "Haoran Li",
+            "Shuicheng Yan",
+            "Dongbin Zhao"
+          ],
+          "date": "2026-11-18",
+          "year": 2026,
+          "category": "Policy Optimization",
+          "scope": "adjacent",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.24938",
+            "project": "https://openphoenix-team.github.io/Phoenix-pages/",
+            "code": "https://github.com/Anyverse-Dynamics/Phoenix-MWA"
+          },
+          "tags": [
+            "Imitation learning",
+            "Vision-language-action",
+            "Foundation policy",
+            "Diffusion / flow policy",
+            "Cross-embodiment",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Distills geometric and temporal knowledge into scene representations, then jointly generates visual latents and actions. After separate benchmark post-training, Phoenix reports 45.6% aggregate success on simulated Bench2Dex arm–hand tasks and 30.0% on RoboDojo real robots. Its visual-state-language policy does not establish runtime tactile feedback.",
+          "tldr_zh": "将几何与时序知识蒸馏为场景表征，联合生成视觉潜变量和动作。经各基准独立后训练，Bench2Dex仿真臂手任务汇总成功率45.6%，RoboDojo实机30.0%。本篇策略使用视觉、构型状态与语言，未证明执行时触觉反馈。",
+          "sensing": [
+            "Multi-view RGB",
+            "Robot configuration state"
+          ],
+          "hand": [
+            "Bench2Dex arm–hand combinations (simulation)"
+          ],
+          "task": [
+            "Cross-embodiment manipulation",
+            "Multi-stage bimanual manipulation"
+          ],
+          "method": [
+            "Dual-teacher scene representation distillation",
+            "Causal-semantic variational autoencoder",
+            "Joint visual–action flow matching"
+          ],
+          "notes_zh": "约3.9万小时用于表征学习，世界动作预训练仅用机器人示教子集。结果需各基准后训练；同项目ILA/PhysCanvas的触觉方法属于其他论文。已核验代码归属，未运行或复现。"
+        }
+      }
     }
   ]
 }
