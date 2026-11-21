@@ -18882,6 +18882,104 @@
           "notes_zh": "约3.9万小时用于表征学习，世界动作预训练仅用机器人示教子集。结果需各基准后训练；同项目ILA/PhysCanvas的触觉方法属于其他论文。已核验代码归属，未运行或复现。"
         }
       }
+    },
+    {
+      "key": "2611.25683|v1|2026-11-19T08:01:59+00:00|dexterous-v1",
+      "digest": "41a046417a509156e15886776060815324315a2dd9e81182ac7d72a01499dfe1",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-21T06:13:57Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.25683",
+          "version": 1,
+          "title": "TipDex-VTLA: Learning When to Refine Actions with Touch for Dexterous Manipulation",
+          "authors": [
+            "Xudi Ge",
+            "Yepeng Liu",
+            "Haifeng Liu",
+            "Enze Shi",
+            "Liangqi Zhang",
+            "Yongchao Xu"
+          ],
+          "published": "2026-11-19T08:01:59Z",
+          "updated": "2026-11-19T08:01:59Z",
+          "url": "https://arxiv.org/abs/2611.25683v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.25683v1"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "方法明确以真实指端和掌部触觉核验预测并修正尚未执行的动作，在多指实机任务验证，属于核心触觉灵巧操作。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/html/2611.25683v1",
+            "section": "3.1–3.3; 4.1",
+            "paraphrase": "Inspire手每手364个压阻taxel以30Hz采样；实测触觉与时间对齐预测比较，门控有界特征修正，仅替换尚未执行的指令。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.25683v1",
+            "section": "3.2; 3.4; 4.1–4.3; Tables 1–2",
+            "paraphrase": "300条示教分200/100两阶段，第二阶段合成光照扰动。四实机任务每条件各20次；标准/未见光照完整成功率均值87.5%/73.8%。UniVTAC仅标准光照，部分基线沿用发表配置。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2611.25683v1",
+          "paraphrase": "§3.1–3.3明确快分支读取当前实测触觉，核验缓存预测并修正剩余动作；§4.1确认真实指端与掌部传感硬件。"
+        },
+        "paper": {
+          "id": "2611.25683",
+          "title": "TipDex-VTLA: Learning When to Refine Actions with Touch for Dexterous Manipulation",
+          "authors": [
+            "Xudi Ge",
+            "Yepeng Liu",
+            "Haifeng Liu",
+            "Enze Shi",
+            "Liangqi Zhang",
+            "Yongchao Xu"
+          ],
+          "date": "2026-11-19",
+          "year": 2026,
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.25683"
+          },
+          "tags": [
+            "Imitation learning",
+            "Vision-language-action",
+            "Diffusion / flow policy",
+            "Dexterous grasping",
+            "Tactile feedback",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Uses estimated visual action consistency and measured-versus-forecast touch to gate bounded feature corrections that refine unexecuted actions. Four real-hand tasks achieve 87.5%/73.8% mean full-task success under standard/unseen lighting, with 20 trials per task and condition. Training includes synthetic lighting perturbations; visual reliability is a policy-consistency proxy.",
+          "tldr_zh": "用视觉动作一致性估计及实测/预测触觉差异，门控动作专家的有界特征修正，调整尚未执行的动作。四项实机任务每光照条件各20次，标准/未见光照完整成功率均值87.5%/73.8%。训练含合成光照扰动，可靠性仅为策略一致性代理。",
+          "sensing": [
+            "Multi-view RGB",
+            "Fingertip and palm piezoresistive tactile arrays",
+            "Robot proprioceptive state"
+          ],
+          "hand": [
+            "Inspire RH56F2-E2-T1 dexterous hands"
+          ],
+          "task": [
+            "Egg transfer",
+            "Grape pinching",
+            "Tissue extraction",
+            "Mung bean pouring"
+          ],
+          "method": [
+            "Visual action sensitivity estimation",
+            "Time-aligned tactile forecast verification",
+            "Gated slow–fast flow refinement"
+          ],
+          "notes_zh": "30Hz为触觉采样率，不代表动作修正频率；可靠性分数不等于动作正确率。UniVTAC仅标准光照测试。未核验到项目或代码链接，未复现。"
+        }
+      }
     }
   ]
 }

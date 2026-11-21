@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -13871,6 +13871,65 @@
         "https://arxiv.org/html/2611.24938v1",
         "https://openphoenix-team.github.io/Phoenix-pages/",
         "https://github.com/Anyverse-Dynamics/Phoenix-MWA"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.25683",
+      "title": "TipDex-VTLA: Learning When to Refine Actions with Touch for Dexterous Manipulation",
+      "authors": [
+        "Xudi Ge",
+        "Yepeng Liu",
+        "Haifeng Liu",
+        "Enze Shi",
+        "Liangqi Zhang",
+        "Yongchao Xu"
+      ],
+      "date": "2026-11-19",
+      "year": 2026,
+      "category": "Tactile Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.25683"
+      },
+      "tags": [
+        "Imitation learning",
+        "Vision-language-action",
+        "Diffusion / flow policy",
+        "Dexterous grasping",
+        "Tactile feedback",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Uses estimated visual action consistency and measured-versus-forecast touch to gate bounded feature corrections that refine unexecuted actions. Four real-hand tasks achieve 87.5%/73.8% mean full-task success under standard/unseen lighting, with 20 trials per task and condition. Training includes synthetic lighting perturbations; visual reliability is a policy-consistency proxy.",
+      "tldr_zh": "用视觉动作一致性估计及实测/预测触觉差异，门控动作专家的有界特征修正，调整尚未执行的动作。四项实机任务每光照条件各20次，标准/未见光照完整成功率均值87.5%/73.8%。训练含合成光照扰动，可靠性仅为策略一致性代理。",
+      "sensing": [
+        "Multi-view RGB",
+        "Fingertip and palm piezoresistive tactile arrays",
+        "Robot proprioceptive state"
+      ],
+      "hand": [
+        "Inspire RH56F2-E2-T1 dexterous hands"
+      ],
+      "task": [
+        "Egg transfer",
+        "Grape pinching",
+        "Tissue extraction",
+        "Mung bean pouring"
+      ],
+      "method": [
+        "Visual action sensitivity estimation",
+        "Time-aligned tactile forecast verification",
+        "Gated slow–fast flow refinement"
+      ],
+      "notes_zh": "30Hz为触觉采样率，不代表动作修正频率；可靠性分数不等于动作正确率。UniVTAC仅标准光照测试。未核验到项目或代码链接，未复现。",
+      "arxiv_id": "2611.25683",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-19T08:01:59Z",
+      "source_url": "https://arxiv.org/abs/2611.25683v1",
+      "sources": [
+        "https://arxiv.org/html/2611.25683v1"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"

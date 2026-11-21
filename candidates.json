@@ -1,8 +1,76 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T09:14:19Z",
+  "updated_at": "2026-11-20T08:57:19Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2611.25683",
+      "title": "TipDex-VTLA: Learning When to Refine Actions with Touch for Dexterous Manipulation",
+      "authors": [
+        "Xudi Ge",
+        "Yepeng Liu",
+        "Haifeng Liu",
+        "Enze Shi",
+        "Liangqi Zhang",
+        "Yongchao Xu"
+      ],
+      "published": "2026-11-19T08:01:59Z",
+      "updated": "2026-11-19T08:01:59Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.25683",
+        "pdf": "https://arxiv.org/pdf/2611.25683"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… illumination can induce action drift in dexterous manipulation even when the physical state remains unchanged. Although existing vision--tactile--language--action (VTLA) policies incorporate tactile …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-20T08:57:19Z",
+      "last_seen": "2026-11-20T08:57:19Z"
+    },
+    {
+      "id": "2610.21180",
+      "title": "Evo-DexBench: Benchmarking Generalization across Related Tasks for Dexterous Manipulation",
+      "authors": [
+        "Bing Cheng",
+        "Yiran Mao",
+        "Zewei Ye",
+        "Yifan Jin",
+        "Xinyi Chen",
+        "Ruifeng Tu",
+        "Shuhuai Wang",
+        "Tao Lin",
+        "Zhimu Zhou",
+        "Yuxin Du",
+        "Fangwei Zhong",
+        "Junchi Yan",
+        "Bo Zhao"
+      ],
+      "published": "2026-10-15T03:36:05Z",
+      "updated": "2026-11-19T06:31:20Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.21180",
+        "pdf": "https://arxiv.org/pdf/2610.21180"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "General-purpose dexterous manipulation requires policies to transfer knowledge from related tasks to new tasks with only a few target demonstrations. Existing benchmarks …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-10-16T06:12:26Z",
+      "last_seen": "2026-11-20T08:57:19Z"
+    },
     {
       "id": "2611.24938",
       "title": "Phoenix: Learning Scene Structure Representations for Generalizable World-Action Models",
@@ -43,7 +111,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-19T09:14:19Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2611.24585",
@@ -80,7 +148,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-19T09:14:19Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2611.24207",
@@ -111,7 +179,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-19T09:14:19Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2608.02014",
@@ -140,7 +208,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2611.23961",
@@ -177,7 +245,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-19T09:14:19Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2611.23676",
@@ -207,7 +275,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-19T09:14:19Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2610.28814",
@@ -252,7 +320,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-22T06:27:05Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2610.40349",
@@ -287,7 +355,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-30T07:36:53Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2607.24744",
@@ -341,7 +409,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-18T08:57:30Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2512.19583",
@@ -378,7 +446,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-18T08:57:30Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2611.21908",
@@ -413,7 +481,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-18T08:57:30Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2512.00324",
@@ -447,7 +515,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-17T09:38:02Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2611.21060",
@@ -478,7 +546,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-17T09:38:02Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2611.20202",
@@ -504,7 +572,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-17T09:38:02Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2611.19384",
@@ -542,7 +610,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-17T09:38:02Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2611.18976",
@@ -575,7 +643,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-17T09:38:02Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2610.30781",
@@ -604,7 +672,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-23T06:22:00Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2611.16423",
@@ -631,7 +699,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-13T08:35:45Z",
-      "last_seen": "2026-11-19T09:14:19Z"
+      "last_seen": "2026-11-20T08:57:19Z"
     },
     {
       "id": "2611.17755",
@@ -1454,43 +1522,6 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-06T08:21:29Z",
-      "last_seen": "2026-11-12T08:43:07Z"
-    },
-    {
-      "id": "2610.21180",
-      "title": "Evo-DexBench: Benchmarking Generalization across Related Tasks for Dexterous Manipulation",
-      "authors": [
-        "Bing Cheng",
-        "Yiran Mao",
-        "Zewei Ye",
-        "Yifan Jin",
-        "Xinyi Chen",
-        "Ruifeng Tu",
-        "Shuhuai Wang",
-        "Tao Lin",
-        "Zhimu Zhou",
-        "Yuxin Du",
-        "Fangwei Zhong",
-        "Junchi Yan",
-        "Bo Zhao"
-      ],
-      "published": "2026-10-15T03:36:05Z",
-      "updated": "2026-11-05T08:57:05Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.21180",
-        "pdf": "https://arxiv.org/pdf/2610.21180"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "General-purpose dexterous manipulation requires policies to transfer knowledge from related tasks to new tasks with only a few target demonstrations. Existing benchmarks …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-10-16T06:12:26Z",
       "last_seen": "2026-11-12T08:43:07Z"
     },
     {

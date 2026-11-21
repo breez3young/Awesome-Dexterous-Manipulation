@@ -1,20 +1,61 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-11-19T09:14:19Z",
+  "last_checked_at": "2026-11-20T08:57:19Z",
   "lookback_days": 7,
-  "window_start": "2026-11-12T09:14:19Z",
+  "window_start": "2026-11-13T08:57:19Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 122,
-  "recent_match_count": 22,
-  "new_candidate_count": 5,
-  "updated_candidate_count": 2,
+  "candidate_count": 123,
+  "recent_match_count": 20,
+  "new_candidate_count": 1,
+  "updated_candidate_count": 1,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2611.25683",
+      "title": "TipDex-VTLA: Learning When to Refine Actions with Touch for Dexterous Manipulation",
+      "published": "2026-11-19T08:01:59Z",
+      "updated": "2026-11-19T08:01:59Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.25683",
+        "pdf": "https://arxiv.org/pdf/2611.25683"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… illumination can induce action drift in dexterous manipulation even when the physical state remains unchanged. Although existing vision--tactile--language--action (VTLA) policies incorporate tactile …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2610.21180",
+      "title": "Evo-DexBench: Benchmarking Generalization across Related Tasks for Dexterous Manipulation",
+      "published": "2026-10-15T03:36:05Z",
+      "updated": "2026-11-19T06:31:20Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.21180",
+        "pdf": "https://arxiv.org/pdf/2610.21180"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "General-purpose dexterous manipulation requires policies to transfer knowledge from related tasks to new tasks with only a few target demonstrations. Existing benchmarks …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2611.24938",
       "title": "Phoenix: Learning Scene Structure Representations for Generalizable World-Action Models",
@@ -891,26 +932,6 @@
         {
           "source": "abstract",
           "text": "… on tasks encompassing dual-arm and dexterous in-hand manipulation. Overall, TactileLab provides an end-to-end sim-to-real framework for scalable tactile policy learning, enabling diverse …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2610.21180",
-      "title": "Evo-DexBench: Benchmarking Generalization across Related Tasks for Dexterous Manipulation",
-      "published": "2026-10-15T03:36:05Z",
-      "updated": "2026-11-05T08:57:05Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2610.21180",
-        "pdf": "https://arxiv.org/pdf/2610.21180"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "General-purpose dexterous manipulation requires policies to transfer knowledge from related tasks to new tasks with only a few target demonstrations. Existing benchmarks …"
         }
       ],
       "review_status": "pending"
