@@ -18980,6 +18980,413 @@
           "notes_zh": "30Hz为触觉采样率，不代表动作修正频率；可靠性分数不等于动作正确率。UniVTAC仅标准光照测试。未核验到项目或代码链接，未复现。"
         }
       }
+    },
+    {
+      "key": "2602.07413|v4|2026-11-20T18:37:46+00:00|dexterous-v1",
+      "digest": "afdfe396a6baab5b889f889bea538fe1c7a16378e2808731ec7ad18697e110f7",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-24T02:12:18Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2602.07413",
+          "version": 4,
+          "title": "Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity",
+          "authors": [
+            "Yunhai Han",
+            "Jiaqi Fu",
+            "Linhao Bai",
+            "Ziyu Xiao",
+            "Zhaodong Yang",
+            "Yogita Choudhary",
+            "Krishna Jha",
+            "Chuizheng Kong",
+            "Shreyas Kousik",
+            "Harish Ravichandar"
+          ],
+          "published": "2026-02-07T07:18:00Z",
+          "updated": "2026-11-20T18:37:46Z",
+          "url": "https://arxiv.org/abs/2602.07413v4",
+          "primary_urls": [
+            "https://arxiv.org/abs/2602.07413v4",
+            "https://arxiv.org/html/2602.07413v4",
+            "https://k-ubm.github.io/",
+            "https://github.com/GT-STAR-Lab/K-UBM"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "以统一行为动力学直接学习多指灵巧技能，方法与评测包含Allegro、Adroit仿真及LEAP实机，符合核心灵巧操作范围；执行使用视觉与本体状态，触觉只列为未来方向。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2602.07413v4",
+            "paraphrase": "官方摘要页核对十名作者、完整题名、首次投稿2026-02-07及2026-11-20更新的v4。"
+          },
+          {
+            "url": "https://arxiv.org/html/2602.07413v4",
+            "paraphrase": "§2–3以示教共训视觉—动作潜状态与线性Koopman动力学；预测和观测视觉流的偏差触发重规划。"
+          },
+          {
+            "url": "https://arxiv.org/html/2602.07413v4",
+            "paraphrase": "§4–5及附录M：七项多指仿真、四项Franka/LEAP实机；实机均值85.0%，ACT为92.5%，本方法动作更平滑。"
+          },
+          {
+            "url": "https://k-ubm.github.io/",
+            "paraphrase": "项目题名、作者及论文链接对应，页面提供代码入口。"
+          },
+          {
+            "url": "https://github.com/GT-STAR-Lab/K-UBM",
+            "paraphrase": "仓库README声明为本论文官方实现并回链2602.07413；README仍用早期Implicit Planners题名，未运行代码。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2602.07413v4",
+          "paraphrase": "§3与§6采用视觉和本体输入；触觉被列为遮挡与扰动同时出现时的未来补充。"
+        },
+        "paper": {
+          "id": "2602.07413",
+          "title": "Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity",
+          "authors": [
+            "Yunhai Han",
+            "Jiaqi Fu",
+            "Linhao Bai",
+            "Ziyu Xiao",
+            "Zhaodong Yang",
+            "Yogita Choudhary",
+            "Krishna Jha",
+            "Chuizheng Kong",
+            "Shreyas Kousik",
+            "Harish Ravichandar"
+          ],
+          "date": "2026-02-07",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Imitation learning",
+            "Model-based planning",
+            "In-hand manipulation",
+            "Tool use",
+            "Articulated objects",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Learns coupled visual and action dynamics from demonstrations with a Koopman latent model and event-triggered replanning. Evaluated on seven simulated dexterous tasks and four Franka–LEAP tasks; real success averages 85.0% versus ACT’s 92.5%, with smoother motion.",
+          "tldr_zh": "从示教学得视觉与动作的耦合Koopman潜动力学，以视觉偏差触发重规划。验证覆盖七项多指仿真与四项Franka–LEAP实机任务；实机平均成功率85.0%，低于ACT的92.5%，但动作更平滑。",
+          "sensing": [
+            "RGB visual features",
+            "Robot proprioceptive state"
+          ],
+          "hand": [
+            "16-DoF Allegro hand on XArm6 (simulation)",
+            "Adroit hand with floating wrist (simulation)",
+            "16-DoF LEAP hand on Franka (real robot)"
+          ],
+          "task": [
+            "Articulated-object manipulation",
+            "In-hand reorientation and object relocation",
+            "Tool use",
+            "Flower arrangement, pouring, serving and whiteboard erasing"
+          ],
+          "method": [
+            "Demonstration-based Koopman behavioral dynamics",
+            "State-inclusive latent lifting",
+            "Visual-error-triggered replanning"
+          ],
+          "notes_zh": "仿真与实机分别使用示教训练，非零样本迁移。推理计时不含视觉特征提取；黑屏消融仅测反应式基线。遮挡与扰动并发仍可能失败。未复现。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2602.07413",
+            "project": "https://k-ubm.github.io/",
+            "code": "https://github.com/GT-STAR-Lab/K-UBM"
+          }
+        }
+      }
+    },
+    {
+      "key": "2611.26855|v1|2026-11-19T22:17:33+00:00|dexterous-v1",
+      "digest": "c3fb3225d681a346c02e22a4ae7dc73b7b1460c0d7416998ca0ddb4867394dd7",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-24T02:12:18Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.26855",
+          "version": 1,
+          "title": "Coherent Moment Propagation: Epistemic Uncertainty for Pre-trained Robot Policies",
+          "authors": [
+            "Miguel Saavedra-Ruiz",
+            "Anqi Li",
+            "Claudia D'Arpino",
+            "Alperen Degirmenci",
+            "Tucker Hermans",
+            "Fabio Ramos"
+          ],
+          "published": "2026-11-19T22:17:33Z",
+          "updated": "2026-11-19T22:17:33Z",
+          "url": "https://arxiv.org/abs/2611.26855v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2611.26855v1",
+            "https://arxiv.org/html/2611.26855v1",
+            "https://comp-uq.github.io/comp-uq/"
+          ]
+        },
+        "decision": "defer",
+        "review_depth": "fulltext",
+        "reason_zh": "全文证据充分，主要贡献为预训练策略的不确定性传播，既有动作预测保持不变；亦通过示教选择改善后续微调，因此不能仅因普通夹爪评测而排除。但没有多指、触觉或手物交互验证，运行监测与数据选择是否属于当前Policy Optimization相邻收录仍待维护者确认，暂缓范围判断。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2611.26855v1",
+            "paraphrase": "官方摘要页核对完整题名、六名作者及v1首次投稿时间2026-11-19T22:17:33Z。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.26855v1",
+            "paraphrase": "§3联合传播状态与权重的交叉协方差，提出EKF/UKF近似；用既有观测嵌入扩展末层Laplace后验，不需重训原策略。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.26855v1",
+            "paraphrase": "§4与附录A.7–A.10评测robomimic、LIBERO和RoboLab仿真中的失败检测、语言扰动及示教选择；未报告多指手或实机触觉部署。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.26855v1",
+            "paraphrase": "§4.4以不确定性评分选取示教，再微调SmolVLA；CoMP-UKF相对随机选择跨预算平均增益约3.5个百分点，使用五个独立策略种子。"
+          },
+          {
+            "url": "https://comp-uq.github.io/comp-uq/",
+            "paraphrase": "正文所链项目页对应方法和三套评测，代码标为Coming soon，未取得可核验代码仓库。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.26855v1",
+          "paraphrase": "附录A.10的策略输入为两路图像、本体状态和语言，评测为仿真；未提供执行时真实触觉传感路径。"
+        }
+      }
+    },
+    {
+      "key": "2611.27042|v1|2026-11-20T03:14:26+00:00|dexterous-v1",
+      "digest": "c6ad507b63c476291c3e15b2715b7d1dc92a3228f2ba1214c307767d2ff1b688",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-24T02:12:18Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.27042",
+          "version": 1,
+          "title": "RoboColiseum: Co-evolution of Simulation, Evaluation, and Models",
+          "authors": [
+            "Chenghao Yin",
+            "Da Huang",
+            "Di Yang",
+            "Jichao Wang",
+            "Junhui Wu",
+            "Nanshu Zhao",
+            "Tong Ran",
+            "Zhijun Li",
+            "Gang Zhao",
+            "Linting Guo",
+            "Rui Feng",
+            "Sheng Zhang",
+            "Tianyu Jiang",
+            "Wenjun Sun",
+            "Yongxin Su",
+            "Zhaobo Liu",
+            "Zheyuan Xing",
+            "Sukai Wang",
+            "Yue Zhou",
+            "Qihan Jiang",
+            "Jianhua Jiang",
+            "Chuang Men",
+            "Yuxiang Yan",
+            "Daizhen Lv",
+            "Kunyu Yu",
+            "Yongjian Shen",
+            "Tianxiang Zhu",
+            "Siying Zhang",
+            "Wenhao Wang",
+            "Jun Zhao",
+            "Bowen Jiang",
+            "Zhi Zeng",
+            "Maoqing Yao",
+            "Qian Wang"
+          ],
+          "published": "2026-11-20T03:14:26Z",
+          "updated": "2026-11-20T03:14:26Z",
+          "url": "https://arxiv.org/abs/2611.27042v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.27042v1"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "paper": {
+          "id": "2611.27042",
+          "title": "RoboColiseum: Co-evolution of Simulation, Evaluation, and Models",
+          "authors": [
+            "Chenghao Yin",
+            "Da Huang",
+            "Di Yang",
+            "Jichao Wang",
+            "Junhui Wu",
+            "Nanshu Zhao",
+            "Tong Ran",
+            "Zhijun Li",
+            "Gang Zhao",
+            "Linting Guo",
+            "Rui Feng",
+            "Sheng Zhang",
+            "Tianyu Jiang",
+            "Wenjun Sun",
+            "Yongxin Su",
+            "Zhaobo Liu",
+            "Zheyuan Xing",
+            "Sukai Wang",
+            "Yue Zhou",
+            "Qihan Jiang",
+            "Jianhua Jiang",
+            "Chuang Men",
+            "Yuxiang Yan",
+            "Daizhen Lv",
+            "Kunyu Yu",
+            "Yongjian Shen",
+            "Tianxiang Zhu",
+            "Siying Zhang",
+            "Wenhao Wang",
+            "Jun Zhao",
+            "Bowen Jiang",
+            "Zhi Zeng",
+            "Maoqing Yao",
+            "Qian Wang"
+          ],
+          "date": "2026-11-20",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "adjacent",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.27042"
+          },
+          "tags": [
+            "Dataset / benchmark",
+            "Vision-language-action",
+            "Dexterous grasping",
+            "Bimanual coordination",
+            "Tool use"
+          ],
+          "tldr": "Combines calibrated simulation with eight evaluation tracks, including Wuji-hand tool use and coordinated manipulation. Its VLA dexterity subset has ten configurations and 50 episodes per policy; separate real–simulation correspondence tests cover 22 configurations.",
+          "tldr_zh": "结合仿真校准与八类评测，灵巧子集包含 Wuji 多指手工具使用和双手操作；VLA 每策略评测十个灵巧配置、50回合。另以22个配置检查真实与仿真对应性。",
+          "sensing": [
+            "Rendered visual observations"
+          ],
+          "hand": [
+            "Wuji dexterous hands on G2 (simulation)"
+          ],
+          "task": [
+            "Book retrieval",
+            "Scissors operation",
+            "Bimanual parcel transport",
+            "Cup lidding",
+            "Bowl stacking"
+          ],
+          "method": [
+            "System identification and command replay",
+            "Composable physics and rendering",
+            "Budget-aware multi-track evaluation"
+          ],
+          "notes_zh": "22组真实/仿真相关性不能外推为新增灵巧赛道实机验证。公开汇总缺少完整逐例分母与重复试验不确定性，且一项 Agent 灵巧分数聚合待澄清；分数并非二元成功率。未证实运行时触觉；项目页只返回应用外壳，未添加项目或代码链接。"
+        },
+        "reason_zh": "第IV-B1节明确使用 Wuji 多指手执行剪刀和取书等功能性交互，第V-C节给出灵巧子集配置与回合数，符合相关仿真评测资源收录范围。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2611.27042v1",
+            "paraphrase": "官方摘要页核验完整标题、34名作者及v1首次投稿时间。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.27042v1",
+            "paraphrase": "第IV-B1与V-C节明确多指灵巧任务及VLA的10配置/50回合；第V-A与VI节将22配置Real2Sim关联和公共榜单证据局限分开。"
+          }
+        ]
+      }
+    },
+    {
+      "key": "2611.27967|v1|2026-11-20T18:48:12+00:00|dexterous-v1",
+      "digest": "eda824b89eb3e8781e6028d69f6901ec7ab8a52f89bc441a2b4513fd53d908bc",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-24T02:12:18Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.27967",
+          "version": 1,
+          "title": "Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design",
+          "authors": [
+            "Haoyang Wang",
+            "Weibo Gao",
+            "Zhengxiong Li",
+            "Lingfeng Tao"
+          ],
+          "published": "2026-11-20T18:48:12Z",
+          "updated": "2026-11-20T18:48:12Z",
+          "url": "https://arxiv.org/abs/2611.27967v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.27967v1"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "paper": {
+          "id": "2611.27967",
+          "title": "Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design",
+          "authors": [
+            "Haoyang Wang",
+            "Weibo Gao",
+            "Zhengxiong Li",
+            "Lingfeng Tao"
+          ],
+          "date": "2026-11-20",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.27967"
+          },
+          "tags": [
+            "Reinforcement learning",
+            "Human-in-the-loop",
+            "In-hand manipulation",
+            "Hardware / sensor"
+          ],
+          "tldr": "Uses staged contact and learning checks with human-guided revisions to design the four-finger SAGE Hand. MuJoCo tests on three objects compare TD3/HER policies; simulated tactile features improve cylinder retention, while physical deployment remains future work.",
+          "tldr_zh": "通过分级接触与学习检查及人类指导迭代，设计四指 SAGE Hand。在MuJoCo三种物体上比较TD3/HER策略；仿真触觉特征改善圆柱保持，实机部署仍待验证。",
+          "sensing": [
+            "Simulated tactile contact features (T4 variant)"
+          ],
+          "hand": [
+            "SAGE Hand (four fingers, 16 actuated DoF)",
+            "LEAP hand (simulation reference)",
+            "Shadow hand (simulation context)"
+          ],
+          "task": [
+            "Bidirectional in-hand object rotation"
+          ],
+          "method": [
+            "Parameterized morphology revision",
+            "Progressive contact and learning gates",
+            "TD3 with hindsight experience replay"
+          ],
+          "notes_zh": "T4的74个触觉区域为仿真观测，非实机传感验证，因此不加Tactile feedback或Sim-to-real。最终手型来自74轮人类指导修订；无指导从零生成未通过双向动力学门。各手预抓取初始化预算不同；触觉成功率增益区间含零。未核验到项目或代码链接。"
+        },
+        "reason_zh": "第III至V节给出多指手形态迭代、接触检查和三物体手内旋转评测，核心贡献直接属于灵巧操作；仿真触觉消融不构成实机触觉部署证据。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2611.27967v1",
+            "paraphrase": "官方摘要页核验完整标题、四名作者及v1首次投稿时间。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.27967v1",
+            "paraphrase": "第III-C与IV-C/D节描述MuJoCo检查、TD3/HER和T4的74个仿真触觉区域；第V-D节触觉成功率差异区间含零，第VI节将实机部署列为未来工作。"
+          }
+        ]
+      }
     }
   ]
 }

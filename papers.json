@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-11-21",
+  "updated": "2026-11-24",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -13930,6 +13930,212 @@
       "source_url": "https://arxiv.org/abs/2611.25683v1",
       "sources": [
         "https://arxiv.org/html/2611.25683v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2602.07413",
+      "title": "Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity",
+      "authors": [
+        "Yunhai Han",
+        "Jiaqi Fu",
+        "Linhao Bai",
+        "Ziyu Xiao",
+        "Zhaodong Yang",
+        "Yogita Choudhary",
+        "Krishna Jha",
+        "Chuizheng Kong",
+        "Shreyas Kousik",
+        "Harish Ravichandar"
+      ],
+      "date": "2026-02-07",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "tags": [
+        "Imitation learning",
+        "Model-based planning",
+        "In-hand manipulation",
+        "Tool use",
+        "Articulated objects",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Learns coupled visual and action dynamics from demonstrations with a Koopman latent model and event-triggered replanning. Evaluated on seven simulated dexterous tasks and four Franka–LEAP tasks; real success averages 85.0% versus ACT’s 92.5%, with smoother motion.",
+      "tldr_zh": "从示教学得视觉与动作的耦合Koopman潜动力学，以视觉偏差触发重规划。验证覆盖七项多指仿真与四项Franka–LEAP实机任务；实机平均成功率85.0%，低于ACT的92.5%，但动作更平滑。",
+      "sensing": [
+        "RGB visual features",
+        "Robot proprioceptive state"
+      ],
+      "hand": [
+        "16-DoF Allegro hand on XArm6 (simulation)",
+        "Adroit hand with floating wrist (simulation)",
+        "16-DoF LEAP hand on Franka (real robot)"
+      ],
+      "task": [
+        "Articulated-object manipulation",
+        "In-hand reorientation and object relocation",
+        "Tool use",
+        "Flower arrangement, pouring, serving and whiteboard erasing"
+      ],
+      "method": [
+        "Demonstration-based Koopman behavioral dynamics",
+        "State-inclusive latent lifting",
+        "Visual-error-triggered replanning"
+      ],
+      "notes_zh": "仿真与实机分别使用示教训练，非零样本迁移。推理计时不含视觉特征提取；黑屏消融仅测反应式基线。遮挡与扰动并发仍可能失败。未复现。",
+      "links": {
+        "paper": "https://arxiv.org/abs/2602.07413",
+        "project": "https://k-ubm.github.io/",
+        "code": "https://github.com/GT-STAR-Lab/K-UBM"
+      },
+      "arxiv_id": "2602.07413",
+      "arxiv_version": 4,
+      "arxiv_updated": "2026-11-20T18:37:46Z",
+      "source_url": "https://arxiv.org/abs/2602.07413v4",
+      "sources": [
+        "https://arxiv.org/abs/2602.07413v4",
+        "https://arxiv.org/html/2602.07413v4",
+        "https://k-ubm.github.io/",
+        "https://github.com/GT-STAR-Lab/K-UBM"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v4)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.27042",
+      "title": "RoboColiseum: Co-evolution of Simulation, Evaluation, and Models",
+      "authors": [
+        "Chenghao Yin",
+        "Da Huang",
+        "Di Yang",
+        "Jichao Wang",
+        "Junhui Wu",
+        "Nanshu Zhao",
+        "Tong Ran",
+        "Zhijun Li",
+        "Gang Zhao",
+        "Linting Guo",
+        "Rui Feng",
+        "Sheng Zhang",
+        "Tianyu Jiang",
+        "Wenjun Sun",
+        "Yongxin Su",
+        "Zhaobo Liu",
+        "Zheyuan Xing",
+        "Sukai Wang",
+        "Yue Zhou",
+        "Qihan Jiang",
+        "Jianhua Jiang",
+        "Chuang Men",
+        "Yuxiang Yan",
+        "Daizhen Lv",
+        "Kunyu Yu",
+        "Yongjian Shen",
+        "Tianxiang Zhu",
+        "Siying Zhang",
+        "Wenhao Wang",
+        "Jun Zhao",
+        "Bowen Jiang",
+        "Zhi Zeng",
+        "Maoqing Yao",
+        "Qian Wang"
+      ],
+      "date": "2026-11-20",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "adjacent",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.27042"
+      },
+      "tags": [
+        "Dataset / benchmark",
+        "Vision-language-action",
+        "Dexterous grasping",
+        "Bimanual coordination",
+        "Tool use"
+      ],
+      "tldr": "Combines calibrated simulation with eight evaluation tracks, including Wuji-hand tool use and coordinated manipulation. Its VLA dexterity subset has ten configurations and 50 episodes per policy; separate real–simulation correspondence tests cover 22 configurations.",
+      "tldr_zh": "结合仿真校准与八类评测，灵巧子集包含 Wuji 多指手工具使用和双手操作；VLA 每策略评测十个灵巧配置、50回合。另以22个配置检查真实与仿真对应性。",
+      "sensing": [
+        "Rendered visual observations"
+      ],
+      "hand": [
+        "Wuji dexterous hands on G2 (simulation)"
+      ],
+      "task": [
+        "Book retrieval",
+        "Scissors operation",
+        "Bimanual parcel transport",
+        "Cup lidding",
+        "Bowl stacking"
+      ],
+      "method": [
+        "System identification and command replay",
+        "Composable physics and rendering",
+        "Budget-aware multi-track evaluation"
+      ],
+      "notes_zh": "22组真实/仿真相关性不能外推为新增灵巧赛道实机验证。公开汇总缺少完整逐例分母与重复试验不确定性，且一项 Agent 灵巧分数聚合待澄清；分数并非二元成功率。未证实运行时触觉；项目页只返回应用外壳，未添加项目或代码链接。",
+      "arxiv_id": "2611.27042",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-20T03:14:26Z",
+      "source_url": "https://arxiv.org/abs/2611.27042v1",
+      "sources": [
+        "https://arxiv.org/abs/2611.27042v1",
+        "https://arxiv.org/html/2611.27042v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.27967",
+      "title": "Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design",
+      "authors": [
+        "Haoyang Wang",
+        "Weibo Gao",
+        "Zhengxiong Li",
+        "Lingfeng Tao"
+      ],
+      "date": "2026-11-20",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.27967"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Human-in-the-loop",
+        "In-hand manipulation",
+        "Hardware / sensor"
+      ],
+      "tldr": "Uses staged contact and learning checks with human-guided revisions to design the four-finger SAGE Hand. MuJoCo tests on three objects compare TD3/HER policies; simulated tactile features improve cylinder retention, while physical deployment remains future work.",
+      "tldr_zh": "通过分级接触与学习检查及人类指导迭代，设计四指 SAGE Hand。在MuJoCo三种物体上比较TD3/HER策略；仿真触觉特征改善圆柱保持，实机部署仍待验证。",
+      "sensing": [
+        "Simulated tactile contact features (T4 variant)"
+      ],
+      "hand": [
+        "SAGE Hand (four fingers, 16 actuated DoF)",
+        "LEAP hand (simulation reference)",
+        "Shadow hand (simulation context)"
+      ],
+      "task": [
+        "Bidirectional in-hand object rotation"
+      ],
+      "method": [
+        "Parameterized morphology revision",
+        "Progressive contact and learning gates",
+        "TD3 with hindsight experience replay"
+      ],
+      "notes_zh": "T4的74个触觉区域为仿真观测，非实机传感验证，因此不加Tactile feedback或Sim-to-real。最终手型来自74轮人类指导修订；无指导从零生成未通过双向动力学门。各手预抓取初始化预算不同；触觉成功率增益区间含零。未核验到项目或代码链接。",
+      "arxiv_id": "2611.27967",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-20T18:48:12Z",
+      "source_url": "https://arxiv.org/abs/2611.27967v1",
+      "sources": [
+        "https://arxiv.org/abs/2611.27967v1",
+        "https://arxiv.org/html/2611.27967v1"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"

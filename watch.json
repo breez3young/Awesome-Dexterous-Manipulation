@@ -1,20 +1,121 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-11-20T08:57:19Z",
+  "last_checked_at": "2026-11-23T09:34:42Z",
   "lookback_days": 7,
-  "window_start": "2026-11-13T08:57:19Z",
+  "window_start": "2026-11-16T09:34:42Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 123,
+  "candidate_count": 127,
   "recent_match_count": 20,
-  "new_candidate_count": 1,
+  "new_candidate_count": 4,
   "updated_candidate_count": 1,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2611.27967",
+      "title": "Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design",
+      "published": "2026-11-20T18:48:12Z",
+      "updated": "2026-11-20T18:48:12Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.27967",
+        "pdf": "https://arxiv.org/pdf/2611.27967"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… An evidence-driven design trajectory for bidirectional in-hand manipulation yielded SAGE Hand (Skill-Aware Generative Embodiment): four fingers, 16 actuated DoF, an integrated guiding …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2602.07413",
+      "title": "Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity",
+      "published": "2026-02-07T07:18:00Z",
+      "updated": "2026-11-20T18:37:46Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2602.07413",
+        "pdf": "https://arxiv.org/pdf/2602.07413"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… remain far from reliable, particularly for multi-fingered dexterity. Importantly, they model skills as reactive mappings and rely on fixed-horizon action chunking, creating …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.24938",
+      "title": "Phoenix: Learning Scene Structure Representations for Generalizable World-Action Models",
+      "published": "2026-11-18T18:59:04Z",
+      "updated": "2026-11-20T05:03:55Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.24938",
+        "pdf": "https://arxiv.org/pdf/2611.24938"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… real-robot benchmarks spanning single-arm, bimanual, and dexterous manipulation. It demonstrates strong robustness to perturbations, achieving success rates of 94.8% on LIBERO-Plus and …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.27042",
+      "title": "RoboColiseum: Co-evolution of Simulation, Evaluation, and Models",
+      "published": "2026-11-20T03:14:26Z",
+      "updated": "2026-11-20T03:14:26Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.27042",
+        "pdf": "https://arxiv.org/pdf/2611.27042"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… following, spatial reasoning, general manipulation, robustness, dexterous manipulation, precision manipulation, whole-body coordination, and execution across robot embodiments. Budget-aware scoring combines task progress, …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.26855",
+      "title": "Coherent Moment Propagation: Epistemic Uncertainty for Pre-trained Robot Policies",
+      "published": "2026-11-19T22:17:33Z",
+      "updated": "2026-11-19T22:17:33Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.26855",
+        "pdf": "https://arxiv.org/pdf/2611.26855"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… results ranging from long-horizon planning to dexterous manipulation. However, they provide no measure of whether their predicted commands can be trusted, particularly …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2611.25683",
       "title": "TipDex-VTLA: Learning When to Refine Actions with Touch for Dexterous Manipulation",
@@ -52,26 +153,6 @@
         {
           "source": "abstract",
           "text": "General-purpose dexterous manipulation requires policies to transfer knowledge from related tasks to new tasks with only a few target demonstrations. Existing benchmarks …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2611.24938",
-      "title": "Phoenix: Learning Scene Structure Representations for Generalizable World-Action Models",
-      "published": "2026-11-18T18:59:04Z",
-      "updated": "2026-11-18T18:59:04Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2611.24938",
-        "pdf": "https://arxiv.org/pdf/2611.24938"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… real-robot benchmarks spanning single-arm, bimanual, and dexterous manipulation. It demonstrates strong robustness to perturbations, achieving success rates of 94.8% on LIBERO-Plus and …"
         }
       ],
       "review_status": "pending"
