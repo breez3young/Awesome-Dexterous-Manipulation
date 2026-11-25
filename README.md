@@ -55,16 +55,16 @@ Each paper has one primary area. Tags add five complementary views: **Policy & l
 
 ## At a glance
 
-<p align="center"><b>228 papers</b> · <b>39 tactile dexterity papers</b> · <b>60 code links</b> · 6 research areas · <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/">browse the collection</a></p>
+<p align="center"><b>236 papers</b> · <b>40 tactile dexterity papers</b> · <b>62 code links</b> · 6 research areas · <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/">browse the collection</a></p>
 
 | Research area | Papers |
 |:--|--:|
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Dexterous%20Manipulation">Dexterous Manipulation</a> | 127 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Dexterous%20Manipulation">Tactile Dexterous Manipulation</a> | 39 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Dexterous%20Manipulation">Dexterous Manipulation</a> | 130 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Dexterous%20Manipulation">Tactile Dexterous Manipulation</a> | 40 |
 | <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Tactile%20Sensing%20%26%20Representation">Tactile Sensing &amp; Representation</a> | 31 |
 | <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Hand%E2%80%93Object%20Interaction">Hand–Object Interaction</a> | 14 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Grasp%20Synthesis">Grasp Synthesis</a> | 2 |
-| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Policy%20Optimization">Policy Optimization</a> | 15 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Grasp%20Synthesis">Grasp Synthesis</a> | 3 |
+| <a href="https://breez3young.github.io/Awesome-Dexterous-Manipulation/?area=Policy%20Optimization">Policy Optimization</a> | 18 |
 
 Counts describe this curated collection. Code links may cover data tools, simulation, or hardware rather than a complete policy implementation. Explore release trends and tag distributions in [Stats](https://breez3young.github.io/Awesome-Dexterous-Manipulation/#stats).
 
@@ -88,14 +88,14 @@ The most recent first releases in the curated catalog. Dates below are publicati
 
 | First released | Paper | Research area | Resources |
 |:--|:--|:--|:--|
-| 2026-11-20 | <b>RoboColiseum: Co-evolution of Simulation, Evaluation, and Models</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.27042">Paper</a> |
-| 2026-11-20 | <b>Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.27967">Paper</a> |
-| 2026-11-19 | <b>TipDex-VTLA: Learning When to Refine Actions with Touch for Dexterous Manipulation</b> | Tactile Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.25683">Paper</a> |
-| 2026-11-18 | <b>Finetuning VLAs for Dexterous Manipulation: The Right Checkpoint Is All You Need</b> | Policy Optimization | <a href="https://arxiv.org/abs/2611.23676">Paper</a> |
-| 2026-11-18 | <b>3DTouch: A Tactile-aware VLA Model with 3D Geometric Relations for Dexterous Manipulation</b> | Tactile Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.23961">Paper</a> |
-| 2026-11-18 | <b>TapTacTouch: Shape Completion from Sparse Tactile Contacts with Geometric Priors</b> | Tactile Sensing &amp; Representation | <a href="https://arxiv.org/abs/2611.24207">Paper</a> |
-| 2026-11-18 | <b>SHAPE: Discrete Supervision and Parallel Continuous Streams for Learning Dexterous Manipulation from Egocentric Human Data</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.24585">Paper</a> · <a href="https://li-yaping.github.io/SHAPE/">Project</a> |
-| 2026-11-18 | <b>Phoenix: Learning Scene Structure Representations for Generalizable World-Action Models</b> | Policy Optimization | <a href="https://arxiv.org/abs/2611.24938">Paper</a> · <a href="https://openphoenix-team.github.io/Phoenix-pages/">Project</a> · <a href="https://github.com/Anyverse-Dynamics/Phoenix-MWA">Code</a> |
+| 2026-11-24 | <b>Many Senses, One World: Learning Hierarchical Multimodal World Representations for Bimanual Dexterous Manipulation</b> | Tactile Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.31782">Paper</a> |
+| 2026-11-23 | <b>Skill-Adaptive Noise Scheduling for Diffusion Policies</b> | Policy Optimization | <a href="https://arxiv.org/abs/2611.30264">Paper</a> |
+| 2026-11-23 | <b>CHAMP: Coordinated Humanoid Loco-Manipulation with Whole-Body Motion Priors</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.30449">Paper</a> · <a href="https://han-li-jun.github.io/CHAMP/index.html">Project</a> |
+| 2026-11-23 | <b>OVOGO: Offline Value-Guided On-Policy Generative Optimization for Flow-Based Vision-Language-Action Models</b> | Policy Optimization | <a href="https://arxiv.org/abs/2611.30477">Paper</a> |
+| 2026-11-22 | <b>FunGrasp-Zero: Field-Conditioned Graph Attention Policy for Zero-Shot Cross-Embodiment Dexterous Functional Grasping</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.29195">Paper</a> · <a href="https://linyh0525.github.io/FunGrasp-Zero/">Project</a> |
+| 2026-11-21 | <b>Lifted Multiple Shooting for Parallel-in-Time Contact-Rich Trajectory Optimization</b> | Policy Optimization | <a href="https://arxiv.org/abs/2611.28512">Paper</a> · <a href="https://trustworthyrobotics.github.io/contact-planning-NLP-site/">Project</a> · <a href="https://github.com/trustworthyrobotics/mujodico">Code</a> |
+| 2026-11-21 | <b>Doing More with Less: Complex Manipulation with a Contact-Adaptive Robotic Hand</b> | Dexterous Manipulation | <a href="https://arxiv.org/abs/2611.28675">Paper</a> |
+| 2026-11-21 | <b>graspit-py: A Python Interface to GraspIt! for Grasp Planning Under Pose and Friction Uncertainty</b> | Grasp Synthesis | <a href="https://arxiv.org/abs/2611.29011">Paper</a> · <a href="https://github.com/coenwerem/graspit-py">Code</a> |
 
 [View the full catalog](https://breez3young.github.io/Awesome-Dexterous-Manipulation/) for summaries, evaluation context, and combinations of learning, sensing, and task tags.
 <!-- END GENERATED CATALOG -->

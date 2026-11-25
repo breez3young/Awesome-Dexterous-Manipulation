@@ -1,6 +1,6 @@
 {
   "title": "Dexterous Manipulation",
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "date_semantics": "First public arXiv submission, or journal publication for non-arXiv work. Revision dates are not release dates.",
   "coverage": "Curated literature: 44 unique works from 47 supplied BibTeX records, 2 requested additions, and 12 retained complementary seed papers. Adjacent datasets, general methods, and hardware are labeled separately.",
   "papers": [
@@ -14136,6 +14136,473 @@
       "sources": [
         "https://arxiv.org/abs/2611.27967v1",
         "https://arxiv.org/html/2611.27967v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.28512",
+      "title": "Lifted Multiple Shooting for Parallel-in-Time Contact-Rich Trajectory Optimization",
+      "authors": [
+        "Wei-Chen Li",
+        "Glen Chou"
+      ],
+      "date": "2026-11-21",
+      "year": 2026,
+      "category": "Policy Optimization",
+      "scope": "adjacent",
+      "tags": [
+        "Model-based planning",
+        "In-hand manipulation"
+      ],
+      "tldr": "Lifts contact impulses into trajectory optimization and uses GPU parallel scans in an interior-point solver. Six simulated tasks include Allegro in-hand manipulation; physical validation is box pushing. The 40,000-step scaling experiment uses a planar knob, not a dexterous hand.",
+      "tldr_zh": "将接触冲量设为轨迹优化变量，并以GPU并行扫描求解内点步骤。六项仿真包含Allegro手内操作，实机仅验证推箱；四万步扩展实验是平面旋钮任务。",
+      "notes_zh": "对数复杂度指并行计算深度，非完整求解时间；最高3.1倍加速对应同一转录下对FATROP的手内任务比较。未给出多指实机验证。代码归属经项目重定向与README核验，未运行或复现。",
+      "sensing": [],
+      "hand": [
+        "Allegro hand (simulation)"
+      ],
+      "task": [
+        "Sphere and pen in-hand manipulation",
+        "Nonprehensile pushing",
+        "Planar knob manipulation"
+      ],
+      "method": [
+        "Lifted multiple shooting",
+        "Implicit contact differentiation",
+        "IP-PAS temporal parallel interior-point solver"
+      ],
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.28512",
+        "project": "https://trustworthyrobotics.github.io/contact-planning-NLP-site/",
+        "code": "https://github.com/trustworthyrobotics/mujodico"
+      },
+      "arxiv_id": "2611.28512",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-21T02:57:57Z",
+      "source_url": "https://arxiv.org/abs/2611.28512v1",
+      "sources": [
+        "https://arxiv.org/html/2611.28512v1",
+        "https://github.com/trustworthyrobotics/mujodico"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "tags": [
+        "Teleoperation",
+        "Dexterous grasping",
+        "In-hand manipulation",
+        "Bimanual coordination",
+        "Tool use",
+        "Hardware / sensor"
+      ],
+      "tldr": "Combines a five-actuator anthropomorphic hand with passive gear–spring contact adaptation and quaternion-based motion-glove control. Physical tests measure finger force and motion, while human-operated demonstrations cover in-hand manipulation, charging, packaging and tool use. The hand has no tactile sensors; autonomous manipulation remains future work.",
+      "tldr_zh": "以五电机拟人手的齿轮弹簧机构实现被动接触适应，并用四元数运动手套控制手指。实机测量单指力与运动能力，人工操控展示手内操作、充电、包装和工具使用。未使用触觉传感，自主操作仍属未来工作。",
+      "sensing": [
+        "Six AHRS sensors per human motion glove",
+        "Motor encoder measurements"
+      ],
+      "hand": [
+        "Five-finger underactuated hand with five actuators (794 g)",
+        "Two hands mounted on the operator's forearms"
+      ],
+      "task": [
+        "Adaptive grasping and in-hand manipulation",
+        "Smartphone pickup and cable insertion",
+        "Cutting and tying cords",
+        "Bimanual unboxing, repackaging and high-load transport"
+      ],
+      "method": [
+        "Split-stage gear–spring contact adaptation",
+        "Closing-ejection suppression design",
+        "Quaternion swing–twist glove mapping",
+        "Forearm-mounted branch-shadowing teleoperation"
+      ],
+      "notes_zh": "机械性能有定量实验，复杂任务主要为展示，未报告统一任务成功率或自主策略基准；操作者承担臂运动、视觉感知与决策。无独立腕关节，拇指方向固定。关节角估计模型假设理想齿轮传动。未复现。",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.28675"
+      },
+      "id": "2611.28675",
+      "title": "Doing More with Less: Complex Manipulation with a Contact-Adaptive Robotic Hand",
+      "authors": [
+        "Hyung Gon Shin",
+        "Sanghoon Jung"
+      ],
+      "date": "2026-11-21",
+      "year": 2026,
+      "arxiv_id": "2611.28675",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-21T08:51:48Z",
+      "source_url": "https://arxiv.org/abs/2611.28675v1",
+      "sources": [
+        "https://arxiv.org/abs/2611.28675v1",
+        "https://arxiv.org/html/2611.28675v1",
+        "https://doi.org/10.5281/zenodo.24372321"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.29011",
+      "title": "graspit-py: A Python Interface to GraspIt! for Grasp Planning Under Pose and Friction Uncertainty",
+      "authors": [
+        "Clinton Enwerem",
+        "John S. Baras",
+        "Calin Belta"
+      ],
+      "date": "2026-11-21",
+      "year": 2026,
+      "category": "Grasp Synthesis",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.29011",
+        "code": "https://github.com/coenwerem/graspit-py"
+      },
+      "tags": [
+        "Model-based planning",
+        "Dexterous grasping"
+      ],
+      "tldr": "Exposes GraspIt! closure and contact analysis through Python, scoring multi-finger grasps under pose and friction uncertainty and reconstructing commands through MuJoCo model conversion. Validation covers five-hand geometry correspondence, 1,920 wrench calculations and simulated grasp examples; hardware deployment is not evaluated.",
+      "tldr_zh": "通过Python连接GraspIt!闭合接触、位姿与摩擦不确定性评分及MuJoCo模型转换，支持多指抓取分析与指令重建。验证覆盖五种手的几何一致性、1920项力旋量计算和仿真抓取示例，未验证实机部署。",
+      "sensing": [],
+      "hand": [
+        "RealHand L6",
+        "LEAP",
+        "PSYONIC Ability",
+        "Shadow",
+        "Inspire",
+        "Barrett"
+      ],
+      "task": [
+        "Multi-finger grasp planning and numerical evaluation"
+      ],
+      "method": [
+        "Uncertainty-sampled contact-wrench scoring",
+        "Affine joint mapping and collision-geometry export"
+      ],
+      "notes_zh": "抬升和保持均为仿真示例，机械臂轨迹与动态控制由外部程序提供；几何误差和数值一致性不代表真实抓取成功率。接触查询不构成触觉部署，不标Sim-to-real或Tactile feedback。",
+      "arxiv_id": "2611.29011",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-21T19:41:50Z",
+      "source_url": "https://arxiv.org/abs/2611.29011v1",
+      "sources": [
+        "https://arxiv.org/abs/2611.29011v1",
+        "https://arxiv.org/html/2611.29011v1",
+        "https://github.com/coenwerem/graspit-py"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.29195",
+      "title": "FunGrasp-Zero: Field-Conditioned Graph Attention Policy for Zero-Shot Cross-Embodiment Dexterous Functional Grasping",
+      "authors": [
+        "Yanhan Lin",
+        "Yuliang Wu",
+        "Yihao Guo",
+        "Wei-Jin Huang",
+        "Jianwen Li",
+        "Jiawei Tang",
+        "Xiaolong Huang",
+        "Yuquan Wang",
+        "Ancong Wu",
+        "Wei-Shi Zheng"
+      ],
+      "date": "2026-11-22",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.29195",
+        "project": "https://linyh0525.github.io/FunGrasp-Zero/"
+      },
+      "tags": [
+        "Reinforcement learning",
+        "Cross-embodiment",
+        "Sim-to-real",
+        "Dexterous grasping",
+        "Proprioception",
+        "Dataset / benchmark"
+      ],
+      "tldr": "Uses demonstration-derived functional contact fields and graph-attention reinforcement learning for cross-hand grasping. Four-hand co-training reaches 86% simulated success on five unseen hands and novel objects; a distilled tactile-free policy averages 80% on four physical hands, with a human demonstration supplied for each test tool.",
+      "tldr_zh": "由人类示教构建功能接触场，以图注意力强化学习迁移多指抓取。四手联合训练后，五种未见手和新物体的仿真成功率为86%；蒸馏后的无触觉策略在四种实机手平均达80%，每件测试工具仍需人类示教。",
+      "sensing": [
+        "Joint angles and PD tracking errors",
+        "RGB-D reconstruction of per-object human demonstrations",
+        "Simulated contact feedback for the teacher; tactile-free physical policy"
+      ],
+      "hand": [
+        "Shadow, Schunk, Ability and BrainCo (co-training)",
+        "Inspire, Sharpa, Wuji, LEAP and PaXini (unseen simulation)",
+        "LEAP, Inspire, Sharpa and Wuji (physical deployment)"
+      ],
+      "task": [
+        "Cross-embodiment functional grasping"
+      ],
+      "method": [
+        "Object-centric functional contact fields",
+        "Morphology-aligned graph attention policy",
+        "Teacher-to-tactile-free policy distillation"
+      ],
+      "notes_zh": "实机10种工具、每物体10次试验，功能意图由三名评估者一致判定；零样本指手型迁移，不代表无需逐物体示教。训练触觉经蒸馏移除，不加Tactile feedback；正文未明确实机对象状态的在线估计管线。项目页Code为空。",
+      "arxiv_id": "2611.29195",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-22T03:39:52Z",
+      "source_url": "https://arxiv.org/abs/2611.29195v1",
+      "sources": [
+        "https://arxiv.org/abs/2611.29195v1",
+        "https://arxiv.org/html/2611.29195v1",
+        "https://linyh0525.github.io/FunGrasp-Zero/"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.30264",
+      "title": "Skill-Adaptive Noise Scheduling for Diffusion Policies",
+      "authors": [
+        "Woo Kyung Kim",
+        "Gwangpyo Yoo",
+        "Eunyoung Park",
+        "Honguk Woo"
+      ],
+      "date": "2026-11-23",
+      "year": 2026,
+      "category": "Policy Optimization",
+      "scope": "adjacent",
+      "tags": [
+        "Imitation learning",
+        "Diffusion / flow policy",
+        "Bimanual coordination",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Learns skill-conditioned per-dimension diffusion noise schedules, regularized through inverse reconstruction from Legendre coefficients. On simulated DexMimicGen, adaptive denoising reduces mean steps from 10 to 5.4 while retaining 63.8% success versus 64.1%. Hardware tests use a parallel gripper.",
+      "tldr_zh": "学习技能条件下逐维扩散噪声调度，以Legendre系数反推技能作正则。DexMimicGen仿真中平均去噪步数从10降至5.4，成功率64.1%变为63.8%；实机验证使用平行夹爪。",
+      "notes_zh": "多指证据来自DexMimicGen与Bi-DexHands仿真；Bi-DexHands报告回报，不能解释为成功率。UR7e实机对照为DP而非最强仿真技能基线；去噪步数减少不等于等比例端到端加速。未核验到项目或代码地址，未复现。",
+      "sensing": [
+        "RGB observations",
+        "Proprioceptive state",
+        "Simulator state in low-dimensional benchmarks"
+      ],
+      "hand": [
+        "Dexterous hands on dual Panda arms and GR-1 (simulation)",
+        "Shadow hands (simulation)",
+        "Robotiq 2F-85 parallel gripper (hardware only)"
+      ],
+      "task": [
+        "Bimanual manipulation",
+        "Contact-rich alignment and insertion"
+      ],
+      "method": [
+        "Skill-conditioned noise scheduling",
+        "Inverse schedule regularization",
+        "Cluster-specific denoising budgets"
+      ],
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.30264"
+      },
+      "arxiv_id": "2611.30264",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-23T08:25:56Z",
+      "source_url": "https://arxiv.org/abs/2611.30264v1",
+      "sources": [
+        "https://arxiv.org/html/2611.30264v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.30449",
+      "title": "CHAMP: Coordinated Humanoid Loco-Manipulation with Whole-Body Motion Priors",
+      "authors": [
+        "Lijun Han",
+        "Muyuan Ma",
+        "Zichen Wang",
+        "Siyuan Liu",
+        "Yuxi Liu",
+        "Yutong Wang",
+        "Bohao Zhang",
+        "Heng Zhou",
+        "Wei Sui"
+      ],
+      "date": "2026-11-23",
+      "year": 2026,
+      "category": "Dexterous Manipulation",
+      "scope": "core",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.30449",
+        "project": "https://han-li-jun.github.io/CHAMP/index.html"
+      },
+      "tags": [
+        "Imitation learning",
+        "Vision-language-action",
+        "Diffusion / flow policy",
+        "Human motion transfer",
+        "Teleoperation",
+        "Dexterous grasping",
+        "Bimanual coordination",
+        "Tool use",
+        "Long-horizon tasks",
+        "Articulated objects",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Pretrains body–hand motion priors and uses sparse feature routing with flow matching to jointly control humanoid motion and two Dex3 hands. After task-specific demonstration fine-tuning, CHAMP achieves 84.8% across seven simulated tasks and 64/70 physical trials, including 7/10 complete popcorn-serving sequences.",
+      "tldr_zh": "预训练身体与手部运动先验，通过稀疏特征路由和流匹配联合控制人形运动与双Dex3手。逐任务示教微调后，七项仿真任务平均成功率84.8%；七项实机共64/70成功，其中完整爆米花服务流程7/10。",
+      "sensing": [
+        "RGB image",
+        "Wrist and pelvis poses",
+        "Body and hand joint angles"
+      ],
+      "hand": [
+        "Two Unitree Dex3 hands on G1 (seven joint commands per hand)"
+      ],
+      "task": [
+        "Humanoid bimanual loco-manipulation",
+        "Scoop-and-container popcorn serving",
+        "Laundry loading and door operation"
+      ],
+      "method": [
+        "Heterogeneous body-hand motion pretraining",
+        "Sparse cross-layer Coordination-oriented Action Expert",
+        "Flow-matching body-latent and hand-action generation"
+      ],
+      "notes_zh": "每任务100条示教及独立微调，控制评测仅单一G1平台；未验证跨平台或未见任务泛化。无触觉/力反馈输入，接触力过大导致两次爆米花任务失败。未核验到代码链接。",
+      "arxiv_id": "2611.30449",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-23T10:40:38Z",
+      "source_url": "https://arxiv.org/abs/2611.30449v1",
+      "sources": [
+        "https://arxiv.org/abs/2611.30449v1",
+        "https://arxiv.org/html/2611.30449v1",
+        "https://han-li-jun.github.io/CHAMP/index.html"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "id": "2611.30477",
+      "title": "OVOGO: Offline Value-Guided On-Policy Generative Optimization for Flow-Based Vision-Language-Action Models",
+      "authors": [
+        "Rongzheng Yang",
+        "Jiaming Guo",
+        "Yuxuan Guo",
+        "Zihao Zhang",
+        "Yunkai Gao",
+        "Siming Lan",
+        "Shaohui Peng",
+        "Rui Zhang",
+        "Tianyun Ma",
+        "Xing Hu",
+        "Yunji Chen"
+      ],
+      "date": "2026-11-23",
+      "year": 2026,
+      "category": "Policy Optimization",
+      "scope": "core",
+      "tags": [
+        "Reinforcement learning",
+        "Vision-language-action",
+        "Foundation policy",
+        "Diffusion / flow policy",
+        "Vision",
+        "Proprioception"
+      ],
+      "tldr": "Trains a return-anchored ranking critic on logged experience, then optimizes fresh flow-policy samples through selected generation transitions. Evaluated on three simulators and UR5e–INSPIRE block stacking, improving the real task from 9/20 to 16/20 without new interactions during offline optimization.",
+      "tldr_zh": "用历史交互训练回报锚定排序价值模型，再对新采样动作的部分流生成步骤优化。覆盖三套仿真及UR5e–INSPIRE实机叠块，实机从9/20提升至16/20；离线优化期间不新增环境交互。",
+      "notes_zh": "主实验离线训练；RoboTwin仿真的迭代设置每轮新增100回合/任务，不能称全流程零交互。实机仅一个任务、各20试次，执行双RGB与12维构型状态，无触觉证据。基准检查点和基线仓库不等于本论文代码，未收录为代码链接，未复现。",
+      "sensing": [
+        "Two RGB cameras",
+        "12-dimensional measured arm/hand actuator positions"
+      ],
+      "hand": [
+        "INSPIRE RH56DFX-series hand on UR5e"
+      ],
+      "task": [
+        "DexJoCo dexterous tasks",
+        "Real-robot block stacking",
+        "General simulated manipulation"
+      ],
+      "method": [
+        "Return-Anchored Ranking Critic",
+        "Offline VLA post-training",
+        "Selected-transition flow optimization"
+      ],
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.30477"
+      },
+      "arxiv_id": "2611.30477",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-23T11:04:04Z",
+      "source_url": "https://arxiv.org/abs/2611.30477v1",
+      "sources": [
+        "https://arxiv.org/html/2611.30477v1"
+      ],
+      "summary_basis": "Codex review of arXiv fulltext (v1)",
+      "date_kind": "First arXiv submission"
+    },
+    {
+      "category": "Tactile Dexterous Manipulation",
+      "scope": "core",
+      "tags": [
+        "Imitation learning",
+        "Diffusion / flow policy",
+        "Bimanual coordination",
+        "Tool use",
+        "Tactile feedback",
+        "Vision",
+        "Proprioception",
+        "Dataset / benchmark"
+      ],
+      "tldr": "HiMoDex pretrains hierarchical vision–touch–force–audio representations, then freezes them for a flow-based world-action policy on two Revo2 hands. Real-robot evaluation uses 30 trials per setting. Its reported 78.7% average combines four full-task rates with a screwdriver subgoal rate; no method completes screw tightening.",
+      "tldr_zh": "HiMoDex预训练视觉、触觉、力矩与音频的分层表征，再冻结编码器学习流式世界—动作策略，并在双Revo2手实机每设置评测30次。报告的78.7%均值混合四项完整任务与螺丝刀子目标成功率；所有方法均未完成完整拧螺钉。",
+      "sensing": [
+        "Multi-view RGB",
+        "Normal and tangential forces from ten fingertips",
+        "Two six-axis wrist force–torque sensors",
+        "Audio",
+        "Arm, end-effector and hand proprioception"
+      ],
+      "hand": [
+        "Two BrainCo Revo2 five-finger hands"
+      ],
+      "task": [
+        "Packing a conveyor box",
+        "Whiteboard wiping",
+        "Plug insertion",
+        "Powered-brush pan scrubbing",
+        "Screwdriver grasp-and-approach subgoal"
+      ],
+      "method": [
+        "Two-stage hierarchical multimodal pretraining",
+        "Intra-inter sensor transformers and gated interaction fusion",
+        "Frozen world-state encoders",
+        "Flow-matching action generation with auxiliary future-state prediction"
+      ],
+      "notes_zh": "训练数据包含约119万同步时间步和另采的770条下游示教；主评测每设置30次，消融10次。拧螺钉仅计抓取螺丝刀并靠近螺钉的子目标，不能把78.7%称为五项完整任务完成率。实际打开官方摘要所链项目网址返回404，未保留未验证的项目或代码链接；代码与数据发布尚未核验。未复现。",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.31782"
+      },
+      "id": "2611.31782",
+      "title": "Many Senses, One World: Learning Hierarchical Multimodal World Representations for Bimanual Dexterous Manipulation",
+      "authors": [
+        "Jin Yang",
+        "Youlin Wang",
+        "Ping Wei"
+      ],
+      "date": "2026-11-24",
+      "year": 2026,
+      "arxiv_id": "2611.31782",
+      "arxiv_version": 1,
+      "arxiv_updated": "2026-11-24T01:33:23Z",
+      "source_url": "https://arxiv.org/abs/2611.31782v1",
+      "sources": [
+        "https://arxiv.org/abs/2611.31782v1",
+        "https://arxiv.org/html/2611.31782v1"
       ],
       "summary_basis": "Codex review of arXiv fulltext (v1)",
       "date_kind": "First arXiv submission"

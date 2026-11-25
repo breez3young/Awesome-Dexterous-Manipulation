@@ -1,22 +1,21 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T09:34:42Z",
+  "updated_at": "2026-11-25T02:11:22Z",
   "rejected_ids": [],
   "items": [
     {
-      "id": "2611.27967",
-      "title": "Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design",
+      "id": "2611.31782",
+      "title": "Many Senses, One World: Learning Hierarchical Multimodal World Representations for Bimanual Dexterous Manipulation",
       "authors": [
-        "Haoyang Wang",
-        "Weibo Gao",
-        "Zhengxiong Li",
-        "Lingfeng Tao"
+        "Jin Yang",
+        "Youlin Wang",
+        "Ping Wei"
       ],
-      "published": "2026-11-20T18:48:12Z",
-      "updated": "2026-11-20T18:48:12Z",
+      "published": "2026-11-24T01:33:23Z",
+      "updated": "2026-11-24T01:33:23Z",
       "links": {
-        "paper": "https://arxiv.org/abs/2611.27967",
-        "pdf": "https://arxiv.org/pdf/2611.27967"
+        "paper": "https://arxiv.org/abs/2611.31782",
+        "pdf": "https://arxiv.org/pdf/2611.31782"
       },
       "matched_topics": [
         "dexterous",
@@ -25,33 +24,34 @@
       "evidence": [
         {
           "source": "abstract",
-          "text": "… An evidence-driven design trajectory for bidirectional in-hand manipulation yielded SAGE Hand (Skill-Aware Generative Embodiment): four fingers, 16 actuated DoF, an integrated guiding …"
+          "text": "Bimanual dexterous manipulation relies on multimodal inputs that capture visual context and non-visual physical interaction cues for precise and coordinated control. To …"
         }
       ],
       "review_status": "pending",
-      "first_seen": "2026-11-23T09:34:42Z",
-      "last_seen": "2026-11-23T09:34:42Z"
+      "first_seen": "2026-11-25T02:11:22Z",
+      "last_seen": "2026-11-25T02:11:22Z"
     },
     {
-      "id": "2602.07413",
-      "title": "Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity",
+      "id": "2611.30477",
+      "title": "OVOGO: Offline Value-Guided On-Policy Generative Optimization for Flow-Based Vision-Language-Action Models",
       "authors": [
-        "Yunhai Han",
-        "Jiaqi Fu",
-        "Linhao Bai",
-        "Ziyu Xiao",
-        "Zhaodong Yang",
-        "Yogita Choudhary",
-        "Krishna Jha",
-        "Chuizheng Kong",
-        "Shreyas Kousik",
-        "Harish Ravichandar"
+        "Rongzheng Yang",
+        "Jiaming Guo",
+        "Yuxuan Guo",
+        "Zihao Zhang",
+        "Yunkai Gao",
+        "Siming Lan",
+        "Shaohui Peng",
+        "Rui Zhang",
+        "Tianyun Ma",
+        "Xing Hu",
+        "Yunji Chen"
       ],
-      "published": "2026-02-07T07:18:00Z",
-      "updated": "2026-11-20T18:37:46Z",
+      "published": "2026-11-23T11:04:04Z",
+      "updated": "2026-11-23T11:04:04Z",
       "links": {
-        "paper": "https://arxiv.org/abs/2602.07413",
-        "pdf": "https://arxiv.org/pdf/2602.07413"
+        "paper": "https://arxiv.org/abs/2611.30477",
+        "pdf": "https://arxiv.org/pdf/2611.30477"
       },
       "matched_topics": [
         "dexterous"
@@ -59,41 +59,42 @@
       "evidence": [
         {
           "source": "abstract",
-          "text": "… remain far from reliable, particularly for multi-fingered dexterity. Importantly, they model skills as reactive mappings and rely on fixed-horizon action chunking, creating …"
+          "text": "… LIBERO, as well as a real-robot dexterous manipulation task, show that OVOGO improves the initial VLA across all four settings and achieves …"
         }
       ],
       "review_status": "pending",
-      "first_seen": "2026-11-23T09:34:42Z",
-      "last_seen": "2026-11-23T09:34:42Z"
+      "first_seen": "2026-11-25T02:11:22Z",
+      "last_seen": "2026-11-25T02:11:22Z"
     },
     {
-      "id": "2611.24938",
-      "title": "Phoenix: Learning Scene Structure Representations for Generalizable World-Action Models",
+      "id": "2606.10244",
+      "title": "YUBI: Yielding Universal Bidigital Interface for Bimanual Dexterous Manipulation at Scale",
       "authors": [
-        "Yupeng Zheng",
-        "Chaoyue Li",
-        "Linbo Wang",
-        "Xiang Li",
-        "Yuhang Zheng",
-        "Xiaotong Su",
-        "Songen Gu",
-        "Yichen Zhang",
-        "Zebin Xing",
-        "Shuai Tian",
-        "Jingxiang Guo",
-        "Jing Li",
-        "Zhiyong Zhao",
-        "Zhongpu Xia",
-        "Qichao Zhang",
-        "Haoran Li",
-        "Shuicheng Yan",
-        "Dongbin Zhao"
+        "Takehiko Ohkawa",
+        "Jumpei Arima",
+        "Yuki Noguchi",
+        "Masatoshi Tateno",
+        "Makoto Sugiura",
+        "Takuya Okubo",
+        "Kengo Ikeuchi",
+        "Yuma Shin",
+        "Hiroki Nishizawa",
+        "Naoaki Kanazawa",
+        "Yuki Wakayama",
+        "Daiki Fukunaga",
+        "Koshi Makihara",
+        "Tomohiro Motoda",
+        "Floris Erich",
+        "Yukiyasu Domae",
+        "Tatsuya Matsushima",
+        "Yohishiro Okumatsu",
+        "Kei Ota"
       ],
-      "published": "2026-11-18T18:59:04Z",
-      "updated": "2026-11-20T05:03:55Z",
+      "published": "2026-06-08T23:21:14Z",
+      "updated": "2026-11-23T10:57:25Z",
       "links": {
-        "paper": "https://arxiv.org/abs/2611.24938",
-        "pdf": "https://arxiv.org/pdf/2611.24938"
+        "paper": "https://arxiv.org/abs/2606.10244",
+        "pdf": "https://arxiv.org/pdf/2606.10244"
       },
       "matched_topics": [
         "dexterous"
@@ -101,12 +102,73 @@
       "evidence": [
         {
           "source": "abstract",
-          "text": "… real-robot benchmarks spanning single-arm, bimanual, and dexterous manipulation. It demonstrates strong robustness to perturbations, achieving success rates of 94.8% on LIBERO-Plus and …"
+          "text": "… and scalable data collection for bimanual dexterous manipulation. While handheld data collection systems such as Universal Manipulation Interface (UMI) enable affordable data …"
         }
       ],
       "review_status": "pending",
-      "first_seen": "2026-11-19T09:14:19Z",
-      "last_seen": "2026-11-23T09:34:42Z"
+      "first_seen": "2026-11-25T02:11:22Z",
+      "last_seen": "2026-11-25T02:11:22Z"
+    },
+    {
+      "id": "2611.30449",
+      "title": "CHAMP: Coordinated Humanoid Loco-Manipulation with Whole-Body Motion Priors",
+      "authors": [
+        "Lijun Han",
+        "Muyuan Ma",
+        "Zichen Wang",
+        "Siyuan Liu",
+        "Yuxi Liu",
+        "Yutong Wang",
+        "Bohao Zhang",
+        "Heng Zhou",
+        "Wei Sui"
+      ],
+      "published": "2026-11-23T10:40:38Z",
+      "updated": "2026-11-23T10:40:38Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.30449",
+        "pdf": "https://arxiv.org/pdf/2611.30449"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Coordinating locomotion and dexterous manipulation is fundamental to humanoid robots operating in human environments. A key challenge is learning motion priors from …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-25T02:11:22Z",
+      "last_seen": "2026-11-25T02:11:22Z"
+    },
+    {
+      "id": "2611.30264",
+      "title": "Skill-Adaptive Noise Scheduling for Diffusion Policies",
+      "authors": [
+        "Woo Kyung Kim",
+        "Gwangpyo Yoo",
+        "Eunyoung Park",
+        "Honguk Woo"
+      ],
+      "published": "2026-11-23T08:25:56Z",
+      "updated": "2026-11-23T08:25:56Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.30264",
+        "pdf": "https://arxiv.org/pdf/2611.30264"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… achievable performance, particularly for contact-rich and dexterous manipulation tasks where different skills exhibit distinct couplings between action dimensions. In this paper, we …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-25T02:11:22Z",
+      "last_seen": "2026-11-25T02:11:22Z"
     },
     {
       "id": "2611.27042",
@@ -148,7 +210,7 @@
         "Qian Wang"
       ],
       "published": "2026-11-20T03:14:26Z",
-      "updated": "2026-11-20T03:14:26Z",
+      "updated": "2026-11-23T07:01:15Z",
       "links": {
         "paper": "https://arxiv.org/abs/2611.27042",
         "pdf": "https://arxiv.org/pdf/2611.27042"
@@ -164,7 +226,257 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-23T09:34:42Z",
-      "last_seen": "2026-11-23T09:34:42Z"
+      "last_seen": "2026-11-25T02:11:22Z"
+    },
+    {
+      "id": "2611.25683",
+      "title": "TipDex-VTLA: Learning to Refine Actions with Visual Reliability and Tactile Feedback for Dexterous Manipulation",
+      "authors": [
+        "Xudi Ge",
+        "Yepeng Liu",
+        "Haifeng Liu",
+        "Enze Shi",
+        "Liangqi Zhang",
+        "Yongchao Xu"
+      ],
+      "published": "2026-11-19T08:01:59Z",
+      "updated": "2026-11-22T09:50:49Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.25683",
+        "pdf": "https://arxiv.org/pdf/2611.25683"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… illumination can induce action drift in dexterous manipulation even when the physical state remains unchanged. Although existing vision--tactile--language--action (VTLA) policies incorporate tactile …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-20T08:57:19Z",
+      "last_seen": "2026-11-25T02:11:22Z"
+    },
+    {
+      "id": "2611.29195",
+      "title": "FunGrasp-Zero: Field-Conditioned Graph Attention Policy for Zero-Shot Cross-Embodiment Dexterous Functional Grasping",
+      "authors": [
+        "Yanhan Lin",
+        "Yuliang Wu",
+        "Yihao Guo",
+        "Wei-Jin Huang",
+        "Jianwen Li",
+        "Jiawei Tang",
+        "Xiaolong Huang",
+        "Yuquan Wang",
+        "Ancong Wu",
+        "Wei-Shi Zheng"
+      ],
+      "published": "2026-11-22T03:39:52Z",
+      "updated": "2026-11-22T03:39:52Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.29195",
+        "pdf": "https://arxiv.org/pdf/2611.29195"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… (FC-GAT) leverages these vectors to coordinate multi-finger motion across hands, while a potential field reward guides fingers toward target regions and penalizes …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-25T02:11:22Z",
+      "last_seen": "2026-11-25T02:11:22Z"
+    },
+    {
+      "id": "2611.29011",
+      "title": "graspit-py: A Python Interface to GraspIt! for Grasp Planning Under Pose and Friction Uncertainty",
+      "authors": [
+        "Clinton Enwerem",
+        "John S. Baras",
+        "Calin Belta"
+      ],
+      "published": "2026-11-21T19:41:50Z",
+      "updated": "2026-11-21T19:41:50Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.29011",
+        "pdf": "https://arxiv.org/pdf/2611.29011"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "In simulated multifingered grasps, pose error can change contacts formed during hand closure, while friction uncertainty changes the loads supported by those …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-25T02:11:22Z",
+      "last_seen": "2026-11-25T02:11:22Z"
+    },
+    {
+      "id": "2611.28675",
+      "title": "Doing More with Less: Complex Manipulation with a Contact-Adaptive Robotic Hand",
+      "authors": [
+        "Hyung Gon Shin",
+        "Sanghoon Jung"
+      ],
+      "published": "2026-11-21T08:51:48Z",
+      "updated": "2026-11-21T08:51:48Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.28675",
+        "pdf": "https://arxiv.org/pdf/2611.28675"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… tasks, including smartphone pickup and charging, in-hand manipulation, object unboxing and repackaging, and cutting and tying cords, through the combination of the …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-25T02:11:22Z",
+      "last_seen": "2026-11-25T02:11:22Z"
+    },
+    {
+      "id": "2611.28512",
+      "title": "Lifted Multiple Shooting for Parallel-in-Time Contact-Rich Trajectory Optimization",
+      "authors": [
+        "Wei-Chen Li",
+        "Glen Chou"
+      ],
+      "published": "2026-11-21T02:57:57Z",
+      "updated": "2026-11-21T02:57:57Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.28512",
+        "pdf": "https://arxiv.org/pdf/2611.28512"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… planning tasks, including nonprehensile pushing and in-hand manipulation, without contact-guiding costs. Lifted multiple shooting improves success rates by up to 81.5 percentage …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-25T02:11:22Z",
+      "last_seen": "2026-11-25T02:11:22Z"
+    },
+    {
+      "id": "2611.27967",
+      "title": "Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design",
+      "authors": [
+        "Haoyang Wang",
+        "Weibo Gao",
+        "Zhengxiong Li",
+        "Lingfeng Tao"
+      ],
+      "published": "2026-11-20T18:48:12Z",
+      "updated": "2026-11-20T18:48:12Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.27967",
+        "pdf": "https://arxiv.org/pdf/2611.27967"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… An evidence-driven design trajectory for bidirectional in-hand manipulation yielded SAGE Hand (Skill-Aware Generative Embodiment): four fingers, 16 actuated DoF, an integrated guiding …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-23T09:34:42Z",
+      "last_seen": "2026-11-25T02:11:22Z"
+    },
+    {
+      "id": "2602.07413",
+      "title": "Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity",
+      "authors": [
+        "Yunhai Han",
+        "Jiaqi Fu",
+        "Linhao Bai",
+        "Ziyu Xiao",
+        "Zhaodong Yang",
+        "Yogita Choudhary",
+        "Krishna Jha",
+        "Chuizheng Kong",
+        "Shreyas Kousik",
+        "Harish Ravichandar"
+      ],
+      "published": "2026-02-07T07:18:00Z",
+      "updated": "2026-11-20T18:37:46Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2602.07413",
+        "pdf": "https://arxiv.org/pdf/2602.07413"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… remain far from reliable, particularly for multi-fingered dexterity. Importantly, they model skills as reactive mappings and rely on fixed-horizon action chunking, creating …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-23T09:34:42Z",
+      "last_seen": "2026-11-25T02:11:22Z"
+    },
+    {
+      "id": "2611.24938",
+      "title": "Phoenix: Learning Scene Structure Representations for Generalizable World-Action Models",
+      "authors": [
+        "Yupeng Zheng",
+        "Chaoyue Li",
+        "Linbo Wang",
+        "Xiang Li",
+        "Yuhang Zheng",
+        "Xiaotong Su",
+        "Songen Gu",
+        "Yichen Zhang",
+        "Zebin Xing",
+        "Shuai Tian",
+        "Jingxiang Guo",
+        "Jing Li",
+        "Zhiyong Zhao",
+        "Zhongpu Xia",
+        "Qichao Zhang",
+        "Haoran Li",
+        "Shuicheng Yan",
+        "Dongbin Zhao"
+      ],
+      "published": "2026-11-18T18:59:04Z",
+      "updated": "2026-11-20T05:03:55Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.24938",
+        "pdf": "https://arxiv.org/pdf/2611.24938"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… real-robot benchmarks spanning single-arm, bimanual, and dexterous manipulation. It demonstrates strong robustness to perturbations, achieving success rates of 94.8% on LIBERO-Plus and …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-19T09:14:19Z",
+      "last_seen": "2026-11-25T02:11:22Z"
     },
     {
       "id": "2611.26855",
@@ -194,38 +506,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-23T09:34:42Z",
-      "last_seen": "2026-11-23T09:34:42Z"
-    },
-    {
-      "id": "2611.25683",
-      "title": "TipDex-VTLA: Learning When to Refine Actions with Touch for Dexterous Manipulation",
-      "authors": [
-        "Xudi Ge",
-        "Yepeng Liu",
-        "Haifeng Liu",
-        "Enze Shi",
-        "Liangqi Zhang",
-        "Yongchao Xu"
-      ],
-      "published": "2026-11-19T08:01:59Z",
-      "updated": "2026-11-19T08:01:59Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2611.25683",
-        "pdf": "https://arxiv.org/pdf/2611.25683"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… illumination can induce action drift in dexterous manipulation even when the physical state remains unchanged. Although existing vision--tactile--language--action (VTLA) policies incorporate tactile …"
-        }
-      ],
-      "review_status": "pending",
-      "first_seen": "2026-11-20T08:57:19Z",
-      "last_seen": "2026-11-23T09:34:42Z"
+      "last_seen": "2026-11-25T02:11:22Z"
     },
     {
       "id": "2610.21180",
@@ -262,7 +543,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-11-23T09:34:42Z"
+      "last_seen": "2026-11-25T02:11:22Z"
     },
     {
       "id": "2611.24585",
@@ -299,7 +580,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-19T09:14:19Z",
-      "last_seen": "2026-11-23T09:34:42Z"
+      "last_seen": "2026-11-25T02:11:22Z"
     },
     {
       "id": "2611.24207",
@@ -330,7 +611,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-19T09:14:19Z",
-      "last_seen": "2026-11-23T09:34:42Z"
+      "last_seen": "2026-11-25T02:11:22Z"
     },
     {
       "id": "2608.02014",
@@ -359,7 +640,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-19T06:37:32Z",
-      "last_seen": "2026-11-23T09:34:42Z"
+      "last_seen": "2026-11-25T02:11:22Z"
     },
     {
       "id": "2611.23961",
@@ -396,7 +677,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-19T09:14:19Z",
-      "last_seen": "2026-11-23T09:34:42Z"
+      "last_seen": "2026-11-25T02:11:22Z"
     },
     {
       "id": "2611.23676",

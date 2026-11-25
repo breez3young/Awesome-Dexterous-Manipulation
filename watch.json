@@ -1,20 +1,243 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-11-23T09:34:42Z",
+  "last_checked_at": "2026-11-25T02:11:22Z",
   "lookback_days": 7,
-  "window_start": "2026-11-16T09:34:42Z",
+  "window_start": "2026-11-18T02:11:22Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 127,
-  "recent_match_count": 20,
-  "new_candidate_count": 4,
-  "updated_candidate_count": 1,
+  "candidate_count": 136,
+  "recent_match_count": 21,
+  "new_candidate_count": 9,
+  "updated_candidate_count": 2,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2611.31782",
+      "title": "Many Senses, One World: Learning Hierarchical Multimodal World Representations for Bimanual Dexterous Manipulation",
+      "published": "2026-11-24T01:33:23Z",
+      "updated": "2026-11-24T01:33:23Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.31782",
+        "pdf": "https://arxiv.org/pdf/2611.31782"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Bimanual dexterous manipulation relies on multimodal inputs that capture visual context and non-visual physical interaction cues for precise and coordinated control. To …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.30477",
+      "title": "OVOGO: Offline Value-Guided On-Policy Generative Optimization for Flow-Based Vision-Language-Action Models",
+      "published": "2026-11-23T11:04:04Z",
+      "updated": "2026-11-23T11:04:04Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.30477",
+        "pdf": "https://arxiv.org/pdf/2611.30477"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… LIBERO, as well as a real-robot dexterous manipulation task, show that OVOGO improves the initial VLA across all four settings and achieves …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2606.10244",
+      "title": "YUBI: Yielding Universal Bidigital Interface for Bimanual Dexterous Manipulation at Scale",
+      "published": "2026-06-08T23:21:14Z",
+      "updated": "2026-11-23T10:57:25Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.10244",
+        "pdf": "https://arxiv.org/pdf/2606.10244"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… and scalable data collection for bimanual dexterous manipulation. While handheld data collection systems such as Universal Manipulation Interface (UMI) enable affordable data …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.30449",
+      "title": "CHAMP: Coordinated Humanoid Loco-Manipulation with Whole-Body Motion Priors",
+      "published": "2026-11-23T10:40:38Z",
+      "updated": "2026-11-23T10:40:38Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.30449",
+        "pdf": "https://arxiv.org/pdf/2611.30449"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Coordinating locomotion and dexterous manipulation is fundamental to humanoid robots operating in human environments. A key challenge is learning motion priors from …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.30264",
+      "title": "Skill-Adaptive Noise Scheduling for Diffusion Policies",
+      "published": "2026-11-23T08:25:56Z",
+      "updated": "2026-11-23T08:25:56Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.30264",
+        "pdf": "https://arxiv.org/pdf/2611.30264"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… achievable performance, particularly for contact-rich and dexterous manipulation tasks where different skills exhibit distinct couplings between action dimensions. In this paper, we …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.27042",
+      "title": "RoboColiseum: Co-evolution of Simulation, Evaluation, and Models",
+      "published": "2026-11-20T03:14:26Z",
+      "updated": "2026-11-23T07:01:15Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.27042",
+        "pdf": "https://arxiv.org/pdf/2611.27042"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… following, spatial reasoning, general manipulation, robustness, dexterous manipulation, precision manipulation, whole-body coordination, and execution across robot embodiments. Budget-aware scoring combines task progress, …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.25683",
+      "title": "TipDex-VTLA: Learning to Refine Actions with Visual Reliability and Tactile Feedback for Dexterous Manipulation",
+      "published": "2026-11-19T08:01:59Z",
+      "updated": "2026-11-22T09:50:49Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.25683",
+        "pdf": "https://arxiv.org/pdf/2611.25683"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… illumination can induce action drift in dexterous manipulation even when the physical state remains unchanged. Although existing vision--tactile--language--action (VTLA) policies incorporate tactile …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.29195",
+      "title": "FunGrasp-Zero: Field-Conditioned Graph Attention Policy for Zero-Shot Cross-Embodiment Dexterous Functional Grasping",
+      "published": "2026-11-22T03:39:52Z",
+      "updated": "2026-11-22T03:39:52Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.29195",
+        "pdf": "https://arxiv.org/pdf/2611.29195"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… (FC-GAT) leverages these vectors to coordinate multi-finger motion across hands, while a potential field reward guides fingers toward target regions and penalizes …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.29011",
+      "title": "graspit-py: A Python Interface to GraspIt! for Grasp Planning Under Pose and Friction Uncertainty",
+      "published": "2026-11-21T19:41:50Z",
+      "updated": "2026-11-21T19:41:50Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.29011",
+        "pdf": "https://arxiv.org/pdf/2611.29011"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "In simulated multifingered grasps, pose error can change contacts formed during hand closure, while friction uncertainty changes the loads supported by those …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.28675",
+      "title": "Doing More with Less: Complex Manipulation with a Contact-Adaptive Robotic Hand",
+      "published": "2026-11-21T08:51:48Z",
+      "updated": "2026-11-21T08:51:48Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.28675",
+        "pdf": "https://arxiv.org/pdf/2611.28675"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… tasks, including smartphone pickup and charging, in-hand manipulation, object unboxing and repackaging, and cutting and tying cords, through the combination of the …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.28512",
+      "title": "Lifted Multiple Shooting for Parallel-in-Time Contact-Rich Trajectory Optimization",
+      "published": "2026-11-21T02:57:57Z",
+      "updated": "2026-11-21T02:57:57Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.28512",
+        "pdf": "https://arxiv.org/pdf/2611.28512"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… planning tasks, including nonprehensile pushing and in-hand manipulation, without contact-guiding costs. Lifted multiple shooting improves success rates by up to 81.5 percentage …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2611.27967",
       "title": "Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design",
@@ -77,26 +300,6 @@
       "review_status": "pending"
     },
     {
-      "id": "2611.27042",
-      "title": "RoboColiseum: Co-evolution of Simulation, Evaluation, and Models",
-      "published": "2026-11-20T03:14:26Z",
-      "updated": "2026-11-20T03:14:26Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2611.27042",
-        "pdf": "https://arxiv.org/pdf/2611.27042"
-      },
-      "matched_topics": [
-        "dexterous"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… following, spatial reasoning, general manipulation, robustness, dexterous manipulation, precision manipulation, whole-body coordination, and execution across robot embodiments. Budget-aware scoring combines task progress, …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
       "id": "2611.26855",
       "title": "Coherent Moment Propagation: Epistemic Uncertainty for Pre-trained Robot Policies",
       "published": "2026-11-19T22:17:33Z",
@@ -112,27 +315,6 @@
         {
           "source": "abstract",
           "text": "… results ranging from long-horizon planning to dexterous manipulation. However, they provide no measure of whether their predicted commands can be trusted, particularly …"
-        }
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2611.25683",
-      "title": "TipDex-VTLA: Learning When to Refine Actions with Touch for Dexterous Manipulation",
-      "published": "2026-11-19T08:01:59Z",
-      "updated": "2026-11-19T08:01:59Z",
-      "links": {
-        "paper": "https://arxiv.org/abs/2611.25683",
-        "pdf": "https://arxiv.org/pdf/2611.25683"
-      },
-      "matched_topics": [
-        "dexterous",
-        "tactile"
-      ],
-      "evidence": [
-        {
-          "source": "abstract",
-          "text": "… illumination can induce action drift in dexterous manipulation even when the physical state remains unchanged. Although existing vision--tactile--language--action (VTLA) policies incorporate tactile …"
         }
       ],
       "review_status": "pending"
