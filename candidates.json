@@ -1,8 +1,161 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-25T02:11:22Z",
+  "updated_at": "2026-11-25T10:14:34Z",
   "rejected_ids": [],
   "items": [
+    {
+      "id": "2611.33144",
+      "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+      "authors": [
+        "Feixiang Ruan",
+        "Guodong Lv",
+        "Kewei Zhang",
+        "Wenbo Huang",
+        "Yintianrun Zhang",
+        "Qiang Wang",
+        "Ruiyang Si",
+        "Shunyu Yang",
+        "Shulong Jiang",
+        "Weicheng Duan",
+        "Rui Ni",
+        "Jianxin Bi",
+        "Lekai Wang",
+        "Yuze Fan",
+        "Haobo Li",
+        "Zeliang Fu",
+        "Jiankun Zhang",
+        "Duomin Wang",
+        "Enze Xie",
+        "Daquan Zhou"
+      ],
+      "published": "2026-11-24T18:56:44Z",
+      "updated": "2026-11-24T18:56:44Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.33144",
+        "pdf": "https://arxiv.org/pdf/2611.33144"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Learning for dexterous manipulation is limited by the scarcity of high-quality demonstrations: retargeting from human video is imprecise, teleoperation gives no force …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-25T10:14:34Z",
+      "last_seen": "2026-11-25T10:14:34Z"
+    },
+    {
+      "id": "2611.32513",
+      "title": "DiffAnchor: Anchor-Space Diffusion for Monocular 3D Hand Pose Estimation",
+      "authors": [
+        "Changlong Jiang",
+        "Youci Tang",
+        "Haohong Kuang",
+        "Hang Xu",
+        "Jinghong Zheng",
+        "Ran Wang",
+        "Zhenghong Yu",
+        "Chen Feng",
+        "Xiaofeng Yue",
+        "Yang Xiao"
+      ],
+      "published": "2026-11-24T12:42:03Z",
+      "updated": "2026-11-24T12:42:03Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.32513",
+        "pdf": "https://arxiv.org/pdf/2611.32513"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… capability for embodied human interaction and dexterous manipulation. Recent diffusion-based methods model pose uncertainty by iteratively denoising 3D joint coordinates. However, directly …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-25T10:14:34Z",
+      "last_seen": "2026-11-25T10:14:34Z"
+    },
+    {
+      "id": "2611.32476",
+      "title": "ViTacLab: Physically Consistent Visuo-Tactile Simulation, Benchmarking, and Representation Learning for Robotic Manipulation",
+      "authors": [
+        "Linjing You",
+        "Zeming Yang",
+        "Zhenhao Shen",
+        "Shengqiang Xu",
+        "Guanda Li",
+        "Wenxuan Li",
+        "Jiyu Guo",
+        "Jasper Lu",
+        "Kyle Xu",
+        "Shawn Xie",
+        "Junjie Zhu",
+        "Siyu Wu",
+        "Jian Liu",
+        "Changhao Zhang",
+        "Rongchong Li",
+        "Zeyi Li",
+        "Hengshuang Zhao",
+        "Ruihai Wu"
+      ],
+      "published": "2026-11-24T12:06:34Z",
+      "updated": "2026-11-24T12:06:34Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.32476",
+        "pdf": "https://arxiv.org/pdf/2611.32476"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… friction cones. ViTacBench spans parallel grippers, dexterous hands, and bimanual systems, with tasks ranging from vision-dominant to tactile-dominant regimes. ViTacPolicy aggregates variable …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-25T10:14:34Z",
+      "last_seen": "2026-11-25T10:14:34Z"
+    },
+    {
+      "id": "2611.32101",
+      "title": "Ego2Real: Learning Bimanual Dexterous Manipulation from Egocentric Visuo-Tactile Demonstrations",
+      "authors": [
+        "Ange Bao",
+        "Haishan Zhang",
+        "Lingzi Xie",
+        "Shuang Li",
+        "Pei Zhao",
+        "Ling Shi",
+        "Bidan Huang"
+      ],
+      "published": "2026-11-24T07:21:29Z",
+      "updated": "2026-11-24T07:21:29Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.32101",
+        "pdf": "https://arxiv.org/pdf/2611.32101"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Learning dexterous manipulation from egocentric human demonstrations offers a scalable path toward robot skill acquisition. Vision alone, however, provides limited information about …"
+        }
+      ],
+      "review_status": "pending",
+      "first_seen": "2026-11-25T10:14:34Z",
+      "last_seen": "2026-11-25T10:14:34Z"
+    },
     {
       "id": "2611.31782",
       "title": "Many Senses, One World: Learning Hierarchical Multimodal World Representations for Bimanual Dexterous Manipulation",
@@ -29,7 +182,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-25T02:11:22Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2611.30477",
@@ -64,7 +217,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-25T02:11:22Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2606.10244",
@@ -107,7 +260,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-25T02:11:22Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2611.30449",
@@ -140,7 +293,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-25T02:11:22Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2611.30264",
@@ -168,7 +321,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-25T02:11:22Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2611.27042",
@@ -226,7 +379,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-23T09:34:42Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2611.25683",
@@ -257,7 +410,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-20T08:57:19Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2611.29195",
@@ -291,7 +444,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-25T02:11:22Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2611.29011",
@@ -318,7 +471,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-25T02:11:22Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2611.28675",
@@ -345,7 +498,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-25T02:11:22Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2611.28512",
@@ -371,7 +524,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-25T02:11:22Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2611.27967",
@@ -400,7 +553,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-23T09:34:42Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2602.07413",
@@ -434,7 +587,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-23T09:34:42Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2611.24938",
@@ -476,7 +629,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-19T09:14:19Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2611.26855",
@@ -506,7 +659,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-23T09:34:42Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2610.21180",
@@ -543,7 +696,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-10-16T06:12:26Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2611.24585",
@@ -580,7 +733,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-19T09:14:19Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2611.24207",
@@ -611,7 +764,7 @@
       ],
       "review_status": "pending",
       "first_seen": "2026-11-19T09:14:19Z",
-      "last_seen": "2026-11-25T02:11:22Z"
+      "last_seen": "2026-11-25T10:14:34Z"
     },
     {
       "id": "2608.02014",

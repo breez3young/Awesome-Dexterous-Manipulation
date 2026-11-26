@@ -20256,6 +20256,473 @@
           ]
         }
       }
+    },
+    {
+      "key": "2611.32101|v1|2026-11-24T07:21:29+00:00|dexterous-v1",
+      "digest": "cf42af22e5ea1c9117773529fa6296aea6fe9383a736b7b2722c149ee5249d1a",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-26T04:10:16Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.32101",
+          "version": 1,
+          "title": "Ego2Real: Learning Bimanual Dexterous Manipulation from Egocentric Visuo-Tactile Demonstrations",
+          "authors": [
+            "Ange Bao",
+            "Haishan Zhang",
+            "Lingzi Xie",
+            "Shuang Li",
+            "Pei Zhao",
+            "Ling Shi",
+            "Bidan Huang"
+          ],
+          "published": "2026-11-24T07:21:29Z",
+          "updated": "2026-11-24T07:21:29Z",
+          "url": "https://arxiv.org/abs/2611.32101v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2611.32101v1",
+            "https://arxiv.org/html/2611.32101v1"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "以人类触觉手套和第一视角RGB-D示教改善手物重建、重定向与残差强化学习，并在双OmniHand 3实机验证两项灵巧任务，符合核心灵巧操作范围。触觉只用于人类参考、训练奖励和特权critic，实机actor明确不读取触觉，故归为Dexterous Manipulation且不添加Tactile feedback。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2611.32101v1",
+            "paraphrase": "官方v1摘要页核对完整题名、七名作者、首次及更新时间2026-11-24T07:21:29Z，未发现版本或身份差异。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.32101v1",
+            "paraphrase": "§3.1–3.2以人类手套信号约束MANO接触和持续接触几何，再用手物交互网格的Laplacian坐标重定向到OmniHand 3。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.32101v1",
+            "paraphrase": "§3.3及§9.1明确PPO actor仅用物体位姿、腕/指状态历史、前动作和参考相位等；人类及仿真触觉仅供接触奖励与特权critic，actor不接收触觉。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.32101v1",
+            "paraphrase": "§4.1、表2及§10.2：双Tianji Marvin Pro臂配OmniHand 3，每手10主动与6被动关节；FoundationPose在线估计物体位姿。瓶交接12/15成功，盒旋转15/15，均须完成四个顺序里程碑。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.32101v1",
+            "paraphrase": "§5和§9.5–10：每条示教单独训练，依赖物体网格且只验证两种刚体任务；仿真统计为同一训练策略的五个评测种子。实机15Hz按帧推进30Hz参考，执行时长加倍。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.32101v1",
+            "paraphrase": "§10.1在训练前用机器人手上的动捕刚体与关节激励辨识驱动响应、延迟和被动耦合；因此示教无需外部动捕不代表整套系统无需动捕标定。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.32101v1",
+          "paraphrase": "§3.3与§9.1明示真实部署actor排除触觉；模拟接触仅进入训练奖励和特权critic。§4.1/10.2实机闭环依赖FoundationPose物体位姿与机器人本体状态，机器人侧触觉被列为未来工作。"
+        },
+        "paper": {
+          "id": "2611.32101",
+          "title": "Ego2Real: Learning Bimanual Dexterous Manipulation from Egocentric Visuo-Tactile Demonstrations",
+          "authors": [
+            "Ange Bao",
+            "Haishan Zhang",
+            "Lingzi Xie",
+            "Shuang Li",
+            "Pei Zhao",
+            "Ling Shi",
+            "Bidan Huang"
+          ],
+          "date": "2026-11-24",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Reinforcement learning",
+            "Human motion transfer",
+            "Retargeting",
+            "Sim-to-real",
+            "Dexterous grasping",
+            "Bimanual coordination",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Uses human tactile-glove signals to refine egocentric hand–object reconstruction and supervise contact-aware residual RL. Two OmniHand 3 hands succeed in 12/15 bottle handovers and 15/15 box rotations. Real execution uses tracked object poses and proprioception without tactile input; policies are trained per demonstration.",
+          "tldr_zh": "用人类触觉手套信号改善第一视角手物重建，并以接触奖励训练残差强化学习策略。双OmniHand 3实机完成12/15次瓶交接和15/15次盒旋转；执行仅用物体位姿与本体状态，不读取触觉，且每条示教单独训练策略。",
+          "sensing": [
+            "RGB-D for demonstration reconstruction and object-pose tracking",
+            "Robot wrist and finger proprioception",
+            "Human tactile gloves (reconstruction and training only)"
+          ],
+          "hand": [
+            "Two OmniHand 3 hands (10 actuated and 6 passive joints per hand)",
+            "Tianji Marvin Pro bimanual arms"
+          ],
+          "task": [
+            "Bottle handover",
+            "Bimanual box rotation"
+          ],
+          "method": [
+            "Tactile-guided hand–object reconstruction",
+            "Interaction-mesh motion retargeting",
+            "Asymmetric PPO residual policy",
+            "Human-derived contact rewards",
+            "System identification and domain randomization"
+          ],
+          "notes_zh": "仅两项刚体任务，每项15次实机试验；每条示教单独训练，需已知物体网格与在线位姿跟踪。仿真误差条来自同一训练策略的五个评测种子，非五次独立训练。实机15Hz使30Hz参考执行时长加倍。人类示教无需外部动捕，但机器人手系统辨识使用动捕。未核验到属于本论文的项目或代码地址，未复现。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.32101"
+          }
+        }
+      }
+    },
+    {
+      "key": "2611.32476|v1|2026-11-24T12:06:34+00:00|dexterous-v1",
+      "digest": "40bc7369f5d20343a81e298326f0dd34c12be017dbb99d9952b4fc53279e19f8",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-26T04:10:16Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.32476",
+          "version": 1,
+          "title": "ViTacLab: Physically Consistent Visuo-Tactile Simulation, Benchmarking, and Representation Learning for Robotic Manipulation",
+          "authors": [
+            "Linjing You",
+            "Zeming Yang",
+            "Zhenhao Shen",
+            "Shengqiang Xu",
+            "Guanda Li",
+            "Wenxuan Li",
+            "Jiyu Guo",
+            "Jasper Lu",
+            "Kyle Xu",
+            "Shawn Xie",
+            "Junjie Zhu",
+            "Siyu Wu",
+            "Jian Liu",
+            "Changhao Zhang",
+            "Rongchong Li",
+            "Zeyi Li",
+            "Hengshuang Zhao",
+            "Ruihai Wu"
+          ],
+          "published": "2026-11-24T12:06:34Z",
+          "updated": "2026-11-24T12:06:34Z",
+          "url": "https://arxiv.org/abs/2611.32476v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.32476v1"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "paper": {
+          "id": "2611.32476",
+          "title": "ViTacLab: Physically Consistent Visuo-Tactile Simulation, Benchmarking, and Representation Learning for Robotic Manipulation",
+          "authors": [
+            "Linjing You",
+            "Zeming Yang",
+            "Zhenhao Shen",
+            "Shengqiang Xu",
+            "Guanda Li",
+            "Wenxuan Li",
+            "Jiyu Guo",
+            "Jasper Lu",
+            "Kyle Xu",
+            "Shawn Xie",
+            "Junjie Zhu",
+            "Siyu Wu",
+            "Jian Liu",
+            "Changhao Zhang",
+            "Rongchong Li",
+            "Zeyi Li",
+            "Hengshuang Zhao",
+            "Ruihai Wu"
+          ],
+          "date": "2026-11-24",
+          "year": 2026,
+          "category": "Tactile Sensing & Representation",
+          "scope": "core",
+          "tags": [
+            "Imitation learning",
+            "Sim-to-real",
+            "In-hand manipulation",
+            "Bimanual coordination",
+            "Tactile feedback",
+            "Vision",
+            "Proprioception",
+            "Dataset / benchmark"
+          ],
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.32476"
+          },
+          "tldr": "Combines PhysX-anchored tactile simulation, a 15-task benchmark, and shared-codebook force/image pretraining with pose-aware fusion. Real-data fine-tuning yields 61.3% mean success across three gripper tasks; physical dexterous and bimanual deployments are qualitative, and simulated blind grasping remains at 3%.",
+          "tldr_zh": "结合PhysX锚定触觉仿真、15任务基准及共享码本力阵列/触觉图像预训练与位姿融合。经真实数据微调，三项夹爪任务平均成功率61.3%；多指和双手实机仅定性验证，仿真盲抓仍仅3%。",
+          "sensing": [
+            "Dense tactile force arrays and optical tactile images",
+            "RGB observations and proprioceptive state"
+          ],
+          "hand": [
+            "Dexterous hands and bimanual systems (simulation; models unspecified)",
+            "Parallel grippers (quantitative real-world study)",
+            "Dexterous and bimanual hardware (qualitative; models unspecified)"
+          ],
+          "task": [
+            "Tactile simulation and cross-modal representation learning",
+            "Gripper insertion, gear meshing and nut threading",
+            "Dexterous grasping, in-hand manipulation and bimanual contact tasks"
+          ],
+          "method": [
+            "Solver-anchored normal/tangential force reconstruction and wrench projection",
+            "Pose-conditioned tactile Transformer aggregation",
+            "Shared-codebook two-stream VQ-VAE pretraining"
+          ],
+          "notes_zh": "实机各任务50条示教、50次评测；需要真实微调，非零样本迁移。实机手型和传感器型号未披露；逐任务显著性不足。未验证大变形、密集力场误差或广泛参数鲁棒性。未添加项目/代码链接：同名网页作者与arXiv不一致，且官方未互链确认。"
+        },
+        "reason_zh": "第III–V节提出触觉仿真与跨模态表征，并以包含多指/双手任务的基准验证，直接属于触觉感知与表征；夹爪量化结果与多指实机定性展示分别记录。",
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2611.32476v1",
+          "paraphrase": "第V-A节式7以当前触觉编码、RGB及本体状态生成动作；第VI-E节将该视触觉策略用于实机，触觉编码器经仿真预训练后在真实策略训练中微调。"
+        },
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2611.32476v1",
+            "paraphrase": "官方v1摘要页核对完整标题、18名作者及首次投稿时间2026-11-24T12:06:34Z。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.32476v1",
+            "paraphrase": "第III–V节描述力旋量约束触觉仿真、15任务基准和共享码本表示；第VI-E节夹爪三任务各50试验，其他实机部署仅定性，第VII节列明物理模型与评测限制。"
+          }
+        ]
+      }
+    },
+    {
+      "key": "2611.32513|v1|2026-11-24T12:42:03+00:00|dexterous-v1",
+      "digest": "61bd22554b71dcb2527fc1a30a26a273daa46408f51759fd75a73ad458c41b20",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-26T04:10:16Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.32513",
+          "version": 1,
+          "title": "DiffAnchor: Anchor-Space Diffusion for Monocular 3D Hand Pose Estimation",
+          "authors": [
+            "Changlong Jiang",
+            "Youci Tang",
+            "Haohong Kuang",
+            "Hang Xu",
+            "Jinghong Zheng",
+            "Ran Wang",
+            "Zhenghong Yu",
+            "Chen Feng",
+            "Xiaofeng Yue",
+            "Yang Xiao"
+          ],
+          "published": "2026-11-24T12:42:03Z",
+          "updated": "2026-11-24T12:42:03Z",
+          "url": "https://arxiv.org/abs/2611.32513v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2611.32513v1",
+            "https://arxiv.org/html/2611.32513v1"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "正文在HO-3D V2直接验证手物遮挡条件下的人手关节感知，符合Hand–Object Interaction相邻方法范围；不推断具备机器人灵巧控制能力。",
+        "paper": {
+          "id": "2611.32513",
+          "title": "DiffAnchor: Anchor-Space Diffusion for Monocular 3D Hand Pose Estimation",
+          "authors": [
+            "Changlong Jiang",
+            "Youci Tang",
+            "Haohong Kuang",
+            "Hang Xu",
+            "Jinghong Zheng",
+            "Ran Wang",
+            "Zhenghong Yu",
+            "Chen Feng",
+            "Xiaofeng Yue",
+            "Yang Xiao"
+          ],
+          "date": "2026-11-24",
+          "year": 2026,
+          "category": "Hand–Object Interaction",
+          "scope": "adjacent",
+          "tags": [
+            "Vision"
+          ],
+          "tldr": "Diffuses intermediate 3D anchors and aggregates anchor-to-joint offsets to estimate human hand poses from RGB or depth images. Three-step inference is evaluated on four offline benchmarks, including hand–object occlusion in HO-3D V2. Robot control and motion transfer are not evaluated.",
+          "tldr_zh": "在中间三维锚点空间扩散，再聚合锚点到关节的偏移估计人手姿态。三步推理在四套离线基准验证，包含HO-3D V2的手物遮挡；未验证机器人控制或运动迁移。",
+          "sensing": [
+            "Single RGB image or depth image"
+          ],
+          "hand": [
+            "Human hands"
+          ],
+          "task": [
+            "Offline 3D hand pose estimation under hand–object and inter-hand occlusion"
+          ],
+          "method": [
+            "Fixed context anchors with dynamic anchor diffusion",
+            "Importance-guided retention and replenishment",
+            "Weighted anchor-to-joint regression"
+          ],
+          "notes_zh": "作为手物交互感知的相邻方法收录。HO-3D V2误差18.5 mm经过尺度/平移对齐，不能等同绝对机器人定位误差；InterHand2.6M使用根部对齐。严重遮挡仍失败。扩散用于姿态估计，不标Diffusion / flow policy；未核验到项目或代码。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.32513"
+          }
+        },
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2611.32513v1",
+            "paraphrase": "核对10名作者、完整题名及首次投稿2026-11-24T12:42:03Z，版本v1。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.32513v1",
+            "paraphrase": "§III组合固定与动态锚点，保留高置信锚点并补充噪声候选；§IV采用RGB/深度四基准、三步DDIM，报告不同对齐协议，未做机器人部署。"
+          }
+        ]
+      }
+    },
+    {
+      "key": "2611.33144|v1|2026-11-24T18:56:44+00:00|dexterous-v1",
+      "digest": "61ddf9c568ce91c4da6b2b3b479c5f95d49da7dd6297db3b2bf6fe179c72940a",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-26T04:10:16Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.33144",
+          "version": 1,
+          "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+          "authors": [
+            "Feixiang Ruan",
+            "Guodong Lv",
+            "Kewei Zhang",
+            "Wenbo Huang",
+            "Yintianrun Zhang",
+            "Qiang Wang",
+            "Ruiyang Si",
+            "Shunyu Yang",
+            "Shulong Jiang",
+            "Weicheng Duan",
+            "Rui Ni",
+            "Jianxin Bi",
+            "Lekai Wang",
+            "Yuze Fan",
+            "Haobo Li",
+            "Zeliang Fu",
+            "Jiankun Zhang",
+            "Duomin Wang",
+            "Enze Xie",
+            "Daquan Zhou"
+          ],
+          "published": "2026-11-24T18:56:44Z",
+          "updated": "2026-11-24T18:56:44Z",
+          "url": "https://arxiv.org/abs/2611.33144v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2611.33144v1",
+            "https://arxiv.org/html/2611.33144v1",
+            "https://vme0522.github.io/PyRUA-Dex/",
+            "https://github.com/DAGroup-PKU/PyRUA-Lean/tree/dex"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "§3.2、§5及附录B明确实机指尖力/接触点输入与holding/feel接触检查，支持真实触觉闭环；实机示例涉及双22关节手，直接符合触觉灵巧操作。",
+        "paper": {
+          "id": "2611.33144",
+          "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+          "authors": [
+            "Feixiang Ruan",
+            "Guodong Lv",
+            "Kewei Zhang",
+            "Wenbo Huang",
+            "Yintianrun Zhang",
+            "Qiang Wang",
+            "Ruiyang Si",
+            "Shunyu Yang",
+            "Shulong Jiang",
+            "Weicheng Duan",
+            "Rui Ni",
+            "Jianxin Bi",
+            "Lekai Wang",
+            "Yuze Fan",
+            "Haobo Li",
+            "Zeliang Fu",
+            "Jiankun Zhang",
+            "Duomin Wang",
+            "Enze Xie",
+            "Daquan Zhou"
+          ],
+          "date": "2026-11-24",
+          "year": 2026,
+          "category": "Tactile Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Model-based planning",
+            "Sim-to-real",
+            "Bimanual coordination",
+            "Dexterous grasping",
+            "Tool use",
+            "Long-horizon tasks",
+            "Articulated objects",
+            "Tactile feedback",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Coding agents explore and refine task-specific programs in simulation; frozen programs then use vision, proprioception and fingertip feedback without test-time language-model calls. Bench2Dex scores 72.9 and DexJoCo success reaches 81.0% under full randomization. Real Sharpa-hand executions are demonstrated, but hardware success rates are not measured.",
+          "tldr_zh": "编码智能体在仿真中探索并逐阶段改进任务程序，冻结后通过视觉、本体和指尖反馈执行，无需测试时调用语言模型。Bench2Dex得分72.9，DexJoCo全随机化成功率81.0%；双Sharpa手实机仅展示执行，未统计实机成功率。",
+          "sensing": [
+            "Calibrated RGB cameras and head-camera depth",
+            "Arm and hand joint positions",
+            "Fingertip forces and contact points"
+          ],
+          "hand": [
+            "Two Sharpa Wave SE hands (22 joints each) on Franka FR3 arms",
+            "Twelve Bench2Dex embodiments and Allegro hands in simulation"
+          ],
+          "task": [
+            "Bimanual cube transport and stacking",
+            "Piano playing",
+            "Brush calligraphy",
+            "Hinged-box opening"
+          ],
+          "method": [
+            "Parallel program exploration and shared task library",
+            "Stage-bottleneck program refinement",
+            "Calibrated real-to-sim-to-real iteration"
+          ],
+          "notes_zh": "每任务独立开发程序；119/192→168/192为标定仿真验证布局，非硬件成功次数。持续力/滑移控制仍弱。作者代码分支README明确coming soon，未标可用代码；仅核验项目页面与仓库说明，未执行程序或复现实验。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.33144",
+            "project": "https://vme0522.github.io/PyRUA-Dex/"
+          }
+        },
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2611.33144v1",
+            "paraphrase": "核对20名作者、完整题名及首次投稿2026-11-24T18:56:44Z，版本v1。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.33144v1",
+            "paraphrase": "§3描述探索和瓶颈阶段改进，§5输入实机指尖力和接触点；附录B说明以触觉及关节跟踪滞后检查抓持。§6明确可靠性统计仅在标定仿真，未重复实机试验。"
+          },
+          {
+            "url": "https://vme0522.github.io/PyRUA-Dex/",
+            "paraphrase": "项目页对应论文和双FR3–Sharpa平台，Bench2Dex得分72.9、DexJoCo全随机化成功率81.0%均为仿真结果。"
+          },
+          {
+            "url": "https://github.com/DAGroup-PKU/PyRUA-Lean/tree/dex",
+            "paraphrase": "已读取dex分支README：题名、作者、arXiv回链一致，代码尚未开放。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": true,
+          "url": "https://arxiv.org/html/2611.33144v1",
+          "paraphrase": "§5真实平台程序读取指尖力与接触点；§3.2及附录B的holding、feel原语用这些输入确认抓持并终止接触运动，而非只作训练奖励。"
+        }
+      }
     }
   ]
 }

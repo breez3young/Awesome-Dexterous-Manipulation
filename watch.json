@@ -1,20 +1,102 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-11-25T02:11:22Z",
+  "last_checked_at": "2026-11-25T10:14:34Z",
   "lookback_days": 7,
-  "window_start": "2026-11-18T02:11:22Z",
+  "window_start": "2026-11-18T10:14:34Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 136,
-  "recent_match_count": 21,
-  "new_candidate_count": 9,
-  "updated_candidate_count": 2,
+  "candidate_count": 140,
+  "recent_match_count": 23,
+  "new_candidate_count": 4,
+  "updated_candidate_count": 0,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2611.33144",
+      "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+      "published": "2026-11-24T18:56:44Z",
+      "updated": "2026-11-24T18:56:44Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.33144",
+        "pdf": "https://arxiv.org/pdf/2611.33144"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Learning for dexterous manipulation is limited by the scarcity of high-quality demonstrations: retargeting from human video is imprecise, teleoperation gives no force …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.32513",
+      "title": "DiffAnchor: Anchor-Space Diffusion for Monocular 3D Hand Pose Estimation",
+      "published": "2026-11-24T12:42:03Z",
+      "updated": "2026-11-24T12:42:03Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.32513",
+        "pdf": "https://arxiv.org/pdf/2611.32513"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… capability for embodied human interaction and dexterous manipulation. Recent diffusion-based methods model pose uncertainty by iteratively denoising 3D joint coordinates. However, directly …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.32476",
+      "title": "ViTacLab: Physically Consistent Visuo-Tactile Simulation, Benchmarking, and Representation Learning for Robotic Manipulation",
+      "published": "2026-11-24T12:06:34Z",
+      "updated": "2026-11-24T12:06:34Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.32476",
+        "pdf": "https://arxiv.org/pdf/2611.32476"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… friction cones. ViTacBench spans parallel grippers, dexterous hands, and bimanual systems, with tasks ranging from vision-dominant to tactile-dominant regimes. ViTacPolicy aggregates variable …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.32101",
+      "title": "Ego2Real: Learning Bimanual Dexterous Manipulation from Egocentric Visuo-Tactile Demonstrations",
+      "published": "2026-11-24T07:21:29Z",
+      "updated": "2026-11-24T07:21:29Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.32101",
+        "pdf": "https://arxiv.org/pdf/2611.32101"
+      },
+      "matched_topics": [
+        "dexterous",
+        "tactile"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Learning dexterous manipulation from egocentric human demonstrations offers a scalable path toward robot skill acquisition. Vision alone, however, provides limited information about …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2611.31782",
       "title": "Many Senses, One World: Learning Hierarchical Multimodal World Representations for Bimanual Dexterous Manipulation",
