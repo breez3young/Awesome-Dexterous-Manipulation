@@ -1,20 +1,80 @@
 {
   "schema_version": 1,
   "status": "ok",
-  "last_checked_at": "2026-11-25T10:14:34Z",
+  "last_checked_at": "2026-11-26T09:55:15Z",
   "lookback_days": 7,
-  "window_start": "2026-11-18T10:14:34Z",
+  "window_start": "2026-11-19T09:55:15Z",
   "source": "arXiv API",
   "source_url": "https://export.arxiv.org/api/query",
   "query": "(all:\"dexterous manipulation\" OR all:\"in-hand manipulation\" OR all:\"in hand manipulation\" OR all:multifinger OR all:\"multi-finger\" OR all:\"multi finger\" OR (all:tactile AND (all:dexterous OR all:\"in-hand\" OR all:multifinger OR all:\"multi-finger\")))",
   "review_required": true,
-  "candidate_count": 140,
+  "candidate_count": 143,
   "recent_match_count": 23,
-  "new_candidate_count": 4,
+  "new_candidate_count": 3,
   "updated_candidate_count": 0,
   "trimmed_count": 0,
   "retention_days": 180,
   "items": [
+    {
+      "id": "2611.34936",
+      "title": "DexLink: Synthesizing Dexterous Behaviors from Chained Hand-object Poses",
+      "published": "2026-11-25T18:59:36Z",
+      "updated": "2026-11-25T18:59:36Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.34936",
+        "pdf": "https://arxiv.org/pdf/2611.34936"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "Synthesizing diverse dexterous manipulation policies is challenging: existing simulation-based approaches rely on human demonstrations which are difficult to scale, or use generic …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.34884",
+      "title": "FineDex: Bridging Fine-Grained Human-Object Interaction Generation to Dexterous Humanoid Manipulation",
+      "published": "2026-11-25T18:40:47Z",
+      "updated": "2026-11-25T18:40:47Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.34884",
+        "pdf": "https://arxiv.org/pdf/2611.34884"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… its core, finger-level control, yet existing dexterous manipulation and human-object interaction (HOI) generation methods rarely let one specify how an interaction is …"
+        }
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2611.34655",
+      "title": "Nav4Manip: From Navigation to Dexterous Mobile Manipulation through Co-Evolution",
+      "published": "2026-11-25T16:29:17Z",
+      "updated": "2026-11-25T16:29:17Z",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.34655",
+        "pdf": "https://arxiv.org/pdf/2611.34655"
+      },
+      "matched_topics": [
+        "dexterous"
+      ],
+      "evidence": [
+        {
+          "source": "abstract",
+          "text": "… a world-action model (WAM) for downstream dexterous manipulation. We train Nav4Manip-N in three stages: multi-task co-tuning learns navigation behavior and manipulation-aware affordance …"
+        }
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "2611.33144",
       "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",

@@ -20723,6 +20723,358 @@
           "paraphrase": "§5真实平台程序读取指尖力与接触点；§3.2及附录B的holding、feel原语用这些输入确认抓持并终止接触运动，而非只作训练奖励。"
         }
       }
+    },
+    {
+      "key": "2611.34655|v1|2026-11-25T16:29:17+00:00|dexterous-v1",
+      "digest": "0cfdb5118526ff080fb78df9772887ace2a6d5b4ed6741d4e77ab1375bf3259c",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-27T04:11:21Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.34655",
+          "version": 1,
+          "title": "Nav4Manip: From Navigation to Dexterous Mobile Manipulation through Co-Evolution",
+          "authors": [
+            "Yusen Feng",
+            "Zixi Kang",
+            "Zhijun Yin",
+            "Changxiao Liu",
+            "Tianhong Gao",
+            "Jiazhao Zhang",
+            "Jiahang Liu",
+            "Libin Liu",
+            "Zhizheng Zhang",
+            "He Wang"
+          ],
+          "published": "2026-11-25T16:29:17Z",
+          "updated": "2026-11-25T16:29:17Z",
+          "url": "https://arxiv.org/abs/2611.34655v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2611.34655v1",
+            "https://arxiv.org/html/2611.34655v1",
+            "https://nav4manip.github.io/"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "将导航终点可操作性学习与多指手世界—动作控制器结合，并在Galbot G3与双Sharpa手上执行移动抓取，属于核心灵巧操作系统。全文方法及实机部署明确使用RGB、语言与机器人状态；触觉仅出现于相关工作，不给Tactile feedback。仿真评测与小规模实机消融分别记录。",
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2611.34655v1",
+            "paraphrase": "重新打开官方v1摘要页核对完整题名、十名作者及首次投稿/更新时间2026-11-25T16:29:17Z，项目链接指向nav4manip.github.io。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.34655v1",
+            "paraphrase": "§3与附录B：导航先多任务共训，再按操作执行结果过滤轨迹，最后从经执行验证的反事实偏好学习；Nav4Manip-M在这些导航训练阶段保持固定。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.34655v1",
+            "paraphrase": "附录G.1–G.2：双臂Galbot G3配两只Sharpa手；操控器在仿真轨迹上训练后以实机遥操作示教后训练，每步输入三路RGB、任务指令和58维机器人状态，预测32×58的关节位置目标块。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.34655v1",
+            "paraphrase": "§4.1定义SR@E2E同时要求停在参考目标0.6米内与抓取成功，导航失败计入分母；Nav-N-Manip在每个终点独立重置操作16次。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.34655v1",
+            "paraphrase": "附录C表16以实际导航终点重采示教再后训练操控器，100次仿真SR@E2E由30%升至52%，30次实机由报告的17%升至30%；两者是分开的实验。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.34655v1",
+            "paraphrase": "附录G.2与§5：实机动作分支由当前图像、指令、本体状态条件化，不解码未来RGB；评测仅单一Galbot G3/Sharpa平台和室内场景。"
+          },
+          {
+            "url": "https://nav4manip.github.io/",
+            "paraphrase": "已打开官方摘要直接链接的项目页，题名、框架及表16补充实验对应；页面仍显示Anonymous Submission并含rebuttal说明，未取得可核验代码仓库。"
+          }
+        ],
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.34655v1",
+          "paraphrase": "附录G.2列出完整部署输入为三路RGB、语言指令和58维机器人状态，输出关节位置动作；附录G开头的触觉动作修正属于相关工作T-Rex，未作为Nav4Manip实机触觉输入。"
+        },
+        "paper": {
+          "id": "2611.34655",
+          "title": "Nav4Manip: From Navigation to Dexterous Mobile Manipulation through Co-Evolution",
+          "authors": [
+            "Yusen Feng",
+            "Zixi Kang",
+            "Zhijun Yin",
+            "Changxiao Liu",
+            "Tianhong Gao",
+            "Jiazhao Zhang",
+            "Jiahang Liu",
+            "Libin Liu",
+            "Zhizheng Zhang",
+            "He Wang"
+          ],
+          "date": "2026-11-25",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Reinforcement learning",
+            "Imitation learning",
+            "Vision-language-action",
+            "Diffusion / flow policy",
+            "Teleoperation",
+            "Dexterous grasping",
+            "Long-horizon tasks",
+            "Vision",
+            "Proprioception",
+            "Dataset / benchmark"
+          ],
+          "tldr": "Couples manipulation-aware navigation, rollout filtering and execution-validated preference learning with a visual world-action controller for Galbot G3 and Sharpa hands. Re-training the controller on reached navigation endpoints raises end-to-end success from 30% to 52% in 100 simulation trials and from 17% to 30% in 30 real trials. Robot execution uses vision and proprioception without tactile input.",
+          "tldr_zh": "将操作感知导航、轨迹筛选与经执行验证的偏好学习连接到Galbot G3/Sharpa手的视觉世界—动作控制器。按实际导航终点重采示教并后训练后，100次仿真端到端成功率由30%升至52%，30次实机由17%升至30%。实机使用视觉与本体状态，不读取触觉。",
+          "sensing": [
+            "Monocular RGB for navigation",
+            "Three synchronized RGB views for manipulation",
+            "58-dimensional robot proprioceptive state"
+          ],
+          "hand": [
+            "Two Sharpa dexterous hands on a Galbot G3 mobile robot"
+          ],
+          "task": [
+            "Manipulation-aware indoor navigation",
+            "Mobile shelf grasping",
+            "Navigation, bowl pickup and placement"
+          ],
+          "method": [
+            "Multi-task navigation and affordance co-tuning",
+            "Manipulation-verified rejection-sampling fine-tuning",
+            "Execution-validated counterfactual preference learning",
+            "Coupled video–action world model with flow action chunks",
+            "Manipulation post-training on actual navigation endpoints"
+          ],
+          "notes_zh": "仅室内、单一Galbot G3/Sharpa平台；实机操控器使用真实遥操作示教后训练，不能称为纯仿真零样本部署。导航训练的三个阶段保持操控器固定，另有表16闭环后训练实验。SR@E2E包含0.6米导航约束和抓取成功，实机表16仅30次试验，报告17%有舍入。项目页匿名且未核验到代码发布。未复现。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.34655",
+            "project": "https://nav4manip.github.io/"
+          }
+        }
+      }
+    },
+    {
+      "key": "2611.34884|v1|2026-11-25T18:40:47+00:00|dexterous-v1",
+      "digest": "a298824af246acc2170c4f9e43144b90c6a0892b954876468f09cbdbb2fee1fd",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-27T04:11:21Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.34884",
+          "version": 1,
+          "title": "FineDex: Bridging Fine-Grained Human-Object Interaction Generation to Dexterous Humanoid Manipulation",
+          "authors": [
+            "Yujia Zeng",
+            "Yuxin Chen",
+            "Yuzhen Song",
+            "Runhan Huang",
+            "Chensheng Peng",
+            "Yiyang Shao",
+            "Koushil Sreenath",
+            "Masayoshi Tomizuka",
+            "Yilun Du"
+          ],
+          "published": "2026-11-25T18:40:47Z",
+          "updated": "2026-11-25T18:40:47Z",
+          "url": "https://arxiv.org/abs/2611.34884v1",
+          "primary_urls": [
+            "https://arxiv.org/html/2611.34884v1",
+            "https://finedex.github.io/",
+            "https://github.com/zyjOrz/FineDex"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "第3节将指级HOI生成与机器人接触程序搜索结合，第4节提供多指仿真评测和G1/Wuji实机演示，直接属于灵巧操作；明确区分生成质量、指级仿真成功和有限开环实机验证。",
+        "paper": {
+          "id": "2611.34884",
+          "title": "FineDex: Bridging Fine-Grained Human-Object Interaction Generation to Dexterous Humanoid Manipulation",
+          "authors": [
+            "Yujia Zeng",
+            "Yuxin Chen",
+            "Yuzhen Song",
+            "Runhan Huang",
+            "Chensheng Peng",
+            "Yiyang Shao",
+            "Koushil Sreenath",
+            "Masayoshi Tomizuka",
+            "Yilun Du"
+          ],
+          "date": "2026-11-25",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Model-based planning",
+            "Human motion transfer",
+            "Retargeting",
+            "Sim-to-real",
+            "Bimanual coordination",
+            "Articulated objects",
+            "Dataset / benchmark"
+          ],
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.34884",
+            "project": "https://finedex.github.io/"
+          },
+          "tldr": "Generates finger-conditioned human–object interaction priors, then refines contact programs in randomized digital twins before open-loop robot execution. FingerBench reaches 21.9% finger-conditioned simulated success; physical G1/Wuji demonstrations include five successful repeats of one middle-finger program at fixed object placement.",
+          "tldr_zh": "生成受指定手指约束的人物交互先验，再在随机化数字孪生中优化接触程序并开环执行。FingerBench仿真指级条件成功率21.9%；G1/Wuji实机演示中，固定物体摆位的同一中指程序连续5次成功。",
+          "sensing": [
+            "Object state and rendered HOI keyframes (planning inputs; no online feedback in physical execution)"
+          ],
+          "hand": [
+            "Floating Wuji hands (simulation)",
+            "Wuji Hand 2.2 on Unitree G1 (physical demonstrations)"
+          ],
+          "task": [
+            "Hand- and finger-specific articulated-object manipulation",
+            "Espresso-machine and microwave operation"
+          ],
+          "method": [
+            "Language/geometry-conditioned HOI diffusion with finger adapters",
+            "Interaction-mesh retargeting",
+            "Agent-guided contact-program search with randomized simulation rehearsals"
+          ],
+          "notes_zh": "实机开环无在线重规划，不标触觉反馈；物体按仿真可达站位摆放，数字孪生使用打印物体网格与质量。五次重复仅一程序/固定摆位，非总体实机成功率。无需逐实例训练仍需测试时搜索；官网所链仓库仅README，代码尚未发布。"
+        },
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.34884v1",
+          "paraphrase": "第3.2、4.4节和局限明确实机执行已选接触程序，采用开环且无在线反馈；仿真接触统计用于搜索，并非实机触觉输入。"
+        },
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2611.34884v1",
+            "paraphrase": "官方v1核验完整标题、9名作者及首次投稿时间2026-11-25T18:40:47Z；摘要页直接链接FineDex官网。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.34884v1",
+            "paraphrase": "第3.1/3.2节给出指级生成、重定向与数字孪生搜索；第4.3节21.9% FC-SR为仿真，第4.4节实机为开环，固定摆位中指程序仅5次重复。"
+          },
+          {
+            "url": "https://finedex.github.io/",
+            "paraphrase": "由官方论文直接链接；官网9名作者和BibTeX的2611.34884与官方一致，并链接作者仓库。"
+          },
+          {
+            "url": "https://github.com/zyjOrz/FineDex",
+            "paraphrase": "官网所链官方仓库列出同标题及9名作者，目前只有README并注明代码将发布，故不添加可用代码链接。"
+          }
+        ]
+      }
+    },
+    {
+      "key": "2611.34936|v1|2026-11-25T18:59:36+00:00|dexterous-v1",
+      "digest": "3245187b380252232292cb60bcfedd0f9a4806c0034b046520d828811f52778e",
+      "rules_version": "dexterous-v1",
+      "reviewed_at": "2026-11-27T04:11:21Z",
+      "reviewer": "Codex",
+      "review": {
+        "source": {
+          "arxiv_id": "2611.34936",
+          "version": 1,
+          "title": "DexLink: Synthesizing Dexterous Behaviors from Chained Hand-object Poses",
+          "authors": [
+            "Meenal Parakh",
+            "Deep Patel",
+            "Beining Han",
+            "Jia Deng"
+          ],
+          "published": "2026-11-25T18:59:36Z",
+          "updated": "2026-11-25T18:59:36Z",
+          "url": "https://arxiv.org/abs/2611.34936v1",
+          "primary_urls": [
+            "https://arxiv.org/abs/2611.34936v1",
+            "https://arxiv.org/html/2611.34936v1",
+            "https://dex-link.github.io/",
+            "https://github.com/meenalparakh/dexlink"
+          ]
+        },
+        "decision": "accept",
+        "review_depth": "fulltext",
+        "reason_zh": "稀疏人手物交互模板经重定向与残差强化学习生成XHand控制策略，验证多指单手、双手及关节物体任务，并有有限实机抓取评测，直接符合核心灵巧操作范围。",
+        "paper": {
+          "id": "2611.34936",
+          "title": "DexLink: Synthesizing Dexterous Behaviors from Chained Hand-object Poses",
+          "authors": [
+            "Meenal Parakh",
+            "Deep Patel",
+            "Beining Han",
+            "Jia Deng"
+          ],
+          "date": "2026-11-25",
+          "year": 2026,
+          "category": "Dexterous Manipulation",
+          "scope": "core",
+          "tags": [
+            "Reinforcement learning",
+            "Human motion transfer",
+            "Retargeting",
+            "Sim-to-real",
+            "Dexterous grasping",
+            "In-hand manipulation",
+            "Bimanual coordination",
+            "Tool use",
+            "Long-horizon tasks",
+            "Articulated objects",
+            "Vision",
+            "Proprioception"
+          ],
+          "tldr": "Retargets sparse human hand–object templates, chains them into references, and uses residual PPO to synthesize XHand behaviors. Simulation covers varied tasks and object geometry; physical testing is limited to four grasp-and-lift objects with ten trials each. Real deployment uses RGB-D point clouds, without verified tactile input.",
+          "tldr_zh": "将稀疏人手物交互模板重定向并连接为参考轨迹，再用残差PPO生成XHand行为。仿真覆盖多种任务和几何变化；实机仅四物体各10次抓取抬升，使用RGB-D点云，无已核验触觉输入。",
+          "sensing": [
+            "RGB-D table, object and hand point clouds for physical deployment",
+            "Proprioception and reference state",
+            "Simulator contact and object state for state-based training"
+          ],
+          "hand": [
+            "ROBOTERA XHand",
+            "Franka arm with XHand (physical grasp-and-lift)"
+          ],
+          "task": [
+            "Template-conditioned grasping and grasp transitions",
+            "Bimanual handover and block stacking",
+            "Articulated-object manipulation",
+            "Physical grasp-and-lift"
+          ],
+          "method": [
+            "Object-aware interaction retargeting",
+            "Waypoint interpolation and collision refinement",
+            "Reference-centered residual PPO"
+          ],
+          "notes_zh": "实机成功标准为悬空保持约一分钟，未验证仿真全部复杂任务；极端尺度和不同训练种子有较大差异。模板仍来自OakInk/ARCTIC等人类数据，不能称完全无人类数据。密集追踪使用更长训练预算，部分比较展示最佳种子。代码归属已核验，未运行或复现。",
+          "links": {
+            "paper": "https://arxiv.org/abs/2611.34936",
+            "project": "https://dex-link.github.io/",
+            "code": "https://github.com/meenalparakh/dexlink"
+          }
+        },
+        "runtime_tactile": {
+          "uses_at_execution": false,
+          "url": "https://arxiv.org/html/2611.34936v1",
+          "paraphrase": "§3.3接触输入属于仿真状态策略；附录D.4的实机输入列为RealSense过滤点云，未列实测触觉，故不添加触觉反馈标签。"
+        },
+        "evidence": [
+          {
+            "url": "https://arxiv.org/abs/2611.34936v1",
+            "paraphrase": "核对完整题名、四位作者和首次投稿2026-11-25T18:59:36Z，版本v1。"
+          },
+          {
+            "url": "https://arxiv.org/html/2611.34936v1",
+            "paraphrase": "§3以对象关系优化和残差PPO生成参考跟踪策略；§4包含单/双手仿真，实机四物体各10次；附录D.4限定Franka–XHand、RGB-D点云和约一分钟悬空标准。"
+          },
+          {
+            "url": "https://dex-link.github.io/",
+            "paraphrase": "正文直链官网，作者、论文回链及点云实机抓取示例一致。"
+          },
+          {
+            "url": "https://github.com/meenalparakh/dexlink",
+            "paraphrase": "官网直链仓库README回链同一arXiv，列出重定向、Genesis强化学习源码及任务文件；未执行代码。"
+          }
+        ]
+      }
     }
   ]
 }
